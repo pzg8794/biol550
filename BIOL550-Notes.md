@@ -1,30 +1,39 @@
-* # [**BIOL550 \- High Throughput Seq Analysis**](https://mycourses.rit.edu/d2l/home/1199746)
+# BIOL550 - High Throughput Seq Analysis
 
-  ## 
+Course home (myCourses): https://mycourses.rit.edu/d2l/home/1199746
 
-* ## **Slides**
+## Index (quick links)
 
-  * [HTS Week 1and2 tech\_analysis](https://mycourses.rit.edu/d2l/le/content/1199746/viewContent/11527999/View)  
-  *  
+- [Slides](#slides)
+- [Readings](#readings)
+- [Misc](#misc)
+- [Trapnell final — differential expression results](#trapnell-final--differential-expression-results)
+  - [What to submit](#what-to-submit-practical-differential-expression-results-package)
+  - [Lab session summary (Feb 12, 2026)](#lab-session-summary-feb-12-2026)
+  - [Class prep — Wed, Feb 18, 2026](#class-prep--wed-feb-18-2026)
+- [BIOL550 Comprehensive Course Guide](#biol550-comprehensive-course-guide)
+- [Lab task hub](BIOL550-Lab/task_n_desc.md)
+  - [Weekly report requirements](BIOL550-Lab/task_n_desc.md#weekly-report-requirements-make-visible)
 
-* ## **Readings**
+## Slides
 
-  Week 1/2  
-  * Week 3 \- Assembly  
-  * Week 4 \- RNASeq  
-  * Week 5 \- Composites and noise  
-  * Week 6 \- Barcoding  
-  * Week 7 \- Other applications  
-  * Week 11 \- Variant callers and missing genes  
-  * Week 13 \- Long read applications  
-  * Week 14 \- Microbiome and epigenetics
+- [HTS Week 1and2 tech_analysis](https://mycourses.rit.edu/d2l/le/content/1199746/viewContent/11527999/View)
 
-* ## 
+## Readings
 
-* ## **Misc**
+Week 1/2
+- Week 3 - Assembly
+- Week 4 - RNASeq
+- Week 5 - Composites and noise
+- Week 6 - Barcoding
+- Week 7 - Other applications
+- Week 11 - Variant callers and missing genes
+- Week 13 - Long read applications
+- Week 14 - Microbiome and epigenetics
 
-  * **CommandlineWorkshop**  
-  * Starts Jan 15, 2026, 9:30 AM
+## Misc
+
+- CommandlineWorkshop (starts Jan 15, 2026, 9:30 AM)
 
 # **BIOL550 Comprehensive Course Guide**
 
@@ -4060,8 +4069,9 @@ Together with the composite structures paper, this week's readings establish tha
 
 ## Trapnell final — differential expression results
 
-Reference audio (lab session): `Semester5/2026-02-12 09_37_36.mp3`  
-Local transcript: `output/transcribe/biol550_2026-02-12_09-37-36.txt` (and `output/transcribe/biol550_2026-02-12_09-37-36.json`)
+Reference audio (lab session):  
+- `Semester5/2026-02-12 09_37_36.mp3` → `output/transcribe/biol550_2026-02-12_09-37-36.txt` (and `output/transcribe/biol550_2026-02-12_09-37-36.json`)  
+- `Semester5/2026-02-12 09_35_11.mp3` → `output/transcribe/biol550_2026-02-12_09-35-11.txt` (and `output/transcribe/biol550_2026-02-12_09-35-11.json`)
 
 ### What to submit (practical “differential expression results” package)
 
@@ -4082,6 +4092,7 @@ If the myCourses prompt is stricter than this, paste it here and I’ll map it t
 ### Lab session summary (Feb 12, 2026)
 
 - **Library type gotcha:** for stranded RNA-seq, specify `--library-type fr-firststrand` where relevant (they discussed this as a common fix when tools complain / results look wrong).
+- **Server/tooling gotcha (Tuxedo suite):** due to Python version conflicts, use the wrapper scripts ending in `_ENV` (e.g., for `cuffmerge`) rather than the plain command when both exist.
 - **Deadlines mentioned (relative → absolute):**
   - Alignments: “done by next week Thursday” → **Thu, Feb 19, 2026**
   - Differential expression (cuffdiff): “ideally done next week” → **week of Feb 16, 2026** (practically, aim for **Feb 19, 2026**)
@@ -4089,3 +4100,19 @@ If the myCourses prompt is stricter than this, paste it here and I’ll map it t
   - Class baseline requirement discussed: **≥20 runs** and **≥40M reads per sample** (but he noted these can flex depending on dataset/storage).
   - For DE, **≥3 samples per condition** is the minimum to estimate variance (so ≥6 total if 2 conditions).
   - Time-series / many-condition designs are harder; consider **subsetting** to a simpler comparison if needed.
+
+---
+
+## Class prep — Wed, Feb 18, 2026
+
+**Before class (15–30 min)**
+- Skim `Semester5/BIOL550/BIOL550-Lab/task_n_desc.md` and note where you are in the Trapnell workflow (alignment → cuffmerge → cuffquant → cuffdiff).
+- Be ready to explain (1–2 sentences each) what each output represents:
+  - STAR: where BAMs come from and why `XS` tags matter for `cuffdiff`
+  - cuffdiff: where `gene_exp.diff` lives and what `q_value` means (FDR-adjusted)
+- Re-open the “Trapnell final — differential expression results” section above and confirm you know exactly what you’re submitting (zip of `cuffdiff` output + command + short summary).
+
+**Bring to class (so you can get useful feedback fast)**
+- Your current submission artifact name/path (e.g., `lab3/cuffdiff_results.zip`) and the key result file you’re summarizing (`gene_exp.diff`).
+- 2–3 questions you want answered (e.g., “Is `q_value <= 0.05` the expected cutoff?”, “Which plot do you prefer for the report?”, “Any must-include cuffdiff outputs besides `gene_exp.diff`?”).
+- If you’re still selecting a project dataset: the candidate dataset(s) + run count + rough read depth per sample + conditions/replicates you plan to compare.
