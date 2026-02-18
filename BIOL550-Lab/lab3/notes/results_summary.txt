@@ -1,0 +1,5 @@
+Lab 3: Cuffdiff gene-level DE summary
+OK tests: 8289
+Significant genes (q<=0.05): 265
+Top up (by log2FC): Fatp, crc, scf, CTPsyn, Df31
+Top down (by log2FC): Nep2, RpS19b, Amy-d, CG6847, Aplip1

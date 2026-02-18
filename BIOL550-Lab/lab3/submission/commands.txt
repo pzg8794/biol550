@@ -1,0 +1,59 @@
+Trapnell / Lab 3 — Differential Expression (Cuffdiff) commands used
+
+1) Re-align STAR with XS tags (required for cuffdiff on spliced reads)
+
+READS="/home/pzg8794/BIOL550/Lab1/Trapnell_Data/Trapnell Data/Raw reads"
+GTF="/home/pzg8794/BIOL550/Lab1/Trapnell_Data/Trapnell Data/Drosophila reference/Drosophila_melanogaster.BDGP6.84.gtf"
+GENOMEDIR="$HOME/star_index/classref_trapnell_zip_bdgp6_84_v2"
+OUTROOT="$HOME/BIOL550/Lab1/star_align_classref_v2_all_xs"
+mkdir -p "$OUTROOT"
+
+samples=(
+  GSM794483_C1_R1
+  GSM794484_C1_R2
+  GSM794485_C1_R3
+  GSM794486_C2_R1
+  GSM794487_C2_R2
+  GSM794488_C2_R3
+)
+
+for s in "${samples[@]}"; do
+  out="$OUTROOT/$s"
+  log="$out/star.nohup.log"
+  mkdir -p "$out"
+  nohup /usr/local/bin/STAR/STAR \
+    --genomeDir "$GENOMEDIR" \
+    --runThreadN 4 \
+    --sjdbGTFfile "$GTF" \
+    --readFilesIn "$READS/${s}_1.fq.gz" "$READS/${s}_2.fq.gz" \
+    --readFilesCommand zcat \
+    --outSAMstrandField intronMotif \
+    --outSAMtype BAM SortedByCoordinate \
+    --limitBAMsortRAM 6000000000 \
+    --outFileNamePrefix "$out/" \
+    > "$log" 2>&1 &
+done
+
+2) Differential expression (cuffdiff)
+
+GTF="/home/pzg8794/BIOL550/Lab1/Trapnell_Data/Trapnell Data/Drosophila reference/Drosophila_melanogaster.BDGP6.84.gtf"
+FA="/home/pzg8794/refs/classref_bdgp6_84_ids_v2.fa"
+BAMROOT="$HOME/BIOL550/Lab1/star_align_classref_v2_all_xs"
+OUT="$HOME/BIOL550/Lab1/cuffdiff_classref_v2_xs"
+mkdir -p "$OUT"
+
+CUFFDIFF="$(command -v cuffdiff 2>/dev/null || true)"
+[ -n "$CUFFDIFF" ] || CUFFDIFF="/usr/local/bin/cufflinks/cuffdiff"
+
+C1="$BAMROOT/GSM794483_C1_R1/Aligned.sortedByCoord.out.bam,$BAMROOT/GSM794484_C1_R2/Aligned.sortedByCoord.out.bam,$BAMROOT/GSM794485_C1_R3/Aligned.sortedByCoord.out.bam"
+C2="$BAMROOT/GSM794486_C2_R1/Aligned.sortedByCoord.out.bam,$BAMROOT/GSM794487_C2_R2/Aligned.sortedByCoord.out.bam,$BAMROOT/GSM794488_C2_R3/Aligned.sortedByCoord.out.bam"
+
+nohup "$CUFFDIFF" \
+  -o "$OUT" \
+  -p 4 \
+  -L C1,C2 \
+  -b "$FA" \
+  "$GTF" \
+  "$C1" "$C2" \
+  > "$OUT/cuffdiff.nohup.log" 2>&1 &
+

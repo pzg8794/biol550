@@ -1,0 +1,11 @@
+BIOL550 Lab 0 - Scavenger Hunt Answers
+
+a. readme
+
+b. I found the file.
+
+c. I will run this shell script.
+
+d. It worked!
+
+e. I copied the file, changed permissions, and ran this script.  I rock.

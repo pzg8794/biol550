@@ -1,0 +1,7 @@
+study_accession,title,organism,sample_count,meets_sample_count,example_SRR,spots,bases,bases_per_spot,per_read_inferred,paired,access,meets_all_constraints,notes
+PRJNA1406761,iPSC Small Intestine Organoid (PEG platform),Homo sapiens,21,YES,SRR36938303,41097756,12300000000,299.3,~150,YES,public,YES,Study reports 2x150; example run ~41M spots
+PRJNA717662,Long-term blood transcriptome after SARS-CoV-2,Homo sapiens,152,YES,SRR15510543,70901227,20500000000,289.1,~145,YES,public,YES,Study reports 2x150; example run ~71M spots
+PRJNA748788,CPTAC: TNBC chemotherapy response,Homo sapiens,135,YES,SRR20427233,42294546,12800000000,302.9,~151,YES,dbGaP-linked (some files public),YES,Many runs on NovaSeq 2x150; example run ~42M spots
+PRJNA292477,NHLBI TOPMed: Framingham Heart Study,Homo sapiens,>20,YES,SRR36534089,55766024,11200000000,200.8,~100,YES,dbGaP,NO,Example run shows ~2x100 (fails >=150 bp/read)
+PRJNA910283,CPTAC: Ovarian proteogenomics,Homo sapiens,>20,YES,SRR23447671,87054615,17400000000,200.0,~100,YES,dbGaP/controlled,NO,Many runs are 2x100 (fails >=150 bp/read)
+PRJNA308995,PsychENCODE: Autism post-mortem brain,Homo sapiens,>20,YES,SRR3554801,97661324,9800000000,100.3,~50,YES,dbGaP/controlled,NO,HiSeq2500 short reads (often 50–100 bp) and controlled-access

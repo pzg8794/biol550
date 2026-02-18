@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BIOL550 Lab 2 Report</title>
+  <style>
+	    body { font-family: "Times New Roman", Times, serif; font-size: 12pt; margin: 16px; line-height: 1.15; color: #111; }
+	    h1, h2, h3 { margin: 0 0 8px 0; }
+	    h1 { text-align: center; }
+	    .subtitle { text-align: center; font-size: 11pt; margin: 0 0 12px 0; }
+	    h2 { margin-top: 16px; }
+	    p { text-align: justify; }
+	    ul { margin: 6px 0 10px 20px; }
+	    pre { background: #f5f5f5; padding: 10px; border: none; box-shadow: none; outline: none; overflow-x: auto; font-size: 11px; }
+	    code { font-family: Menlo, Consolas, monospace; font-size: 10px; }
+	    .note { font-style: italic; }
+	    @media print {
+	      body { margin: 0.75in; }
+	      pre { white-space: pre-wrap; word-break: break-word; border: none !important; box-shadow: none !important; outline: none !important; }
+	    }
+  </style>
+</head>
+<body>
+	  <h1>Trapnell data set - QC debrief and alignment</h1>
+	  <div class="subtitle">BIOL550 - Week4 Lab Report</div>
+
+  <h2>What I Accomplished Since The Previous Report</h2>
+  <p>Since the previous report, I first completed QC on the Trapnell raw reads and packaged the HTML files for submission. Second, I switched to the reference genome distributed with the Trapnell zip. Unfortunately, the BDGP6.84 GTF had FlyBase-style contig names while the provided FASTA used RefSeq-style record IDs. So, I renamed the FASTA headers to match the GTF, and built the STAR index using the corrected pair. Lastly, I re-ran STAR paired-end alignment for all six samples using the given reference/index and verified each run produced a BAM file and alignment statistics.</p>
+
+  <h2>Methods I Used (Commands Used With Parameters)</h2>
+  <p>After renaming the FASTA headers (Step 2a), I implemented the standard STAR two-step process. First, I prepared a genome index from a reference FASTA + GTF (Step 2b). Then, I aligned paired-end reads to that index (Step 2c). The commands below show the main commands and parameters used for reference preparation, indexing, and alignment.</p>
+
+  <h3>Step 1 - Input verification</h3>
+  <p>Verified the expected Trapnell paired-end FASTQ inputs were present before running FastQC/STAR.</p>
+
+  <h3>Step 2a - Make FASTA headers match the BDGP6.84 GTF</h3>
+  <p>The Trapnell zip includes a BDGP6.84-style GTF (e.g., <code>2L/2R/3L/3R/...</code>), but the provided FASTA uses RefSeq-style record IDs (e.g., <code>NC_*/NT_*/NW_*</code>). I generated a renamed FASTA so that STAR could correctly interpret the genome structure.</p>
+  
+  <pre><code>
+# FASTA header -> renamed contig ID                                          # goal: FASTA contigs match GTF contigs
+if header contains "chromosome 2L/2R/3L/3R/4/X/Y" and no 211000... token: use 2L/2R/3L/3R/4/X/Y   # main chromosomes
+else if header contains a 2110000... token: use that 2110000... ID                                  # unlocalized contigs
+else if header contains "rDNA": use rDNA                                                            # special contig (GTF)
+else if header contains "mitochondr": use dmel_mitochondrion_genome                                 # special contig (GTF)
+else: keep the original RefSeq accession (NC_/NT_/NW_/...)                                          # fallback
+if any renamed IDs collide: append __dupN                                                           # ensure uniqueness
+</code></pre>
+
+  <h3>Step 2b - Run STAR genomeGenerate</h3>
+  <p class="note">Instructor feedback: the Drosophila reference directory contains two annotation files (GTF/GFF). Only one is correct and should work on its own; I will verify I used the correct annotation file for the STAR index and downstream steps.</p>
+  <pre><code>nohup /usr/local/bin/STAR/STAR --runMode genomeGenerate \
+  --genomeDir /home/pzg8794/star_index/classref_trapnell_zip_bdgp6_84_v2 \
+  --genomeFastaFiles /home/pzg8794/refs/classref_bdgp6_84_ids_v2.fa \
+  --sjdbGTFfile "/home/pzg8794/BIOL550/Lab1/Trapnell_Data/Trapnell Data/Drosophila reference/Drosophila_melanogaster.BDGP6.84.gtf" \
+  --sjdbOverhang 74 \
+  --runThreadN 8 \
+  --limitGenomeGenerateRAM 200000000000 \
+  &gt; /home/pzg8794/star_index/classref_trapnell_zip_bdgp6_84_v2/genomeGenerate.nohup.log 2&gt;&amp;1 &amp;</code></pre>
+  <p class="note">Note: <code>--sjdbOverhang 74</code> sets the splice-junction overhang (read length minus 1 for 150 bp reads), and <code>--limitGenomeGenerateRAM</code> raises the RAM cap so STAR can complete genome index generation.</p>
+
+  <h3>Step 2c - Run STAR paired-end alignment</h3>
+  <pre><code>nohup /usr/local/bin/STAR/STAR \
+  --genomeDir /home/pzg8794/star_index/classref_trapnell_zip_bdgp6_84_v2 \
+  --runThreadN 4 \
+  --sjdbGTFfile "/home/pzg8794/BIOL550/Lab1/Trapnell_Data/Trapnell Data/Drosophila reference/Drosophila_melanogaster.BDGP6.84.gtf" \
+  --readFilesIn \
+    "/home/pzg8794/BIOL550/Lab1/Trapnell_Data/Trapnell Data/Raw reads/GSM794483_C1_R1_1.fq.gz" \
+    "/home/pzg8794/BIOL550/Lab1/Trapnell_Data/Trapnell Data/Raw reads/GSM794483_C1_R1_2.fq.gz" \
+  --readFilesCommand zcat \
+  --outSAMstrandField intronMotif \
+  --outSAMtype BAM SortedByCoordinate \
+  --limitBAMsortRAM 6000000000 \
+  --outFileNamePrefix /home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794483_C1_R1/ \
+  &gt; /home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794483_C1_R1/star.nohup.log 2&gt;&amp;1 &amp;</code></pre>
+  <p class="note">Note: <code>--readFilesCommand zcat</code> reads the gzipped FASTQs directly; <code>--outSAMstrandField intronMotif</code> adds <code>XS</code> tags on spliced alignments (needed for <code>cuffdiff</code>); and <code>--limitBAMsortRAM</code> sets memory available for sorting the BAM output.</p>
+
+  <h2>Problems I Encountered</h2>
+  <p>The main issue I encountered was a STAR annotation/reference incompatibility: the Trapnell zip BDGP6.84 GTF uses FlyBase contig names (e.g., <code>2L/2R/3L/3R/...</code>) while the provided FASTA record IDs are RefSeq-style (<code>NC_*/NT_*/NW_*</code>). This caused STAR to break because it could not match the exon coordinates to genome contigs. To resolve this, I renamed FASTA headers to match the GTF contig names, rebuilt the STAR index, and re-ran the alignments successfully. On the other hand, FastQC "FAIL" modules persisted after running cleanup on the tested sample. I noted the attempted FastX trimming and the lack of change in FastQC calls before proceeding with the alignment. For alignment execution, I explicitly set <code>--limitBAMsortRAM 6000000000</code> to avoid BAM sorting issues. Finally, to make the alignments compatible with <code>cuffdiff</code> downstream, I re-ran STAR with <code>--outSAMstrandField intronMotif</code> to add <code>XS</code> tags for spliced alignments. Lastly, following the submission guidance, I provided a single representative BAM zip file and archived all outputs for my own records.</p>
+
+  <h2>Goals For The Coming Week</h2>
+  <p>Next week, I will first move to Step 3 of the Trapnell analysis document by performing gene-level read counting and starting differential expression analysis using the completed STAR alignments. Second, I will determine how to run CummeRbund in my local environment for downstream visualization and results review in my Lab 3 notebook/report. Finally, I will make the time to catch up on the assigned readings to draw connections between the experimental results, the theoretical concepts, and my research.</p>
+</body>
+</html>
