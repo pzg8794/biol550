@@ -15,6 +15,11 @@
 BIOL550-Lab/server_exports/
 BIOL550-Lab/fastqc_inputs/
 BIOL550-Lab/**/exports/
+
+# Project dataset pulls (keep scripts, ignore generated outputs)
+BIOL550-Lab/project_datasets/**
+!BIOL550-Lab/project_datasets/*.py
+!BIOL550-Lab/project_datasets/README.md
 BIOL550-Lab/project_pic/writeup_paper/
 group_project/project_reports/
 group_project/starter_pipeline/envs/

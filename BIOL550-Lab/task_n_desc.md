@@ -932,6 +932,7 @@ Validation criteria used here (no Human/Public requirement):
 - Valid samples (meet criteria above): 30/30
 - Organism (info): Danio rerio (zebrafish)
 - Read Depth: avgLength 302; spots 50.9M–173.3M
+- Script to fetch run metadata + SRR list (API): `group_project/zebrafish/scripts/get_zebrafish_data_sra.py`
 - Strengths:
   - Strong depth and long reads across all runs.
   - Clear biological focus (retina regeneration) with many samples.

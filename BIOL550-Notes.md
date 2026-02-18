@@ -4,9 +4,12 @@ Course home (myCourses): https://mycourses.rit.edu/d2l/home/1199746
 
 ## Index (quick links)
 
+- [Current work (status)](#current-work-status)
 - [Slides](#slides)
 - [Readings](#readings)
 - [Misc](#misc)
+- [Tooling reference — OpenAI API key & transcription](#tooling-reference--openai-api-key--transcription)
+- [Data download reference — SRA (NCBI)](#data-download-reference--sra-ncbi)
 - [Trapnell final — differential expression results](#trapnell-final--differential-expression-results)
   - [What to submit](#what-to-submit-practical-differential-expression-results-package)
   - [Lab session summary (Feb 12, 2026)](#lab-session-summary-feb-12-2026)
@@ -14,6 +17,19 @@ Course home (myCourses): https://mycourses.rit.edu/d2l/home/1199746
 - [BIOL550 Comprehensive Course Guide](#biol550-comprehensive-course-guide)
 - [Lab task hub](BIOL550-Lab/task_n_desc.md)
   - [Weekly report requirements](BIOL550-Lab/task_n_desc.md#weekly-report-requirements-make-visible)
+
+## Current work (status)
+
+- Lab task hub: `Semester5/BIOL550/BIOL550-Lab/task_n_desc.md`
+- Lab 3 weekly report (HTML): `Semester5/BIOL550/BIOL550-Lab/lab3/BIOL550_Lab3_Report.html`
+- Lab 3 notebook: `Semester5/BIOL550/BIOL550-Lab/lab3/BIOL550_Lab3_Report.ipynb`
+- Trapnell DE submission artifact (zip): `Semester5/BIOL550/BIOL550-Lab/lab3/cuffdiff_results.zip` (contains `cuffdiff_classref_v2_xs/`)
+- DE quick summary (generated locally): `Semester5/BIOL550/BIOL550-Lab/lab3/notes/results_summary.txt` (and `Semester5/BIOL550/BIOL550-Lab/lab3/submission/results_summary.md`)
+- Lab session audio + transcripts:
+  - `Semester5/2026-02-12 09_37_36.mp3` → `output/transcribe/biol550_2026-02-12_09-37-36.txt`
+  - `Semester5/2026-02-12 09_35_11.mp3` → `output/transcribe/biol550_2026-02-12_09-35-11.txt`
+- Public BIOL550 repo: https://github.com/pzg8794/biol550
+- Zebrafish workspace (group project): `Semester5/BIOL550/group_project/zebrafish/`
 
 ## Slides
 
@@ -34,6 +50,92 @@ Week 1/2
 ## Misc
 
 - CommandlineWorkshop (starts Jan 15, 2026, 9:30 AM)
+
+## Tooling reference — OpenAI API key & transcription
+
+If by “RSA API” you meant how we used the OpenAI API (and set `OPENAI_API_KEY`), use this.
+
+### 1) Store your `OPENAI_API_KEY` in macOS Keychain (recommended)
+
+In a terminal:
+
+```bash
+read -s OPENAI_API_KEY; echo
+security add-generic-password -a "$USER" -s OPENAI_API_KEY -w "$OPENAI_API_KEY" -U
+unset OPENAI_API_KEY
+```
+
+Then, when you need it (new terminal/session):
+
+```bash
+export OPENAI_API_KEY="$(security find-generic-password -a "$USER" -s OPENAI_API_KEY -w)"
+```
+
+Notes:
+- A Python virtual environment does *not* automatically “remember” the key; your *shell environment* must have `OPENAI_API_KEY` exported at runtime.
+- Don’t paste keys into chats or commit them to GitHub.
+
+### 2) Transcribe audio via OpenAI (when `OPENAI_API_KEY` is set)
+
+Codex bundled CLI:
+
+```bash
+export TRANSCRIBE_CLI="$HOME/.codex/skills/transcribe/scripts/transcribe_diarize.py"
+python3 "$TRANSCRIBE_CLI" "Semester5/2026-02-12 09_37_36.mp3" --out output/transcribe/biol550_2026-02-12_09-37-36.txt
+```
+
+### 3) Local fallback (no API): `whisper-cpp`
+
+If you can’t/don’t want to use the API, run local:
+
+```bash
+whisper-cli -m output/transcribe/models/ggml-base.en.bin -l en -of output/transcribe/biol550_2026-02-12_09-35-11 -otxt -oj "Semester5/2026-02-12 09_35_11.mp3"
+```
+
+## Data download reference — SRA (NCBI)
+
+If you meant “SRA” (not “RSA”): **SRA = Sequence Read Archive** and this is the main place we pull public RNA-seq runs.
+
+Script (zebrafish default): `Semester5/BIOL550/group_project/zebrafish/scripts/get_zebrafish_data_sra.py`
+
+### References (official)
+
+- Entrez Direct (`esearch`/`efetch`) docs: https://www.ncbi.nlm.nih.gov/books/NBK179288/
+- SRA Toolkit docs: https://github.com/ncbi/sra-tools
+- SRA Run Selector (web): use the BioProject page → click **SRA** / **All experiments** → **Run Selector** → download **RunInfo** CSV.
+
+### Workflow we script (metadata → runs → FASTQ)
+
+1) Get a **RunInfo CSV** (this is the “API step” we use for reproducible metadata).
+
+```bash
+# Example: query a BioProject or SRP and save run metadata
+ACC="PRJNA717662"   # or SRP312283, etc.
+esearch -db sra -query "$ACC" | efetch -format runinfo > "${ACC}_runinfo.csv"
+```
+
+2) Extract SRR run accessions and download FASTQs with SRA Toolkit.
+
+```bash
+# Download the first N runs from the RunInfo (edit N as needed)
+N=5
+cut -d',' -f1 "${ACC}_runinfo.csv" | tail -n +2 | head -n "$N" > "${ACC}_runs.txt"
+
+# Download + convert to FASTQ (paired-end)
+while read -r SRR; do
+  prefetch "$SRR"
+  fasterq-dump --split-files --threads 4 "$SRR"
+  gzip -f "${SRR}"_*.fastq
+done < "${ACC}_runs.txt"
+```
+
+Notes:
+- If you’re scripting on the class server, check which tools exist: `command -v esearch efetch prefetch fasterq-dump`.
+- For class requirements, **filter runs first** using the RunInfo CSV (LibraryLayout, avgLength/avgSpotLen, spots/bases).
+
+### Existing “worked example” already in these notes
+
+See: **Dataset Validation Example: PRJNA717662 (Manual Steps)** (search that exact heading) for the full copy/paste runinfo + filtering workflow.
 
 # **BIOL550 Comprehensive Course Guide**
 

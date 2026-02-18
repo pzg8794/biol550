@@ -1,0 +1,3 @@
+[submodule "group_project"]
+	path = group_project
+	url = git@github.com:pzg8794/BIOL550-group_project.git
