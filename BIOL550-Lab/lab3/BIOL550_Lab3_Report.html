@@ -30,14 +30,23 @@
   </style>
 </head>
 <body>
-  <h1>Trapnell data set - differential expression (cuffdiff)</h1>
+
+  <h1>Trapnell Data Set - Differential Expression (cuffdiff)</h1>
   <div class="subtitle">BIOL550 - Lab 3 Report</div>
 
   <h2>What I Accomplished Since The Previous Report</h2>
-  <p>Since the previous report, I completed the Trapnell differential expression step using <code>cuffdiff</code> on the XS-tagged STAR alignments and exported the output directory locally. I then performed a small downstream summary by filtering <code>gene_exp.diff</code> for significant genes (<code>q_value &lt;= 0.05</code>) and generated a few sanity-check figures. Finally, I packaged the <code>cuffdiff</code> output directory for myCourses submission as <code>cuffdiff_results.zip</code>.</p>
+  <p>
+    Following completion of STAR alignment in the previous report, I advanced to the differential expression step of the Trapnell workflow by running <code>cuffdiff</code> on the XS-tagged STAR alignments (three biological replicates per condition). I generated gene-level differential expression output and exported the full results directory for submission.
+  </p>
+  <p>
+    Using <code>gene_exp.diff</code>, I summarized valid statistical tests (<code>status == "OK"</code>) and defined significant genes at an FDR threshold of <code>q_value &lt;= 0.05</code>. A total of 8,289 valid tests were reported, with 265 genes meeting the significance cutoff. I generated two sanity-check visualizations to review effect-size distribution and confirm overall signal consistency.
+  </p>
+  <p>
+    <!-- Submission artifact: <code>lab3/cuffdiff_results.zip</code> (contains <code>cuffdiff_classref_v2_xs/</code>). -->
+  </p>
 
-  <h3>Results summary</h3>
-  <p>Summary file written by the notebook: <code>lab3/notes/results_summary.txt</code></p>
+  <h3>Results Summary</h3>
+  <!-- <p>Summary file: <code>lab3/notes/results_summary.txt</code></p> -->
   <pre><code>Lab 3: Cuffdiff gene-level DE summary
 OK tests: 8289
 Significant genes (q&lt;=0.05): 265
@@ -45,52 +54,68 @@ Top up (by log2FC): Fatp, crc, scf, CTPsyn, Df31
 Top down (by log2FC): Nep2, RpS19b, Amy-d, CG6847, Aplip1</code></pre>
 
   <h2>Methods I Used (Commands Used With Parameters)</h2>
-  <p>This section focuses on the analysis steps and the parameters that affect results (not basic shell navigation or file transfer).</p>
-  <p>Submission artifact: <code>lab3/cuffdiff_results.zip</code>, containing only <code>cuffdiff_classref_v2_xs/</code>.</p>
+  <p>
+    A focuse on analysis-relevant steps and parameters influencing biological interpretation. 
+    <!-- Routine shell navigation and file transfer steps are omitted. -->
+  </p>
 
-  <h3>Differential expression (cuffdiff)</h3>
-  <p>Runs <code>cuffdiff</code> on the XS-tagged STAR alignments (3 replicates per condition) using the BDGP6.84 annotation and the matching reference FASTA. The output directory produced on the server is <code>~/BIOL550/Lab1/cuffdiff_classref_v2_xs/</code>.</p>
-  <pre><code>/usr/local/bin/cufflinks/cuffdiff \
+  <h3>Differential Expression (Gene-Level) with cuffdiff</h3>
+  <p>
+    I executed <code>cuffdiff</code> on XS-tagged STAR BAM files (three replicates per condition) using the BDGP6.84 annotation and matching reference FASTA.
+  </p>
+
+<pre><code>/usr/local/bin/cufflinks/cuffdiff \
   -o /home/pzg8794/BIOL550/Lab1/cuffdiff_classref_v2_xs \
   -p 4 \
   -L C1,C2 \
   -b /home/pzg8794/refs/classref_bdgp6_84_ids_v2.fa \
   "/home/pzg8794/BIOL550/Lab1/Trapnell_Data/Trapnell Data/Drosophila reference/Drosophila_melanogaster.BDGP6.84.gtf" \
   /home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794483_C1_R1/Aligned.sortedByCoord.out.bam,/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794484_C1_R2/Aligned.sortedByCoord.out.bam,/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794485_C1_R3/Aligned.sortedByCoord.out.bam \
-  /home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794486_C2_R1/Aligned.sortedByCoord.out.bam,/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794487_C2_R2/Aligned.sortedByCoord.out.bam,/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794488_C2_R3/Aligned.sortedByCoord.out.bam</code></pre>
-  <p class="note">Note: The upstream STAR BAMs were generated with <code>--outSAMstrandField intronMotif</code> to ensure spliced alignments include <code>XS</code> tags (required by <code>cuffdiff</code>).</p>
+  /home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794486_C2_R1/Aligned.sortedByCoord.out.bam,/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794487_C2_R2/Aligned.sortedByCoord.out.bam,/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794488_C2_R3/Aligned.sortedByCoord.out.bam
+</code></pre>
 
-  <h3>Downstream summary (local)</h3>
-  <p>After exporting the <code>cuffdiff</code> output directory locally, I summarized gene-level differential expression from <code>gene_exp.diff</code> using an FDR cutoff and generated a few sanity-check plots. The key choices were:</p>
+  <p class="note">
+    Note: The STAR BAM files were generated with <code>--outSAMstrandField intronMotif</code> to ensure splice-aware alignments include <code>XS</code> tags required by <code>cuffdiff</code>.
+  </p>
+
+  <h3>Downstream Summary and Visualization</h3>
+  <p>
+    From <code>gene_exp.diff</code>, I filtered valid tests (<code>status == "OK"</code>) and defined significance as <code>q_value &lt;= 0.05</code>. Visualization included:
+  </p>
   <ul>
-    <li>Filter to <code>status == "OK"</code> rows (valid tests)</li>
-    <li>Define significance as <code>q_value &lt;= 0.05</code></li>
-    <li>Visual checks: volcano plot (log2FC vs -log10(p)), top-gene bar chart, and replicate PCA from <code>genes.read_group_tracking</code></li>
+    <li>Volcano plot (log2 fold change vs −log10 p-value)</li>
+    <li>Top 20 up/down-regulated genes ranked by log2FC</li>
+    <li>Replicate PCA (sanity check using <code>genes.read_group_tracking</code>)</li>
   </ul>
 
   <div class="img-row">
     <div class="img-col">
-      <h3>Volcano plot</h3>
-      <p>Generates a volcano plot from <code>gene_exp.diff</code> and saves it to <code>lab3/figures/volcano_gene_exp_python.png</code>.</p>
+      <h3>Volcano Plot</h3>
+      <p>Generated from <code>gene_exp.diff</code>; saved as <code>lab3/figures/volcano_gene_exp_python.png</code>.</p>
       <img src="figures/volcano_gene_exp_python.png" alt="Volcano plot (gene_exp.diff)" />
       <div class="figure-title">Volcano plot: <code>gene_exp.diff</code></div>
     </div>
+
     <div class="img-col">
-      <h3>Top 20 DE genes bar chart</h3>
-      <p>Builds a simple bar chart of the top up/down DE genes (by log2FC) and saves it to <code>lab3/figures/top20_bar_log2fc.png</code>.</p>
+      <h3>Top 20 DE Genes (Bar Chart)</h3>
+      <p>Top up/down genes ranked by log2FC; saved as <code>lab3/figures/top20_bar_log2fc.png</code>.</p>
       <img src="figures/top20_bar_log2fc.png" alt="Top 20 DE genes bar chart" />
       <div class="figure-title">Top DE genes (by log2FC)</div>
     </div>
   </div>
 
-  <h3>PCA of samples (replicates)</h3>
-  <p>Uses <code>genes.read_group_tracking</code> to build a replicate expression matrix and runs PCA (via SVD) to sanity-check sample separation.</p>
-  <p class="note">Sanity-check only: the PCA figure was generated during analysis, but omitted from this report to keep the results section compact.</p>
-
   <h2>Problems I Encountered</h2>
-  <p>No additional issues occurred during the local downstream summarization once the <code>cuffdiff</code> outputs were exported. The key prerequisite for this step was ensuring the upstream STAR alignments were produced with XS tags so that <code>cuffdiff</code> could run successfully on spliced reads.</p>
+  <p>
+    No new runtime errors occurred during <code>cuffdiff</code> execution. However, this stage required careful verification that the STAR alignments used were the XS-tagged BAMs generated with <code>--outSAMstrandField intronMotif</code>. Without XS tags, <code>cuffdiff</code> cannot properly model spliced reads.
+  </p>
+  <p>
+    Additionally, during downstream filtering, I explicitly excluded non-"OK" rows before applying the FDR threshold to prevent inflated counts of significant genes.
+  </p>
 
   <h2>Goals For The Coming Week</h2>
-  <p>Next week, I will submit the <code>cuffdiff</code> results early for instructor feedback and address any issues with the output interpretation or formatting. I will also continue progressing from the Trapnell workflow into additional downstream interpretation (e.g., reviewing top DE genes and confirming the biological directionality matches expectations). Finally, I will keep moving forward on the group project dataset analysis and document weekly progress in the same report format.</p>
+  <p>
+    Next week, I will focus on interpreting the biological relevance of the top differentially expressed genes, confirming directionality and replicate consistency. I will also review additional <code>cuffdiff</code> outputs (e.g., isoform-level results) and continue progressing on the group project dataset while maintaining the same structured reporting format.
+  </p>
+
 </body>
 </html>

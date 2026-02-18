@@ -1,6 +1,7 @@
 .DS_Store
 .tmp.*
 *.gdoc
+.ipynb_checkpoints/
 
 # Don’t publish course PDFs/handouts/readings by default
 *.pdf
@@ -12,6 +13,12 @@
 # Large intermediate artifacts
 **/fastqc_full_output/
 BIOL550-Lab/server_exports/
+BIOL550-Lab/fastqc_inputs/
+BIOL550-Lab/**/exports/
+BIOL550-Lab/project_pic/writeup_paper/
+group_project/project_reports/
+group_project/starter_pipeline/envs/
+group_project/starter_pipeline/config.yaml
 
 # Extremely large notebook (keep local)
 BIOL550-Lab/lab1/BIOL550_Lab1_Report.ipynb
