@@ -1,0 +1,7 @@
+file	condition	replicate_num	total_mass	norm_mass	internal_scale	external_scale
+/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794483_C1_R1/Aligned.sortedByCoord.out.bam	C1	0	1.11333e+07	1.11202e+07	1.02732	1
+/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794484_C1_R2/Aligned.sortedByCoord.out.bam	C1	1	1.11329e+07	1.11202e+07	1.02855	1
+/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794485_C1_R3/Aligned.sortedByCoord.out.bam	C1	2	1.11342e+07	1.11202e+07	1.02891	1
+/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794486_C2_R1/Aligned.sortedByCoord.out.bam	C2	0	1.11418e+07	1.11202e+07	0.975564	1
+/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794487_C2_R2/Aligned.sortedByCoord.out.bam	C2	1	1.11463e+07	1.11202e+07	0.976031	1
+/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794488_C2_R3/Aligned.sortedByCoord.out.bam	C2	2	1.11446e+07	1.11202e+07	0.977667	1

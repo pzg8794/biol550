@@ -1,0 +1,5 @@
+param	value
+cmd_line	/usr/local/bin/cufflinks/cuffdiff -o /home/pzg8794/BIOL550/Lab1/cuffdiff_classref_v2_xs -p 4 -L C1,C2 -b /home/pzg8794/refs/classref_bdgp6_84_ids_v2.fa /home/pzg8794/BIOL550/Lab1/Trapnell_Data/Trapnell Data/Drosophila reference/Drosophila_melanogaster.BDGP6.84.gtf /home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794483_C1_R1/Aligned.sortedByCoord.out.bam,/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794484_C1_R2/Aligned.sortedByCoord.out.bam,/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794485_C1_R3/Aligned.sortedByCoord.out.bam /home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794486_C2_R1/Aligned.sortedByCoord.out.bam,/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794487_C2_R2/Aligned.sortedByCoord.out.bam,/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794488_C2_R3/Aligned.sortedByCoord.out.bam 
+version	2.2.1
+SVN_revision	4237
+boost_version	104700
