@@ -1,3 +1,96 @@
+# BIOL550 — Tasks, Requirements, and Work Log
+
+## Index
+<!-- TOC-START -->
+- [BIOL550 — Tasks, Requirements, and Work Log](#biol550-tasks-requirements-and-work-log)
+  - [📋 Group project — task & description (extracted)](#group-project-task-description-extracted)
+  - [Weekly report requirements (make visible)](#weekly-report-requirements-make-visible)
+    - [Weekly report basics (syllabus)](#weekly-report-basics-syllabus)
+    - [Weekly report reminders (discussion post)](#weekly-report-reminders-discussion-post)
+  - [Trapnell analyses hub (BIOL550) — Steps 1–3 (organized + brief)](#trapnell-analyses-hub-biol550-steps-13-organized-brief)
+    - [Step 1 — QC (FastQC + cleanup)](#step-1-qc-fastqc-cleanup)
+    - [Step 2 — Alignment (STAR)](#step-2-alignment-star)
+    - [Step 3 — Gene read counting & differential expression (Cuffdiff / downstream)](#step-3-gene-read-counting-differential-expression-cuffdiff-downstream)
+  - [Trapnell final — differential expression results (what to do)](#trapnell-final-differential-expression-results-what-to-do)
+    - [Task 1 — Run differential expression (cuffdiff)](#task-1-run-differential-expression-cuffdiff)
+    - [Task 2 — Identify significant genes](#task-2-identify-significant-genes)
+    - [Task 3 — Make 1–2 plots](#task-3-make-12-plots)
+    - [Task 4 — Package your deliverables for submission](#task-4-package-your-deliverables-for-submission)
+    - [Terminology note (SRA RunInfo)](#terminology-note-sra-runinfo)
+  - [Project pick (group project) — dataset selection + validation hub](#project-pick-group-project-dataset-selection-validation-hub)
+  - [Summary — FastQC run & delivery](#summary-fastqc-run-delivery)
+    - [Lab 3 report pre-submission review — 2026-02-19](#lab-3-report-pre-submission-review-2026-02-19)
+    - [Work log (Sequoia / zebrafish) — 2026-02-19](#work-log-sequoia-zebrafish-2026-02-19)
+    - [Key locations (Sequoia)](#key-locations-sequoia)
+    - [Binaries (confirmed)](#binaries-confirmed)
+    - [FastQC (one job at a time; Lab 1 style)](#fastqc-one-job-at-a-time-lab-1-style)
+    - [Download + QC pipeline (two nohup jobs total)](#download-qc-pipeline-two-nohup-jobs-total)
+    - [Shared folder permissions (group access)](#shared-folder-permissions-group-access)
+    - [Copy the 3 split files to shared drive (only the member files)](#copy-the-3-split-files-to-shared-drive-only-the-member-files)
+    - [Shared “FastQC inputs” staging (optional)](#shared-fastqc-inputs-staging-optional)
+    - [Cleanup notes (home directory)](#cleanup-notes-home-directory)
+    - [Git metadata removal (shared drive)](#git-metadata-removal-shared-drive)
+  - [📊 Dataset Validation Example: PRJNA717662 (Manual, Transparent Steps)](#dataset-validation-example-prjna717662-manual-transparent-steps)
+    - [1. Download the SRA RunInfo Table (CSV)](#1-download-the-sra-runinfo-table-csv)
+    - [2. Inspect and Filter the CSV](#2-inspect-and-filter-the-csv)
+    - [3. Document Your Filtering](#3-document-your-filtering)
+    - [4. Next Steps](#4-next-steps)
+  - [Step‑by‑step (commands & notes) 🔧](#stepbystep-commands-notes)
+  - [Where to look 📁](#where-to-look)
+  - [Next steps — choose one 👇](#next-steps-choose-one)
+  - [Step‑by‑step (run manually on the server) 🔧](#stepbystep-run-manually-on-the-server)
+    - [FastQC quick checklist (server‑side) 🔧](#fastqc-quick-checklist-serverside)
+  - [New candidate studies (high level)](#new-candidate-studies-high-level)
+  - [Quick confirmation](#quick-confirmation)
+  - [Datasets that meet all requirements](#datasets-that-meet-all-requirements)
+    - [1) PRJNA1406761 — iPSC small‑intestine organoids 🧬](#1-prjna1406761-ipsc-smallintestine-organoids)
+    - [2) PRJNA717662 — Long‑term blood transcriptome after SARS‑CoV‑2 🩸](#2-prjna717662-longterm-blood-transcriptome-after-sarscov2)
+  - [Datasets that *mostly* meet constraints (need a quick run‑level check) ⚠️](#datasets-that-mostly-meet-constraints-need-a-quick-runlevel-check)
+    - [PRJNA748788 — CPTAC TNBC (chemo response)](#prjna748788-cptac-tnbc-chemo-response)
+    - [PRJNA910283 — CPTAC Ovarian (HGSOC)](#prjna910283-cptac-ovarian-hgsoc)
+    - [PsychENCODE umbrella (PRJNA308995 / PRJNA304334) — brain RNA‑seq](#psychencode-umbrella-prjna308995-prjna304334-brain-rnaseq)
+  - [Exact stepwise checks (copy‑paste friendly) 🔧](#exact-stepwise-checks-copypaste-friendly)
+  - [Quick pass/fail summary](#quick-passfail-summary)
+    - [PRJNA1406761 — iPSC small-intestine organoids](#prjna1406761-ipsc-small-intestine-organoids)
+    - [PRJNA717662 — Long-term blood transcriptome (post-COVID)](#prjna717662-long-term-blood-transcriptome-post-covid)
+    - [PRJNA748788 — CPTAC TNBC (chemo response)](#prjna748788-cptac-tnbc-chemo-response-1)
+  - [What “SRA” means (short)](#what-sra-means-short)
+- [How to verify each requirement (where + what to look for)](#how-to-verify-each-requirement-where-what-to-look-for)
+- [Dataset-by-dataset, with where to check](#dataset-by-dataset-with-where-to-check)
+  - [1) TCGA Breast Cancer (TCGA‑BRCA)](#1-tcga-breast-cancer-tcgabrca)
+  - [2) GTEx Multi‑Tissue](#2-gtex-multitissue)
+  - [3) COVID‑19 BioProject (PRJNA631753 or PRJNA646224)](#3-covid19-bioproject-prjna631753-or-prjna646224)
+  - [4) Recount3 (Diabetes collections)](#4-recount3-diabetes-collections)
+- [Final note you can tell them](#final-note-you-can-tell-them)
+  - [What is SRA?](#what-is-sra)
+  - [How to Check the Requirements](#how-to-check-the-requirements)
+    - [1. TCGA Breast Cancer (TCGA-BRCA)](#1-tcga-breast-cancer-tcga-brca)
+    - [2. GTEx Multi-Tissue](#2-gtex-multi-tissue)
+    - [3. COVID-19 BioProject (PRJNA631753 or PRJNA646224)](#3-covid-19-bioproject-prjna631753-or-prjna646224)
+    - [4. Recount3 - Diabetes Study Collection](#4-recount3-diabetes-study-collection)
+    - [5. Sleep Deprivation (GSE171571, GSE48113)](#5-sleep-deprivation-gse171571-gse48113)
+    - [6. Type 2 Diabetes by Ancestry (GSE185013, GSE106089)](#6-type-2-diabetes-by-ancestry-gse185013-gse106089)
+    - [7. Sickle Cell Anemia (GSE162133, GSE158393)](#7-sickle-cell-anemia-gse162133-gse158393)
+  - [Final Note](#final-note)
+  - [Summary of Work Done](#summary-of-work-done)
+  - [Manual Steps to Wrap Up](#manual-steps-to-wrap-up)
+    - [1. Download FASTQ Files from ENA](#1-download-fastq-files-from-ena)
+    - [2. Run FastQC on Downloaded FASTQs](#2-run-fastqc-on-downloaded-fastqs)
+    - [3. Package FastQC Results](#3-package-fastqc-results)
+    - [4. Transfer Results to Your Local Machine](#4-transfer-results-to-your-local-machine)
+    - [5. Check and Submit](#5-check-and-submit)
+  - [Assignment Writeup: SRA Dataset Selection & Evaluation](#assignment-writeup-sra-dataset-selection-evaluation)
+    - [1. PRJNA717662 — Long-term Blood Transcriptome after SARS-CoV-2](#1-prjna717662-long-term-blood-transcriptome-after-sars-cov-2)
+    - [2. PRJNA292477 — TOPMed / Framingham Heart Study Transcriptome](#2-prjna292477-topmed-framingham-heart-study-transcriptome)
+  - [Questions to Ask Your Professor](#questions-to-ask-your-professor)
+  - [Validating Chosen Datasets](#validating-chosen-datasets)
+- [Write-up Feedback](#write-up-feedback)
+- [Research Interst](#research-interst)
+- [Reasoning](#reasoning)
+<!-- TOC-END -->
+
+---
+
 ## 📋 Group project — task & description (extracted)
 - **Teams & timing**
   - Students **form teams and pick one project during Week 3**. (First & second picks with justification due Week 4 Monday.)
@@ -175,7 +268,141 @@ Submit as a single zip (or whatever the dropbox requires):
 Keep dataset exploration, “why we picked it”, and run-level validation evidence here (RunInfo CSVs, filtered SRR lists, and QC summaries).
 
 ## Summary — FastQC run & delivery
----
+
+### Lab 3 report pre-submission review — 2026-02-19
+
+Reviewed:
+- `Semester5/BIOL550/BIOL550-Lab/lab3/BIOL550 Lab 3 Report.pdf`
+- `Semester5/BIOL550/BIOL550-Lab/lab3/BIOL550_Lab3_Report.html`
+
+Suggested fixes before submitting:
+- Make the volcano plot description consistent with your significance threshold: you filter with `q_value <= 0.05`, so label/describe significance as `-log10(q)` (or explicitly say you plotted `-log10(p)`).
+- Fix typo: `filegene_exp.diff` → `file gene_exp.diff`.
+- Improve readability of command blocks (slightly larger font and/or shorten long paths).
+- Add 1–2 sentences interpreting the result summary (and define what C1 vs C2 represent if not obvious to the reader).
+
+### Work log (Sequoia / zebrafish) — 2026-02-19
+
+This records the exact server workflow we used for the zebrafish group project on `sequoia` (BioProject `PRJNA1277581`), including where files live, which binaries we used, and the scripts/commands we created to keep downloads + QC sequential and easy to monitor.
+
+### Key locations (Sequoia)
+
+**Shared drive (`/home/zebrafish/`)**
+- Flat FASTQ destination (group-writable): `/home/zebrafish/sra_runs/`
+  - Files look like: `SRR34002439_1.fastq.gz`, `SRR34002439_2.fastq.gz`
+- FastQC outputs (shared): `/home/zebrafish/fastqc_out/`
+- Pipeline state/logs (shared; logs + pids + temp): `/home/zebrafish/sra_runs_pipeline/`
+- Split files copy for the team (shared): `/home/zebrafish/members_sra_runs/`
+
+**Your home (`/home/pzg8794/`)**
+- Tools + scripts: `/home/pzg8794/zebrafish/`
+  - SRA Toolkit: `/home/pzg8794/zebrafish/tools/sratoolkit/bin/`
+  - Pipeline script: `/home/pzg8794/zebrafish/scripts/sra_runs_pipeline.sh`
+  - Home cleanup script: `/home/pzg8794/zebrafish/scripts/cleanup_home_zebrafish_layout.sh`
+- Flat FASTQs in your home (for “extras”): `/home/pzg8794/zebrafish/sra_runs/`
+
+### Binaries (confirmed)
+
+- FastQC (Lab 1 server binary): `/usr/local/bin/FASTQC_11.9/fastqc` (FastQC `v0.11.9`)
+- SRA Toolkit (home install):  
+  - `/home/pzg8794/zebrafish/tools/sratoolkit/bin/prefetch`  
+  - `/home/pzg8794/zebrafish/tools/sratoolkit/bin/fasterq-dump`  
+  - `/home/pzg8794/zebrafish/tools/sratoolkit/bin/fastq-dump`
+
+If `fastq-dump` fails due to missing shared libraries, run it with an explicit library path:
+```bash
+env PATH=/home/pzg8794/zebrafish/tools/sratoolkit/bin:$PATH LD_LIBRARY_PATH=/home/pzg8794/zebrafish/tools/sratoolkit/lib64:/home/pzg8794/zebrafish/tools/sratoolkit/lib:${LD_LIBRARY_PATH:-} /home/pzg8794/zebrafish/tools/sratoolkit/bin/fastq-dump --help
+```
+
+### FastQC (one job at a time; Lab 1 style)
+
+Create output dir once:
+```bash
+mkdir -p /home/zebrafish/fastqc_out
+```
+
+Run FastQC on one file (single-thread; “server is busy” mode):
+```bash
+/usr/local/bin/FASTQC_11.9/fastqc -t 1 -o /home/zebrafish/fastqc_out /home/zebrafish/sra_runs/SRR34002439_1.fastq.gz
+```
+
+Run FastQC with `nohup` (so you can disconnect and monitor logs):
+```bash
+nohup /usr/local/bin/FASTQC_11.9/fastqc -t 1 -o /home/zebrafish/fastqc_out /home/zebrafish/sra_runs/SRR34002439_2.fastq.gz > /home/zebrafish/fastqc_out/fastqc.SRR34002439_2.nohup.log 2>&1 &
+```
+
+### Download + QC pipeline (two nohup jobs total)
+
+We created a script that runs **exactly two background jobs**:
+1) downloader: `prefetch` → `fasterq-dump` → `gzip` → move into `/home/zebrafish/sra_runs/` (flat)
+2) fastqc worker: waits for both mates, then runs FastQC sequentially into `/home/zebrafish/fastqc_out/`
+
+Script:
+- `/home/pzg8794/zebrafish/scripts/sra_runs_pipeline.sh`
+
+Start (keeps load low: `DUMP_THREADS=1`, `FASTQC_THREADS=1`):
+```bash
+DUMP_THREADS=1 FASTQC_THREADS=1 SLEEP_SECONDS=60 /home/pzg8794/zebrafish/scripts/sra_runs_pipeline.sh start
+```
+
+Status + monitoring:
+```bash
+/home/pzg8794/zebrafish/scripts/sra_runs_pipeline.sh status
+tail -f /home/zebrafish/sra_runs_pipeline/download.nohup.log
+tail -f /home/zebrafish/sra_runs_pipeline/fastqc.nohup.log
+```
+
+Stop:
+```bash
+/home/pzg8794/zebrafish/scripts/sra_runs_pipeline.sh stop
+```
+
+Important behavior (so you don’t panic):
+- `/home/zebrafish/sra_runs/` stays empty until a run finishes converting **and** both mates are gzipped.
+- During download/convert, temporary files can be huge and live under: `/home/zebrafish/sra_runs_pipeline/tmp/`
+- After a run completes successfully, the script removes the per-run temp directory and leaves only:
+  - final `.fastq.gz` files in `/home/zebrafish/sra_runs/`
+  - logs/pids in `/home/zebrafish/sra_runs_pipeline/`
+
+### Shared folder permissions (group access)
+
+Create the shared flat run directory with group permissions (setgid + group `zebrafish`):
+```bash
+mkdir -p /home/zebrafish/sra_runs && chgrp zebrafish /home/zebrafish/sra_runs && chmod 2770 /home/zebrafish/sra_runs
+```
+
+Tip (recommended in interactive shells before copying/creating files):
+```bash
+umask 002
+```
+
+### Copy the 3 split files to shared drive (only the member files)
+
+```bash
+mkdir -p /home/zebrafish/members_sra_runs && cp -v /home/pzg8794/zebrafish/metadata/PRJNA1277581/splits/runs.member.{piter,nikhi,samuel}.txt /home/zebrafish/members_sra_runs/ && chmod 775 /home/zebrafish/members_sra_runs && chmod 664 /home/zebrafish/members_sra_runs/runs.member.*.txt
+```
+
+### Shared “FastQC inputs” staging (optional)
+
+We also used a shared staging folder to keep all `.fastq.gz` in one place:
+- `/home/zebrafish/fastqc_inputs/PRJNA1277581/`
+
+### Cleanup notes (home directory)
+
+To keep your home directory layout clean and accessible, we moved nested FASTQs from:
+- `/home/pzg8794/zebrafish/data/PRJNA1277581/SRR*/SRR*_*.fastq.gz`
+into one flat folder:
+- `/home/pzg8794/zebrafish/sra_runs/`
+
+Script used:
+- `/home/pzg8794/zebrafish/scripts/cleanup_home_zebrafish_layout.sh`
+
+### Git metadata removal (shared drive)
+
+If `/home/zebrafish/` should not be a git repo, remove/disable git metadata:
+```bash
+cd /home/zebrafish && mv .git ".git.disabled.$(date +%F_%H%M%S)" && mv .gitignore ".gitignore.disabled.$(date +%F_%H%M%S)"
+```
 
 ## 📊 Dataset Validation Example: PRJNA717662 (Manual, Transparent Steps)
 

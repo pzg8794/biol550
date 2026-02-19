@@ -27,6 +27,13 @@
   "/home/pzg8794/BIOL550/Lab1/Trapnell_Data/Trapnell Data/Raw reads/GSM794486_C2_R1_1.fq.gz"
 ```
 
+**Expected outputs (written under `~/BIOL550/Lab1/fastqc_out/`):**
+```text
+fastqc_out/
+  GSM794486_C2_R1_1_fastqc.html
+  GSM794486_C2_R1_1_fastqc.zip
+```
+
 **Batch execution approach used (conceptually):** looped over `Raw reads/*.fq.gz` and ran FastQC per file, writing `*_fastqc.html` and `*_fastqc.zip` outputs.
 
 **Quantitative observations:**
@@ -58,6 +65,18 @@ for f in "$READS"/*.fq.gz; do
 done
 ```
 
+**Expected outputs (written under `~/BIOL550/Lab1/fastx_trimmed/`):**
+```text
+fastx_trimmed/
+  GSM794483_C1_R1_1.trim.fq
+  GSM794483_C1_R1_2.trim.fq
+  GSM794484_C1_R2_1.trim.fq
+  GSM794484_C1_R2_2.trim.fq
+  ...
+  GSM794488_C2_R3_1.trim.fq
+  GSM794488_C2_R3_2.trim.fq
+```
+
 **Quantitative observations:**
 - Trimmed FASTQs produced: **12** (`~/BIOL550/Lab1/fastx_trimmed/*.trim.fq`).
 - Disk footprint of trimmed outputs: **~22 GB** total (trimmed files are uncompressed).
@@ -74,6 +93,17 @@ mkdir -p "$TRIM_QC"
 
 nohup /usr/local/bin/FASTQC_11.9/fastqc -t 1 -o "$TRIM_QC" "$TRIM"/*.trim.fq \
   > "$TRIM_QC/fastqc_trimmed.nohup.log" 2>&1 &
+```
+
+**Expected outputs (written under `~/BIOL550/Lab1/fastqc_trimmed_out/`):**
+```text
+fastqc_trimmed_out/
+  fastqc_trimmed.nohup.log
+  GSM794483_C1_R1_1.trim_fastqc.html
+  GSM794483_C1_R1_1.trim_fastqc.zip
+  ...
+  GSM794488_C2_R3_2.trim_fastqc.html
+  GSM794488_C2_R3_2.trim_fastqc.zip
 ```
 
 **FastQC summary (trimmed):**
@@ -102,6 +132,47 @@ nohup /usr/local/bin/STAR/STAR --runMode genomeGenerate \
   > ~/star_index/droso_refseq_ncbi/genomeGenerate.nohup.log 2>&1 &
 ```
 
+### What is the STAR “genomeDir” (and why your folder name may differ)
+
+The STAR genome directory (passed as `--genomeDir`) is the **reference index folder** STAR reads during alignment. It is created by the `--runMode genomeGenerate` command above.
+
+Different students may have this folder named differently depending on where they built it (or if a prebuilt index was provided). Examples of valid “genomeDir” paths include:
+- `~/star_index/droso_refseq_ncbi/`
+- `~/BIOL550/Lab1/star_index/...`
+- `~/_STARgenome/` (common naming convention: a folder ending in `_STARgenome`)
+
+**How to tell you found the right folder:** it should contain the large STAR index files (`Genome`, `SA`, `SAindex`) *and* the annotation-derived tables (like `geneInfo.tab`). If `Genome/SA/SAindex` are missing, it is likely an incomplete/partial directory and STAR alignment will fail.
+
+**Quick verification commands:**
+```bash
+GENOMEDIR="~/_STARgenome"   # replace with your path
+ls -lh "$GENOMEDIR"/{Genome,SA,SAindex,geneInfo.tab} 2>/dev/null
+```
+
+**Example (from our server):** `geneInfo.tab` in one STAR genome directory was `210,462` bytes (~206 KB).
+
+**Expected outputs (written under `~/star_index/droso_refseq_ncbi/`):**
+```text
+droso_refseq_ncbi/
+  genomeGenerate.nohup.log
+  Genome
+  SA
+  SAindex
+  genomeParameters.txt
+  chrName.txt
+  chrLength.txt
+  chrStart.txt
+  chrNameLength.txt
+  exonInfo.tab
+  exonGeTrInfo.tab
+  geneInfo.tab
+  transcriptInfo.tab
+  sjdbInfo.txt
+  sjdbList.fromGTF.out.tab
+```
+
+**How it is used (alignment):** the STAR alignment command references this folder via `--genomeDir` (STAR reads these index files; it does *not* rebuild them during alignment).
+
 **Alignment command (paired-end; 1 thread):**
 ```bash
 READS="/home/pzg8794/BIOL550/Lab1/Trapnell_Data/Trapnell Data/Raw reads"
@@ -120,6 +191,17 @@ nohup /usr/local/bin/STAR/STAR \
   > "$OUT/$SAMPLE/star.nohup.log" 2>&1 &
 ```
 
+**Expected outputs (written under `~/BIOL550/Lab1/star_align/GSM794486_C2_R1/`):**
+```text
+star_align/GSM794486_C2_R1/
+  Aligned.sortedByCoord.out.bam
+  Log.final.out
+  Log.out
+  Log.progress.out
+  SJ.out.tab
+  star.nohup.log
+```
+
 **Quantitative observations (from `Log.final.out`):**
 - Input reads: **11,607,325**
 - Uniquely mapped: **11,516,696 (99.22%)**
@@ -133,4 +215,3 @@ nohup /usr/local/bin/STAR/STAR \
 
 MultiQC summary report (local):
 - `Semester5/BIOL550/BIOL550-Lab/multiqc_report/multiqc_report.html`
-

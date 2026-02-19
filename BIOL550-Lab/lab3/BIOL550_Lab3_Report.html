@@ -25,6 +25,12 @@
       pre { white-space: pre-wrap; word-break: break-word; border: none !important; box-shadow: none !important; outline: none !important; }
       .img-row { break-inside: avoid; }
     }
+  .img-col p.note{
+    font-size: 12px;   /* match your code size */
+    line-height: 1.1;
+    margin: 4px 0 0 0;
+    text-align: center;
+  }
   </style>
 </head>
 <body>
@@ -51,7 +57,8 @@ Top down (by log2FC): Nep2, RpS19b, Amy-d, CG6847, Aplip1</code></pre>
 
   <h3>STAR re-alignment (to ensure <code>XS</code> tags)</h3>
   <p>
-    STAR was re-run for all six samples with <code>--outSAMstrandField intronMotif</code> so that spliced alignments include <code>XS</code> tags. Representative command:
+    STAR was re-run for all six samples with <code>--outSAMstrandField intronMotif</code> so that spliced alignments include <code>XS</code> tags. 
+    <!-- Representative command: -->
   </p>
   <pre><code>STAR \
   --genomeDir /home/pzg8794/star_index/classref_trapnell_zip_bdgp6_84_v2 \
@@ -80,44 +87,59 @@ Top down (by log2FC): Nep2, RpS19b, Amy-d, CG6847, Aplip1</code></pre>
   /home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794486_C2_R1/Aligned.sortedByCoord.out.bam,/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794487_C2_R2/Aligned.sortedByCoord.out.bam,/home/pzg8794/BIOL550/Lab1/star_align_classref_v2_all_xs/GSM794488_C2_R3/Aligned.sortedByCoord.out.bam</code></pre>
 
 
+
   <h3>Downstream summary (local)</h3>
   <p>
-    From <code>gene_exp.diff</code>, I filtered valid tests by keeping rows where <code>status == "OK"</code>, then defined significance at <code>q_value &lt;= 0.05</code>. Then, I generated a volcano plot (log2FC vs. −log10 p-value) and a top-gene bar chart (ranked by log2FC) as sanity checks on effect-size distribution and signal presence.
-  </p>
-
-
-  <div class="img-row">
-    <div class="img-col">
-      <h3>Volcano plot</h3>
-      <p>Generated from <code>gene_exp.diff</code></p>
-      <img src="figures/volcano_gene_exp_python.png" alt="Volcano plot (gene_exp.diff)" />
-      <div class="figure-title">Volcano plot: <code>gene_exp.diff</code></div>
-    </div>
-
-    <div class="img-col">
-      <h3>Top 20 DE genes bar chart</h3>
-      <p>Top up/down genes ranked by log2FC</p>
-      <img src="figures/top20_bar_log2fc.png" alt="Top 20 DE genes bar chart" />
-      <div class="figure-title">Top DE genes (by log2FC)</div>
-    </div>
-  </div>
-  
-  
-  <h2>Problems encountered</h2>
-  <p>
-    The main issue was that the initial STAR BAMs from Lab 2 did not contain <code>XS</code> strand tags on spliced reads, which caused <code>cuffdiff</code> to fail. This required going back and re-aligning all six samples with <code>--outSAMstrandField intronMotif</code> to produce XS-tagged BAMs.
-  </p>
-  <p>
-    A second point that required attention was annotation choice: the reference directory contains both GTF and GFF3. Since <code>cuffdiff</code> expects GTF2, I used <code>Drosophila_melanogaster.BDGP6.84.gtf</code> (rather than the GFF3 file) to avoid format incompatibility and conversion.
+    From the file<code>gene_exp.diff</code>, I filtered valid tests by keeping rows where <code>status == "OK"</code>, and defined significance at <code>q_value &lt;= 0.05</code>. Then, I generated a volcano plot (log2FC vs. -log10 p-value) and a top-gene bar chart (ranked by log2FC) as sanity checks on effect-size distribution and signal presence.
   </p>
   <!-- <p>
+    For the resubmission file requested in feedback, I exported only the columns needed for interpretation (<code>gene</code> and <code>q_value</code>) for significant results.
+  </p>
+  <p class="note">
+    Resubmission file: <code>exports/cuffdiff_classref_v2_xs/differential_results_gene_qvalues.tsv</code> (columns: <code>gene</code>, <code>q_value</code>).
+  </p> -->
+
+
+<div class="img-row">
+  <div class="img-col">
+    <h3>Volcano plot</h3>
+    <img src="figures/volcano_gene_exp_python.png"
+         alt="Volcano plot (gene_exp.diff)"
+         style="height: 300px; width: auto;" />
+    <p class="note">
+      Each gene is a point: x = log2 fold-change (effect size), y = -log10(p) (significance score), so “outliers” pop into corners.
+    </p>
+    <div class="figure-title">Volcano plot: <code>gene_exp.diff</code></div>
+  </div>
+
+  <div class="img-col">
+    <h3>Top 20 DE genes bar chart</h3>
+    <img src="figures/top20_bar_log2fc.png"
+         alt="Top 20 DE genes bar chart"
+         style="height: 300px; width: auto;" />
+    <p class="note">
+      Ranking genes by signed log2FC while showing the biggest movers up vs. down as bars.
+    </p>
+    <div class="figure-title">Top DE genes (by log2FC)</div>
+  </div>
+</div>
+
+  
+<h2>Problems encountered</h2>
+<p>
+  The first issue was annotation format: the reference folder includes both a GTF and a GFF3 file. The GFF3 file uses <code>ID=</code>/<code>Parent=</code> attributes, whereas the GTF uses the <code>gene_id</code>/<code>transcript_id</code> fields. After inspecting both files, I used the GTF (<code>Drosophila_melanogaster.BDGP6.84.gtf</code>) because it was the most compatible with STAR and <code>cuffdiff</code> with minimal changes. The second issue was that the initial STAR BAMs from Lab 2 did not contain <code>XS</code> strand tags on spliced reads, which caused <code>cuffdiff</code> to fail. This required going back and re-aligning all six samples with <code>--outSAMstrandField intronMotif</code> to produce XS-tagged BAMs.
+</p>
+
+<!-- <p>
+
     Finally, FastQC “FAIL” flags from the raw data (quality/GC-related modules) were not resolved by earlier trimming attempts. Because STAR mapping performance remained strong after alignment, I proceeded with the same input reads rather than applying additional aggressive filtering that could reduce usable read depth.
   </p> -->
 
-  <h2>Goals for the coming week</h2>
-  <p>
-    Next week I will interpret the <code>cuffdiff</code> outputs more thoroughly by reviewing the strongest DE genes, understanding and checking directionality for the C1 vs. C2 contrast, and confirming replicate consistency. Also, I will further explore CummeRbund output to summarize results, and begin first steps on the project dataset pipeline for the group project.
-  </p>
+<h2>Goals for the coming week</h2>
+<p>
+  Next week I will (1) further explore and improve the visualization workflow (e.g., volcano and MA-style plots) to better interpret the <code>cuffdiff</code> outputs, (2) run the FASTQ “dump” workflow for our zebrafish project data using the SRA Toolkit (<code>prefetch</code> + <code>fasterq-dump</code>) and validate our wrapper script for downloading an arbitrary number of runs, and (3) run <code>FastQC</code> on the downloaded FASTQs and begin reviewing the QC reports to guide downstream analysis.
+</p>
+
 
 </body>
 </html>
