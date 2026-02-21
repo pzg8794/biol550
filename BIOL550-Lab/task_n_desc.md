@@ -291,8 +291,7 @@ This records the exact server workflow we used for the zebrafish group project o
 - Flat FASTQ destination (group-writable): `/home/zebrafish/sra_runs/`
   - Files look like: `SRR34002439_1.fastq.gz`, `SRR34002439_2.fastq.gz`
 - FastQC outputs (shared): `/home/zebrafish/fastqc_out/`
-- Pipeline state/logs (shared; logs + pids + temp): `/home/zebrafish/sra_runs_pipeline/`
-- Split files copy for the team (shared): `/home/zebrafish/members_sra_runs/`
+- Split run ID lists for the team (shared): `/home/zebrafish/split_run_ids/`
 
 **Your home (`/home/pzg8794/`)**
 - Tools + scripts: `/home/pzg8794/zebrafish/`
@@ -300,6 +299,7 @@ This records the exact server workflow we used for the zebrafish group project o
   - Pipeline script: `/home/pzg8794/zebrafish/scripts/sra_runs_pipeline.sh`
   - Home cleanup script: `/home/pzg8794/zebrafish/scripts/cleanup_home_zebrafish_layout.sh`
 - Flat FASTQs in your home (for “extras”): `/home/pzg8794/zebrafish/sra_runs/`
+- Pipeline state/logs (not shared; logs + pids + temp): `/home/pzg8794/sra_runs_pipeline/`
 
 ### Binaries (confirmed)
 
@@ -348,8 +348,8 @@ DUMP_THREADS=1 FASTQC_THREADS=1 SLEEP_SECONDS=60 /home/pzg8794/zebrafish/scripts
 Status + monitoring:
 ```bash
 /home/pzg8794/zebrafish/scripts/sra_runs_pipeline.sh status
-tail -f /home/zebrafish/sra_runs_pipeline/download.nohup.log
-tail -f /home/zebrafish/sra_runs_pipeline/fastqc.nohup.log
+tail -f /home/pzg8794/sra_runs_pipeline/download.nohup.log
+tail -f /home/pzg8794/sra_runs_pipeline/fastqc.nohup.log
 ```
 
 Stop:
@@ -359,10 +359,10 @@ Stop:
 
 Important behavior (so you don’t panic):
 - `/home/zebrafish/sra_runs/` stays empty until a run finishes converting **and** both mates are gzipped.
-- During download/convert, temporary files can be huge and live under: `/home/zebrafish/sra_runs_pipeline/tmp/`
+- During download/convert, temporary files can be huge and live under: `/home/pzg8794/sra_runs_pipeline/tmp/`
 - After a run completes successfully, the script removes the per-run temp directory and leaves only:
   - final `.fastq.gz` files in `/home/zebrafish/sra_runs/`
-  - logs/pids in `/home/zebrafish/sra_runs_pipeline/`
+  - logs/pids in `/home/pzg8794/sra_runs_pipeline/`
 
 ### Shared folder permissions (group access)
 
@@ -379,7 +379,7 @@ umask 002
 ### Copy the 3 split files to shared drive (only the member files)
 
 ```bash
-mkdir -p /home/zebrafish/members_sra_runs && cp -v /home/pzg8794/zebrafish/metadata/PRJNA1277581/splits/runs.member.{piter,nikhi,samuel}.txt /home/zebrafish/members_sra_runs/ && chmod 775 /home/zebrafish/members_sra_runs && chmod 664 /home/zebrafish/members_sra_runs/runs.member.*.txt
+mkdir -p /home/zebrafish/split_run_ids && cp -v /home/pzg8794/zebrafish/metadata/PRJNA1277581/splits/runs.member.{piter,nikhi,samuel}.txt /home/zebrafish/split_run_ids/ && chgrp zebrafish /home/zebrafish/split_run_ids && chmod 2770 /home/zebrafish/split_run_ids && chmod 664 /home/zebrafish/split_run_ids/runs.member.*.txt
 ```
 
 ### Shared “FastQC inputs” staging (optional)

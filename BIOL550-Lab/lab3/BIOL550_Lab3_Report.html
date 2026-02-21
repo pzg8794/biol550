@@ -99,16 +99,12 @@ Top down (by log2FC): Nep2, RpS19b, Amy-d, CG6847, Aplip1</code></pre>
     Resubmission file: <code>exports/cuffdiff_classref_v2_xs/differential_results_gene_qvalues.tsv</code> (columns: <code>gene</code>, <code>q_value</code>).
   </p> -->
 
-
 <div class="img-row">
   <div class="img-col">
     <h3>Volcano plot</h3>
     <img src="figures/volcano_gene_exp_python.png"
          alt="Volcano plot (gene_exp.diff)"
          style="height: 300px; width: auto;" />
-    <p class="note">
-      Each gene is a point: x = log2 fold-change (effect size), y = -log10(p) (significance score), so “outliers” pop into corners.
-    </p>
     <div class="figure-title">Volcano plot: <code>gene_exp.diff</code></div>
   </div>
 
@@ -117,12 +113,13 @@ Top down (by log2FC): Nep2, RpS19b, Amy-d, CG6847, Aplip1</code></pre>
     <img src="figures/top20_bar_log2fc.png"
          alt="Top 20 DE genes bar chart"
          style="height: 300px; width: auto;" />
-    <p class="note">
-      Ranking genes by signed log2FC while showing the biggest movers up vs. down as bars.
-    </p>
     <div class="figure-title">Top DE genes (by log2FC)</div>
   </div>
 </div>
+
+<p>
+  These two figures summarize gene-level differential expression from <code>gene_exp.diff</code>. The volcano plot places each gene by effect size (x = log2 fold-change, C1 vs C2) and statistical evidence (y = -log10(p)), while significance is evaluated after multiple-testing correction using the FDR-adjusted <code>q_value</code> (genes with <code>q_value &lt;= 0.05</code> are highlighted in red). Most genes cluster near log2FC ~ 0 with low -log10(p), consistent with little or no change, whereas a smaller set rises into the upper tails where the estimated difference is large relative to replicate variability. In this run there were 8,289 valid ("OK") tests and 265 significant genes, with a strong bias toward C1-up regulation (257 up vs 8 down); the vertical guides at log2FC = -1 and +1 mark roughly 2-fold changes. The top-20 bar chart makes the largest effects explicit, including <code>Fatp</code> (~1.77), <code>crc</code> (~1.45), <code>scf</code> (~1.41), <code>CTPsyn</code> (~1.40), and <code>Df31</code> (~1.36) as prominent increases and <code>Nep2</code> (~ -0.99) and <code>RpS19b</code> (~ -0.85) as prominent decreases. Biologically, these hits are consistent with a condition-associated shift affecting metabolism and regulation (e.g., lipid transport/metabolism via <code>Fatp</code>, nucleotide metabolism via <code>CTPsyn</code>, and chromatin/nuclear organization via <code>Df31</code>), motivating follow-up at the pathway/process level (GO/pathways) rather than over-weighting individual gene names.
+</p>
 
   
 <h2>Problems encountered</h2>
@@ -132,12 +129,12 @@ Top down (by log2FC): Nep2, RpS19b, Amy-d, CG6847, Aplip1</code></pre>
 
 <!-- <p>
 
-    Finally, FastQC “FAIL” flags from the raw data (quality/GC-related modules) were not resolved by earlier trimming attempts. Because STAR mapping performance remained strong after alignment, I proceeded with the same input reads rather than applying additional aggressive filtering that could reduce usable read depth.
+    Finally, FastQC "FAIL" flags from the raw data (quality/GC-related modules) were not resolved by earlier trimming attempts. Because STAR mapping performance remained strong after alignment, I proceeded with the same input reads rather than applying additional aggressive filtering that could reduce usable read depth.
   </p> -->
 
 <h2>Goals for the coming week</h2>
 <p>
-  Next week I will (1) further explore and improve the visualization workflow (e.g., volcano and MA-style plots) to better interpret the <code>cuffdiff</code> outputs, (2) run the FASTQ “dump” workflow for our zebrafish project data using the SRA Toolkit (<code>prefetch</code> + <code>fasterq-dump</code>) and validate our wrapper script for downloading an arbitrary number of runs, and (3) run <code>FastQC</code> on the downloaded FASTQs and begin reviewing the QC reports to guide downstream analysis.
+  Next week I will (1) further explore and improve the visualization workflow (e.g., volcano and MA-style plots) to better interpret the <code>cuffdiff</code> outputs, (2) run the FASTQ "dump" workflow for our zebrafish project data using the SRA Toolkit (<code>prefetch</code> + <code>fasterq-dump</code>) and validate our wrapper script for downloading an arbitrary number of runs, and (3) run <code>FastQC</code> on the downloaded FASTQs and begin reviewing the QC reports to guide downstream analysis.
 </p>
 
 
