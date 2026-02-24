@@ -21,6 +21,20 @@ Course home (myCourses): https://mycourses.rit.edu/d2l/home/1199746
 ## Current work (status)
 
 - Lab task hub: `Semester5/BIOL550/BIOL550-Lab/task_n_desc.md`
+- Sequoia (group) — Nikhi pipeline (download + FastQC sequential) status:
+  ```bash
+  ACC=PRJNA1277581 MEMBER=nikhi RUNS_FILE=/home/zebrafish/split_run_ids/runs.member.nikhi.txt PIPE_DIR=/home/pzg8794/sra_runs_pipeline_nikhi /home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh status
+  ```
+- Sequoia (group) — Samuel pipeline status:
+  ```bash
+  ACC=PRJNA1277581 MEMBER=samuel RUNS_FILE=/home/zebrafish/split_run_ids/runs.member.samuel.txt PIPE_DIR=/home/pzg8794/sra_runs_pipeline_samuel /home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh status
+  ```
+- Sequoia (group) — run inventory (server) as of 2026-02-24:
+  - Complete runs in `/home/zebrafish/sra_runs`: **20**
+  - Missing SRRs (10): `SRR34002410 SRR34002412 SRR34002415 SRR34002419 SRR34002422 SRR34002425 SRR34002428 SRR34002431 SRR34002434 SRR34002437`
+- Side project / backup (Drive) — as of 2026-02-24:
+  - Folder root id: `1Ahm9GHalvjQEfQotQf3xhGHvZqEtLI-w`
+  - `sra_run_fastqs/`: **13** runs (26 files)
 - Lab 3 weekly report (HTML): `Semester5/BIOL550/BIOL550-Lab/lab3/BIOL550_Lab3_Report.html`
 - Lab 3 notebook: `Semester5/BIOL550/BIOL550-Lab/lab3/BIOL550_Lab3_Report.ipynb`
 - Trapnell DE submission artifact (zip): `Semester5/BIOL550/BIOL550-Lab/lab3/cuffdiff_results.zip` (contains `cuffdiff_classref_v2_xs/`)
@@ -131,6 +145,18 @@ done < "${ACC}_runs.txt"
 
 Notes:
 - If you’re scripting on the class server, check which tools exist: `command -v esearch efetch prefetch fasterq-dump`.
+- On `sequoia`, some binaries may not be on your `PATH`; known full paths we used:
+  - SRA Toolkit `prefetch` (real binary): `/usr/local/bin/sra_3.0.0/prefetch.3.0.0`
+  - SRA Toolkit `fastq-dump` (real binary): `/usr/local/bin/sra_3.0.0/fastq-dump-orig.3.0.0`
+  - SRA Toolkit `fasterq-dump` (symlink wrapper): `/usr/local/bin/sra_3.0.0/fasterq-dump` (links into `sratools.3.0.0`)
+  - SRA Toolkit `fasterq-dump` (real binary): `/usr/local/bin/sra_3.0.0/fasterq-dump-orig.3.0.0`
+  - FastQC: `/usr/local/bin/FASTQC_11.9/fastqc`
+  - We verified what’s in the professor-provided directory by listing the exact paths (symlinks vs real binaries):
+    ```bash
+    ls -la /usr/local/bin/sra_3.0.0/prefetch*
+    ls -la /usr/local/bin/sra_3.0.0/fastq-dump-orig.3.0.0
+    ls -la /usr/local/bin/sra_3.0.0/fasterq-dump*
+    ```
 - For class requirements, **filter runs first** using the RunInfo CSV (LibraryLayout, avgLength/avgSpotLen, spots/bases).
 
 ### Existing “worked example” already in these notes

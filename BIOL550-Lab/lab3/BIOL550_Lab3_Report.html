@@ -124,8 +124,17 @@ Top down (by log2FC): Nep2, RpS19b, Amy-d, CG6847, Aplip1</code></pre>
 </div>
 
 <p>
-  Together, the figures indicate that most genes show little evidence of differential expression (dense center of the volcano), while a relatively small subset rises into the tails with strong statistical support after multiple-testing correction (<code>q_value &lt;= 0.05</code>). Here, 8,289 tests passed as "OK" and 265 genes were significant, with a strong directional bias toward positive log2FC (257 up vs 8 down), consistent with many significant points on the right side of the volcano; the +/-1 guides correspond to roughly 2-fold changes. The bar chart highlights the largest effects among these significant genes, with prominent increases in <code>Fatp</code> (~1.77), <code>crc</code> (~1.45), <code>scf</code> (~1.41), <code>CTPsyn</code> (~1.40), and <code>Df31</code> (~1.36), and prominent decreases in <code>Nep2</code> (~ -0.99) and <code>RpS19b</code> (~ -0.85). Interpreted biologically, these top hits are consistent with a condition-associated shift that may involve metabolism and regulation (e.g., lipid transport/metabolism via <code>Fatp</code>, nucleotide metabolism via <code>CTPsyn</code>, and chromatin/nuclear organization via <code>Df31</code>), and they motivate follow-up at the pathway/process level (GO/pathways) to test whether specific processes are systematically perturbed between C1 and C2.
+  After filtering to <code>status == "OK"</code> and applying <code>q_value &le; 0.05</code>,
+  265 of 8,289 gene-level tests were significant; the volcano plot shows most genes near
+  log2FC &asymp; 0, with significant hits rising into the upper region of high &minus;log10(p).
+  With the <code>-L C1,C2</code> labeling, <code>log2(fold_change)</code> is computed as
+  log2(value<sub>2</sub>/value<sub>1</sub>), so positive log2FC corresponds to higher expression
+  in C2; the bar chart surfaces the largest-magnitude movers, with top upregulated genes
+  (e.g., <em>Fatp</em>, <em>CTPsyn</em>, <em>Df31</em>) suggesting shifts in lipid metabolism,
+  nucleotide biosynthesis, and chromatin-related regulation.
 </p>
+
+
 
   
 <h2>Problems encountered</h2>

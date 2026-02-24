@@ -285,6 +285,140 @@ Suggested fixes before submitting:
 
 This records the exact server workflow we used for the zebrafish group project on `sequoia` (BioProject `PRJNA1277581`), including where files live, which binaries we used, and the scripts/commands we created to keep downloads + QC sequential and easy to monitor.
 
+#### Update — Nikhi pipeline running (2026-02-22 to 2026-02-23)
+
+This is the “current state” snapshot for the runs assigned to `nikhi` using the server SRA Toolkit (`/usr/local/bin/sra_3.0.0`) and the shared output directories.
+
+- Script: `/home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh`
+- Runs list (shared): `/home/zebrafish/split_run_ids/runs.member.nikhi.txt`
+- Output FASTQs (shared, flat): `/home/zebrafish/sra_runs/`
+- FastQC output (shared): `/home/zebrafish/fastqc_out/`
+- Pipeline state/logs (home, logs + tmp; ok to keep private): `/home/pzg8794/sra_runs_pipeline_nikhi/`
+
+Status (single command):
+```bash
+ACC=PRJNA1277581 MEMBER=nikhi RUNS_FILE=/home/zebrafish/split_run_ids/runs.member.nikhi.txt PIPE_DIR=/home/pzg8794/sra_runs_pipeline_nikhi /home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh status
+```
+
+Monitor logs:
+```bash
+tail -f /home/pzg8794/sra_runs_pipeline_nikhi/download.nohup.log
+tail -f /home/pzg8794/sra_runs_pipeline_nikhi/fastqc.nohup.log
+```
+
+Verify only the expected jobs exist (2 workers + their child processes):
+```bash
+ps -u "$USER" -o pid,etime,pcpu,pmem,cmd | egrep 'sra_runs_pipeline|fastq-dump|fasterq-dump|prefetch|fastqc|nohup' | grep -v egrep
+```
+
+#### Update — Run inventory (server) — 2026-02-23
+
+- Current complete runs in `/home/zebrafish/sra_runs`: **18** (18 pairs / 36 `.fastq.gz` files).
+- Missing from the 30-run target (10 per member): **12**.
+
+Missing SRRs:
+- `SRR34002410`
+- `SRR34002411`
+- `SRR34002412`
+- `SRR34002414`
+- `SRR34002415`
+- `SRR34002419`
+- `SRR34002422`
+- `SRR34002425`
+- `SRR34002428`
+- `SRR34002431`
+- `SRR34002434`
+- `SRR34002437`
+
+Commands used to compute the missing list:
+```bash
+ls -1 /home/zebrafish/sra_runs/SRR*_1.fastq.gz 2>/dev/null | wc -l
+ls -1 /home/zebrafish/sra_runs/SRR*_2.fastq.gz 2>/dev/null | wc -l
+comm -12 <(ls -1 /home/zebrafish/sra_runs/SRR*_1.fastq.gz 2>/dev/null | sed 's#.*/##; s/_1\\.fastq\\.gz$//' | sort -u) <(ls -1 /home/zebrafish/sra_runs/SRR*_2.fastq.gz 2>/dev/null | sed 's#.*/##; s/_2\\.fastq\\.gz$//' | sort -u) | wc -l
+cat /home/zebrafish/split_run_ids/runs.member.piter.txt /home/zebrafish/split_run_ids/runs.member.nikhi.txt /home/zebrafish/split_run_ids/runs.member.samuel.txt | sort -u > /tmp/expected_30.txt
+ls -1 /home/zebrafish/sra_runs/SRR*_1.fastq.gz 2>/dev/null | sed 's#.*/##; s/_1\\.fastq\\.gz$//' | sort -u > /tmp/have.txt
+comm -23 /tmp/expected_30.txt /tmp/have.txt
+```
+
+#### Update — Run inventory (server) — 2026-02-24
+
+- Current complete runs in `/home/zebrafish/sra_runs`: **20** (20 pairs / 40 `.fastq.gz` files).
+- Completed since 2026-02-23 snapshot: `SRR34002411`, `SRR34002414`.
+- Missing from the 30-run target (10 per member): **10**.
+
+Missing SRRs:
+- `SRR34002410`
+- `SRR34002412`
+- `SRR34002415`
+- `SRR34002419`
+- `SRR34002422`
+- `SRR34002425`
+- `SRR34002428`
+- `SRR34002431`
+- `SRR34002434`
+- `SRR34002437`
+
+#### Update — Samuel pipeline started (Sequoia) — 2026-02-24
+
+- Script: `/home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh`
+- Runs list: `/home/zebrafish/split_run_ids/runs.member.samuel.txt`
+- Pipeline state/logs: `/home/pzg8794/sra_runs_pipeline_samuel/`
+
+Status:
+```bash
+ACC=PRJNA1277581 MEMBER=samuel RUNS_FILE=/home/zebrafish/split_run_ids/runs.member.samuel.txt PIPE_DIR=/home/pzg8794/sra_runs_pipeline_samuel /home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh status
+```
+
+Monitor logs:
+```bash
+tail -f /home/pzg8794/sra_runs_pipeline_samuel/download.nohup.log
+tail -f /home/pzg8794/sra_runs_pipeline_samuel/fastqc.nohup.log
+```
+
+Verify FastQC is active (separate worker):
+```bash
+pgrep -u "$USER" -fl 'FastQCApplication|fastqc_worker'
+```
+
+#### Update — Side project/backup (Mac → Drive) — 2026-02-24
+
+Goal: for the side project, keep FASTQs + FastQC outputs in Google Drive and avoid storing large FASTQs on the Mac.
+
+Drive snapshot (personal folder root id `1Ahm9GHalvjQEfQotQf3xhGHvZqEtLI-w`):
+- Remote: `equitable_mydrive:`
+- `sra_run_fastqs/`: **13** complete runs (26 files total)
+- `fastqc_out/`: exists (may be empty or partially filled depending on what was uploaded)
+
+Sanity checks:
+```bash
+rclone lsd equitable_mydrive: --drive-root-folder-id 1Ahm9GHalvjQEfQotQf3xhGHvZqEtLI-w
+rclone lsf equitable_mydrive:sra_run_fastqs --drive-root-folder-id 1Ahm9GHalvjQEfQotQf3xhGHvZqEtLI-w --max-depth 1 --include 'SRR*_1.fastq.gz' | wc -l
+rclone lsf equitable_mydrive:sra_run_fastqs --drive-root-folder-id 1Ahm9GHalvjQEfQotQf3xhGHvZqEtLI-w --max-depth 1 --include 'SRR*_2.fastq.gz' | wc -l
+```
+
+Pipeline (Mac) that enforces the rule: download 1 SRR → FastQC → upload to Drive → delete local:
+- Script: `/Users/pitergarcia/DataScience/tmp/zebrafish_prjna1277581_allruns_fastqc_to_drive.sh`
+- Mode: `--dump-mode fastq_dump_gzip` (lower disk usage; slower than `fasterq-dump`)
+
+Samuel runs list (reverse order) and “missing in Drive” subset:
+- Full reverse list: `/Users/pitergarcia/DataScience/tmp/runs.member.samuel.rev.txt`
+- Missing-in-Drive (reverse): `/Users/pitergarcia/DataScience/tmp/runs.member.samuel.missing_for_drive.rev.txt`
+  - Current contents: `SRR34002410 SRR34002412 SRR34002419 SRR34002415 SRR34002422 SRR34002425`
+
+Generate the missing list (Mac):
+```bash
+ROOT=1Ahm9GHalvjQEfQotQf3xhGHvZqEtLI-w
+rclone lsf equitable_mydrive:sra_run_fastqs --drive-root-folder-id "$ROOT" --max-depth 1 --include 'SRR*_1.fastq.gz' | sed -E 's/_1\\.fastq\\.gz$//' | sort -u > /Users/pitergarcia/DataScience/tmp/drive_have_srrs.txt
+tail -r /Users/pitergarcia/DataScience/Semester5/BIOL550/group_project/zebrafish/metadata/PRJNA1277581/splits/runs.member.samuel.txt | sed '/^\\s*$/d' > /Users/pitergarcia/DataScience/tmp/runs.member.samuel.rev.txt
+awk 'NR==FNR{have[$0]=1;next} !have[$0]{print $0}' /Users/pitergarcia/DataScience/tmp/drive_have_srrs.txt /Users/pitergarcia/DataScience/tmp/runs.member.samuel.rev.txt > /Users/pitergarcia/DataScience/tmp/runs.member.samuel.missing_for_drive.rev.txt
+```
+
+Start the Mac pipeline for Samuel’s missing runs (Mac):
+```bash
+nohup /Users/pitergarcia/DataScience/tmp/zebrafish_prjna1277581_allruns_fastqc_to_drive.sh --runs-file /Users/pitergarcia/DataScience/tmp/runs.member.samuel.missing_for_drive.rev.txt --drive-base equitable_mydrive: --drive-root-folder-id 1Ahm9GHalvjQEfQotQf3xhGHvZqEtLI-w --dump-mode fastq_dump_gzip --threads 2 --upload-fastq yes > /Users/pitergarcia/DataScience/tmp/samuel_mydrive_backfill.nohup.log 2>&1 &
+tail -f /Users/pitergarcia/DataScience/tmp/samuel_mydrive_backfill.nohup.log
+```
+
 ### Key locations (Sequoia)
 
 **Shared drive (`/home/zebrafish/`)**
@@ -297,9 +431,11 @@ This records the exact server workflow we used for the zebrafish group project o
 - Tools + scripts: `/home/pzg8794/zebrafish/`
   - SRA Toolkit: `/home/pzg8794/zebrafish/tools/sratoolkit/bin/`
   - Pipeline script: `/home/pzg8794/zebrafish/scripts/sra_runs_pipeline.sh`
+  - Pipeline script (server SRA Toolkit): `/home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh`
   - Home cleanup script: `/home/pzg8794/zebrafish/scripts/cleanup_home_zebrafish_layout.sh`
 - Flat FASTQs in your home (for “extras”): `/home/pzg8794/zebrafish/sra_runs/`
 - Pipeline state/logs (not shared; logs + pids + temp): `/home/pzg8794/sra_runs_pipeline/`
+- Pipeline state/logs (Nikhi run): `/home/pzg8794/sra_runs_pipeline_nikhi/`
 
 ### Binaries (confirmed)
 
@@ -308,6 +444,32 @@ This records the exact server workflow we used for the zebrafish group project o
   - `/home/pzg8794/zebrafish/tools/sratoolkit/bin/prefetch`  
   - `/home/pzg8794/zebrafish/tools/sratoolkit/bin/fasterq-dump`  
   - `/home/pzg8794/zebrafish/tools/sratoolkit/bin/fastq-dump`
+- SRA Toolkit (server install / professor-provided):
+  - `prefetch` (real binary): `/usr/local/bin/sra_3.0.0/prefetch.3.0.0`
+  - `fastq-dump` (real binary): `/usr/local/bin/sra_3.0.0/fastq-dump-orig.3.0.0`
+  - `fasterq-dump` (symlink wrapper exists): `/usr/local/bin/sra_3.0.0/fasterq-dump` (links into `sratools.3.0.0`)
+  - `fasterq-dump` (real binary): `/usr/local/bin/sra_3.0.0/fasterq-dump-orig.3.0.0`
+  - Example (writes paired-end mates directly as gzipped FASTQs; flat output dir):
+    ```bash
+    /usr/local/bin/sra_3.0.0/fastq-dump-orig.3.0.0 --split-files --origfmt --gzip -O /home/zebrafish/sra_runs SRR34002439
+    ```
+
+#### How we verified the server SRA Toolkit binaries
+
+We confirmed what is available under the professor-provided install directory using `ls -la` on the exact paths (this also reveals symlinks vs “real” binaries):
+```bash
+ls -la /usr/local/bin/sra_3.0.0/prefetch*
+ls -la /usr/local/bin/sra_3.0.0/fastq-dump-orig.3.0.0
+ls -la /usr/local/bin/sra_3.0.0/fasterq-dump*
+```
+
+#### What each tool is / does (quick reference)
+
+- `prefetch`: downloads the runfile (`.sra`) to local disk (useful for resumability and for keeping network + conversion separate).
+- `fasterq-dump`: converts an accession or local `.sra` into paired FASTQs; typically faster and supports `--threads`, but outputs plain `.fastq` (we gzip afterwards).
+- `fastq-dump` (`fastq-dump-orig.3.0.0`): converts an accession or local `.sra` into FASTQ; supports writing `.fastq.gz` directly via `--gzip` and preserving original read naming via `--origfmt` (useful when we want “Lab-style” headers).
+- `gzip` / `pigz`: compress FASTQs (`pigz` is a parallel gzip; we used `gzip` on the server pipeline for simplicity/availability).
+- `FastQC`: per-FASTQ quality checks; outputs `<sample>_fastqc.html` and `<sample>_fastqc.zip`.
 
 If `fastq-dump` fails due to missing shared libraries, run it with an explicit library path:
 ```bash
@@ -339,10 +501,19 @@ We created a script that runs **exactly two background jobs**:
 
 Script:
 - `/home/pzg8794/zebrafish/scripts/sra_runs_pipeline.sh`
+- `/home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh`
+
+Server SRA Toolkit mode (professor install under `/usr/local/bin/sra_3.0.0`):
+- Use `SRA_TOOLKIT_BIN=/usr/local/bin/sra_3.0.0` with `sra_runs_pipeline_sra3.sh`.
 
 Start (keeps load low: `DUMP_THREADS=1`, `FASTQC_THREADS=1`):
 ```bash
 DUMP_THREADS=1 FASTQC_THREADS=1 SLEEP_SECONDS=60 /home/pzg8794/zebrafish/scripts/sra_runs_pipeline.sh start
+```
+
+Start (server SRA Toolkit; explicit member + runs file + pipeline dir):
+```bash
+ACC=PRJNA1277581 MEMBER=nikhi RUNS_FILE=/home/zebrafish/split_run_ids/runs.member.nikhi.txt PIPE_DIR=/home/pzg8794/sra_runs_pipeline_nikhi SRA_TOOLKIT_BIN=/usr/local/bin/sra_3.0.0 DUMP_THREADS=1 FASTQC_THREADS=1 SLEEP_SECONDS=60 /home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh start
 ```
 
 Status + monitoring:
@@ -352,6 +523,13 @@ tail -f /home/pzg8794/sra_runs_pipeline/download.nohup.log
 tail -f /home/pzg8794/sra_runs_pipeline/fastqc.nohup.log
 ```
 
+Status + monitoring (server SRA Toolkit; Nikhi pipeline dir):
+```bash
+ACC=PRJNA1277581 MEMBER=nikhi RUNS_FILE=/home/zebrafish/split_run_ids/runs.member.nikhi.txt PIPE_DIR=/home/pzg8794/sra_runs_pipeline_nikhi /home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh status
+tail -f /home/pzg8794/sra_runs_pipeline_nikhi/download.nohup.log
+tail -f /home/pzg8794/sra_runs_pipeline_nikhi/fastqc.nohup.log
+```
+
 Stop:
 ```bash
 /home/pzg8794/zebrafish/scripts/sra_runs_pipeline.sh stop
@@ -359,10 +537,10 @@ Stop:
 
 Important behavior (so you don’t panic):
 - `/home/zebrafish/sra_runs/` stays empty until a run finishes converting **and** both mates are gzipped.
-- During download/convert, temporary files can be huge and live under: `/home/pzg8794/sra_runs_pipeline/tmp/`
+- During download/convert, temporary files can be huge and live under: `PIPE_DIR/tmp/`
 - After a run completes successfully, the script removes the per-run temp directory and leaves only:
   - final `.fastq.gz` files in `/home/zebrafish/sra_runs/`
-  - logs/pids in `/home/pzg8794/sra_runs_pipeline/`
+  - logs/pids in `PIPE_DIR/`
 
 ### Shared folder permissions (group access)
 
