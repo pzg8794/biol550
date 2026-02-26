@@ -61,6 +61,49 @@ Week 1/2
 - Week 13 - Long read applications
 - Week 14 - Microbiome and epigenetics
 
+### Paper notes
+
+#### Mitra et al. (PNAS, 2022) — VEGF signaling links immune cells, vasculature, and Müller glia during retina regeneration
+
+- Citation: Mitra S, Devi S, Lee M-S, Jui J, Sahu A, Goldman D. “Vegf signaling between Müller glia and vascular endothelial cells is regulated by immune cells and stimulates retina regeneration.” *PNAS* (2022) 119(50):e2211690119. DOI: 10.1073/pnas.2211690119.
+
+**Summary**
+- Biological question: how signaling between Müller glia (MG) and vascular endothelial (VE) cells shapes the regenerative response after retinal injury in zebrafish.
+- Core finding: MG-derived VEGF ligands (primarily `vegfaa` and `pgfa`) signal to VEGF receptors on VE cells (notably `flt1`, and also `kdrl`) to promote MG proliferation and support neuron regeneration after injury.
+- Mechanistic link to Notch: VEGF signaling in VE cells modulates VE `dll4`, which in turn alters Notch signaling readouts in MG (e.g., MG `hey1`), connecting vascular signaling to MG “injury-response threshold” and proliferation.
+- Upstream regulation by immune cells: microglia/macrophages (Csf1r-dependent) are required for normal injury-dependent induction of `vegfaa`/`pgfa` and for expression changes in a subset of regeneration-associated genes; reducing microglia/macrophage accumulation reduces MG proliferation and dampens parts of the regenerative gene program.
+- Take-home model: injury → microglia/macrophage accumulation → increased MG VEGF ligands → VE VEGFR signaling → VE `dll4` / MG Notch-state shifts → MG proliferation and regeneration output.
+
+**Experimental design (what they manipulated and measured)**
+- Model system: adult zebrafish (6–12 months; male and female); multiple transgenic reporter/mutant lines to label MG and VE cells and perturb pathways.
+- Injury paradigms:
+  - Needle poke injury (1–4 injuries/retina for section-based proliferation/IF assays; 8 injuries/retina for whole-retina RNA isolation).
+  - Intravitreal NMDA injection (retinal neuron degeneration model).
+  - Intense UV light exposure (photoreceptor damage model; used for time-resolved expression assays).
+- Main perturbations (causal tests):
+  - VEGF pathway inhibition: pan-VEGFR inhibitor `pazopanib` (started 1 day prior to injury with daily refresh); dominant-negative VEGF ligand transgene (`hsp70:dn-vegfaa`, activated by repeated heat shock).
+  - Receptor/function tests: `flt1` mutant (`flt1bns29`) and morpholino knockdown (e.g., `flt1`, `kdrl`).
+  - Ligand-source tests: MG-enriched ligand knockdown (`vegfaa` MO; `pgfa` MO) and F0 CRISPR-based `pgfa` gene editing.
+  - Immune-cell axis: microglia/macrophage reduction via `csf1rDM` mutants and pharmacological Csf1r inhibition (`PLX3397`, started 10 days prior with daily refresh); apoptosis modulation via pancaspase inhibitor (`ZVAD-fmk`); mTOR inhibition (`rapamycin`) as a regeneration-niche perturbation.
+- Cell-type-resolved measurements:
+  - Transcript measurements via RT-PCR/RT-qPCR on total retina and on FACS-enriched populations (VE from `fli1:EGFP`, MG from `gfap:GFP`).
+  - Context from previously generated MG RNA-seq and retinal single-cell RNA-seq (timecourse covering early post-injury windows) to localize ligand/receptor expression and injury-responsiveness.
+- Phenotypic readouts:
+  - MG proliferation: PCNA immunofluorescence on 8-µm retinal sections; EdU incorporation (10 µL of 10 mg/mL EdU IP, 3 h before sacrifice) quantified in the INL.
+  - Immune recruitment and cell death: microglia/macrophage accumulation by 4C4 immunolabeling; apoptosis by TUNEL.
+  - Regeneration output: EdU-based lineage tracing to track MG-derived progeny and assess neuron regeneration outcomes.
+- Analysis: replicated retina-level measurements with nonparametric statistics (GraphPad Prism; Mann–Whitney U for pairwise; Kruskal–Wallis with Dunn’s for multi-group).
+
+**Figure-to-experiment map (quick orientation)**
+- Fig. 1: inhibit VEGFR signaling (`pazopanib`) → PCNA+ MG at 2 dpi; ligand expression context (MG RNA-seq + scRNA-seq) + RT-qPCR timecourse; ligand perturbations (MO knockdown, F0 CRISPR `pgfa`, `hsp70:dn-vegfaa`) → EdU+ MG.
+- Fig. 2: test VE receptor requirement (VE-enriched `flt1`) via `flt1` MO and `flt1bns29` mutant → EdU+ MG after injury; scRNA-seq overlays to localize receptor expression.
+- Fig. 3: VEGF→Notch link: measure VE `dll4` and MG `hey1` under VEGF perturbations (`pazopanib`, `hsp70:dn-vegfaa`, `flt1bns29`) and in FACS-purified MG; assay a panel of regeneration-associated genes (subset sensitive vs insensitive).
+- Fig. 4: immune recruitment vs VEGF: reduce microglia/macrophages (`csf1rDM`, `PLX3397`, `ZVAD-fmk`) → quantify 4C4+ cells and EdU+ MG; show VEGF perturbations do not block immune accumulation.
+- Fig. 5: immune control of VEGF ligands: RT-qPCR for `vegfaa`/`pgfa` and regeneration genes under immune/mTOR perturbations (`csf1rDM`, `ZVAD-fmk`, `rapamycin`); summarize the proposed multi-cell signaling model.
+
+**Why this paper is useful for our zebrafish project**
+- It’s a concrete example of linking “differential expression” style readouts to a mechanistic, cell–cell signaling model (immune → glia → endothelium → Notch-state), which is the level of interpretation we want after we finish QC/quantification and move to pathway/process-level analyses.
+
 ## Misc
 
 - CommandlineWorkshop (starts Jan 15, 2026, 9:30 AM)
