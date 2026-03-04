@@ -30,7 +30,7 @@
 ## Week 2-3 (Trapnell Practice)
 
 - [ ] All members complete Trapnell protocol tutorial
-- [ ] Samuel: Set up FastQC, Bowtie2, TopHat locally
+- [ ] Samuel: Set up FastQC, FASTX, Bowtie2, TopHat locally
 - [ ] Piter: Set up R, ggplot2, statistical packages
 - [ ] Claire: Review biological background
 - [ ] Create lab report template

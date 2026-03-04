@@ -34,7 +34,7 @@
   - [ ] `/README.md` - Team roster and project overview
   - [ ] `/data/raw/` - Original sequence files
   - [ ] `/data/processed/` - Cleaned and aligned data
-  - [ ] `/scripts/qc/` - FastQC and trimming scripts
+  - [ ] `/scripts/qc/` - FastQC + FASTX trimming scripts
   - [ ] `/scripts/alignment/` - Bowtie2/TopHat commands
   - [ ] `/scripts/de_analysis/` - Cufflinks/RSEM and statistical scripts
   - [ ] `/scripts/fairness/` - Disparate impact calculations
@@ -77,7 +77,7 @@
 - [ ] Document meeting attendees and action items
 
 ### Week 2-3 Trapnell Protocol Practice
-- [ ] Member 1: Set up local/cluster environment, install FastQC, Bowtie2, Cufflinks
+- [ ] Member 1: Set up local/cluster environment, install FastQC, FASTX, Bowtie2, Cufflinks
 - [ ] Member 2: Set up R environment, install ggplot2 and statistical packages
 - [ ] Member 3: Review biological background on Trapnell dataset
 - [ ] All members: Complete Trapnell protocol tutorial on practice dataset

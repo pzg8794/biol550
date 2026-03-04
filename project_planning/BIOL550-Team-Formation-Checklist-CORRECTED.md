@@ -35,7 +35,7 @@
   - [ ] `/README.md` - Team roster and project overview
   - [ ] `/data/raw/` - Original sequence files
   - [ ] `/data/processed/` - Cleaned and aligned data
-  - [ ] `/scripts/qc/` - FastQC and trimming scripts
+  - [ ] `/scripts/qc/` - FastQC + FASTX trimming scripts
   - [ ] `/scripts/alignment/` - Bowtie2/TopHat commands
   - [ ] `/scripts/de_analysis/` - Cufflinks/RSEM and statistical scripts
   - [ ] `/scripts/fairness/` - Disparate impact calculations
@@ -53,7 +53,7 @@
 ## WEEK 2-3 PREPARATION (Jan 27 - Feb 9)
 
 ### All Members: Trapnell Protocol Practice
-- [ ] **Samuel:** Install FastQC, Bowtie2, TopHat, SAMtools locally
+- [ ] **Samuel:** Install FastQC, FASTX, Bowtie2, TopHat, SAMtools locally
   - [ ] Document installation steps and environment setup
   - [ ] Test tools with practice dataset
   - [ ] Create command reference guide
@@ -139,7 +139,7 @@
 ## WEEKS 6-8 PRIMARY STAGE ANALYSIS (Feb 16 - Mar 2)
 
 - [ ] **Samuel:** Execute FastQC on real project data
-- [ ] **Samuel:** Quality trimming and contamination filtering
+- [ ] **Samuel:** FASTX quality trimming and contamination filtering
 - [ ] **Samuel:** Generate QC reports and visualizations
 - [ ] **Samuel:** Document all QC thresholds and decisions in decision log
 - [ ] **Piter:** Support fairness assessment in QC (if applicable)

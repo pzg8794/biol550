@@ -79,6 +79,7 @@ By the end of Week 2, students will:
 | Tool | Purpose | Time |
 |------|---------|------|
 | **FastQC v0.11.9+** | Interpret raw FASTQ quality metrics | 30–45 min to learn |
+| **FASTX toolkit** | Trim low-quality tails / clip adapters (e.g., `fastq_quality_trimmer`, `fastx_clipper`) | 30–45 min to learn |
 | **Available at:** | https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ | Free; command-line or GUI |
 | **What to Learn** | Per-base quality scores, quality by cycle, base composition, adapter contamination | Directly applies Week 2 concepts |
 | **Example Dataset** | Instructor may provide sample FASTQ file (from Week 1 real sequencing run) | Practice on actual data |

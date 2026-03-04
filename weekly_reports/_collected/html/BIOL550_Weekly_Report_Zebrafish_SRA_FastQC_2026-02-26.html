@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BIOL550 Weekly Report — Zebrafish SRA Download + FastQC</title>
+  <style>
+    body { font-family: "Times New Roman", Times, serif; font-size: 12pt; margin: 16px; line-height: 1.15; color: #111; }
+    h1, h2, h3 { margin: 0 0 8px 0; }
+    h1 { text-align: center; }
+    .subtitle { text-align: center; font-size: 11pt; margin: 0 0 12px 0; }
+    h2 { margin-top: 16px; }
+    p { text-align: justify; margin: 0 0 10px 0; }
+    pre { background: #f5f5f5; padding: 10px; border: none; box-shadow: none; outline: none; overflow-x: auto; font-size: 11px; }
+    code { font-family: Menlo, Consolas, monospace; font-size: 9px; }
+    pre code { font-size: 9px; }
+    .note { font-style: italic; margin: 0 0 4px 0; }
+    img { max-width: 60%; height: auto; display: block; margin: 8px auto; }
+    .figure-title { text-align: center; font-size: 11pt; margin: 2px 0 2px 0; }
+    .img-row { display: flex; gap: 16px; align-items: stretch; justify-content: center; margin: 4px 0 0 0; }
+    .img-col { flex: 0 1 520px; display: flex; flex-direction: column; }
+    .img-row img { max-width: 100%; margin: 0 auto; }
+    table { border-collapse: collapse; width: 100%; font-size: 10.5pt; }
+    th, td { border: 1px solid #ddd; padding: 4px 6px; vertical-align: top; }
+    th { background: #f5f5f5; font-weight: bold; text-align: left; }
+
+    /* CHANGED: remove fixed height so no huge gap */
+    .side-by-side { }
+    .side-by-side .panel { height: auto; }
+
+    .side-by-side .panel-img img {
+      width: 100%;
+      height: auto;
+      max-width: none;
+      margin: 0;
+      object-fit: contain;
+      object-position: top center;
+      display: block;
+    }
+    .side-by-side .panel-table { overflow: hidden; display: flex; flex-direction: column; }
+    .side-by-side .panel-table .panel-scroll { flex: 1 1 auto; overflow: auto; }
+    .side-by-side .panel-table .panel-desc { flex: 0 0 auto; font-size: 10pt; line-height: 1.05; margin-top: 4px; }
+    .side-by-side .panel-text { overflow: auto; padding: 0 2px; }
+
+    .gc-row .panel { height: auto; }
+    .gc-row .panel-img { display: flex; justify-content: center; }
+    .gc-row .panel-img img { width: auto; height: auto; max-width: 100%; max-height: 190px; margin: 0; }
+    .gc-row .panel-text { overflow: visible; }
+    .gc-row .panel-text p { margin: 0; }
+    .panel-inline-title { text-align: center; font-size: 11pt; font-weight: bold; margin: 0 0 4px 0; }
+
+    .tight-table { font-size: 8.5pt; line-height: 1.02; }
+    .tight-table th, .tight-table td { padding: 1px 3px; }
+    .tight-table th:nth-child(1), .tight-table td:nth-child(1) { width: 44px; text-align: center; white-space: nowrap; }
+    .tight-table th:nth-child(2), .tight-table td:nth-child(2) { white-space: nowrap; }
+
+    /* NEW: keep text close under the row */
+    .after-row { margin-top: 4px; }
+
+    @media print {
+      body { margin: 0.75in; }
+      pre { white-space: pre-wrap; word-break: break-word; border: none !important; box-shadow: none !important; outline: none !important; }
+      .img-row { break-inside: avoid; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Zebrafish RNA-seq — SRA Download + FastQC</h1>
+  <div class="subtitle">BIOL550 — Weekly Report — Feb 26, 2026</div>
+
+  <h2>What I accomplished since the previous report</h2>
+  <p>
+    This week, in collaboration with my team, I completed the core data acquisition and initial quality assessment for
+    our zebrafish RNA-seq project (BioProject <code>PRJNA1277581</code>; GEO Series <code>GSE299935</code>). We downloaded
+    all 30 paired-end SRRs (<code>SRR34002410</code>–<code>SRR34002439</code>) using SRA Toolkit, assessed read quality
+    with FastQC, and began trimming with FASTX in preparation for re-running QC on the cleaned reads.
+  </p>
+  <p>
+	    Also, in consultation with my team and following their approach, I created a simple, resumable pipeline for the team (after manual validation of the commands and first SRR data) to automate “download → QC → (trim)” efficiently without overloading shared resources. As a result, we produced outputs for all 30 SRRs (<code>SRR34002410</code>–<code>SRR34002439</code>) as paired <code>*.fastq.gz</code> in <code>/home/zebrafish/sra_runs</code> and 60 FastQC reports (ZIP/HTML per mate) in <code>/home/zebrafish/fastqc_out</code>, along with QC tables and figures for interpretation.
+  </p>
+
+  <h3>Quick Review of FastQC Output Findings</h3>
+  <p>
+    To summarize FastQC across the dataset, I used Python and pandas to parse each FastQC ZIP and calculate a per-report severity score (<code>3×FAIL + WARN</code>). This let us quickly see which reports (and which SRRs) concentrate the most WARN/FAIL modules, and which modules are consistently problematic across the project. In collaboration with my team, I plotted this data using Python to generate the figures below, which show the top problematic reports and the module-level summary across all 60 FastQC outputs.
+  </p>
+
+	  <div class="figure-title"><strong>FastQC overview: module outcomes (right) + most problematic reports (left)</strong></div>
+  <div class="img-row side-by-side">
+    <div class="img-col">
+      <div class="panel panel-img">
+        <img src="../../qc_bundle/qc_analysis/fastqc_top_problematic_reports.png" alt="Top problematic FastQC reports" />
+      </div>
+    </div>
+    <div class="img-col">
+      <div class="panel panel-table">
+        <div class="panel-scroll">
+          <table class="tight-table">
+            <thead>
+              <tr>
+                <th>module</th>
+                <th>name</th>
+                <th>pass</th>
+                <th>warn</th>
+                <th>fail</th>
+                <th>n</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>9</td><td>Sequence Duplication Levels</td><td>0</td><td>0</td><td>60</td><td>60</td></tr>
+              <tr><td>6</td><td>Per sequence GC content</td><td>0</td><td>38</td><td>22</td><td>60</td></tr>
+              <tr><td>0</td><td>Adapter Content</td><td>24</td><td>4</td><td>32</td><td>60</td></tr>
+              <tr><td>4</td><td>Per base sequence content</td><td>0</td><td>38</td><td>22</td><td>60</td></tr>
+              <tr><td>2</td><td>Overrepresented sequences</td><td>0</td><td>59</td><td>1</td><td>60</td></tr>
+              <tr><td>8</td><td>Per tile sequence quality</td><td>57</td><td>3</td><td>0</td><td>60</td></tr>
+              <tr><td>1</td><td>Basic Statistics</td><td>60</td><td>0</td><td>0</td><td>60</td></tr>
+              <tr><td>3</td><td>Per base N content</td><td>60</td><td>0</td><td>0</td><td>60</td></tr>
+              <tr><td>5</td><td>Per base sequence quality</td><td>60</td><td>0</td><td>0</td><td>60</td></tr>
+              <tr><td>7</td><td>Per sequence quality scores</td><td>60</td><td>0</td><td>0</td><td>60</td></tr>
+              <tr><td>10</td><td>Sequence Length Distribution</td><td>60</td><td>0</td><td>0</td><td>60</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="after-row">
+    The left panel ranks individual FastQC reports (<code>_1</code>/<code>_2</code>) by severity (<code>3×FAIL + WARN</code>) so we can prioritize which SRRs to inspect first. The right table summarizes module PASS/WARN/FAIL counts across all FastQC reports, which helps distinguish “global” patterns (e.g., duplication in RNA-seq) from issues that may be improved by trimming/clipping (e.g., adapter signal).
+  </p>
+
+  <div class="img-row side-by-side gc-row">
+    <div class="img-col">
+      <div class="panel panel-img">
+        <img src="../../qc_bundle/qc_analysis/fastqc_per_sequence_gc_content_overlay_plotonly.png" alt="Per sequence GC content overlay across all reports" />
+      </div>
+    </div>
+    <div class="img-col">
+      <div class="panel panel-text">
+        <div class="panel-inline-title">Per-sequence GC content (all reports)</div>
+        <p>
+          The plot on the left overlays the per-sequence GC distributions across all FastQC reports. We mainly watch for a strong run-to-run GC shift or a second peak, which can suggest contamination or a markedly different composition. The curves largely overlap with no clear second peak. Many reports are WARN/FAIL for GC content; we agreed it is likely due to RNA-seq composition/expression bias.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="img-row side-by-side">
+    <div class="img-col">
+      <div class="panel panel-text">
+        <div class="panel-inline-title">FastQC module status by report</div>
+        <p>
+          The heatmap plot on the right summarizes PASS/WARN/FAIL at the report level (each row is a report, each column is a module). To me, this plot makes it easy to see consistent patterns across the dataset (e.g., duplication failing everywhere) versus issues that only appear in subsets of SRRs (e.g., adapter content), which helps prioritize which runs to re-check after trimming/clipping.
+        </p>
+      </div>
+    </div>
+    <div class="img-col">
+      <div class="panel panel-img">
+        <img src="../../qc_bundle/qc_analysis/fastqc_module_status_heatmap.png" alt="FastQC module status heatmap (all reports)" />
+      </div>
+    </div>
+  </div>
+
+  <h2>Methods used (commands + parameters)</h2>
+  <p>
+    We mainly used three tools: the SRA Toolkit (<code>fastq-dump</code> / <code>fasterq-dump</code>), FastQC, and FASTX, and then used the following workflow: download → FastQC → summarize findings at the SRR + module level → (FASTX trim) → re-run FastQC → summarize findings at the SRR + module level. However, due to time constraints we were not able to analyze the trimmed data.
+  </p>
+
+  <h3>Manual Commands for Each SRR</h3>
+  <pre><code>fastq-dump --split-files --gzip SRR34002437 # download paired FASTQs
+fastqc -t 1 SRR34002437_1.fastq.gz SRR34002437_2.fastq.gz # QC both mates
+fastq_quality_trimmer -Q33 -t 20 -l 30 # FASTX: trim low-Q 3' tails (stdin->stdout)</code></pre>
+
+  <h3>Small Pipeline to Automate Manual Steps</h3>
+  <p>
+    The manual steps (defined above) were wrapped into a resumable pipeline with two workers (download + FastQC). The pipeline was run three times, once per member run list, so the team could run the process consistently and monitor it with simple logs. Below is an example of the pipeline execution command for me:
+  </p>
+  <pre><code>PIPE=/home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh # pipeline wrapper
+RUNS_FILE=/home/zebrafish/split_run_ids/runs.member.piter.txt # Piter SRRs
+PIPE_DIR=/home/pzg8794/sra_runs_pipeline_piter # per-member state/logs
+ACC=PRJNA1277581 MEMBER=piter RUNS_FILE="$RUNS_FILE" PIPE_DIR="$PIPE_DIR" DUMP_THREADS=1 FASTQC_THREADS=1 \
+  "$PIPE" start # start download + FastQC</code></pre>
+
+  <h3>Analysis Methodology</h3>
+  <p>
+    In collaboration with my team, I used Python and pandas to parse FastQC output from each <code>*_fastqc.zip</code>, collapsed mates to one SRR-level status per module (worst-of-mates), and ranked runs by severity (<code>3×FAIL + WARN</code>) to prioritize cleanup. Then, I plotted the top problematic reports and the module-level summary across all 60 FastQC outputs to identify global patterns (e.g., duplication in RNA-seq) versus issues that may be improved by trimming/clipping (e.g., adapter signal). Finally, I generated an overlay plot of per-sequence GC content across all reports to check for systematic shifts or secondary peaks that could suggest contamination or a markedly different composition.
+  </p>
+  <pre><code>python3 "$SCRIPT" --qc-analysis"$QC_ANALYSIS --out-dir "$OUT" --stage raw # summarize WARN/FAIL + severity</code></pre>
+
+  <h2>Problems encountered</h2>
+  <p>
+    First, the SRRs are large, and as instructed we downloaded one run at a time to avoid stressing shared resources, so total wall-clock time was longer than expected. Second, the server had multiple maintenance shutdowns that interrupted downloads mid-run and required resuming after restart. Lastly, on the analysis side, FastQC raised issues we need to investigate and clean (e.g., duplication flags across all SRRs), and confirming the exact paper/publication tied to this dataset is still in progress even though the dataset accessions (<code>PRJNA1277581</code> / <code>GSE299935</code>) are known.
+  </p>
+
+  <h2>Goals for the coming week</h2>
+  <p>
+    Next week, in collaboration with my team, I will re-run FastQC on the trimmed reads, and repeat the same SRR-level analysis to confirm adapter-related modules improve without over-trimming read length. Similarly, I will work on confirming the correct paper/publication for this dataset along with other references with experimental designs that can help us define our own downstream analysis plan (alignment/quantification, comparisons, and interpretation).
+  </p>
+
+</body>
+</html>

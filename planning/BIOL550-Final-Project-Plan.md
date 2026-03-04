@@ -42,7 +42,7 @@ This document outlines the group project strategy for BIOL550: High Throughput S
   - Create infrastructure for analysis tracking and decision logging
   
 - **Leads Phases:** 
-  - **Primary Analysis (Weeks 6–8):** FastQC QC, quality trimming, contamination filtering
+  - **Primary Analysis (Weeks 6–8):** FastQC QC, **FASTX** quality trimming, contamination filtering
   - **Secondary Analysis (Weeks 10–11):** Bowtie2/TopHat alignment, BAM generation, coverage analysis
   
 - **Deliverables:** 
@@ -168,7 +168,7 @@ biol550-team/
 │   ├── processed/ (cleaned, aligned, expression matrices)
 │   └── metadata/ (sample descriptions, group definitions)
 ├── scripts/
-│   ├── qc/ (FastQC, trimming scripts - Member 1)
+│   ├── qc/ (FastQC + FASTX trimming scripts - Member 1)
 │   ├── alignment/ (Bowtie2, TopHat commands - Member 1)
 │   ├── de_analysis/ (Cufflinks/RSEM, statistical analysis - Member 2)
 │   └── fairness/ (disparate impact calculations - Member 2)
@@ -230,7 +230,7 @@ Bonus Analyses (SNP calling, Transcriptome creation, etc.)
 **Focus:** Quality Control and preprocessing
 
 **Member 1 Responsibilities (Computational):**
-- Run FastQC for quality assessment of raw reads (generate QC reports and plots)
+- Run FastQC for quality assessment of raw reads; trim with FASTX as needed, then re-run FastQC on trimmed reads
 - Execute quality trimming with appropriate tools (CutAdapt for adapters, FastX for quality)
 - Filter for adapter sequences and contamination (identify & remove problematic reads)
 - Generate comprehensive QC reports and visualizations (before/after filtering)
@@ -368,7 +368,7 @@ Bonus Analyses (SNP calling, Transcriptome creation, etc.)
 | 3 | Jan 26 | Assembly readings, Trapnell QC practice, **Project selection** | Practice QC tools on Trapnell data | Practice statistical analysis on Trapnell | Research project datasets, biological context | Compile project options | **Team composition confirmed**, Project 1st & 2nd picks | 10 pts |
 | 4 | Feb 2 | RNA-Seq readings, Trapnell alignment practice | Execute alignment on Trapnell data | Discuss DE methodology | Interpret results biologically | Organize literature | Lab report 1 | 3 pts |
 | 5 | Feb 9 | Composite structures, differential expression | Conduct QC preprocessing on Trapnell | Conduct basic DE analysis on Trapnell | Interpret results biologically | Compile key papers | Lab report 2 | 3 pts |
-| 6 | Feb 16 | Barcoding readings, **Begin Primary Stage Analysis** | QC on actual project data (FastQC, trimming) | Support QC infrastructure decisions | Support data interpretation | Organize raw data | Lab report 3, QC analysis | 33 pts |
+| 6 | Feb 16 | Barcoding readings, **Begin Primary Stage Analysis** | QC on actual project data (FastQC, FASTX trimming) | Support QC infrastructure decisions | Support data interpretation | Organize raw data | Lab report 3, QC analysis | 33 pts |
 | 7 | Feb 23 | eDNA and scRNA-Seq readings | Continue Primary Stage analysis | Discuss batch effect detection | Discuss biological quality patterns | Update data org | Lab report 4 | 3 pts |
 | 8 | Mar 2 | Continue Primary Stage analysis | Finalize QC, begin quality filtering | Advise on fairness in filtering | Validate biological filtering rationale | Archive cleaned data | Lab report 5 | 3 pts |
 | 9 | Mar 9 | Spring Break | *Optional*: Complete Primary Stage analysis | *Optional*: Literature prep | *Optional*: Literature prep | *Optional*: Data sync | Optional report | 0 pts |

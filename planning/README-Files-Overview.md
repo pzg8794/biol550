@@ -164,7 +164,7 @@ You now have **4 complete documents** ready to use:
 
 ## 🛠️ Analysis Tools You'll Use
 
-**Quality Control:** FastQC, CutAdapt, FastX  
+**Quality Control:** FastQC, CutAdapt, FASTX  
 **Alignment:** Bowtie2, TopHat  
 **Expression:** Cufflinks, RSEM, SAMtools  
 **Statistical:** R, ggplot2, FDR/Bonferroni correction  

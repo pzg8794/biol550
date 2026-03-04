@@ -20,7 +20,7 @@
 ```
 PHASE 1 (Weeks 6-8): Primary Stage Analysis
 ├─ Lead: Member 1 (Computational)
-├─ Tasks: FastQC QC, quality trimming, contamination filtering
+├─ Tasks: FastQC QC, **FASTX** quality trimming, contamination filtering
 └─ Output: Clean, high-quality reads
 
 PHASE 2 (Weeks 10-11): Secondary Stage Analysis
@@ -45,7 +45,7 @@ BONUS (Weeks 15-16): Extended Analyses
 
 ### **Member 1: Computational Biology Lead**
 - **Primary Phases:** Primary Analysis (QC/preprocessing), Secondary Analysis (alignment)
-- **Core Skills:** Pipeline design, bioinformatics tools (FastQC, Bowtie2, TopHat), version control, scripting
+- **Core Skills:** Pipeline design, bioinformatics tools (FastQC, **FASTX**, Bowtie2, TopHat), version control, scripting
 - **Deliverables:** Clean preprocessing code, alignment results, reproducible GitHub repo, Methods (computational section)
 - **Weekly Reports Focus:** Infrastructure decisions, code quality, pipeline blockers, data handoff documentation
 
@@ -114,7 +114,7 @@ BONUS (Weeks 15-16): Extended Analyses
 
 ## Key Tools & Resources
 
-**Analysis Tools:** FastQC, Bowtie2, TopHat, Cufflinks/RSEM, SAMtools, R/ggplot2
+**Analysis Tools:** FastQC, **FASTX**, Bowtie2, TopHat, Cufflinks/RSEM, SAMtools, R/ggplot2
 
 **Fairness Tools:** fairlearn (Python), disparate impact calculations, equalized odds metrics
 

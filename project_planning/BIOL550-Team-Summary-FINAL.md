@@ -17,7 +17,7 @@
 
 ## 3-Phase Analysis Pipeline
 
-**Phase 1 (Weeks 6-8):** Primary Analysis - FastQC, quality trimming, adapter/contamination filtering, clean reads  
+**Phase 1 (Weeks 6-8):** Primary Analysis - FastQC, **FASTX** quality trimming, adapter/contamination filtering, clean reads  
 **Phase 2 (Weeks 10-11):** Secondary Analysis - Bowtie2/TopHat alignment, BAM files + fairness audit (disparate impact)  
 **Phase 3 (Weeks 12-15):** Tertiary Analysis - Differential expression, statistical rigor, visualizations, fairness metrics in DE results  
 **Bonus (Weeks 15-16):** Optional - SNP calling, isoform analysis, network analysis, machine learning classification  
@@ -26,7 +26,7 @@
 
 ## Key Responsibilities
 
-**Samuel (Computational):** FastQC, CutAdapt/FastX quality trimming, Bowtie2/TopHat alignment, BAM file generation, GitHub repo management, reproducible pipeline documentation
+**Samuel (Computational):** FastQC, CutAdapt/FASTX quality trimming, Bowtie2/TopHat alignment, BAM file generation, GitHub repo management, reproducible pipeline documentation
 
 **Piter (Statistical - YOU):** Differential expression quantification (Cufflinks/RSEM), statistical tests (FDR, Bonferroni), fairness metrics (disparate impact, equalized odds), publication-quality visualizations (volcano plots, heatmaps, boxplots)
 
@@ -93,7 +93,7 @@
 
 ## Tools & Resources
 
-**Quality Control:** FastQC, CutAdapt, FastX toolkit  
+**Quality Control:** FastQC, CutAdapt, **FASTX** toolkit  
 **Alignment/Assembly:** Bowtie2, TopHat, Velvet  
 **Expression Analysis:** Cufflinks, RSEM, SAMtools  
 **Statistical:** R, ggplot2, FDR/Bonferroni correction  

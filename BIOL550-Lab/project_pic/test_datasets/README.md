@@ -6,6 +6,7 @@ Notes
 -----
 - The server may not have `fasterq-dump` (sra-tools) or `ncbi-datasets` installed. The script attempts sensible fallbacks and will tell you what to install if nothing is found.
 - All SRR lists contain runs that meet the course constraints where possible (paired, ~2×150, ≥40M spots when available).
+- After raw FastQC, the class-style cleanup step is **FASTX trimming** (e.g., `fastq_quality_trimmer` and/or `fastx_clipper`) followed by re-running FastQC on the trimmed reads.
 
 Files
 -----

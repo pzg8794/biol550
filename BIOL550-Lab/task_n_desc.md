@@ -267,6 +267,73 @@ Submit as a single zip (or whatever the dropbox requires):
 
 Keep dataset exploration, “why we picked it”, and run-level validation evidence here (RunInfo CSVs, filtered SRR lists, and QC summaries).
 
+### Dataset modality check (bulk vs single-cell) — double-checked 2026-03-02
+
+We suspected some candidate projects might be single-cell RNA-seq. After double-checking via GEO/SRA metadata, **several of our candidate projects are bulk RNA-seq**.
+
+| Project | Accessions | Modality | Evidence (metadata) |
+|---|---|---|---|
+| Zebrafish retina regeneration | `PRJNA1277581` / `GSE299935` | **Single-cell RNA-seq** | **Instructor confirmed (2026-03-02)**. (GEO design text alone did not make this obvious; treat as single-cell per instructor.) |
+| Post-COVID blood transcriptome | `PRJNA717662` / `GSE169687` | **Bulk RNA-seq** | GEO overall design: “**Total RNA sequenced** …” across timepoints: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE169687 |
+| Mouse DRG axon regeneration | `PRJNA1017789` / `GSE243308` | **Bulk RNA-seq** | GEO overall design uses **n=3 mice per group** (tissue replicates): https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243308. Note: the GEO **series summary** mentions “neuronal single cell RNA-seq analysis” in the *paper*, but the bulk RNA-seq samples include `cell type: Bulk` (example: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8476473). |
+| Fatal COVID autopsy tissue | `PRJNA631753` / `SRP261138` | **Bulk RNA-seq** | SRA abstract: “**total RNA sequencing** on five COVID-19 positive patients …”: https://www.ncbi.nlm.nih.gov/sra/SRX8839894?report=FullText |
+| Fatal COVID lung/colon tissue | `PRJNA646224` / `SRP287213` | **Bulk RNA-seq** | SRA design describes total RNA from **FFPE tissue sections** (not single-cell): https://www.ncbi.nlm.nih.gov/sra/SRX9404336?report=FullText. Note: SRA may show `LibraryLayout: SINGLE` for some experiments—this means **single-end reads**, not “single-cell”. |
+
+Practical rule of thumb (quick screen):
+- Bulk RNA-seq studies usually describe **total RNA / tissue** and small **N replicates per group**.
+- Single-cell RNA-seq studies usually mention **10x/Chromium/UMI/cell barcodes** and have different read structures.
+- Don’t confuse **single-end** (`LibraryLayout: SINGLE`) with **single-cell**.
+
+### How to verify “bulk vs single-cell” yourself (copy/paste checks)
+
+Use this when someone claims “it’s single-cell” (or “it’s bulk”) and you want **verifiable evidence**.
+
+1) **Start from the GEO Series (`GSE…`) if one exists**
+
+This usually has the clearest “Overall design” text.
+
+```bash
+GSE=GSE169687
+curl -fsSL "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=${GSE}&targ=self&form=text&view=full" | \
+  rg -n '^!Series_title|^!Series_overall_design|^!Series_summary|^!Series_supplementary_file' | head -n 80
+```
+
+Now scan for single-cell keywords:
+
+```bash
+curl -fsSL "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=${GSE}&targ=self&form=text&view=full" | \
+  rg -ni 'single[- ]?cell|scrna|10x|chromium|umi|cell ranger|drop[- ]?seq|smart[- ]?seq|barcodes\\.tsv|matrix\\.mtx|h5ad|loom' | head -n 80
+```
+
+2) **Check a GEO Sample (`GSM…`)**
+
+Pick any `!Series_sample_id = GSM…` from the GSE page and inspect it:
+
+```bash
+GSM=GSM8476473
+curl -fsSL "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=${GSM}&targ=self&form=text&view=full" | \
+  rg -n '^!Sample_title|^!Sample_characteristics_ch1|^!Sample_extract_protocol_ch1|^!Sample_data_processing|^!Sample_library_strategy|^!Sample_library_selection' | head -n 120
+```
+
+What to look for:
+- Bulk often has explicit `cell type: Bulk`, or tissue-level descriptors.
+- Single-cell often mentions `10x`, `UMI`, `Cell Ranger`, `barcodes`, etc.
+
+3) **If there’s no GEO, use the SRA Experiment page (`SRX…`)**
+
+The “FullText” report often includes the library construction protocol:
+
+```bash
+SRX=SRX8839894
+curl -fsSL "https://www.ncbi.nlm.nih.gov/sra/${SRX}?report=FullText" | \
+  rg -ni '10x|chromium|umi|cell ranger|drop[- ]?seq|smart[- ]?seq|single[- ]?cell' | head -n 120
+```
+
+4) **Avoid common misreads**
+
+- **Paper mentions scRNA-seq** ≠ the particular BioProject/GSE you’re downloading is scRNA-seq (papers can include multiple assays).
+- **`LibraryLayout: SINGLE` in SRA** = **single-end reads**, not “single-cell”.
+
 ## Summary — FastQC run & delivery
 
 ### Lab 3 report pre-submission review — 2026-02-19
@@ -284,6 +351,8 @@ Suggested fixes before submitting:
 ### Work log (Sequoia / zebrafish) — 2026-02-19
 
 This records the exact server workflow we used for the zebrafish group project on `sequoia` (BioProject `PRJNA1277581`), including where files live, which binaries we used, and the scripts/commands we created to keep downloads + QC sequential and easy to monitor.
+
+**Update (2026-03-02):** Instructor confirmed the zebrafish dataset (`PRJNA1277581`) is **single-cell RNA-seq**. This work log remains a reusable template for any selected dataset.
 
 #### Update — Nikhi pipeline running (2026-02-22 to 2026-02-23)
 
@@ -425,6 +494,8 @@ tail -f /Users/pitergarcia/DataScience/tmp/samuel_mydrive_backfill.nohup.log
 - Flat FASTQ destination (group-writable): `/home/zebrafish/sra_runs/`
   - Files look like: `SRR34002439_1.fastq.gz`, `SRR34002439_2.fastq.gz`
 - FastQC outputs (shared): `/home/zebrafish/fastqc_out/`
+- FASTX trimmed FASTQs (shared): `/home/zebrafish/fastx_out/`
+- FastQC on trimmed reads (shared): `/home/zebrafish/fastqc_out_trimmed/`
 - Split run ID lists for the team (shared): `/home/zebrafish/split_run_ids/`
 
 **Your home (`/home/pzg8794/`)**
@@ -530,6 +601,33 @@ tail -f /home/pzg8794/sra_runs_pipeline_nikhi/download.nohup.log
 tail -f /home/pzg8794/sra_runs_pipeline_nikhi/fastqc.nohup.log
 ```
 
+### Trim + trimmed FastQC pipeline (FASTX) — repeatable cleanup step
+
+After raw FastQC is complete (or while downloads continue), run a second pipeline to trim reads using FASTX and then re-run FastQC on the trimmed outputs.
+
+Outputs:
+- Trimmed FASTQs: `/home/zebrafish/fastx_out/` (files like `SRR*_1.trim.fastq.gz`, `SRR*_2.trim.fastq.gz`)
+- Trimmed FastQC: `/home/zebrafish/fastqc_out_trimmed/` (recommended shared location; the script defaults to `$HOME/fastqc_out_trimmed` unless you set `FASTQC_OUT_DIR`)
+
+Script:
+- `/home/pzg8794/zebrafish/scripts/fastx_trim_fastqc_pipeline.sh`
+
+Start (example; set your member runs list):
+```bash
+RAW_DIR=/home/zebrafish/sra_runs \
+OUT_DIR=/home/zebrafish/fastx_out \
+FASTQC_OUT_DIR=/home/zebrafish/fastqc_out_trimmed \
+RUNS_FILE=/home/zebrafish/split_run_ids/runs.member.piter.txt \
+TRIM_QUAL=20 MIN_LEN=30 FASTQC_THREADS=1 DO_FASTQC=yes \
+/home/pzg8794/zebrafish/scripts/fastx_trim_fastqc_pipeline.sh start
+```
+
+Status + logs:
+```bash
+/home/pzg8794/zebrafish/scripts/fastx_trim_fastqc_pipeline.sh status
+tail -f /home/zebrafish/fastx_out/.pipeline/fastx.nohup.log
+```
+
 Stop:
 ```bash
 /home/pzg8794/zebrafish/scripts/sra_runs_pipeline.sh stop
@@ -574,6 +672,64 @@ into one flat folder:
 
 Script used:
 - `/home/pzg8794/zebrafish/scripts/cleanup_home_zebrafish_layout.sh`
+
+**Update (2026-03-02): archive for deletion + reset (mouse work).**
+- We archived zebrafish artifacts in home to: `/home/pzg8794/_tmp_zebrafish_2026-03-02/` (so we can safely delete later).
+- We kept the reusable scripts in: `/home/pzg8794/pipelines/` (so the mouse dataset can reuse the exact same workflow).
+- Local mirror archive: `Semester5/BIOL550/group_project/_tmp_zebrafish_2026-03-02/`
+- Mouse workflow doc: `Semester5/BIOL550/group_project/mouse/PROCESS_mouse_fastq_fastqc_fastx.md`
+- Work log: `Semester5/BIOL550/group_project/WORKLOG.md`
+- Local FastQC bundles:
+  - Raw: `Semester5/BIOL550/group_project/mouse/qc_bundle_raw/`
+  - Trimmed: `Semester5/BIOL550/group_project/mouse/qc_bundle_trimmed/`
+- Mouse notebook (raw vs trimmed FastQC): `Semester5/BIOL550/group_project/mouse/notebooks/fastqc_qc_bundle_analysis_raw_vs_trimmed_mouse.ipynb`
+
+**Update (2026-03-02): mouse end-to-end pipeline status (Sequoia).**
+- Active run root: `/home/zebrafish/mouse/PRJNA1017789_parallel/`
+- Runner: `/home/pzg8794/pipelines/run_end_to_end_fastq_fastqc_fastx_fastqc_parallel.sh`
+- Notes:
+  - We switched to the parallel runner (2 download workers + 2 FastQC workers) because the server was idle and it dramatically reduced wall-clock time.
+  - We copied `SRR30333743` (raw FASTQs + raw FastQC outputs) from the baseline folder into the parallel folder, then stopped the baseline run.
+  - The SRR list file name still says `remaining_no_SRR30333743`, but it now contains **all 26 SRRs** (we re-added SRR30333743 so trim runs across all runs).
+
+```bash
+ROOT=/home/zebrafish/mouse/PRJNA1017789_parallel
+RUNS=/home/pzg8794/metadata/PRJNA1017789/splits/PRJNA1017789_runs.remaining_no_SRR30333743.txt
+
+awk 'NF && $1 !~ /^#/{print $1}' "$RUNS" | wc -l
+awk 'NF && $1 !~ /^#/{print $1}' "$RUNS" | while read s; do [[ -s "$ROOT/sra_runs/${s}_1.fastq.gz" && -s "$ROOT/sra_runs/${s}_2.fastq.gz" ]] && echo "$s"; done | wc -l
+awk 'NF && $1 !~ /^#/{print $1}' "$RUNS" | while read s; do [[ -s "$ROOT/fastqc_out/${s}_1_fastqc.zip" && -s "$ROOT/fastqc_out/${s}_2_fastqc.zip" ]] && echo "$s"; done | wc -l
+awk 'NF && $1 !~ /^#/{print $1}' "$RUNS" | while read s; do [[ -s "$ROOT/fastx_out/${s}_1.trim.fastq.gz" && -s "$ROOT/fastx_out/${s}_2.trim.fastq.gz" ]] && echo "$s"; done | wc -l
+awk 'NF && $1 !~ /^#/{print $1}' "$RUNS" | while read s; do [[ -s "$ROOT/fastqc_out_trimmed/${s}_1.trim_fastqc.zip" && -s "$ROOT/fastqc_out_trimmed/${s}_2.trim_fastqc.zip" ]] && echo "$s"; done | wc -l
+```
+
+```text
+26
+26
+26
+0
+0
+```
+
+Trim stage progress example (pipeline still running):
+
+```bash
+pgrep -af 'run_end_to_end_fastq_fastqc_fastx_fastqc_parallel.sh run|fastx_trim_fastqc_pipeline.sh _run_wrapper|fastq_quality_trimmer|fastqc'
+tail -n 5 /home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/end_to_end.nohup.log
+tail -n 5 /home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/trim/fastx.nohup.log
+```
+
+```text
+1197697 bash /home/pzg8794/pipelines/run_end_to_end_fastq_fastqc_fastx_fastqc_parallel.sh run
+1203061 bash /home/pzg8794/pipelines/fastx_trim_fastqc_pipeline.sh _run_wrapper
+1204059 /usr/local/bin/FastX/0.0.13/fastq_quality_trimmer -Q33 -t 20 -l 30
+
+[2026-03-02 23:49:58] waiting: trim fastx.completed
+
+Analysis complete for SRR30333744_1.trim.fastq.gz
+Analysis complete for SRR30333744_2.trim.fastq.gz
+[2026-03-02 23:45:55] TRIM SRR30333745
+```
 
 ### Git metadata removal (shared drive)
 

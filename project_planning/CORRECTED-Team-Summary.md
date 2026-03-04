@@ -26,7 +26,7 @@
 
 ## Key Responsibilities
 
-**Samuel (Computational):** FastQC, quality trimming, Bowtie2/TopHat alignment, BAM files, GitHub repo  
+**Samuel (Computational):** FastQC, **FASTX** quality trimming, Bowtie2/TopHat alignment, BAM files, GitHub repo  
 **Piter (Statistical):** DE quantification, statistical tests, fairness metrics, visualizations  
 **Claire (Biological):** 15+ source literature review, pathway analysis, biological interpretation  
 **Nikhi (Support):** Data organization, literature coordination, meeting notes  
@@ -47,7 +47,7 @@
 
 ## Tools
 
-**QC:** FastQC, CutAdapt | **Alignment:** Bowtie2, TopHat | **DE:** Cufflinks/RSEM | **Stats:** R, ggplot2 | **Fairness:** fairlearn, disparate impact
+**QC:** FastQC, CutAdapt, **FASTX** | **Alignment:** Bowtie2, TopHat | **DE:** Cufflinks/RSEM | **Stats:** R, ggplot2 | **Fairness:** fairlearn, disparate impact
 
 ---
 

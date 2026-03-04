@@ -21,20 +21,72 @@ Course home (myCourses): https://mycourses.rit.edu/d2l/home/1199746
 ## Current work (status)
 
 - Lab task hub: `Semester5/BIOL550/BIOL550-Lab/task_n_desc.md`
-- Sequoia (group) — Nikhi pipeline (download + FastQC sequential) status:
-  ```bash
-  ACC=PRJNA1277581 MEMBER=nikhi RUNS_FILE=/home/zebrafish/split_run_ids/runs.member.nikhi.txt PIPE_DIR=/home/pzg8794/sra_runs_pipeline_nikhi /home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh status
-  ```
-- Sequoia (group) — Samuel pipeline status:
-  ```bash
-  ACC=PRJNA1277581 MEMBER=samuel RUNS_FILE=/home/zebrafish/split_run_ids/runs.member.samuel.txt PIPE_DIR=/home/pzg8794/sra_runs_pipeline_samuel /home/pzg8794/zebrafish/scripts/sra_runs_pipeline_sra3.sh status
-  ```
-- Sequoia (group) — run inventory (server) as of 2026-02-24:
-  - Complete runs in `/home/zebrafish/sra_runs`: **20**
-  - Missing SRRs (10): `SRR34002410 SRR34002412 SRR34002415 SRR34002419 SRR34002422 SRR34002425 SRR34002428 SRR34002431 SRR34002434 SRR34002437`
-- Side project / backup (Drive) — as of 2026-02-24:
-  - Folder root id: `1Ahm9GHalvjQEfQotQf3xhGHvZqEtLI-w`
-  - `sra_run_fastqs/`: **13** runs (26 files)
+
+### Mouse dataset (active)
+
+- Process doc (repeat full workflow): `Semester5/BIOL550/group_project/mouse/PROCESS_mouse_fastq_fastqc_fastx.md`
+- Reusable scripts + notebook template (local): `Semester5/BIOL550/group_project/pipelines/`
+- Work log (what/steps/why): `Semester5/BIOL550/group_project/WORKLOG.md`
+- Server reusable scripts: `/home/pzg8794/pipelines/`
+- Server end-to-end runner (download → raw FastQC → trim → trimmed FastQC): `/home/pzg8794/pipelines/run_end_to_end_fastq_fastqc_fastx_fastqc.sh`
+- Server end-to-end runner (parallel raw stage): `/home/pzg8794/pipelines/run_end_to_end_fastq_fastqc_fastx_fastqc_parallel.sh`
+- Active BioProject: `PRJNA1017789` (mouse; GEO: `GSE243308`) — 26 SRRs
+- Server dataset root (current run): `/home/zebrafish/mouse/PRJNA1017789_parallel/` (raw/trimmed outputs + logs live under this tree)
+- Local FastQC bundles:
+  - Raw: `Semester5/BIOL550/group_project/mouse/qc_bundle_raw/` (52 ZIP + 52 HTML for 26 paired-end SRRs)
+  - Trimmed: `Semester5/BIOL550/group_project/mouse/qc_bundle_trimmed/` (partial until trim finishes on server)
+- Notebook (raw vs trimmed): `Semester5/BIOL550/group_project/mouse/notebooks/fastqc_qc_bundle_analysis_raw_vs_trimmed_mouse.ipynb`
+- Notebook outputs: `Semester5/BIOL550/group_project/mouse/qc_analysis_raw_vs_trimmed/`
+
+#### Status snapshot (terminal) — 2026-03-02
+
+Raw stage is complete (26/26 SRRs downloaded + raw FastQC complete). Trim stage is running.
+
+```bash
+pgrep -af 'run_end_to_end_fastq_fastqc_fastx_fastqc_parallel.sh run|fastx_trim_fastqc_pipeline.sh _run_wrapper|fastq_quality_trimmer|fastqc'
+```
+
+```text
+1197697 bash /home/pzg8794/pipelines/run_end_to_end_fastq_fastqc_fastx_fastqc_parallel.sh run
+1203061 bash /home/pzg8794/pipelines/fastx_trim_fastqc_pipeline.sh _run_wrapper
+1204059 /usr/local/bin/FastX/0.0.13/fastq_quality_trimmer -Q33 -t 20 -l 30
+```
+
+```bash
+tail -n 5 /home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/end_to_end.nohup.log
+tail -n 5 /home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/trim/fastx.nohup.log
+```
+
+```text
+[2026-03-02 23:45:58] waiting: trim fastx.completed
+[2026-03-02 23:46:58] waiting: trim fastx.completed
+[2026-03-02 23:47:58] waiting: trim fastx.completed
+[2026-03-02 23:48:58] waiting: trim fastx.completed
+[2026-03-02 23:49:58] waiting: trim fastx.completed
+
+Approx 95% complete for SRR30333744_1.trim.fastq.gz
+Approx 95% complete for SRR30333744_2.trim.fastq.gz
+Analysis complete for SRR30333744_1.trim.fastq.gz
+Analysis complete for SRR30333744_2.trim.fastq.gz
+[2026-03-02 23:45:55] TRIM SRR30333745
+```
+
+#### Status snapshot (terminal) — 2026-03-03
+
+Trim stage still running; partial completion at last check:
+
+```text
+trim_pairs=19/26  trim_fastqc=19/26
+[2026-03-03 15:36:15] TRIM SRR30333762
+```
+
+### Zebrafish dataset (archived)
+
+- **Update (2026-03-02):** Instructor confirmed `PRJNA1277581` is **single-cell RNA-seq**.
+- Dataset modality table (bulk vs single-cell, double-checked): `Semester5/BIOL550/BIOL550-Lab/task_n_desc.md#dataset-modality-check-bulk-vs-single-cell--double-checked-2026-03-02`
+- Local archive (safe to delete later): `Semester5/BIOL550/group_project/_tmp_zebrafish_2026-03-02/`
+- Server archive (safe to delete later): `/home/pzg8794/_tmp_zebrafish_2026-03-02/`
+- Server reusable scripts kept at: `/home/pzg8794/pipelines/`
 - Lab 3 weekly report (HTML): `Semester5/BIOL550/BIOL550-Lab/lab3/BIOL550_Lab3_Report.html`
 - Lab 3 notebook: `Semester5/BIOL550/BIOL550-Lab/lab3/BIOL550_Lab3_Report.ipynb`
 - Trapnell DE submission artifact (zip): `Semester5/BIOL550/BIOL550-Lab/lab3/cuffdiff_results.zip` (contains `cuffdiff_classref_v2_xs/`)
@@ -43,7 +95,7 @@ Course home (myCourses): https://mycourses.rit.edu/d2l/home/1199746
   - `Semester5/2026-02-12 09_37_36.mp3` → `output/transcribe/biol550_2026-02-12_09-37-36.txt`
   - `Semester5/2026-02-12 09_35_11.mp3` → `output/transcribe/biol550_2026-02-12_09-35-11.txt`
 - Public BIOL550 repo: https://github.com/pzg8794/biol550
-- Zebrafish workspace (group project): `Semester5/BIOL550/group_project/zebrafish/`
+- Zebrafish workspace (archived): `Semester5/BIOL550/group_project/_tmp_zebrafish_2026-03-02/zebrafish/`
 
 ## Slides
 

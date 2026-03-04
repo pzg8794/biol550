@@ -87,7 +87,7 @@ This document outlines the group project strategy for BIOL550: High Throughput S
 **Focus:** Quality Control and preprocessing
 
 **Responsibilities:**
-- Run FastQC for quality assessment of raw reads
+- Run FastQC for quality assessment of raw reads; trim with FASTX as needed, then re-run FastQC on trimmed reads
 - Execute quality trimming with appropriate tools (CutAdapt, FastX)
 - Filter for adapter sequences and contamination
 - Generate QC reports and visualizations
@@ -196,7 +196,7 @@ This document outlines the group project strategy for BIOL550: High Throughput S
 | 3 | Jan 26 | Trapnell QC practice, Project selection | Practice QC tools, identify projects | Statistical feasibility | Biological relevance assessment | Literature search | Project picks (1st & 2nd) | 10 |
 | 4 | Feb 2 | Trapnell alignment practice | Alignment execution | Statistical interpretation | Discuss implications | Coordinate team | Lab report 1 | 3 |
 | 5 | Feb 9 | Trapnell DE analysis | Support expression analysis | Conduct DE analysis | Interpret results | Organize data | Lab report 2 | 3 |
-| 6 | Feb 16 | **BEGIN PRIMARY STAGE** | FastQC QC on real data | Fairness metrics planning | Biological context docs | Data organization | Lab report 3, QC analysis | 33 |
+| 6 | Feb 16 | **BEGIN PRIMARY STAGE** | FastQC QC + FASTX trimming on real data | Fairness metrics planning | Biological context docs | Data organization | Lab report 3, QC analysis | 33 |
 | 7 | Feb 23 | Continue Primary Stage | Quality trimming, preprocessing | Review fairness approach | Research similar studies | Literature compilation | Lab report 4 | 3 |
 | 8 | Mar 2 | **PRIMARY STAGE COMPLETE** | Finalize QC, document methods | Fairness audit setup | Validate approach | Meeting notes | Lab report 5 | 3 |
 | 9 | Mar 9 | Spring Break | Optional work | Optional work | Optional work | Optional | Optional report | 0 |
@@ -536,7 +536,7 @@ A collaborative research paper (30-50 pages, double-spaced) in standard scientif
      - `/README.md` - Team roster and project overview
      - `/data/raw/` - Original sequence files
      - `/data/processed/` - Cleaned and aligned data
-     - `/scripts/qc/` - FastQC and trimming scripts
+     - `/scripts/qc/` - FastQC + FASTX trimming scripts
      - `/scripts/alignment/` - Bowtie2/TopHat commands
      - `/scripts/de_analysis/` - Cufflinks/RSEM and statistical scripts
      - `/scripts/fairness/` - Disparate impact calculations

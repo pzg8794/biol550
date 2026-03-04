@@ -64,7 +64,7 @@
 ### Analysis Strategy
 We will employ a **three-phase hierarchical workflow** following the Trapnell protocol (TopHat/Cufflinks pipeline) aligned with BIOL550 course standards:
 
-1. **Primary Stage (Weeks 6–8):** Quality control using FastQC, quality trimming (CutAdapt/FastX), adapter/contamination filtering
+1. **Primary Stage (Weeks 6–8):** Quality control using FastQC, quality trimming (CutAdapt/FASTX), adapter/contamination filtering
 2. **Secondary Stage (Weeks 10–11):** Read alignment using Bowtie2/TopHat; BAM file generation and coverage analysis
 3. **Tertiary Stage (Weeks 12–15):** Differential expression quantification (Cufflinks/RSEM), statistical analysis with multiple testing correction, visualization (volcano plots, heatmaps, pathway analysis)
 

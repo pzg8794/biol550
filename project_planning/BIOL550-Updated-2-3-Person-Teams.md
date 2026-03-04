@@ -50,7 +50,7 @@ This document outlines the group project strategy for BIOL550: High Throughput S
 **Data Management & Infrastructure:**
 - Design and maintain the analysis pipeline architecture
 - Develop and test bioinformatic workflows (quality control, alignment, assembly, differential expression)
-- Implement reproducible computational methods using appropriate tools (FastQC, Bowtie2, Cufflinks, RSEM, etc.)
+- Implement reproducible computational methods using appropriate tools (FastQC, **FASTX**, Bowtie2, Cufflinks, RSEM, etc.)
 - Manage version control and documentation of all analysis steps
 - Prepare and validate input data from raw sequencing reads
 
@@ -217,7 +217,7 @@ Bonus Analyses (SNP calling, Transcriptome creation, etc.)
 **Focus:** Quality Control and preprocessing
 
 **2-Person Team Responsibilities (Member 1):**
-- Run FastQC for quality assessment of raw reads
+- Run FastQC for quality assessment of raw reads; trim with FASTX as needed, then re-run FastQC on trimmed reads
 - Execute quality trimming with appropriate tools (e.g., CutAdapt, FastX)
 - Filter for adapter sequences and contamination
 - Generate QC reports and visualizations
@@ -225,7 +225,7 @@ Bonus Analyses (SNP calling, Transcriptome creation, etc.)
 - Identify and troubleshoot any quality issues
 
 **3-Person Team Responsibilities (Member 1 - Computational Biology Lead):**
-- Run FastQC for quality assessment of raw reads
+- Run FastQC for quality assessment of raw reads; trim with FASTX as needed, then re-run FastQC on trimmed reads
 - Execute quality trimming with appropriate tools (e.g., CutAdapt, FastX)
 - Filter for adapter sequences and contamination
 - Generate QC reports and visualizations
@@ -690,7 +690,7 @@ A collaborative research paper (30-50 pages, double-spaced) in standard scientif
 ### Course-Approved Analysis Tools
 
 **Quality Control:**
-- FastQC (quality assessment)
+- FastQC + FASTX (quality assessment + trimming)
 - FastX toolkit (preprocessing)
 - CutAdapt (adapter trimming)
 
@@ -843,7 +843,7 @@ A collaborative research paper (30-50 pages, double-spaced) in standard scientif
    - Prepare design flowchart for your understanding
 
 2. **Tool familiarization**
-   - Install and test FastQC, Bowtie2, Cufflinks locally
+   - Install and test FastQC, FASTX, Bowtie2, Cufflinks locally
    - Review documentation for each tool
    - Create reference guides for command-line syntax
 

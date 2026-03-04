@@ -2,6 +2,17 @@
 .tmp.*
 *.gdoc
 .ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Local VSCode settings (do not commit)
+.vscode/
+
+# Course-local Python environments (never commit)
+.venv/
+.venv*/
+biol550_env/
+_DELETE_me_old_dotvenv_*/
 
 # Don’t publish course PDFs/handouts/readings by default
 *.pdf
@@ -24,6 +35,14 @@ BIOL550-Lab/project_pic/writeup_paper/
 group_project/project_reports/
 group_project/starter_pipeline/envs/
 group_project/starter_pipeline/config.yaml
+
+# Generated FastQC bundles (raw/trimmed HTML+ZIP; keep scripts/notebooks)
+group_project/**/qc_bundle/
+group_project/**/qc_bundle_raw/
+group_project/**/qc_bundle_trimmed/
+
+# Local dataset scratch space (do not commit)
+BIOL550-Lab/project_datasets/
 
 # Extremely large notebook (keep local)
 BIOL550-Lab/lab1/BIOL550_Lab1_Report.ipynb
