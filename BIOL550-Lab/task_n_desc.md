@@ -684,17 +684,20 @@ Script used:
   - Trimmed: `Semester5/BIOL550/group_project/mouse/qc_bundle_trimmed/`
 - Mouse notebook (raw vs trimmed FastQC): `Semester5/BIOL550/group_project/mouse/notebooks/fastqc_qc_bundle_analysis_raw_vs_trimmed_mouse.ipynb`
 
-**Update (2026-03-02): mouse end-to-end pipeline status (Sequoia).**
+**Update (2026-03-05): mouse end-to-end pipeline status (Sequoia) — complete.**
 - Active run root: `/home/zebrafish/mouse/PRJNA1017789_parallel/`
 - Runner: `/home/pzg8794/pipelines/run_end_to_end_fastq_fastqc_fastx_fastqc_parallel.sh`
-- Notes:
-  - We switched to the parallel runner (2 download workers + 2 FastQC workers) because the server was idle and it dramatically reduced wall-clock time.
-  - We copied `SRR30333743` (raw FASTQs + raw FastQC outputs) from the baseline folder into the parallel folder, then stopped the baseline run.
-  - The SRR list file name still says `remaining_no_SRR30333743`, but it now contains **all 26 SRRs** (we re-added SRR30333743 so trim runs across all runs).
+- Completion markers (server):  
+  - `/home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/raw/download.completed`  
+  - `/home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/raw/fastqc.completed`  
+  - `/home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/trim/fastx.completed`  
+  - `/home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/end_to_end.completed`
+- Canonical SRR list (server): `/home/pzg8794/metadata/PRJNA1017789/splits/PRJNA1017789_runs.all.txt` (26 SRRs)
+- Final counts (server): raw FASTQs + raw FastQC + trimmed FASTQs + trimmed FastQC are all **26/26** pairs.
 
 ```bash
 ROOT=/home/zebrafish/mouse/PRJNA1017789_parallel
-RUNS=/home/pzg8794/metadata/PRJNA1017789/splits/PRJNA1017789_runs.remaining_no_SRR30333743.txt
+RUNS=/home/pzg8794/metadata/PRJNA1017789/splits/PRJNA1017789_runs.all.txt
 
 awk 'NF && $1 !~ /^#/{print $1}' "$RUNS" | wc -l
 awk 'NF && $1 !~ /^#/{print $1}' "$RUNS" | while read s; do [[ -s "$ROOT/sra_runs/${s}_1.fastq.gz" && -s "$ROOT/sra_runs/${s}_2.fastq.gz" ]] && echo "$s"; done | wc -l
@@ -707,29 +710,24 @@ awk 'NF && $1 !~ /^#/{print $1}' "$RUNS" | while read s; do [[ -s "$ROOT/fastqc_
 26
 26
 26
-0
-0
+26
+26
 ```
 
-Trim stage progress example (pipeline still running):
+Log checkpoint (server):
+- `/home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/end_to_end.nohup.log` ends with: `end-to-end completed` (2026-03-03 21:39:04).
 
-```bash
-pgrep -af 'run_end_to_end_fastq_fastqc_fastx_fastqc_parallel.sh run|fastx_trim_fastqc_pipeline.sh _run_wrapper|fastq_quality_trimmer|fastqc'
-tail -n 5 /home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/end_to_end.nohup.log
-tail -n 5 /home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/trim/fastx.nohup.log
-```
+**Mouse weekly report (2026-03-04) — change-proposal checklist (cleaned).**
 
-```text
-1197697 bash /home/pzg8794/pipelines/run_end_to_end_fastq_fastqc_fastx_fastqc_parallel.sh run
-1203061 bash /home/pzg8794/pipelines/fastx_trim_fastqc_pipeline.sh _run_wrapper
-1204059 /usr/local/bin/FastX/0.0.13/fastq_quality_trimmer -Q33 -t 20 -l 30
+Source (full detail): `Semester5/BIOL550/transcripts/report_change_proposals_mouse_weekly_report_2026-03-04.md`
 
-[2026-03-02 23:49:58] waiting: trim fastx.completed
-
-Analysis complete for SRR30333744_1.trim.fastq.gz
-Analysis complete for SRR30333744_2.trim.fastq.gz
-[2026-03-02 23:45:55] TRIM SRR30333745
-```
+1) Weekly report expectations sentence — **maybe** (keep report focused; already shows interpretation + next steps).  
+2) Server-load / coordination sentence — **skip** (too detailed/vague; already mentions resumable pipeline + shared resources).  
+3) PASS/WARN/FAIL explanation — **maybe** (we explain at module level; avoid weeds).  
+4) SRA flags “why these” — **skip** (example commands removed to save space).  
+5) Severity score explanation — **keep brief** (rank reports by weighted WARN/FAIL so FAIL has higher weight).  
+6) Trimming ≠ clipping — **keep** (quality trim helps tails; adapter signal needs clipping).  
+7) “QC time buffer” — **skip** (reads vague).
 
 ### Git metadata removal (shared drive)
 

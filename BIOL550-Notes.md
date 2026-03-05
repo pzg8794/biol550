@@ -34,13 +34,26 @@ Course home (myCourses): https://mycourses.rit.edu/d2l/home/1199746
 - Server dataset root (current run): `/home/zebrafish/mouse/PRJNA1017789_parallel/` (raw/trimmed outputs + logs live under this tree)
 - Local FastQC bundles:
   - Raw: `Semester5/BIOL550/group_project/mouse/qc_bundle_raw/` (52 ZIP + 52 HTML for 26 paired-end SRRs)
-  - Trimmed: `Semester5/BIOL550/group_project/mouse/qc_bundle_trimmed/` (partial until trim finishes on server)
+  - Trimmed: `Semester5/BIOL550/group_project/mouse/qc_bundle_trimmed/` (52 ZIP + 52 HTML for 26 paired-end SRRs)
 - Notebook (raw vs trimmed): `Semester5/BIOL550/group_project/mouse/notebooks/fastqc_qc_bundle_analysis_raw_vs_trimmed_mouse.ipynb`
 - Notebook outputs: `Semester5/BIOL550/group_project/mouse/qc_analysis_raw_vs_trimmed/`
 
-#### Status snapshot (terminal) — 2026-03-02
+#### Status snapshot (terminal) — 2026-03-05 (complete)
 
-Raw stage is complete (26/26 SRRs downloaded + raw FastQC complete). Trim stage is running.
+Pipeline is complete: raw FASTQs + raw FastQC + trimmed FASTQs + trimmed FastQC are all **26/26** pairs.
+
+- Completion markers:
+  - `/home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/raw/download.completed`
+  - `/home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/raw/fastqc.completed`
+  - `/home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/trim/fastx.completed`
+  - `/home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/end_to_end.completed`
+
+- Log checkpoint:
+  - `/home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/end_to_end.nohup.log` ends with: `end-to-end completed` (2026-03-03 21:39:04).
+
+#### Status snapshot (terminal) — 2026-03-02 (historical)
+
+Raw stage was complete (26/26 SRRs downloaded + raw FastQC complete). Trim stage was running.
 
 ```bash
 pgrep -af 'run_end_to_end_fastq_fastqc_fastx_fastqc_parallel.sh run|fastx_trim_fastqc_pipeline.sh _run_wrapper|fastq_quality_trimmer|fastqc'
