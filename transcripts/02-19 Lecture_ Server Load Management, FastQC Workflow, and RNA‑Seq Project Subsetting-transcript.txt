@@ -1,0 +1,282 @@
+00:00:01 Speaker 1
+All right, there we go. Excellent. Most of you are getting started on the fast QC.
+00:00:09 Speaker 2
+That's good. Again, keep an eye on top and how busy things are. So I'm going to share screen. We'll look at a couple of different things on the server. So yeah, just make sure that load stays below 15 if you can. Oops, Move this over here, we go see again, I'm going to keep that system load under. If we can. Also, the system load doesn't necessarily count for network bandwidth. Try to make sure you're doing one download at a time per group, not per person. So, um, you know if it's a slow time and no one else is on, you can do more than one. The thing is it doesn't speed it up at all. What happens is if you run two downloads at the same time, it splits your network bandwidth in half between the two of them. Each one takes twice as long to finish. So really really makes sense to do one at a time. So again keep an eye on top. 
+00:00:59 Speaker 2
+All the stuff going on there. I know there's some other analyses happening there. I see a couple different running. Earlier we had a starter running. Other thing you got to look at is keep track of your group's dry space, right? I'm going to pick on one group, um, sorry, It's like ten frogs in your group because that's the first one I saw there as the list. I'm going to look at the dry space used in your group directory as well as each of your individual directories for your team. And I'm going to sum it up, and you need to keep your drive usage. Pull out chat. Your total drive usage for everything in group, your group directory and your home directories, to one terabyte. Those are one and a half terabytes. When you're completely done with Trackmill, and you've got a perfect ten on all three parts, Then you can go ahead and delete anything you want from the data files there. That'll save you some space.
+00:01:56 Speaker 2
+It's not going to make a huge difference. Most of the data is going to be in your project files. If you're finding you have a lot of disk space you need, You may want to think about subsetting your data, and instead of doing everything in that project, just do a part of it and doing certain analyses. So we can talk about that. Now, to see how much space you're using in any given directory, use the du -sh command. We'll put this in chat so you can see this later. K -s either way it should work. If you run it, it'll give you a subtotal, the number of kilobytes you have in that directory. So there's kilobytes, megabytes, 46 gigabytes so far in the group directory. And that's well below your one and a half terabytes. You're okay so far. Also keep in mind though as you do analyses, as you run FastQC, as you clean up your data files and then duplicates those data files, as you then run your alignments, as you do everything downstream. 
+00:02:54 Speaker 2
+It's going to take more and more space. It's not just simply doubling or something. It's actually going to be probably four or five times as much space. So, just keep an eye on your drive space usage. Um, I will be running a script that will check automatically every so often. Um, I don't think any group is currently at risk right now. I'll just double check this afternoon. Um, but I'll let you know if I see you're starting to approach that. We'll talk about that during some of the weekly meetings or I might have to email you if it gets really bad. Um Another thing to look at, df-k. All right, right now there's a whole bunch of stuff we don't need to answer. We call it virtual drives. You can put that command in chat too so you have that. But the one to look at is this sda3. That is our primary drive that we run our analyses on and our home directories and everything else are on there. Right now we're using 36% of it. So since I got to that one and a half terabytes without your track files.
+00:03:52 Speaker 2
+We had about seven and a half terabytes available. So I split that equally among the five groups, and if I did my math right, that's one and a half terabytes per group. Did I do my math right? Seven and a half five ways? We got one couple nods. Okay good. I gotta ask, I've had a cold for a couple of days so I'm not positive. My head's a little foggy. So definitely call me out if you get the math wrong. So yeah try to keep it to one and a half terabytes per group And just I'll monitor it for the most part, and I'll let you know if you're getting closer, if it's gotten over. As I see it, I won't run it every day, but I'll take a look and every so often do a spot check. Or I'll look and see at that 36%, as it approaches 90%, We're definitely going to have to have everybody talk about this and see how we can save space. The reason is that this hits 100%, it will shut down the server.
+00:04:49 Speaker 2
+It creates some conflicts for some of the essential system tasks, and it'll shut down until I can get in, clean up delete files on the drive somewhere, and then restart it. So please be careful that keep an eye on that every so often. Run that df i n k every so often to see what's going on. All right. Any questions so far?
+00:05:10 Speaker 3
+Not related to drive space? Yeah. If the server is dead like dad dead? Dead Well like, If you're the only person on, if you're the only person on, how long would it take to download roughly an NSR file?
+00:05:28 Speaker 2
+Depends on how big it is. Okay. You know, like orders of magnitude difference in size as a result. If you have to give a range, if you have to give a range. Oh gosh. Very roughly. Yeah, just overall time.
+00:05:42 Speaker 1
+Something I don't know. Um. 
+00:05:49 Speaker 3
+Are we talking like seven hour hours? Like I. 
+00:05:54 Speaker 2
+Want to say seven hour per file typically, but let me see if I can get a better answer here. Okay. Let's see if I've got because I ran a test the other day. That. 
+00:06:09 Speaker 1
+Was eight thirty five. Oh,
+00:06:17 Speaker 2
+I don't build on the Adam sorry. I don't have those data files there. Um, I know I downloaded something a couple days ago. You can see when they started it, but I can't see when they finished. Um, I want to say my guess is 15 minutes. Does anyone have a hard number? You kept an eye on how long it takes to do a download?
+00:06:43 Speaker 4
+I just had one finish and I bet it was at least half an hour, at least.
+00:06:50 Speaker 2
+But that's with everybody else running at the same time. Yeah. Yeah. So, yeah, Monica you're seeing the same thing? Yeah. With everybody else running right now, the bandwidth gets split up. It should be a lot faster than that. Um, Max has been in an hour? Okay, but he started at the beginning of class, then next to yeah, yeah. So it's probably slowed down with everybody else on there. Uh, you can do it to him if you want. That's okay. Um,
+00:07:18 Speaker 3
+I am not he didn't download anything. That was just I think she probably just looked stuff up. Oh, okay.
+00:07:25 Speaker 2
+Oh, I assumed that that was firsthand uh information. My bad.
+00:07:34 Speaker 2
+Oh, He talked to the group interesting, okay. And that's an interesting point. You can actually look at top and see how long they're running. So. Let me show you something else here. It's a little funny. So remember we talked about maybe this time variable here. We can see how long something has been running. Now, that is system time, not clock time. If it's running multiple threads or if it's spread out kind of funny, you'll get different values. It's not. unless if you're running all on your own, that's a. 
+00:08:12 Speaker 2
+Reasonably accurate measure for a single threaded process. Um, yeah, I've seen a lot of these are taking longer and I bet that's because of bandwidth to split. Realistically, if you've got say 300 spots per sample and you got 20 samples, I expect no more than a couple hours to download everything. That's off the top of my head though. And it also depends on other factors like. How busy is NCBI right now? They get hit with issues sometimes. So it's there's not a simple linear relationship. It's like, oh, how long does it take to get to work? To commute to work? Well, it depends on traffic. Depends on how fast I'm driving today. Depends on the weather. Uh, there's a lot of factors you have to count for. So it's really hard to get a good measure. Sorry I can't give you a better answer than that Is that okay? Okay cool. 
+00:09:13 Speaker 1
+Excellent. Other questions?
+00:09:18 Speaker 4
+I actually have one. Yeah, what do you got? Uh, when I look at the uh, sorry. When I look at the SRR link it says the file size is 4. 8 gigabytes. Okay Now I assumed that, that was for both file one and file two combined.
+00:09:43 Speaker 2
+As an archive, it should be. What are you seeing?
+00:09:48 Speaker 4
+Well, File one and file two are now each up to uh three point five odd, uh. 
+00:09:57 Speaker 2
+Oh. Quick question. Was it gigabytes or gigabases?
+00:10:02 Speaker 4
+Uh That was the size. The the gigabases is uh seventeen point four. 
+00:10:13 Speaker 2
+Okay. So I got a little fly zipping around here. Uh, 17. 4 gigabases. That's a lot. Um, remember it should be about twice the size of the number, a little more than twice the size of the number of gigabases. Now, the problem is when they're compressed. Um. 
+00:10:38 Speaker 4
+Wait, did the file size should be twice the gigabases?
+00:10:41 Speaker 2
+So if it's uncompressed, yes, It should be a little more than twice as much because of the way that the FASTQ files are structured. For each fragment you have its all its bases, You have the spacers on top and bottom of that. And then you have the quality.
+00:10:59 Speaker 4
+Okay, that may be a problem.
+00:11:02 Speaker 2
+Now when they're compressed it's not as big a deal. And don't worry about them being uncompressed because you should be able to work with them in compressed format.
+00:11:12 Speaker 4
+Yeah, no, but our the total gigabases for the entire dataset is like 400. So that may be an issue.
+00:11:24 Speaker 2
+Okay. Well, let's take a look at it. Let's see which group is this? Okay.
+00:11:40 Speaker 2
+I think we'll have to set up a breakout room and talk about that. Or maybe after we finish with the class, we can take a look at your group's dataset. Look at the project and see if there's some way we can subset it or if we need to.
+00:11:52 Speaker 4
+It's hard to know what to subset before we've actually gotten to look at the data.
+00:11:57 Speaker 2
+Well, we can talk about that. There are some ways you might be able to without downloading it. We can take a look at what are the individual samples and what do they represent? But definitely let's take a look at that. So this is for Stercorarius? Yeah. Okay. Once everybody else finishes, we'll we'll stick around and we'll take a look at that. Okay. Cool. All right, any other questions?
+00:12:23 Speaker 3
+I thought of another one in terms of the presentation on Wednesday, I understand it's very informal. How much roughly in an ideal world, would we have done by the time that Wednesday rolls around?
+00:12:38 Speaker 2
+Uh, Hopefully, you guys will have all your data and you started doing the pass QCs. Ideally it'd be nice if you finished your pass QCs, but I don't expect to do well. It depends again on the number of samples you have, um how big each one is. Um Pass QC is pretty fast, but yeah we'll see what happens. Because I'm just trying to keep an eye on the timeline.
+00:13:02 Speaker 3
+Thank you.
+00:13:02 Speaker 2
+Yeah, no worries, no worries. We have lots of time on the, in fact, let me pull up the syllabus and show you. We've got buffer room put into this intentionally in case something goes wrong. So I'm going to share screen on syllabus. Boom, move this out of the way. So, you see, we got three weeks set up just to do the quality control. That includes the downloading, running FastQC, doing any cleanup you need to. It gives you a little bit of buffer. I'm expecting most groups. And typically, what happens is most groups starting their alignment the week before break.
+00:13:37 Speaker 2
+So that's usually what happens. But we have the buffer just in case. We've also got a couple of weeks to do your alignments. And then we've got several weeks to finish up, to do the differential expression, visualization, so on. So we've got buffers in there. The reason is inevitably something goes wrong somewhere for every group. One of the things we're dealing with is we're dealing with unknown datasets, right? There may be something in the quality or in the results that you weren't expecting. You may have to maybe jump back to an earlier step and repeat something because maybe you even forgot, maybe you forgot to do an annotation file for something, for one of your alignments. You may have to go back and repeat those steps. And that happens. We all do this inevitably in any lab situation. Just things aren't exactly ideal ever.
+00:14:34 Speaker 2
+Usually it's a data quality issue. And we'll see that as we start doing the quality control. But, you may not see some of the quality control issues until you get to the alignment. I guarantee at least one group is going to have that happen before the semester's over. So, cool. Good, other questions? This is all good, giving you a better idea of what to expect. This slide is not quitting, sorry. Little fungus that. Um, any other questions? Okay. All right, So what we can do is I'm going to hang out with StarScoopio for a bit and talk. Um, I will be looking at the drive usage again. Like I said, I'll keep an eye on that for a bit. But otherwise uh I got a message from Sam Sam if you can wait till after StarScoopio as we can, so you can hang out if you want.
+00:15:33 Speaker 2
+Are you in Sarcopilus? No. We're a different group. Okay. So Sam, yes we can, but let's wait until after Sarcopilus has a chance to look over their data. All right. If there are no other questions, you folks are free to head out. I'll see you Monday. We'll talk about the next round of papers. Excellent Have a good weekend. 
+00:16:03 Speaker 4
+So an update the the first file did, in fact finish pulling or rather the first file pair. Okay. Um and it topped out at about 3. 6 uh, million kilobytes or gigabytes.
+00:16:19 Speaker 2
+Let's see. Let me see assuming everyone from sersupials is here.
+00:16:26 Speaker 4
+Uh yes,
+00:16:29 Speaker 2
+I think so. Yeah, cool. All right, let's see what you got. So. Which one was it? What was the, or last three digits of the SRR?
+00:16:38 Speaker 4
+It might be faster for me to share my screen. Okay. Uh, how do I, how do I hide this?
+00:16:46 Speaker 1
+Uh- huh. Please. Sorry, uh working on it.
+00:16:49 Speaker 4
+Okay, so these these two here. 
+00:16:54 Speaker 2
+Are marsupials. Okay, this is the one ending in seven six five Got it.
+00:16:58 Speaker 4
+Yeah seven six five there, And then I have.
+00:17:02 Speaker 2
+They're about. 
+00:17:04 Speaker 1
+Three and a half gigs each. That's not bad. They're about three and a half gigs each.
+00:17:09 Speaker 4
+But this is what I have here,
+00:17:11 Speaker 1
+And this information doesn't necessarily line up with that. That's okay. It's so scroll back up to that,
+00:17:20 Speaker 2
+Where you had the four point eight So, that is a single file compressed, and it may compress better than the two individual files. That's an artifact of the nature of data compression, I believe. 
+00:17:31 Speaker 1
+Um, if they were uncompressed,
+00:17:35 Speaker 2
+It should be about thirty five gigabytes.
+00:17:39 Speaker 2
+Ish. But you're going to keep them compressed, so it doesn't matter.
+00:17:42 Speaker 1
+That's good. Yeah, I think you're okay. Now how many samples do you have in this project? Thirty eight. Thirty eight?
+00:17:51 Speaker 4
+Yeah, It's we have thirty eight It. We will inevitably narrow it down from that, but we don't know how yet. 
+00:17:58 Speaker 1
+All right. So. What are we looking at? About a quarterterabyte of various space for the raw files.
+00:18:09 Speaker 2
+You'd probably be okay. Now, if you wanted to split this up, what we can do, let me see. I don't remember where we find this. There's a place where you can actually. 
+00:18:21 Speaker 1
+Get information on the individual samples.
+00:18:27 Speaker 4
+What do you mean? Like this one or.
+00:18:30 Speaker 2
+So there's actually a summary table for any of these. So if you go to the project for this. This? Yeah, let me try to remember how we did this.
+00:18:43 Speaker 1
+Oh, yours is in GEO. Ooh, nope. I'm not gonna be able to do that, I don't think. What do you mean?
+00:18:49 Speaker 2
+All right. So there's different databases. SRA is the primary one for raw sequencing data. 
+00:18:58 Speaker 1
+Well, Geo is an end of our data it says.
+00:19:03 Speaker 2
+So Your data is in two different databases effectively. Geo is an older database that goes back to when we did microarrays. It'll accept data for high- throughput sequencing stuff, for next- gen sequencing and third- gen sequencing. However, it doesn't have the same metadata, the same information about the data.
+00:19:23 Speaker 4
+But that's like 295 megabytes of supplementary data. It looks like.
+00:19:29 Speaker 2
+Oh, this is supplementary. Okay, so you're right. Okay.
+00:19:32 Speaker 1
+Okay, so it's interesting though. Scroll back up. It's got the project there. All right, Let's go to one of the samples then and see if we can work our way through this. It's a little different where yours is Yeah. 
+00:20:00 Speaker 1
+All right. Try all runs under sample. Do you see where sample is? And to the right it says all runs. Let's see if that does it. Scroll down. No, it doesn't have it there, okay. Go back. I don't think you're going to have the data we want, unfortunately. What do you mean? So I'm looking for a summary table here, try under study all runs, let's see what happens there. 
+00:20:31 Speaker 1
+If that doesn't do it, it's going to be maybe all experiments. Scroll down? Nope. Okay, go back. Oh wait, there we go. Perfect. That's it. Awesome. Okay,
+00:20:40 Speaker 2
+So here we go. You can see what each sample represents and you're going to need this information So for that first row. Okay, you got all the database information, but you can see if you go right. Don't worry about the size, just worry about what is in it. We can tell what tissue type this was. So that's a hepatocellular carcinoma, so liver cancer. Scroll down and you get some of this right in the liver without cancer.
+00:21:07 Speaker 4
+I think we knew that. 
+00:21:08 Speaker 1
+From uh from uh I don't know if it was this link or the other one.
+00:21:17 Speaker 4
+Yeah, I think we knew that from here.
+00:21:19 Speaker 2
+But, the nice thing is having that table, it tells you which sample belongs to which condition. Yeah, so. 
+00:21:25 Speaker 1
+If you needed to, What you could do is, um, what you could, if you have found you had too much data,
+00:21:37 Speaker 2
+You could actually pick a subset of the carcinomas and a subset of the regular liver. For example. Presumably. 
+00:21:42 Speaker 4
+Each paired between the same patients.
+00:21:44 Speaker 2
+Yes exactly. If, you could do that. And if so, if you had to that's an option for subsetting. Yeah. We'd have to talk about how many samples for each. You need at least three to get a standard error, but you generally want more than that.
+00:21:55 Speaker 4
+Yeah I, You know, I'm I'm in my thought was that we would you know, run fast QC and see which ones are best and use those. That's a good idea. Yeah, There is also a if you go to this view, it gives you a it gives you a thread quality score, just like very basic thing. Yeah. Yep.
+00:22:27 Speaker 4
+Could be a good place to start.
+00:22:29 Speaker 1
+You know,
+00:22:30 Speaker 2
+You probably want to trust the fastQC results more than that though. Because that's a very quick process there.
+00:22:35 Speaker 4
+But I meant, if we're just trying to figure out which ones to skip downloading and fastQCing at all. So then if there's any that have a. 
+00:22:43 Speaker 1
+Worse graph than this, then we know to skip that pair. Okay. What's my train?
+00:22:52 Speaker 2
+You could, The problem, my concern is that it's a very coarse measure of quality. Oh yeah, definitely. When you get pass QCs. So I would trust the pass QC results a lot more. Yeah. I put low confidence in that quality graph there.
+00:23:06 Speaker 4
+Again, my my I wasn't saying it was good, I was saying it will show us if the data is trash. 
+00:23:14 Speaker 2
+Sometimes Sam, I already told you, I'll, i can talk to you after i talk to Sarsupial sorry.
+00:23:22 Speaker 4
+Sorry, Sam. We're trying to hurry.
+00:23:24 Speaker 2
+No, you're okay. Um, unless it's an emergency, Sam. If it is, Send me a direct message that this is a life death emergency in which case you should probably be calling 911, but that's okay. Okay cool Yep I still have I've been on my list. So I won't forget you and my I saw your question uh and I'll deal with your question after. 
+00:23:44 Speaker 1
+Sam's All right? So, let's see I think they give you enough to think about self setting though. Or start a sequence.
+00:23:53 Speaker 4
+Yeah. So you're suggesting that we should in fact, download all of them and run FastQC on all of them, and only then decide which ones to toss?
+00:24:04 Speaker 2
+Yeah, I think you're going to be okay on space, assuming that one file is representative. I'm pretty sure it is. On average it should be about the same.
+00:24:13 Speaker 4
+Hang on, I have.
+00:24:15 Speaker 1
+As long as it's representative or larger than the others.
+00:24:21 Speaker 1
+And uh oh I was looking at the wrong. Total number earlier, each. 
+00:24:33 Speaker 4
+Yeah, no. Uh I was looking at the wrong number. It's not like 400 total gigabases. It's like 700,
+00:24:39 Speaker 2
+Okay. Professor, you see though, that's fine. And you can trim it down from there if it is 700 gigabases total, then yeah, that's a big issue. Um, yeah,
+00:24:47 Speaker 4
+We we will def we will definitely be subsetting. I think that was always the plan.
+00:24:51 Speaker 1
+Okay, cool.
+00:24:53 Speaker 4
+Um, but if if it's small enough that we can at least run, we can at least get through fast QC without issues then.
+00:25:03 Speaker 2
+Yeah, yeah, absolutely. You have enough room to do that, so you should be fine there. Fastqc takes very little space, you're talking megabytes per file or per uh per example file That's.
+00:25:12 Speaker 4
+The good news, yeah cool The. Bad news is we have. You know,
+00:25:16 Speaker 1
+Actually that's not bad news. It's better than not having an update.
+00:25:21 Speaker 4
+No, My point was more. The bad news is we still have to download. 
+00:25:25 Speaker 1
+All the recipes. Yeah, that's okay. No, it's not, but that's okay. Actually,'surprisingly faster than it used to be. You are running off of a gigabit per second pipeline, so it's moving pretty fast. We used to have.
+00:25:45 Speaker 1
+There's a hundred megabits per second. Uh, they might even be running up to ten gigabit per second now. I'd. 
+00:25:55 Speaker 2
+Have to look and see what the fiber optics are in the room, but yeah, it's it's not too bad. It's not quick.
+00:26:01 Speaker 1
+It's not instant. It's downloading. 
+00:26:04 Speaker 2
+Each one is about as fast as downloading Steam game,
+00:26:07 Speaker 1
+Downloading Call of Duty. 
+00:26:09 Speaker 4
+That's that that's surprisingly un- terrible Yeah. 
+00:26:13 Speaker 1
+It's pretty good.
+00:26:14 Speaker 4
+I said un- terrible. Un- terrible? Yeah, surprisingly decent.
+00:26:19 Speaker 1
+Oh yeah, yep. It's pretty good anyway.
+00:26:22 Speaker 4
+Uh I think I think we understand where we're at uh with this and uh, unless you have anything else, I think Starfield appeals could probably uh clear the floor for other people's questions now.
+00:26:35 Speaker 2
+All right, sounds good. Thank you. Folks. If anything comes up, definitely email.
+00:26:39 Speaker 1
+Okay. Thank you, awesome.
+00:26:43 Speaker 1
+All right, Sam, you want to break out room? Uh yes. Yes please. I just have a quick question about the homework and stuff. About the homework. Okay, let me uh let's see how to do this. All right, I'm guessing the rest of you have questions too?
+00:27:14 Speaker 1
+All right, So what I'll do is I'll set up the breakout room, and Sam will be back in a little bit. And then we'll see what other questions we got. All right, Sam, it's opened up.
+00:32:48 Speaker 1
+Yeah.
+00:33:18 Speaker 1
+I am not sure if I can do it.
+00:33:57 Speaker 1
+The first is the most important.
+00:39:33 Speaker 1
+Oh, Peter, I see a hand, but I think Maya had a question in chat well before everything. So let me check with Maya. Uh, Maya, let me see if I can find your question. Uh oh, I see it. There we go. Uh so the first question was for the genes. Yeah,
+00:39:54 Speaker 2
+There are different forms. There's different files in there. The one file you want is the one that says for each gene. Here's the fold expression difference. Here's the significance measures for each gene, not necessarily isoforms. Got it. Okay. Awesome. Yep, thank you. All right,
+00:40:14 Speaker 1
+No worries. All right, Peter, what's going on?
+00:40:17 Speaker 5
+Yeah apologize for my voice with the mets Um I wanted to confirm with you something Um. So so we're running fastQC in this serverum. Are we allowed to continue downloading all the dumps? Should we have a running. Downloading what again? You can be downloading.
+00:40:44 Speaker 2
+You can download one file while you're running one FastQC session. You do both simultaneously. Okay, sure. There should be plenty of.
+00:40:50 Speaker 5
+All right. And, is it okay if we download the 30 runs that we have in the dataset?
+00:40:58 Speaker 5
+You can, but do them one at a time. One at a time. Yeah, that's what I mean. Okay. Yeah, perfect. Yeah, I'll do that. Thank you.
+00:41:04 Speaker 1
+Okay, cool. All right, no worries.
+00:41:08 Speaker 5
+Um. Catch you later. By the wayum I I run the QC because they told me to run it. I gave them the option if they wanted to run it. So I just ran it becauseum nobody was running it. Okay?
+00:41:24 Speaker 1
+Okay, you guys have to figure that out according.
+00:41:27 Speaker 5
+No, no, no. I just wanted to let you know it's not only me doing the work. They know how to do it. They they yeah they know how to do it. It shows that we didn't want to run all of us at the same time and uh, make the serverum uh congested, more congested. Okay,
+00:41:46 Speaker 1
+Okay. Yeah, just keep an eye on things and coordinate with each other. You got to talk with each other. So yeah, sounds good. Thank you. Okay. Excellent. Catch you later.

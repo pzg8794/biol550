@@ -1,0 +1,714 @@
+00:00:00 Speaker 1
+The Python environment is what's happening. Um, let's see. Yep, there we go. I think that's everything with the chat messages. So, so yeah, just keep an eye out for that when you get to Cuff merge. Uh, anyone having issues with Cuff links before that? Or, is it just you got to find time to do it? And that's okay? I remember what Lily and I talked to you about yesterday. It was pretty seamless.
+00:00:30 Speaker 1
+Remind me what the issue was again. It was um you had to specify uh the library type. Oh that's right, yep. So- We use- oh sorry. That's okay, go for it. I was gonna say, uh we used FR - first strand, and that worked, but um not the not the unstranded one. Is that does that sound right? That does sound right uh FR-firststrand should be the correct library type. Great And that's what you typically use for Illumina, yep nice job Thank you Cool. 
+00:01:00 Speaker 1
+If you folks want to share that in discussion, that'd be awesome. Help out the other folks that are catching up with you. Cool? Oh, there we go. Chat is good too. All right, so let's see. Given where we are, so there's two things I want to do for the rest of the period. One I want to set up some breakout rooms for a short amount of time to talk about which data set you're picking. Um, Let me see. I'm going to start making the breakout rooms, start assigning people. So let's see. I'm going to start putting you into breakout rooms and I won't open them up quite yet. But what I want you to do in, oh there we go, In these breakout rooms is talk with your teammates because you had the two you're looking at if you haven't decided yet which one you're working on.
+00:01:59 Speaker 1
+Discuss that. Discuss which one you'd prefer or if neither of them is good, what you might do. Um, I'm going to cycle through the breakout rooms. And we'll just do this really quickly, Five or ten minutes total uh, to make sure your group is really solidifying one, because next week, we're going to start working on the projects. We'll start doing our downloading and our. 
+00:02:20 Speaker 2
+So start playing with the. 
+00:02:21 Speaker 1
+SRA toolkit and stuff like that.
+00:02:22 Speaker 2
+This guy made fun of my connection yesterday when I'm meeting.
+00:02:27 Speaker 1
+Everyone to your group.
+00:02:28 Speaker 2
+You were surprised, right? Look, looks like a nice guy.
+00:02:31 Speaker 1
+This will not take terribly long. It gets faster. 
+00:02:35 Speaker 2
+After I mean. 
+00:02:36 Speaker 1
+It. Yeah, yeah.
+00:02:40 Speaker 2
+Well, he was making gestures, you know, Because of I didn't eat the whole day, and I have my medication. So I was hyper like like so likeum like a kid, like when you said like time out time out. Alright. I was just like, I was like, By the way,
+00:03:01 Speaker 1
+As you pick topics, this is something else you've got to do.
+00:03:04 Speaker 2
+You've already picked a data set you think you're going to analyze. This is like a cool piece of it.
+00:03:09 Speaker 1
+Think about what you want to call your team because I'll start calling you by your team names going forward once.
+00:03:14 Speaker 2
+Yeah, yeah, because this is very personal to me. So I wanted to that. Yes, say, yeah, Yeah cause i wrote, i wrote something very strong, but.
+00:03:25 Speaker 3
+Or you wrote you wrote them something but didn't send it.
+00:03:28 Speaker 2
+No, yeah, I always do that. I write it to like digest it. Yeah, that's a good idea. Yeah, they'll help you think through your thoughts a little bit exactly. All right,
+00:03:37 Speaker 1
+There we go.
+00:03:38 Speaker 2
+I think I have written down my team script, if not correct me and. 
+00:03:43 Speaker 1
+Let me know and I will correct my face after. So people don't have something that you can go back and say, oh, that's what happened. Exactly like to use might come in. We'll talk about what do you see as the pros and cons? Including is it of interest to you, but as well as what is the quality of data. So be prepared to show me what you got. And if you're having problems with it or none of them are working well, just let me know and we'll talk about next steps. So all right, here we go. Go ahead and jump into your rooms and I'll cycle through.
+00:04:10 Speaker 2
+I don't know. I don't know if he thought he was being funny or anything, but what I know is thatum I solved a problem for him, For the team, and instead of like thanking me, just like hello. You know, resources are. Oh my god. I'm so tired.
+00:04:33 Speaker 4
+Me too. I like slept in this morning.
+00:04:36 Speaker 2
+Me too Same here slept like five hours, maybe or four. 
+00:04:41 Speaker 4
+Oh God Yeah. 
+00:04:43 Speaker 2
+And it was because of myumum one of my things flare up last night, so I couldn't sleep, yeah. But the break is coming, so we'll hopefully we'll make it up there. Oh, let me share something with you guys. Just, so you guys have I forgot like I have I was supposed to do that before. It is in the um Is it? I don't know if it is. Let me just make sure I move it. Now if it's not But that way, we you know as we talk about it, you guys have access to everything. 
+00:05:22 Speaker 2
+Because I have access to everything you guys worked on, so let me just move this. You guys can keep talking in the meantime. Oh, actually I can share screen if you want, so you see what I'm doing.
+00:05:37 Speaker 4
+So the two, um the two data sets you picked should be in your folder, right?
+00:05:42 Speaker 2
+Yes but but I I made it even easier. I just narrowed down to like one that yeah that we didn't have anyum. U m issues. So that way now we are. We are now we only have three to decide from,
+00:05:57 Speaker 4
+Like essentially playing it safe. Like I mentioned,
+00:06:00 Speaker 2
+Exactly yeah, playing it, playing it safe. Yeah,
+00:06:03 Speaker 5
+Didn't we have two, and then one of them didn't work because it was it didn't have the 40 million. 
+00:06:09 Speaker 4
+Our Zoom from our two P.
+00:06:12 Speaker 5
+Um yeah,
+00:06:13 Speaker 4
+That's the one I think you removed.
+00:06:14 Speaker 5
+Yeah, oh, you added one more after that.
+00:06:18 Speaker 2
+No, no, no, I just kept one.
+00:06:21 Speaker 5
+Oh, oh,
+00:06:22 Speaker 4
+Sorry. He got rid of the one that didn't match all the requirements. Yeah.
+00:06:26 Speaker 5
+Oh, I thought I thought we had three to go through. Oh yeah, three. Yeah. Um, I did notice that the COVID one that you have Peter, it's a hundred and fifty two million or sorry, a hundred and fifty two samples, and their average is like seventy to a hundred million. So I might I think it might be too big, unless Oger says we can break it down.
+00:06:49 Speaker 2
+That's always the case. That's always the case.
+00:06:52 Speaker 4
+I would want to confirm that with him, yeah.
+00:06:53 Speaker 2
+Yeah,'cause from my experience in the real world, that's always the case. You never take the entire data set. Right. But we have like like Nikki said, right? We we have to confirm with him that because who knows, you know, He might actually be like I want entire data set.
+00:07:11 Speaker 4
+But Right Did you Peter did you see any glaring issues with the two projects that Sam and I picked?
+00:07:17 Speaker 2
+I know you said that I'm going to show you, I'm gonna show you and I'm gonna give you access to it. I didn't see any issues. You guys did a pretty good job. Hold on, let me um, I'm trying uh uh is it planning project? No, it's the project plan. Has so many stuff in here guys seriously. Uh I wonder if issue.
+00:07:48 Speaker 2
+Hello, how's it going there? Good. Yeah, We we are going down to. Uh we're gonna discuss the three data sets that we picked.
+00:07:58 Speaker 4
+Actually, right from the get go, we do have one question. I We're still discussing one of the data sets that we had picked as like our final four. I guess since we ended up picking different data sets, One of them hasum I think one of the uh samples has like almost a hundred and fifty two million reads. We were wondering if because of how high the read count is, we should maybe refrain from using that data set.
+00:08:23 Speaker 1
+So is it 152 per sample or total?
+00:08:27 Speaker 5
+No, it's 152 samples with 70 to 100 reads. 70 to 100 million reads.
+00:08:36 Speaker 1
+Okay, So what you will be able to do is pick a subset if you need to. Okay. Um, the bigger things to focus on are are you interested in the data set? And is the data sufficient quality that you could pull a subset out and analyze that?
+00:08:54 Speaker 2
+Yeah. Oh, you're here. You guys are here. Yep. Um, let me send the other link, guys.
+00:09:06 Speaker 4
+Thank you. No worries.
+00:09:12 Speaker 2
+Yeah, two two, And we can start discussing how you guys want to analyze this. We can start looking, and these are just ideas, um, at the data. What, how the data is, how complex it is. And also we can also make decisions based on the data complexity as well. Um yeah share it in there so. 
+00:09:44 Speaker 2
+So we all have it's in the same place. So here are, yeah, so Nick to your response. Yeah, I validated the two ones that you guys picked and yeah they're cleared. They're clean. I didn't see, I didn't find anything. Okay perfect.
+00:10:07 Speaker 5
+Oh yeah, I had a quick question Dr Ojir okay, Could, you just go uh briefly go over the steps to verify. Uh if a data set is okay, besides the parameters that you gave us originally like the forty, theum.
+00:10:22 Speaker 1
+So I can't give you a solid set of rules because where things go wrong. There's just too many different dimensions to that. But I would say take a look at the criteria I set and say, does the data set meet those? Yeah.
+00:10:38 Speaker 5
+It does all of them.
+00:10:39 Speaker 1
+Yeah, And then look to see if there's anything else that stands out that might be an issue. Maybe, they've got one of each condition, and there's like, you know, maybe you have twenty samples, and everyone is a different condition. Okay, too many variables. How do you analyze it? What do you mean how many variables? That could mean different things.
+00:10:56 Speaker 5
+No, I said too many variables like we don't want too many conditions.
+00:10:59 Speaker 1
+It could be, yeah, yeah, that could be an issue. I mean, there may be a way to analyze it, but then you're putting a lot of extra load on yourself. Maybe it's a time series. Those are trickier to analyze. Um, so you know, think about what it is you're looking at the data set. If there'd be any challenges that are not in the list.
+00:11:17 Speaker 5
+Gotcha. Yeah, I was looking at betweenum the two data sets that I submitted. It wasum it was a house a house mice and uh a fish, thezebrafish they had like four different conditions acrossum. 
+00:11:35 Speaker 5
+I think like two parameters or something like that. So it was a lot of, a lot of different things to think about. So that's why it was number two. But okay,
+00:11:42 Speaker 1
+I so you might be able to even use a subset of the data. You don't have to analyze all the conditions. Okay.
+00:11:48 Speaker 2
+Okay. Cool Yeah And in the case that we subset the data, um, um what is the range that you would uh recommend? I know we we already know that it has to be a limit of what? Range of what? I I was just gonna finish it. So, what is the range that you recommend Um in terms of because I know that you uh provided a limit as a I believe it was um how many do we have here? The requirement? How many you guys know for the top of your head, what was the minimum for the length of their monodera It was twenty uh.
+00:12:30 Speaker 2
+20 samples.
+00:12:30 Speaker 4
+It was not 20 samples, and each sample should have at least 40 million reads.
+00:12:34 Speaker 5
+Yeah, 40 million reads, and then yeah. Um, it has to be a eukaryote, and then the base length Was there a base length? Less or more than one?
+00:12:44 Speaker 2
+Oh here here here, okay. So yeah, you, you guys are right, yeah, so equal. So greater or equal to 20 uh runs. So in the event that we decide to do a subset, right? Um what would be the max like the range? So we already know that lowest is 20. So what would be the range you recommend, like top?
+00:13:03 Speaker 1
+Okay, soum if the 20 is one is a should not a must. Yeah. Now you may find if you have a lot of fragments per sample, let's say you've got uh 700 million fragments per sample and 20 samples, that's probably too much data. You're going to run out of disk space because you are going to have an allocation for how much space you can work with. Um, So, those two shoulds are things that can flex a bit depending on what you're looking at with the data set and your needs are. I would say at a minimum, though, for each condition, you must have at least three samples, otherwise you can't do error rates. So, you're looking at least six samples in the final analysis. And if you have tons of data for each sample, that might be good enough to get through. You probably want more if you can. You want more samples just to get a better error measure.
+00:13:58 Speaker 1
+Okay. A better estimate of the error. Got it. Does that make sense? Yeah,
+00:14:03 Speaker 5
+So yeah, We'll definitely have to do a subset of the 152 million or 152. If we go with it because 152 and then some of them are 100 million reads, that's crazy.
+00:14:14 Speaker 1
+That's you know like Well, hundred million is not bad. I mean Aaron Kessel's had like seven hundred thousand fragments and that was doable. Now granted he was using a genome assembly, it's a little different but, Um, it's I wouldn't say that seven hundred million is an automatic elimination. It depends on how many samples you are looking at. It depends on the length of the fragments. If it's seven hundred million samples, and I have seven hundred million fragments in there, each one hundred and fifty bases or less or three hundred to three hundred, yeah, that's a teraden is three hundred. Yeah, it's one hundred and fifty each direction. So yeah um. 
+00:14:54 Speaker 1
+I mean, yeah, when I come back through, We can, you can show me the the stats on it, and we can get an idea if you're going to be able to work with that or not.
+00:15:01 Speaker 2
+Okay. Yeah.
+00:15:02 Speaker 1
+So I'm going to jump to another group here, just so I can get to everybody. Yes. Are you going to come back? I will come back. Yeah,
+00:15:09 Speaker 5
+I'll be okay because I had a question about the homework if that's okay.
+00:15:12 Speaker 1
+Uh, let's do that another time. Oh, okay. Yeah, let's we got a lot of stuff getting in class today.
+00:15:19 Speaker 2
+So talking about these facts guys.
+00:15:21 Speaker 4
+Um Just said to subset it earlier. Bruh. If he said that from the beginning, so much time could have been saved.
+00:15:30 Speaker 5
+No, He yeah exactly because there were so many data sets that I gave up on it. That one there was a really nice data set. It had one 13039 million, and then the rest were 40. It was so nice.
+00:15:46 Speaker 2
+All the datasets probably that we chose in the beginning were valid,
+00:15:50 Speaker 4
+So probably. 
+00:15:53 Speaker 5
+Yeah, this is what I was talking about. Like, when did we have our meeting? Two days ago or whatever. He's very particular about some things and then he's very.
+00:16:04 Speaker 2
+I I own I was honest yesterday in the meeting. I'm not gonna go into details because still it's a little bit personal and I still have a personal follow up with him about something that happened. I told him that for somebody with. You know, my condition. This none of this makes sense. Like none of this help. I was just honest, right? Because like the reason why I am able to like not navigate these things like very without any problem is because you know, I am mature and I have experience. And under they want doing all of this research. So I have the tools, but I said, like you know, somebody.
+00:16:51 Speaker 2
+For example, like at your age, guys, right? With my condition here, the virgin. They will drive themselves crazy with the requirements because they don't understand it. So yeah. So I was honest about that and I just you know, I gave an honest feedback. I say like I understand what we're trying to do here and makes sense. It's just that requirements are like, uh, you know this one size fits all Yeah. It's vague a little bit, but you know Yeah.
+00:17:22 Speaker 2
+Um, I gave up. So I was saying, guys, you know, changing the topic because that's that's something. Uh sad.
+00:17:30 Speaker 4
+We can complain about forever.
+00:17:31 Speaker 2
+Yeah exactly. Changing the uh. Soum if you guys have any idea of I'll I'll look I look at the documents you had you guys put in there. I'll actually, you know add it here as well. Um just so like I have a complete picture, but if you guys have any idea about like these statistics. Or anything, because I was, but I was thinking first and I and you guys give me your feedback. It was because I didn't know anything about what he wanted. It was like, okay, let's at least look at something that we know that we're going to have to deal with, which is data complexity, right? So that's why I did this and I laid out. Basically, you know um the uh the summary of the datasets right in terms of like quantity length, right?
+00:18:20 Speaker 2
+And those things, that was like the most trivial step that I grabbed on. But I don't know what else to do in terms of like, I think you guys actually might have a better idea since you're more informed in the bio aspect of it, right? So, you know, just let me know what else we need to look at.
+00:18:44 Speaker 5
+Um, he did say something about time. Can you scroll all the way up to the first. Project, um, I think I saw. He said something about time. Um. What is it called? What was the phrase he used? Time, time that's timestamps. Time something Nikki, do you remember?
+00:19:08 Speaker 4
+Time points. Time point based experiment.
+00:19:10 Speaker 5
+Time point yeah did he did he say, A good idea or a bad idea.
+00:19:15 Speaker 4
+I think he said, I don't think he, he said it was harder to analyze time point based experiments.
+00:19:20 Speaker 5
+Okay, so is this COVID? Does it says post infection time points to identify persistent immune transcription signatures. So, I'm guessing this is a time sample.
+00:19:31 Speaker 2
+Uh we can look we can we can check it out.
+00:19:33 Speaker 4
+Yeah let's go go into the thing. Yeah go into the actual project. Uh link Oh.
+00:19:39 Speaker 2
+Yeah, yeah. And now also, I have this data set as well. Oh.
+00:19:44 Speaker 2
+Perfect. Downloaded or I I don't know last time it worked, but now it didn't.
+00:19:50 Speaker 5
+So uh, yeah, just press the top one.
+00:19:56 Speaker 2
+Oh, is that what it is? Okay?
+00:19:57 Speaker 5
+Yeah, they just probably changed around.
+00:20:02 Speaker 4
+Okay. So it's not necessarily time point. It's it is time based, but sayingum sample blood collected at 121624 weeks.
+00:20:13 Speaker 2
+I see. Okay. Yeah,
+00:20:15 Speaker 4
+It's not I don't think it's as bad of an issue as he was saying because I agree with him. Time point experiments can suck, but if it's just three weeks, that's just three conditions.
+00:20:27 Speaker 2
+Okay. That makes much sense. 
+00:20:29 Speaker 4
+Or not three weeks but three separateum weeks Yeah.
+00:20:33 Speaker 2
+Yeah And, you know, given his feedback about the number of samples we can have. We can actually perhaps even have one week, who knows? Because they have so much data. For yeah, for that perhaps in a week they have like a lot of data. A lot of data. And and I think this one is about mouse, and the other one I think is about plants, right? Is it let me see.
+00:21:11 Speaker 2
+No, um, it's Muller.
+00:21:15 Speaker 5
+That's azebrafish.
+00:21:16 Speaker 2
+Oh, it's azebrafish. Yeah, it's right here.
+00:21:18 Speaker 5
+It's azebrafish, a house mice and humans.
+00:21:23 Speaker 5
+Okay. That's the three that yeah Daniel Daniel Riro. 
+00:21:28 Speaker 2
+Yeah And. And this is what we have. So the Each, one of them.
+00:21:38 Speaker 2
+Oh look also showing here the medium and the max spots. Mean spots.
+00:21:48 Speaker 5
+What are uh what are spots? How many?
+00:21:51 Speaker 2
+These spots I remember. Yeah Oh reeds.
+00:21:55 Speaker 5
+So you're saying the house mice has, what is it called five, uh, fifteen, fifteen percent of okay. The human one, but I have the same amount of. So. Or what? What's. Fifty percent of thirty three.
+00:22:30 Speaker 2
+Oh no no it had the human one has a lot more yeah.
+00:22:36 Speaker 5
+It has a minimum spots. I see. Never mind. So whatum, I'm getting a little confused. What what is this document? This is Jupiter notebook, right? So, what is it telling?
+00:22:55 Speaker 4
+Can, we can we can. We just figure out what data set we're going to work with before explaining what we're using?
+00:23:01 Speaker 5
+Yeah Oh yeah. 
+00:23:04 Speaker 4
+Sorry, I just want to make sure because it does. It sounds like he isn't going to give us much time for this. So I want to make sure we're on the same page with at least the project.
+00:23:12 Speaker 2
+Yeah, how how are we going to choose? How are we going to choose this? I don't even know how to choose it guys, To be honest.
+00:23:19 Speaker 5
+Well, they all fit all the criteria right? Yeah So.
+00:23:22 Speaker 4
+Now it's just looking at the actual like topic and see if that's something that's interesting to us.
+00:23:29 Speaker 5
+Alright. Yeah, uh, Peter, do you want to go to the Google Drive? I have all the descriptions. Yeah. Um, Go to just press Bio L five fifty right in the middle of the screen. No no in the middle of the screen.
+00:23:43 Speaker 2
+So look Oh, okay, Um I was gonna go to the drive is hanging on a drive here.
+00:23:49 Speaker 5
+Oh. Uh, yeah I mean you can do that too. Yeah And project Right? Yeah yeah project, I split the I split the folder into two, The lecture part portion and the uh project portion because like the trap mail assignment that we're doing, that has nothing to do with this. So I just wanted to keep those separate because I had those combined. Um That's fine. Okay. Yeah, wait no um not not this one go go to the This one? Uh S no, The top folder, The top file. Oh okay Yeah that one And then go on the sidebar. 
+00:24:25 Speaker 5
+Project picks. I added yours to the list. Yeah, there you go. It didn't have a long. It didn't have a like a long description, which kind of like, oh I mean I guess, it's pretty straightforward, but oh,
+00:24:39 Speaker 2
+You want a long ah hold on, I forgot hold on. Let me see if I can I had a sorry about that. I i pulled it off to.
+00:24:51 Speaker 2
+To add it in there and I just forgot guys. Uh, if I don't find that in a sec, I'll just move. Continue with this. Put it somewhere here. Why is it? Where can I find that? Did they delete it? Oh my goodness. Okay, whatever. What happened? I think they deleted it. What deleted? Um, I had I purposely had like a summary like yours guys just to like. So you guys have like um. Like similar but I don't see it. It's fine. Oh, whatever we'll leave it like that with a description. Maybe you might have.
+00:26:06 Speaker 5
+So This one has to do withum neuron uh neuronum regeneration.
+00:26:24 Speaker 5
+It's It's n mice per group. So it's twenty six samples so it's thirteen. Right wait no what am I talking about twelve. No oh my god what so should be eight.
+00:26:50 Speaker 4
+I just sent my personal ranking.
+00:26:54 Speaker 2
+Oh, that's that's good. You don't want the mouse? Actually, Nikki.
+00:27:07 Speaker 4
+Bothzebra fish and koi was more interesting, but I mean Sam, I also know how you feel about fish.
+00:27:12 Speaker 2
+Sam here, those are the ones I picked too Nikki Kovi andzebra Yeah. 
+00:27:20 Speaker 2
+But just based on text, right? We're doing it based on description, right? Yes. Yeah. So based on description, I found COVID, thenzebra. Mouse was the last one.
+00:27:35 Speaker 4
+I think in that case, zebra seems to be the one that's closest to the top for everybody.
+00:27:40 Speaker 5
+Yeah, zebra yeah because we all ranked it two right? Mhm. 
+00:27:49 Speaker 4
+I I'm okay with COVID orzebrafish, so that's why I put them both at one. Uh, I would just want mouse the least.
+00:27:57 Speaker 5
+Youum Is there a way to check how many conditionszebrafish has?
+00:28:03 Speaker 4
+Um Scroll down.
+00:28:08 Speaker 5
+No, scroll down.
+00:28:12 Speaker 5
+Um Okay, so, Oh, this is regeneration of the retina. That it does sound cooler than the house mouse. I I just like the house mouse just because house mice areum they're good. Uhum oh, shoot, what is it called model organisms, right? So. 
+00:28:39 Speaker 4
+Werezebrafish actually or not? They are?
+00:28:42 Speaker 2
+Oh damn. Oh that's interesting.
+00:28:45 Speaker 4
+We Use them in uh comparative physiology actually because they're good to work with.
+00:28:51 Speaker 2
+Wait that's so cool. Wait what are you doing? No I just wanted to check if it was mouse orzebra that I chose. Cause I read let's see. You chose mouse. Oh okay sorry guys, I lied, it was mouse on the second one.
+00:29:15 Speaker 2
+Sorry about that. Yeah. Do you remember why you preferred that one?
+00:29:19 Speaker 4
+I mean, if your opinion also changes now, that's fine.
+00:29:23 Speaker 2
+Um, why? Um, based on the uh closeness toum to COVID. Human? Oh yeah. I. 
+00:29:36 Speaker 5
+Really like COVID.
+00:29:39 Speaker 4
+I did too Sam It's just human That was. 
+00:29:43 Speaker 5
+Pretty abrupt. 
+00:29:46 Speaker 5
+Um, could we go back to the all right here? I'll just leave it.
+00:29:50 Speaker 2
+Let me put it here. Yeah, we'll go back. Sorry, I was just fixing this because let me go back to the document right here.
+00:30:01 Speaker 5
+Where were we? Something I just want to declare is I want to see how many conditions, because I know, like the more conditions there are in aum in aum.
+00:30:16 Speaker 5
+Oh my gosh, you know, study the more difficult it is to interpret. So I wanna I wanna see, I low key, just wanna take all the conditions from all three and see which one has the least. And then compare that to our rankings.
+00:30:34 Speaker 2
+And the conditions we find them based on the uh the time?
+00:30:38 Speaker 5
+Is that what it is? Um so like The experimental methods. Experimental method. So the overall design. So where are your mice? It says there are two sets batches of wait, wait, wait. There are two sets batches of experiments, Okay. So there's two RS and uh RS 14 and RS19 In. The first all fish are wild type There are four groups with three samples each Okay. So that's Um.
+00:31:15 Speaker 5
+There are four groups with three samples. So what does it say? Thirty divided by two. And. 
+00:31:29 Speaker 6
+Then there is. Wait, there are four. 
+00:31:35 Speaker 2
+Groups of three samples. Which one you looking at?
+00:31:43 Speaker 5
+At this one? The zipper. No, no. Okay, so here, um, Here, do you see Zoom Wait? Wait, wait Oh I thought you asked me to turn off Zoom Oh no Do, you see the Zoom screen Yeah Um Can I highlight Oh here I can You should be able to highlight it Yeah Here So I'm looking at this right here.
+00:32:26 Speaker 5
+You See the screen? You see what I just did? Yeah, that's what we should be looking at to figure out the condition. So it's two batches of experiments, the fourteen and the nineteen, the RS fourteen nineteen. Uh in the first, All fish are wild type, and there are four groups of three, so twelve. And then one. And then inside those four groups, there is uh uninjured untreated. Oh okay it makes sense. Uninjured untreated. Uh injured treated. Uh. 
+00:33:15 Speaker 5
+Okay. And in the second, there's wild type mutant fish. Wait, the second batch has wild type and mutant fish, not just wild type.
+00:33:33 Speaker 6
+Is that a problem? So it's actually this one.
+00:33:43 Speaker 5
+Why Why is why would it be because it's a it's a conditional condition. So you got you got thirty and then the thirty split into two Fifteen.
+00:34:09 Speaker 6
+It Says four groups of three, which is twelve. Wait,
+00:34:23 Speaker 5
+Goum press the link really quick. Go to where your mouse is. Yeah, press that. Let's double check if it's thirty, because like maybe my memory is wrong, but I'm pretty sure that's what they said.
+00:34:39 Speaker 5
+Go to SRA.
+00:34:40 Speaker 4
+Oh, sorry. It's in the related information. On the top right. I'll wait on that one.
+00:34:47 Speaker 5
+Nope. No. Yeah, top right, related information. It does say 30 s and it does say 30 s, yeah Theyum just quickly scroll through all of them and it should say. 
+00:35:08 Speaker 5
+The naming convention.
+00:35:11 Speaker 2
+Damn. I have the dataset if you want to look for something specifically, I'll count something specifically. I. 
+00:35:20 Speaker 5
+Was just looking for obviousum disconnects, but it doesn't look like there are any. Um disconnect. 
+00:35:35 Speaker 5
+Like I'm I'm trying to figure out the experimental conditions says it's four, it's two groups, and the two groups are divided into four groups of three, which four times three is twelve, right? So that's twenty four. So where are the additional six coming from? Let me reshare hold on. Cause I really do like thezebra fish. Plus it has they split the injured they're like uninjured, untreated, injured, treated and then wait no it's uninjured treated,
+00:36:19 Speaker 2
+Uninjured not treated and then. I'm a little my only concern with thezebra fish, besides of the fact that I'm less interested is what the professor said about the complexity of working. With a no. Hold on. Was that what he said? I'm trying to remember. When I was asking him about, um, quality control for our project. No, I think I may misremembered whatever.
+00:36:58 Speaker 2
+Heum he's. 
+00:36:59 Speaker 5
+Not gonna like tell. 
+00:37:01 Speaker 2
+Us which one to pick. He he's just gonna That's not what I was talking about. I was talking about some complexity that he mentioned in terms of quality control, Uh but I don't remember quite what it was. But Yeah let's forget about, let's forget, I said anything because I don't remember.
+00:37:27 Speaker 2
+It might not be related to this. I. 
+00:37:36 Speaker 6
+Can't, I can't, I can't use certain things when I'm sharing. Let me see if I can do it again.
+00:37:51 Speaker 5
+Oh, I think I found the answer.
+00:37:58 Speaker 5
+I think they're including the control. So there's a fourth group in each subset. Okay. Alright,
+00:38:08 Speaker 2
+So I'm gonna find the conditions for the other second one that you guys like because I think we're taking too much time and just one dataset. The other one was uh mouse, right?
+00:38:27 Speaker 5
+Mouse, yeah, uh house mice. Or, let's do let's do COVID becauseum you both wanted COVID. So that, that would be our second thing. Anyways so okay. That sounds yeah that sounds good, that works. Yeah, let's look at the COVID I'm looking at the experimental design for thezebrafish. I think they have like threeum yeah, six Six.
+00:39:08 Speaker 2
+Oh, I'm in the wrong spot. Let me move myself to the crowd here.
+00:39:30 Speaker 5
+It's Good. We're just trying to figure out the experimental conditions for thezebrafish, because it seems like there is, um, it it's a little messy. I It sounds really interesting, but it's like really Yeah. Peter, Could youum go on to the descriptions really quick? So Dr Oger can see? So, yeah, it's uh go down. Um, it's it's halfway. It's the one-third bottom of the first paragraph. Interesting, we're doing regeneration stuff too. It's like we talked about in church. Yeah, cool. Yeah, it's really interesting. Yeah, the.
+00:40:52 Speaker 1
+They're Looking at the effects of the mutation. So, the first group may not, you know, may be interesting to you. That's where we're just looking at different ways, different types of injury and how they're treating it. So if you're interested in using these different drugs as a way of treating it. It's one thing if you're interested in those who have a particular mutation, its effects on uh gene expression when the retina is injured. That would be the second set. So I'd pick one or the other. I wouldn't do both. Um It looks like you'd have no samples to at least do an analysis. So the second group, yeah, you could do it here is supposed to be a ski spot. 
+00:41:38 Speaker 1
+You can do multiple different uh subsets and do multiple pairwise policies with that. That would work. See, if you guys like that data set, I'd say that might be a good one. It looks like you've got enough data there. Um sequencing links are good and can you scroll to that green section? I'm trying to see if that's the number of fragments. Yeah, 160, That's the range?
+00:42:02 Speaker 5
+That yeah, that'sum, there's some outliers. I think it was like seventy million, but yeah, it was out of the ones. I just it was an eyeball. It wasn't like calculated.
+00:42:15 Speaker 1
+Well, there is a lot of gene expression in eyeballs too. I think that's pretty good though. There is a lot of gene expression in eyeballs, so they should have lots of fragments. No wait are you maybe misunderstood you?
+00:42:29 Speaker 5
+Oh, no. I said I eyeballed the number. Like, I just wanted to. Eyeballed it? You're talking about the eyeballs of the fish, Harry? Yeah. I thought you were making a pun. I was like. Yeah,
+00:42:43 Speaker 1
+I thought you were making a pun. It was an eyeball in there shouldn't be much gene expression. But okay Never mind So we're good now. Okay We're good Okay So I think that might be a good dataset if you want to work on it So.
+00:42:55 Speaker 5
+Can, You double checkum the chat. Uh, do you see the chat? I can't see what you posted when I wasn't here.
+00:43:02 Speaker 1
+I just posted it. Just posted it. Oh, yeah oh, that was on there. Yes, yep. What about it? Um. 
+00:43:09 Speaker 5
+That's what I figured from this experimental design, right? If no, maybe yeah, okay.
+00:43:16 Speaker 1
+And that looks like it's reasonable. Are you saying if she just picked the pick one of the. So we're going to compare it to what? What do they call them? One of the sets or the other. You could do different pairwise comparisons. So if you did the wild type plus mutants, that RS nineteen, You could compare the wild type uninjured to the wild type with NMDA to see what effect NMDA has on GDNF. Okay,
+00:43:42 Speaker 5
+So it would be a second batch, right? RS nineteen and then two wild types against mutants. That would be cool.
+00:43:48 Speaker 1
+And you could do the other one too if you want, whichever your group wants to do. But either way, I think that works out. I just pick one subset or the other, like the rs 14 or rs 19. No, you can go ahead and do that.
+00:43:58 Speaker 5
+Okay. Um, do we have more time to look at another data set?
+00:44:03 Speaker 1
+If we're really really quick. I want to get everybody back towards a track test.
+00:44:08 Speaker 5
+How much time did we say we had? Five minutes?
+00:44:11 Speaker 1
+You're the last group to decide on a project. Oh shoot. Okay. 
+00:44:16 Speaker 4
+I mean, Sam Peter, if you guys don't have any like huge like reservations, I feel like we should just go with the team.
+00:44:24 Speaker 5
+It looks like we have a lot of flexibility with it too with different pairwiseum combos. So I am good with whatever.
+00:44:33 Speaker 3
+And boom now I have like a strange shape that I Good.
+00:44:39 Speaker 1
+Yeah, okay, cool, all right. So outside of class go ahead and work on your team name. So you can do that. I'll talk to everybody when we come back to the room. Great, sounds good. Thanks so much. No worries. So then I go ahead and get back,
+00:44:57 Speaker 3
+Make this. 
+00:44:58 Speaker 7
+And then look at how that looks. 
+00:44:59 Speaker 5
+Here on the side.
+00:45:01 Speaker 7
+I hit done and now I can make it bigger or smaller, lift it up off my desktop if I want to do something like that.
+00:45:07 Speaker 5
+Well, I mean the point was to agree on like a data set, you know? I didn't want toum, You know, pick one like something that we all wanted, right? Um, but we I guess we all wanted thezebrafish, right? So that it works out. I wanted to I I just wanted to show you guys one great work.
+00:45:27 Speaker 4
+Peter, Are you sure because I know you movedzebrafish to your last in the second ranking. Do you have a different idea?
+00:45:32 Speaker 2
+Oh shoot. It doesn't have any it does. It doesn't appear to have anyum closeness to my interest, but. Um, I'm sure I'm gonna learn something from it. Especially the regeneration thing, it's kind of interesting. So it's fine.
+00:45:51 Speaker 4
+Okay, as long as you're not being forced into it.
+00:45:54 Speaker 2
+Oh yeah, my bad. I'm not gonna be able to help much the way I would have done with COVID because of theum experience that I have, but I'll be able to help with analysis and stuff like that, you know what I mean? But you guys, I'm gonna need.
+00:46:16 Speaker 1
+I'm Sorry, we're getting some of these team names. That's pretty good. Uh okay, so the blue teams. That was good. All right, is everybody in? I think that's it. Yep, the breakout rooms are closed. Everybody should be back. All right, so let's see. I'm just going to go quickly through. I got two emails with team names. Took care of one of them there that looked good. Uh- oh, Eliana, I did not see a group name in that email. It's a blank message.
+00:46:56 Speaker 6
+Read the rest of the subject line.
+00:46:59 Speaker 1
+Oh, there we go. Thank you. That works cool All right so let's see U R E, That is a good name too. All right. So I've got three of your group names down. Other groups, just go ahead and send me an email, carbon copy everybody, and I will record your group name. Excellent. Okay, sounds like everybody's got a good data set. That's excellent. Um, all we're going to do for the rest of the day is work on travel. So basically you want to finish up um the analyses. 
+00:47:37 Speaker 1
+Let me pull up the syllabus. Share screen and talk about where we're going just so we all have context here. Share. Got it. Oh, I can move that. All right, there we go. And I gotta move this. Okay, so yeah, We're gonna finish up practicals. If you have not finished your labs, absolutely, you want to try to finish those worst case by next week Thursday. It shouldn't take terribly long to differential expression of the last steps, as you're doing cufflinks cuffmerge. Cuffdiff does take the longest of all of them, is there a call? It's not terribly long though. So we're going to keep working on wherever you are. If you have questions, you can send me a chat. Otherwise we want to try to finish up the alignments. Ideally they were done today but that's okay.
+00:48:33 Speaker 1
+Uh, we definitely need them done by next week on Thursday. If you're getting stuck on anything along the way, drop me an email, stop in office hours and I'll try to help you along. Um, and then for the differential expression, Ideally you want those done next week, but of course, people can go a few days past that point, too. So again, if you're falling behind take advantage of office hours and then catch up this week. So rest of the session today. I just want to have this as an open lab session where you're working on your uh. On the travel projects. Any questions before I just mute and let you folks play until I see questions? You good? Ready to keep moving? Cool. Okay, if you have questions, go ahead and send them. Otherwise, I'll be here to just waiting to answer them. Cool.
+00:50:02 Speaker 6
+The city is located in the central part of the country, on the border with Ethiopia.
+00:51:17 Speaker 7
+They're Going to build a healing pavilion and enter in a competition against other people from around the world.
+00:51:30 Speaker 6
+The name of the town is derived from the river.
+00:52:08 Speaker 1
+I'll Just double check this. Yes, so when you are running` cuffmerge`, It will not just run the one program` cuff merge`;. It'll also use other programs from that same directory that it's in. However, That directory, user local bin cufflinks, is not in what's known as your path. The path is just a list of directories that the system will look to find programs. You're trying to run. You need to add the cufflinks directory to your path. So I'm actually going to put something into discussion where we have that discussion on cufflinks errors and custom merge.
+00:52:57 Speaker 1
+Basically, you can set up a shell script where the first line is what I'm putting in uh discussion post. And then the next line would be your actual command. The beauty of a shell script for all of this is just a list of one line at a time, just like you type these on the command line. You can then save that text file, give yourself execute permissions and you should be able to run it. If you have troubles with it, send me a message and we'll take a look at that. Hope that answers the question that I had. That was good. You're absolutely correct, that is a solution. So cool, okay.
+00:53:56 Speaker 6
+The city is located in the central part of the island.
+00:54:55 Speaker 6
+The.
+00:55:55 Speaker 6
+The film was released on 24 July 2015.
+00:59:30 Speaker 6
+The film was shot in the United States and Canada.
+01:00:38 Speaker 7
+Make Sure elementary can build in this world.
+01:00:47 Speaker 3
+But It's not letting so kids are trying to join, and it's giving them an. 
+01:00:54 Speaker 6
+Error code saying they can't join. So like he had 14 kids in his class, he was scared that they were gonna forget how to get in. So I'm just trying to get the one kid. I don't know. I just want to know that it's like telling me to have the kids log out, log back in, but you know that's such a terrible process again.
+01:01:37 Speaker 6
+The film was shot in the city of Kozhikode.
+01:02:06 Speaker 6
+The film was released on 24 June 2016.
+01:02:37 Speaker 6
+The.
+01:03:07 Speaker 6
+The film was released on 24 July 2015. I'm not sure what you mean.
+01:04:19 Speaker 6
+We saw that GoFundMe.
+01:04:21 Speaker 3
+No, they're just we're just joking around about a lunch monitor that needs to retire. We're doing AI for oceans with the second grade class right now in four minutes and then launch. And we got a kindergarten class, but it's the one where that one kid like melts down all the time. But he actually is getting moved to another kindergarten class. Oh,
+01:04:45 Speaker 2
+So we don't we won't have him today.
+01:04:47 Speaker 3
+I am not sure if it might take place today. They told me yesterday that special seems like deciding which special he wanted to go with, which is strange. But so we might have him today, we might not. And. Then fourth grade of that tour is this should be the last Google bits.
+01:05:06 Speaker 3
+Vocabulary word last week.
+01:05:09 Speaker 2
+Okay, for this one. And what lessons are we doing for the others? Theum, the same? We're doing Google Vids for for them as well? The same? Yeah. I mean, are we doing Google I mean the same as like Oh yeah.
+01:05:26 Speaker 3
+So uh Google Vids, that's the last fourth grade class that hasn't gotten a Google. 
+01:05:30 Speaker 2
+That hasn't gotten a yeah Okay, we already did it with cover it with rest. 
+01:05:34 Speaker 3
+With the rest of the fourth grade classes. So that the first Google Bidsum lesson where we're introducing that, that's the last one we have to do for fourth grade. Uh and then that's AI for Oceans and I don't know what that is. I got to look at it too.
+01:05:48 Speaker 2
+Oh, we're doing AI for Oceans here?
+01:05:50 Speaker 3
+Yeah. Okay, yeah. This one, um we're definitely going to go to code dot org first and then open it into the second half to do something small with them too. Okay. See what what we're on with them but. 
+01:06:05 Speaker 7
+Yeah, I'll. 
+01:06:07 Speaker 2
+Jump in here and which uh, what what part of the koda are we doing? Is it same as theum yeah,
+01:06:16 Speaker 3
+It's like the you know how they're you know what Angry Birds is. They're solving the puzzles with Angry Birds. Yeah. They should be just getting into that harvester loops one.
+01:06:25 Speaker 2
+Oh, okay, yeah, I'll jump in here too. So yeah, cool, just to start just for them to start getting familiar with me talking yes, that kid. Kid isn't here.
+01:06:35 Speaker 3
+This should be a really productive class because that class is really good, except for remind me the name of the kid again. His name is Messiah.
+01:06:42 Speaker 2
+Messiah Oh yeah, no, that's easy. That's an easy one to remember. Yeah, of course,
+01:06:47 Speaker 6
+Of course that's easy. 
+01:07:04 Speaker 6
+Hey. What's up?
+01:07:12 Speaker 7
+I didn't. Quiet is a bunch of ninjas in this hallway. Oh, Landon, You can, but you're not allowed to punch my thumb while we're in the hallways. Ew! Go ahead and have MCtyping agent first.
+01:07:26 Speaker 6
+Typing agent first. Why do I have to hold on a second? Hold on, keep it on the shelf. Um. The film was released on 24 July 2015.
+01:08:01 Speaker 6
+I want you guys to start off by touching these. I'll say, we're going to do a little more.
+01:09:03 Speaker 6
+The film was shot in the city of Mysore.
+01:09:33 Speaker 6
+Isaiah said it was mine. So I don't know. What's up, dude? Robot. Oh,
+01:09:52 Speaker 7
+Robot the robot car. Um, all right. Well today we're doing an AI activity. Do you know what AI is?
+01:10:01 Speaker 7
+The city is located in the central part of the island,
+01:10:06 Speaker 6
+On the coast of the Gulf of Guinea.
+01:11:01 Speaker 6
+The soda in the little one. The film was released on 24 July 2015.
+01:12:30 Speaker 6
+Wait. Are you talking? What are you talking about? You know, I thought you were talking about those little blue robots. No. So the yellow Lego thing? Yes. Are you talking about these Lego things? No, I'm not like. I have a favorite thing. Yeah, yeah, yeah.
+01:13:30 Speaker 6
+I'm sorry.
+01:14:00 Speaker 6
+The name is derived from the Latin word ""cervus"" meaning deer."
+01:14:41 Speaker 1
+I'm Getting lots of good questions in chat. If I miss anything, please let me know because I know there's a bunch floating through. I know I missed at least one already. I think I got everything caught up now. Let me know if I missed anything.
+01:15:02 Speaker 6
+The first factor is the size of the area.
+01:15:32 Speaker 6
+Buddy, why are you standing over there? I'm just trying to get him to come over. Look at my lion.
+01:15:38 Speaker 7
+I'm gonna see all about it in a minute. We have something called an AI recording device. 
+01:15:48 Speaker 6
+That records a lot of the different things that go on here. Not the normal kind of things. We have one more minute.
+01:16:01 Speaker 6
+I'll give you.
+01:16:34 Speaker 6
+I don't I don't like doing it, but they're songs for some reason. So I don't do that.
+01:17:35 Speaker 6
+And I can't remember now if someone told me to set it up this way, and I did it, or if it just automatically set it up this way. But at that point, I was like, logging with Google is so much easier. You know what I mean? It's just getting used to the flow of logging in.
+01:18:36 Speaker 6
+So there is also uh.
+01:19:36 Speaker 6
+I'm going to get you.
+01:21:04 Speaker 7
+Okay. I just want to talk to you guys about a couple things up here. I got to show you, I want to run through how to log in to code dot org because me and Mr. Garcia don't want to run around like crazy people trying to get you guys into the program, so let's show you how to get in. Then I really need you guys to uh focus and on on stretching your attention span out because we're going to talk for like maybe five minutes about what AI is and how AI is a part of your life. And, then we're going to train an AI bot on how to help us clean up the ocean. Okay, we'll talk more about that in a moment. So so start us off, you guys are going to click here, you're going to go to class link and when you go to class link. 
+01:22:03 Speaker 7
+It pulls up just like this. Sometimes it's like automatic when you open up a new screen. Chloe, Chloe, up here. Okay? Then we are going to click on code dot org. Where does she go? Okay. Uh, So then you're going to click on code dot org and click this button up here. Can you guys see that button? Yeah! That's where you sign in as creators. Create a game at this website right there so. So check this out. When you get to this screen, you click on section code and you don't have to type anything in. It remembers it. Please stop touching his hair, dude. What are you doing? You're gonna move now. Okay? Now you're gonna click on the code, Callie, look here. Click on the code and then hit go. That's gonna put you into this screen where you gotta choose your name, okay?
+01:23:02 Speaker 6
+No. And then on your. 
+01:23:11 Speaker 7
+Card, there's a picture. I got to choose the pirate because the pirate's on my card, and then I hit sign in. It will take me right to my dashboard here. Okay? So they can bookmark it so they can just go straight to that. So if you click this button right here. This will help you so that you can go straight to it every time. So, if the bookmark's far, you hit done and then look, it's right there. Okay? So it'll take you right to your dashboard. So, what we're going to do now is learn a little bit about AI. We're going to watch a video. We're going to talk about how AI has impacted your life so far. And then uh, you guys are going to do a little activity. Now I'm hoping in past classes we haven't gotten that far in this. 
+01:24:00 Speaker 7
+I'm hoping you guys can do one, two, uh we'll do one together then you're gonna do two, three and four at your table. And, then we'll come back up here and watch the video for number five together. Then you'll do six. Then we'll watch the videos. You see what I'm saying? We'll watch the videos and talk for a second, and then you'll go back to do your work. Okay? So what does that mean when you get done with your activities? What can you do? Read books! So. You could do free choice on your computer quietly as long as you're not disruptive. What would I prefer that you do? Louis, move away from him. You just stay right here. Right behind Cal. You're really wasting a lot of my time today, okay? I don't understand what's going on, but. Sit down on your bunk. Get on your bunk. Sit behind you. Okay, what can you do when you're done with your activity? So get up and help somebody who's still doing it.
+01:24:59 Speaker 6
+Then this is like coding, right? So you can do it with a partner. Okay? You're training an AI agent. So get up, help somebody, and when everybody's done we'll come to the cart. I'm a researcher at the Allen Institute for Artificial Intelligence, and I work on an AI-powered academic search engine. All around you, computers are making decisions. And those decisions affect your daily life. When you do an internet search or scroll through your news feed, computers decide what you see. Computers can already recognize your face and understand your voice. And soon will be driving cars and detecting diseases even better than doctors.
+01:25:58 Speaker 6
+So how is any of this possible? We may have a breakthrough called AI,
+01:26:04 Speaker 1
+Or artificial intelligence.
+01:26:07 Speaker 6
+True artificial intelligence. 
+01:26:08 Speaker 1
+Is decades away.
+01:26:10 Speaker 6
+There's a type of AI called machine learning that is here today. It's a type of AI you probably interact with every day without even knowing. And, it has the opportunity to help us tackle some of the world's biggest challenges.
+01:26:26 Speaker 6
+Machine learning is how computers recognize patterns and make decisions without being explicitly programmed. What's so exciting is that it's a completely different way to program a computer than what we've ever done before. With machine learning, instead of programming the computer step by step, You can program a computer to learn, just like we learn from trial and error. And lots of practice. Learning comes from experience, and that's true for machine learning too. In this case, experience means lots and lots of data. Machine learning can take in any kind of data: images, video, audio or text. And begin to recognize patterns in that data. Once it learns to recognize patterns in the data, it can also learn to make predictions. 
+01:27:25 Speaker 6
+Based on those patterns, Like noticing the difference between an image of a car and an image of a bicycle. Ai and machine learning are playing a bigger and bigger role in our society at large, and shaping all of our futures. That's why it's so important to learn how it works with some hands-on experience. Remember, AI is like any tool. First you get the knowledge. 
+01:27:55 Speaker 6
+And. Okay,
+01:28:03 Speaker 7
+So before I get into this, I just want you guys to talk to somebody next to you and tell them, how does AI either impact your life? Or how have you heard of AI in the community? Like how have you heard of AI in your life or your family's life? Right.
+01:28:19 Speaker 6
+Go ahead and talk for a minute.
+01:29:10 Speaker 7
+Okay, What did you guys talk about? Some people at least think that AI isn't really impacting their life. But, let's hear those of you that do have some interaction with AI or AI does something. Or one of your family members, or you've heard about it. What do you know? What do you know? Okay, AI can be integrated into apps. It can be part of apps, right? It's not like specifically an app, but it could be part of an app, right? Also we can have apps that perform AI functions too. Okay so like I have a Chat GPT app on my phone.
+01:29:52 Speaker 7
+ChatGPT is a company that provides that provides AI, and I use it to perform tasks. So I'll go in that app and say, write me an email to Mr. Garcia and tell him in a really nice way that uh I can't wait to see him at work tomorrow. Okay? And AI will write that whole email up, and then I'll copy it, paste it, send it off. Right? What else? ChatGPT!
+01:30:14 Speaker 6
+I saw it on YouTube! Okay. And then ChatGPT tells them what to do! It's YouTube! So.
+01:30:24 Speaker 6
+What else do you guys have?
+01:30:25 Speaker 7
+How else is AI part of your life?
+01:30:26 Speaker 6
+What have you heard? To. 
+01:30:33 Speaker 7
+Do their math. Okay, yeah, that's good. So some can use it as a thought partner to help them with their homework, right? Or give them additional practice problems. Okay, so what's good about AI is like you could use a counselor. Hey boys, I just get. You could use a calculator to do that problem, right? Well, What about if it's a confusing word problem? And you don't even know what the problem is asking you to do? Well, that's where AI can come in. You could type the problem or copy the problem into AI. It'll tell you not only what to do, but what the answer is and show you how it arrived at the answer. So AI can teach you things, right? Now, what else?
+01:31:18 Speaker 6
+Go ahead.
+01:31:31 Speaker 7
+Oh, It could be a car. Okay, so AI could be in cars for sure, right? You guys know Mr. Fowler has that fancy car, the Tesla? So Teslas have AI technology in them. Yeah, and I can drive the car. So, um, There's there's a lot of complicated stuff going on there that like that I. You know, I don't really understand what parts of it are AI. And some of it is like stuff that somebody like Mr. Garcia coded into the program so that it would react in a certain way to certain situations. I can explain that. Is yeah, you see the way you guys are gonna train AI now right? Yeah, that's the same way we were trained AI to fly right? It's the same steps. The same steps.
+01:32:17 Speaker 7
+It will learn from your drive. Yep. So, you know, it also has AI built into it. Like Mr. Fowler tells me sometimes he has conversations with his car when he's driving to work. So he'll be driving to work, and since he doesn't really have to pay attention to the steering wheel because the car is navigating the road by itself, he can talk to the car and say, hey, I think he calls Brock or something. He'll say, hey Brock, I got uh I have a teacher. Class at eight o'clock today about um multiplication. Can you use good strategies for teaching nine year olds about multiplication? And Grok will give them some strategies. And then he'll say, hey, Can you remind me later on to uh uh grab some flowers for my wife on the way home? She's mad at me of course. And Grok will remind him to get the flowers. So, you can have the AI help you with tasks and and we have to teach the AI how to help us with tasks. And that's what. 
+01:33:15 Speaker 7
+You guys are going to do today with this tech. Oh, he just asked me what I'm about to start. Yeah, right now pretty much every industry, every car industry has an AI version. You were saying Toyota? Yeah, I heard you know like Yoda the Star Wars character. I heard boy Yoda. Silly company. So, uh, What I want you guys to do is click on. Um click on the number two thing when you get in here. Okay. So hey, hey, Nico up here, please. We're almost done, and it's going to take you into this part of the app where you're going to train Louie. You're gonna train this AI bot how to recognize fish in the water.
+01:34:11 Speaker 7
+And garbage in the water,
+01:34:12 Speaker 1
+So it can pick up toxins. And life would be like, This is a very good thing in the real world because because. 
+01:34:25 Speaker 8
+The bacteria that we know are harmful to us, they're building some of these little particles in the water. It's actually really cool.
+01:34:36 Speaker 1
+So That might be an issue with when you made up the mapping files. So let me see. We need to clean it up because if we don't, Louis, we need to wash your head. We have one more minute. All right, uh, which directory was this in again? Let's see here. There's a reference I see eleven one maps deep in there.
+01:35:01 Speaker 8
+Lab one chapter. 
+01:35:04 Speaker 1
+Twelve and then, Uh how to help them, Data. This is for ten. This is what it feels like. All right, let me see. There should be a directory. There's not a directory. It looks like it didn't finish the What. 
+01:35:18 Speaker 7
+Is this? Okay, we'll have to tell stories in the end, but I got to keep going here because everybody's losing their content here. Yeah,
+01:35:32 Speaker 1
+I might have to look at what command you used for that and hey, hi, I'm telling them that we need to help them to understand. 
+01:35:39 Speaker 7
+What is what. And so it can recognize.
+01:35:41 Speaker 1
+So I have a fish or. 
+01:35:45 Speaker 7
+Is this trash? So that's not a fish. What's that? What's that? Okay, what's that? Not a fish.
+01:35:56 Speaker 1
+For the reference, yeah. Okay, go ahead and piece that when we take a look. Um, okay. I got a couple of those. Okay, we're programming the trained AI with these toys. Let's keep going. That's what it is. Oh, so money, yes. And maybe actually. references from the first percept to. Actually, oh no, I'm sorry for the first percept two. Um. Okay? We just did it for a minute or two. Let's see how it goes.
+01:36:31 Speaker 1
+You might have to make another directory inside the Drosophila reference directory and then tell it in the first step, the first part of step two, to output to there. Yeah. Uh, where's it previous files? Right. Yep. Sam good catch. That does happen. You have to name it after each trial you're reading them in.
+01:36:55 Speaker 7
+Yep Cool Because I didn't tell it what those things look like, I got to teach the bot what it's right, and if it didn't cover those things, it's not going to throw them out. So, What I want you guys to do right now, just go back and train your AI bot. Oh,
+01:37:15 Speaker 1
+I got you. Thank you. Yeah, no worries. So money that looks like that's for the second part of step two. Okay, here we go.
+01:37:27 Speaker 8
+Yeah, that's what that's what I am Doing. 
+01:37:29 Speaker 1
+Stuck on, I'm pretty sure. Oh, sorry. Ethan's a little different. I think she's doing the alignment. I think your issue is. 
+01:37:37 Speaker 8
+Might have been with actually doing the mapping. I'm not sure if I'm using my Yeah,
+01:37:42 Speaker 1
+You're so Ethan Oh, so oh sorry, I got multiple students at once here. So hold on Ethan yours. It looks like the error is finding the files from the first part of step two. That it can't find one of the files that should be in there. I don't see it either, which means I don't think it finished. So, you might have to show me what you used for the first part there. Okay. Um, go ahead and post that in chat. So hold on, I got a bunch of things flying all of a sudden. Um, let's see override. So yes, You can add that for the second part today, and yes, you should tell it where to output that file Good.
+01:38:24 Speaker 1
+Uh, in terms of the JavaScript reference directory. I might be a little confused about the posting. Posting about someone else's? Yeah, sure. Oh, Ethan's. Oh, I'm sorry. I thought you were talking about your stuff. Okay, never mind. So yes, the JavaScript references are available Cool No. 
+01:38:57 Speaker 1
+Okay, cool. Thanks, I didn't realize you were answering each other's posts. I've been getting so many direct messages; I lost track that this was all open. Cool. Okay, so Ethan, how are you doing there?
+01:39:17 Speaker 8
+Um, sorry, I am just pasting in what I had for the. First step of actually mapping it. And then okay, let me. 
+01:39:29 Speaker 1
+It looks like for those who are through all the alignments and you're all good or if you're waiting for some of the cufflinks to cuffmerge stuff or cuffdiff. Uh, you're free to head out. We actually have three minutes left of class. So we'll take a look at any other questions. We get here though. So ethan, i'll look at yours.
+01:39:50 Speaker 1
+So you should copy and paste it, or if you want to share a screenshot,
+01:39:52 Speaker 8
+That's fine. Yeah. Um, should I just rerun the command? Or'cause I I mean You can use an uparrow to find it. Yeah. Well, I haven't I haven't mapped it. You. 
+01:40:06 Speaker 1
+Didn't do the first step? No,
+01:40:08 Speaker 8
+I did do the no, I did do the first part just like a couple days ago. Okay,
+01:40:13 Speaker 1
+You can still use an uparrow, and it should be able to pull it up for you Oh Yep Use your your command history Yep.
+01:40:32 Speaker 6
+I Believe this is anum I'm not sure.
+01:41:00 Speaker 8
+That Was the command I used for actually mapping it. Um, I can, I'll read. I'm. 
+01:41:09 Speaker 1
+Gonna look through here a moment. Okay, so hold on, I'm already seeing an issue there. Oh, is it the space? Is that too? Yeah, there's space in there between the slash and" trapped".
+01:41:22 Speaker 8
+Okay, What does? What does the actual like? What should the output from that command look like? Because there should be multiple different files that appear in the directory. Okay, Because now that I'm looking at it, I literally am.
+01:41:36 Speaker 1
+Yeah, I see multiple spaces in there. So that is absolutely what the issue is. Okay, I see one between" trapped" underscore data slash and then" trapped" data f between" trapped" and" data", there's a space. For soft line reference, there's a space you have to escape those. And actually, the one before" trapped data" where there's that space between" data" and" data", that was probably the biggest part. That's probably the biggest issue.
+01:42:00 Speaker 8
+But the actual. Let me see. I am in. So it looks like it spit it out at" trapped data".
+01:42:09 Speaker 1
+Yep, I found it. Yep, that's where your files are on your. Yep, okay, so literally so that was either just a path issue. That's a common issue. It happens all the time.
+01:42:19 Speaker 8
+Okay, um, I will. And then, um, for these, so I honestly still don't really understand what's going on with the alignment itself. Like the files that I am using are unrelated to this right? Like I am just.
+01:42:39 Speaker 1
+What do you mean? I am not sure what you mean by that. What files are you talking about?
+01:42:42 Speaker 8
+The GFF file and. The output directory for theum, let me actually double check. The yeah, the genome directory and the GFF file that I'm using.
+01:42:54 Speaker 1
+So okay so a bunch of different things. So there is a oh, let's see what's this? Why did you put in there? That is the correct GFF file. And, you do need to have that because what that does is that says for this sequence, Here's the name of the gene, instead of it, making up the name of genes. You absolutely have to have that in there.
+01:43:11 Speaker 8
+Yeah and, I do when I when I run the command I do, but I don't understand why um the uh maybe I just don't hold on I need to look at this longer.
+01:43:44 Speaker 1
+They're at three, bro. Uh, yesterday I went to three.
+01:43:59 Speaker 1
+Okay. Um, definitely use the office hour if you can't make that one. Uh, check something.
+01:44:13 Speaker 1
+I have one tomorrow at ten o'clock. Next interview, probably crowding that one.
+01:44:19 Speaker 8
+Yeah, but that's okay.
+01:44:21 Speaker 1
+We can try it quickly. We can try to see if we get if we the things, if you share screen, it's easier to see what's going on, right? It's all jumbled in chat, uh, sharing your screen, so you can get a timeline. So it's a lot clearer with these people are on. 
+01:44:32 Speaker 8
+Right cool All, right I'll uh I'll I'll try and see what I can do about office hour. U m and yeah, okay,
+01:44:45 Speaker 1
+Sounds good rest of you. Do you have questions? We still there. Oh, one disappeared Peter Tanya. Are you still there?
+01:45:12 Speaker 1
+Alright, let's go. I think he disappeared.

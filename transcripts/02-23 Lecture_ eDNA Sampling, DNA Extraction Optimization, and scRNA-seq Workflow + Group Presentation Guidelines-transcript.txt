@@ -1,0 +1,272 @@
+00:00:00 Speaker 1
+Relative population sizes based on the amount of DNA. You can also look at invasives. Do you see evidence of invasive species? They do this out in the Mississippi, in the northern parts of it, because there are invasive carp, Chinese carp that have actually worked their way up to Mississippi, and they're scared they're going to get into the Great Lakes. They're doing everything they can to keep them from traveling through Great Lakes. They've actually they've set up shock stations, Up at the you, you seen these Nikki? No, okay. Have you heard about them though? Yeah yeah, it's it's cool, but it's scary. They have to do it. There's these large sections where they literally put a massive electrical current through it to shock any of the fish in there and kill them. In case of carp are in there. So they'll do it periodically. You have to be careful in that area. Uh, but they're trying to keep the carp from getting further up. That's the only way to take to wipe them out. You can't just fish for them, you won't catch them. All some will get through. And once they do.
+00:00:56 Speaker 1
+They will establish themselves in the Great Lakes and devastate the ecology there. So eDNA is really important in lots of contexts. You can look for invasives, you can look for what is the healthy, how healthy is this water sample? What's in this local environment? Lots of cool things to do with it. But if we're trying to do this sort of experiment, in this case they're looking for 16S rRNAs as barcodes for these different species, Different types of water are going to have different properties to how we have to do these experiments.
+00:01:26 Speaker 1
+So, what are the two major categories of things that we're looking at for trying to test different ways of. 
+00:01:32 Speaker 2
+Extracting the DNA from the water? What about filter pore size? Yeah, why filters? Where do they come in?
+00:01:45 Speaker 1
+Why do filters come in?
+00:01:47 Speaker 3
+Um, because it helps, I guess, capture the DNA in certain ways.
+00:01:52 Speaker 2
+Yeah. Um, Craig Venter, you know the name? Does anyone know the name Craig Venter? Craig Venter. You should look him up.
+00:02:01 Speaker 1
+He was one of the two sides of the Human Genome Project. And he made his many millions of dollars off of that and wound up buying a yacht, went out to the Sargasso Sea where he started doing this sort of stuff. He actually would take these plastic containers that they sterilized, They had holes in the bottom, but they put paper filters in the bottom of it. And literally pull it behind the yacht. What it does is it'll collect biological samples on filters. Anything that can't get through the paper filter's pore size is going to get captured on it, just like any other filter. So, what you could do is get where it's just the right pore size to collect biological samples, which have DNA in them. And he was able to sequence and identify prokaryotic species that had never been seen before, their 16S rRNA had never been seen before, plus other random sequences. So really cool stuff he did with that.
+00:02:51 Speaker 1
+That was one of the early attempts at eDNA. And he did it on a large scale. He was looking at different kinds of diversity, so it's worth looking up what he did. But yeah, filters. You're going to have filters, and you try different pore sizes to see which best captures DNA. All right,
+00:03:07 Speaker 2
+What's the other variable we're looking at? Various different extraction protocols? Yeah,
+00:03:12 Speaker 1
+How many of you have done DNA extraction from a sample in a lab? I've done too much of it. A bunch of you cool! What kind of things have you. We we do have plants.
+00:03:22 Speaker 2
+Good. What are the things that you've done?
+00:03:26 Speaker 1
+So you folks have plants, right? Who else has extracted something?
+00:03:31 Speaker 1
+Plants Is it everybody plans? No. Bacteria. I just did bacteria. That was bacteria. Bacteria, okay, Bacteria I just did uh in environmental biology labs, we did salamander samples from Dr Barnes'work Nice Yep She likes that stuff Absolutely She's doing some really cool stuff with that Uh I've done blood samples. One of the guys in lab did primate hair cells. If you get the hair follicles, they have enough DNA in them. In the DNA, DNA easy kits, is that what they say? DNEasy something like that. Those Qiagen kits are actually really good for that. So in that case, They were actually collecting tips to identify chimps because when chimps go to bed at night, they nest. They actually take leaves and they form a nest and they'll sleep there, and they'll actually lose some hairs overnight.
+00:04:17 Speaker 1
+And people will come in afterwards and collect the hairs, and you can identify who's in the troop based on which DNA was present. Ooh, yeah, you can use tails of mice. Cool. Yep, that's awesome. So, you can actually genotype the lab mice by taking a little sample from the tail. Dr. Shitman used to do it for turtles because he studies turtle conservation. Actually, he studies reptiles and amphibians in general. You can do it with frogs, you can do it with all kinds of things. How many of the kits work the same way? No. Oh,
+00:04:51 Speaker 4
+Wouldn't that be nice?
+00:04:51 Speaker 1
+That'd be. no, actually probably wouldn't. Different kits are going to have different aspects to them, right? So, we have to test the different kits and the different pore sizes and see which combination might work best for this particular application. In this case trying to assess the biodiversity in an area. Good so far? Cool. Alright, now how did they control things? Did they just try every combination of filter and extraction method? No. Okay, how long would that take? Who wants to do that? Someone. Personally, if I had the money I would. If I could afford all the kits and all the samples. Why would I want to do that if I could?
+00:05:38 Speaker 4
+Comprehensive data.
+00:05:39 Speaker 1
+It's more comprehensive, you're more likely to catch an interesting combination. However it's not practical is it? So instead, all right, for a given pore size, try all the kits. For a single kit, in this case the Kajen BT kit, try the different pore sizes with your turbid and with your clear. The 0.2 didn't work with that--the turbid just didn't work I think? Yeah. Yeah. It's probably just too small and it caught too much. It probably clogged I guess. So try these different combinations and see what we get. So cool!
+00:06:15 Speaker 1
+Um, if you look at the Quantifia data. Yeah, we could. Let's take a look at what we have here. Oh! What were all the different extraction methods? So the DNeasy uh Omega's Bio- Tech EZNA uh Power Water from Qiagen, two different QIAGENs. Omega's uh EZN Water DNA rather than tissues made specifically for water samples.
+00:06:39 Speaker 2
+Was this phenol chloroform isoamyl alcohol? And you never do that? Good. I had done it. It's horrid. What's the problem with this? There are two words in this that should scare you: chloroform and phenol. And phenol, what's phenol? Yeah, what's the problem with phenol?
+00:07:01 Speaker 4
+Rings are bad. Rings are bad,
+00:07:03 Speaker 1
+But why do they make us worry? What do they cause? Cancer? They're carcinogens, yep. Phenol is a strong carcinogen;. It's very reactive, and it likes to react with other organic molecules. So phenol is bad, chloroform. You, obviously, don't want to use too much of that because you're going to pass out in the lab, anyways. But there are other issues with chloroform. It's a toxic chemical. I don't think it's a carcinogen,
+00:07:24 Speaker 2
+But it might be. I'd have to look that up.
+00:07:27 Speaker 4
+Chloroform is not necessarily. The depiction it has in media is not necessarily accurate.
+00:07:33 Speaker 1
+Yeah, It is toxic,
+00:07:35 Speaker 4
+Though Well yeah, no I'm not arguing that Oh god no Yeah.
+00:07:44 Speaker 1
+It's Too easy to kill someone with that. So, yeah, you have to be careful with these. You can't use a hook for this. But it turns out that that is the standard. That is the best way to extract DNA. It actually works way better than kits. In fact, if you look at the DNA concentration, it was stronger in every single case. So guys. It's the best one, if you know how to do it. And if you do it safely. And if you got a hood. But it's not practical to do on a large scale, Um, actually we used to. My lab does a grad student. They had been doing that and they switched over to the Qiagen kit. DNA easy came out a long time ago, decades ago. Very well known, very reliable kit. Okay,
+00:08:29 Speaker 2
+Outside of the PCI what worked well and what didn't? One of them had this weird little outcome to make you cautious. 
+00:08:42 Speaker 2
+Which is stand out as a problem. Yep.
+00:08:45 Speaker 3
+Uh, I guess with the Omega Bioscience kit had zero clear water. Yeah. Oh, uh, sorry. The water DNA The water one,
+00:08:55 Speaker 1
+You have the water DNA one yeah Nothing in clearwater. Zero extracted Could be user error, but it could be the kit too Um, The Clearwater I wonder if the salt concentration threw it off Because, it's seawater. Unlike the lagoon water, which is less uh saline. It might have thrown off. That's, one of the things you have to watch out for with these kits because anytime you deal with a column, doing chromatography of any sort or any sort of column extraction, uh you run the risk of the salts throwing it off. It affects the bonding in the column. So yeah, I'm not. 
+00:09:32 Speaker 2
+Surprised they're all lower here, but also what's the other problem with C lear- W ater? We talked about this earlier. Where do we expect more DNA?
+00:09:41 Speaker 2
+In the turbid.
+00:09:42 Speaker 1
+I'm just going to say we're there anyways. Now this Kegen, the OPW one, yeah it kind of did the works of all of them in every case. Probably not one you want to use for this sort of an application.
+00:09:52 Speaker 2
+I wonder if it's just cheap? It might be. Do you think it's supposed to be optimized for water?
+00:10:00 Speaker 1
+Sometimes that happens. A lot of labs will try a kit out to see how well it works before they start doing a large scale. Like, hey, here's a new kit. Let's try it out. And then if it doesn't work, okay, they go back to what they were doing before. I believe that the kits of the kit ones are more expensive than the eliva biotech ones. Yeah, most price.
+00:10:16 Speaker 2
+Qiagen is pretty expensive. But they also work pretty well for power water. That was a nice result. However, if you got out of the turbid water, it was a problem. It did better with the blunt tissue kit, almost as good as the PCI one.
+00:10:37 Speaker 1
+There's definitely a difference in extraction rate. Different extraction methods, different end results. 
+00:10:41 Speaker 2
+In terms of DNA concentration. Although that's not the whole story, we'll come back to that. Pore sizes. Trying different pore sizes, what worked best? That's a trick question. It was about the same. Sort of, Yeah, it was pretty close here. They're within margin there, like they're all within margin there. Yeah yeah.
+00:11:07 Speaker 2
+You might want to think in here the one may not work. I'm not sure why these work better. Although they need to be much better. That might be something worth looking at again,
+00:11:18 Speaker 1
+But definitely there's a difference in the extraction kits. Is there any reason why the 0. 2 says not applicable? Not applicable, yes, later on they actually talk about you couldn't get anything from the Omega biotech. Oh yeah, in clear water Yeah,
+00:11:34 Speaker 2
+That was in one of the figures Yeah. 
+00:11:37 Speaker 2
+All right, let's see. What was this one? Yeah, it's just the box plot approach.
+00:11:46 Speaker 1
+Same thing as we were just looking at. Oh, let's see where else. There's something else I wanted to see. Oh yeah! As you try different dilutions, so this is not an uncommon thing, Especially if you have salt water, probably not a bad idea to try dilutions to see if it helps. Um.
+00:12:05 Speaker 2
+With the clear water, did it make a difference? Not really. It may not have been the salt concentration was the issue. Um, oddly, the OPW. What is this? No, this is not the one that. So there's no thing for the OPW.
+00:12:26 Speaker 1
+That was up above. Um, yeah, it really didn't and I'm kind of surprised at that. I would expect that the salt concentration. Con centration of the seawater, should it should accumulate some salt on the filter paper that that could impact the extraction. But we didn't see that. But this is just a PCR based way of assessing amount of DNA. Not only how much DNA was extracted the table we're looking at, but also when you go to PCR it to get that 16 S RNA. How well does this? Does this still work? Sometimes you get contaminants out of the extraction, and they can actually throw off your PCR.
+00:12:58 Speaker 2
+That's not uncommon. Yeah.
+00:13:01 Speaker 3
+Why was there such a big drop in PCI compared to other ones?
+00:13:05 Speaker 2
+For PCI, it started out pretty high. It. 
+00:13:11 Speaker 1
+Had had the furthest to go. That'd be my guess. In terms of, it actually didn't drop proportionally any more than OMT did. 
+00:13:19 Speaker 2
+Or the QBT. Proportionally, it dropped about the same. About half, I think? Yeah, about quite half even. Didn't even make it down to half. Uh, the QBT and OMT, they went from about thirty two down to twenty. Oh, that's right. They all have their origin at zero on the y axis. I don't like that. Yeah. It's a little deceptive but This looks really bad, right? It's low Yeah It's not low, though It's actually running twenty None of them are really bad.
+00:13:59 Speaker 2
+But yeah, this is dropping down probably a third. This is dropping. 
+00:14:03 Speaker 1
+Down about a third also.
+00:14:05 Speaker 2
+Yeah. So,
+00:14:05 Speaker 1
+These are probably about on par with each other in terms of how they drop solutions.
+00:14:10 Speaker 2
+Interesting as you increase the solutions, what happened with the OPL? It did better, right? Even though I had less DNA concentration, it went up in terms of dilution actually improved.
+00:14:26 Speaker 2
+It could be an issue with contamination of OPW kits. Maybe after the filtration or the extraction, it may have some remaining contaminants. One thing you hear me say, over and over is the only way to tell if one thing works better than others is to try them both out.
+00:14:42 Speaker 1
+Same thing with your bioinformatics tools when you're doing analysis, try different tools out and see what works. Years and years ago, what was Jason's last name? Man, he probably graduated 20 years ago. One of our former graduates who was a head bioinformaticist over at the U of R at the Genomics Core for a number of years, he was there. And when he went about it, he did exactly what I suggested. He went about when he was trying to figure out what tools to use when they're supporting all these different labs in the medical wing of the campus. He tried different tools out and said, look, in our experience this is what works better under these circumstances. He tried it under different conditions with both synthetic and real data. They found that synthetic data didn't really help make the decision.
+00:15:26 Speaker 1
+They really had to look at real data from real labs to figure out what works best. So, they would actually determine which tools to use, and they pick it based on the experimental conditions from that lab. What was the experiment they're trying to do? What tool works best for that?
+00:15:40 Speaker 2
+Same thing applies through all of our analyses. Same. 
+00:15:44 Speaker 1
+Thing with kits, try them out, see what happens. If you've got a lab that has plenty of grant money, absolutely try this. If you don't have a lot of grant money, what do you want to do?
+00:15:54 Speaker 2
+Can't afford to try them all out. What do you try? Whatever the papers say is good.
+00:16:02 Speaker 1
+Yeah, check out some papers. Absolutely. Yep, check the papers out and see what other people are getting.
+00:16:08 Speaker 4
+What do you try? Asking for help.
+00:16:11 Speaker 1
+Absolutely, although the funny thing about asking for help online is what do you get? Misinformation sometimes sometimes you get misinformation. I got a laugh, yep. Uh, why did I laugh?
+00:16:22 Speaker 2
+Everyone else is going to try their own different ways. Like I mean, each each of these, if we change, if we start dealing with a different type of water from Dallas, it was. Yeah. If we drove five hours that way, could it be different?
+00:16:36 Speaker 1
+Absolutely. So when you go ask for things online, everyone's got an opinion, right? I'm not going to ask you what they say about opinions. Some of you know that joke. You can share that with the others after class. But it's absolutely true. Um. 
+00:16:50 Speaker 4
+Do you mean what they say about assuming or.
+00:16:52 Speaker 1
+What'd they say about opinions? Assuming it's a whole other problem. A whole other jump. Oh, yes it is. Very similar too, isn't it? They have a commonality between the two of them. All right, I think we're good on this paper, right? Anyone care this idea of trying different things out and seeing what works best? Not only in terms of what was the DNA concentration that came out, but they also were thorough enough to test what worked best in PCR afterwards. Going from beginning to end. What works best. To try the entire length of the process. I like this paper. I think they did a really nice job. They're very thorough. I don't like it because he's faculty here, I like it because it's a good paper, period. If it was a garbage paper, I'd be talking about that too. Not a bad way to say why did you do this? And we haven't even had that conversation, he's good. All right let's try this one! What do we got? Totally different application! Instead of eDNA we're getting extraction from the environment. 
+00:17:51 Speaker 1
+Is that a hand? No. Okay. This one hurt my brain. What was that?
+00:17:56 Speaker 4
+This one hurt my brain. It might, it might, why? A lot of acronyms and not a lot of slowing down to make sure we have grasped things.
+00:18:08 Speaker 1
+Well, yeah, this is not aimed at college students is it? Actually, you should all be able to at least get the big picture stuff out of it. And some of the details.
+00:18:21 Speaker 4
+Being able to get the big picture and interpret my brain. Also,
+00:18:26 Speaker 1
+Just the font choice in my opinion. Oh okay, we'll leave that alone. I can't fix that. Where's this published? Um in Nature. In Nature yeah It's going to be dense.
+00:18:38 Speaker 4
+Yeah I guess. 
+00:18:41 Speaker 2
+Yeah So, what are they trying to do? They're trying to use single cell RNA seq, Kind of study this pathway about morphogenesis and embryos. What is single- cell RNA seq? We talked about it.
+00:19:01 Speaker 3
+Um, sorry, I keep on looking at the slide over. Um, uh, It's where instead of looking at like the RNA samples of all the cells aggregated together, you're looking at the individual cells. They have kind of their own little barcodes so they're seeing, What is expressed with all of them. So there's a lot more complexity. Yeah, so what are the barcodes tied to? Um, they're tied to just the different what, wait, they're tied to what the different, the different if it's a different cell. Yeah.
+00:19:31 Speaker 1
+Different cell type you get it from. And presumably the different cell types have different gene expression, even though they're part of the same tissue so perfect. How do you separate cells and do this with barcodes? I don't think they talked about this in the paper here Yes!
+00:19:46 Speaker 3
+Really? Um, I mean, would they because in the figure, I don't know what number it is. But the the A it's the big figure with all of that. They kind of show everything clustered together. So, they're clustering difference based off of the different expression patterns, you can figure out. Okay, this expression pattern Yeah, That one This expression pattern So,
+00:20:08 Speaker 1
+They actually separated the different cell types before that, though There's a certain barcode, they usedDifferent kind of barcode.
+00:20:15 Speaker 2
+And nothing to do with DNA. No, no direct relation to DNA. Everything has something to do with DNA. Almost. What was it? Cell signaling. Cell signaling.
+00:20:29 Speaker 1
+If you were to look at the outside of a cell, how could you tell different cell types apart? Receptors. Things on the surface, right? Absolutely, so receptors are one of them, any sort of protein that's on the surface. 
+00:20:41 Speaker 1
+Different cell types will have different cell surface receptors and connective molecules. If you're dealing with adhesion or something, things that tie cells together, they have all these different kinds of cell surface indicators. White blood cells are well known for this. They use those for signaling to each other. So you can actually use the proteins on the outside. What do you use to find those proteins? What's the best way to see if this protein is in a sample or not? Oh my god. What was it?
+00:21:14 Speaker 5
+I know it, but I don't know what it is. Is tied to the immune system? You can use like the grab it like. Yes, related. So suspicious. Was it?
+00:21:25 Speaker 2
+Uh, it's related. Antibodies! Antibodies! And what do you do with the antibodies? What do you put on them so you can see them?
+00:21:38 Speaker 1
+Put a fluor on the back of the antibody on the part that's not binding to the antigen, and you can actually tie onto these molecules. So what you do is you take your cells, put in suspension, you put it in conditions where they'll separate from each other. Usually if you know different salt concentration, but not so bad that they lyse. Cause them to form a suspension. Add in these different antibodies with different fluorescent tags, where each antibody is looking at a very specific molecule. And often we'll use the monoclonal antibodies. It's very common. You'll do that in the solution. And then you actually run these through is a very dilute solution. And there's something that sorts them based on which colors appear for each cell.
+00:22:17 Speaker 5
+That's what I was about to put. Yeah. Flow cytometry.
+00:22:20 Speaker 1
+Flow cytometry, thank you, that's it! Cool! Yes, we're going to do flow cytometry. That's how they do it, they use antibodies. Cool!
+00:22:29 Speaker 5
+You're doing that? Yeah, in our tissue culture lab we're going to. Awesome! Are you going to the U of R for that or no I don't know, our professor said we were doing it. I don't know if we're doing. It means we like prepare this ourselves. I think, maybe yeah, they won't that's a expensive machine.
+00:22:45 Speaker 1
+I don't think they let us use it. Yeah, they're very expensive and finicky. Uh and yes, they are very fussy about who they like using yeah uh years ago for a research project. We were going to with Rochester Regional there. Uh, not me, but another faculty member.
+00:23:03 Speaker 1
+Where to get access to the machine.
+00:23:04 Speaker 5
+I, the place that I worked over this summer this past year, They had a really cool flow cytometry machine and literally it was one of the postdoc students. It was like that's what she did. She was really good at the flow cytometry and if anybody needed it, It would you had to go through her like And,
+00:23:21 Speaker 1
+You don't want to gum up the machine. Yeah. Yeah. So, basically, you have the suspension of cells they've been tagged with antibodies with fluoros. You dilute it. To the right concentration. So as it flows through the solution, you're getting individual cells going through the liquid at any point in time. When these detectors will shoot lasers through and they look for emissions, if they catch a particular signal, They'll shuttle it out by using either blast of air or blast of water to shoot it down one channel or another where it's collected. So you actually wind up getting different tubes with different samples in them. I'm doing this, it's not this big, but um they actually separate them through all these channels.
+00:23:59 Speaker 1
+And you actually can isolate individual cell types.
+00:24:02 Speaker 2
+And then you can run this. Cool.
+00:24:07 Speaker 4
+So I think that it's, you know, A lot of the jobs I've looked at have been like through our flow cytometry experience. And now you're being like, oh, that's really hard to get. They're. 
+00:24:20 Speaker 1
+Fussy about it. They're protective. Internships are tough to get into if you can get a flow cytometry internship, that's awesome.
+00:24:28 Speaker 4
+Although I don't think it's they just want you to already have experience in. 
+00:24:32 Speaker 1
+Thatum for an internship would be tough to get that you might be able to depends on where you're going. They might have a secondary machine. All right. So we got this separation. You can actually do the single cell RNA seq on them. Basically, there's special kits. It'll take these cells and it'll separate them out. I want to see magnetic beads in there. Somehow. Depends on which kit you're dealing with. Illumina has kits, there's all these different kits out there. But basically they're binding to the cells and separating them, and then it runs RNA-seq on them individually to see what's inside the cell. Crazy stuff, we weren't doing that 15 years ago. They're just starting to think about it. Okay? Cool. I'll see lights backing up too When you run it, You can actually see some of these different cell types. They do cluster based on their.
+00:25:26 Speaker 1
+Expression profiles. If you look at their RNA seq results for these individual cells, this is a massive experiment. You have how many different cells? Thousands, right? And each one has its own RNA seq results. And, then you're going to take these and look at them to see where they cluster based on the profiles. And sure enough, they do break down by tissue type. This is huge and this is awesome when you're able to start doing this. It was only in the last 10 or 15 years - - last 10 years, we've seen it as more routine if you can afford to do it. If you have a big enough grant, you can do this. 15 years ago, you couldn't. You still get some odd ones. There's a blue one here and there's an orange one there. You do get some oddities. 
+00:26:05 Speaker 2
+In the clustering that might be an issue with the sorting even. It might be they sorted incorrectly. Once in a great while that's going to happen and that's okay. But by and large, you know, you get the myofibroblasts What's the matrix in terms of cell types?
+00:26:27 Speaker 2
+We need this tissue culture. You see how this is? It's not an old movie. That's old man, scary. I don't know what it is though.
+00:26:42 Speaker 1
+I don't know what it is though. How about connective tissue? That's your matrix, stuff in between cells. What forms all the collagen and everything else? That's your matrix, cells. Fibroblasts, what are those? Um. They break down. Which ones? Those would be osteoblasts. Oh, hey. Synthesizes collagen, among other things. Yeah. Typically your fibroblasts are tied to epithelial tissues. Ciliated cells? You kind of expect that in lungs, right? Not very many of them here, but they did have them. Uh, I forgot what the ATs were.
+00:27:25 Speaker 2
+You know what the ATs were? Oh, okay. I'll be like, that kind of makes sense. I didn't need to be all.
+00:27:44 Speaker 1
+Just caught my brain for a second. But all these different tissue types, they have different genes that they express. Remember we talked about combined samples or composite samples like the bees? So the bees, we had signal to noise issues because there's too many different cell types. Here we can separate some of that out, which is huge. Again, it's not cheap. You're doing a whole lot of RNA seq with the kits to prep them in the first place. In the end, they actually wind up seeing some cell signaling stuff going on. I'm not going to expect you to know any of that, But they wind up being able to use this technique in a very powerful way to identify certain. 
+00:28:19 Speaker 2
+Genes that might be interacting. Holly, I don't know what you got?
+00:28:30 Speaker 1
+Oh, Did it go down again? It might. It'll come back up on its own.
+00:28:34 Speaker 4
+Yeah, but you have to worry about that.
+00:28:36 Speaker 1
+Oh, it's not that it's down. It's that the network connection is down right now.
+00:28:41 Speaker 4
+So the jobs are still running?
+00:28:42 Speaker 1
+The jobs are still running here okay.
+00:28:44 Speaker 4
+Are they still running or stop because I do not have a network connection?
+00:28:48 Speaker 1
+They're still running as long as you use, no help, they should still be all right.
+00:28:51 Speaker 4
+Well, buddy if it's. It's not connected to the internet right now, and it's trying to download a file.
+00:28:57 Speaker 1
+Oh, you're trying to download something? Yeah, it's kind of stuck. Sorry. It'll probably time out. Yeah, we'll see. It should come back up. Sorry, there were some. It was not playing nice this morning. Um.
+00:29:12 Speaker 4
+Uh, maybe you can cast text? I think that's the wrong text. What? It is not running right now?
+00:29:18 Speaker 1
+It's not playing nice now! It wasn't playing nice earlier! Yeah, But once it comes back up, we should be good for what? Until the next update. Next major update.
+00:29:28 Speaker 4
+I mean, I thought we were good before,
+00:29:29 Speaker 1
+So. Yeah. It should be up soon. I would say by one o'clock it should be back up. Oh really? Is it up? Oh no, I'm just laughing. Yeah, I know. Uh. Okay, you can launch it now though. It's not. yeah, In terms of single cell RNA seq, how are we doing? Good. Good, okay. Yeah.
+00:29:55 Speaker 4
+Just one question: what's this bead? You know, magnetic beads.
+00:30:01 Speaker 1
+So the magnetic beads, they use them. So that's used in a lot of different techniques. Uh, what you can do is you can have these beads. They have something on the surface of it that will attract something. So any magnetic beads I'm guessing means a protein of some sort on the surface of the beads. It's probably grabbing cells. They probably have it diffuse enough that only gets one cell per bead, is my guess. But basically, these beads are small enough that you can actually make a slurry with them, with your sample. I'm doing it this big but it's really a little teeny test tube. But, you get a little bit in there of these little magnetic beads with these little things that grab a cell for each, and then you can pull them out and they'll separate off the beads into individual, usually individual chambers.
+00:30:46 Speaker 2
+PacBio does something like that to some degree.
+00:30:53 Speaker 2
+But, another way to think about it is part of the standard single cell RNA seq kits.
+00:30:58 Speaker 1
+It's built right into the process for you. It's kind of like using the DNA extraction kits. You just follow the steps and if you do it faithfully, then you should get your stuff, hopefully. Otherwise, you talk to the company that made the kit and say, hey, we're going to win or not. The kits are usually really good about it.
+00:31:15 Speaker 2
+The companies are really good about it, especially Illumina. Their tech support is awesome.
+00:31:23 Speaker 2
+Good. Other questions on this? Does the idea of. 
+00:31:25 Speaker 1
+Single- cell RNA seq make sense? It's really powerful. I remember again, folks at U of R, so I do this with blood cell development. White blood cells go through a whole long process of development and differentiation. There's lots of different types of white blood cells, right? They're able to actually look at the gene expression at different stages because there was an unknown at that point 10 years ago. They're able to figure out how these some of these different cell types actually differentiated. What were some of the signals that are going on to tell them to no, you're not this type, you're this type. There's a crazy cascade of transcription factors that does this. So cool. All right, if you're going to see the flower, I think we'll get there. The server should be back up, I would say before one o'clock. If it's not back up after one o'clock, send me an email please. I'll try to get to it tomorrow and see what. I'm hoping nothing else is going wrong but we'll see. Um. 
+00:32:22 Speaker 2
+We had to do that update. All right, what are we doing Wednesday? Presentations.
+00:32:28 Speaker 1
+Group presentations, right? Make sure you're ready to go. We'll start off. I'll ask for a victim, I mean volunteer first thing. Uh, whoever wants to go first will be able to if you want to set up on the projection, go for it, otherwise where I'm just going to sit in the desk and and talk with y'all, You said five minute, five minutes each. Uh, we're gonna set a time limit for each group. And if you start going over. I'll start as you get close, I'll let you know. I will not do what I saw at a conference once. At conferences, scientists are notorious for going over time. Yes. Yeah, All the time, and you end up having sessions going through the coffee break. And that annoys everybody. Um, I saw one person did an awesome job. They actually had this bag of balloons Oh yes! Oh yes they did! When someone was getting over time, they'd wait getting close getting close as soon as they hit their time limit bang! They pop a balloon. 
+00:33:20 Speaker 1
+The first speaker went over time. Nobody else did it. Did not need the big bag of balloons, just needed one. So, they jumped. 
+00:33:30 Speaker 4
+And be presence of others to make sure you know, I can't follow through on this. The. 
+00:33:39 Speaker 1
+Speaker jumped, I will not do that to you Sam Oh. Can you just briefly go over the criteria? I know you said it's casual It's not going to be a formal thing, it's going to be we're going to help each other out, So each group, you know, show us what you're finding in your downloads and your FastQC results. So what is the nature of your sample? How many samples do you have? How many fragments for each? What's FastQC telling you on the samples you've done this on already? And we'll look it over together. If you have any problems, ask us. Ask the whole class and we'll try to figure it out together. This is where we start working as a lab, not as individual projects. As if we were all part of something.
+00:34:15 Speaker 4
+We have to do that between now.
+00:34:19 Speaker 1
+I Want to say yeah because we talked about this last week. Yeah, it's not too bad and it's a short title bit. Yeah, that's something your group has to figure out. Because I talked about this at workshop last week, so figured out how to talk to the group. So try to keep it to five minutes.
+00:34:45 Speaker 1
+We go a little bit over for some groups. If some groups have more trouble than others, that's going to happen. But you know, Try to keep it concise and focus on if there's anything good, you're finding. And if there are any problems you're finding. Five minutes for the entire group, right? For a group, yeah. Try to do that if you can't do it five minutes per group. Try to keep it to five minutes, yeah. No more than ten, because if there's ten minutes for every group with the transition in between, we run it over and then I have just five groups left. Oh, five groups, ten minutes each would be fifty. So five minutes. Five would be ideal. If you can do it in five, great. If you need to go ten, that's okay. We'll figure it out. Cool? All right, if you want to head out early, go for it.

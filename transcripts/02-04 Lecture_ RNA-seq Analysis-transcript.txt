@@ -1,0 +1,200 @@
+00:00:00 Speaker 1
+on the right with all the information about the gene, those files tell you which basis are the start and stop locations for genes. Oftentimes, they'll tell you where the exon and intron boundaries are, too, and you could ask that. You don't get that in precursors. So, basically, what it's doing is when you are, we'll take a look at Thursday, we'll actually run this with STAR. There's actually two steps you have to do. I'll go into a little more depth on it then, but basically, the first one is saying, all.
+00:00:30 Speaker 1
+right, what are all the sequences in the genome and where the genes are located? The second step is saying, for your fragments, what do they line up with in the genome? Some of the programs actually identify new exons that haven't been seen before. Top, bad, star, a number, HiSAT, they're all good at that. So, basically, this is just one part of it where it's including the extra information about gene start, stops, or any other features that might be interesting, which strand they're on and so on, all that information. So yeah, there are different reference sets.
+00:01:01 Speaker 1
+What were the big ones they're looking at? What are our major reference sets here? Oh, somebody else. I want to make sure everybody's reading. You want to talk about it, I want to make sure you're reading it. What are some of the major reference sets before I get down to them? What do you think? I couldn't tell because of the hand. Do you mean like, basically, these are effectively databases. I think RefSeq is one of them, right?
+00:01:36 Speaker 1
+Yeah. Absolutely. Oh, absolutely. Okay, where's the free pictures? All right. So. Sexy. Ensemble, we've got RefSeq, common as different forms of RefSeq. These are common ones. Sure. Is this a human data set? I think it was, wasn't it? It was human, yeah. Usually when we talk about ref sequences, I'm talking about the human. On some of them, I hesitate.
+00:02:06 Speaker 1
+because they have different databases in there. I also hesitate to call them databases. They are technically in the same way that a spreadsheet is, especially a spreadsheet with multiple tabs. You can call a database if it's cross-referencing.
+00:02:18 Speaker 2
+Yeah.
+00:02:19 Speaker 1
+Is it a real database? I mean, the argument is, they'll say no, it's nothing. It needs to be interrelational or agree with the duals or other things. There's NoSQL and all these other jams and there's all these different forms out there. I wouldn't consider it a database because it's not just a simple flat file. It's more complex than that. because, well, actually, the annotation itself is a flat file. I guess we can't get past that.
+00:02:49 Speaker 1
+It doesn't really have any cross-references out there other than it references other databases that have session references. They usually don't put URLs in because those change, but they'll put an accession number in which database it's from, as a way of cross-referencing outside, externally. I'll get away from the philosophy of whether or not it's a database, but basically you have a genome sequence for each of these. There's a corresponding flat file that says, here are all the interesting features.
+00:03:20 Speaker 1
+But yeah, Ensembl and RefSeq are the big ones that we'll see in humans. Ensembl does have other stuff. Ensembl is more of an organization and less of a data set. It's something you just learn from GoSea. GoSea references Ensembl all over the place. They also have individual nucleotide sequences, not just whole genome. They've got all kinds of stuff. So these are the two big ones. Okay, so we're looking at them. Let's start with exons. That right there kind of makes it. That's pretty much sufficient to say that this is important.
+00:03:54 Speaker 1
+Let's figure out what egg. I like that. Thank you for that. I'm trying to be good. I understand this is also a very strong, sequence. A sequence is what you mean. In this case, it's more specific than.
+00:04:23 Speaker 2
+what we had last time. It's definitely a new sequence.
+00:04:30 Speaker 1
+Specific genes, yeah. These are specifically genes that were different between them in terms of annotation. They had 25,000 roughly that were common. Take a look at that ensemble on the left. Another 33,000. Okay, here we get into philosophy. How many genes are there in the human genome? Should we start an argument? Because it usually winds up in one. Some people say as low as 15,000. Some people say as many as 80,000. What's the difference? There's several.
+00:05:00 Speaker 1
+What was it? It's several times over, yep. In terms of functionally, what's the difference? It could be. So it would be some things that are not protein-coding. You'd have to worry about it. If you ignore tRNAs and ribosomal RNAs, what else is left? There's other stuff in there. But the introns are still part of the gene. Yep.
+00:05:31 Speaker 1
+Still part of the gene. Yep. What about, like, one super far away? Oh, that could be dealing with promoter region. That's part of the gene there. Yep. So, what was that? What kind of regulators? Yeah, that's one of them. And that's being eucystical. It's like I, the letter I.
+00:06:05 Speaker 1
+Does it ring a bell? Okay, I know something you took genetics with. You need to know this. Okay, you can answer if you got it. What's it got? I don't know. No? Oh, no! It starts at the end of the course. Something, it's not protein coding, but it does regulate gene expression. What was it? It's not intrusive, part of the gene. Close. You're on the right track.
+00:06:35 Speaker 1
+What was it? It starts with an I. What was it? Yes. We can go through the alphabet. What are you doing? You're getting closer. I-N-T-E. It does suppress, it can suppress gene function, but it's I-A-T-R, close, inter, I don't think I paid for this one, yes it will be, absolutely, you need to remember this one, you'll see it throughout your careers, no matter where you are now, you'll have to remember this, it's one word,
+00:07:30 Speaker 1
+I'll give you the, it's one word followed by R-N-A, inter, oh, here we go, almost got it, inter, Closed or interfering, interfering RNAs. Don't forget that, please. You have to know those. Now we're in your brain. Oh my gosh.
+00:08:09 Speaker 1
+Interfering RNAs. Interfering? Interfering RNAs. IRNAs. That is one of them. Sometimes you'll see SI RNAs or small interfering RNAs. There we go. They're related. They're basically the same thing. They interfere with another RNA. But they're not genes themselves. They may be in an intron. Sometimes they're intron sequences. Sometimes they're transcribed separately. It depends on which category. There's all kinds of different RNAs that are regulatory. Do you count those.
+00:08:40 Speaker 1
+as genes or not? How many say yes? How many say no? How many have no clue? There we go. it depends on who you ask. Personally, it depends on your definition of gene. Do you mean something, that's transcribed and then translated into a protein, which is a very strict old-fashioned definition? I'll call it old-fashioned, I don't care. Or are you saying it's something that is.
+00:09:10 Speaker 1
+transcribed and has a functional effect? Once you open up that second one, a whole bunch of things can open up. Now you get the tRNAs, the ribosomal RNAs, we come there, interfering RNAs in different families. Also, if you take a look at a single gene, does it always code for the same protein? No. No. So, those who have taken genetics with me, I'll first place saying it's another I-word that you absolutely will need to know for this class and for your careers.
+00:09:43 Speaker 1
+No, I'm not going through the alphabet. What's the product of ulcerative splicing? What are they called? Isoporins. Bingo. Okay, you're in your review today. Do you count isoforms as separate genes or not? That's a very heavy debate, and that would probably get the most traction. You can figure out, hey, it's okay. Some people are hardcore, old-fashioned, and I will count them. Most people are like, yeah, sure, whatever. They're functional. Let's count them. Splicing, on the other hand, you count them.
+00:10:14 Speaker 1
+Yeah, they're transcribed separately. But I would definitely think about isoporin. That one, it could be debated either way. Is it the same gene or not? Some of these databases will list the isoporin separately. So that's where you can get like 80,000 genes. Because some genes will have three or four different forms. We'll get there. So, this is how we get more than 20,000 total genes.
+00:10:47 Speaker 1
+If you look at Ensembl, what do we have there? That's about 50,000 total associated with Ensembl. I'm willing to bet they count isoforms as separate genes. Now, if you look at RefSeq and CBI, well, they're like 35,000. I don't know what they're doing. RefSeq, our sub-read is going to be a little closer. There's a difference I honestly don't remember between our sub-read and regular NCBI.
+00:11:18 Speaker 1
+Can you zoom in at all? I can, but then I just remember to zoom back out and move to the next figure. Yeah, it's very hard. Oh, hang on a sec. Windows wants me to configure it. No. It will wait. Oh. And see now? See? Yeah. Now you messed it up. Oh, man, there we go. Our sub-read is basically a smaller bird. You know what they separate it out?
+00:11:53 Speaker 1
+They merge overlapping exotons. This is a product of alternative splicing. That's what I'm trying to find. They might be merging them into single genes, which would be closer. If they also count your interfering RNAs that are known, that could get you about $25,000, if you validate it. So it's not a simple answer. You're going to find there's different annotations that have different ways of contemplating.
+00:12:26 Speaker 1
+That philosophical difference alone is enough to make a difference between which genes are identified in your fragments from your transcriptome. It can make some major difference in the outcome, too, depending on how you define it. Something that simple, yeah. You can say they're all right or they're all wrong either way.
+00:12:58 Speaker 1
+Because it all, it doesn't matter. They're all missing something. They're also all fighting a lot. Sometimes I will look at a comparative database and see what's in the top. It depends on how hard I will look at it. If it's like, the results we're getting are a little unsure or uncertain, try a different one and then see, all right, where's the overlap, which genes they say are expressed. Those, I believe, at that point. Do you see it across all three databases here? If all three of the imitations that's giving you this, this gene is lighting up as, hey, this is interesting, that is almost certain.
+00:13:33 Speaker 1
+Assuming your experimental design is good. In terms of the reference to the data sets, I would say, yeah, I believe those. The other ones, you've got to look at them. Sometimes you want to go back and look at the raw data, look at your counts and so on, and try to see maybe that's. maybe which exons are showing up. How would we see it in the next paper? I think we might see where exons can be differentially represented in transcript books, depending.
+00:14:06 Speaker 1
+on how you do your experiment. Your library prep makes a big difference. We'll come back to that in a bit. But little things make a big difference, don't they? That's something we're going to see throughout the book. When you're doing a eukaryotic analysis, a prokaryotes is a little simpler. You don't have to worry as much about interferons. You have things to interfere with. It's a little different. It's not as complex as eukaryotes. It's a mess. And this is humans. Humans are easy. You try to plan it sometimes. that's a tough problem um animals are really easy to work with when i tell tell the folks.
+00:14:43 Speaker 1
+so you used to meet regularly with the folks at the u of r they were strong they have research links and they were doing a lot of rdc early on so a bit about 15 years ago and i was talking about some of the stuff we're doing in graves but what yeah we watch out for this stuff you know the genome is effectively duplicated uh no i don't mean diploid i mean chromosomes and there's no chromosome in terms of their regions there's a revolutionary uh duplications on an earlier clique and earlier ancestors these are really challenging those little things after.
+00:15:20 Speaker 1
+taylor's analysis you could barely ask how do we know it's right we don't until we get results in invalid that's something to always remember every step of the way in this class and throughout anything you do lab-based, Don't just rely on the RNA-seq results. Use external validation to make sure this is real. This is why cell papers are huge. I think I was saying in seminar we talked about cell papers. Yep, that's why. The reviewers for the journal cell,
+00:15:51 Speaker 1
+they will always consider, well, is there an alternative explanation for what you're seeing in this paper? If so, you need to do an experiment that differentiates the conditions and the possibilities. So you'll have eight figures, each of which has like six to 10 panels in it, because they're doing all these validations, especially according to the RNA-seq, because little things like this, we can already see the difference.
+00:16:13 Speaker 2
+between the genes annotated. That alone is going to drop your results.
+00:16:21 Speaker 1
+Are you scared now? Don't be. It's OK. There are ways to work through it. But be aware of it. Be aware there are no black and white answers in RNA-seq or. You've got to be able to look at the totality of it and figure out which parts don't make sense and try to figure out what it is. It takes more work, but it's worth it. The results you get in the end are awesome. If you do a good one, you're already quiet.
+00:16:55 Speaker 1
+What are you thinking? I was worried.
+00:16:58 Speaker 2
+You were what? I was worried. Oh, thank you.
+00:17:12 Speaker 1
+The phone went yellow.
+00:17:21 Speaker 2
+Oh, yes. Okay.
+00:17:25 Speaker 1
+So, it's a biophenetra. Yeah. Effectively, you can treat it as a different set. Oh, that's even different. Oh, my God. I didn't even thought of that. I forgot about that. We'll get a D. Sorry, we'll come back. It's basically just a subset in CBI. They just restricted it. And you'll see lots of subsets like that. Genetology, we talked about that. We see genetology analysis like that. Genetology, it's a good one to know. I'm going to teach you all kinds of new things. All kinds of evil words.
+00:17:57 Speaker 1
+That might get you to the truth. Maybe. Look at this. Total effective gene lengths. Are they the same across these? No. What's the problem with the last one? All of them were, right? What's going on there? There's got to be something wrong.
+00:18:24 Speaker 2
+Think about what it is.
+00:18:30 Speaker 1
+Yeah. Less jeans, you have less total length. Yep. It's going to make a difference there. It doesn't tell us that the average length of the gene is the same. Do they actually have that? That's okay. I don't remember. What was figure two again? Oh, yeah. That's how well the things align.
+00:19:04 Speaker 1
+So that's not going to be the gene length. Yeah, but it's an interesting fact. Good. Good playing time. Of the fragments that existed in the data sets, that's what fragments have actually mapped to that genome in those jeans. It's not the same, is it? It's a huge difference. It depends on how you view it. Percentage-wise, they're pretty close, right? But if you're dealing with, I mean, privacy, it had to be in the millions.
+00:19:36 Speaker 1
+It had to be hundreds of millions, probably, if not more. At that point, that small fraction is significant. Statistically, there's no question these are significant differences. That you get a lot more with our subread, which is interesting. It has less jeans, but I have more fragments mapping to it. Why might that be? I know a lot of people are in the conclusion of how a worry is that not as well-treated data is going to be impressive.
+00:20:10 Speaker 1
+That's why subsign is so important. So it's kind of to be aware that you don't have to leave the data because that's fine. Garbage in, garbage out. Yeah, absolutely. Something to worry about. We didn't talk about it here. I used to talk about it in biopunch algorithms in the database course. Do you know the difference between NCBI and EBI? What's the difference in their philosophies?
+00:20:41 Speaker 1
+In terms of physical locations, yeah. But in terms of philosophies, what's the difference? There's a big one, and it's historical. Isn't it? I could be wrong, but anyway, I'm just going to say that. Okay. Isn't it that NCBI requires averaging of the decimals and EBI requires more creation? That's basically it. And it comes down to historical artifacts of its own.
+00:21:12 Speaker 1
+NCBI, actually, they've got no way of accepting everything. They're being really fussy about sequence of data. Like, they want to make sure you get X, Y, and Z. However, their full history is really tied to which branch of the government they're on. Who does NCBI report to? What is the next level of government? NIH. Actually, it's in between there. And I'll add National Library of Medicine. What's the purpose of National Library of Medicine. 
+00:21:46 Speaker 2
+Provide information about biological research. No, not really.
+00:21:50 Speaker 1
+You'd think so. They have medicine in their name, but considering that all biology can in some way be tied back to medicine, potentially, the income is more than just medicine. It's such a bad technology. It is related to the NIH, but the National Library of Medicine predates the NIH. It actually was formed back in the mid-1800s. You may have heard about a little war where Washington got raised. Not the person, but the city.
+00:22:23 Speaker 1
+The British came in and did a lot of damage. I forget which president it was. But they were concerned, look, every time this happened, we're losing all these lives of patients. They wanted to make a fortified structure to protect information in case of something catastrophic. So they're trying to set it up so that all this information that was happening, this research, could be collected in one place where you're not having to rebuild everything from scratch again afterwards.
+00:22:53 Speaker 1
+Later on during the Cold War, they actually literally made it a bunker. I didn't see it, but from what I was told, the center of the library, the ground part, in case of a nuclear attack, in a matter of minutes, it actually dropped down into a bunker. That's what people there told me. I haven't seen it. I can't verify if they were pulling their legs or not. But that is one of the stories they like to tell. But it does reflect their philosophy. How was it that the system would show up, but after that happened,
+00:23:26 Speaker 1
+it didn't go back up? No, it turns out it's actually on a gear-based lift. You know what they're saying. But they have all these teeth in it. Is it? Yeah. The big part of the middle, and that might be it. Yeah. Suppose they had six of them to retain as much information as they came at before. That's crazy, the stuff we just told them. Jackson would have understood the necessity for that information to keep medicine going.
+00:23:58 Speaker 1
+You don't want to lose pace in medicine. You want to be able to do as much as you can as possible. You don't want to lose that information. So there's this long history, and that philosophy still carries over to NCBI to some degree. The original RefSeq, yeah, it's archival, not curatorial. And both curatorial. It was actually developed later on in Europe as a way of getting the highest quality data. In reality, the two of them talk to each other all the time now, which is part of the reason.
+00:24:30 Speaker 1
+that NCBI has changed. They're actually starting to curate more. But 20 years ago, it was no one except everything. Now there's so much data, they kind of have to curate anyways. There's so much data generated, they can't take everything. Sometimes you get a little snotty about it, too. I've had some back and forth, like, no, that's not true. They actually cited papers for it, but they didn't believe me. You can see this paper in PLOS, come on. And we've had some arguments sometimes.
+00:25:03 Speaker 1
+Planned mitochondrial genomes, they don't believe that they're recombining. They absolutely are. It's very clear in the literature. But anyways, that was a lot of argument. So there are differences here, significant differences in terms of... how many fragments from your data actually align to these data sets and are annotated. It's a big difference. I don't think we've, did they have one of them? I wish they did,
+00:25:34 Speaker 1
+that'd be awesome to see. What is this? Oh, RPKMs, you're going to learn those. You don't even look up what the RPKM stands for, I know what it means, conceptually. Oh, it's FPKMs, per million efforts. Yes, it's a way of normalizing the number of.
+00:25:59 Speaker 2
+is basically what it is. You also see FPKMs a little bit different. Say it again. 
+00:26:13 Speaker 1
+per million fragments. Oh, FPM. Oh, that's right. So, the number of reads per thousand, per kilobytes per million. Yeah. They're not for the reason of measuring the way the fragments line up. This is one of them. Is there a significant difference here? Yeah. Yeah, I'm not buying it. Oh, there's one thing.
+00:26:55 Speaker 1
+at the bottom. Look at that last sentence. You'll see this a lot, too. This leads to another probably this sort of analysis. Dr. Padman, I love this. What do we do? Yeah. It is a big lot, but. He's tied to that number zero. The number zero messes up all kinds of mathematics. You don't want to divide by zero, you don't want to take the log of zero.
+00:27:26 Speaker 1
+So if your lowest actual count is one, how do you replace those zeros so you don't get zero? You add a point five. Add a point five. It's not . So it comes out as less than the lowest possible value, that was observed. That's a very common trick. You should be careful it doesn't introduce any errors. In this case, it should. But you will see tricks like that in some of the terms here. So, all right, how are you doing?
+00:27:56 Speaker 1
+Are you starting to swamped already? There's a lot of stuff to see. I don't say I wish I could have you for two semesters because then we could do both GEO assemblies and alignments. Alignments with a variety of stake because there's a ton of different ways to parse this data and a lot of . Most of it, you learn from just sitting down and doing it over and over.
+00:28:17 Speaker 3
+We're not doing alignment here. 
+00:28:19 Speaker 1
+What was that. 
+00:28:20 Speaker 3
+We're not doing alignment. 
+00:28:21 Speaker 1
+We're doing alignment here. You're not going to do an assembly here, though. I wish we could. Yeah. Especially a packed bio assembly, that'd be awesome. But that can take some time. But keep immersing yourself in this. Something I'm going to emphasize throughout the talk. I'm going to show you a subset of this. You need to keep looking at the literature and seeing what people are hearing. It's one of these fields that just keeps moving. We'll see some examples later on.
+00:28:52 Speaker 1
+We see single-cell RNA-C. Some of you have already seen in the seminar last semester and in our movie. That's not what we did.
+00:29:04 Speaker 2
+All right. What do we got. 
+00:29:08 Speaker 1
+We're here and we're in time. Okay. Oh, what was A again? After what? Oh, interesting. How might that create a problem? Genes that are not expressed very heavily. You don't see a lot of fragments from those genes. What do you worry about in statistics? Is the concept as tied to that?
+00:29:43 Speaker 1
+I don't know. I didn't find that very similar. And I have, just looking at expressions, I'm certain that we were worried because, they might not be as highly expressed as normal, like whatever people care about. Okay. Ooh. It does create a philosophical issue. So if you see most genes have like 100 or 200 fragments aligned to them, and you got one of like three. is that three real or not? That does become an issue. If it's a transcription factor,
+00:30:19 Speaker 1
+do you need a lot of transcripts to make enough of it to adjust the expression of other genes? Not usually. You might have a small number of transcripts, so it might be real. The other problem is it's tied to polymerase and eukaryotes. This is something I hint at in genetics, but this one you probably forgot. Sometimes polymerase will express a gene where it's not supposed to be expressed at runtime. Polymerase makes mistakes. Sometimes it will.
+00:30:52 Speaker 1
+accidentally sit down in a place where there are no factors that are encouraging it to sit down, just by chance, and it'll express it. We see a low level of transcription of things that aren't even genes. If you look at enough transcripts, you'll find things that, yeah, they line up with genomes, but they're not really genes. Polymerase is a little promiscuous, not much. For the most part, it's got to be brought in using enhancers and other factors that are keeping that polymerase there and getting it started.
+00:31:23 Speaker 1
+But once in a while, it leaves a mistake. So I suspect to some degree this is what they're doing here. It's absolutely a concern if they're low level, they can't get washed out. What do we get around that is higher depth to see if it's real or not, or see if it's a statistical fluke. And the statistical concept, Keisberg tables, huh? I need a marker. I need a spare. I don't know, maybe. Let's see if this works.
+00:31:55 Speaker 1
+I got one. Oh, there we go. Okay. Boom, boom. I give you this Keisberg table. 500, 100, 200, 300. Like if you use this chi-square table, you know where I'm going with this? Five, one, two, three. Which one is more believable and why? These might both come up as significant statistically.
+00:32:26 Speaker 1
+Let's say they did. In fact, let me make it even more real. Fifty-five thousand. There we go. They're both significant. What's the problem with the one on the right? It's related to that. It is a size issue. Absolutely. It's not just a sample size. The sample size is the totality, right?
+00:33:00 Speaker 1
+What was it? You see one, two, and three, and then a 50. You ever talk to you in a stat class about small numbers? Always be conscious of those small numbers. Not just sample size, but also subsets of the sample. They can actually see the statistics. This may not really be significant. It may not be meaningful. If you see small numbers like this, it may not be real. And that's part of what they're doing with this filtering. If you're doing a small number of fragments, it's not uncommon to filter them out because.
+00:33:32 Speaker 1
+they could also just be an error from a race sitting down, transcribing something it shouldn't. But more likely, you want to get better depth to see if that really holds up. If it does hold up, then yeah, that's probably being expressed in a low level. And then that becomes an interesting gene. Like, why is it a low level? If it's a transcription factor, really cool. That makes perfect sense because you don't need a lot of it. You have to look at the context of the gene, too.
+00:33:56 Speaker 3
+So statistically, how are those different? Because 50 and 5,000 both comes as outlier. It's not really an outlander case score test, though.
+00:34:07 Speaker 1
+The data is the data.
+00:34:08 Speaker 2
+Okay.
+00:34:11 Speaker 1
+Yeah, we get into a lot of philosophy in this class. Statistical philosophy is, I think it's fun. I like to mess with statisticians. It's easy to mess with them. But you do worry about small numbers. It's always something to watch out for. Do you have a statistical sample of some sort? And some subset is a small number. Is that real or is that just sampling issues. 
+00:34:37 Speaker 2
+Get a larger sample and you'll know.
+00:34:42 Speaker 1
+I'm supplying for a reason. We'll talk about the cost of doing RAC later. All right. I know we spent a lot of time on this paper, and you're seeing a lot of different aspects of things. Your annotation data set absolutely makes a difference because consistently, if you look through these figures, you'll see different results for different annotations. Again, I like comparative approaches. I've been emphasizing this for over 20 years in different courses. Try to figure these out and see what works best.
+00:35:13 Speaker 1
+If you've got time to run three different tools, cool, go for it. See what they're each telling you. See if there's anything that's consistent between them or things that are majorly different, and then try to figure out a lot of them. That'll give you a better idea of what you're really looking for. To some degree, you have a chance on the projects. The trackers don't know we're just going to do a set approach. We're going to do this, then this, and this, just so you can get through something. The projects, yeah, go ahead and play with them. Do you want to try different aligners? Absolutely.
+00:35:44 Speaker 1
+I don't think we have time. We might get to the music paper. If we don't get to it, definitely read the music paper. I'm biased. I know I'm one of the authors, but I thought he did a really nice job. He was one of my thesis students, and he did a shift comparing different tools.
+00:36:00 Speaker 3
+Question. For our research or project, would you say this paper is a good reference for quality control integration? For quality control integration into our project. 
+00:36:12 Speaker 1
+What do you mean by integration. 
+00:36:13 Speaker 3
+Like when we follow the strategy to implement our own quality control using FastQC and so on. 
+00:36:20 Speaker 1
+So this is not related to FastQC at all. 
+00:36:22 Speaker 3
+No, but I'm saying like the way they're using kind of like different platforms to showcase the differences.
+00:36:30 Speaker 1
+So in this case, they're doing it purely to show that the annotation set you choose isn't working, that it can impact your end results. So we should take that as a reference for our project? Depends.
+00:36:48 Speaker 3
+Okay.
+00:36:48 Speaker 1
+I'd say it depends on the experimental context.
+00:36:50 Speaker 3
+I wanted to link it directly to what we're working on to have reference. I would like to, we haven't agreed yet. We haven't agreed yet, yeah.
+00:37:01 Speaker 1
+If you don't work with human data, then you wouldn't want to use it because this is specific to human.
+00:37:06 Speaker 3
+So it would be useful for working with human.
+00:37:10 Speaker 1
+There are other ones if you're not, so there are other data sets out there. Unfortunately, in many cases, not being able to give you concrete answers is an option.
+00:37:23 Speaker 3
+On the data.
+00:37:24 Speaker 1
+It depends on the experimental design.
+00:37:26 Speaker 3
+It makes sense, yeah.
+00:37:28 Speaker 1
+You have to watch that carefully. A little bit of history, going back to microarrays. I think I've mentioned them. They're ancient history at this point. We haven't done them in over 15 years. There was actually a group funded by, they spent millions of dollars to pull.

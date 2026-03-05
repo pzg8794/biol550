@@ -1,0 +1,496 @@
+00:00:01 Speaker 2
+I've Always wanted these little chairs, but not like this.
+00:00:06 Speaker 1
+This was good for seminar because when we were working in teams, it was a lot easier to just circle up.
+00:00:15 Speaker 3
+Now granted, We pushed a whole bunch of. 
+00:00:16 Speaker 1
+Them off to the back of the building or back to the far side of the classroom, But yeah, it makes it easier, especially when you have your whole class, that'll work in a circle. There's a lot of use. Maybe there were less chairs, just yeah, just less. Yeah, too many chairs. Some it's not common. Reduce the capacity to do that. Yep, I got everything. And, all the kids are up here. Oh oh, Any team wants to set up? You're welcome to Any team want to go first?
+00:00:57 Speaker 4
+Let me upload this first. And then we're going to go second.
+00:01:02 Speaker 3
+Oh, where's my dice? I don't see any volunteers. I'm going to pick one. Do you just want to? Yeah. You're good with all of them? You're okay? 3 D printed my own. Yeah, yeah, yeah, yeah, yeah. We can go after them. What was that? We can go after them. Go after them? Okay, cool! So if you folks are ready, go ahead and set up Um. I don't have anything to. Oh! Okay so you got to speak loudly for fun. 
+00:01:23 Speaker 5
+Things Yeah, U m. So basic updates on our project. We ended up running into an issue with our original data set, where our data set was doing single cell rna sequencing,
+00:01:39 Speaker 5
+Where Our data set was originally doing single cell rna sequencing, and that requires like different tools to use to complete analysis and a bunch of extra stuff. So we just decided to stray away from them, find a new data set. So our new dataset is um no longer on zebrafish, which is funny since that's our name. So we're now working with mice. Um, and we found a different dataset that still met all the um criteria for this assignment, But instead this time, we specifically looked for not single cell sequencing. And instead, we found um bulk RNA sequencing. Um so yeah, we've started doing analysis with this. We only realized this on Monday. 
+00:02:20 Speaker 5
+So, we've been running the code for it for the past two days, trying to like stay caught up. So we literally, I think only finished running the code last night. So I didn't have a chance to do an in-depth. Uh like we didn't have a chance to do an in-depth analysis of the fastQC files, but when doing a brief look, I just tapped into like a couple of those HTML files. Um We had some uh overrepresented sequences again there was a G um, One that everyone had. And this uh dataset did use Illumina?
+00:02:54 Speaker 5
+Yeah, it was Illumina. So but which Illumina? Um I believe it was NovaSeq.
+00:02:58 Speaker 3
+NovaSeq okay cool.
+00:03:00 Speaker 5
+Um, so we I so I mean, at least now we know that's not an issue, and we did seeum adapter sequences again, So we're just going to take a look after trimming and see if it cuts those out. A weird thing we noticed when we ended up running FastQC on the last dataset is that for some reason, it didn't remove the adapters. We're not quite sure what that's about, and we're hoping that's just an issue with the last data set and not this one. But that's kind of where we are. Basically, we're kind of behind, But I'm not super concerned about catching up just because it's we're just running the same steps as before. We're just changing the names of the files. So that's kind of where we're at. There is not insane amount to discuss unfortunately, just because we couldn't get to the data in time,
+00:03:39 Speaker 4
+But yeah, I mean, The only thing I can think of that I can highlight in terms of analysis is that. When we compared the fastQC results outputs with the trim outputs, uh just like Nikki was saying, we didn't really see much change at all. Uh, the only thing that we saw change was in the length distribution, which makes sense. Um, we did actually see something that might be worth looking into in terms of this signal. Uh and we're going to start look like diving into it further a little bit. But we didn't find anything that like would draw actually like.
+00:04:15 Speaker 4
+At tention, like, oh, you know, this needs to be looked into.
+00:04:18 Speaker 3
+So you have some of the fast QC done. All of them give all. Can you show us something? Yeah, yeah. Sure. Cool should be able to tell it to project onto the screen from USB slash HDMI. Cool it.
+00:04:33 Speaker 5
+Just we hadn't done a deep dive on it to really come with. 
+00:04:36 Speaker 4
+With like combine conclusions. Exactly. Yeah.
+00:04:46 Speaker 4
+Let's see if do I have to press something?
+00:04:53 Speaker 3
+Yeah, you got to push that one. And then yep, go ahead and press that one. Yep, and that one. There you go. Oh yeah, it's on three screens. Cool. And your foot didn't get okay.
+00:05:04 Speaker 4
+So yeah. So in total, we analyzed about, so there are 26 wrong. So, this is basically uh like the raw versus the trim. Um that was just like a very quick module high level. Andum you can see like there is a much difference in some of the numbersum even after it's applied. Um and then like if we go granule right for to the wrong level, um you see the pattern is very similar as well.
+00:05:39 Speaker 3
+So do you have actual. Curves or anything you'd show. I don't like the pass fail because it's often a secret.
+00:05:44 Speaker 4
+Yeah, yeah, we have curves here. Um, If we look into let's go and look at some like similar to what we did last week. Um, if we go here. Here we go.
+00:05:58 Speaker 3
+Yeah So right there.
+00:05:59 Speaker 4
+So is like almost identical So.
+00:06:03 Speaker 3
+You basically have two curves. There. Is there a difference in which samples are which?
+00:06:06 Speaker 4
+So the the raw one is the fastqcm. 
+00:06:10 Speaker 3
+Inside the raw, you have one curve here and you have another curve. Oh yeah, yeah, yeah. Is there a difference in those two?
+00:06:16 Speaker 4
+Um, that's what I was talking about with the signal. Yeah, that's what we're kind of like going to dive further into. Okay.
+00:06:24 Speaker 3
+You also get this little peak here at the end. Oh yeah. Yeah so Yeah,
+00:06:29 Speaker 4
+Yeah, Yeah That, we documented that as outlier. 
+00:06:33 Speaker 3
+Yeah So look at these individually and see if there's any pattern to what these are If there is You can go ahead and redo this. Is whatever the two groups are. Actually, both away from the GC grass.
+00:06:43 Speaker 4
+Oh, I was going to show you the signal part, which is related to that outlier.
+00:06:47 Speaker 3
+Is related to that? Okay. Yeah. I guess I'm seeing the same thing here as what has been shown. Exactly, yeah. In that same peak over here?
+00:06:52 Speaker 4
+Same peak, right? Yep Yeah And, like the other ones are similar in terms of like, you know, there's no change. Also, it's just identical Um. Let me see if I can find it because that was like very Yeah,
+00:07:04 Speaker 3
+I'm curious which samples those are. 
+00:07:06 Speaker 4
+Yeah Let's see think I think Steatosis, We tried to record it somewhere here. It was just last minute that uh, we didn't even get to discuss it further. But yeah, We did note it down uh and we're gonna dive into it further as a team, see how we can explore that. Oh, I think he's here.
+00:07:26 Speaker 3
+That's adapter content.
+00:07:28 Speaker 4
+See? That's not GC content. No, I was looking where I wrote it uh, Well, we'll find it. And, we're going to talk about it more in depth next week because we didn't get to discuss it. Yeah. Yeah. So where did this code come from? Yeah,
+00:07:45 Speaker 3
+So let's try this question. Where did all the code come from? Which code? All your code, You have a ton of code. 
+00:07:51 Speaker 4
+The plotting I have a lot of plots from B 630 RNA sequencing that I did. 
+00:08:00 Speaker 3
+Then I mean like scroll up Yeah. Like this stuff, where did this all come from?
+00:08:07 Speaker 4
+Which one, this? From last week.
+00:08:09 Speaker 3
+Yeah. From where? Last week. From last week,
+00:08:12 Speaker 1
+You typed all that? What, do you mean You typed all the code That's an insane amount of code?
+00:08:17 Speaker 4
+What? Do you mean I type You can find templates for this. 
+00:08:22 Speaker 3
+You use templates Okay So your templates Yeah,
+00:08:24 Speaker 4
+You can find templates and update them Yeah. 
+00:08:26 Speaker 3
+Okay Definitely save. 
+00:08:27 Speaker 4
+Them Yeah Cool Yeah. So yeah, in terms of the signal, we. We haven't really discussed as a team, how we're gonna like address them. So we're just gonna dive into it uh this week and see how we're gonna.
+00:08:40 Speaker 3
+Yeah, I would see if you can figure out if. 
+00:08:42 Speaker 1
+There's a pattern why some are different occurs in others that you see that's important in terms of wiping that tail at the end I'm curious where that's coming from?
+00:08:54 Speaker 4
+Yeah, yeah, that's definitely an outlier.
+00:08:59 Speaker 7
+What do you think just out of curiosity after you. Ran fastx, did your overrepresented sequence flag go away? Because I'm wondering if that might be connected to the term just like poly G.
+00:09:12 Speaker 4
+Only the length distribution was had a difference, right? When we ran.
+00:09:17 Speaker 5
+Like are you talking about like our original run of fastx?
+00:09:20 Speaker 7
+Like when you originally ran fastx, Did you have a poly G overrepresented sequence? And then after you ran fastx, did it go away?
+00:09:29 Speaker 4
+Oh in the raw data.
+00:09:30 Speaker 5
+I'm trying to remember. I think I don't think so. I don't think we looked at any of the files that ended up doing that because we immediately flagged the issue with the adapter sequences not being removed. And we kind of focused on that instead of looking at other data sets. So truthfully, I don't know,
+00:09:47 Speaker 1
+But So I'd say it's worth figuring out before we begin the break for the next time. We look at this group.
+00:09:55 Speaker 5
+Yeah, again, We have not had the chance to go through this because it finished running last night. Yeah, just. 
+00:10:00 Speaker 4
+It is all last minute. Any other questions?
+00:10:11 Speaker 1
+Make sure you understand what all those templates are doing. Please understand the steps. I've. 
+00:10:18 Speaker 4
+Done too many of those. That's okay. I'm too old for that.
+00:10:21 Speaker 3
+Oh, yes, you're not I'm not too old for Ensembl mode.
+00:10:24 Speaker 4
+I'm your age, almost How are you? I'm 38.
+00:10:27 Speaker 3
+Keep going. You're not even close. Really? Yeah. Okay. You're not too old to look that over and figure it out, I don't know.
+00:10:36 Speaker 4
+You definitely fooled me there. Can you guess my age? Definitely fooled me there. Ooh! I don't care! 22? There's nobody, there's no, there's nobody even close to my age here.
+00:10:46 Speaker 3
+I finally, have someone who's not heard me?
+00:10:50 Speaker 7
+Wow Do you want to do you want to guess it? Let's take a guess, I took my guess. Legitimate guesses.
+00:10:59 Speaker 4
+I thought you were in your early forties, like 44,
+00:11:03 Speaker 1
+42. You really all think that? 52. Close, real close. I didn't know what to say.
+00:11:09 Speaker 7
+I said 52 and he said real close. 21?
+00:11:15 Speaker 4
+Low fifty- one fifty maybe? Fifty-. 
+00:11:21 Speaker 1
+Four? Fifty- three?
+00:11:22 Speaker 4
+Fifty- three? Yeah, Oh, you were you were like right on to that.
+00:11:26 Speaker 3
+So actually I've probably been legal to drink longer than most people alive. But okay, who goes go up next? We can go. Or. 
+00:11:38 Speaker 1
+Actually I think you called first and then you guys hit no first. Yeah, they already called it.
+00:11:45 Speaker 4
+Let me see if I can find the signal. I didn't get to discuss what we do because yeah, so make sure your entertainment always do.
+00:11:53 Speaker 3
+The reason is, if you have the black box situation where you don't know what it's doing, you don't know what's being used to care.
+00:11:58 Speaker 4
+Yeah, most of this code is only finding outliers. It's not really doing anything like like it's just finding patterns and outliers as I as I. Yeah, the hard part, you know, We had to do it as a team because I don't understand a lot of the bio terms. So like we can like.
+00:12:30 Speaker 4
+Exactly. So, But This part is easy because it's just finding outliers, patterns and stuff like that. The hard part is the analysis.
+00:12:38 Speaker 3
+Exactly. Yeah. Yeah.
+00:12:48 Speaker 4
+Yeah, this is basically a repeat of last week. But let's look at this. Yeah,
+00:12:53 Speaker 5
+Here we go back here. We need to pay attention to this. All right, okay.
+00:12:58 Speaker 1
+So here's an example of a rescue support of untrimmed reads. So we have. This is what you saw last week, right? Yeah, so just go over getting that they want poly G, And a little bit of a rise in the depth of coverage. And so then we went through and with fastp, trimmed everything. And so sequence duplications. 
+00:13:33 Speaker 8
+Look pretty much the same as they did previously, but we did get rid of that poly G overrepresented sequence. And this sequence that's overrepresented, I think we said was probably. 
+00:13:47 Speaker 1
+Did you do a blast search with it? We did.
+00:13:50 Speaker 2
+It came up withum like, I forgot. It was some sort of bacteria. Was it archaea by chance? I don't think it was. I need to double check, but it was definitely a prokaryote.
+00:14:01 Speaker 3
+I'm not surprised. And I think I talked to some other groups too. Was there another group that had archaea? Your group did and there's another group that had something too No? I know there was like at least a couple groups had this confused it.
+00:14:13 Speaker 8
+I mean we had some overrepresented sequences but, It wasn't. It was just the poly G tail.
+00:14:19 Speaker 3
+It was just the poly G, okay. Yeah. So isn't and I think I said this to your group, it's not uncommon to see prokaryotic sequences in the overrepresented. They're adapter sequences is what they are. 
+00:14:30 Speaker 1
+Because a lot of the adapters, they're designed on the premise that we're sequencing humans because that's a primary moneymaker for Illumina. So they designed their adapter sequences to use. Pro karyotic sequences that were unique to. 
+00:14:44 Speaker 3
+Prokaryotes and not seen in humans because they make good priming sites. They should not show up in the human stuff, right? So, you shouldn't be priming in the middle of the fragment is what they're trying to point. So it's very common you'll see adapter sequences include prokaryotic sequences. Usually it's archaea, I think that's the older system. The newer ones they probably changed it. Um. And that might have something to do with the fact that archaea are closer to humans than other than bacteria are. If you look through the tree of life. We're closer to archaea than other prokaryotes. The fungi also come off of the archaea. But, they use these prokaryotic sequences because they should be divergent enough that you're not going to get mispriming during the sequencing. So, that's what's going on there. Those are adapters. Question is, which adapters?
+00:15:32 Speaker 1
+It won't show up in a BLAST search as an adapter. And how do we find them? These are tough!
+00:15:39 Speaker 3
+You could try taking random snippets of like 30 nucleotides from that and do a Google search and see if it comes up with anything like Illumina page.
+00:15:47 Speaker 1
+Might work. Yeah. Yeah, that's right. But if you can get the full adapter sequence, you can then trim that out. Cool. Yeah, So that overrepresented sequence, but it's explainable. Uh, an adapter content. It flattens out the peak as we saw, at least the adapters are knowns Yep And. So yeah, I think we have them all.
+00:16:11 Speaker 1
+So all the samples we're looking at felt like that? Yeah. Cool.
+00:16:16 Speaker 2
+It's just uh it's everything together. So so as we can see,
+00:16:19 Speaker 1
+The sequence duplication levels are relatively Oh, go back. I see some variation. All right. What's going on here? Do you know what these are up here? The ones that go up faster at the end? Um. And that is. Oh, it just has higher counts in those files, doesn't it? There's not really a difference. It's not the quality. It's just more of a better quality and it's about the same for earlier ones, isn't it? Yeah. Yeah. Okay, so that's not bad. Did some of your samples just have more fragments? Yes, yes. Okay, so that's a sequencing thing? Okay cool That's good There was a couple that had like a significant amount more fragments.
+00:17:07 Speaker 1
+That's what it is. Yeah, cool. Nice too. Um,
+00:17:15 Speaker 6
+That looks pretty homogeneous. Which one? Which one is he?
+00:17:22 Speaker 1
+Oh, It's just at the start. There's a little bit of oh the start. So that's the end content at the beginning of all places. That is weird. It was like that before trimming as well. So yeah, I wouldn't worry about that one. Yeah. We'll see why tomorrow. Same thing here with the length, yep. Yeah, that's just because we're trimming. So it's counts and not percentages, yeah? And sequence duplication is still pretty much the same.
+00:17:47 Speaker 8
+But like you said, might just be the nature of it. And then no more, The only overrepresented is that one adapter, and it's way less of a I think the poly G had 38 or something. But this one was. 
+00:18:00 Speaker 1
+It was only one reported. Yeah. And it is a very small percentage of the reads for that sample, so I'm not worried about that. Ooh, interesting though. Oh, these are different samples in different colors?
+00:18:13 Speaker 6
+Uh yes. So yeah,
+00:18:15 Speaker 1
+It makes sense you're getting increasing adapters as you get further along. So that's okay. It's not great. And then this is just all the status checks so we can see. Ooh! Okay, I don't like this one. Sorry, I just don't like the red, green, yellow as if it's a stop sign because it's deceiving. Yeah. Like that is deceiving. Yeah. It is good, so if you go back actually,
+00:18:43 Speaker 3
+It's good that you see this alternating pattern. And it's not good, but it's informative that you see the alternating pattern in the middle there that red and. 
+00:18:49 Speaker 1
+Peach alternating I'm guessing that those are different pairs Yes Yeah So one pair is more likely to sequence, probably into an adapter I guess than something else. With sequencing to something where it's failing on. Oh, it's per base sequence content. Interesting. Huh, she wants to scroll up too. No, that's okay. I'm trying to figure out why it's doing that the per base sequence content. Oh, is that the ends? No, maybe not.
+00:19:33 Speaker 1
+So, if you oh,
+00:19:35 Speaker 6
+Wait, no right there. Yeah. Okay, there is a clear bias there at the beginning. Weird I'm guessing.
+00:19:48 Speaker 1
+That's an adapter artifact. Uh take a look at the type of sequencer used as well as the kit they used. And see they have a barcode at the beginning for quality control. They might. That's what it looks like. It looks like they have. I need a pen. This is a speculation at this point, but I'm curious what comes up, but it really looks like you have your adapters fragment, here's your adapter the other direction, That your primer sequence is here. And then you have some part of the adapter that's sequenced potentially to as a quality control.
+00:20:30 Speaker 1
+To make sure you're getting the base pairs back there. That's my guess. It'd be kind of weird, but the fact that it's so regular in that graph, It looks like there is something at the beginning of the sequences that is consistently showing up. Anyone else have any thoughts on that? And what might be causing that?
+00:20:58 Speaker 1
+I say it's definitely worth looking at the sequencer as well as the chemistry kit used to try and see if there's some pattern there. If there's some known thing like this. So,
+00:21:14 Speaker 2
+Uh, We have a uh E xcel- like sheet here of uh, our just some data about all the reads like the. The alignments, yeah the alignments, sorry. Of the number of inputs read, average input length, uniquely mapped like all of these are. 
+00:21:35 Speaker 1
+Uh in percentages. So almost all above 90% uniquely mapped. That's good. And uh then at the end we have like the average for each column.
+00:21:53 Speaker 2
+Uh and then, And, we also have the histograms to just give like a more graphical representation of everything. Here's that big Excel histogram. So we have outliers. Uh, So we have the four uh sequences that have four alignments that have way more uh inputs for whatever reason, yeah.
+00:22:21 Speaker 1
+Did you look to see which samples those were? If there's a pattern to'em?
+00:22:25 Speaker 2
+No. Okay.
+00:22:28 Speaker 1
+I do know for sure that this last one is one of them. Okay, but what is it? Case control. We'll. 
+00:22:36 Speaker 2
+Have to see just like looking at it. Visually did notice a few guys were thinking of it.
+00:22:42 Speaker 1
+Gotta move kind of quick to get another group in, but that rightmost histogram is brother outliers? Uh, I would say that these two, yeah, these three, Oh, there's three. You're right, there's two of them. I'll take a look at those and see what's going on and what kind of samples they are.
+00:22:59 Speaker 2
+So just a 3% difference, but.
+00:23:01 Speaker 1
+Yeah, it's. Oh, it's double the others. Yeah. I'd be especially the 22 I'd be most concerned with. It may not create any downstream issues but let's make sure. Cool.
+00:23:23 Speaker 1
+Hey, you're up. And for the reading groups, do we have a preference? You guys want to go first? Okay, and then the back you go last. Okay. I don't like this one. Yeah, because I want my table to be right here but. We lost it, we lost it. There's got to be a shirt somewhere. Nah,
+00:23:51 Speaker 7
+I couldn't do it. Because I thought it wasn't going to come. Oh, okay. That's okay. Whatever. Um, yeah, yeah. Um, Basically, most of this week has just been a mixture of trimming and also screening some silly little anomalies. Um, After we went through the first round - -. So this is just an example of a FastQC report from one of our original files that we downloaded. And, it was pretty consistent with one exception that we'll get to in terms of the patterns across everything. Very high per base sequence quality, the tile looked good, a lot of very similar things to a lot of other groups. A little bit of fluctuations at the start of the read, but that's of course normal. GC content is fine, negligible N content. So this is performing. 
+00:24:49 Speaker 7
+This before trimming. This before. Um, The same kind of similar sequence, duplication problems that a lot of other groups are seeing. Um, and with only one exception, which I'll show in a second, um, we did not have any overrepresented sequences overall. And again because it's pre-trimming we have high adapter content at the end. Um, An example, just to provide an example of the patterns for the vast majority post - trimming, we use fastp. Default parameters with the one exception that we'll get to. Everything stayed pretty constant about. 
+00:25:30 Speaker 1
+I want to say,
+00:25:32 Speaker 7
+Eh, about like 1% ish maybe of the sequence got trimmed. I would say overall. Check. Everything continues to look good. There's a little more fluctuation, Going down a little bit. Let me know if I'm going too fast. That's good. Um, little more fluctuation in the sequence length distribution just due to trimming. That's good. That's good. Yeah, um, The sequence duplication levels that problem has stayed the same, but it's not something that we're necessarily too concerned about. And then adapter content is negligible. Um, the one exception that we had um. 
+00:26:16 Speaker 7
+Was with this one sample, which I'm just going to call eleven one. Everything is the same, but we have this one overrepresented sequence, which when we blasted it came up as this species of archaea. So I took it upon myself to rerun fastp on that specifying, Um, The sequence at hand, so that as a adapter parameter reran it and everything from there. So actually go back to the top and just make sure that yeah, no printing issues. Of course.
+00:27:01 Speaker 1
+So total number of reads? Good. Okay. Okay. That was number one thing. I was looking to see actually wait a minute. Oh, 35 million Yeah cool Yeah. We're good I thought for a second. It was three and a half million No.
+00:27:15 Speaker 7
+But yeah, I went through everything. Everything continues to look about the same as it did running the first round of trimming. And I didn't notice anything that looked concerning to my eyes. The only other thing that we've been working - -. There's two other things that have kind of been going on also in the background. One, We located and downloaded the reference genome that we're going to use for our alignment onto the server. Um, just a ref seek for zygapophysis. And uh the other thing that we did, which I actually might pull that up real quick, is uh I emailed, I found the PI in the paper and sent the email out. Um no response yet but we'll see. Just so that we can have something to look at. It might take a while. It might take a while but you know where are they located? Uh William and Mary Interesting Okay So that's about where things are at. 
+00:28:15 Speaker 7
+Okay. And just see what we're asking though. Um, just if they have a preliminary paper. Okay, cool. Awesome. Yep. So that's about it.
+00:28:23 Speaker 1
+That's an excellent query Good So yeah, do you have anything? I think you're on the right track Okay Cool Yeah I don't see anything really odd in the data In the duplication levels. We'll deal with that later on if we have to Yeah.
+00:28:48 Speaker 1
+Yeah, I can't think of any issues. Okay, cool. All right. All right. Thank you. Thank you. Thanks, crew. I'm sorry.
+00:29:02 Speaker 6
+I'll see if we can link that To. 
+00:29:11 Speaker 1
+This Project that's called" Open Source." Yeah. Yeah, Alright, here we go. Should work. That's not gonna work. Sounds scary.
+00:29:27 Speaker 8
+No, that's okay. I think it'll be fine. It should still be able to charge it up there though? I just, I forgot. Well one of the.
+00:29:36 Speaker 1
+Is that what's down there? Oh, there's some right here if you needed to. I think it's still like a little bit. Yeah, so we have two options then? Alright. USB? Oh. Wait. There we go. I should do it. It should. There he goes! It flipped! Oh, it's going to. What is it doing? Yeah, a little more reliable this way. Okay, okay, okay. Okay! Yay! We got it!
+00:30:06 Speaker 8
+We got it! What am I doing? Okay, There we go Presenting for you Wait No, no, no, no, no, I'm,
+00:30:12 Speaker 1
+Just gonna. No I have to stand. 
+00:30:26 Speaker 8
+So, We were able to find the conditions for all our examples, And then we like went back and added the duplication percentage for that poly G tail for all the samples. And majority of the second of the parents had that poly G tail, except for four.
+00:30:46 Speaker 8
+Five. Five did not have them. And there's actually like no exact correlation because it's like five of them, except for the fact that they're unaffected, but it's five out of 74, so.
+00:31:00 Speaker 1
+That could just be a representation of theum of how they fragmented these sequences. Mhm. Some of them may have been fragmented too much as a result.
+00:31:10 Speaker 3
+They're short inserts, and then they come into uh and they were not templated.
+00:31:14 Speaker 1
+Oh okay. How was your adapter sequence cut? We didn't. I feel like the paper said that they trimmed off the adapter sequence. Oh, oh, yeah. We didn't do that. Okay, so you have no way to know?
+00:31:27 Speaker 8
+Right So. 
+00:31:29 Speaker 1
+What I was going to say is if you see these poly G's, if there's an adapter before it, You know, that's what happened is it ran past the adapter Yeah. 
+00:31:36 Speaker 8
+Oh I will say, for our. First, the FastQC stuff we ran, the only overrepresented sequences we saw were the poly Gs. It wasn't any of the other.
+00:31:47 Speaker 1
+Yeah. If they were totally poly G, then that makes sense. Or if they had a short section of poly G, because then you're not going to recognize this adapter.
+00:31:54 Speaker 6
+So you wouldn't know you went through the adapter off. Yeah.
+00:32:00 Speaker 1
+We tested one of the. 
+00:32:03 Speaker 8
+Samples that had like the highest one, which was 0. 15%. Which is still pretty low. Yeah, Um, so this was our original one. And as you can see, it was the polygene that was the overrepresented one. If you scroll down on that one? Yeah.
+00:32:18 Speaker 1
+So at the very bottom, yeah, you can see the also see the Illumina adapter I think? No, that's poly G. Mhm. Yep. Is it? Yeah. And the colors are hard to tell apart Oh no, that's not. Yeah I feel like a little uh. That's happier right now? Yeah They really shouldn't use two purples. 
+00:32:35 Speaker 8
+I know. 
+00:32:37 Speaker 8
+But. Uh. So this was using like our original trimmingum protocol, which was just trimming off poly G withum the length of 30 bases. And overall, wait, yeah yeah,
+00:32:58 Speaker 8
+We Were discussing on Monday. Um, Trying to use like we gave it like a length of 30 to cut off. We were discussing if we should try if we didn't give it a length, but it just cut off all the G's that it saw. Or should we increase. 
+00:33:15 Speaker 1
+The length or you know trying to figure out how we could get rid of that tail better. Yeah. I'm not sure. And we did see. 
+00:33:29 Speaker 8
+Another command we could use, Use for the fastq, which was it would cut off like the adapter sequences, But we weren't sure if that would be as helpful with the poly G's or if it would,
+00:33:42 Speaker 1
+Although that looks pretty good there.
+00:33:43 Speaker 8
+Yeah. So yeah, so this was the one using the detected adapters. Okay. But actually I missed, I was trying to look into like how I should interpret this graph, because I wasn't sure. No, that's fine. Oh, that is fine.
+00:34:00 Speaker 1
+That means all the sequences are almost all are the same length. You have some that are shorter, but we'll talk about that tomorrow.
+00:34:07 Speaker 8
+Okay. I believe the overall tile quality was Yeah, It was always I guess giving warnings But in general,
+00:34:17 Speaker 6
+It's not too bad Yeah. 
+00:34:20 Speaker 1
+There's some messy segments during the sequencing And. You get the one here where it probably just ran off the template. Or they're too short in that section, which is kind of weird. Why it would be in one section and not evenly dispersed? Because if it's a random dispersal of the fragments, it should, which ones are short should be evenly spread across the entire flow cell.
+00:34:45 Speaker 6
+So I don't know. It doesn't look terrible though. I wouldn't worry about that.
+00:34:59 Speaker 1
+Yeah. Just continue to run. And. 
+00:35:07 Speaker 8
+Probably'cause, and I do, no, that's my window. Um, did I? Oh no, this is the original one. I did not this one yet. But yeah, I only focused on our highest one just to see if it would work. So we would definitely need to go back and, Review our other samples. That's what we got.
+00:35:33 Speaker 1
+Cool. Ooh! Nice. All right, let's group.
+00:35:59 Speaker 6
+The Film was shot in the city of Krasnodar.
+00:36:27 Speaker 1
+You're falling. I'm. 
+00:36:31 Speaker 2
+Tired. Fair enough, I will second that. Putting my hands somewhere and staring at claptrap. Fair enough,
+00:36:39 Speaker 1
+I have not played the newest one. I won't be that much fun.
+00:36:44 Speaker 2
+Haven't uh. Smart choice to wait a minute. Think I have like started to, But I don't remember what the plot was or something like always something or okay, oh. There's a lot of things I have to play. Oh, it's not connecting? Oh no, you all have the same laptops? No, I have a different one. I have a different one. Right, it takes USB-C. No, I don't have that. Oh, you don't have USB-C? Can you use HDMI? I got this good. What do you have? Let me let me bring mine over and. Yeah. Okay.
+00:37:26 Speaker 1
+Okay.
+00:37:58 Speaker 2
+Okay. Um, that is. Did we see that slide?
+00:38:03 Speaker 1
+Oh! What the hell are you doing? It's freaking out. Whoa. See? Oh, it does not like your drag.
+00:38:10 Speaker 7
+I can try all the laptops. Oh no, it just does not like that. Try unplugging and plugging back in.
+00:38:19 Speaker 2
+Uh yeah, I will do that first and then I will pull up the uh multi- screen. 
+00:38:26 Speaker 2
+Rearrange multiple displays thing uh before I plug in.
+00:38:33 Speaker 1
+USB- C is a weird standard for video. It doesn't work well. Yeah, it's pretty unstable. Okay,
+00:38:49 Speaker 2
+I see the issue. It keeps changing between two display settings and I don't know why. Okay. 
+00:38:54 Speaker 1
+I would just unless you have HDMI only. 
+00:38:56 Speaker 3
+HDMI should be reliable. It's changing settings that I don't know why.
+00:39:01 Speaker 4
+Just select one screen.
+00:39:04 Speaker 3
+It's switching between extending and duplicating on my Mac. It's just toggling constantly between the two displays. It. 
+00:39:12 Speaker 4
+Might be trying to read two screens because of your settings.
+00:39:15 Speaker 2
+It keeps toggling between having screen one and screen two and having both screens displayed at once. Want me to check it? Well, I can't show you what it's not doing unless you see as well, yeah, okay, so let me try this again here, It was doing the wall.
+00:39:26 Speaker 3
+But no, it was automatically jumping between the Duke page extent. Yeah. It was going back and forth between those sets. And I have no idea what we're supposed to do for Okay, so we saw this slide before.
+00:39:37 Speaker 2
+Yes, but now it's trimming QC Oh yeah, That's just the cover slide Yes So. Last time we'd run FastQC on. You know, three files that we talked about in the presentation. Technically, I think we'd run it on some others as well. But you know, we've looked at a few of them. We've run it on all of them. We've looked at all of them and put stuff about them in a spreadsheet. And we started running FastP and then RefastQ, seeing the ones that have had FastP run to see the difference. So the question is: Is FastP working? Well.
+00:40:22 Speaker 2
+Great question. So, as you said, There's a whole thing where there's a bunch of excess Gs on the second strand because that's how this machine works. Now, there's one file, 773. And the second strand it went from like three one what. There are still a lot of Gs. If you look at these numbers, a significant fraction of the XSGs did not go away, which looks bad. But in the adapter graph at the bottom, it's gone from alignment goes up to it's flat. So we're. 
+00:41:13 Speaker 1
+So. So you ran FastP. Did you use the- g parameter?
+00:41:19 Speaker 2
+I believe that's on by default.
+00:41:23 Speaker 1
+I wouldn't assume that. Even if it says it's on by default, I would still explicitly put it in there. And does that specify to take out the Gs? Yeah,
+00:41:32 Speaker 3
+It specifies take the poly Gs off. Now, the problem is it still won't catch some of them. Like if they're internal poly Gs, If it's not because of running past the end of the template-- If,
+00:41:41 Speaker 1
+You have a whole bunch of poly Gs in the middle, it'll leave those. So it's only looking for things that are at the three prime end. That could be part of what's happening. Let's see what the rest of your results are. We might come back to it, we might not.
+00:41:57 Speaker 2
+This is the one that had it all the way across, and it's still elevated all the way across, but less so. But less so, that's fine. So that one I don't know what to make of that. Let's keep going Well. There is not a lot more in here.
+00:42:10 Speaker 1
+Okay Let's see what else you have, and then we'll come back and figure this out. So. What does this spreadsheet Say?
+00:42:20 Speaker 2
+A lot of what we have is uh. I have a handful.
+00:42:25 Speaker 1
+Okay, and we have one. Yeah, I. It's. 
+00:42:33 Speaker 2
+We went through all the files and noted what's wrong with them. Some of them might not So. 
+00:42:52 Speaker 2
+That Was it with best X. It's getting reworked to.
+00:42:55 Speaker 3
+But I like the color coding and looking at what things you completed, that's nice.
+00:42:59 Speaker 2
+Yes. 774 is red there because of the thing where it's some of the others probably also need to get highlighted red, but they weren't done when I did that.
+00:43:10 Speaker 1
+Oh, that one, which are 774, that was just because of the polygene?
+00:43:14 Speaker 2
+That was the one where the, Po ly G goes all the way across evenly instead of going up at the end, which is I don't understand why that's happening.
+00:43:27 Speaker 1
+So it probably means, My guess is that there's a handful and I say, handful mean a few tens of thousands of fragments that are just poly G for nothing else. Yes, but you think those would have been removed? Not really, if it's only looking for things that are the three prime and not the five prime, it might leave them. But wouldn't. 
+00:43:45 Speaker 2
+It be a three prime end five prime end?
+00:43:46 Speaker 1
+But that might be confusing. The fact that it reaches the five prime end might be confusing. I'd have to look at the guts of FastP, I'd have to look at source code on it, but my that'd be my guess. 
+00:43:56 Speaker 3
+Is if you look at what's left, you just search for like 20 Gs in a row throughout your document.
+00:44:01 Speaker 1
+I'm willing to bet a lot of these are they're complete five prime to three prime reads. That's my guess. Thing is, it's speculation. I'd want to look at it, but.
+00:44:12 Speaker 2
+Okay. I don't know what we would do about that in any case. Not much. The easiest answer is we have 38. We have 38 of these. We have 19 pairs. We don't need that one. Okay. If there's that one and a few others that are like it, we can just skip those and it's not the end of the world.
+00:44:29 Speaker 9
+I wouldn't worry about that one yet. Um, just to go off of your point, this is an actual FASCEUS report, so this is the original report before it's trimmed? Yep, Um, I just am showing the overrepresented sequences because that's the part that we wanted to actually trim off. Yep. Um, and when we go to the actual trimmed, it's still there. It's still there but it's way under- represented now. Way, way, way under- represented. Down almost 10% of what it was so it's been decimated. So,
+00:44:59 Speaker 2
+Some of them, the reduction is significantly less than that.
+00:45:02 Speaker 9
+Yeah yeah I'm look like I was looking at the count and the percentage to see how much it got trimmed down by, which was obviously a lot. So.
+00:45:11 Speaker 1
+I'm Wondering if it's a five prime to three prime poly G, and that might explain for multiple groups why we're seeing this. Um, I'll be honest, we haven't had groups use newer sequences. Uh,
+00:45:22 Speaker 3
+This year we're seeing a lot of it. We're seeing how many groups have poly G as one of the things you're finding? Everybody pretty much? Yeah. So,
+00:45:29 Speaker 2
+The Illumina machine is new enough that this is the first year that these sequences from it are hitting the.
+00:45:37 Speaker 3
+And, you can see right there in the GC content on the right hand side. Yeah, that's a big difference.
+00:45:41 Speaker 9
+This is the trimmed,
+00:45:42 Speaker 3
+This is the untrimmed.
+00:45:44 Speaker 1
+That's a huge difference. You can just look at it. Go back to the trimmed. I was looking at the rest of the graph. Interesting, Yep, It changes the expectation curve, but not The rest of them. Graph shows detail Right Perfect. 
+00:45:55 Speaker 9
+So The trimming is working We. Just don't know how much for the rest of those samples because we haven't trimmed. 
+00:46:03 Speaker 1
+I suspect that remaining 10% It's complete garbage Okay. But again, I take your trim file, Do a search through the document for 20 G's of raw after it's been trimmed and see if it's completely G's. And then let me know. I'm curious.
+00:46:18 Speaker 9
+And that dash G option for trimming off poly Gs should be run that for the rest of them as well. That's what you see.
+00:46:24 Speaker 2
+Okay. I don't know if that will matter because I like, I looked at the documentation and it did say on by default, so that might matter more than not. 
+00:46:34 Speaker 3
+Trust the documentation. 
+00:46:36 Speaker 3
+I've seen things that were documented and they weren't true quite a few times.
+00:46:39 Speaker 2
+Well, We can we can The fact that it did trim a bunch of poly G's already suggests that it's working. It might be, yeah.
+00:46:48 Speaker 1
+Yeah. Um And. 
+00:46:50 Speaker 2
+If it was off by default, I don't think it would have done it at all.
+00:46:52 Speaker 1
+That's true So why is it leaving some?
+00:46:58 Speaker 2
+That is an excellent question.
+00:47:00 Speaker 1
+Which is where we get to the search Take. 
+00:47:02 Speaker 9
+Search in a few of the files and see what you find If. We see I mean. Because that I mean, that was only one example that I found. Um, I'm not, since we haven't done the rest of them, we don't know yet. Yeah. Um, With that pattern, when when when we do search for that, what would those what kind of things? Oh.
+00:47:19 Speaker 1
+So the trimmed file is going to be your uhum your FQ file right? Yeah. Just go load the file up in an editor of some sort. I know it's going to be huge. It might take a while to load, but or actually even better if you're using grep.
+00:47:37 Speaker 2
+Gr Ep I have I have notes about that.
+00:47:39 Speaker 1
+Grep is awesome. Anyone here ever use grep. Yeah. So if you have cool grep space, single quotes, give me 20 g's in a row in the name of the file. And then pipe it to more so more m o r e,
+00:47:56 Speaker 3
+M o r e. So that was a page at a time M O R E L, yes, sorry,
+00:48:00 Speaker 2
+Your handwriting and also said it fast,
+00:48:02 Speaker 1
+Yep. So if you do that. It'll give you lines that have long stretches of G's. It'll give you one screenful at a time. You press space to continue, q to quit. For the word" butt". Let's see how many of them are just all G's and no Y. See what happens.
+00:48:22 Speaker 2
+I don't know what. I also don't know if there's any chance with cancer cells that you would naturally see 150 Gs in a row? No,
+00:48:31 Speaker 1
+That would be very unnatural even in a cancer cell. Okay. Yeah.
+00:48:35 Speaker 2
+So that's not a thing to worry about.
+00:48:38 Speaker 1
+Yeah, I think it's just an artifact of the sequencing chemistry.
+00:48:42 Speaker 2
+So cool. Thought I'd double check that one.
+00:48:44 Speaker 1
+No, that's a good question. Cool? Thank you folks All right, those are good Any last questions?
+00:48:57 Speaker 2
+That is a lot Thank. You I'm going to get back to my desk and do what?
+00:49:02 Speaker 1
+Question or stretch? Stretch. Sorry. Cool, it's okay. Okay cool, you can break up a bit early. We'll see you online tomorrow.

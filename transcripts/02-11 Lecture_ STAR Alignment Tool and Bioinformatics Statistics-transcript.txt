@@ -1,0 +1,10 @@
+00:00:00 Speaker 1
+Information you can get there from star. Including mapped to multiple loci, what does that look like? What does it mean if it's mapped to multiple loci? What do we call it? It's multi-read. Yep, that's how many multi-reads we had, 84,000. Which is only 0.73%, that's pretty good. That's also because this is a synthetic dataset. In reality we never get that. Mapped to too many loci is a smaller percentage Unmapped reads, it was actually more than that because we had some. So I'm not sure what happened, but it gives you all kinds of stats there. So once you get STAR done, you get the alignment done, you can pull up these stats and see how well it worked. Give me, a hint is going to put together a table of for each sample or each condition for the number of unique and multi - reads and unmapped reads.
+00:00:58 Speaker 1
+That might be something good for your weekly reports. All right, we are getting down to the last five minutes for today. How are we doing? For uh Tom, Q just press Q and it'll quit out. It's real easy. Yep. How to run the next alignment? Oh, I wouldn't run until after the first one finishes. Oh, it doesn't. But if you talk, You can look to see which process has your user ID on the left and matches, probably start on the right.
+00:01:56 Speaker 1
+That's probably your process. It won't tell you what percent from this, but it'll tell you the product. And, it should take about the same amount of time as the previous one did. So, on the right hand side you should see start. And try to run on the left hand side here is something else. There you go. So I'm going to go back here and bring up.
+00:02:52 Speaker 1
+Yes. The more we all practice this, the easier it gets. That's all. And we're all going to make mistakes, okay? Yes. So.
+00:03:51 Speaker 1
+The town is located on the banks of the river.

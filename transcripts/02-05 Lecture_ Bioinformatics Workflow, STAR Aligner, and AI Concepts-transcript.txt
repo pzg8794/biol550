@@ -1,0 +1,506 @@
+00:00:00 Speaker 1
+They don't seem to, it's not in the order you appeared. It's not alphabetical. Oh wait, it's alphabetical by first name. Oh, you gotta be kidding me. Ah, that's silly. That is a feature that Zoom really should have implemented. It's different ways to sort. All right, it's gotten quiet. I think we're still missing three.
+00:00:36 Speaker 2
+Hmm, all right, we should get started.
+00:00:51 Speaker 1
+So a bunch of new things we're gonna play with. So at this point, I think, At least the majority of the class is all set with FastQC. If you have not finished FastQC, absolutely should be working on that and trying to get your zip files together. From there, someone just came in. There's Sam. Again, if you have not finished FastQC, let me put share up. Why is it hiding it from me?
+00:01:21 Speaker 1
+There we go. So if you have not finished it, please do. Make sure you take all the HTML files created by FastQC, put them into a single zip file, and upload that, and I'll take a look at them. Those that were in this morning, I took a look and gave feedback. The vast majority were looking really good. Minor suggestion here and there. So just make sure you follow up on that and finish that up, and that's when I'll start posting the grades for that first part of Trapnil. I'm going to look at your reports and your FastQC results.
+00:01:52 Speaker 1
+All right, the next thing we're going to do, though, is we're going to start pulling the star aligner. Before we jump ahead and do this.
+00:01:58 Speaker 3
+Quick question.
+00:01:58 Speaker 1
+Question? Yeah.
+00:02:00 Speaker 3
+I think you said to use as many samples as possible. Can you confirm that. 
+00:02:09 Speaker 1
+For the trap analysis, you need to do it for all of the samples.
+00:02:12 Speaker 3
+All of the samples.
+00:02:12 Speaker 1
+Okay. Yes. Yep. Okay. So before you jump ahead with the aligner, this is where you have to start having a conversation about system usage and what are any of you – actually, how many of you – step back. I know some of you are familiar with what the idea of a system load is. Who's seen a system load before? System what? In terms of servers. System load in terms of servers. I got a thumbs up. One. Two.
+00:02:44 Speaker 1
+I can only see pictures for a handful of people, so I'm going by what I see on the right, but I saw one thumbs up in person. And one on the side. Okay. Let's talk about, oh, let's see. Peter, is that a question. 
+00:03:03 Speaker 3
+No, I just looked at it because I wasn't sure. But, yeah, I've seen it.
+00:03:10 Speaker 1
+I'm going to run you through it. Yeah. So let me go back one more. All right. If we're on the system, I can get a list of who's there. Actually, it's okay. None of you are in right now. That's fine. But if you're on the server, I can see who's there with the who command. We also get this thing called a load average. We're looking at how busy is the system. And this is a composite measure. It's not just how much CPU time. It's also looking at your drive access times and everything else.
+00:03:41 Speaker 1
+I've never gotten a solid answer on exactly how it's computed. but it's a reasonable measure of how busy the system is. One thing we can do is we can use a command called top. If I pull up top, I'll see it get all kinds of information. And this is basically, what are the processes running in the background? Top is a program that's running in the background. In about every, I think it's five seconds, about five seconds, it does an update.
+00:04:11 Speaker 1
+and tells me what's changed. It also has information up top, like what is the current time in the system, which is correct. I try to keep the system clocks on track there. How long it's been up? It's been 25 days since the last restart. That was a systems update restart. Let's see. Oh, it's been 25 days and three hours and 20 minutes it's been up. We have five users on now. See somebody's come in here.
+00:04:43 Speaker 1
+But we also get this load average again. Oops, I didn't mean to scroll that. We also get this load average. What this a composite measure, and the numbers change over time. I believe the numbers on the left are the immediate snapshots, a short period, and you get longer periods as you go. Again, what this a composite of all the different activities going on in the system. There are different bottlenecks that slow things down, like we're either pushing really hard on the drives, or pushing really hard on the CPU, sometimes both. And with the kind of analyses we do, it's both.
+00:05:16 Speaker 1
+What we do is very intensive on the hard drive usage as well as the CPU. So okay, I'm gonna open a second window here. I'm gonna start something up. Just give me a minute. All right. Oops, I got to move around so I can see what I'm doing.
+00:05:47 Speaker 1
+I'm going to start FastQC on, oops, wait a minute. I got to get into the right directory. There we go. I'm going to run FastQC, and watch what happens on top as I do it. Let's see, I'm going to pick one of them. Let's pick 6, 1, there it goes.
+00:06:18 Speaker 1
+You should see, there we go, Java's running, because it uses Java for FastQC. You see the system, it kind of creeped up a little bit, because this is not immensely demanding. Well, you can see the system load increased a little bit on this. FastQC isn't a high-demand one. Star, however, is something that's very demanding on the server. You'll see a lot of memory usage, too, and we'll take a look at that in a second. We can see how long this has been running for, about 30 seconds. It's almost done now. We had a little bit of an increase.
+00:06:49 Speaker 1
+Most of that is actually derive access. The CPU side of it is pretty simple. There we go. It's all done, and it should disappear, and the load should start going down again. So it's kind of like watching the process manager on a Windows machine. I think Apple computers are the same thing. You can watch how it changes. So let that sit for a minute. It's getting a little busier because more people are logging in, but it's gradually dropping down. Okay, so when we go to run star, we're going to find that that load will go up significantly,
+00:07:23 Speaker 1
+and their's some thresholds we want to keep an eye out for. For running star, We want to make sure this load average does not brake, I'll say, 15. I'm going to write that down so I don't forget. That's the number we're going to use for the TruSeq data set. Basically what it means is before you start running an analysis with star, I want you to look at that load average and make sure it's not approaching 15. If you see it around 13, you might want to wait a little bit.
+00:07:57 Speaker 1
+There's also another thing we have to do. In fact, actually, wait a minute. Let me see if I can force the issue. Let me shut that system load up a little more. Give you a better example. I'm going to do another run. Bang. All right, let's see what this is. There we go. You see star has started up? Let's see what the system load does as I'm running this. This is a relatively low-intensity one I'm doing. It's running 100% of one CPU.
+00:08:28 Speaker 1
+So this, the actual CPU, their's two CPUs, each of which has, let me see, how many, oops, nope, that's not it. I, nope, one, being. 12 threads on each one. So their's two CPUs, each of which can run 12 threads at once. Star is running 100% on one of those threads. Yeah, actually, it's not going up as much as I thought. Interesting.
+00:09:02 Speaker 1
+Got to let that one finish. Basically, for your first step in star, I would expect that it's going to be a linear relationship between how many people are running it and what this load average does. It should approach one. It's starting to do more derive access now. Let's see. Oh, yeah. Yep, it's actually starting to do some disk access. I can see what it's doing on my other process here.
+00:09:36 Speaker 1
+I can watch what it's up to. It's actually brakeing down the genome sequence like I told you about, figuring out what all the subsequences are, and saving that information about where things are to disk. I'm kind of simplifying it a little bit. For those who are familiar, it's using a suffix array to create this. You can also see it's using about four and a half gigabytes for just this one process of RAM. You can imagine if all of us ran this at once,
+00:10:06 Speaker 1
+all the 18 of you and one of me, it's going to be brakeing 80. You'd be getting quite a bit of RAM use their, which is far more than you have on your desktops, right? Part of the reason you need servers is to share that memory their. Um, yeah, it's approaching one. It's getting pretty close on the system load. And I was keeping that pretty tame. Let's see. I believe it is focused on a single thread.
+00:10:37 Speaker 1
+Now, when you go to run the second part of star, it is going to use, potentially use more threads. And that's something we're going to have to keep in check. So while this is running here, I'll let this keep going. Oh, Q to quit when you're on top, just so you know. Let me stop sharing their. There, back over to here. Let me share the instructions again. All right, on the second part. So the first part is actually, it's doing what's called mapping the genome.
+00:11:10 Speaker 1
+It's preparing and figuring out where all the subsequences are in the reference genome. The second part, you're taking your fragments and saying, where did they line up against that map that we just made? When you do that, their is a section run thread n. It does say four their. If their is no one else on the server, go ahead and use four. What that'll do is it'll take one of your data files and it'll map it to the reference genomes map. I would say if their's more people using it, try to keep it at one. So you can change the number of threads it's using to affect how much load it's going to put on the server. You want to kind of match that to what's going on on the server right now.
+00:11:51 Speaker 1
+Yeah, right now it's brakeing one. It's doing a lot more writing as I'm looking at this. Let me just double check that. Leave. Yeah, it's doing a lot more disk writing. So the system load is creeping up. That'll happen. Again, when you go to run the second step. Try to cut back your number of threads. Now, to get back to the overall picture of what we're doing here, we've talked a little bit about loads here.
+00:12:22 Speaker 1
+Actually, I'll show you another trick in a second. So the run star, again, it's in user local bin star, program's name star. There's two different run modes. There is genome generate and the regular run mode, which is not declared here, is to do an alignment of reads to that map. In this case, we're making the map. That's our run mode genome generate. You have to tell it where you want to output your information.
+00:12:53 Speaker 1
+Tell it which directory you want that in. That hyphen hyphen is immediately followed by genome fasta files. That's a wrap of the line their. It's not the hyphen hyphen space. It's hyphen hyphen genome fasta files. That's saying which fasta file you're mapping. And this is where you can put that annotation in. your gff or gtf file probably a gff and one other thing you have to put in their is you have to limit how much ram it's using by default it sets a really strict limit we have to increase that.
+00:13:23 Speaker 1
+because we have more ram on the system than it was is expecting oops looks like star just finished cool and the system load is coming down if anyone's watching okay so this is basically setting up that map of the reference genome you got to figure out which reference genome to use and you got to make sure you use the use the right annotation file for it which in which genome, reference genome you use depends on what the fragments are you you'll see you have two.
+00:13:54 Speaker 1
+different reference genomes to pick from you got to use some clues maybe it's the paper maybe it's something about the data to figure out which reference genome is the appropriate one for this analysis okay how are we doing so far who's got questions. you're doing okay cool okay when we get to the second step after you've done that mapping you'll.
+00:14:27 Speaker 1
+have some output directory of the genome you actually have to specify that as one of the parameters parameters to start set your number of threads again if they're kind of high already drop it to one uh but if their's no one else running anything at the moment you can probably get away with four you have to give it the same annotation file that you use to do the mapping and then you can give it a list of files that you want to align all right here's where it gets a little more interesting their's one other thing you've got to dig out too um i recommend you do.
+00:14:58 Speaker 1
+a google search for star aligner look through its in its documentation and one thing you have to do is remember i talked about paired end reads you're talking about Illumina your TruSeq data has paired and reads so, let me stop sharing here for a minute you're gonna have to come up with an extra parameter to your command their so let's see.
+00:15:32 Speaker 1
+oops all right i'm going to share screen on the server again in the terminal. is that it yep you may have noticed let me gather this the file names are identical except they're one or two what do you think that means is it the pairs that's your pairs yep.
+00:16:03 Speaker 1
+so this is condition one these down here are condition two i'm so at four reverse absolutely that's correct we have the two conditions, so that's our case and controls that's the c1 and c2, R1, 2, and 3 are replicates within that condition. So each condition has three replicates, and each replicate has forward and reverse. You have the paired ends. So what you would want to do, let me go back now to the instructions,
+00:16:35 Speaker 1
+is when you're running this, you can space separate your read files that you're putting in. I've got to double check if it's space separated. It might be. Let me make sure of that. Yes, they are. They're space separated. You will want to tell it that these are – actually, do you have to? You may not have to tell it that they're paired ends.
+00:17:06 Speaker 1
+It may be later. But you definitely have to give it the two files for the two pairs. And it will align those reads as a group rather than individual, forward and individual reverse. It's going to put them together because the way it does its mapping. Let me pull up a PowerPoint. I'll diagram this out for you. Share screen.
+00:17:37 Speaker 1
+Let's see. No, I want to change the, oh, who remembers where this is? To change the format. I don't want a title. I got a nope, I think. It said dope, but let's see. That's okay. We'll do this the hard way. All right.
+00:18:09 Speaker 1
+Go in, put in a shape. All right, let's say you've got a chromosome that extends in a long direction in either way, right? Now, your paired ends, ideally, will be one there in that direction. Actually, let me do it the other, different way. Let me put in an arrow. One paired end should be facing that way. The other, oops, oh, I've got to specify it.
+00:18:39 Speaker 1
+Where is it? The other, I've got to reverse its direction. Where is it? Oh, my gosh. It's not going to be nice to me. Shoot. It should be the other direction. There we go. The other one points in the other direction. Now, there should be a small sequence in here.
+00:19:10 Speaker 1
+from the paired ends this should be the totality of your insert from one end to the other right. but usually if the fragment is large enough you don't get sequences that overlap you might but more often than not there's a gap in here so here's what happens is when it aligns if they're not then something's wrong with these pairs there may be an error here in.
+00:19:41 Speaker 1
+terms of the sequencing and it doesn't map them it says that look one direction may be from one chromosome together for a different chromosome so this becomes important to the paired ends it'll actually do some of this filtering for you just all making sense you're getting some notes cool. okay okay just let me know if you have questions along the way i know i'm tossing a lot at you again, Okay, so going back to our instructions.
+00:20:22 Speaker 1
+So, again, the first thing we're going to do is we're going to do genome generate. You can probably all run that safely individually. Once you get that done, you're going to then map your reads. And, again, you're going to have to specify the paired files that go together. And it will figure out from there, are they facing each other? That's the other thing. If they're facing opposite directions, that's not a true paired in read. There's a rearrangement somewhere. Remember we talked about misalignments? That can actually, that's not really what causes it because they're filtered out.
+00:20:55 Speaker 1
+But it's a similar sort of thing where maybe the fragment itself is a rearrangement. All kinds of filtering that happens here. So, again, map your genome. And then once you get that done, you can take your first pair from, let's say, condition one, replicate one, take its paired sequences and map them to the genome, again, being cognizant of how busy the server is. And I'm going to keep an eye on that. I'm going to keep going on one of my processes here so I can see what you're up to.
+00:21:27 Speaker 1
+All right, who's got questions so far. 
+00:21:34 Speaker 4
+So just to confirm, for step two, there's two main parts. There's the genome mapping and the annotation.
+00:21:46 Speaker 1
+Correct. So genome mapping is that first step. And it's not annotation here. Oh, I'm sorry. Maybe I misunderstood. You mean for the first part of step two? Yes, yes. Yes, yeah. You have to have the genome file. So there will be some FASTA file. And there's also an annotation file. And you've got to figure out which one is the right one.
+00:22:05 Speaker 5
+Okay.
+00:22:13 Speaker 1
+Take a look through whatever information you have on it, so you can figure it out. Oh, for the Limit Genome Generate RAM, I recommend putting in that value, exactly as in the instructions. That basically says use as much memory as you can, and it does limit itself. It doesn't need a huge amount. We'll be okay if everybody runs it. Let's see, genome file, is that from the run reads or the reference? That's from the reference sequence. The second step, or second part of step two, is where you start doing the run reads.
+00:22:46 Speaker 1
+Cool. Yep. Awesome. Good. Other questions? I see somebody knows HTOP. You can use that too. If you're familiar with it, go for it. It doesn't hurt anything. It doesn't have a high system demand, so I'm not going to worry about that. So just to kind of confirm, you're okay if everyone, obviously this probably isn't how it's going to take out, but if in theory everyone ran step one at the same time,
+00:23:20 Speaker 1
+it would technically be okay even if it wasn't ideal. But be mindful about the steps in step two. Exactly. Or in part two of step two, yeah. Absolutely. And what I'd say is if the load is already approaching 50, just wait until it drops down a little and then run it, and also run it at a lower thread. Run it at a lower thread instead of 40. Excellent. Oh, one other thing I'm going to show you before we jump off.
+00:23:50 Speaker 1
+I'm going to put this in chat. When you're running a command, so some of these may take a long time. If you lose your network connection, the process stops. We don't want that, right? So I'm monitoring something. Okay. Interesting. So when you're running it, you don't want to lose that process that you've run, especially if it takes eight hours to run, and you've got to go to class or something.
+00:24:20 Speaker 1
+You don't want to lose the system. So what you can do is use something called nohub, and you can also run your command in the background. So nohub says if you lose your connection, keep running the process until it's done, and then it's all set. The ampersand after the command says run it in the background, so it will bring you back to your prompt even though that process is still running. So, let me see if I can give the example here.
+00:24:59 Speaker 1
+I'm going to make a temp script to do something. All right, I just created a script. I'm going to share a screen with you.
+00:25:34 Speaker 1
+I got two different PuTTY windows, let me try the right one, all right, so, I do nohub, I have a, hold on a second, nohub, that's right, .slash demo.sh, I'm going to run this program, I have my local directory, and I'm going to put it in the background, so, the nohub says, look, if I lose my connection, keep going, there is the command I'm putting in, you can put in the.
+00:26:05 Speaker 1
+command with the parameters and everything else, and when you're done, put the ampersand at the end, if you watch, we'll look at this, I'm back at my prompt, right, oh, that's a whole other issue, but if it was running, it would be in the background, we'd see it there, I got to see what happens there, responsibility, so is my two games, there, could I open, oh, okay, I didn't have the files in the right places, so you didn't see anything.
+00:26:35 Speaker 1
+But basically, by doing the nohub, you've added an ampersand. Again, if you lose your connection, it keeps running. And then it'll run it in the background, so you can then run top and watch what it's doing. You can do the same thing with the genome map. I recommend that because it takes it about, I'd say, 15 or 20 minutes to run. Now, if you need to kill a process, meaning something is running out of control or you made a major mistake, and you've run something, we can actually stop this.
+00:27:05 Speaker 1
+I'll tell you about that one afterwards. But, you know, there is a way to stop a process once you start it, if it's running in the background. So, again, we'll take a look at that after. Okay, I think everybody's got everything they need. Oh, nohup, awesome. So, I say go ahead and start doing the mapping of the reference genome. If you have questions, I'm just going to be here for a little bit. We'll start with that.
+00:27:36 Speaker 1
+Are we going to come back? We'll come back. I'm sure we'll have questions. If you have questions, definitely speak up. Let me know.
+00:27:52 Speaker 4
+Could we possibly get into, like, the loop? Nope, this is for tract, not teams.
+00:28:02 Speaker 1
+This is not your project. This is for tract. When we're doing team stuff, we'll definitely use group.
+00:28:27 Speaker 5
+I believe people oh you an apology. Oh, no, no. No, no, they do. They were asked several times to be quiet, so let's give an apology to Mr. Garcia. Thank you. Okay, so take a minute in your table groups and talk to the people here about what have you used AI for. Have you used it for anything. 
+00:28:56 Speaker 3
+Let me ask you a question, guys. Did you ask him about the algorithm. 
+00:29:09 Speaker 5
+I haven't done that yet.
+00:29:10 Speaker 3
+Oh, okay. You want me to tell them now before they talk? We're not starting anything yet. Okay. They're just talking. Got it. Yeah, yeah. Let me know when they're before training the AI, so that way they know they have to provide instruction.
+00:30:11 Speaker 5
+I'm sorry.
+00:31:10 Speaker 5
+All right. So we're going to be talking about machine learning. That's what AI is. It's a way for, what it means, what it means is that computers are recognizing patterns. So what we're going to get into in a couple of minutes is learning about telling AI how to tell the difference between a fish and trash in the ocean.
+00:31:55 Speaker 5
+So that it can help us clean up the ocean without counting the fish. Okay, this is where Mr. Garcia wanted to explain what an algorithm is.
+00:32:17 Speaker 3
+Yes. Okay, so how many of you have heard of the word algorithm. 
+00:32:26 Speaker 6
+Algorithm.
+00:32:28 Speaker 3
+Okay, how many of you know what an algorithm means? even if it's in spanish any of you oh he does okay what does that mean yeah what does it you know relate to you don't have to say exactly what it is what does it relate to it's okay if you don't know that's fine got it so okay so let me ask you a question how many of you know what a gps.
+00:33:03 Speaker 3
+is ah that's that that's okay great okay so do you guys know how the gps works yeah yes okay so what does it do to take you from point a to point b what does it need what does the gps need to take you from point a to point b and i assume you don't know where you are you um let's.
+00:33:33 Speaker 3
+So let's assume you're not using an AI. What would that system or person or program need to tell you where to go from point A to point B? Map, directions. There you go, directions. So in order for you to go from point A to point B, you need directions, right? So in this case, directions and instructions are similar, right? Because they're instructing you how to get from point A to point B.
+00:34:05 Speaker 3
+So algorithm is basically a set of instructions. You are basically giving instructions to a program, right? So it does something for you. Does that make sense? Right? So when you say AI. When you said GPS uses AI, you're not wrong, right? But what does AI use to take you from point A to point B? Use direction and instruction. So now you guys are going to give the AI instructions so it does something for you. And in this case, I believe we're doing the water?
+00:34:37 Speaker 3
+Oh, yes. The ocean, right? Yep. All right. So you guys don't drink dirty water, right? No, right? So you want to keep the oceans clean so you can have clean water, right? So this practice here is for you to instruct the AI to recognize what a fish is and what is not a fish, like garbage, right. 
+00:35:01 Speaker 5
+Yes. So you have code.org.
+00:35:10 Speaker 3
+Let's go to code.org. Do we have the page with their login? Well, I don't, he didn't link it up. He didn't print it. 
+00:35:23 Speaker 5
+I think, I think, um, he doesn't do it.
+00:35:26 Speaker 3
+Yeah.
+00:35:44 Speaker 5
+Huh.
+00:35:51 Speaker 3
+Go, docent, and docent. And then click here. Click here. Yeah, let's see. They need the paper with, he didn't give it to you? Why would he do that? Last time he did it. This time he forgot it, I guess. Well, I guess everyone can use it. It's just...
+00:36:23 Speaker 5
+It's a first grade program.
+00:36:25 Speaker 3
+I believe it's SAM.
+00:36:26 Speaker 5
+No, no, it's... The login might be, I don't know.
+00:36:31 Speaker 3
+Yeah, I believe that... Yeah, let's try that. Let's try this. K-S... Q...
+00:36:44 Speaker 5
+Q-R... R... Z...
+00:36:54 Speaker 3
+Like this. Pick Miranda. Yep. Sorry.
+00:37:03 Speaker 5
+Oh, that's because it's a first grade class. It's not going to have their names. Yeah, pick.
+00:37:09 Speaker 3
+And due... Oh, he was able to get in? He was able to get in, sign in, and that's right. Yeah. He was able to log in like that. 
+00:37:35 Speaker 6
+Yes.
+00:37:35 Speaker 1
+Hey, folks, it's going to take me a minute to reply to some of these. I'm actually doing direct messages to somebody right now, but I will get to everything that's up there in chat. So there will be some delays in here.
+00:37:48 Speaker 5
+He knows how to do this. Yeah. So he's going to just.
+00:37:54 Speaker 2
+That's fine.
+00:37:55 Speaker 5
+If you know how to do it, that's great. If you need help.
+00:38:04 Speaker 1
+Okay, I'll just signed out. I'll be honest with you about that. You can't copy and paste directly, but you can type this for y'all. Google.
+00:38:13 Speaker 3
+Okay, I guess he fixed it for them. He made it work with the Google account. Just make sure your script doesn't run out of control and run like full processes. Do signing.
+00:38:22 Speaker 1
+It's easy enough to do if you make a simple mistake.
+00:38:24 Speaker 3
+Signing. Click signing. Signing. Click signing. And then do Google account. Google account. Go to code.org. Signing.
+00:38:45 Speaker 1
+Someone has figured out which species it is and where to find the information. Excellent.
+00:38:49 Speaker 3
+Google account. Continue Google.
+00:39:00 Speaker 1
+All right. And they did it using the clues that you have been given. Hint, hint. They read the paper. Signing.
+00:39:08 Speaker 3
+Click signing. and then continue google there you go lower a little bit. yeah and they do try so yeah try now watch the video and then play and then play.
+00:39:53 Speaker 1
+be your correct oh i'm getting your next part here so.
+00:40:33 Speaker 1
+I got a bunch of dark messages going on here, so I will be busy with those for a little bit.
+00:41:07 Speaker 5
+Thank you.
+00:42:01 Speaker 5
+Don't put noise, don't put noise, don't put noise.
+00:43:15 Speaker 5
+That's pretty.
+00:43:52 Speaker 5
+Oh, I'm pressing. Run. That's how we're going to say it now. Yeah. Yes. Okay. Yes.
+00:44:24 Speaker 5
+What? What did you say? A fish? What? Oh, no. Wait, what? I think I see a fish. I see a fish.
+00:45:20 Speaker 5
+I can take a look at the door.
+00:46:22 Speaker 5
+Thank you. No, that's not me.
+00:47:01 Speaker 1
+I see two of you have the mapping going. Nice. I think we're up to three. Oh, nope. Missed that in the air.
+00:47:58 Speaker 5
+We're up to three.
+00:48:42 Speaker 5
+Okay, cool.
+00:48:48 Speaker 1
+I'm dealing with your messages as they come in.
+00:49:03 Speaker 5
+It's showing you what you can do. It shows AI what you can do.
+00:49:53 Speaker 5
+Thank you.
+00:49:58 Speaker 1
+Okay, the question on the output directory. I believe you have to create a directory, and then you put that directory's name into the command. There's no specific one you have to use. It just has to exist, I believe. For those who have finished, does that sound right? I got a thumbs up? Yeah. Oh, there we go. I see that there. Someone already posted that. Cool. Thank you.
+00:50:28 Speaker 1
+All right, next direct message.
+00:50:45 Speaker 5
+Thank you.
+00:51:16 Speaker 5
+No, no.
+00:52:58 Speaker 1
+I think I've caught up on direct messages. If you're missing a reply from me, let me know.
+00:53:42 Speaker 1
+So I'm going to ask you to start scripting out your statement for step two or hang tight. So part two, step two, I would say. Hold off, because if you script this, you can set off a whole chain where if you make a mistake on one of them, maybe you set it by mistake to 12 threads, it'll keep running for hours like that and tie up the system. So I'd be really careful on that. If it's three in the morning and no one else is on the server, just be careful.
+00:54:45 Speaker 5
+Thank you.
+00:55:31 Speaker 1
+Thank you for taking that direct message. So.
+00:55:47 Speaker 5
+Thank you.
+00:56:42 Speaker 5
+Ow! Do you know how to do it? Ah! Did you make the game? I made the game.
+00:57:50 Speaker 5
+Oh, my favorite part. I got my favorite part. Now I need the money. I got my favorite part. Oh, my favorite part. I got my favorite part.
+00:59:00 Speaker 5
+I hate this. I'm at $2,000. I got $3,000. I'm at $8,700. I want to get $10,000. I can tell you. I got $3,000. I'm at $3,000.
+00:59:34 Speaker 5
+I got $3,000. I got $4,000. I got $6,000. I got $25,000.
+01:00:44 Speaker 5
+Thank you. I feel like mine, okay?
+01:01:41 Speaker 5
+I feel like mine!
+01:02:15 Speaker 5
+I didn't get a seat back. How's that for you? Yes, I got a seat back. Oh, that's great. Are you set? I'm ready to go for that. How much money do you need? Oh, dude.
+01:03:20 Speaker 1
+So I've got one question, should you wait to run the second part? I believe, sorry, I'm answering three people at once. I believe if you keep the number of threads down to one, you could run one of them. So you can go ahead and go to the second stage, just keep it to one thread for now because a lot of other people should be starting to do their mapping still.
+01:04:14 Speaker 5
+How are they doing? Better. We're going to get one of those. All of the kids' names. Right. 
+01:04:27 Speaker 3
+That's what I say. It's a reward system.
+01:04:38 Speaker 5
+Why are you getting one of those? What's she doing. 
+01:05:30 Speaker 1
+Someone asked if you can wait until after class to run the second part. You can, but please don't run away in case I have any announcements. I got a whole bunch of messages changing at once so hold on a second I am making a message.
+01:06:03 Speaker 1
+change sometimes I may not see that your reply so please just let me know um.
+01:06:44 Speaker 5
+wait. Oh, what is that? What is that? I'm not Sarah. I don't believe in Jesus Christ. Okay. Does he know that? Oh, my God. I'm not supposed to ask.
+01:07:15 Speaker 5
+What? Oh, my God.
+01:07:27 Speaker 1
+Okay, a whole bunch of stuff to catch you up with and direct messages. I can't hear you. so one of the questions is this is good for everybody when you finish steps one and two, what should you do next um at that point you can actually go ahead and go to step three which is basically going through the rest of the trapdoor stuff after the alignment um and again the rest.
+01:08:00 Speaker 1
+of that question is about for the lab write-up when you write about it the commands you ran today and discuss those outputs um yes so basically it's going to be the same sort of of library again when you talk about uh problems that you have please don't include issues around using command align um but if the program is giving you your error message and you have to look that one up that might be a good one to basically talk about um hopefully that helps that question would, that also include stuff from step three if you do step three absolutely so whatever it was you did.
+01:08:33 Speaker 1
+you don't have to limit it to something some artificial constraint put on it, I do break this out in a weekly sort of a thing, but that's partly because you're all running at different speeds right now, and I'm trying to keep you all connected. So, yep, whenever you finish, go ahead and put that in your weekly report. Let's see, I've got to catch up on those messages. One of the questions was, for the second part of the aligning, do you run that on each individual set of paired reads or on all of them at once?
+01:09:09 Speaker 1
+You have to do it on pairs of reads, not all of the reads at once. So, basically, everything from condition one, replicate one, run those two together in one alignment. Condition one, replicate two, run that in an alignment, and so on. Cool. Oops. So, I just lost track of where it was in here. It's been scrolling.
+01:09:32 Speaker 5
+Very good. I'm going to play to that one. All right, we need to find out what the door bleeds.
+01:10:12 Speaker 5
+I'm looking through these, so bear with me.
+01:10:24 Speaker 1
+Did everybody get one? Twelve reads in the one reed school, three reads, six iterations of the align are correct. Okay. All right.
+01:11:00 Speaker 5
+This is cute as hell. I want a big one. My class is leaving soon. I don't care. Bye-bye.
+01:11:44 Speaker 1
+I'm seeing lots of starter stuff running here. Excellent. Cool. I should have caught up on all the direct messages and all the stuff in chat. Let me know if I missed something. It's a little weird the way it's scrolling.
+01:12:39 Speaker 5
+Let's see here, I see there's one new one. Do you have one second for one second. 
+01:13:02 Speaker 2
+Sure.
+01:13:02 Speaker 5
+Are those the Legos he passes out when he has it. 
+01:13:06 Speaker 3
+Yeah, those are the ones.
+01:13:07 Speaker 5
+The buckets here. 
+01:13:08 Speaker 3
+Yeah, the yellow buckets, yeah, for the Lego, yeah.
+01:13:44 Speaker 1
+Alright, since I think I'm caught up in direct messages and I'm seeing a lot of people moving things around, excellent. There's a lot of stuffter running and lots of people doing analyses. So, remember I said that if you get something that's running out of control, what do you do about it? So, I'm going to share screen here. I'm going to go to where I have top running. Now, I'm going to quit here. Now, I'm not going to do this, but let's say, let's see. Let's say I wanted to quit out of top, but I couldn't quit.
+01:14:18 Speaker 1
+Do it from the command line. So, let's say I run something with no help in ampersand & that's running in the background. You can't really directly cancel it, but from the command line, you can control C or something. What you can do is you can look at this first column and top. See that PID? If I look at, that's my instance of top, that's my name, my instance of top, that process ID, so the PID is, you could do, obviously it wouldn't work right now, you could do kill in that process ID. If you own it, it should quit out of that process.
+01:14:52 Speaker 1
+So if you really get in a pickle where you accidentally put 24 threads, which is not likely to work on the server, because some of the threads have to be used for system stuff, if you need to cancel that in a hurry, jump to the top, see where your process is, find its process ID, and then do kill space in the process ID. Again, if you own it, it will quit out for you. Does that make sense?
+01:15:24 Speaker 1
+Send me a message in chat.
+01:15:57 Speaker 5
+Can I repeat that again. 
+01:16:11 Speaker 1
+I'll tell you what, stop in an office hour and I'll go over that. You shouldn't need it that way, but I'll tell you.
+01:16:26 Speaker 5
+I can't even tell you. Hi, Rob. Still, my people just simply have to see what their eyes are. Okay, so you are going to do 10 minutes of typing agent first.
+01:17:31 Speaker 5
+Okay, so you are going to do 10 minutes of typing.
+01:18:06 Speaker 5
+You guys used to be in training agents in your bodies. Thank you.
+01:19:34 Speaker 1
+Someone is asking about Cufflinks. Don't worry about Cufflinks for this particular analysis. You don't have to, but the problem is there are issues with R on the server. We have multiple versions of R after multiple years of running the server, and they conflict with each other. So if you want to run Cufflinks, please run that on your local system. Your laptop should be able to run Cufflinks if you want, if you want to play with R. If you can think of a way to disentangle all the versions of R we have.
+01:20:06 Speaker 1
+and all the issues around them, we can try, but honestly I need to put more effort into getting everybody else through the first two steps before we go past that. Cool. So another question came up. Yeah, Peter, it doesn't work that way. Sorry. We have multiple versions of R in the server. That's an artifact of the way R is developed.
+01:20:37 Speaker 1
+It doesn't work that easy. I wish it did. Let's see. So the other question I had was for part two of the second step, is it good to list all the FQ files as long as it's one thread? Again, when you're doing the second part of the second step, you should only put the pairs together, not all 12 files at once. So for condition one, replicate one, it's two pairs and nothing else. Otherwise, you're going to have issues downstream when you're trying to do the other parts of the tribal paper. Hopefully that helped.
+01:21:20 Speaker 1
+So, Peter, people can do individual installs in their home directories that would rather not get bloat that way on the server because it would go into drive space. I'm not sure how much it would take. Thank you, though.
+01:21:34 Speaker 5
+Okay.
+01:22:06 Speaker 5
+Thank you, Peter.
+01:22:58 Speaker 1
+So, I am replying to you. Give me a minute. I'm catching up with you. I do have an answer for you. Just give me a minute to reply.
+01:23:16 Speaker 5
+Give me a minute.
+01:23:32 Speaker 1
+There we go. Just got a reply up to you. Hopefully that helps. There may be an additional issue, but we'll see. I'm hoping it works like that.
+01:24:16 Speaker 5
+There we go.
+01:24:37 Speaker 1
+It did run, it's progress, if you give me more details on what you mean by it didn't work properly, like include copy and paste any error messages, that would help, and I'll see what I can do from there. One thing that really helps is if you're having tech issues, be as specific as possible. So I used to do tech support kind of like the help desk.
+01:25:11 Speaker 1
+If you get an error message, copy and paste the error message. Because you say, well, it just doesn't work. So you go into your mechanic and say, yeah, my car makes noise. Okay, what noise? Where's it coming from? What causes that noise? Is it when you're braking? The more details you can give, the easier it is to figure out what's going wrong. So definitely, if you get an error message, copy and paste that. And I'll almost certainly ask you to copy and paste your command line, too.
+01:26:04 Speaker 1
+Eliana, I'm replying. It's simpler than that.
+01:26:50 Speaker 5
+About two more minutes.
+01:26:57 Speaker 1
+Here we go. Just sent you a reply. Oh, another question here. Sorry, I must have missed that a few minutes ago. Part 2A, are we using the human reference in tribunal? That is the question I asked you, is which species should you be using? Again, read the paper. It is in the paper for you.
+01:27:43 Speaker 5
+I don't know why you signed up for it. Let me get to the end of this. Five minutes of the time. Oh, no. That's what I was going to say. What is that? Are you watching this video?
+01:28:14 Speaker 5
+One, two, three, four.
+01:28:51 Speaker 5
+Hey, yo! What is that. 
+01:29:04 Speaker 1
+Oh, can I ask you a quick question, or do you want me to type it? Give me just a second, and I'll be right back to you. I'm in the middle of typing one. Be right there. I lost my train of thought. Oh, my gosh. Here we go.
+01:29:27 Speaker 5
+Okay. There we go.
+01:29:33 Speaker 4
+All right, what do you got? Oh, my question was about the lab report. So, I think you said something earlier about you don't want us to mention, like, errors on the command line, but you want us to mention.
+01:29:47 Speaker 1
+Let me say that a little differently. If you couldn't remember what the unzip command is, I don't want to hear about that. If you tried to run a zip and you forgot to put in the path to the file you're trying to unzip, that doesn't go in there. But if you ran the program and you ran these parameters and had a problem with one of the parameters, like you didn't understand, for example, later on you'll have to specify that you're dealing with word and sequences in your BAM files. We'll come to that after the hour. But if you had a problem and you didn't remember it, you can talk about that.
+01:30:20 Speaker 1
+Like, yep, I was getting this error. Here's the error message I got. I figured out that it's related to, I didn't specify that these files are paired in. So that's caused by an issue in the command line. But it wasn't your command line usage. It wasn't your general command line usage that was the issue. Does that make sense. 
+01:30:40 Speaker 4
+Oh, okay, so it's not like a syntax error. It's like a variable error type.
+01:30:49 Speaker 1
+So, not things about you're still learning the command line, which is okay, but things about I'm learning how to run this program from the command line. Does that make more sense. 
+01:31:01 Speaker 4
+Can I give you an example. 
+01:31:04 Speaker 1
+You can try.
+01:31:05 Speaker 4
+So, like, I was trying to do the part one of the step two, and then I got an error that was I could not open genome class A file. And then I realized there was a problem with how I was writing the lines. Like, I had 20 spaces in the backslashes. So, would that be? I wouldn't include that.
+01:31:30 Speaker 1
+That's specific to the file system. But if, on the other hand, you're saying, let's even come up with a good example here. I was running this, and I set Limit Genome Generate RAM. I didn't give it as big a number as I should have, and I recognized that it wasn't allocating up memory, so I just increased that value, and it worked. That's okay. I wouldn't do that repeatedly throughout the course,
+01:32:01 Speaker 1
+but, yeah, you're learning absolutely nothing. It's a valuable thing to put in there.
+01:32:06 Speaker 4
+Does that help? Okay, yeah, I think I'm just realizing I haven't actually run into any errors.
+01:32:14 Speaker 1
+Yeah, nothing serious, probably, at this point. Once you start playing with the lighting of the paired files, you might start seeing some things.
+01:32:21 Speaker 4
+Okay, gotcha. Also, do you have time after class ends to talk about the lab group work? Sorry, I do not today.
+01:32:31 Speaker 1
+Let me check something, though. I have an office hour at 3 o'clock.
+01:32:35 Speaker 4
+3 o'clock today? Today, yep. Okay, gotcha. Thank you. Cool.
+01:33:41 Speaker 5
+Thank you.
+01:34:41 Speaker 3
+they started already you know what this is it seems like they just have been throwing stuff in there which i don't know why i think it's just so there was a clothing oh that's what it is okay, um i forgot to tell you to we need to tell them to use the web version and not the app version.
+01:35:03 Speaker 1
+for the of the legos i think i'm caught up on direct messages if i miss something let me know um.
+01:35:18 Speaker 3
+So, I need you to, the group, choose one computer, open it, go to Google and type Lego Spike, and then choose, and then choose, you guys did this before, right? Okay, so just open it, I'll go through each group. Open it.
+01:35:39 Speaker 1
+The first part of step two. I wasn't there? Not on the screen, but on the response thing. I could see Sam there, but I couldn't see anyone else, because I could only see six of you at once.
+01:35:52 Speaker 3
+Because he has, he gives them the instructions to build the electric car. Yeah. If you're getting specific here, maybe he's assuming, because I know, maybe he's assuming I'll just, yeah. No, you're signing first, yeah. Thank you. We need a laptop for a group. Whose laptop are you using. 
+01:36:32 Speaker 1
+Oh, I was asking for part one of step two, just to clarify that. I'm not expecting you've done the mapping of the reads, but hopefully mapping the genome, figuring out where, how it, what are all the sub-sequences of the genome.
+01:36:54 Speaker 3
+Type Lego spike. Lego spike. Type Lego spike. Lego spike. Click on it. And then choose essentials and then units essential and then units.
+01:37:32 Speaker 3
+Go to units on the left side now choose a car the electric car.
+01:37:43 Speaker 6
+Go back Which one is a car. Yeah, you're right.
+01:38:02 Speaker 3
+You got it, okay, so do you choose the car? Unit. There are cars here. That's a car. That's a car. Those two are cars. Where's that computer here?
+01:38:33 Speaker 3
+Who's going to... Oh! You log in first. Log in. It'll tell you how to build it. Log in first. If you log in, Lego Spike, click on it.
+01:39:03 Speaker 1
+Finish it. All right, we are getting close to the end of the class. So, if you finished part one of step two, meaning you've prepared the reference genome, you're free to head out for the... You're all good. You can stick around if you want, but you're free to head out. Otherwise, I'm going to see if anyone else has any questions. Choose any card. Try to help you out there.
+01:39:26 Speaker 3
+There are two cards in there. You can choose another card.
+01:39:32 Speaker 1
+Cool. If I don't see you before then, I'll see you Monday. Log in. Or tomorrow, I see. Which computer are you guys using. 
+01:39:51 Speaker 3
+Where is it? Oh, you got it. Okay, you are in. Okay.
+01:40:03 Speaker 5
+All right. Okay.
+01:40:26 Speaker 1
+alright the rest of you are still here if you have any issues please let me know send me a message or or speak up i'll try to help you out. hi hi i'm looking i see some of you i think let me see oops.
+01:40:58 Speaker 5
+you have to see.
+01:41:38 Speaker 3
+You follow the instructions here, it'll tell you.
+01:41:44 Speaker 6
+So, unit, there's that cart here.
+01:41:51 Speaker 1
+And just a second, I'm trying to remember what the Jackson text here is. I'm texting, I'm messaging somebody else. That's okay. You need to follow the instructions. That's correct, the person who just messaged. So, Sam, what do you got? Come, follow the instructions.
+01:42:11 Speaker 4
+I was asking that, so after I, the part one code.
+01:42:18 Speaker 1
+my part one step one or the first part of step two uh the first part of step two the user user.
+01:42:39 Speaker 4
+while it's running because now you guys subject the usage um yeah.
+01:42:51 Speaker 1
+um did it give an error message did it do something you didn't expect.
+01:42:55 Speaker 4
+it didn't do anything it just i wrote in top and then it just made a new blank line and then my um, my my run ended and then it it said um like fatal fatal input file error.
+01:43:11 Speaker 1
+no valid specific error message so can you paste that in that error message into chat.
+01:43:19 Speaker 4
+I need to see it. If you tell me, it won't register, I'm sorry. Okay, yeah, I'm on a different computer, so I'm going to probably... Yeah.
+01:43:35 Speaker 1
+You need to file an instruction. In the last five minutes of class, I don't think there's much we can do there. Can you make office hours? We'll take a look. See. 
+01:43:48 Speaker 6
+I need to find that first. Oh, it's fast.
+01:43:58 Speaker 4
+Yeah, interesting.
+01:43:59 Speaker 1
+Yeah, look for that page. Because I have stuff going on, so... Until office hours. I'm literally packed until office hours, and then I don't have time after.
+01:44:14 Speaker 4
+Can I work on it, like, go back through, like, all the instructions and see if I can find an error and then email you. 
+01:44:21 Speaker 1
+I mean, you can. Just make sure that you get the exact commands and exact error messages. That way I can see what's going on. If you just told me it gave me roughly this error message, that could mean three different things, so you've got to have the specificity there. Is that okay. 
+01:44:35 Speaker 4
+Okay, gotcha. Is email the best, or do you have Slack. 
+01:44:40 Speaker 1
+I do have Slack, but I don't have channels with students. I kind of restrict what I do on Slack to our IT stuff. Like, not courses, but to specific internal stuff, yeah. I try email. It's probably easier. Okay. Cool.
+01:44:59 Speaker 4
+Thank you. Okay, no worries. Have a nice weekend. All right, you too. Thank you.
+01:45:57 Speaker 1
+I am working on the messages as I can get to them. If I miss something, let me know.
+01:46:05 Speaker 5
+That was my entire directions. That was literally what I got. yeah he was counting on me he was in a hurry it's okay there's always so much backup stuff.
+01:46:19 Speaker 3
+yeah he was definitely counting on me yet but at least we got them to work they our our they our they finding sources there yeah they're mostly raising around looking for.
+01:46:31 Speaker 1
+pieces that's good yep good i see someone next to her excellent it looks like you're running with four threats so be courful on that at the moment four threats is okay, definitely check top before you do that.
+01:47:05 Speaker 1
+no worries these things happen right now it happens. Oh, did it finish or did you quit it out. 
+01:47:28 Speaker 5
+Okay, I'm glad it finished.
+01:47:59 Speaker 1
+Dr. Fisher, I got a quick question. Be right there. I'm sorry, I'm texting someone and then I'll be here. Uh.
+01:48:19 Speaker 7
+so um the only issue i'm really having is with um the actual the file name itself um basically just copy and pasting from the the win scp thing that you told us to do a while ago but um when i paste it in it still says the genome faster the gff file is not they couldn't open it. well it's just um no this is yeah the first part of step two.
+01:48:53 Speaker 7
+um so it's like the dash dash sj db gpf file so hold on the file name itself.
+01:49:03 Speaker 1
+so hold on hold on i can't remember the file yes but there's more in there's the rest of it okay there what our the exactual messages again.
+01:49:12 Speaker 7
+The only, well, it says starting the star run, and then it'll actualually generate the genome files, but it says exiting because of input error, could not open genome class to file.
+01:49:25 Speaker 1
+So you've literally got one minute before I have to run. Can you copy and paste the command you typed in into chat? Sure. Thank you. If I can see it, that's a lot better. And don't worry about it. We're good. Okay, here we go. Thank you, Professor. I'll head out. All right. Catch you later, Peter.

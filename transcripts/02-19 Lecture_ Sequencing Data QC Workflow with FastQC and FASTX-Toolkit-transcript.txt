@@ -1,0 +1,248 @@
+00:00:14 Speaker 1
+Folks rolling in now.
+00:00:58 Speaker 2
+And purple. All right.
+00:01:06 Speaker 3
+I'm just setting up some breakout rooms as everybody comes in. Still missing two, I believe.
+00:01:27 Speaker 2
+There We go. So there's one. I think. If I got these right.
+00:01:42 Speaker 3
+Yep, I think we're pretty good there on the breakout rooms. Awesome. All right, how's everybody doing? Good? Okay. We're just over a week from break. No celebrations? Okay. Okay. Um, we're basically going to continue on the project today. So we're going to do this with breakout rooms in a little bit. Uh, first we're just going to talk briefly about FastQC, um, FastX. And we'll talk about next week what we're going to be doing. Uh, it will handle things a little bit differently. We won't just be breakout rooms and working together. We'll also be reporting with each other so um. 
+00:02:26 Speaker 3
+Let's start out with so FastQC you should be pretty comfortable with it. All you're going to do today is, as you have some of your data down, start playing, oop lost somebody. I just got a beep somebody disappeared uh oh. Um Oh. 
+00:02:48 Speaker 2
+Okay I think I know what it was. Um we're going to do is as you start getting your data files down, start playing with those fastq files. 
+00:02:56 Speaker 3
+And start running FastQC on them and seeing what kind of things you're getting. And start tabulating if you can. Oh, there we go. Someone had to swap off and back on. There we go. Start tabulating the results you're seeing. What are some consistent issues that you're seeing? What are some maybe individual data files that look like they may have problems? And we'll start playing around with that. You're also going to be able to, Start cleaning up the data files if you need to. Definitely save the originals until we know you've cleaned it up right, but let me share screen here. What you can do is you can play with the FASTX toolkit. If you do a Google search for FASTX space toolkit, you can pull this up pretty quickly. This is an older tool but it's still heavily used. And what it does, it gives us a bunch of individual tools. This is in user local bin like everything else. Different things you can do with your. 
+00:03:54 Speaker 3
+To clean up your raw data files. So, we're not going to worry too much about the statistics unless you want to. You can play with their FastQ information. It's a little different than FastQC, I don't like it as much, But you can always use that as another way of checking the quality of your data. But also these other things like Trimmomatic. So if we have barcodes or noise, like we're getting low-quality signal at the end, you use Trimmomatic to shorten some of these reads. Clipper can remove adapter sequences or linkers or whatever is in their database. If you have barcoded samples, which I don't think anybody does, but if you do, You can use the barcode splitter to take a FASTQ file and split it based on those barcodes. And what it'll do is anything that doesn't exactly match the barcode, It'll put in a separate file where you can think about how you might want to split that if you want to keep those, throw those out. There's some way. You can remember we talked about redundancy and barcodes, so there's some way to recover them.
+00:04:55 Speaker 3
+Let's see. Anything else? There's a quality filter and quality trimmer. There we go. Quality trimmer is going to look for where there are segments and shorten it. Quality filter will say, what is the average quality of this read? If it's below some threshold, we'll throw it out. You have to be careful with paired - end sequences on some of these, because if the quality filter removes one end of a pair and not the other, All of a sudden, you don't have a connection between your two files. That'll create problems in your alignment. But, we can look at all these things as we're playing with the data sets. But again. The first thing we're going to do is look at FastQC on your data files as you pull them down. And then we can start looking at the FastQC, based on the FastQC results, Figure out what you might need to do if anything with your data files to clean them up. All right. How are we doing so far? Questions? Are. 
+00:05:42 Speaker 2
+We doing okay? Getting. 
+00:05:48 Speaker 3
+Some thumbs up, so okay, I'm going to take that as a good thing. Now let's see, do we have everybody here yet? No, we're still missing one. Okay, but I got the breakout rooms. So, oh, one other thing. As you're putting all these results together from FastQC, be prepared for next week on Wednesday. What we're going to do is do team reports. It doesn't have to be formal. You don't need PowerPoints unless you want to. But, basically, it's going to be a chance. We'll do around the room will ask the different teams.
+00:06:21 Speaker 3
+What kind of things are you seeing in your fastq results? What problems are you anticipating? Uh, and we can all help each other out with that. Look at each other's data and see if there's anything you might be able to try to clean up any issues. We'll do this repeatedly throughout the semester. So, uh, so Wednesday's big thing is going to be the reports. So PowerPoint is an option? What was that? Uh, presentation PowerPoint is an option. It is just keep it short. Yep, got it. Um, look at about five, no more than ten minutes for each group. Cause we have five groups you have to get through. Good. Cool. So, you want to figure out with your team exactly how you want to do this. All right, any other questions before we jump into the breakout rooms? All good? Cool. All right, I'm going to open them up and I'll cycle through. I'll give you a few minutes to get settled, look over your files. 
+00:07:18 Speaker 3
+And then as I cycle through, just tell me about how the downloads are going and where you're at. Excellent. I'm going to open them up now.
+00:07:37 Speaker 1
+How you doing?
+00:07:42 Speaker 1
+You feeling better?
+00:07:44 Speaker 4
+Hey, I ended up being able to come to class,'cause myum I missed my connecting flight. So. Oh, that's not good. Yeah and it doesn't my next flight doesn't leave until like twelve forty. Mhm. I'm not gonna do anything else.
+00:08:01 Speaker 5
+You feeling betterum? Some? Sorryum Nick, I was in the middle asking if you're feeling better.
+00:08:12 Speaker 6
+Yeah, I'm tired. Remember, headache. Um, I wanted to ask what what. 
+00:08:18 Speaker 5
+Did we do forum It's in the document that I shared. That's what we did, uh Nikki and I. Um okay.
+00:08:30 Speaker 6
+The the GitHub or no Yes,
+00:08:33 Speaker 5
+That yeah exactly that is it in the GitHubum is basically the the dump forum our data. Um, for for the sake of this session, If if you guys want to try the QC on the data, that is there already, you can try. If not, you can also try playing around some some well with this fast um dump. The class is up to you. Wait what? Let me share.
+00:09:13 Speaker 5
+Um, the path in the group for the coin data. Nothing there.
+00:09:24 Speaker 7
+Let me share. I'm. 
+00:09:29 Speaker 5
+So tired too. Oh,
+00:09:32 Speaker 4
+Sam, We also have a shared folder now in the in theum server for our project.
+00:09:38 Speaker 6
+Who who made that? The professor. I see. So do we, so we don't individually all download it. I just go into the, that folder. Um You should be able to.
+00:09:53 Speaker 5
+Yeah and you should be able to download yeah also.
+00:09:59 Speaker 6
+Why would I download if you guys downloaded already?
+00:10:02 Speaker 5
+No I downloaded a fiveum sample, Jesus, this is so long. I'm looking at it and it's like already making me dizzy. Yeah, um, something. 
+00:10:27 Speaker 1
+Is wrong about this.
+00:10:36 Speaker 7
+It means there's at least one.
+00:10:47 Speaker 1
+Sorry, I'm looking.
+00:10:55 Speaker 7
+I think we're going to have to download it again. I can't even see the down key over here.
+00:11:21 Speaker 5
+Alright, so let's see. Let's share it with um Sam the what the professor was talking about. So let's see um I need to wake up. Let's see if I have the link to that where it said the first, then cute.
+00:11:51 Speaker 5
+You remember what it was in the server, um, Nikki.
+00:11:57 Speaker 4
+Um no. Okay I can take a look after I finish my breakfast.
+00:12:02 Speaker 5
+Alright no worries. I'm opening the. 
+00:12:10 Speaker 7
+Slack. Let me show.
+00:12:24 Speaker 7
+Alright, so let me see if I can share my screen. Let me open. Alright,
+00:12:36 Speaker 5
+So the So this is what the professor went over. Uh, let me see if I can share.
+00:12:57 Speaker 1
+Share share share.
+00:13:04 Speaker 7
+I'm on the web, I know. Trying to let me see.
+00:13:10 Speaker 5
+I'm not able to share on the web? This is so annoying. I'm gonna have to Oh yeah, okay, I have to have to uh do full screen.
+00:13:26 Speaker 5
+Disable. How to disable attendee sharing or the professor disable sharing? Anyway, so uh.
+00:14:16 Speaker 4
+Wait, Peter. I can't hear you. I don't know if it's just me.
+00:14:24 Speaker 7
+I can't hear you either.
+00:14:28 Speaker 6
+There was, some now noise glitch. I can't hear you, Peter. Yeah.
+00:14:44 Speaker 4
+Maybe he can't hear us.
+00:14:48 Speaker 6
+Can you hear us. Oh okay,
+00:14:51 Speaker 7
+Okay I have no idea.
+00:14:54 Speaker 4
+Oh oh. It made like a sound, but then it stopped again.
+00:15:08 Speaker 1
+Oh yes. Hmm.
+00:15:15 Speaker 1
+Yeah.
+00:16:21 Speaker 4
+I Haven't. I didn't run anything related to the project yesterday. So, um.
+00:16:40 Speaker 1
+Are you doing okay, Peter.
+00:16:57 Speaker 4
+If You need to like, take a step back, Sam and I can. Do more of the heavy lifting today.
+00:17:32 Speaker 1
+Uhhuh. Oh no. Okay,
+00:17:45 Speaker 4
+So do we have things in our. Folder, sorry I had to, I haven't been.
+00:18:04 Speaker 4
+Oh no How did that happen. Hmm.
+00:18:43 Speaker 4
+Oh, give me one second. I'll be right. I am not a good person.
+00:19:43 Speaker 1
+Yeah, I can hear you.
+00:19:54 Speaker 4
+Okay. Sorry, I'm back. Oh yeah, that's right. Toolkit.
+00:20:21 Speaker 4
+Oh, Oh wait. I thought you said the files were missing. Yeah.
+00:21:04 Speaker 1
+Um. Okay. Uh huh.
+00:21:40 Speaker 4
+Honestly, let's just do it directly to the server. That might be easier.
+00:22:05 Speaker 7
+Whatum. So did, did Oger give directions?
+00:22:09 Speaker 6
+Yesterday, Like specific, did he give some out some kind of outline of?
+00:22:13 Speaker 4
+So what we did yesterday was we had to like, remember what we did with trap now, likeum we ran fast QC on the reads. Yeah. So basically, we had to grab the reads from the project datasets that we selected. And then we had to run fast QC on those reads. And then just determine like I guess, quality like just start collecting data on like. How, the projects are so we can like really confirm that this is what we'd want to go with, because like we have those guidelines that he set for us when choosing that initial project. But like you know, now, we're just we're using FastQC to get another interpretation of the reads.
+00:22:49 Speaker 6
+Gotcha. Okay, so we, okay, um. So,
+00:22:54 Speaker 4
+What he told us to do yesterday was he gave us a link to the SRA toolkit. And SRA toolkit allows us to be allows us to pull the reads fromum. That whatever SRA project we're working on onto the server, I believe. And then our job is to then run FastQC.
+00:23:13 Speaker 6
+Gotcha. And did we, did y'all do the pulling the reads from SRA to the server? Is that done? Some, not all.
+00:23:45 Speaker 6
+Did we Did weum. Download any. Okay, so gotcha. So right now we don't have anything. Alright. Um.
+00:24:14 Speaker 6
+Okay, And how how do we have the drive set up? It said. So there's tools. Um. Is that something Oger set up himself or did, did we set that up There's a readme file.
+00:24:57 Speaker 6
+So that's tools. All right, what about the read me and the lab reports and the, Jupyter notebook.
+00:26:14 Speaker 1
+I.
+00:26:59 Speaker 7
+Question Peter, um.
+00:27:30 Speaker 1
+I'm not sure. 
+00:27:41 Speaker 8
+What you mean.
+00:30:49 Speaker 8
+I am not a good person.
+00:31:19 Speaker 8
+I'm not sure what you mean.
+00:31:49 Speaker 8
+I am not a good person.
+00:32:19 Speaker 8
+So. I'm not sure what you mean.
+00:34:15 Speaker 8
+I am not a good person.
+00:34:46 Speaker 8
+I'm not sure. 
+00:35:11 Speaker 9
+What you mean. I am not a good person.
+00:37:16 Speaker 9
+I'm not sure what you mean. I am not a good swimmer.
+00:38:00 Speaker 9
+I'm not sure what you mean.
+00:38:30 Speaker 9
+I am not a good person.
+00:39:00 Speaker 9
+I'm not sure what you mean.
+00:40:30 Speaker 8
+I am not a good person.
+00:42:00 Speaker 8
+I'm not sure what you mean.
+00:42:30 Speaker 8
+I am not a good person.
+00:43:30 Speaker 8
+I'm not sure what you mean.
+00:43:40 Speaker 8
+I am not a good person.
+00:44:10 Speaker 8
+I'm not sure what you mean.
+00:44:40 Speaker 8
+I am not a good person.
+00:45:10 Speaker 8
+I'm not sure what you mean.
+00:45:40 Speaker 8
+I'm sorry. I am not a good person.
+00:46:26 Speaker 8
+I'm not sure what you mean.
+00:49:26 Speaker 9
+I am not a good person.
+00:50:26 Speaker 9
+I'm not sure if I can do it.
+00:50:57 Speaker 8
+Okay. I am not a. 
+00:51:35 Speaker 9
+Good person. I'm sorry. I'm not sure what you mean.
+00:52:10 Speaker 9
+I am not a. 
+00:52:39 Speaker 8
+Good person. I'm not sure what you mean.
+00:54:10 Speaker 8
+I am not a good person.
+00:54:40 Speaker 8
+I'm not sure what you mean.
+00:56:14 Speaker 8
+I am not a good person.
+00:56:44 Speaker 8
+I'm not sure what you mean.
+00:57:44 Speaker 8
+Okay. I am not a. 
+00:58:14 Speaker 9
+Good person. I'm not sure what you mean.
+00:58:45 Speaker 9
+I am not a good person.
+00:59:15 Speaker 9
+I'm not sure what you mean.
+00:59:45 Speaker 9
+I am not a good person.
+01:01:16 Speaker 8
+Thank you. I am not a. 
+01:01:46 Speaker 9
+Good person.
+01:01:47 Speaker 8
+I'm not sure what you mean.
+01:03:17 Speaker 8
+I am not a good person.
+01:04:47 Speaker 8
+I'm not sure what you mean.
+01:05:35 Speaker 8
+I am not a good person.
+01:06:05 Speaker 8
+I'm not sure what you mean.
+01:06:35 Speaker 8
+Thank you. I am not a good person.
+01:07:10 Speaker 1
+Okay.

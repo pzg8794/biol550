@@ -1,0 +1,1076 @@
+00:00:00 Speaker 1
+These breakout rooms, have you folks go ahead and talk amongst yourselves a little bit. I'll give you a little bit of time to get settled in, then I'll stop in and just rotate through and see who has questions. So basically, it's going to be a team work day, primarily but a chance for you all to get some feedback from me. So I'm going to open these up as other folks come in, I'll add them to your groups.
+00:00:23 Speaker 1
+Oops. Also about how does that typically work? Is it is that information on your website like pricing structures or. 
+00:00:35 Speaker 3
+Hey Peter. How's it going?
+00:00:37 Speaker 4
+Good, how are you?
+00:00:39 Speaker 3
+Good. I was hoping to sleep eight hours or seven hours, and then it went down to six. But at least it didn't go lower than six. Yeah.
+00:00:55 Speaker 4
+At least break is coming soon. I don't know if you'll have break from work, but you'll at least have break from RIT.
+00:01:00 Speaker 3
+Yeah, I should I think elementary school has spring break too. I think so yeah. 
+00:01:06 Speaker 4
+Oh nice same week?
+00:01:08 Speaker 3
+Yeah, I think so yeah. 
+00:01:09 Speaker 4
+Oh okay cool that's good.
+00:01:13 Speaker 3
+Hmm, I hope so.... Heheheheh. I remember looking at the main website because I looked for the last. think it was last week, That that we had off, and I was kind of like no other school has. The time off, So I checked on the main website, and they said, like yeah, that and a spring break. They have it's funny because like RIT doesn't have that like the elementary schools they have AI. To like answer simple questions like that, which is helpful, right? Because sometimes at RIT, I had to go check calendar and like a PDF come on.
+00:01:56 Speaker 3
+What about you.
+00:02:05 Speaker 4
+Uh, what like plans for wait sorry, what was the question?
+00:02:10 Speaker 3
+No, What about you in general, like you're looking forward for while we're waiting for someone.
+00:02:16 Speaker 4
+Yeah I'm looking forward to break becauseum I am going to be touring University at Buffalo where I did get in for their PhD program. So I'm excited for that.
+00:02:26 Speaker 5
+Um and I'm going to Toronto with some friends so.
+00:02:30 Speaker 5
+Bro just grilled me for being a minute late. What? Really? Said bro just grilled me, he was like you're late.
+00:02:38 Speaker 4
+What did he say?
+00:02:40 Speaker 5
+Dude, it's a minute!
+00:02:43 Speaker 4
+You were 10 minutes late yesterday Sam, I don't want to hear it.
+00:02:48 Speaker 5
+Uh oh. 
+00:02:49 Speaker 4
+You were late back- to- back, do you blame him?
+00:02:53 Speaker 5
+Yeah, but they didn't do anything important. But whatever.
+00:02:59 Speaker 5
+Presentations. Yeah, but I feel like that was just for like people. It was more for them. But yeah, I guess being late's not okay, but.
+00:03:08 Speaker 3
+No, But like if you were to be late for any presentation, that was the presentation to be late.
+00:03:14 Speaker 4
+Right! We could have gone first what would we have done then? True.
+00:03:23 Speaker 3
+Soum, I think the only thing I heard him was like force, like talk to each other. Cash up right so, So what what you looking, what you're looking out forward to You're looking forward to the spring break? Also, someone.
+00:03:39 Speaker 5
+Ohum. Yeah, I'm. I am going to L A, to see my family so oh.
+00:03:51 Speaker 5
+Yeah, I I'm excited for we're gonna go to like the biggest aquarium in the north North America. I think yeah, it's in mon Monterey Monterey Bay or something like that. So it's cool and this degrees it's gonna be like seventy eighty degrees there. So. I'm excited.
+00:04:11 Speaker 3
+Yeah, I love California. I lived there for like four months. I think as a master, for i i was doing an uh co op there. And I I think I lived in Pasadena, it was close to L A. Yeah, I definitely miss the weather and hiking the mountains. Do you guys know what else we have in the calendar for Um, I guess it would be for the project right. I think we are done with the trap now.
+00:04:49 Speaker 5
+Yeah, we should be done. Theum, the last step was like visualization or just the output for diff uh cuffdiff. So, that's over with. So I'm guessing we're mimicking the same ones for our data set. Did he give us like a. 
+00:05:09 Speaker 4
+He just said it's group work today. That's all he said.
+00:05:12 Speaker 5
+So do we want to look at fast Yeah QC okayum, Do we wanna. How do we want to split it up? Do. We just want to like do likeum.
+00:05:25 Speaker 4
+I feel like we should maybe screen share and just go over it together.
+00:05:29 Speaker 5
+Yeah, yeah,
+00:05:31 Speaker 4
+Just cause I imagine he's gonna want to come in and talk to us about like our individual fast QCs, especially cause he was very curious about that yesterday, at least for all groups. So I feel like if we're all on the same page about what we're noticing, that'll be good I don't think we have enough time to like. Look on our own, reconvene before he comes into our breakout room.
+00:05:50 Speaker 5
+No. So do we do we want to oh sorry. No go ahead, go, you want to go. Okay. I was going to say, do we want to one of us screen shares and then we make a google Google sheet with all ten or all thirty of them. And then like make like a Google sheet that just, we canum for what are the subsections called. Like the, you know,
+00:06:18 Speaker 4
+I don't know what they're called, but I think I understand what you're saying.
+00:06:20 Speaker 5
+Let me make a sheet of all of them and then all the categories, and then look at what categories fail and then make sure to put all the runs in in order or at least in pairs. So that way we can see any trends. Let me start from there.
+00:06:37 Speaker 3
+Let me make sure that all thirty HTMLs are in the driveum and, In the meantime, you guys can work on um the Google Doc that you said. Um, Something that I was thinking. Uh, maybe it's about you and Nikki know. Uh it would be nice to know like what other people have done with similar data sets, right in terms of like tools, analysis and stuff that I have used just like papers or anything like that. I usually when I. 
+00:07:12 Speaker 3
+Getting to like project like this, we look at like previous work and how they did it, and try to like, you know get something useful out of it. If you guys have any idea. I think it would be great to reference some. Let me even the paper that we have I think it would be also a good reference. Let me check quickly uh that all the HTMLs are there.
+00:07:37 Speaker 5
+Soum are you saying that, We re you asking if there's any like specific like ideas that other groups did when analyzing? Qc, is that what you're saying?
+00:07:50 Speaker 3
+Oh no no no. Papers papers projects. If, you guys know or know how to find like similar projectsum or projects that work that have worked with similar data to ours, right. It would be good to see like how the professor go through, you know, the papers, right? How they like. Yeah. Yeah, exactly. It would be good to see how we can find that for our data, you know, for like for our type of data or project if that makes sense.
+00:08:25 Speaker 5
+Oh, oh, you mean like just just mimic uh mimics RNA seq I think that's the point of the shrapnel. But I'm guessing, you mean like another one, but okay.
+00:08:34 Speaker 3
+Yeah, like later. Um, uh, yeah stuff. Yeah. Because like I asked a question, I think he meant, she said, and I don't know if you guys remember. I asked a question for QC for our data set. And he said, that is like you can do that with human. Um right um I don't know if that's the right terminology uh with human type data set. But not for animals. Let me ask a question. Thezebra fish is considered like the animal type, right?
+00:09:07 Speaker 6
+I'll be right back.
+00:09:10 Speaker 3
+Oh, sorry Peter, what? Thezebra fish is considered like the animal type.
+00:09:19 Speaker 5
+Um, yeah, it's the organism.
+00:09:21 Speaker 3
+Yeah, right.
+00:09:22 Speaker 5
+So so or do you mean it's like a model organism?
+00:09:26 Speaker 3
+You got you got it correctly. So then then the stuff that he went over, At least the ones I asked questions about, um, Would know like would not be like would not be a fit to implement in terms of QC. Um, Like the papers, because I remember, he went over those and I wanted to know like if it like that, that would be a good approach for us to like kind of like get inspired to do certain do QC on our data. And he's like, well, if you're using human. Um.
+00:09:59 Speaker 3
+Let meum just make sure quickly that we have that data in there.
+00:10:07 Speaker 5
+Well, we went over the QC last time like that one night so, we should have everything right because we should have double checked then. Um. 
+00:10:16 Speaker 3
+We we do have the data in the server. I'm saying in the driveum just to make sure that we have all the HTMLs in there in the drive, but we do have it in server. Yeah, all of it.
+00:10:28 Speaker 3
+I just wanna make sure you, okay, if you guys are gonna look like at the HTMLs, I wanna make sure that. Let's see. Okay, so eight thing are missing. Let me uh let me uh transfer it. Let me paste it there. Okay, um. 
+00:10:59 Speaker 3
+Because I have it on my local already. Oh, you know what? That's what I'm going to do. I'm just going to just import all of them and I know that when I do that, it'll ask me to skip and I'll just do yes, skip the ones that are not there. The ones that are there already. Let's see.
+00:11:29 Speaker 3
+It has to be how many. Did. 
+00:11:32 Speaker 7
+You so count? Why don't you count? I don't like when he does. Anyways.
+00:11:46 Speaker 3
+Oh yeah, sixty. So replace the sixty item, keep whatever, replace it then. Who cares?
+00:12:00 Speaker 3
+There you go. So, so they're all they're all there now. So we have all 60 in the drive. Uh, so we've got 60 um HTMLs in the drive because we had 30 runs, right? So it generates because it's a pair. So it generates uh an HTML for each one. Um, Now, You know what we could do that, you said that it would be a cool thing. We could also create like the subgroups that you wanted to and look at them separately. You want to do that?
+00:12:35 Speaker 4
+Okay, sorry I'm back. What were we saying?
+00:12:38 Speaker 3
+No, I remember Samwel was talking about like, you know, like subgrouping the Yeah. The QC right? We can do that and look at them look at them in subgroups. You know, like the same thing we did for overall. Look at them in subgroup and see if itum something stands out.
+00:12:53 Speaker 4
+Yeah. Yeah, we can do that Okay.
+00:12:57 Speaker 4
+Let's. I still think we should view them like all together as a group, but we can start doing like an analysis based on like their conditions. Yeah,
+00:13:06 Speaker 3
+Yeah. What were you thinking about? Um, we can. 
+00:13:14 Speaker 5
+So I'm trying so I made a metadata table. Mhm.
+00:13:22 Speaker 5
+In The same file as the HTML. So my idea is break down. Oh,
+00:13:29 Speaker 3
+I see, I see. Yeah, okay.
+00:13:31 Speaker 5
+And then yeah, okay. So so that's dirty. So I'm trying to break down. So that's all the metadata from NCBI and then I'm trying to do the QC metadata. On the right of that, but I am trying to split the rows within each in two. For each okay,
+00:13:54 Speaker 3
+I can do that. So question when you say you are trying to book Q C, you mean the link to the Q C.
+00:14:00 Speaker 5
+No no. So likeum for instance, um uh, where is the H T M L fileum one second uh.
+00:14:17 Speaker 5
+Twenty twenty five, twenty six. Um, what is this semester Okay, so. For instance, you have. This I'll post it in the Slack. Um, Actually I'll just do it on the Zoom because it this. No,
+00:14:41 Speaker 3
+The Slack is better because that way we keep track of it. Um.
+00:14:46 Speaker 5
+Well, okay. It's it's not like um. Crazy, but here okay so. See these see these. Uh categories like basic stats, stats per base sequence quality, All that mhm so I think what we should do is that we should do. That's the Q C metadata that I was trying to say is that we make the table. So we have the thirty, we to the right of it. We split the rows into two based off, you know, first and second strand, or first, yeah first strand. Second strand, and then we do QC. But instead of like putting any data, we just do um we just highlight the cell either green yellow or red. Okay. Um I mean it. It's a I got it basically what. 
+00:15:43 Speaker 5
+Lily did with the heat map. Yeah.
+00:15:50 Speaker 4
+When we can use a tool to make heat maps for us, I don't know if we should go through and make our own heat maps.
+00:15:56 Speaker 3
+I was actually thinking to just use a tool to do what some of the folks in our group did. Yeah,
+00:16:00 Speaker 4
+I don't think we should spend time on like doing the heat maps ourselves. I like the idea of compiling all this information. But even then, I don't know if he's expecting that much. I think he's still just wanting us to like look through and make notes of anything important rather than compiling everything. I really think we need to start looking through the fast QC files.
+00:16:19 Speaker 3
+Yeah, he did emphasize should look into the runs individually, like the problematic ones that we found. Um, look into them individually and see if anything stands out. He did emphasize that yeah.
+00:16:34 Speaker 5
+Which ones do we want to start with then?
+00:16:36 Speaker 3
+There's aum unless he mentioned something else, Nick. Did he mean the ones for the forum my gosh, what was the thing you were talking about, Nick?
+00:16:51 Speaker 4
+I think he wanted to look at the fastQC outputs like the little HTML files.
+00:16:56 Speaker 3
+Yes, butum for like uh, And correct me if I'm wrong, didn't he mean for like the individual runs that that were in the red, meaning uh fail uh that had the failures for. Oh okay yeah I remember now for theum. Cause,
+00:17:13 Speaker 4
+If we're looking at the duplication ones and we have odd ones where everyone else only had G's. But we also had T's and I know one of our samples has likeum a duplication of like an actual sequence, not just oneum nucleotide. So. We should look for those and see which ones they were and understand why. I also think we need to confirm that the sequencing tech that was actually used was, um, the newest Illumina machine rather than some other machine. Because when I checked the paper yesterday, I didn't see a mention of Illumina. It could just be listed somewhere else, but I think we should confirm that.
+00:17:49 Speaker 3
+Yeah, let's confirm that first actually. I think that's uh important. Yeah who who wants to confirm that?
+00:18:00 Speaker 3
+Um. I don't mind if you guys want me to, um, but I was going to work on the heat map as well.
+00:18:10 Speaker 5
+Nikki, do you want to confirm that? I can we can do that.
+00:18:14 Speaker 4
+I don't know if we need to do the heat map this very second. First let's just again look at the individual ones because I. 
+00:18:20 Speaker 3
+Oh okay, I can get the yeah. No, i was saying it. I can get individual runs.
+00:18:27 Speaker 3
+Um, for us to look at. You want me, you guys want me to do that?
+00:18:32 Speaker 4
+If you want to pull up the individual runs and start screen sharing, I think that's a good idea. Yeah. Um, in the meantime, I can try and hunt around to see what sequencing machine was used.
+00:18:40 Speaker 3
+Yes. Yeah, I mean, they're I mean like the the idea of individual runsumum and then we can, you know, do whatever you guys like we can look at them all together, or you know, however, however, you think. I can get the I can get the the the the idea of the runs.
+00:19:00 Speaker 4
+Yeah, that works too. Sam, do you want to pull up the individual files then?
+00:19:05 Speaker 5
+Um yeah, I just I just was looking at the metadata. It says instrument Illumina NovaSeq sequencing X Plus.
+00:19:12 Speaker 4
+Oh okay so you checked the machine?
+00:19:13 Speaker 3
+Nice okay perfect.
+00:19:15 Speaker 5
+Yeah it. Yeah, it's in the metadata. Um yeah,
+00:19:18 Speaker 3
+That's a right place to look at. That was smart. Okay,
+00:19:22 Speaker 5
+Wait. Soum.
+00:19:27 Speaker 5
+You want to pull up the runs and do what?
+00:19:30 Speaker 3
+Get the IDs of the runs uh that are with the duplicates that uh that are in the fail. Uh so. Oh okay okay.
+00:19:38 Speaker 5
+Uh gotcha gotcha okay, yeah I can do that I can do that That'sum.
+00:19:45 Speaker 3
+I can do that quickum like, I have a list in here uh it was in the table, I can just double check. 
+00:19:56 Speaker 5
+Well, Are you doing it through? Are you doing it manually because programmatically,
+00:20:00 Speaker 3
+It's in the notebook that I share with you guys. The IDs are there.
+00:20:04 Speaker 5
+Okay, We canum I mean, you can do that while I I'm manually like,
+00:20:10 Speaker 3
+Oh, yeah yeah yeah, verify. Yeah, that's actually. Yeah, that's a smart. Yeah, that's I,
+00:20:14 Speaker 5
+Just I. Don'tum I'm not. Uh I don't trust.
+00:20:19 Speaker 3
+No, Well, usually that's what you should do. I like the rule of thumb for like engineers is that you check the first one and the last one, and if they're good, More than likely, you are at least ninety ninety nine, more than ninety percent right. Sorry guys, let me mute myself.
+00:21:43 Speaker 4
+Okay, I might have missed it, but who is pulling up the individual HTML files?
+00:21:49 Speaker 3
+Um. We're just getting the IDs quickly, like you know two minutes. Uh Samo's gonna validate them. Uh maybe he'll take I'll allow five minutes and then I'll pull the HTML. Well.
+00:22:04 Speaker 4
+I mean I can do it too,
+00:22:06 Speaker 3
+Yeah you can do it because it's so loud here.
+00:22:07 Speaker 5
+Yeah here I canum Nikki we can, Oh, you want to do, you want to split it or do you want to. Yeah, let's split it into two.
+00:22:17 Speaker 4
+Again, I feel I don't know. I feel like it might be better to just have one person have them all up. So that way it's just easier when Doctor Oser is in the room and asking us questions about it.
+00:22:26 Speaker 5
+Okay, I'll I'll pull it up then.
+00:22:27 Speaker 4
+I'm kind of just thinking about this in terms of how we talk to Doctor Oser about it less because I really want to get his more like individual feedback. Yeah, Okay.
+00:22:51 Speaker 5
+Do you see my screen. Hello. Yes. Yes. Yeah, alright so um I don't know if it's faster for me to, um update.
+00:23:22 Speaker 5
+The Excel file, the sheet. How, do you want to do this? You want to you want to look at them at pairs? And then you just write it down Nikki.
+00:23:34 Speaker 4
+Yeah, that wouldn't be a bad idea. Um, if you can give me one second.
+00:23:41 Speaker 5
+The Google so the Google. 
+00:23:43 Speaker 4
+Sorry I'm just making myself coffee right now.
+00:23:46 Speaker 5
+Okay no worriesum soum yeah, I put the metadata sheet into uh theum the QC folder. I'm not sure how to split it because that's 30 and these are 60. So like, is there a way to split all the cells to the right of it? You know what I mean?
+00:24:11 Speaker 3
+If you want to split the cells, um I can do that. It's basically repeat that cell twice.
+00:24:20 Speaker 3
+That's, that's uh, that's basically how it when you want to like uh flat something into you, basically repeat it. You want me to do that?
+00:24:31 Speaker 5
+Um, Can you just do can you do it like once in the Google sheet,
+00:24:36 Speaker 3
+Like where I know what sheet. That's what I'm saying.
+00:24:39 Speaker 5
+Yeah yeah, Can you just yeah do it and see if if we're talking about the same thing?
+00:24:44 Speaker 3
+Because yeah, I'll do it once here.
+00:25:06 Speaker 5
+Oh, you mean like that. Okay. Um.
+00:25:12 Speaker 3
+That's how that's how you flat aum dataset has like basically almost everything. But then is it happens to have only one attribute that varies.
+00:25:34 Speaker 7
+Oh okay.
+00:25:41 Speaker 5
+Is there is there a way to do all of them. At the same time, or do you have to. Yeah.
+00:25:53 Speaker 3
+Yeah, let me download the the sheet.
+00:26:04 Speaker 5
+This is one second. This is kind of likeum, are you looking at the sheet?
+00:26:09 Speaker 5
+I I kind of want to just do this? And then combine these? Is there a way to combine this. Is is there. 
+00:26:22 Speaker 3
+Let me see combine what, oh, the two rows?
+00:26:26 Speaker 5
+Do you see what? I'm yeah I want to combine just those two sections, not the full rows, just A through L. So that way on the right,
+00:26:34 Speaker 3
+Yeah, you can do them I would do them at the end though.
+00:26:39 Speaker 5
+No, I don't want them at the end because no,
+00:26:40 Speaker 3
+I said I would. I would combine each one at the end, meaning when you're done, because uh, this will make it hard to. Um but yeah, you can combine and I know what you mean, like have all of them. One row, yeah. Yeah.
+00:27:08 Speaker 5
+Uh Nikki are you almost. Almost done. Yeah.
+00:27:22 Speaker 7
+Some group. So twenty. 
+00:27:35 Speaker 5
+Four am I doing this in order?
+00:27:40 Speaker 5
+What is this This is. Okay, these. This is twenty four eleven, okay These are in order. Okay, gotcha. Twenty four eleven and then how come there's twenty four ten We don't have twenty four ten Do. We not have twenty four ten.
+00:28:23 Speaker 7
+Is that a problem?
+00:28:28 Speaker 5
+What are you looking for? Um, I'm looking at the SRR ID names. This is twenty four eleven. It's our runs. Um, on on the NCBI it starts with twenty four ten, so I'm looking for twenty four ten.
+00:28:47 Speaker 5
+Like I'm trying to verify. Cause this is they have 10, 11, 12, 13, 14, 15. They have ten twenty four ten through twenty four thirty nine. Um so that's. 
+00:29:20 Speaker 7
+That's 30, right? But what what the hell is this?
+00:29:50 Speaker 5
+One second, I'm gonna re I'm gonna re download the uh HTMLs because it looks like I maybe downloaded the wrong. Well, not the wrong, just at the wrong time. Um. Alright, one second.
+00:30:19 Speaker 4
+Sam I don't haveum I don't have one ending with ten either.
+00:30:28 Speaker 5
+Oh, when you downloaded, yep, that's strange. 
+00:30:44 Speaker 4
+Here. Sam let me share my screen. I have everything pulled up.
+00:30:56 Speaker 5
+Oh, do I need to stop sharing? Okay.
+00:31:07 Speaker 4
+Okay. Cool. I have all the files pulled up. Um, the order the files are pulled up in is in alphabetical order. So that means all theum. 
+00:31:20 Speaker 4
+All the uh samples and their replicates should be paired together.
+00:31:26 Speaker 5
+Okay, um, one second. Let me do split screen so I can do that. Um,
+00:31:35 Speaker 4
+Okay, actually nice. The very first one actually has the overrepresented sequence T.
+00:31:52 Speaker 5
+Alright. Um, so what data set is this? This is eleven?
+00:31:56 Speaker 4
+Yeah, this is eleven dash one.
+00:31:59 Speaker 5
+Um, well I'm trying to figure out if we don't have ten, If we don't have ten, how how is that Is eleven that we have downloaded actually ten on their site, like how how do we It could be.
+00:32:14 Speaker 4
+It could've just been some kind of mislabeling issue. Unless like all of them are off or something, I think it's fine.
+00:32:22 Speaker 5
+Well, Can you can you look atum what's can you look at your library for a second or your directory? What you you should have ten through thirty nine. So is it like I don't,
+00:32:32 Speaker 4
+I have eleven through thirty nine.
+00:32:33 Speaker 5
+You have eleven through thirty nine?
+00:32:46 Speaker 7
+Where are you seeing the ten.
+00:33:16 Speaker 7
+I'm taking a look right now.
+00:33:46 Speaker 4
+So does that mean our fast QC output only has twenty nine? Is that what you are saying?
+00:33:52 Speaker 5
+No, Cause the H, the QC folder that we downloaded like the actual in the semester project, the QC. If you do control all, it's. Shoot, why why is my thing? It's sixty, which means T here is thirty, like see the. There's ten. There's number ten, in the QC data. Like if you look it on the Google Drive, it says twenty four ten. It's just when we download.
+00:34:42 Speaker 5
+No, like it's on the server too because we downloaded it from the server. It's just when we download from Google Drive onto our own, onto our own machines, that's where it'sum.
+00:34:57 Speaker 4
+Why are you downloading it from Google Drive?
+00:35:01 Speaker 3
+I updated. That's why. I updated so all sixes are there.
+00:35:10 Speaker 5
+Yeah, I mean it doesn't matter where we downloaded it from. Yeah. Did you uh Nikki, did you download it from the. What,
+00:35:15 Speaker 4
+Do you mean that it's different on the drive and on theum server though?
+00:35:20 Speaker 5
+No not on the server, in your directory. Like you see how you're starting with twenty four eleven? Yeah. If you go into the Google Drive where we have all the HTML files, It starts with twenty four ten and twenty four ten is what the NCBI had. And obviously, it's on the server. I'm just saying when we download from Google Drive onto our own machines, cause that's what you're looking at now. There is no twenty four ten.
+00:35:44 Speaker 4
+The same I downloaded this from the server, not from the drive.
+00:35:50 Speaker 5
+Okay, so why isn't there no twenty four ten on the server?
+00:35:53 Speaker 4
+Maybe we did download it at the wrong time then. Um. 
+00:36:03 Speaker 3
+Let me let me check what you guys are talking about.
+00:36:26 Speaker 7
+Oh shoot. 
+00:36:27 Speaker 5
+I need to do VPN.
+00:36:41 Speaker 7
+It's not letting me. Oh there we go stop sharing.
+00:37:11 Speaker 7
+No, that was minute. I got it. I got it.
+00:37:50 Speaker 5
+Um Peter are you looking into it or what.
+00:37:54 Speaker 3
+Don't worry I am continue.
+00:38:01 Speaker 5
+But, we gotta make sure that we're dealing with the right files I feel. Or are we just gonna assume that eleven is eleven then.
+00:38:08 Speaker 4
+No the when I downloaded it.
+00:38:18 Speaker 4
+When I downloaded it again from the server, I did get ten. So I don't think there's an issue anymore.
+00:38:24 Speaker 5
+Gotcha. Okay. Um,
+00:38:26 Speaker 4
+Can you please look at theum actual files now because I want to have something to discuss with him when he comes into our room or else he's going to say, why are we not doing anything?
+00:38:34 Speaker 5
+Yeah, no, we can start. I just like, U h, we gotta, we had to figure that out. Um okay, um. 
+00:38:54 Speaker 5
+Okay, Um let's go. So what what are we looking at twenty four,
+00:38:59 Speaker 4
+Just give me one second I'm gonna pull everything up again. Okay.
+00:39:08 Speaker 7
+I've never, I've never.
+00:39:47 Speaker 7
+Yeah, we're yellow.
+00:40:19 Speaker 4
+Okay, Here is one of the sequence duplication levels that has an overrepresented sequence. That's not just like a single nucleotide duplicate. It's saying this whole sequence.
+00:40:39 Speaker 3
+Okay, so okay, I confirm they are identical. So there's no issue. No issue?
+00:40:51 Speaker 4
+Well, Between the HTMLs and the drive and the and the server. Oh yeah, no. Peter, We figured that out. Um I I think I might have downloaded it at the wrong time because after I downloaded it again from the server, I had everything. So now we're just looking at the HTML files.
+00:41:06 Speaker 3
+Well double check anyway. So okay, yeah, great We can breathe. Um I got that table too. Uh let me let me put in the notebook. You guys continue, then i'll share.
+00:41:19 Speaker 4
+Okay. So okay,
+00:41:21 Speaker 5
+So we're just looking at duplication, and then we're looking at this one's at ten. Strand one at ten right?
+00:41:30 Speaker 4
+Hold on, sorry the taskbar is blocking my view. Okay there we go. Um yeah this is ten dash one.
+00:41:41 Speaker 5
+Okay gotcha soum. 
+00:41:45 Speaker 5
+Let yeah, Let's just go through all of them. And then we're just going to look at duplication levels.
+00:41:50 Speaker 4
+That's the main thing that's showing up because we went over yesterday that GC content likely isn't an issue. Um, Per base sequence content coming up as an issue makes sense if we have sequence duplication level issues. So mainly we want to look at is sequence duplication because again, as you went over yesterday, we've gone over why the T- duplication is likely fine. Or sorry, G duplication. But, we also have the T duplication, and then we do have some overrepresented sequences. So, we need to figure out how many of those have an issue and how concerned we need to be. Um. So this one has like an actual like sequence issue, or it's like beyond just the duplicated nucleotide and I think based on the location, it does seem to be.
+00:42:46 Speaker 5
+What's The difference between duplication, uh, total sequences and duplicated sequences.
+00:42:55 Speaker 4
+So that's what I'm trying to figure out I'm not entirely sure how to interpret this graph.
+00:43:21 Speaker 4
+Peter, Do you know how to and do you understand how to interpret theseum the sequence duplication level graphs? What was that question? Do you know how to interpret the sequence duplication level graphs?
+00:43:33 Speaker 3
+Oh uh let me look at it hold on sorry. I look at it uh if I remember correctly so.
+00:43:48 Speaker 3
+Sequence duplication levels. All right, total sequence duplication. Yeah, okay. Um.
+00:43:57 Speaker 4
+Hi Dr. Osher. Hello, how's it going? Good, how are you?
+00:44:01 Speaker 1
+I'm doing okay.
+00:44:04 Speaker 4
+Um, we pulled up. We had a bit of an issue where we were missing some of the HTML files at first. So we had spent some time trying to figure that out. But now we're all set. And we're looking at the HTML filesum but I was just. So, we were mainly deciding to look at the duplication levels since as we discussed yesterday, the G duplication seems to be normal but the T one is weird. Um, I haven't found like I said, We just started looking at the HTML files. So I haven't found a file that has theum T duplication yet. But this one has a sequence duplication, and the sequence is like Is it an overrepresented sequence? Yeah.
+00:44:41 Speaker 4
+It's not it's like a sequence not just replicated nucleotides.
+00:44:45 Speaker 1
+Yeah, it's just an adapter sequence. So what you need to do is adapter trimming. Mhm. Um, so you can either use fastx or fastp for that. And both of them can trim, they have standard libraries in their database. So, what you would do is just run that program and it'd clean out the adapters, then rerun FastQC on. 
+00:45:04 Speaker 4
+That output.
+00:45:05 Speaker 1
+And let's make sure that it cleans it up right, right?
+00:45:09 Speaker 4
+Can I also get a clarification on how to interpret the sequence duplication level charts?'Cause I know yesterday we were discussing.
+00:45:17 Speaker 1
+Yeah. There's no single answer. So the group I just came from, they actually have similar duplication levels. Um,
+00:45:27 Speaker 1
+Very Similar to what we have on the screen there. And in their case, We went back to the paper that was published on it, and it turns out there was targeted enrichment. So that makes perfect sense. They're actually targeting certain families of genes. So it's a little different kind of an RNA seq experiment, uh, and so that's where I was told they would expect it. Now, is there a paper associated with your data?
+00:45:49 Speaker 4
+Yes, there is a paper. I can Yes,
+00:45:52 Speaker 1
+Pull up the the It's in theum Nikki. It's in the Slack if. 
+00:45:58 Speaker 5
+Okay. That's a quicker way to do it. There are two genes targeted in our uh experiment if that. 
+00:46:08 Speaker 1
+Clarifies: Are genes are targeted, or are they sequencing more than two genes? Because if it's just two genes, there's a problem with the data set.
+00:46:14 Speaker 5
+Uh, no, it's probably not just two genes then. But I just know there's two types of genes that there'sum knockouts. There's two gene type of knockouts. Oh,
+00:46:28 Speaker 1
+That's that's not enrichment though; that's different. That means they knockout the gene, and they're looking at what happens with the rest of the genes in the cell. And there are many other genes in the cells, so we should see some differences.
+00:46:40 Speaker 5
+It's in publication, yeah.
+00:46:42 Speaker 4
+Yeah, I it's just making me log into Slack again,
+00:46:45 Speaker 5
+So okay.
+00:46:47 Speaker 4
+You get to do it this way.
+00:46:48 Speaker 1
+I'll send you a link materials and methods. Okay, wait is this a Nature paper? Okay here we go So okay I need a little bit larger. 
+00:47:03 Speaker 4
+Yeah, sorry. One second.
+00:47:05 Speaker 1
+That's okay. No worries. Okay, so hold on right there. I want to look at this and different knockouts clips amplified with our tPCR. Okay, So they're doing reverse transcriptase and. 
+00:47:23 Speaker 5
+Then the primers. 
+00:47:29 Speaker 2
+To Make it go around.
+00:47:29 Speaker 1
+Okay again, okay,
+00:47:32 Speaker 2
+Some overstraps.
+00:48:03 Speaker 2
+Cool and exciting, not just going around this way. Okay, so remember when you're connecting, you grab your device.
+00:48:13 Speaker 1
+All right, Luna was okay from any B interesting. Okay, scroll down a little bit and look at his name. Okay, let me see that next page right there.
+00:48:28 Speaker 2
+Oh, it's like a battle.
+00:48:33 Speaker 1
+Well, interesting. Keep going.
+00:48:44 Speaker 4
+You know, when I was looking at this paper yesterday. Yeah?
+00:48:48 Speaker 1
+Were you saying. Sorry?
+00:48:50 Speaker 4
+Well, yesterday when we were talking about what. Sam, this is the right paper, right? Yeah. Okay, that's what I thought. Um,
+00:49:05 Speaker 4
+When We were trying to figure out whatum sequencing like machine that it used, because I wanted to confirm that it was Illumina like the other groups have been having. It didn't actually mention it in the paper. We went to the metadata to find that. Which I thought that was interesting.
+00:49:20 Speaker 1
+Yeah, you might have to check the record on. 
+00:49:25 Speaker 1
+I start with the projects and work out from there to see how they did the RNA C analysis. Because it's not in this paper. I think this is probably a preliminary paper that came before that. There's supplemental,
+00:49:37 Speaker 5
+Yeah, there you go.
+00:49:39 Speaker 4
+But these are just figures. Does it give the methods in here?
+00:49:42 Speaker 5
+Sometimes they do that. Think at the bottom. 
+00:49:49 Speaker 2
+Oh no,
+00:49:50 Speaker 5
+Those are just.
+00:49:51 Speaker 1
+No, no, In the paper you were showing me before, did they say anything about RNA- seq in this? RNA sequences, but that's not the same thing. RNA- seq is one word, no space. No space in it.
+00:50:13 Speaker 4
+Oh, no space? Okay. Yeah. Oh, there we go.
+00:50:17 Speaker 1
+There we go. Wait, hold on.
+00:50:25 Speaker 1
+So they're talking about two other references for the RNA seq. References 13 and 14 here, I think. Let's see what the next RNA seq reference is. Do a search. It's down here. Yep, single cell. Single- cell RNA seq. Ooh! And that would be data you wouldn't want to be messing with. Okay! Let's do bulk RNA Seq. 
+00:51:03 Speaker 6
+Those are figures.
+00:51:14 Speaker 1
+Keep Searching for Ernie. See, let's see what else comes up. Nope, keep going.
+00:51:20 Speaker 1
+Next One, okay.
+00:51:22 Speaker 2
+This block right here. Okay? So you should use a couple of these. Remember when we were doing our starting line to finish line gap again? This was a block that you had to go forward. You chose an amount of speed.
+00:51:37 Speaker 1
+Hmm. What are citations thirteen and fourteen? Go way down for references. Thirteen. Okay, I want to see the titles, oop, don't move, Thank you.
+00:52:03 Speaker 1
+I Wonder if those papers have information on your data set.
+00:52:09 Speaker 1
+They're The same research group, they're both Goldman.
+00:52:14 Speaker 1
+Yeah, I would take a look at those two papers and see if they have any information about the RNA seq analysis because I'm not seeing it in this one.
+00:52:21 Speaker 4
+Yeah, that's what I was struggling to find when I looked at this paper yesterday. That's 13.
+00:52:32 Speaker 1
+You have too many tabs.
+00:52:34 Speaker 4
+Uh, those are all the HTML files.
+00:52:37 Speaker 1
+That's crazy. All right, let's try these papers on materials and methods and see what we get. I'd say just keep going to the RNA seq stuff. Yeah. 
+00:52:52 Speaker 1
+So go ahead. There we go. Okay, let's see. Um, hold on. Just okay, scroll down. Keep going. Let's get out of this table. Okay, There we go Three models, RNA seq and DNA seq bingo. 
+00:53:16 Speaker 1
+That Might be it Yep.
+00:53:19 Speaker 1
+Does that geo accession number you see near the bottom of the screen, does that match yours at all?
+00:53:32 Speaker 2
+Put it in the NCBI.
+00:53:37 Speaker 1
+Yeah, if that's the same project, then it looks like it's a standard RNA- seq experiment. Um.
+00:54:09 Speaker 5
+Oh, There's a bio project. Oh.
+00:54:11 Speaker 4
+I'm checking the name of this, sorry.
+00:54:22 Speaker 1
+Yeah, if you find the either the project or the geo numbers match, then that's the right paper for that data set. In which case it's just a standard RNA seq experiment. That's not a thing.
+00:54:34 Speaker 5
+Yeah, I didn't think so. No.
+00:54:37 Speaker 5
+Oh yeah,
+00:54:38 Speaker 1
+They got less samples here, don't they?
+00:54:39 Speaker 5
+Yeah. Also I think I saw that this was a two thousand seven Oh Then that. 
+00:54:48 Speaker 1
+Your data sets from two thousand seven?
+00:54:50 Speaker 5
+No this data says, The twenty,
+00:54:53 Speaker 4
+The papers from twenty twenty.
+00:54:55 Speaker 5
+Yeah, okay. Wait, can you go to materials and methods again Nikki? Yeah. Um. Wait wait, uh, scroll up to the top of that table. I said something about the source. Oh, source of reference, never mind.
+00:55:15 Speaker 1
+Yeah. That's that's where they got the samples from. Okay. So.
+00:55:20 Speaker 4
+I can also check the other paper. I'm actually less confident that. 
+00:55:24 Speaker 1
+This is one of us. That's 21. Yeah. Uh, free full text on PMC. Then materials and methods, yep, and then let's see what we get. Can I get any? Oop! There we go! Hang on a second! Ooh! Okay. Uh,
+00:55:53 Speaker 5
+Kind of sounds like. Yeah.
+00:56:08 Speaker 1
+It's Not enriched so, um.
+00:56:14 Speaker 5
+Shouldn't we confirm that it's the same before?
+00:56:18 Speaker 1
+Well, in all the papers we're looking at, they're not doing specific gene enrichment. So I mean definitely should look to see if it's the same dataset. Um let's go back to the FastQC file though. Okay what does the rest of it look like? I see per base sequence content got a warning. That's fine. Uh and I'll show you what I'm looking for. You get a little bit of rise in Gs at the end, but this did this have a poly G in it?
+00:56:49 Speaker 1
+In overrepresented sequences. This. 
+00:56:52 Speaker 4
+One had this sequence.
+00:56:54 Speaker 1
+Interesting. Okay, but it still has the adapters in there, yeah? The universal adapter, yep. So okay, That could be why you're getting this change, though, where you're see how there's a it went from fairly steady to your A's and T's are dropping and G's and C's are rising. Um I'm going to guess that this is because of your adapters being in there. So once you do adapter trimming it should clear that out, Let's see how it looks after that.
+00:57:20 Speaker 4
+All right.
+00:57:22 Speaker 1
+Okay. I'm going to get to another group, I guess, some other question.
+00:57:25 Speaker 4
+Um, now that I think about it, just a brief one. I think this. This is one of theum files the FASTQ files that had the repeated T's as opposed to the G's?
+00:57:38 Speaker 5
+Ooh Isn't this the poly A tail that just. 
+00:57:45 Speaker 4
+Was It T's or G's that we said were fine?
+00:57:47 Speaker 5
+Probably T's at the bottom. Okay. Well, G's, T's, and it's a lot of them. We said, were fine and T's were those are Ts.
+00:57:55 Speaker 4
+We wanted to confirm the location.
+00:57:56 Speaker 1
+Both things you have to trim. Yeah, they're both things you have to trim. So another thing you could do after after trimming is trim anything with say, 25 or 30 Ts in a stretch. Uh trim those outum because those are probably poly A tails, okay.
+00:58:18 Speaker 5
+Wait, did we go over the difference between total sequence and duplicated sequences? I'm not sure.
+00:58:26 Speaker 1
+Yeah, wouldn't worry about that right now. Okay. Basically that's asking you to do this stuff. Um, The red one is saying, if you deduplicate or remove anything where there's identical sequences, here is what you're left with. The problem is, It'd be 13. 8% or 13. 9% of your original data. You'd be losing almost, what is that about eight? Uh, seven eighths of your data would be removed. So you only have one eighth the fragments left. So that would be bad.
+00:59:01 Speaker 4
+I see what you're saying, okay.
+00:59:03 Speaker 1
+Yeah, In this particular case, I'd say that I'm a little concerned about this one with those uh poly T's Let's see what it looks like after trimming All, right?
+00:59:14 Speaker 1
+I'm worried this this uh this specific raw data file may be an issue. But, let's see if we find any other patterns in the fastQC results as you look across samples too.
+00:59:27 Speaker 4
+All right. Good to know, thank you.
+00:59:29 Speaker 1
+Cool, sound good? Yeah. Awesome, and we keep cycling through.
+00:59:33 Speaker 4
+All right, great. Are we sure this, You need to find that paper. Are, you sure this is the paper that it was because it looks different from what I was looking at yesterday.
+00:59:53 Speaker 5
+This is a paper that we, that has all the same authors as uh.
+00:59:59 Speaker 4
+Oh maybe I was just looking at this version of it.
+01:00:05 Speaker 5
+Yeah, that's the same thing, right?
+01:00:14 Speaker 4
+Yeah, it doesn't mention. I don't know why it doesn't mention Renee's seat.
+01:00:26 Speaker 5
+Is it data materials andum maybe associated data?
+01:00:35 Speaker 4
+So that's what we were just looking at. They don't, I guess sometimes I might put methods in there, but if this an RNA like, I mean, I'm not saying this an RNA seq, But like it's pretty important to mention what you're doing for RNA sequencing in your paper. So it's a little odd they are not mentioning it. Oh my god. Oh. Oh, this paper is from 2022.
+01:01:09 Speaker 5
+Is this the same paper we have downloaded?
+01:01:11 Speaker 8
+It looks like it. Yeah.
+01:01:21 Speaker 4
+That means this isn't even like a preliminary paper.
+01:01:27 Speaker 5
+No, I guess this would be the last, this is like the last part, the concluding paper.
+01:01:35 Speaker 4
+So now I'm really confused.
+01:01:38 Speaker 5
+How, how would we even go about finding the so what there should be a different publication that describes RNA seq for our data? And then they use that data for this publication I. 
+01:01:52 Speaker 4
+I guess I don't know. It's really odd that they don'tum have the RNA seq information already in there. Um.
+01:02:11 Speaker 7
+Don't know exactly what to do then. Um,
+01:02:22 Speaker 4
+Maybe we find the bio project or a social number and go from there and see what else is listed because it's really weird that 13 because 13 and 14 are not have the same papers, but like reference 13 and 14, but.
+01:02:46 Speaker 3
+I think checking the weapons is a good idea to see if we can find something in there.
+01:03:14 Speaker 4
+Do, we have the accession number anywhere that we have been using before the S R I one.
+01:03:21 Speaker 5
+Uh what do you mean like the. The, S R P number.
+01:03:29 Speaker 4
+Whatever the accession number is do we have that anywhere.
+01:03:33 Speaker 5
+For the S R I or for the publication. S R I. Yeah, um. 
+01:03:52 Speaker 5
+Yeah, Peter. Um, the thing you sent in Slack that's that's whatum Nikki was looking at.
+01:04:25 Speaker 5
+U M Peter, did you end up making a duplicate like editing the sheet or no. Hello. Yeah.
+01:04:43 Speaker 7
+Hold on, I was looking at the reference. Let me let me check.
+01:05:20 Speaker 4
+Guys, I don't know if this is the same paper.
+01:05:44 Speaker 7
+The not.
+01:05:52 Speaker 3
+I'll copy and paste the right Andre.
+01:05:57 Speaker 4
+I don't think we found the right paper yesterday.
+01:06:04 Speaker 4
+Um, Cause the title is different.
+01:06:12 Speaker 5
+Yeah, no. The well, the verification we just we looked at the abstract. The summaries are the same. Yeah, the summaries are the same and the contributors are the same and so Yes,
+01:06:32 Speaker 4
+However I think though, The dataset that we're actually getting I think is an updated dataset and doesn't necessarily correlate with the previous thing.
+01:06:43 Speaker 8
+Okay. Um,
+01:06:45 Speaker 4
+Because see that, that being published in twenty twenty two and the data not being published until twenty twenty six is really odd.
+01:06:55 Speaker 5
+Isn't data usually public later?
+01:06:58 Speaker 4
+Four years later?
+01:07:01 Speaker 5
+I don't know. I don't know what the typical time is.
+01:07:04 Speaker 4
+It would not be four years.
+01:07:08 Speaker 4
+Okay. And I mean if anything based on this, the data is available first, then the paper is. 
+01:07:16 Speaker 4
+Especially because both of those have different geo accession numbers, so they're different projects.
+01:07:21 Speaker 5
+Okay, so I guess we have to start looking forum the original Publication.
+01:08:23 Speaker 5
+I'm Looking at the same page. I don't, I don't even know if if this isn't it, then.
+01:08:30 Speaker 4
+I don't think there's the paper out yet associated with this.
+01:08:34 Speaker 7
+Because even the geo accession number it says that there's a citation missing. Why would it say citation missing if there is a twenty twenty two paper.
+01:09:05 Speaker 7
+I'm so frustrated.
+01:09:35 Speaker 7
+The film was shot in the United States and Canada.
+01:10:07 Speaker 7
+The city is located in the central part of the island, on the coast of the Gulf of Guinea.
+01:10:53 Speaker 7
+I Don't Think so.
+01:11:12 Speaker 7
+I'm going to go to sleep.
+01:11:43 Speaker 3
+Check the second tab. Someone, see if that's what you were expecting.
+01:11:52 Speaker 5
+Second tab.
+01:12:06 Speaker 5
+Oh, What does FastQC fail mean?
+01:12:20 Speaker 3
+Yeah. You're asking me what does fail means?
+01:12:24 Speaker 5
+Yeah, it's QC fail. Why why is there a red thing with fail?
+01:12:27 Speaker 3
+Means failure. I'm not sure I understand your question, sorry. Like. 
+01:12:35 Speaker 5
+What What is it considering?
+01:12:41 Speaker 3
+Oh, you mean where did it fail?
+01:12:45 Speaker 5
+No, I mean, why does it say fail? Like what is it taking into account when it determines if it fails?
+01:12:50 Speaker 3
+The HTML says it fails.
+01:12:54 Speaker 5
+The HTML doesn't say the whole thing fails. It says different sections fail.
+01:12:58 Speaker 3
+No, but wait. Is there I don't know. Is there such a thing as like a whole round fail? We haven't done that. I guess I'm misunderstanding.
+01:13:10 Speaker 5
+So like H T M L Nikki, can you go to um just a random H T M L file. Yeah so like see the sections on the left. Yeah those like some of those fail, but it's expected because of the different like, Ends of the sequences, which we're going to have to clean up, but none of them, none of the thirty runs or divided by two sixty. Um none of them. Like fully failed, they're not all just red. There's like some that are red and yellow, But it kind of makes sense just because of. 
+01:13:47 Speaker 3
+I guess I just didn't understand your question because it says, fail count in there and work count. Soum like this is not about whether the run fail or not, this is about whether the run has failures or no. So the whole failed thing here, if you threw you off, it's just basically to indicate that they have failures, not that I failed.
+01:14:10 Speaker 5
+So that column just says thatum it has failures. Yeah, It has well, that's a given. They're always going to have failures. There's no such thing as a perfect data set. So it's kind of like it's a redundant. Oh,
+01:14:23 Speaker 3
+That I didn't know. So okay, Yeah, You're talking to somebody that doesn't really deal with bio stuff.
+01:14:29 Speaker 5
+So yeah, it's it'sum it's a detail like fast QC is like it's like a no shit statementum.
+01:14:43 Speaker 4
+Yeah Okay. Okay, um, Can we call him over and mention that we don't have a paper because uh, all the work we're doing could be useless if he doesn't want us working on this project without a paper.
+01:14:53 Speaker 3
+Yeah yeah. Um remember there is a group that doesn't have a paper either.
+01:15:01 Speaker 4
+So do you think it might be fine then?
+01:15:03 Speaker 3
+I mean he didn't say anything then I was surprised I was like whoa. I guess you know one. It's good to confirm, but yeah, there was a group that said, Oh, there is not a paper because it's recent. So they haven't come up. Yeah, I think it was the Was it Was it the last group?
+01:15:23 Speaker 4
+Was it? I am blanking out now. I feel like I kind of like checked out.
+01:15:27 Speaker 3
+No, there. I know there was a group because I remember I was having that conversation when they said that I was like, oh. Okay. Oh, okay. And they're gonna have to start from zero. The professor was just like, didn't even flinch, like didn't even blink or anything. It was like, okay. But I think Nicky, I think I think regardless, I think it's good to confirm anyways. Yeah Okay cool Yeah Can,
+01:15:49 Speaker 4
+We yeah We should call him over then because just to make sure we're set Also cause, now we have the I mean going on to Geo and SRA that gave more information about RNA seq I guess.
+01:16:10 Speaker 4
+Wait, this is really what? Yeah, I feel like I. We might want him here just because I'm a little confused now since we can't just look at the material and methods like other groups can.
+01:16:21 Speaker 5
+Mm- hmm. Yeah, do you want to text him or how do we call him over?
+01:16:31 Speaker 4
+Yeah, I knew it like a week ago and then I forgot.
+01:16:44 Speaker 5
+Oh it's ask for help.
+01:16:46 Speaker 4
+Oh cool. Nice and simple.
+01:17:07 Speaker 1
+Hey Folks, what do you got? Um. 
+01:17:11 Speaker 4
+Well, So we did more looking into the paper, and we realized the paper we had showed you before, actually was not the right paper. And what we realize is it is a new study, so we don't actually know if there's a paper associated with it yet. There may not be. That's fine. So we can still proceed with okay. Um,
+01:17:33 Speaker 1
+But, let's take a look at the project record, then and see if we can find Yeah,
+01:17:36 Speaker 4
+Yeah. I do have that stuff pulled up okay, Can you see my screen?
+01:17:43 Speaker 1
+Yep, I can see the browser.
+01:17:44 Speaker 4
+Okay, great. Um, okay, I think this was the bio project we found associated with it. And then this is the geo.
+01:17:57 Speaker 1
+Okay, so slow down. Yeah, sorry I was just That's okay.
+01:18:09 Speaker 1
+It's the same sort of information in the design, okay. So no citation, okay. Um. Try the platform that G- P- O- N number. Let's see what's in there. Somewhere in here they should have information on how they did the sequencing.
+01:18:31 Speaker 4
+Okay. I can zoom in if it makes easier No,
+01:18:36 Speaker 1
+It's okay Um. 
+01:18:40 Speaker 1
+No, it doesn't have anything there. So go ahead and go back. The problem is there's different places they can put it. Okay. So you might have to dig a little bit to find it. It could be under the experiments, it could be in lots of places. I'd say poke through the records for this experiment and see if you can find anything that describes how they did the RNA sequencing. Okay. Cool.
+01:19:04 Speaker 4
+Okay, got it, great, thank you!
+01:19:05 Speaker 6
+Okay, excellent no worries. 
+01:19:14 Speaker 4
+Okay, I'm sending a bunch of links to the chat right now. What?
+01:19:20 Speaker 5
+I was saying, isn't we were looking through the dataset already like from Well,
+01:19:25 Speaker 4
+Now we're trying to get the RNA seq info. We're not just looking to see if the RNA seq is of quality or not. We don't know how they ran RNA seq. That's a question right now. How's it going? What's up? I just sent the three links I'm looking at right now. Um. So if everyone can start hunting down, kind of see what exactly the RNA seq methodology was, that would be fantastic.
+01:19:59 Speaker 2
+The three links,
+01:20:00 Speaker 5
+Soum the two links are to the same website or two. 
+01:20:07 Speaker 2
+Different websites.
+01:20:10 Speaker 4
+Well, one was GPL that he told me to go into, but he also couldn't find it there.
+01:20:15 Speaker 3
+I'm still sending it anyway in case thatum it gives some information. Yeah, You won't get this time you won't get it wrong.
+01:20:23 Speaker 2
+So I just I called the tax department and said, listen, this is what I need.
+01:20:28 Speaker 4
+Wait Peter what's in the third tab?
+01:20:37 Speaker 3
+Um, they're just looking into like the uh data for the project. Uh, let me tell them. Yeah, no.
+01:20:44 Speaker 5
+What about it? He, he uh I think it's just an overview of the oh. Okay. Slashum slash L F Q no fast Q C.
+01:21:09 Speaker 3
+Gosh, bro. We're doing the the book thing.
+01:21:16 Speaker 2
+So, this is, uh, this is level two of this because these kids are a little older than second graders. Yesterday with first graders. Yeah. So the first graders, these kids are in second grade, So I'm hoping that they're a little bit more well- versed in the book and how to use the book and how to make make the videotapes. So, and it's the same thing really. It's just slightly more complicated.
+01:21:45 Speaker 3
+Same thing as before, just more advanced. Different colors. Yeah. Okay.
+01:21:54 Speaker 4
+Oh, okay, sounds good Peter.
+01:21:57 Speaker 2
+And I don't know if you're ready to go back to this one yet? Um. So we're doing that one thing I was hoping we could do at lunch today Yeah This. Is a tool that we have.
+01:22:11 Speaker 5
+Um, wait, what did Peter say? Tech slack. I want to sit down and look at what it does. Okay. And so we've had kids experiment before, but it's not part of the curriculum. Oh okay, yeah. Butum. What did you say GPL was Nikki?
+01:22:31 Speaker 4
+I don't know, He just told me to click on that link because sometimes there's info there, and then it didn't give info. So.
+01:22:37 Speaker 3
+It's hard, yeah. We might have to fix it. Oh okay. Why would they leave it up? I want to look at the standards and see how much of the activity or lesson that meets some of this computer science education. 
+01:22:53 Speaker 2
+Standard that we can do with this, and then we'll teach it next week.
+01:22:57 Speaker 3
+Oh, we definitely can, yeah. Look, it's actually showing in there, yeah. Oh you're kidding me! This goes with this? Yep. 
+01:23:10 Speaker 3
+Engineering 101. You know I'm an electrical engineer, right?
+01:23:14 Speaker 5
+I just. Um, What are the chances? If I justum. 
+01:23:20 Speaker 3
+You're talking to the right guy here. Yeah. So, we can, we can teach him how to likeum cause like how this works the motor right with this with a circuit board, like very simple. And but like even simpler, like the lights, right? I think it's a sensor it's a sensor, Please. Yeah, it looks.
+01:23:38 Speaker 5
+For the love of God, just give me your publication. I don't care.
+01:23:41 Speaker 3
+Oh okay, I thought it was a sensor. Swish! Yeah and the lights This is perfect! We will have to build one first. We will have to build one first Have a later on in step So. They can do like. Um, some of those steps, and then at the end have like an end result.
+01:24:06 Speaker 2
+Yeah, I don't know. Go. 
+01:24:11 Speaker 3
+To squishycircuits dot com. Yep. They might have pre built things. I don't know. I don't really know about this stuff, but when you go to find this guy on the internet. Yeah, they might have instructions there as well. Yeah. Sorry, you had a question? Oh, there we go Okay. 
+01:24:26 Speaker 5
+Daniel Goldman, professor of neuroscience and biochemical chemistry, research professor. Okay, you know what we should start with? Nikki, start with this.
+01:24:53 Speaker 5
+Um link that I just sent in Slack. It has all his publications, So they're probably more relevant to his research and closer than looking at random Geo sets.
+01:25:04 Speaker 4
+I'm not looking at random Geo sets. I'm looking at the Geo associated with this project.
+01:25:10 Speaker 5
+Well, there might be a lot. I don't know.
+01:25:14 Speaker 4
+There's only one Geo associated with the project. 
+01:25:17 Speaker 5
+Or sorry G G P L There's. 
+01:25:20 Speaker 4
+Only one G P L associated with it too.
+01:25:22 Speaker 3
+What what does it hurt?
+01:25:23 Speaker 5
+There's a thousand twenty nine or something.
+01:25:25 Speaker 3
+From the talking. Then you want to drink water and see if you feel better? Alright so go get water and sit down where. 
+01:25:32 Speaker 4
+There's not a lot of noise. I'm also not looking at you because I said I wouldn't be super helpful. The water?
+01:25:37 Speaker 5
+Okay okay cause I looked at the data set, The number from the same data set that we're working with and one is fine,
+01:25:43 Speaker 3
+One is fine, one is fine,
+01:25:45 Speaker 5
+One is fine. Okay then I'll just.
+01:25:48 Speaker 3
+She has a headache so I told her to see if. Drinking a little bit of water helps. Because she said it was from all the talking, that's why I told her, go drink water. That's dehydration. Alright everyone sit down. Let's go sit down. You want to come sit down buddy? That's awesome. You want to come sit down?
+01:26:34 Speaker 5
+I S you uh University of Michigan R one.
+01:26:40 Speaker 5
+Yes. Oh my god, that's so nice.
+01:26:50 Speaker 2
+We'll be doing some robotics stuff. But I want to get you guys in the habit of doing Codable or code. Org when you walk in here. How many of you can get on code. Org and don't need your card? You don't need that like white card with a, it really, the only reason you would need that is if you don't know your monster. Like do you guys know what monster you are on your card? Yeah,
+01:27:13 Speaker 7
+I know! Wait what?
+01:27:17 Speaker 4
+Why would we be in breakout rooms? So, listen. Maybe class. When does class end?
+01:27:24 Speaker 5
+11:30. So, listen. I have no idea. Two things.
+01:27:27 Speaker 4
+If you're going to go to school, you need. 
+01:27:32 Speaker 2
+To go to classlink and click on quote. org and if it doesn't put you right in it. Louie! Put your computer away! I already asked you once, if I got to ask you again, you're going to lose it for all classes and stare at a wall!
+01:27:51 Speaker 2
+Okay, look. Code.org looks like this. You click on it. If it doesn't take you right in, okay, you hit sign in and then don't hit sign in with Google. You need you guys have oh, okay. This is gonna sign me in automatically, but you guys have a different setup. So when you hit sign in, if you click right here, it'll automatically generate your class code for you. So I'll close. Come up with like your five- digit class code. Then if you hit go, It's just going to ask you, what's your who's your monster and not.
+01:28:24 Speaker 1
+And uh and then you can click on the name, click on your secret image. And then we're moving on the quality control. There's a reason we give it three weeks. Uh. And also, this is the first time you're playing with a lot of these tools. So it's going to be a little tricky. Um keep working in the adapter trimming uh, what I'm seeing for the groups that are working on that, it's definitely cleaning out those adapter sequences and the poly Gs. Um, and remember to keep using FastQC each step to see what happens. Watch how it changes your your uh data files and and what effect it has. Um, also keep an eye on system loads. I noticed it was close to 20 a minute ago. That's okay, it's not the end of the world. It's dropped back down again but uh. 
+01:29:06 Speaker 1
+Apparently, FastP is using more threads than it's told to use. So just be careful of that.
+01:29:13 Speaker 2
+All right,
+01:29:13 Speaker 1
+Do we need really quick questions about the quality control before I talk about one more thing? Good. 
+01:29:21 Speaker 2
+Afternoon. After adapter trimming,
+01:29:25 Speaker 1
+Are there more would you say that there's more steps or are they ready for alignment at that point? Or is it depending on your project? Yeah, it depends on your data set. Yeah, so we have to see what's in there. And you never know until you actually start working on it. Um, I think I don't know if I told you the story. We actually had one time we went through, we got this QC looked pretty good. And then when we actually did the alignment, almost nothing aligned. Where are you sitting?
+01:29:50 Speaker 3
+All right, go over there and I'll help you.
+01:29:52 Speaker 1
+So when you submit something for sequencing, it's given an ID, it goes in a freezer. They pull that ID and they do the sequencing on that when it's its turn. So, they set up a queue through the freezer or fridge, or whatever it is, they use for storage. It turns out that they messed up. They didn't get on this, put the wrong sticker on it with the wrong ID number. And so,
+01:30:11 Speaker 3
+Oh, so they don't so they haven't used these before.
+01:30:13 Speaker 1
+Instead of getting grape results, we got tomatoes. Oh wow. We had somebody else's data because you couldn't use it and they couldn't find our data afterwards. So it was one of those, they screwed up, They reimbursed, but we lost the date that the DNA too oops. Uh. But sometimes you don't see things until later. I don't think we had that sort of an issue with anyone's here. You'll know for sure once you do your first alignment. If you see that ninety nine percent of the reads don't map, we might have to revisit this and figure out what you have. But in their tricks, I don't expect that to happen. No, that's a very unusual circumstance. So, as you get a look at your data and see where everything is all set up for years,
+01:30:55 Speaker 3
+Yeah, They tell us that you have is is that for like every classroom they have?
+01:30:59 Speaker 1
+Yeah, and usually every year every sample's a little different. This year, Your groups are a little more homogeneous in the types of data I am expecting, the types of problems I am expecting. But, we've had some fun ones in the past where we looked at it and they were very different.
+01:31:13 Speaker 3
+Cause I was thinking of multiple things. So one, I was thinking also one thing like we can assign random seats to them. Like, we can number this like each one accordinglyum and we can make it I don't know like a game for them that way. They don't feel like we are like. And they're obviously over. Like, yeah, that way, yeah.
+01:31:37 Speaker 3
+Exactly, They can come here and touch it and get their own thing, right? So it will feel like them like a roulette game, right? Yeah. So let's set that up for tomorrow. Okay. Yeah. Yeah. So, the short answer is we're going to test this tomorrow with the results and. 
+01:31:53 Speaker 1
+See if you see results and see what we get. If you want to send me a humility point, feel free. I do have the officer also.
+01:32:00 Speaker 3
+What I'm going to do is that like I, i'm going to pull up something that I have similar to a spinning wheel and then I'm going to use the AI tool change it. So just take a list of whatever. So then we put the path or whatever file, you know, one there so, And Then when it reads the file, it's just you know That's great.
+01:32:18 Speaker 1
+That's that sounds good. Yeah feedback to some people who. 
+01:32:20 Speaker 3
+Didn't get much shot to resubmit Yeah. Yeah yeah yeah yeah.
+01:32:25 Speaker 1
+Make sure you check these out.
+01:32:26 Speaker 3
+It's fine, I can do it with random stuff right now, And then likeum and then I can give you the link to it, and you can put a pop in there. Yeah, yeah. That way, you knowum it makes them more like what is that? What is that like uh PPI whatever more data safety or whatever. Yeah yeah but I was thinking about like, Even, if I can like for me to have access to the list of class, even if it's doing class here. So I can see how we can do some like kind of like more personalized. Um, you know what I mean? Like because I want to like flag some students, but not because they are lacking or anything, but to see what we can do to help them further, right? Yeah. So like if they're too behind, right? How we can help them again.
+01:33:14 Speaker 1
+However, What I can also do is I can open up breakout rooms again if you want to keep working. So Just send me in chat what you'd like to do. Uh, if I get any groups interested in opening up breakout rooms, I'll just open them up and I'll hang out until 20 after 11. And if you have questions, slide me down. But otherwise we're pretty good for the day. Just let me know how you want to proceed. You. 
+01:33:36 Speaker 3
+Need help? So look for that one ninety. 
+01:33:43 Speaker 1
+93. With either option, You might want your group just to weigh in and see what the plan wants to do. I think we can open up the breakout rooms. So they're available if you want. If your group doesn't want to, that's okay, you're free to head out. But the breakout rooms.
+01:34:14 Speaker 7
+What number. 
+01:34:30 Speaker 3
+Is it?
+01:34:46 Speaker 7
+It's a game called Codelab where you like learn how to. Yeah. You got it?
+01:34:57 Speaker 7
+Perfect. You got it? Go to Jono. Jono. Jono.
+01:35:08 Speaker 3
+You're in the wrong one. Now go to Jono.
+01:35:15 Speaker 3
+And then go go to the link. Get out of there, get out of there, get out of there. This is the link. You guys keep it down or I'm gonna split you. Go to seesaw? Jono? Jono? You're in the wrong one. Go all the way to 81. 81, Sit down and calm down. You need to stop screaming, okay? Sit down, please. Can you sit down or you want to go outside? You choose. Thank you, honey. You guys take this, please. Come here. Do you know how to go into Seesaw? I'm already in it! Oh, are you there? Why don't you help your classmates? They're all circling. You're smart! You can help them! Look, they're all circling over there!
+01:36:14 Speaker 3
+Alright, let's. Can, you fix your chair a little bit. So so you guys don't hit each other? You want me to move the table a little bit? Hello, so you have more space. There you go. Alright, so all of you are in? Okay honey here go to Jono. Jono, Click on journal and then go to the link. Go to the link.
+01:36:51 Speaker 7
+Is it right there? Oh yeah, the link. There you go. Thank you honey.
+01:37:13 Speaker 7
+You got, you're in. Okay. Uh-huh. Sorry.
+01:37:53 Speaker 3
+If You guys don't keep it down, this is the second time, third time I'm gonna split you. I'm gonna move some of you somewhere. So if you guys don't keep it down, this is the second time, third time. I don't care. I said it once, this is the second times I said it right? You guys can talk just keep it down okay?
+01:38:14 Speaker 3
+You were telling me something? You were telling me something?
+01:38:19 Speaker 7
+Yeah, I was just saying Joey and Dom turned the other.
+01:38:21 Speaker 3
+Oh, I know, but you guys are together. So you had to tell them then to keep it down. Because if I hear it a third time, I'm going to split them.
+01:38:41 Speaker 7
+How's it going? Good. No. Awesome, great. I have to do the. No, no. Yes, we have to do the basic one because.
+01:38:56 Speaker 3
+Oh yeah, she's right. Yeah, basic one. We have to worry about it? Oh the yellow one?
+01:39:15 Speaker 7
+You guys doing well here?
+01:39:44 Speaker 7
+Okay, I got one. Oh my god! Oh my god! 145 gold. That's awesome. 145 gold. Wait, stop it! We're doing it!
+01:40:08 Speaker 3
+We're doing it! Going good? No, there's no time limit.
+01:40:37 Speaker 3
+You Guys are doing great.
+01:41:02 Speaker 3
+You Wanna you want you guys you wanna sit on the same row? You wanna come here or you wanna go there? Okay. There we go. Yeah.
+01:41:26 Speaker 7
+How you doing? Nice, look at that. You guys are doing great. You're moving fast, huh? Nice.
+01:41:56 Speaker 3
+It's what? It's actually kind of easy. Is it? It's gonna get difficult now. So let's see how you're gonna do next the level. Put this on. But you're going fast, that's good. That means you're gonna be ready for the challenge, it's okay, it's gonna give you a challenge also. That was quick. How are you doing? Oh, did you do the first one already? They're still easy! It's still easy?
+01:42:27 Speaker 3
+Just wait until we get in the next level. You'll see, you'll see, you'll see. You'll see. Look, he's already on a. He's going to a difficult level now. Yeah.
+01:42:57 Speaker 3
+See, now it's starting to get challenging, huh? What do you think the problem is? You see when it shows you red, it means that's the problem. Also you see here when you do test, it shows you what was wrong. See? That's what you're missing right there. Cause you're going right and then you need to go down, right? Which is. Ah! You got it!
+01:43:34 Speaker 7
+You Had it right.
+01:43:35 Speaker 3
+You had it right and then you had it right and then made it wrong. What did you change? What did you change? What did you change by now? Ah, yeah. Yeah, that's it. That's it. Yeah, there you go. You're smart man. You got it. You got this. You're going fast too.
+01:44:11 Speaker 7
+Wow! How you doing?
+01:44:19 Speaker 3
+Oh, you're getting there, huh? You're almost there. If you test it, it'll show you where the error is. That's right. You got that right. That's what you're missing. Oh, you got a badge already? Yeah. That's nice! Wow! We were working together. Nice! Yeah, work in teams, that's good There is another one after the. You get the badge.
+01:44:53 Speaker 3
+You can go to the next level. Yes. Uh wait. Where were you? Here? Told me to press that. Yes. Okay, Uh, typing your name Sorry It won't let you type your name. Oh that's weird. Oh see I have a trick for that.
+01:45:31 Speaker 3
+Okay. Yeah, there you go. Put your name now. What do I do next? Uh. Call me. You're in basics, right? Yeah. So I guess we finish this, I guess? Let's go here again. Now what? Who are you? What exactly are you? I don't know where it took me to. Quick. You already finished this quickly, right? Did you? Okay.
+01:46:25 Speaker 7
+You guys are. 
+01:46:26 Speaker 3
+Way too good at this.
+01:46:33 Speaker 3
+It's it's supposed to, but you know, but it's gonna get more challenging. You know, there are more games.
+01:46:45 Speaker 7
+You got it? Oh yeah, you're coding?
+01:46:49 Speaker 3
+Are you coding? You know coding? Okay, I'll teach you guys that when you finish, because it seems like you guys are gonna finish quick. When you finish this. I'll teach you some coding, I promise. But in the meantime, let's keep it to the game. Oh, you're in a puzzle game. Oh no, you are you in basics? It's gonna be basics.
+01:47:31 Speaker 3
+What is this? I don't even know who you are. Let's come here, let's see. I can see you. Alright, let's go right here. And then you play, play, play. Yeah.
+01:47:43 Speaker 7
+Okay! Yes! Almost there! Nice!
+01:47:56 Speaker 3
+This is too easy for you guys. It's gonna get harder, I promise.
+01:48:01 Speaker 3
+How you doing? Let me see. Let me see. This cleanup. This cleanup, that's what you are now? Uh, uh we have to do that. 
+01:48:09 Speaker 7
+One and that one.
+01:48:11 Speaker 3
+You already did the quick play?
+01:48:13 Speaker 7
+I'm going to ask Joy though.
+01:48:15 Speaker 3
+Did you do the quick play already? We just did this. Oh no! The tutorial? The tutorial? That's tutorial? No! That's a quick play, that's not tutorial let me let me get you there uh It's ready! Are we going back again, Going back home. We go back home. Is it right here, quick play? Do we have to go at quick play? No, but usually everything gets opened up when you do the quick play. If you're good with the quick play, they open more games for you, more. Like uh everything opens up? Yeah, more difficult games.
+01:49:06 Speaker 3
+You Do it. Which one is this? Oh, that's a whole different world. You are like.
+01:49:27 Speaker 3
+These Guys are like, this is too easy. I had to go and get them a little bit more difficult level.
+01:49:34 Speaker 2
+You know how when you go in it says basic.
+01:49:38 Speaker 3
+Yeah. No, But I think it's just perfect because it's getting them more engaged and it's giving them more difficult tasks.
+01:49:49 Speaker 3
+But It's just right, yeah, yeah, yeah. They say it's too easy because they're you know still haven't gotten to the middle hard part. But they are almost there. I can see that because now they are in the one that I gave them, the blue one. They're thinking a little bit more. But for this class, this is like the perfect game. Yeah. Like, we can do more stuff with this and also like bring it more to like the robotics and bring it to the coding also, like reference this because since they all like engage. 
+01:50:26 Speaker 3
+So easily, I think like they will feel more familiar. Yeah,
+01:50:32 Speaker 2
+But when we start bringing in the block coding with the robots, it'll be helpful for them to have this.
+01:50:40 Speaker 3
+We're going to have similar reference. Yeah, yeah. Even the ones are struggling and doing well because they couple, they pair I mean yeah. Wow you guys are moving fast! This is awesome. Great.
+01:51:10 Speaker 7
+Is it more challenging now? No. Yes, it is. Look. I can get you there, let me see. Uh- uh, wait you.
+01:51:23 Speaker 3
+You said you wanted a challenging. Yeah, I want a challenging. Let me take you here. I'll take you to the challenge one, right? You wanna, you wanna keep going there?
+01:51:37 Speaker 7
+Yes, I wanna finish. Hey! What? I'm gonna go first. Okay, okay. Can I do this real quick?
+01:51:47 Speaker 3
+Yeah go ahead yeah He he's doing like challenging stuff. 
+01:51:55 Speaker 3
+Okay. You got a badge? Oh, yeah. Here you go. No, you can pick whichever you want, but it it likeum like some of them have different difficult level. This one, did you finish? Uh theum wait. 
+01:52:14 Speaker 7
+She already got a badge in that one.
+01:52:15 Speaker 3
+Oh she got a badge already? Oh, I get it. You're in the badge system. So I guess you're gonna have to go back. Yeah, go back. Exactly. You press that and then you press quick play. Yeah, yeah. And if you're done with quick play, you can press the others, yeah? Oh, we're on the same one? Oh, we're on the same one? Yes! I got three stars for this one! How did you do in this one?
+01:52:48 Speaker 7
+And you took all the stones? Yes.
+01:52:57 Speaker 3
+You're super smart man. Is it more challenging now? A little bit. A little, right? Just the right, right? Did you finish it quickly? Yeah, I finished it. So now you have now you have now you have things open like if you go to store, right? Like if you go to store, yeah, now you can buy stuff with the credits. Yeah, I I already had enough money to buy everything exactly, because you want a lot of stuff. Oh oh, you can go. Oh, you can go back to playing and make and making more money. You want to go back to playing. 
+01:53:39 Speaker 7
+No I don't wanna. I don't wanna. So.
+01:53:42 Speaker 3
+Where do you want to go? Basically, go back home. And then and then and then click now go go to the mission control, mission control in the middle. In the middle right yeah mute button.
+01:54:12 Speaker 7
+This one here.

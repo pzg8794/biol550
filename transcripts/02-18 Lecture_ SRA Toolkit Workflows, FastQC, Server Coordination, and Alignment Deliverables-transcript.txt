@@ -1,0 +1,626 @@
+00:00:00 Speaker 1
+I know. Let me put it another way. If you're working for a research lab or you're working for a company, are you the only person who needs to know? No. In fact, in a company, The expectation is that you'll have to document it and explain it to your boss. So how many friends do you have? So it needs to be efficient and well written. It's not trivial. What happens the last time? All right, we need to get started. Let's see, missing a few folks.
+00:00:44 Speaker 2
+I Went to the store.
+00:01:56 Speaker 1
+Okay. All right. Let's get started. So, differential expression. How many of you finished it? It. 
+00:02:16 Speaker 3
+Just opened last night at eleven fifty nine p m. So I just submitted. Wait, it opened. 
+00:02:22 Speaker 1
+No, Are you talking about the weekly report or the technical blog? Oh, I'm talking about the weekly report. Yeah, the weekly report's different. And actually we'll come back to that. Thank you. That is a good point. Um For the differential expression of the third stage, submitting that single file that has differential expression results, haven't you submitted that? Awesome Good Again it's not absolutely due tomorrow, but I do recommend trying to get it done for tomorrow. So you don't have to keep working on it while you're also working on your project. You don't want to be working on too many things at once. All right. We'll come back into what's in those files after that. All right, so today, a bunch of different things that we're going to look at, the different tools for our projects. First of all, you're going to have to get your data, right? Okay. If all the data is in the SRA, what do you use to get your data? SRA Toolkit. SRA Toolkit. Have any of you used it before?
+00:03:22 Speaker 1
+One two, all right, he's actually not that bad. Um let's see, did I post. Okay. Just post the instructions for that.
+00:03:36 Speaker 4
+Uh I don't remember seeing it.
+00:03:39 Speaker 1
+I don't think I did there is a website we can use. Oh, let's see. In fact, projects, there's a website that will give you the basics.
+00:03:53 Speaker 1
+I just got to pull up that email. So, The user already made a toolkit to make it easier to get your data files. There are a million tutorials out there. I'm going to recommend one of them. You're not broadcasting? Oh no, okay. No, because I'm pulling up email right now. I'm going to put this stuff in. Thank you though. I'm going to put this up in discussion actually. No need to broadcast this on the board yet. Um, that's where we're going to go with this piece. All right, let's see, did I send this to myself? Yeah, I did. Thank you all.
+00:04:50 Speaker 1
+I'm going to put this in discussion. They have a bunch of examples on this one. And this will get you started, but basically I guess I can broadcast this.
+00:05:20 Speaker 1
+This is what I just posted to discussion. They do a pretty good job. Oh, why are these files here? There we go. And there's a bunch of terms you can do a search if you want. The basic thing is, okay, you've got a bunch of SRR files you're looking for. You're not going to do it for a whole project, You'll do it for your individual SRR files, and you might have a list- -. There's different ways to do this. You can do shell scripting if you want if you're familiar with that, Or you can just type them in one at a time. But the basic idea is you're going to use a program called FastQC. Same in folder that is on the server?
+00:06:00 Speaker 2
+Where is it?
+00:06:02 Speaker 1
+It's in.
+00:06:03 Speaker 4
+The bin directory. In where? The bin directory. Which bin directory? Where we have. Yeah, where we have FastQC also.
+00:06:10 Speaker 1
+So slash bin, where is it? User/ local/ bin User/ local/ bin Yeah Yep Just the common place where you have all these/ user/ local/ bin, Slash SRA toolkit, I believe. Yeah. And then there's the fastq dump. You're basically telling it to split files. And here's the reason: if you go to a single sample, when you have an SRR number, if they're paired end they have a forward and reverse, right? They're separate files because you need them as separate files for Phylotyper to go through and verify this sequence belongs to this sequence. So they're in two separate files, and it goes through literally one like one seq fragment at a time, treating them as pairs.
+00:06:47 Speaker 1
+So you can do a split file, so it makes the two files from this download. Uh, don't worry about the origin format. It's going to have them gzipped and for the SRR. Um, There is I was just wondering what version of fastq dump because there's many on the server in user tools here. You see?
+00:07:08 Speaker 4
+Just use it, use the latest recommended.
+00:07:18 Speaker 1
+I see SRA_ 3. 0. 0 Yes, I don't see another one in there Well, that's so under SRA 3. 0. 0 That's a directory And. If you go in the back of the program, There's three Oh You're seeing the links Yes Yes So, It's Basically going to be that command The fastq dump. And the reason is The others are links to that same file. Okay. It's all the same program that you're running. Okay. Yep. Thank you. Yeah, no worries. And that's partly because some programs will explicitly put the version number in there, which creates a nightmare. Um, There are some programs that call the SRA toolkit automatically. And as a result, they have to create these links in there. If you just do the fastq dump, you don't have to put the version number after it, it'll be fine. Cool All right Good so far?
+00:08:15 Speaker 1
+Now, what happens if you all do this at the same time? It will crash the server, but it gets ugly. It uses up your network bandwidth also.
+00:08:24 Speaker 4
+Step on with it. What was that? I was just thinking out loud to run with it.
+00:08:29 Speaker 1
+Yeah, yeah, we could actually get a bandwidth issue. Yep. So it will. There's only so much we can download at once, so you'll want to do this by teams, do this one file at a time and just with your project data. So don't do these specific SRR numbers. You can do this as a trial if the system is really slow, but it takes a while. These downloads take quite a while. Is there a specific folder or directory that it should download them all into? Oh! We don't have one yet, do we? So let me see.
+00:09:11 Speaker 1
+I need to create working directories for you. That is an excellent point, just like we've done in the other classes, right? Yep, we're absolutely going to do that. So what I'm going to do is in the home directory, I'm going to create a group directory for you. Each of you should have access to it. Remember when we talked about file permissions? Yeah. We have user, group, other? Mhm You're all going to be part of the group for your group and nobody else. So what we're going to do today while you're working with your teams To figure out what your SSR numbers are and all that. I'm going to be creating the directories, help create the groups for you and have it all set up. Awesome. That brings us to another issue. Why do we have shared group directory? Because if it was in one of our directories, uh, we could have permission issues but also potential issues like things accidentally getting deleted. Uh possibly. 
+00:10:09 Speaker 1
+Yep, Actually, there's there's an issue with permission where if it's in your directory, you have access to it, others may not be able to. You can kind of get around it but it creates other problems. What's another problem? File size? File size, what about file sizes? We're going to be having way too many files. We're already going to be pushing the limit. Yep So if we all did everything. It's not going to work. Yeah. So we need to have shared group directories where you can work. So that you're not all individually downloading this and repeating the same. Process over and over again. The server just can't manage that much. It's a common thing in fact, I got a TraceBase at Cornell because I'm doing research with them. And we are not just copying assemblies over from one directory to another. We have in one place a link to it. So when, let me change back here, this gets to B's question. 
+00:11:07 Speaker 1
+When you're looking at all those files there, these are symbolic links is what they are. I don't think I showed you the 'ln' command today. I don't think so. That's one that's okay to learn. See how small these files are? This 'fastq-load' and 'fastq-load-3.0'. Actually, uh, three. You'll notice they both have these arrows over to 'fastq-load-3'. This one points to the 'fastq-load-3.0'. It's sort of like shortcuts on the desktop in Windows. It's the same thing, They're called symbolic links and that's why they're blue. You look over here, their prefix is not a d or a hyphen, it's an l which says they're a link. So these are shortcuts. Um, what we do is we create shortcuts to the files we're going to use, and you folks can do that with your scripts too. You don't have to use links, you can just use a shared directory. That's okay but this is an option here. If, you use the ln command, ln space hyphen s and the name of file, the directory you're currently in if you have permissions to write there. 
+00:12:05 Speaker 1
+Create a link to whatever file it was. Good. That helps understand the. Yeah, that's exactly what's happening there. Cool. Okay, so what we're going to start with is have you break out into groups, organize the room where you're sitting by groups, start pulling down the SRR numbers, get a list of them, Figure out who's going to manage that list and then I'm going to set up the group directories. And you can start playing with. Yes, sorry. Toolkit start downloading files. What do you usually do after you get all your files? What was it? I couldn't hear. I said try. Try, oh! Try? You didn't even need to keep doing it. I don't know why. Oh, so try. Try! Did that work? Uh-huh, uh-huh, try what?
+00:13:01 Speaker 1
+I'll play that. Especially this time because again we're working as if we're one big lab resource. Um, perhaps one test team. Yeah, maybe I look at the quality control. Keep a close eye on what's going on in the server. Make sure you're not overloading the system. Let's try to keep under 15 for now if we can. Thank you because I don't want it to crash. Uh bandwidth won't cause it to crash, but it will make it slow to connect to it.
+00:13:30 Speaker 1
+Okay, so go ahead and sit in your groups. Figure out what SRR numbers you might need access to. I'm going to create these group directories. Let's. 
+00:13:44 Speaker 4
+See, so at least that's one thing I can help with, the API and get the data, yeah? So I just need basically to get the.
+00:13:58 Speaker 3
+I found that actually. So I just sent that. Is what? He posted the Google form.
+00:14:06 Speaker 4
+Yeah, Let's uh, let me go to the shared drive and get theum The project number. 
+00:14:19 Speaker 5
+Did. You guys see her name? No, I told Sam that I didn't care if he asked for my name.
+00:14:23 Speaker 1
+She has a name, who cares?
+00:14:27 Speaker 1
+Sisters, marsupials, and that's it. I'll. 
+00:14:33 Speaker 5
+Get you a name by the end of class if that's okay. Oh, okay. Should we use this? Um, we could just use Zephyrus. Yeah. I'm just doing Zephyrus.
+00:14:48 Speaker 4
+We have to just choose a name. Yeah, yeah, just Okay. What's. 
+00:14:53 Speaker 1
+Your group name? I cannot do this. I cannot do this note like that. Should I ask what that's a reference to? No, okay, both okay. Sure, this month I have to ask. What? Okay, okay, sorry. Um is there something being.
+00:15:24 Speaker 1
+What's your group name?
+00:15:25 Speaker 3
+Zebrafish. Oh,
+00:15:27 Speaker 4
+Nice. It's easy to remember. That's the name of the project, right?
+00:15:32 Speaker 3
+Yeah. I would like to share our group name because we're really proud of it. So our solution gets sepsis, so we're the Sepsis Sisters. That's funny. Sepsis Sisters? Oh!
+00:15:43 Speaker 4
+What's theum. this one right? Zebrafish, this one right?
+00:15:49 Speaker 2
+Uh, I think so. Yeah!
+00:15:53 Speaker 4
+Let's see if I can get the. Oh, I have actually, I do, I have it. I have a document so I'll have a link to that directly. Let me go and get it.
+00:16:05 Speaker 3
+Yeah, all good. You could take all of our references and put them. 
+00:16:11 Speaker 1
+Into one document, and then we'll get so. So yeah, okay. So yeah, okay. So yeah, Okay.
+00:16:24 Speaker 1
+You Would want the you want to download the SRA session. And then we're going to take a look at that.
+00:16:33 Speaker 5
+Okay, okay, okay. Sam wanted to do capybaras. You should have texted me that earlier, bro. What. 
+00:16:41 Speaker 4
+Did we what name? Settle. 
+00:16:50 Speaker 5
+He told me he stayed up late last night, trying to get a bunch of homework done and then woke up feeling very sick.
+00:16:55 Speaker 4
+Oh, that happens. Yeah, that definitely will do when you don't sleep. I slept only four hours because I had to take my dad to the doctor's.
+00:17:01 Speaker 2
+Oh no,
+00:17:02 Speaker 4
+But not because I otherwise I would have slept. This is the first time that I have like made up like so much sleep because I'm not working this week.
+00:17:13 Speaker 5
+Oh okay, so you can actually sleep in this week?
+00:17:15 Speaker 4
+Yes, I'm not teaching this week so it's like oh thank god finally, Finally. That's why I feel like I can talk now with people because before I didn't want to get people sick, because I was always like, like my throat weird. So I know exactly what he got is especially now with the cold weather. So right so zebrafish, right? Um, so I got info to the API okay so. 
+00:17:52 Speaker 1
+I don't even know where to start.
+00:17:55 Speaker 5
+Yeah, I since I'll be gone until basically Sunday morning, I can't do any project work for the next three days. But if there's anything for me to do on Sunday, just let me know.
+00:18:06 Speaker 4
+I don't think we have any deadlines.
+00:18:07 Speaker 5
+I don't think so either. I just, I don't know. We should probably get, I guess now that we're actually working on the project or probably like get together at some point and set a timeline, essentially like what we tried to do at the start.
+00:18:18 Speaker 4
+Like one like once a week, even if it's on Zoom, like 50 minutes. Yeah, that's not a bad idea. I think um it would be good to start like even if it's a tab or uh or a different document. However, you guys want to do it for the Google. Uh, doc. Yeah. To start writing about the project yeah, You think that tab or a new document? What do you think?
+00:18:45 Speaker 5
+A new document, just because like I do like the tab feature, but I want to keep it slightly fresh. Yeah,
+00:18:50 Speaker 4
+I was thinking that way too. But like either way.
+00:18:53 Speaker 5
+And also double screen split screen.
+00:18:56 Speaker 4
+Yeah andum I will install the the repo because that's actually easy to do. I'll create a notebook if you go to the to the drive, The shared drive so right on the shared drive at the top, if you go to the top. I Will uh. There you go so. I will, so there will be a notebook here. Okay, sure. And I'm just going to do it because a notebook will allow me to do things programmatically without having to like go into the terminal. Right. Yeah, yeah, yeah. And I will install in here like a git repo, and the git repo basically will have our translated version of whatever we have in Google Doc. So as we update it, That's going to be updated too, because it will be done programmatically. So I won't do much. Yeah, sounds good. So the good thing about that is that. 
+00:19:49 Speaker 4
+You're gonna be able to see the PDF right in there. Okay, that would be great. Clicking there, yeah. Yeah, exactly. So you guys can like talk about, you know, As we as we add stuff, the formatting, like, oh, you know, I don't like this this whatever. So it's gonna make it easier. Uh. So let me look at the Ape.
+00:20:06 Speaker 5
+So I'm sending a one to me. So we can try and find time.
+00:20:09 Speaker 4
+Yeah uh,
+00:20:12 Speaker 1
+Zebra fish.
+00:20:21 Speaker 4
+I Think that was like the actually a perfect way to go toum do it in Google Docs because that's what I used to do it. And then I would like migrate it to like LaTeX. But I think it's a good idea for you to start getting familiar with that. Yeah, cause yeah, cause if I get if I get approval for the bio uh research that I want to do. And and if you are able also to join, that's like that's what we're gonna do. Let me show you actually how we do it. Like if you see here, Like I'm familiar with like this, but overlay I just started using it heavily like this in groups because of the research. Yeah. And I just realized uh that they they have been writing comments in here. There's a whole review panel. Oh okay. And I've been just like solving comments that I see like this. And then they were like.
+00:21:14 Speaker 4
+You have a bunch of comments, so you have a resource for the research. So this is basically like, you know, um how they like if you see let me show you here. I'll show you the comments uh more comments. See here like that for example. Yeah, he wrote a comment in there, telling me like yeah to add one more paper. That means like. One more uh paper testing strategy to add in the code and put it in a table like this. Let me see um if I got okay, so all right, so I tailored the script to use zebra. So let's just take a look at this quickly. Let's see. 
+00:22:08 Speaker 4
+I'm sure he's gonna be using the CSV that we got because he has a runs. So,
+00:22:16 Speaker 4
+Let Me check.
+00:22:18 Speaker 3
+I'm having the same. We're having the same issue here.
+00:22:21 Speaker 4
+We're just gonna load it here and then we worry about this later. Okay, yeah,
+00:22:24 Speaker 3
+Sounds good.
+00:22:25 Speaker 4
+Yeah, okay, so all rightum so, Actually, that might be better. Let me move everything to that group over there. Should we have a separate the directory under the So let me show you. So right now, okay, so if we go to project group project right here, right? Okay. So we have project datasets. Should I put in the project datasets?
+00:23:06 Speaker 5
+We Should maybe create a new directory. Okay, yeah, you can do that. Yeah,
+00:23:10 Speaker 4
+On the group project, the one that I'm sharing. Yeah.
+00:23:13 Speaker 5
+Yeah, I think a new. Yeah.
+00:23:15 Speaker 4
+Okay, so should we call it like.
+00:23:20 Speaker 4
+Zebrafish? Yeah, zebrafish. No fishzebra fish?
+00:23:24 Speaker 5
+Yeah honestly now that you explain this I totally see why it's your name?
+00:23:27 Speaker 4
+But I didn't do it right.
+00:23:31 Speaker 4
+Like I should have because I know you guys didn't understand, like I should have just shut up. And like said, like hey, let's meet in Zoom and I'll show you yeah happens. Yeah.
+00:23:44 Speaker 4
+Okay. So now it's just gonna load everything over there programmatically. So I'm I'm just I'm lazy. This is stuff that I already do yeah what am gonna like redo. Okay, so okay, so.
+00:24:13 Speaker 5
+We Do have writing. I can't even get into it.
+00:24:19 Speaker 4
+Maybe because uh uh permissions or something is that what it is?
+00:24:22 Speaker 5
+That's true.
+00:24:26 Speaker 5
+Yeah, I can't get in. Are you able to get into our intranet?
+00:24:29 Speaker 4
+I haven't even tried. Um usually these things always have this uh issues. Um I'll I'll check right now, let me just make sure you have access to everything, because last time I don't want I don't want the same thing to happen last time. Yeah, yeah, yeah, like okay. So let's now organize. Okay, everything ready into this, sorry.
+00:25:00 Speaker 3
+Maybe it's better you didn't. I yeah, I mean, evidently if it wasn't him, but like like I couldn't see his. Yeah. All right.
+00:25:15 Speaker 4
+So all right. So it's moving everything to that. Let's check the server. Nowum no. 
+00:25:23 Speaker 3
+I don't want to yeah launch. No, I can't. No, please. My stuff is over here. Let me go to that drawer. That's where his humors get seriously no. 
+00:25:38 Speaker 4
+Ready to go. Oh okay. What was the name he said? The zipper fish, right? Okay. See if I find here. 
+00:25:53 Speaker 5
+Wait Lily so you were able to get into your folder. Right? Yeah, we're able to okay, okay, I did not just talk to him if you also can't get in, then I'll talk.
+00:26:03 Speaker 4
+Yeah, let's uh oh, Wait. Oh, I see, wait. Wait. That's not it. I thought I saw it. Oh, yeah, right here. Okay. So we gotta get a profile. Oh, I'm in. You're in? Yeah, let's see how you're doing.
+00:26:28 Speaker 4
+Oh Wait wait wait. Um can you do ls dash l? A space dash l? Yeah.
+00:26:35 Speaker 3
+We're going shopping.
+00:26:39 Speaker 5
+Oh that might be why? Yeah, Those yeah Do I need to, okay,
+00:26:43 Speaker 4
+Yeah Try that Too many arguments.
+00:26:46 Speaker 5
+I got one second. 
+00:26:46 Speaker 4
+Okay perfect.
+00:26:49 Speaker 4
+Okay, try sitting there just directly. Yeah. I think maybe you just hadum Oh, okay.
+00:26:55 Speaker 5
+Let me let me try logging out and logging in.
+00:26:58 Speaker 4
+I can give you permission to. 
+00:27:00 Speaker 5
+Let me let me try it.
+00:27:02 Speaker 4
+Yeah Um Do,
+00:27:04 Speaker 5
+We need to get the tool. Or do we just Oh no, I just had to log out and log back in.
+00:27:10 Speaker 4
+Okay now Oh, yeah, yeah, cause you were in already before he gave Yeah that makes sense Yeah cause I just logged in. That's why. That makes a lot of sense. All right. So also, um, let's see if we lower it. Sometimes it takes some time, so I'm just going to come here and see if I can push.
+00:27:31 Speaker 3
+SRA 300?
+00:27:33 Speaker 4
+Uh, cool.
+00:27:36 Speaker 3
+All right,
+00:27:37 Speaker 4
+So we got the script. Let me see if.
+00:27:45 Speaker 4
+I am. This is the only thing. Oh, okay. All right. Let's it says is is in there let me check. Do. 
+00:28:06 Speaker 1
+I need another thing there? Oh wait, uh see yes on it.
+00:28:16 Speaker 4
+Um. That's the only thing that I don't like sometimes it takes.
+00:28:18 Speaker 3
+Well, I'm not even lying.
+00:28:20 Speaker 4
+Um, it's sweet time too low she's annoying. Um, Well, or maybe let me see. So doesn't have that many stuff in there. You can get better in the wrong direction would be getting. 
+00:28:36 Speaker 1
+Worse. What would quite if I get better in the wrong direction?
+00:28:41 Speaker 4
+Maybe Instead of actually building your. Let me push an upload here. Yeah. It says up to date, but I don't see it updating in there.
+00:28:58 Speaker 5
+So all you said we really have to do today was just just pull. And yeah, um,
+00:29:02 Speaker 4
+So this is what I was talking about about auto update, which is now not working. This uh let's see. Um, I'm pushing it. I mean, it's already synced, but some for some reason is. I can't add. Well, I was trying to get the Sorry, what's that?
+00:29:24 Speaker 5
+Um So, we just need to grab these and then do the fast QC like we did Yes.
+00:29:29 Speaker 4
+Yes, yes. He said to try first the Gamanzo in there over there, Um, which. Are the ones are in the being used by the API.
+00:29:43 Speaker 4
+Did It move everything? Let's see. See, these are the runs of the dataset is moving it to the drive. Still moving stuff.
+00:30:07 Speaker 4
+Let me see if it's loading here. No, I just loaded manually. This thing is so annoying.
+00:30:13 Speaker 3
+It's ridiculous. When it needs to work,
+00:30:18 Speaker 4
+It's not working.
+00:30:24 Speaker 4
+It Says it's loading though.
+00:30:26 Speaker 5
+Maybe you just need some time.
+00:30:30 Speaker 4
+Oh, he says it's loading Why is this?
+00:30:38 Speaker 4
+Weird. Did I run it? No, I know I added under the right directory. If I come here and it looks green, which and it looks green, which means it's loaded. But I think you're right. I think he's taking his sweet time.
+00:31:00 Speaker 2
+Maybe for security purpose?
+00:31:02 Speaker 5
+It could just be the file size. Yeah.
+00:31:08 Speaker 4
+Anyways, I'll just load it. What happened is that when I do that, there's gonna be like another version with a slash one, just ignore it. Sounds good. Like how to delete it? Yeah,'cause this is light since this is not that heavy. Uh let me just uh, folder upload.
+00:31:27 Speaker 3
+So. You really just have to do this one at a time?
+00:31:31 Speaker 4
+Because I haven't run the script to download all the runs, it just downloaded the info.
+00:31:40 Speaker 3
+Let me come here. Yes, I can go back to lab.
+00:31:53 Speaker 2
+This is when technology decides to fail.
+00:32:01 Speaker 4
+Upload. Alright.
+00:32:04 Speaker 4
+You Just are seeing things now. Okay, I'll try to look at the first as far as possible. See, loaded so quick. This is why I was Yeah.
+00:32:12 Speaker 5
+Can be Yeah,
+00:32:13 Speaker 4
+Like makes no sense. Alright, so the script is there, right? Um and we have their notes in there if you click Oh. Okay okay, okay, And I. See. So here, if you see, right?
+00:32:33 Speaker 5
+Oh, is it thezebrafish folder?
+00:32:35 Speaker 4
+Yeah. Yeah, thezebrafish folder. Yeah. So if you go to metadata, That's where like information. This is the info that I use this one actually to validate the data sets with their requirements because it has everything we need in there. All right. So let's run theumum. 
+00:32:59 Speaker 4
+So let me. So it's going to be.
+00:33:03 Speaker 2
+Yeah. Do,
+00:33:05 Speaker 4
+You want to run it for all of them or just a few of them first?
+00:33:09 Speaker 5
+I mean, oh, you know what? Good idea.
+00:33:10 Speaker 4
+We can just do five first and see. Yeah,
+00:33:13 Speaker 5
+Yeah Because especially if it ends up taking a while, we can start doing some analysis. Do we are we using all 30?
+00:33:21 Speaker 4
+That's a good question. Yeah I,
+00:33:22 Speaker 5
+Guess we need to figure that Or, you know what we could do We can look at the fast QC and then decide which ones we want to use.
+00:33:28 Speaker 4
+True, yeah. Oh, yeah, yeah. Yeah, that's true. Yeah. Because uh that can be run on all of them. Yeah And, then we can choose That's a good idea. 
+00:33:37 Speaker 5
+In the grand scheme of things That That's. 
+00:33:39 Speaker 4
+Actually how we did it for the Trump club. There is a So after after that, I just show the ones that passed You see All right So. Let's let's do that Um Yeah Let's. So, how many runs we decided to okay.
+00:33:55 Speaker 5
+Uh uh like five for now, like five, okay, we can just do it in like we can run five, take a look at those five and then have the other like 25 running. While we're yes.
+00:34:23 Speaker 1
+Let's see.
+00:34:29 Speaker 3
+Make sure that okay, that'szebra. That's the path. Alright so, this is it. So, let me just inspect it quickly, make sure that there is nothing stupid here. Alright so see that makes sense these are these are basically the. 
+00:34:51 Speaker 1
+See, there's already a pip command. So let me look at it.
+00:35:20 Speaker 4
+We just see the similar to the one we saw over there.
+00:35:27 Speaker 3
+Right lines,
+00:35:28 Speaker 4
+Right CB main.
+00:35:37 Speaker 2
+And We need this data SRA, that's the one.
+00:35:46 Speaker 4
+Filter, Get a. 
+00:35:50 Speaker 1
+I'm not.
+00:35:53 Speaker 4
+Right here. Oh my god, I forgot. See, remember the command he was talking about? Mhm. Right here, this one. Okay. Pass arguments sit down because she said we're not using the server. Right We don't need it because we're using the API So Let's see if it's done. 
+00:36:10 Speaker 3
+I'll try the other one. Okay, it's running That's fine. 
+00:36:24 Speaker 4
+Let's Go and check the dataset quickly. So,
+00:36:30 Speaker 3
+This is what we have. This is in the metadata. So we have the run info, okay? And it has the rec.
+00:36:46 Speaker 4
+Download for each one of them. Look at that. That's kind of cool. I wasn't expecting that, but I guess they're making the dataset more rich now,
+00:36:55 Speaker 3
+Which is good.
+00:36:56 Speaker 4
+Which is good. Yeah, yeah. So yeah, so like if we want to download just one, Like look at that it goes directly there. Boom downloads.
+00:37:07 Speaker 5
+It This is where again?
+00:37:08 Speaker 4
+It's in the Oh go to the metadata directory Yeah in thereum, The run info CSV. Yeah, that one has pretty much everything for it.
+00:37:19 Speaker 3
+Yeah. Oh, this is nice.
+00:37:20 Speaker 4
+This has everything we need. Yeah. This is pretty good, yeah. Um, That's all right with me. So this file is okay I think, so that's easier. We're working on this right now. So, we are It looks good. Yeah.
+00:37:44 Speaker 4
+I mean, I don't know what I'm looking at, but in terms of dataset, it's actually pretty clean. It's very clean.
+00:37:51 Speaker 1
+So yeah, I can see it was running SQL. So assuming it's the files are increasing in size. Well, I have entered my username and password again.
+00:38:01 Speaker 4
+Yeah. This is a very new dataset Right? Yeah Pretty clean Yeah. 
+00:38:09 Speaker 5
+Like the release date was only January thirty first. Oh,
+00:38:13 Speaker 4
+That reason? Yeah. Huh, no wonder.
+00:38:17 Speaker 5
+Only forty three more times. I don't know how that happened, but yeah.
+00:38:22 Speaker 4
+Maybe, they uh kind of worked on it again and got more data or something.
+00:38:27 Speaker 3
+Maybe I should I am just in the big names, directory and I didn't go into the test folder folder Yeah, I'll change my next one Um So. 
+00:38:40 Speaker 3
+The doctor's report. No. Okay, yeah,
+00:38:44 Speaker 4
+Yeah, yeah. Should be done soon. But the good thing is, oh, I can actually move that to the let me move that to the server. So you okay?
+00:38:54 Speaker 5
+Oh yeah, that'd be good.
+00:38:55 Speaker 4
+Yeah, Yeah, to the shared server that way. It's recording what we're doing here there and. 
+00:39:03 Speaker 1
+It's not a Linux issue. That's us doing something reality. So we're like just.
+00:39:09 Speaker 1
+Zebra. We pass, Okay.
+00:39:13 Speaker 3
+Oh, okay. So,
+00:39:15 Speaker 4
+Uh Oh wait. Did you tell him what's the name?
+00:39:23 Speaker 5
+Yeah, he was disappointed that it wasn't capybara. Oh no You should have I told him to figure it out last time because I didn't care enough.
+00:39:31 Speaker 4
+Yeah we don't care about this thing. Yeah I was like. One indication is because I know the person was going to ask for that. So what should I be concerned. 
+00:39:41 Speaker 3
+About before I ask? Does that make sense? So am I going to be here for 20 hours? Okay.
+00:39:58 Speaker 4
+What Director name you want for the server? What? What director you wantum, So what directory name should we give it under in the server? Oh, you just want everything.
+00:40:12 Speaker 5
+That is the metadata.
+00:40:12 Speaker 4
+Okay, so should we just load everything in there?
+00:40:15 Speaker 5
+And then sort it? Yeah, maybe.
+00:40:16 Speaker 4
+Yeah, okay. We should definitely keep it sorted. It's already sorted. I'm I'm I'm yeah, I may move everything sorted in there.
+00:40:23 Speaker 5
+Yeah yeah yeah In that case if it's yeah, then there's no issue Okay. 
+00:40:27 Speaker 1
+And to get right now. You have to watch your computer though for me now No No No Yeah I have to watch my computer. Yeah.
+00:41:03 Speaker 1
+Oh, wow. That's really different. One file should have been mixed. Oh, okay. You got a deal? I'm seeing it.
+00:41:14 Speaker 4
+And I'll have it running in the server just. 
+00:41:17 Speaker 1
+For the sake of it.
+00:41:19 Speaker 4
+Yeah, that's a good idea.
+00:41:23 Speaker 1
+So I know it's. 
+00:41:27 Speaker 5
+Like honestly, It sounds like everyone else is just runningum the QC on all of them. So I think we should just do that too. I think it's okay if we don't look at it right away.
+00:41:36 Speaker 4
+Yeah, and is the right is the right uh step? I would because the first thing you're doing there just in general is quality, Um, check for.
+00:41:47 Speaker 5
+So, we'll just run all of FastQC, and we can wait for it to be done. Yeah,
+00:41:51 Speaker 4
+Exactly. Yeah, let's let's do that.
+00:41:56 Speaker 1
+Um, I don't know what's going on with the 985. We'll talk about FastQC later.
+00:42:02 Speaker 4
+So and it alreadyum It downloaded? Yep, it did.
+00:42:14 Speaker 4
+So It downloaded uh. 
+00:42:17 Speaker 1
+Three, four.
+00:42:19 Speaker 4
+We have. You're the fifth right now. Yeah, So we have about So. It looks like you were one of the first today. No, you're not.
+00:42:27 Speaker 5
+Yeah, It's mainly because it's only we're a small group at the moment and Sam's on here. So Oh,
+00:42:31 Speaker 4
+Yeah, Sam is on here yeah. 
+00:42:33 Speaker 5
+But. We're just uploading things to our folder right now. And. Then we're going to run FastQC We'll run this for everybody We each run 11 things to a folder. We downloaded,
+00:42:44 Speaker 4
+We are downloading three. Uh, runs only just to check it quickly. Uh, we're moving now because we have the script and metadata, and we're moving it to the server.
+00:42:54 Speaker 1
+Now moving. 
+00:42:56 Speaker 4
+It to the server. So what did you Downloadum. 
+00:42:59 Speaker 4
+The metadata and the data and the datasets to run usage?
+00:43:06 Speaker 4
+Um Oh, three of them, three runs. No, no, we're moving it there. We downloaded it in my local. Oh, you downloaded your local? Yeah, using the API. The API I told you.
+00:43:17 Speaker 1
+How much space do those files take?
+00:43:18 Speaker 4
+Um They're still running U h- huh Yeah. 
+00:43:23 Speaker 1
+It'll take a long time to download Yeah.
+00:43:24 Speaker 4
+They're still running. Yeah, still running. Yeah.
+00:43:26 Speaker 1
+They probably won't finish in the time we have left Oh,
+00:43:29 Speaker 4
+At least one should finish Maybe Yeah.
+00:43:32 Speaker 2
+So so we're moving everything to the uh server and.
+00:43:37 Speaker 4
+And but we're going to run it in the server as well. We just wanted to have at least three in the local because there here we can visualize it. In the server, we cannot. So. So we wanted to run QC all the steps that we did with uh Tranquil, but we also wanted to visualize as well. Was that?
+00:43:53 Speaker 1
+Don't jump ahead quite yet. Make sure you're not going to run into space issues here.
+00:43:57 Speaker 4
+Yeah yeah yeah, that's definitely something good, But. 
+00:44:03 Speaker 4
+Exactly. Yeah. Yeah, we definitely uh that's why we we say like let's just download three first, let's see how big they are. Um and then we'll we'll decide.
+00:44:14 Speaker 4
+Yeah, It's it's in here too, is in here also, it tells how much you know how big they are.
+00:44:21 Speaker 1
+Yeah, once. 
+00:44:26 Speaker 4
+Once I finish download it yeah. 
+00:44:28 Speaker 1
+Oh you're downloading with your laptop?
+00:44:29 Speaker 4
+Yeah. Only three to four to play with. Why aren't you using your start toolkit on the server? Because we got rid of them. On the server, why aren't you? It's the same command. It's the same command. We're using the same command, it's just a different, it's just we're using the API, we're not using yours.
+00:44:47 Speaker 1
+You're generating on your laptop and uploading it to server in background?
+00:44:50 Speaker 4
+Just because we want to have in our log, In our log, at least three, so we can visualize it with the tools thatum. We run for the transcript. After we do, yeah, forum it's a transcript. The uh this the stuff we did. We did the accuse, we did the QC, the alignment. Oh for capital? Yeah I'll try now try now yeah,
+00:45:14 Speaker 4
+To Have a visual to have a visual of the tree to look at it as well. So. 
+00:45:22 Speaker 1
+You're downloading the, A sample three three three. You're downloading the fastq files to your laptop. That would be nice. I think that's what you just said, you said earlier.
+00:45:33 Speaker 4
+No. Okay, I think you misunderstood. I did, Yeah So, we're downloading three We're downloading three runs in our local You're,
+00:45:42 Speaker 1
+Downloading them on the server using the SRA toolkit or something?
+00:45:44 Speaker 4
+No Local as in my laptop,
+00:45:47 Speaker 1
+My laptop Okay That's what I was just saying You're downloading the fastq files to your laptop, right?
+00:45:53 Speaker 4
+Yes. Okay.
+00:45:54 Speaker 1
+And then you're going to upload them to the server. You're doing two transfers?
+00:45:56 Speaker 4
+No, I'm not. We're running the same script in the server to download everything in the server. What we're moving is the script and the metadata to the server, Right?
+00:46:07 Speaker 3
+But, you need to have their raw data files on your computer or else you can't do anything else with it, right?
+00:46:11 Speaker 4
+We're running this script in the server to download.
+00:46:14 Speaker 3
+You don't. I mean different with jobs, you don't have to wait for it to run; it'll run right away.
+00:46:18 Speaker 1
+What you're saying doesn't make sense. You're saying. Let me let me explain to you what I'm hearing. Yeah. You said you're saving the fastq files locally on your laptop. Yes.
+00:46:29 Speaker 4
+For us to for us to look at it, yeah.
+00:46:32 Speaker 1
+Then what I said is, well then when you do the analyses, you have to move it to the server. Bottom line,
+00:46:37 Speaker 4
+We have no space for analysis.
+00:46:38 Speaker 1
+Yeah You have to We're not right now.
+00:46:41 Speaker 4
+We're running we're running this script in the shared space in the shared directory. We have to download the data.
+00:46:55 Speaker 1
+So Eventually though you have to put the FASTQ files on the server right?
+00:46:57 Speaker 4
+They are all going to be downloaded in the server.
+00:47:00 Speaker 1
+Downloading there. So you're not downloading it on your laptop, you're downloading it on the server.
+00:47:03 Speaker 4
+We just gave you extra information that we're also downloading three in here right now, in our local. Oh so now you're doing both okay.
+00:47:10 Speaker 1
+Yeah There we go. That's what wasn't clear.
+00:47:12 Speaker 4
+It was just extra It was extra information that confused you.
+00:47:16 Speaker 1
+Yeah Okay That wasn't But no. Yeah. It wasn't clear you're doing two separate, you're doing just three in a laptop and everything else there. Yes. Okay. Okay, good.
+00:47:26 Speaker 4
+We're not running it now because we you caught it right in the middle when we were moving the script to the server.
+00:47:32 Speaker 1
+Moving scripts to the server,
+00:47:33 Speaker 4
+Okay? Yeah, yeah.
+00:47:36 Speaker 1
+So eventually are you going to Well, doesn't matter Is everybody going to get a chance to run the SRA toolkit? Everybody in the room?
+00:47:47 Speaker 4
+Yes, Because the script is right there so they can see the the script. Right? They can run however they want to one one run two runs all runs. Okay.
+00:47:55 Speaker 1
+Yeah, I just wanna make sure everybody understands every command that you're there.
+00:47:58 Speaker 4
+Yeah, yeah.
+00:47:59 Speaker 1
+It's not just one person is doing one part and another person doing another part.
+00:48:02 Speaker 4
+Yeah, I was walking her through the code showing showing her the command that you, So that was the first thing that we did. Yeah. Okay. But okay,
+00:48:11 Speaker 1
+I haven't even usually a little bit odd, which throws things off for me. I got to make sure that everybody is starting from the same place.
+00:48:15 Speaker 4
+Of course, yeah, yeah, yeah. That's very important, Especially those commands, because if you don't know what you're using in there, then you don't know how the dataset is being downloaded. So you don't know if you're getting garbage. 
+00:48:25 Speaker 1
+You don't even know what the data is If.
+00:48:27 Speaker 4
+You don't know how you're downloading it Yeah Exactly Yep Yeah.
+00:48:34 Speaker 4
+Also, I forgot to tell you thatum everything is going to be documented. But I'm going to share that with you later. But, at least I wanted you to see the command and the script first. So you so at least you know, we can also like it's very easy. We can just change the path that we're running to his. But it's the same thing.
+00:48:54 Speaker 5
+Okay. Yeah. Yeah. Yeah.
+00:48:55 Speaker 4
+So I didn't discuss that with him because it's literally the same thing. If anything. I was just. Better because if there is an upgrade, it just picks it up immediately. Yeah,
+00:49:05 Speaker 5
+Yeah. All right.
+00:49:06 Speaker 4
+Yeah. Um, I was in the middle of moving everything and There you go. Okay.
+00:49:12 Speaker 3
+All right Are you still both like two years of the team?
+00:49:21 Speaker 1
+That's a slave I remember when he came to The. 
+00:49:28 Speaker 3
+Are you still hard? Oh my god, I remember struggling. Yeah. It. 
+00:49:36 Speaker 4
+Took a lot of breath. I'm so bad at explaining programming stuff. It's like.
+00:49:44 Speaker 5
+No, I hate explaining programs. Like genuinely, I much prefer talking about wet lab in my manuscript than dry lab. Yeah. Oh my god, like. I never know what's too much and what's not enough. Oh, class is over?
+00:49:59 Speaker 4
+Oh shit. Yeah. All right. I have to get this running in the server because that way you guys have, because in the server we can have it running, um. 
+00:50:09 Speaker 5
+Consistently yeah.
+00:50:10 Speaker 4
+Yeah, everything and and then if if he complains then we. 
+00:50:15 Speaker 1
+Then we yeah.
+00:50:22 Speaker 3
+I i i saw it told me to do that and i clicked it, And I tried it and then it didn't. I was like, whoa, I don't know what's going on right here. So I didn't do anything with that. And then, and then I tried again and then it worked, but I didn't do anything with that either.
+00:50:38 Speaker 1
+So interesting. Shit. So you just ran the command twice and it worked the second time?
+00:50:41 Speaker 3
+No, I ran it twice because they work, But then i ranum It said, run, make config. So i tried running the make config thing. And i took me to this weird fancy thing And. Then i thought, you know, we're just going to close that. And maybe we'll ask about that. And then I tried running the command again. Um, even though I didn't, I took it back to my file. So now it's just running in there.
+00:51:03 Speaker 4
+Oh, it did finish. Perfect. Yeah. I think it was on.
+00:51:05 Speaker 1
+While we were talking about this thing that we're doing right now because of the network connection. 
+00:51:08 Speaker 4
+Issue that we had earlier today, when we were trying to run this script on our own machine.
+00:51:10 Speaker 5
+And uh, yeah, that sounds about right. Okay, So Mackie's like the only thing they have to do is run sri toolkit, but we can worry about that later or next week. Yeah Yes.
+00:51:22 Speaker 4
+I'll run. 
+00:51:26 Speaker 5
+It. So this is what I'm going to do. Hey, move everything already to the server? Okay, perfect. So we're good. So I'll run it while I'm in my other class and then I'll give you in Slack, I'll send a link to the documentation where it has break down the commands and everything.
+00:51:50 Speaker 4
+So you can like so we can share that.
+00:51:59 Speaker 1
+Thank you.
+00:52:19 Speaker 1
+Make sure that by tomorrow, one more thing. Make sure your alignments are in by tomorrow. That's the last day. You need to have one BAM file in, sorted BAM file. If you're having problems with this, send me an email. There you go. If you want to submit the files, I can submit the files for you because it's not a big deal. We weren't saying sheltered child like that, like. The city is located in the central part of the island.
+00:53:49 Speaker 3
+I think it works for me.
+00:53:54 Speaker 1
+I feel that a lot of the first time. I was processing what you were saying. So, I think it's fine. We should just do this.
+00:54:05 Speaker 3
+But I also have to make an entire event because there are so many. 
+00:54:09 Speaker 1
+People here. What's going on there? Yeah, um.
+00:54:21 Speaker 2
+I'm not sure what you Mean.
+00:54:54 Speaker 2
+The city is located on the banks of the River.
+00:55:26 Speaker 1
+The name of the town is derived from the river.

@@ -1,0 +1,306 @@
+00:00:02 Speaker 1
+A lot of the times when group has problems, somebody else fixes it. Usually somebody's fixed it. Y'all help each other out. It works out well that way. Cool? All right, so I'm going to wander around the groups. Oh, you got a question?
+00:00:16 Speaker 2
+Uh, not a class question. Just calling you over? Yeah. I'll be cycling around here. Okay. I already had another group here before you came in here today. All right?
+00:00:23 Speaker 1
+So I'll wander around work with your groups, try to figure out what you need to do next All right? Oh, nice. So.
+00:00:58 Speaker 1
+The city is located on the banks of the river.
+00:01:28 Speaker 1
+I think it's fair enough.
+00:02:17 Speaker 3
+I mean,
+00:02:23 Speaker 1
+This was a real.
+00:03:13 Speaker 2
+I Mean, I know they use aluminum. I don't know the exact machine, but just.
+00:03:25 Speaker 1
+This machine was in. 
+00:03:27 Speaker 2
+Started getting reported about. It's not maybe it is this machine. Unless there's like one that just came out recently, Butum we still have not done a deep enough analysis of theum pass keys files I think. So I think we should do is we should talk to him and just mention. Show him the protocol so he also has idea. We can confirm if someone else is concerned as well. And, then we really need to look at the basket because we did not sell it.
+00:04:17 Speaker 4
+Like uh, does concern that the FISPC to like, not go blindly by it. Like check the runs and stuff. Data itself. Image or something like that.
+00:04:29 Speaker 2
+I think the point was more if to not like group it up to look at individual factors. Oh okay, that's what I mean. Like yeah. Okay Because, there's not much we're going to get just looking at the raw runs like Yeah,
+00:04:40 Speaker 4
+The aggregate Yeah yeah of course yeah. 
+00:04:48 Speaker 1
+So then, assuming that we're all set after we look at the five fifty files, we can start adding like what's our timeline. We. 
+00:05:09 Speaker 4
+Can also look at theum after we do that, we can look at at the. 
+00:05:14 Speaker 1
+Actually, uh, the fast PC train train results is in the server. Yeah, whenever we're ready, I can I can migrate it.
+00:06:06 Speaker 1
+At Least we answered that question. There is no paper associated with this yet.
+00:06:13 Speaker 4
+I think we'll answer one question. There's no paper associated with this yet. Yeah, there's not published. No, we answered one of our questions before. Yeah, The other one is the other question that we should answer to is it aluminum because it's like the issue that we're having, like every team is having it. And like. Most of them, if not all of them, are using aluminum as well. That would be nice to like have some reasoning as to why it's happening. Perhaps. One would think it's something that is well known.
+00:07:03 Speaker 1
+It was because of the aluminum. Aluminum, yeah.
+00:07:12 Speaker 4
+That We didn't answer. Did you answer that?
+00:07:15 Speaker 2
+It sayspolio. He said it was likely because of thepolio, and it's yeah, it saidpolio in here that was used for the.
+00:07:22 Speaker 4
+Oh, so he says it's likely because ofpolio. Okay, yeah, that's a good finding. Yeah.
+00:07:38 Speaker 1
+I will stay up front. I have a long history of that. It wasn't growing ears.
+00:08:38 Speaker 1
+Um. So. Oh, sorry, what'd you say? Oh, I was like, I got some sense of that. Nine point. Yeah, so I guess we just need to read and then um.
+00:10:06 Speaker 1
+I guess.
+00:11:06 Speaker 1
+Yeah. So. 
+00:11:30 Speaker 2
+Did you say you already run prospects on some of them? Yeah,
+00:11:34 Speaker 4
+All of them.
+00:11:35 Speaker 1
+All of them. Okay. So we can maybe also look at that, and we can show it to.
+00:12:26 Speaker 4
+Is It the best you see out currently?
+00:13:55 Speaker 1
+I'm just copying it.
+00:13:57 Speaker 4
+It's in my personal.
+00:14:02 Speaker 1
+Let me just copy it now before I forget. The first known use of the term " ske uo morph " was in 189 3 by the American archaeologist Warren K. Moorehead, who used it to describe a pottery vessel that imitated a basket.
+00:14:59 Speaker 1
+Yeah, you're right. I think it is. Oh, did. 
+00:15:38 Speaker 4
+You just? Yeah. Is it in thezebrafish one? Yeah, the zero one. Refresh.
+00:15:57 Speaker 2
+It's Inzebrafish. Yeah. This one? Yeah. It says I don't have permission.
+00:16:02 Speaker 4
+Just have to refresh. I can see it here. Copying. 
+00:16:09 Speaker 1
+And if I go there, yeah,
+00:16:22 Speaker 4
+It's there just it's just loading.
+00:16:27 Speaker 4
+Let me move it to my local.
+00:16:31 Speaker 2
+It still says no permission denied and I. 
+00:16:33 Speaker 4
+Oh yeah permission hold on. Is it permission then hold on I'll see the permission.
+00:16:56 Speaker 1
+It was a permission card. Yeah.
+00:17:55 Speaker 1
+So I wouldn't be worried about that. I'm. 
+00:18:21 Speaker 2
+Still seeing T as an overrepresented sequence.
+00:18:24 Speaker 4
+Even with the clean version.
+00:18:26 Speaker 2
+Looking at the clean version. Yeah.
+00:19:17 Speaker 2
+Yeah, No, it's still on the screen. Christie, this is the K version. And then this is the regular version, the one that wasn't transcribed. Yeah. No, I like it.
+00:19:28 Speaker 1
+Oh, just three seconds. I'm a little unsure if they're working or not. What do you think?
+00:19:37 Speaker 4
+Yeah, Apparently, we have used fuzz fuzz fuzz fuzz sites,
+00:19:46 Speaker 1
+Otherwise, you don't have to work the whole thing over again. Yeah.
+00:19:52 Speaker 1
+I mean, regardless of the design, I don't know if we should probably just. It just like let's just see how it goes. We really don't want to do that. That was definitely something that we were going to see over the weekend. This then work colleagues get back together and still have the item, so should we go back and add more? Check the documentation for S P C. If you can make your own database adapter, you can use those databases that are based on SQLite. So what you do is put in like thirty gigs, and then tell it to write attributes on that. I mean, but if it's just a regular application, are you talking about this?
+00:20:49 Speaker 1
+Yeah.
+00:21:19 Speaker 2
+Yeah, if anything, trimming it now gives us an issue with the sequence length distribution. Yeah.
+00:21:28 Speaker 1
+Oh, is this one of those where you look at the per base quality? Are they all okay? Yeah. Yeah. So that's okay. I mean, there were some guys. So maybe it has some tiny molecules. I know that's like. yeah, that's. If you do a search for. Seems like week two was a hard one.
+00:21:49 Speaker 1
+And then.
+00:22:19 Speaker 1
+So, sampling approaches may not work. This looks sketchy. That might be a better approach. Oh, that's that was bad anyway. They may not have it.
+00:23:12 Speaker 2
+Was It kind of sequencing distribution changing? After Voskuil or after trimming makes sense. I guess it's kind of confusing since we still have, it's not like a remote data or other things.
+00:23:28 Speaker 1
+So, which is unusual for animals. But I mean we really should have that thing.
+00:24:45 Speaker 1
+I wouldn't delete the raw data and the tables. Thank you.
+00:25:44 Speaker 1
+Yeah.
+00:26:33 Speaker 4
+Figure Out this experimental design via what?
+00:26:44 Speaker 1
+It's nice to have a room. It's just that duplication. I'm sure there's something. What was that? This is password. I've never. Yeah. Okay, there's the adapters. Okay, so yeah, okay, so you see the naming?
+00:27:32 Speaker 3
+Right. I see it here now.
+00:27:35 Speaker 1
+So that's also. Oh no TX Yes, that should be good to go then.
+00:27:42 Speaker 1
+So. What do you mean? Oh, yes. Just. All right. Can we? Oh, I do that too. There we go.
+00:28:54 Speaker 2
+What Did you run for trimming?
+00:28:55 Speaker 4
+Oh, it's just the five texts like we do for for trap now.
+00:29:05 Speaker 2
+It's something we do with trap now. Just changing like essential file names. Yeah.
+00:29:12 Speaker 1
+Okay, so do we check the. Oh,
+00:29:20 Speaker 4
+It was in the in the document. In the trap now analysis. That's the first step. Yeah.
+00:29:43 Speaker 1
+Yeah, but we know. I did it. You did? Yeah,
+00:29:49 Speaker 4
+I don't know which just. So, can you put can. 
+00:29:58 Speaker 2
+You likeum put the exact code you ran in the dollar in the chat?
+00:30:17 Speaker 4
+I Was first with. I find it.
+00:30:33 Speaker 4
+I'm Looking for my notes.
+00:30:41 Speaker 1
+So, sometimes, oh, so yeah. I love these episodes. Species are not like the same characters. So, they actually make unique characters that show in that same sequence as what you're trying to see about the world. That makes sense? Yeah, yeah. They make a PCO for an interesting solution. So yeah, I love these episodes a little bit more just because I love his walk and all that stuff.
+00:31:11 Speaker 1
+The film was released on DVD in the United States on October 14, 2008.
+00:32:05 Speaker 2
+I Might have misremembered. But. So theum actual protocol, the methodology we got from the professor who ran this experiment. Um the protocol we got was based on single cell RNA sequencing. So yeah, that's what I thought. I can show you the protocol right now, but I really don't want to do single cell. Okay,
+00:32:26 Speaker 1
+You really need different tools for it. It's much more complicated I think you'd be beating your head against a wall.
+00:32:33 Speaker 2
+Okay. So what if. We already did a bunch of work analyzing other paper. What, if you pick that paper and just redo everything, we did the other paper? The paper that we have been working on earlier, Because remember how I mentioned, we ended up looking at the wrong paper, thinking it was a system. So basically, we already have analysis of like what's the product grouping over, what's the product design. So all we have to do is pull those samples. So I just need to see samples. Okay, never mind. Um. Oh, never mind. I got the right one. Okay, so I guess we need to find a new data set. Yeah, this is what it says and then it gets a bunch of info.
+00:33:13 Speaker 1
+Yeah. Interesting, Yeah, There's not enough in the other samples. So shoot Is an interesting data set, but man.
+00:33:41 Speaker 2
+So That's okay. We have a list of other Oh Goldman, I know him.
+00:33:51 Speaker 1
+Did you work with him? No, but I've seen some of his work. Interesting. Yeah, he does some cool stuff. So okay. That's crazy. I've never seen anything like that.
+00:34:04 Speaker 2
+That's funny. In all the years I've talked to scores, it's normal. Okay, I guess in that case our game kind of just had to be revisiting. Oh, that's okay.
+00:34:12 Speaker 1
+I'd say try to. I mean, it'd be easy to talk about Wednesday and say," Hey, we didn't do this and everything else came down." No, this is a single cell. So here's what we're going to take.
+00:34:20 Speaker 2
+Um well, okay. So i guess i had some questions about i don't know how applicable these questions are anymore, given that we can't do this data set, but we did end up trimming the files. And I guess now, I just kind of want to make sure we're doing things right. Is it normal for the sequencing distribution to change after trimming? Yeah, so this is one of the files. Okay, what was changing?
+00:34:43 Speaker 1
+So. Oh, the length distribution should change after trimming. It should change because before trimming, they're all exactly the same length and after trimming, they're variable. Okay. And it should be an exponential. Okay. And then a quick drop- off.
+00:34:53 Speaker 2
+Yeah, this is what. I was just kind of concerned because I saw that little X there, Yeah, that's fine. Okay, so then this is why I was like, That's unusual to be that good. So. And then my next question is we were we still had issues with sequence duplication levels. Um. So again, this was an overrepresented sequence for this. And then after trimming it, we still had that oops. No. Uh, I read that for you We still have the same one. Come up Is that And.
+00:35:23 Speaker 1
+That's an sequencing error adapter It didn't come out interesting.
+00:35:27 Speaker 2
+I don't know if the issue is if it's correlated with single cell sequencing. No, that's definitely use best.
+00:35:35 Speaker 1
+That's your best be. That's an order of that.
+00:35:43 Speaker 2
+Like maybe it's not an issue when we work with a different data set, but that is what happened and I'm a little confused. Yeah,
+00:35:50 Speaker 1
+I'm confused too and that's right here. About thirty percent, which is a non- trivial number. Um. Let's see what happens.
+00:36:10 Speaker 2
+We're just going to hope it's not a problem. All right, that works for me. Okay, thank you. There was.
+00:36:15 Speaker 1
+Oh, um. Let's see soon. And also. 
+00:36:20 Speaker 2
+Because my mouse. We have a mouse? I think it'll be a little better because we we did go through the steps, it's just we need to redo it. It's not like the actual steps are doing changes. Yeah, absolutely. So you got some back time.
+00:36:38 Speaker 1
+I thinkum a little extra work. Yeah. So it happens deviation. Yeah. But now honestly, maybe this is better because now we know what details to look for and alsoum. Keep track of like I don't think we did. What information? But now we know what to do. So let me give you some history on this course. So before this, there was a course called Network Engineering Problems. You were here twenty two, yeah, I was here twenty two.
+00:37:22 Speaker 1
+Oh, you're just starting out as you started. Okay. But uh, He had a course built in here, and we realized look, this is different skills for a biotech team. Uh G was doing um cloud mapping to do transformation of the data. Uh. But but the cool thing about this course was we started out with a class. And then you had to build through this entire process because all web apps, yeah, the problems that students got into is everyone continues to experiment. You make a mistake in week three, you didn't realize it. By the time you get to like week six, I go," Oh shoot, I messed up this step." In fact, one of my students forgot to put salt in one of his butter. They had to go all the way back and they come to us in class and said it's going to be six.
+00:38:06 Speaker 2
+That sounds like stage bio now.
+00:38:07 Speaker 1
+But, that's how labs work. And that was the thing that was really cool about that course. So I am glad that uh she's doing that with you there becauseum Dr Thomas is good. She knows about these things Oh yeah,
+00:38:18 Speaker 2
+I really love that course. It was like.
+00:38:25 Speaker 1
+So, Basically, what we need is to see what's the wrong. You got to figure it out. We're doing that. Other groups may have problems too. The color looks funny; you'll get a warning message. But you know, Other people will make mistakes and they'll find out during the winter, and we'll figure things out. So these things happen in real life with projects. Yeah. And if you're late, early in the next session, Right?
+00:38:54 Speaker 2
+So you're not alone in this. What happens? I guess I'm gonna do this. That's what's gonna happen. Okay, yeah, this is fine. Honestly,
+00:39:02 Speaker 1
+I'd rather have something with a here at the end, but works better with people that parties can also from having experience it twice to have peace, it'll help. Okay. I agree. If you want to try this one, go for it. If you want to look for other things, let me know and we'll try to figure out something. We have a list of datasets that we can use, and then we just pick one and start doing research on it. Yeah, which is a cool one. But yeah, there's um. I'm trying to find. So the publication that did the presentation on like the whole experimental design, that was based on a different. I'm trying to find the dataset they used for this.
+00:39:48 Speaker 2
+I'm kind of over that.
+00:39:51 Speaker 1
+So what I'd suggest for Wednesday is definitely tell everybody," Hey, look, we did these. Don't go to detail, but yeah, we did these steps and we found oh yeah single cell can." Single cell is correct. Yeah. But, here's our the new one. We're looking at and tell everyone about the new dataset. Oh yeah And look at that one more closely. Yeah Yeah Awesome Hey thanks so much All right? No worries Thank, you Let me know along the way. If you send emails to get stuff.
+00:40:14 Speaker 4
+Yep. So we're going back to the list we voted from?
+00:40:19 Speaker 2
+Let's just do the mouse one. I don't want to spend more time. Which one is the mouse one? Here, I'm gonna, I'm stuck up here in this box. This is a Geo session.
+00:40:27 Speaker 4
+Is it, you found the paper? Yes, it is. Okay.
+00:40:40 Speaker 1
+It's in this box here. Yeah. 
+00:41:04 Speaker 1
+I Don't Like that. It's a single overrepresented sequence in one sample. And it's present in both. I don't have the screen, but it's the same for three samples. And it's visible right there. And it didn't show up on the 21% probably, but it was when we paired out.
+00:41:38 Speaker 4
+Okay, so I'm just gonna. Launch the pipeline for that one.
+00:41:47 Speaker 2
+Let's just first make sure we can access this.
+00:41:53 Speaker 4
+Oh, I thought you did.
+00:41:55 Speaker 2
+I well, There are certain things that we can look at that other people have done now.
+00:41:59 Speaker 4
+Oh okay. Like genome. 
+00:42:03 Speaker 2
+Sequencing data because we saw it's under RNA sequencing, but we didn't go beyond anything beyond that. So we're just checking what results you know.
+00:42:11 Speaker 1
+And how. 
+00:42:13 Speaker 4
+To make sure it doesn't have any surprises.
+00:42:23 Speaker 2
+But RNA seq does not come up in a search of.
+00:42:25 Speaker 4
+Search it up in the database. What are we looking for? Just so help you look.
+00:42:30 Speaker 1
+RNA sequencing, okay.
+00:42:41 Speaker 1
+One more quick one. Yeah. Um, when I downloaded the repository from GitHub, Can I just delete that local copy before you just want to create a new one? So everything in terminal is fine. They sent you this project here, or is it cool if I keep the extension? Is it more for your course? You also just write up all those things. Okay.
+00:43:02 Speaker 2
+For is all the folder names because I'm going to assume they're like. Oh yeah.
+00:43:15 Speaker 2
+I'm not confident about this dataset either because I don't see how it's. 
+00:43:32 Speaker 1
+Going to be.
+00:43:40 Speaker 1
+Oh. I think I just said noise so bad.
+00:44:40 Speaker 1
+The search. 
+00:45:04 Speaker 4
+Of the picture, remember the banner service.
+00:45:10 Speaker 1
+So.
+00:45:39 Speaker 2
+I don't know if you can see the last.
+00:45:43 Speaker 4
+You're not finding theum RNA sequence? Yeah.
+00:45:50 Speaker 1
+For example,
+00:45:51 Speaker 4
+We're really just looking at this. It could say something like this. Yeah, can you send me that link where you found that? It's in the slack. Oh, it's in the slack?
+00:46:03 Speaker 2
+Oh Sam, I don't know what could have been the last one because I don't see RNA seq anymore.
+00:46:25 Speaker 1
+Oh, What is this? What is this? Single cell RNA sequencing.
+00:46:33 Speaker 2
+Uh, it's single cell, so that means we really can't do it.
+00:46:36 Speaker 1
+So It's the same. 
+00:46:46 Speaker 4
+As the other one.
+00:47:09 Speaker 4
+Was It uh,
+00:47:10 Speaker 2
+That's a good one for the dataset now. Cause that was in our top three.
+00:47:18 Speaker 4
+I think I have a littlemic here.
+00:47:23 Speaker 2
+If the COVID dataset is also having issues, Sam, then we'll go to the rest of our options.
+00:47:36 Speaker 2
+Okay, how about this one? Plan for today. We need to find a dataset. Everyone just pick one dataset. We need to just we're just going to check all the options we have right now. I know you're busy if you want Sam and I that can be our job today. We can just find a dataset because honestly, I don't know about you guys, but at this point, I don't care what data set we're doing, I just need to get something done.
+00:48:01 Speaker 4
+Yeah, let's check the COVID since we have the link in there.
+00:48:03 Speaker 2
+So we'll check the COVID data set. That one's wrong, then Sam and I will look through these. Where is the link to the code data set? You've said you put yourum assignment in here.
+00:48:14 Speaker 1
+Yeah, let me. Okay.
+00:48:42 Speaker 2
+Oh, Are you talking about? Let's look at the COVID one just because that was like a good one.
+00:48:57 Speaker 1
+Who's the little one about Peter Pan?
+00:50:05 Speaker 1
+Right now we're going to approach this first.
+00:50:37 Speaker 1
+I'm gonna wait to find uh on the conference.
+00:51:08 Speaker 1
+The name of the town is derived from the river.

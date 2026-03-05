@@ -1,0 +1,52 @@
+00:00:04 Speaker 1
+hey peter what's up hey professor how's it going it's going it's busy yeah i can tell yeah i wanted to check quickly with you i didn't have time to um finish it yesterday because i got some chills so i had to go to bed early and take some tylenol so i'm up because of tylenol so, thanks thanks to medicine but but i i was i was gonna show you but what i'm gonna do is that i'm gonna i'm gonna ask you a question to make sure that i i know exactly what to provide so.
+00:00:41 Speaker 1
+basically we get all the HTMLs right and you want us to have like um, basically what we understand of each one of the findings and this is so not for each one.
+00:00:53 Speaker 2
+but just take all the html files from fastqc yep from the travel data yeah, Take those HTML files, put them into a zip file, upload that to my courses.
+00:01:03 Speaker 1
+Okay.
+00:01:04 Speaker 2
+And now for the report that was due this morning. Oh, it was due this morning? It was due before workshop, yeah. That's okay. You don't have to submit every week.
+00:01:14 Speaker 1
+Okay.
+00:01:15 Speaker 2
+I mean, you could take this as a gimme week, and then for next week's report, you can talk about this. But what you want to see in that report is one example command line of what you're in.
+00:01:27 Speaker 1
+Yeah.
+00:01:27 Speaker 2
+Don't do it for all of them, just one. One, and then say this is what we observed in the data. You know, what did you see? What was the number of spots? What was the range or whatever? Anything that is factual, especially quantitative, and especially if it's interesting, if it's something that might be unusual.
+00:01:49 Speaker 1
+Okay.
+00:01:50 Speaker 2
+So I basically need to look through the data and think about presenting that in prose.
+00:01:55 Speaker 1
+So, let me see if I understand correctly. So, the report of the FastQC, right? It's in the morning.
+00:02:07 Speaker 2
+So, let me pull up the syllabus. This will make it a little bit easier.
+00:02:11 Speaker 1
+Yeah, yeah.
+00:02:11 Speaker 2
+You can work on free. Yeah.
+00:02:14 Speaker 1
+Give me a second. That completely skipped me because I wasn't feeling good last night. I got some chills. I had to go to bed. But otherwise, I will check the syllabus.
+00:02:25 Speaker 2
+I would recommend submitting it before the night before. Yep. You could submit it a day before that even. But you'll see we have these weekly reports. The first one was actually the project pics, the data sets you're thinking of. And that was due earlier in the week. And then you have all these others, including an optional one if you wanted to work during spring break at all. So, I believe that counting the project pics, there's 12.
+00:02:48 Speaker 1
+Yeah.
+00:02:49 Speaker 2
+That counting that and the optional one. And you have to do 10 out of the 12.
+00:02:52 Speaker 1
+Yeah.
+00:02:53 Speaker 2
+So, this counts as one. And then you have to do another nine across the remaining 11 weeks.
+00:02:58 Speaker 1
+OK, OK, got it. So now I understand. I was going to do it last night because like I like doing it one day before because I can meat with you and see if I'm missing anything. Which, you know, so far I've been missing things.
+00:03:12 Speaker 2
+So what I'll do is I see it in my courses. I will take a look at what you have in their and see if their's anything major that we need to talk about. All right. So I'll give you a little bit of feedback, not a lot, but a little.
+00:03:24 Speaker 1
+All right. So. So right now, when I send the zip files, you don't want me to write the report. They're separate. Oh, they're separate things. Oh, that's the weekly report.
+00:03:35 Speaker 2
+And then their's the zip file. There are two separate submissions and two separate assignment boxes. Oh, OK. Now I understand. Now the fast QC files. Yeah, you can still submit those. Yeah. it was the written report that its once per week before workshop and its in the morning yea yea.
+00:03:51 Speaker 1
+all right yea to do another one of those yep yea okay i'll make sure i'm on top of that thank you for the reminder yea no worries thank you i appreciate it no worries all right we'll see you later see you

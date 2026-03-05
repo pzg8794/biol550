@@ -1,0 +1,776 @@
+00:00:08 Speaker 1
+I'm not sure what you mean.
+00:00:37 Speaker 1
+Okay. Let's see.
+00:01:52 Speaker 1
+Hello. Let me. There you go.
+00:02:04 Speaker 2
+I'm connecting my headphones. I don't know what's this connection. And it's off. Disconnecting off. There you go. Can you hear me?
+00:02:20 Speaker 1
+Yeah, perfect.
+00:02:28 Speaker 2
+I wasum, I made it here right because I went quickly to the market to get something for my dad at the pharmacy, and then he forgot, and that's what he went for.
+00:02:44 Speaker 3
+Oh, he also went.
+00:02:46 Speaker 2
+Yeah, I mean because of the eggs. So, he bought everything all hisveggies and everything bought the eggs. I'm like where are the eggs? Say it.
+00:03:01 Speaker 1
+I don't remember that they use a lot of eggs too.
+00:03:12 Speaker 2
+Hey guys. How's it going? Good, how are you? Good, good. How how do you feelum the the interview went.
+00:03:21 Speaker 4
+I think it went well. Um I didn't expect to like the school as much as I did like it. So I'm very pleased. Um I do hope I get in just that way kind of have options.
+00:03:30 Speaker 1
+But yes, yes.
+00:03:32 Speaker 4
+I'll find out as early as this week so we'll see.
+00:03:36 Speaker 2
+What what school is that if you don't mind me asking?
+00:03:39 Speaker 4
+The University of Connecticut. 
+00:03:40 Speaker 2
+Oh yeah yeah that's, Yeah, I'm from the area,
+00:03:46 Speaker 4
+So I could live from home. I think it's a good. I think I heard it's a good school. Yeah, it's a R one institution, so they showed me their facilities and it was huge. So a lot of options for me there.
+00:03:59 Speaker 2
+Oh nice. Um like I'm checking right now, the downloads on the server and see how we're doingum.
+00:04:10 Speaker 2
+Yeah. Um, yeah. Do you guys get a chance to look at theum the slides? So yeah, that was just an idea. We can pull it off, you know, remove stuff, add stuff, whatever you guys want. Also I was thinking that Nikki so go ahead Nikki sorry.
+00:04:26 Speaker 4
+Oh I was just gonna say I did look at it. Um I think some of these things might be in a little too much detail because especially because we do want some space to talk aboutum the actual data set. But like I don't think the general.
+00:04:42 Speaker 2
+Yeah, that's what I was thinking because soum and let me give you a little bit of insight of my head. So you guys can pick, you know my brain. So I was thinking thatum sinceum you actually deal with the headache of of the uh dumps. Uh Samuel there is uh there's like there's a slide in there that talks about the downloads, right? Um the fastq dumps. Even the examples in there, and also the fastQC and the trimming. And also, there's another slide that talks about the difference between those two. Like if you wanted to cover those, I think you would be in a good position to cover it. What do you think, Samuel?
+00:05:26 Speaker 3
+Oh okay. Sorry, just one second let me. You. 
+00:05:30 Speaker 2
+Feel comfortable?
+00:05:31 Speaker 3
+Cover the fast.
+00:05:33 Speaker 2
+The fastQC yeah dump dumps.
+00:05:38 Speaker 3
+Just like the process of yeah,
+00:05:40 Speaker 2
+What we did. Yeah, what we yeah, what did yeah. That's what I mean. Yeah, like the command line, you know, what we runum, What the code is running underneath right under the hood because those those that those three things are the heart of the code right? The dumps, The QC and and and trims so yeah, if you feel comfortable with itum and And Nicky, if you feel comfortable with him, you know, taking that like. I don't mind. Um, if you guys wanted to share too. But I was thinking, Nikki, That um since you were a little bit disconnected. So like you feel so you feel comfortable. You, can you can take over? Like basically um the way that we organize things with uh yeah, like in the data management organization. You can take the way we organize things right? You can even go yeah a little bit into like the tools also right? Like how each one of these directory. 
+00:06:35 Speaker 2
+Is related to the tool that he's gonna go over. What do you think?
+00:06:41 Speaker 4
+I'm not sure if we need to. I don't know if this slide is like something we need just cause like, I don't know, cause we only have five minutes really to discuss.
+00:06:50 Speaker 2
+Well, He said five to ten minutes, so we can stretch it to six minutes, right? So we can do one minute. I mean, Do you think the analysis will be Cause I'm thinking the analysis is gonna be simple for us, right? Because. He didn't give us time to like do like a huge dive in, right? So what do you think?
+00:07:10 Speaker 4
+Yeah, I think the analysis is going to be simple too. Um. Yeah. Um, I I mean, I don't know. I just I don't think we need the shared directories text, But I think the how we split it up is a good thing to have. So I think maybe we just want like modify this one. Yeah, Textbook, like we can talk about the tools. I don't mind about that. I just I don't. Exactly. I think we should reframe it, like mention a different No,
+00:07:35 Speaker 2
+No, Yeah, you can reframe it whatever. Yeah, So I was just telling you what my head was thinking my head. My head was thinking like me. I was, i was going to explain the process, right? And the wrap, which is the pipeline. So i i don't need to go into the details, right? Uh he would want you guys to like know that you know the details, like. So if you guys go into like how we organize this data and how the tools run, right. And then you guys also go into the analysis as well. I don't mind touching it a little bit, but like I'll be honest, you guys are going to understand that better than me. Yeah,
+00:08:06 Speaker 4
+I don't mind doing more of the like analysis. Yeah,
+00:08:09 Speaker 2
+Which makes, yeah, yeah That's what I was like, you know thinking, but what do you? What do you think smile?
+00:08:16 Speaker 3
+Um, I honestly, think he's expecting us to go into more detail about the QC analysis than he is about the background information on the. Execution for getting that data. Like I, um, so like you have the workflow overview, the approach, data management organization pipeline tools. I honestly think like those like slides two through, like seven could just be like one slide that says like this is what we did. Like S R S S R Oh my god s r r. 
+00:08:55 Speaker 3
+Run s uh download fast or uh gzip and then fast faster or fast. Actually I don't think we should say that we use faster Q C just because he said, not or he didn't say we can. So we can just say, fast Q C I mean,
+00:09:15 Speaker 4
+I don't I think it's fine if we mention that because like the point is to kind of give an update on what our group is doing. Yeah. So I think that's a good thing of substance. The faster Q C thing at least.
+00:09:24 Speaker 2
+It makes sense to mention that I agree.
+00:09:26 Speaker 4
+Because And also if like for some reason we have issues down the line, we kind of like, I don't know.
+00:09:32 Speaker 3
+We can say that that's yeah. Yeah yeah.
+00:09:35 Speaker 2
+I I can guarantee you he'll want to know our process, right? So, our process include fast circuit, C, no, no, what he mentioned, so he will. He might actually like, if we do it the way you say, which is fine to be honest. He will uh he got I guarantee. You he'll ask, why did you use that and not the other one? So it's like Oz answering before he has the question.
+00:09:58 Speaker 3
+Yeah, um, I guess yeah, I guess we just have toum emphasize the difference between the faster. Yeah. Which Was just what that it does everything that fast Q does, but without gzip. Gzip is a manual step. Um, but yeah, I feel like most of the time would go towards like, Um, like I think I yeah, I put like a little thing in the chat of the Google Doc. The way I was thinking of it, it would be like introduction to like the some like small pipeline. Then the introduction to the paper, which it's a relatively complex paper. So that might take a good chunk of time and thenum.
+00:10:46 Speaker 2
+I agree with you, but I would not take a chunk on time on that. I will go. We pick a hit. We don't we don't have that much time, so we I think that's important in the analysis too. So I think those two should have more time, but you should balance it. So like let's That's that's my my feedback. But I think I agree with you. I think the introduction to the paper didn't even think about it. I think that's actually key because that's our project. Yeah,
+00:11:12 Speaker 3
+Um so it could be like. 
+00:11:15 Speaker 2
+What do you think Nikki? I don't know maybe maybe we're going too far here Uhhuh. 
+00:11:20 Speaker 4
+I mean, I agree we should talk about the paper a little bit. Yeah, I think we just mentioned we have like a slide or two maybe. I think a slide is enough honestly, since he just giving the context of the study and what they found or I, guess what they studied, and then we do a couple slides rest all being the fast QC data. And yeah, I also agree with Sam. We could I I think he wants mostly like our analysis on the pass QC rather than the steps since in theory, everyone followed the same steps. Yeah.
+00:11:52 Speaker 2
+But yeah, I agree. Yeah, I agree. So I think, I think we're on agreement on like correct me, if am wrong. So so we we define the process right? Then we go into the paper right? Is that what you said Samal, right? That's the order. You say we go into the paper.
+00:12:12 Speaker 3
+Yeah, Briefly describe the paper and then go into the actual control groups of the paper because there's it's a really comp. It's like it's two and then four and six and then two.
+00:12:24 Speaker 2
+So. So we can have one slide for that is that is that how you're thinking?
+00:12:29 Speaker 3
+Um, I mean we can definitely have one side for it. It'll just I mean obviously the information will be, Yeah, more than one slide, but like it's a visual presentation. Yeah,
+00:12:38 Speaker 2
+Let's try to keep it in one slide. So and then we need notes. Like you know we can have it on.
+00:12:44 Speaker 3
+Yeah, That's usually what most like presentations I do they just have like a crap ton of notes.
+00:12:50 Speaker 2
+Yeah I I won't say much on the paper. So like uh if you guys are okay with that, like I'm, okay, digging into the analysis because you know, uh, that's my domain of expertise. But like I would look like a fool talking about the paper because, I honestly I haven't even read it. But I'm sure you guys have already gone over that. So yeah, you can Oh, you guys haven't But you guys will.
+00:13:14 Speaker 3
+I'm trying to find it. I found it like a week ago, But I can't find it now and I'm trying to find where the actual paper is because Like, we we had to have found it originally because we were only looking at like open source Okay,
+00:13:30 Speaker 2
+We can do that nowum, Yeah, so I think I like that. So uh, so in and it so we do one slide about our process. Um right and then one slide about theum the paper. And then we have you say you say Nikki, one slide about the tools, right? Everything in there, just one not like or even if we're gonna mention the organi, the organization mentioned there, right there is a two, right. You guys said that okay.
+00:13:57 Speaker 4
+Yeah, I also don't know again, I don't know how important it is to mention organization. I also don't think we need to show the code we ran.
+00:14:03 Speaker 2
+Yeah, yeah. No, no, we should show his examples so he knows we followed it right? So but not the code. Oh, you mean the example of running that? Okay, those are samples examples of running. Yeah. You mean this right?
+00:14:20 Speaker 4
+Yeah, I don't think we need this one.
+00:14:22 Speaker 2
+Okay, okay, yeahum yeah, that's fine. We can always say that we used it the way, he said it right, but with faster. With faster QC dumps, I guess. Because everyone, I think, yeah, I think in this case it makes sense because everyone did it. This is not something that is only tailored to our project. So. Yeah, Exactly. So I agree. Yeah, that can be removed. Yeah. And then after that the analysis. So that would be four slides. Yeah, I think that's fine. Yeah, that seems.
+00:15:00 Speaker 2
+Reasonable. Um, Let me check while you guysum like you guys can start picking stuff in there. Um, let me just check how we're doing in this server. Uh,
+00:15:12 Speaker 4
+So I'm gonna maybe redo that first slide just that way I can actually put text because it's kind of weird that has both of your last names and not mine.
+00:15:20 Speaker 3
+Ium I. 
+00:15:23 Speaker 2
+Oh what is it called? I made a. I deleted it by mistake. You know what happened? I beautified the thing, Cause it allows you to beautify. I don't know if you noticed, it was plain. And then it that's a nice background, like with the fish together. That was like, oh, that's kind of cool. But it removes your last name. That's weird. Add it, add it. Yeah, I just added sorry about that. 
+00:15:46 Speaker 3
+No you're fine. We canum we can use that background too. Uh but I I made a slide deck that had a little more color.
+00:15:57 Speaker 2
+Oh, if you made one,
+00:15:59 Speaker 3
+Soum put it in the drive. Uh, so if we want to work with like I don't know, we can also use that.
+00:16:05 Speaker 2
+I would yeah let's use that because I didn't build that. So let's use that cause that's you know, that's something more genuine I guess you know.
+00:16:14 Speaker 3
+Here I'll send it in the Zooms for you.
+00:16:17 Speaker 2
+I just didn't wanna put like a plain white background. No, that's fair That's alright Let's see uh, That's that's actually nice. Yeah, I actually like this. Yeah, I like this. Yeah, um is that is that in the drive? Yeah,
+00:16:37 Speaker 4
+Yes, I just found it. Yeah,
+00:16:38 Speaker 2
+Then you can just go and move, you knowum like whatever, like what like everything to that. Because I I actually like this one better. Um is is more simple and it's kind of goofy. That fish is definitely goofy.
+00:16:58 Speaker 2
+I kind of like it. Yeah, yeah.
+00:17:00 Speaker 3
+Get a kick out of people.
+00:17:02 Speaker 2
+Yeah, yeah. No, no, that's why I think a good laugh is always good. Um, it's funny. 
+00:17:09 Speaker 3
+Though I don't think that's azebra fish but definitely no.
+00:17:13 Speaker 2
+Yeah thezebra fish is the one that has Stripes. 
+00:17:21 Speaker 2
+Yeah exactly yeah. 
+00:17:57 Speaker 3
+I Don't know where, where the paper is.
+00:18:04 Speaker 1
+Let me check. Let's see. All right. Oh, what is this?
+00:19:19 Speaker 2
+The Server is busy. Oh,
+00:19:22 Speaker 4
+Is it? Yeah,
+00:19:24 Speaker 2
+It looks pretty busy.
+00:19:34 Speaker 2
+Let me check on my end.
+00:20:05 Speaker 1
+I'm trying to find. Where is this? Yeah.
+00:21:28 Speaker 4
+I'm Moving. I'm I started moving some things over. Oh, sounds good.
+00:21:49 Speaker 1
+Bro.
+00:22:46 Speaker 3
+Okay, I think I found them.
+00:22:48 Speaker 2
+Hmm, share with us in the Slack.
+00:22:53 Speaker 1
+Um. Well, here's a, here I'll do it.
+00:23:09 Speaker 3
+This is. The geo let's say link, it says it was status it was published like. A month ago, or at least made public.
+00:23:26 Speaker 2
+Let's see. Oh, they have some downloads in here. 
+00:23:32 Speaker 3
+Now. How does this go to?
+00:24:06 Speaker 3
+There's like so many different links. What searching? I'm trying to find the original publication.
+00:24:19 Speaker 2
+Let me check if I'm checking to see if I because I think I saved something before.
+00:25:51 Speaker 1
+Hello.
+00:27:15 Speaker 1
+Okay. Okay, I'll check if you can. Are. 
+00:27:27 Speaker 4
+You able to find the article?
+00:27:29 Speaker 2
+I have theum, I was able to find the info that we have here for the project and the geo page, and I'm digging into this. To see if there is something like an article attached. Organism,
+00:27:46 Speaker 1
+More. Annotation. 
+00:27:53 Speaker 2
+Projects. Geo datasets. What's this? Organism experiments.
+00:28:07 Speaker 2
+Let's see where this takes me. Oh, okay.
+00:28:15 Speaker 1
+Translation table. Japan.
+00:28:39 Speaker 2
+Contributors, citation. Citation. I mean the uh where where did you send me the geo? Um. I don't. I mean, these things, the projects they should come with a paper right?
+00:29:02 Speaker 4
+I would think so.
+00:29:03 Speaker 2
+Yeah. I feel like that yeah. I would think so too, Because why would you like go through such a length, such project, and not have a paper? Uh let's see. Brief.
+00:29:32 Speaker 2
+Let's See if I can find some aim for.
+00:29:38 Speaker 2
+How to get the paper? I need to get help here. Oh, okay. Apparently, I have to go to scroll to publication, the section at the bottom. All right. Let's see. Where is publication?
+00:29:57 Speaker 3
+Oh, there's a part in the bottom? Supposedly.
+00:30:09 Speaker 2
+For the bio project, when you and the link for the bio project, let me put in this like this in case. Supposedly. But I'm looking and I still cannot find it. Let's see projects. This is this guy.
+00:30:32 Speaker 4
+Did we really go through all that work to find?
+00:30:34 Speaker 2
+That's what I was just gonna say that doesn't have a paper.
+00:30:37 Speaker 4
+That can't be right.
+00:30:38 Speaker 2
+It can't be right.
+00:30:39 Speaker 3
+I I can't imagine that.
+00:30:44 Speaker 2
+I don't see uh oh let me log in and see if it, um. I don't think that matters but whatever.
+00:31:00 Speaker 3
+This would be so so bad if that's the case, oh my godum. 
+00:31:07 Speaker 2
+It has it's something we're missing I'm. Sure, it says here, like you know, the you scroll to the to the publication sections at the bottom, it will show any link PubMed paper. So wait,
+00:31:25 Speaker 3
+Is this it?
+00:31:26 Speaker 2
+You found it? Oh, PubMed it took me when I signed in, it took me to PubMedhuh?
+00:31:36 Speaker 4
+No problem solved, I guess.
+00:31:40 Speaker 1
+Wait wait. Uh, let's see. It's. 
+00:31:45 Speaker 3
+Uh it's the same authors and I can't imagine it would be. Yep,
+00:31:53 Speaker 2
+Exactly. So let me seeum Oh okay.
+00:31:57 Speaker 3
+I think I found it. You found it?
+00:31:59 Speaker 2
+Look Perfect cool This is I'm searching the database of PubMed right now and. 
+00:32:08 Speaker 2
+Not finding what I am supposed to find.
+00:32:13 Speaker 3
+Um, another thing you can do is that sometimes if you so like. Shoot, where are we? Where am I?
+00:32:21 Speaker 2
+Oh, you sent a link.
+00:32:23 Speaker 3
+Yeah, it's yeah. I sent the link. It's the last link I sent in Zoom. Um, I got it. Yeah, sometimes taking the title and then putting it into RIT libraries helps.
+00:32:37 Speaker 2
+Oh, that's what you did.
+00:32:39 Speaker 3
+Oh no, I just did it through Google, but sometimes going through RIT libraries helps. Yeah. But the thing is thatum. So on the Geo Accession Viewer, It says that the status is says public on January thirty first twenty twenty six, but the publication with all the same authors was July seventh. Or sorry, October twenty ninth, twenty twenty two. So, or I guess December December fifth, twenty twenty two. So I'm not sure if they just. I don't know released the.
+00:33:21 Speaker 3
+Articles Later or. 
+00:33:23 Speaker 2
+Oh I seeum.
+00:33:30 Speaker 3
+This looks like the paper.
+00:33:33 Speaker 2
+Let's see if it doesn't say sleeper fish, it's not. It does. Yeah, sounds like it. Yeah, let me see. Uh, let me just double confirm. Uh, let me read a little bit. Okay.
+00:34:07 Speaker 3
+Well, they use CRISPR based gene editing.
+00:34:12 Speaker 2
+Hmm. It seems like it seems like it. Because, it's talking aboutum the regenerated damaged retina between a retinal neurons and also is talking about yeah regenerated damaged retina. And he's talking about the regenerative response. If anything, those are the only thing I remember. Within the paper. Um. Yeah, did you find anything that mayum sound alarm? Sorry, what? Did you find anything that may sound alarm like no part of the project?
+00:35:02 Speaker 3
+Um, it sounds like this is this is the yeah paper. Yeah. Is that what you were asking?
+00:35:12 Speaker 2
+No, I was asking if you found anything weird with the paper you sent that may make may make you believe uh believe that it's not the paper.
+00:35:23 Speaker 3
+No, um, That's good. It appears that it's the same. I'm gonna look at instrumental model. No method. It would be in methods, right?
+00:35:40 Speaker 2
+Yeah, the methodology should should definitely align with with that of the project. I'm looking at Lee M and Golden D. I'm looking at the authors here.
+00:35:55 Speaker 3
+There's no oh there's a methods section.
+00:35:58 Speaker 2
+So Golden D is there, Lee M is there, who else is that supposed to be there?
+00:36:07 Speaker 2
+Um David S okay David S. Is there just with the contributor I was able to check that? Is it? Yeah, that is that's the paper he had the same contributors. Yep. Yeah. We're.
+00:36:39 Speaker 2
+We're in good hands.
+00:36:40 Speaker 3
+Oh, I shouldum, this is a cool project to mention to Babbitt Nikki. It's about retinal regeneration. Mhm. Yeah, because it's supporting material for human is. 
+00:36:57 Speaker 2
+That a t- shirt? Which is cool. Oh, Look, I found the official page Wow Woo Look at this It's, the same paper I just. I wanted to check, to like double confirm, um if I put the authors in there what it would give me. It was stra- it went straight to NC um BI. This is the thing that we should have seen immediately somewhere in like in there. I don't know why we couldn't we couldn't find it anywhere which is painful. It's so not user friendly.
+00:37:37 Speaker 2
+Yeah. So he has the figures. Yeah, this is yeah. Okay, okay, yeah. We have to definitely cite this both of them because I think Oh, Look at that Yours has even better Isn't. 
+00:37:54 Speaker 3
+That the same link I sent you in the Oh.
+00:37:56 Speaker 2
+Yeah, Yeah, I'm telling you that I was confirming if it's a same paper and like it actually sent me to the page that we were trying to get the NCBI. And we couldn't.
+00:38:08 Speaker 2
+Which is ridiculous. Like, you had to find a paper outside to be able to find that in there. Like, what's the logic around that? This is cool. I'm going to download it. Did you, um, you want me to put it in the drive or you already put it? The PDF?
+00:38:34 Speaker 3
+Um, no, I didn't put it in the drive yet. Okay. I'm downloading it. Um, if you want, I can let me download those.
+00:38:42 Speaker 2
+Yeah, you can put it there. I'll keep a copy. Yeah, just in case.
+00:38:47 Speaker 3
+Oh, Let me let me use Zotero to download this. 
+00:38:51 Speaker 2
+Or I can just yeah. I'll actually i'll bookmark it It's easier, so not too too much data. And then.
+00:39:05 Speaker 2
+Okay, that's perfect. Just bookmarking there.
+00:39:13 Speaker 2
+Oh, You know what? I just remembered, let me put in the drive. Put in the drive and leave it there.
+00:39:24 Speaker 1
+Yes, and just once it loads, I can. Yeah.
+00:39:42 Speaker 3
+Paper. Okay. Um, yeah. Actually, could you download it? Cause Zotero, I don't even know where the file is actually.
+00:39:53 Speaker 2
+Oh okay. Let me, I downloaded it Let me, let meum uh upload it in the uh. What. Do you want me to put it right in the uh right outside? Oh wait says Projectum. 
+00:40:09 Speaker 3
+I would let me make a subfolder.
+00:40:12 Speaker 2
+Okay, I'm gonna upload it. And then you move it, you move it to the subfolder. Okay. I mean, what is this?
+00:40:31 Speaker 1
+Um Oh done, let me upload a quick little file.
+00:40:38 Speaker 1
+Good project.
+00:41:05 Speaker 4
+Do we know why each name of the file is associated with which condition?
+00:41:10 Speaker 3
+That that was the other thing we were supposed to do tonight. So, we're trying to look into the QC results and compare them to the names. So then we can yeah,
+00:41:22 Speaker 2
+Yeah present them. True,
+00:41:23 Speaker 1
+Yeah. Um okay, um.
+00:41:51 Speaker 4
+Because I have, I'm open slowly opening up all the Faski files, but. Mhm. Um, if we want to make any actually like.
+00:42:06 Speaker 4
+Meaningful, I don't know, conclusions about the data. Yeah. It would be nice to know, I guess. Especially'cause, we're also using this as an excuse to figure out which datasets we actually want to use, right?
+00:42:20 Speaker 1
+Exactly. Yeah.
+00:42:21 Speaker 2
+Yeah yeah yeah Is is taking is with time to load'cause. It's like more than five megabytes, but everybody's loading the paper Right.
+00:42:37 Speaker 2
+So okay, so we're talking about the Q C right? Um. Yeah um, I would say like run on whatever we have now. Um I mean like let's look at whatever we have now. Oh yeah, I forgot Samuel you were talking about like subgroups um can you go over that again?
+00:43:04 Speaker 3
+Uh, one second. Let me go. I'll go over that one.
+00:43:10 Speaker 2
+Let me bookmark this.
+00:43:35 Speaker 4
+Oh, wait. Peter, question aboutum the HT like the Tropno assignment. What did you submit for part three?
+00:43:44 Speaker 2
+Oh, um I submit the uh gen underscore group dot diff. At first I submitted like the entire thing that that it outputs like entire folder. And he was like, yeah I see the file there. But I just want the file.
+00:44:05 Speaker 2
+So, like.
+00:44:05 Speaker 4
+Okay. What was it called again? Gene underscore. Um,
+00:44:09 Speaker 2
+Gene underscore group dot diff. Yeah.
+00:44:14 Speaker 4
+Dot diff? Diff?
+00:44:16 Speaker 2
+Diff as in difference, yeah. Is that what it was? Yeah, dot diff as in difference, yeah.
+00:44:22 Speaker 4
+So I'm assuming you didn't do any of the like R analysis?
+00:44:27 Speaker 2
+Um, I just did the plots and then I and then I said what the plots are statistically. I didn't really got got I didn't really get into the biggest stuff, which which he noticed, and he pointed out, it's like he's like, you know, great definition. But like uh so next, like next time tell me what that means in biology and biotin.
+00:44:51 Speaker 4
+Oh, so we are supposed to do the R analysis,
+00:44:54 Speaker 2
+Not like deep. He just wants you to say like what what you interpret it to be, right? Um.
+00:45:03 Speaker 2
+From a bio perspective, if that makes sense to you, right? Like if you say only from a statistical perspective, he'll take it. But you know, perhaps you know because he knows I don't come from a bio background, he let it slide. Um. But, but yeah, but I would think from you guys, he would expect you like some bio perspective in the embedding. Yeah. I um yeah I wrote like. One to two lines, kind of like interpret interpreting statistically what they mean. Okay. But no, not like substantive, Like not like a substantiveum definition by that makes sense or something like that. Yeah. Okay.
+00:45:55 Speaker 4
+So in that case, for that assignment, Did you only submit a file? Or did you submit the file and like a document. 
+00:46:02 Speaker 2
+Explaining your write up? Ohum oh no no no those are two things. Sorry maybe I'm I'm confusing it. So in the weekly report, he expected to do an interpretation of what you see in the image right after after you produced yeah, after you produced the the diff uh, but in theum in the try and and they're trifles. What's the name of it? I have it right here. In the trap node results, he only wants that one file. That's it. Nothing else.
+00:46:32 Speaker 4
+Oh, okay. Cool, got it. Okay, that makes sense.
+00:46:35 Speaker 2
+Yeah, yeah. Sorry I.
+00:46:36 Speaker 4
+Thank you But then I didn't understand which one he wanted.
+00:46:41 Speaker 2
+Me neither Um I actually sent the entire output zip, and you know, he hinted that I may like Like I want the file He's like. Yeah, I see a file in there. He's so funny. He doesn't say like, hey, you know, I actually wanted a file. He actually writes the lines are like, okay, I see a file in there. And then I'm like, what does that mean? You want the file? What file?
+00:47:09 Speaker 4
+He is not very clear.
+00:47:13 Speaker 2
+I'm like what file? Like there's so many files in there. But he he was descriptive. The thing is thatum, I'm very literal, right? So he's like, you know, I want. Uh, I see the file there. I just want the file that has the He said the um IDs and the and the p values, right? Which you know, I know what he's talking about. But guess what? There are three files in there that use That use um their ID and and their p values. And I'm like Okay.
+00:47:51 Speaker 2
+So I then I said, well, I'm gonna be just as literal as you know his his message is. So and I sent him the one that only has those values. If he asks for, like, for example, something else that is in there that I find to be of value, which is the um, I think you have like the um sorry not the p-values. The the inverted, I think he's saying inverted p-value. Hold on. The uh, I want to tell you the exact word so you don't make the same mistakes. The gene names and I adjusted q-values, right? No no p-value, q-values. Um and oh okay yeah and I wanted to. 
+00:48:44 Speaker 2
+To me, the one that had like they just said Q value, But also the Q value because you know, that's an observation in there. If you plot it. But I said let me not get crafty, you know. He he wants a he gets a. Yeah yeah. 
+00:49:00 Speaker 4
+That's kind of what you do with him. You can't give more, you can't give less.
+00:49:03 Speaker 2
+Exactly. So we we got the paper down I uploaded it and I also, Bookmarked it just in case. Go ahead.
+00:49:19 Speaker 1
+Here you go. Us, oh.
+00:49:24 Speaker 4
+Okay, so I started adding to the new slide deck. So the first one is just intro side, then for the workflow layout that's where we can mention the tools, Then the next slide is the fasterq fastq comparison. And then I think we can have like. A couple slides, one slide on. You want let me actually just label what each one I'm thinking should have. So the next one can be the overview of project. We could do one that's the breakdown of samples. Hmm,
+00:50:05 Speaker 2
+That's good.
+00:50:06 Speaker 4
+And then we can do maybe a slide or two on like, Honestly, I don't think we really need a breakdown of samples now. I think about it. Um, this slide can be general observations of data book.
+00:50:23 Speaker 1
+I can spell. 
+00:50:34 Speaker 2
+Anything. Should we do the overview? Should we do the, Overview of the project first, so that so they have an idea of what our project is before. We start.
+00:50:46 Speaker 4
+Actually, yeah, that's not a bad idea.
+00:50:48 Speaker 2
+Yeah, I'm thinking that you know that way, you know, at least they have that in their head. Like oh, the project is about this. Yeah, yeah. Yeah. And then we did yeah. Yeah.
+00:51:29 Speaker 2
+Yeah, this is looking better.
+00:51:44 Speaker 4
+This Can be next steps. And then I think seven slides is good and then yeah.
+00:52:11 Speaker 1
+This is, this is not very simple.
+00:52:41 Speaker 1
+Table S 1. Table S 1, where's the table S 1?
+00:52:55 Speaker 4
+Okay, So I guess only such aum overview project. Uh, general observations of data. Anything that stood out next steps. We already have a next steps one. So I can just. Copy and paste that.
+00:53:21 Speaker 1
+Can I just ask Chat what this is? Oh, good.
+00:53:27 Speaker 3
+Peter, are you reading the paper at all or are you? Oh,
+00:53:32 Speaker 2
+I was sorry. I am. I was doing two things. I was uh I was looking at no worries. I was just I was looking at this, and then I look at this, like the changes that Nikki did and I also was looking at the paper at the same time, but I didn't pass the the abstract. Let me let me go actually and read the uh introduction conclusion. So did you get to readum some of the paper?
+00:54:04 Speaker 3
+No. Um. I'm trying to just figure out the basic.
+00:54:11 Speaker 2
+Hmm? You were saying sorry.
+00:54:16 Speaker 3
+I said, Ium, I'm actually, I'm trying to just figure out what the experimental design looks like.
+00:54:23 Speaker 2
+Oh, uh, the experimental design in the in the paper? Yeah. Yeah. Um let me. 
+00:54:32 Speaker 1
+Yeah, we can talk about the experimental design in the overview. I think that should be enough for that.
+00:55:08 Speaker 1
+I'm just saying.
+00:55:45 Speaker 1
+This is weird.
+00:55:50 Speaker 3
+Okay, so I'm gonna just write this down because, I. Feel stupid if I can't, read thisum. So, what is this H T S A. God. 
+00:56:06 Speaker 1
+I don't like this class okayum.
+00:56:15 Speaker 1
+Okay, so.
+00:56:53 Speaker 1
+Okay.
+00:58:01 Speaker 5
+Yeah. The trim, when we trimmed the data after QC. That was part of the. Yeah, after the QC. Yeah. Not that we need to do it here, but but I did it. When we runum fast QC. 
+00:58:54 Speaker 2
+On the trampoline set, right? The next step was to trim it. So we run FastX to trim. 
+00:59:05 Speaker 5
+The QC output. In the PDF that he gave us, there's a PDF that's called Trimmomatic analysis.
+00:59:32 Speaker 5
+Um, let me see. I think. Oh, I can share my screen. Yeah. Don't worry. It's uh it feels like forever Where is the paper track reading? By lab. 
+01:00:02 Speaker 5
+Wake. By your love, reading. There you go. Here is uh. There you go. Okay, sharing, I should be able to find the share You go. Okay, so let me zoom this. Yeah, here. Yes, so yeah, so right after we do the Q C right here. Mhm. Yeah. We don't We don't have to discuss. 
+01:01:00 Speaker 2
+That in in this. Yeah, we just put it that we ran it. That's all. Because I think what he wants us to do, like you guys said, was to like identify problems, right? And how and perhaps you know like some observation how we might solve it. Not sure.
+01:01:21 Speaker 5
+That's what I'm thinking but. 
+01:01:34 Speaker 2
+Oh, Fast X is just remove common issues like issues that are common with this type of data sets. That's what I'm interpreting as right. Um, like all I know is that it's a tool that removes common issues. To be honest, I didn't I did I don't know what those common issues are. But if I had to guess from a data uh aspect from from a from a data analysis perspective. I would think that is like stuff that are common between um various datasets in terms of like um the runs and I don't know things that are like common in in terms of data contamination or something like that. And this is just me guessing, I don't, I might be wrong. Like when I run this on this on the thumbnail dataset, I really don't know what. 
+01:02:32 Speaker 2
+It was doing. And we never went over.
+01:02:38 Speaker 5
+Nicky, do you know Do you know what what. Yeah. As. 
+01:02:48 Speaker 2
+Exactly yeah so, so he said he had to do it but he I don't think. Yeah, so but I don't remember. 
+01:02:56 Speaker 5
+Him like going over the or explaining it.
+01:03:02 Speaker 5
+Yeah. Um. Yes, yes,
+01:03:11 Speaker 2
+We have output of before and after. Yes, yes, yeah. But like I would I would suggest not to go over that cause he'd never mentioned it. Yeah,
+01:03:22 Speaker 5
+Like it's fine to mention that we're running. Yeah.
+01:03:31 Speaker 5
+We're not saying we cleaned it up. We cannot say we cleaned it up. We cannot say that. Mhm. Oh yeah, that's different, yeah. Yeah, exactly,
+01:03:52 Speaker 2
+Yeah, yeah. I agree, yeah, yeah. No, like right now, I think it's fair to say like if he asks like, oh, you know, what did he fast? You know, get rid of I'm like well common issues. You know, that's what you taught us. You never dig into it further right? I mean, we could we could like we could definitely dig a little bit into it after we like finish everything like we can see exactly what those combinations are. I think it would be good for educational purpose. Like I'm already. 
+01:04:26 Speaker 5
+Eager To know what what the head those combinations are. We should we we should. Yeah. Question.
+01:04:56 Speaker 5
+Not to some all finish and it's fine. Yeah, I agree. Yeah. Be organized and on the same page.
+01:05:26 Speaker 5
+Yeah, yeah. Um. Um, trap in there No, I wouldn't put that in there. Why.
+01:05:57 Speaker 5
+Hmm. Yeah, yeah. Yeah, paper is fine. Yeah, yeah. Yeah. But, yeah. Yes, so I I was gonna ask you is.
+01:06:30 Speaker 5
+Mhm. Um. Exactly. 
+01:06:54 Speaker 2
+Soum I'll be honest with you I think you guys might understand the paper better than me. So you might be, not that I'm not going to read it, I'm going to read it. I'm going to have my summary. Um, yeah, but I think myum for the sake of time you get you guys can use me better in the analysis part of it, which is the the looking at the data, like you said, yeah.
+01:07:21 Speaker 5
+Yeah. Look looking at the data. Isn't that what you said? Yeah, Oh, sorry. Yeah. Uhhuh. Yeah, yeah,
+01:07:52 Speaker 2
+I'll I, I can I can tell you that I feel confident going over theum. Hold on. Okay, the the general workflow layout. That's fine. I feel very confident going over there, and then you know you guys, however you guys decide to split it,
+01:08:14 Speaker 5
+I can take whatever is left. Yeah. And uhhuh. Okay.
+01:08:40 Speaker 5
+Yeah. The project.
+01:09:13 Speaker 5
+That's not to say that, That's not to say that you can have something as a follow up after. You know, one of us says something or the other way around. So. Mhm. Okay, yep. Mhm.
+01:09:46 Speaker 5
+Yeah. Yeah, And I think if. 
+01:09:53 Speaker 2
+You like just giving a feedback based on what he said, I think that if you focus on the, what was the word that you guys were looking hold on, I think I have it here. I know thatumum the experimental design, rightum and the like their weakness. And but. What was the word that he used like, like, what is weakness and strength, right? I think I don't know what you guys think. I think that's something that he may like to hear that we are telling the class.
+01:10:26 Speaker 5
+I don't know. Or maybe so much. Yeah. Of the uh. 
+01:10:34 Speaker 2
+Yes of theum of the of the experimental design, or or or the project, sorry.
+01:10:42 Speaker 5
+Yeah. So. Yeah, yeah. I was just thinking, you know, based on what he said, I don't know if it would be a good. No, sorry. Go ahead.
+01:11:14 Speaker 5
+Yeah, yeah, sounds good. Um,
+01:11:16 Speaker 2
+Yeah, I think that's a that's a good plan. I'm gonna start working on the uh findings observations of the QC. I'll oh I'll honestly, I'm just gonna do it for whatever we have right now. I was gonna like move from the drive to the server. Like is is is he doesn't care that we do all or most right now, we have like eighty five percent of the data, eighty five percent of data think that's. So, yeah. So,
+01:11:47 Speaker 5
+I'm sorry. Almost 90% of the data. So, let me work on that now. So, I'll read the. 
+01:11:59 Speaker 2
+Paper later and work on that now. Meaning finish reading the paper later and work on that now. But I have a nice summary here. Let me start working on this.
+01:12:14 Speaker 2
+Actually, I have a summary of what he said he was suspecting, in my notes. Let me share that with you guys.
+01:12:22 Speaker 5
+Yeah, let me share that with you. Yeah, yeah. So I take I take notes. Yeah. No, yeah yeah. No, yeah You have to go Through. 
+01:12:43 Speaker 2
+Like if you have issues like me, with with the class design, the way the classes structure,
+01:12:50 Speaker 5
+You have to go through this ability. Yeah.
+01:13:14 Speaker 5
+The date, let's see, Monday, the twenty-first.
+01:14:15 Speaker 5
+Okay. Here it is. So.
+01:15:01 Speaker 5
+Okay. Yeah, I have it right here.
+01:15:10 Speaker 2
+Prepared team report five to ten minutes, summarizing fast Q C findings and proposed cleanup approach. So. Pro. Yeah. Um, so basically in like in the analysis part, right? Yeah, like what you said, like what we find like it's good. Like the observation at the findings. But also like how we're going to clean it up, right? Like an approach. So it's good that I read this. Um Let me see if I can send send. 
+01:15:46 Speaker 5
+There on Slack one by one as I go. So I don't forget.
+01:15:55 Speaker 5
+I guess I think this is. This is not helpful. The hell is this? Slack just kicked me out. It's ridiculous.
+01:16:25 Speaker 5
+Alright. And kick me out for no reason. It's just stupid. Alright, let me actually download it as a document because it's. And I'll share the document because. When I copy it, it's copying code. That's so annoying. That makes no sense. The notes about what he said he wanted for the presentation. When I copy it, I get code so like. What the heck? Who's gonna understand code? Alright, here it is.
+01:17:22 Speaker 5
+So now I will uh now I'll go to my IDE. 
+01:17:53 Speaker 5
+Technical. Okay. All right, so I have it here. Let me see if I can copy now this table. Um. 
+01:18:23 Speaker 5
+Okay, that's okay. So, uh, I have a better idea yet. Okay.
+01:19:00 Speaker 5
+I'm not sure what the problem is.
+01:19:33 Speaker 5
+Yes. Yeah, so it's right here.
+01:19:40 Speaker 2
+Download the SRA projects, Then says run FastQC on all of the available and then identify consistent issues and problematic files. Plan and apply tentative cleaning steps. Prepare team report five to ten minutes.
+01:20:02 Speaker 5
+Summarize FasK's key findings and proposed clinical approach.
+01:20:39 Speaker 5
+No. Oh, you know what?
+01:20:49 Speaker 2
+I'll copy it into a Google Doc because that works. Google Doc translates this. Yeah, I'm like struggling here for no reason. I'm like, this thing never happened to me because I never copy from. That to a slack directly. I always do it to a Google Doc.
+01:21:12 Speaker 5
+I'm like, I wonder. Yes. See, I could have saved. Yeah, I could have saved fifty minutes. Had I done this before. There you go, now now I can copy it toum, slide.
+01:21:49 Speaker 2
+Actually uh, which document, which document you guys want me to copy it? What document were we using to track this?
+01:21:56 Speaker 5
+I'm just going to copy in a Google Doc in Drive. Was it leg workshops?
+01:22:07 Speaker 5
+Is it like workshop. The project. The presentation for the project. Yeah. Okay so. Docker's okay and then okay so, uh project timeline, project outline which one?
+01:22:53 Speaker 5
+Let's see. Okay. Presentation that it's just notes of what he said,
+01:23:10 Speaker 2
+You know. He expects okay, so let's see uh QC data collection project timeline picking project. Should I create a tab project presentation?
+01:23:33 Speaker 5
+You can change the name if. Just something to distinguish.
+01:23:48 Speaker 2
+Okay, so I put the table in there. And I can get the link, yeah, and put in Slack. Now that this makes more sense. Now, yeah, now you guys can look at the table. Yeah. So now I can go back.
+01:24:07 Speaker 5
+I'll have this as a reference. You guys so.
+01:24:28 Speaker 5
+Yeah. Yeah, now that. Yeah, yeah, yeah.
+01:24:57 Speaker 2
+Yeah, but yeah, I'm I'm in agreement with you, Nicky. After I read the comments again. Yeah. Uh. I mean his notes.
+01:25:05 Speaker 5
+Yeah, I agree. Uhhuh. Yeah! Yeah, I see it.
+01:25:31 Speaker 5
+Yeah. Mhm.
+01:26:33 Speaker 5
+Yeah. Actually, to be honest,
+01:26:58 Speaker 2
+We can have just you know, this image like and. This image or a version of this image, And you like and just like go over how the paper, you know subcategorizes and how we just did one round. I think that that would be. 
+01:27:16 Speaker 5
+That wouldn't be too long. That would be short enough that way.
+01:27:31 Speaker 5
+Yeah. Yeah. Uh huh, yeah. Yeah. Uh huh.
+01:28:06 Speaker 5
+Yeah. Mhm. Oh, that's a good observation.
+01:29:07 Speaker 5
+Does it reflect your image. Somewhat, the second one does it reflect your image. It's literally taking everything you wrote and just like making it, a little bit more more clear yeah. Oh shoot. Well, that was, that was. Ah, there you go. Six. Wait, wait. Wait, hold on guys. Where is the six?
+01:30:10 Speaker 5
+Oh, oh okay, okay.
+01:30:14 Speaker 2
+Got it. Got it. Sorry, I'm I was looking for number six. I was literally playing number six.
+01:30:20 Speaker 5
+Yeah, go ahead. Keep going. Yeah. 
+01:30:45 Speaker 5
+Yeah. Six yeah. Yeah, I uh let me hold on.
+01:31:12 Speaker 2
+Let me seeum. I actually regenerated to fix. Uh uh, let me see, where is the download?
+01:31:21 Speaker 5
+What what did you even download. Hey when. Okay open in finder there you go. That's how I need to find it. Okay. Wait, this is this is too fancy hell, something simple. Delete. All right, let me check now. Open with. There you go, preview.
+01:32:14 Speaker 5
+Okay, just checking. So, open it. Yeah, yeah. Okay. There you go.
+01:32:43 Speaker 5
+So. Let me see if it's ready. Yeah, so yeah, I think it's a good idea to have that in there,
+01:32:57 Speaker 2
+Just the they laid out like that with that diagram and just talk about her likeum and so So you were saying Nikki thatum like none of them have twenties. So like. We're gonna have to do the do them all.
+01:33:14 Speaker 5
+Is that what you're saying. Oh okay so we just do the the two sets with the wild type. So. Mhm four normal six. I see. All right, so. So. 
+01:34:00 Speaker 2
+Let's uh the image is generated. So let's not worry about the image. We got the image, don't worry about it. I'll get it right because we're just missing like two, right? We're just missing, Uh, it's it's just missing. It has four, but it's supposed to have. 
+01:34:16 Speaker 5
+Six right on the right. Yeah, it's only missing two right. Yeah. It it yeah. One two three four five. One two three. 
+01:34:43 Speaker 5
+Yes. Yeah.
+01:35:19 Speaker 5
+Yeah. Yeah. Uh, just. Uh. So, okay. Um. For this.
+01:35:48 Speaker 2
+Um, there is a, um, in in ChatGPT there is a advanced feature for image generation. You can fix. Yeah, you can fix any image in there. So if you have like a broken image or anything. So I just I just asked to like make the to enhance your your image. And it did. But then it removed two It, removed two fishes two fish. So. So, okay. So uh so you were saying the the QC right. Uh let me make sure thatum. That I have all of them in my, in my local. To. 
+01:36:30 Speaker 5
+Look at them, cause right now they're in this server okay.
+01:36:48 Speaker 5
+And uh. All right, Let me do this quick so that we can stop at ten, like we said. And okay, Casey bundle.
+01:37:19 Speaker 5
+Okay, five QC out. All right. Um They. 
+01:37:36 Speaker 2
+Are not as It shouldn't take that long because it's not as heavy as the runs. The runs are heavy. Those runs are like. 
+01:37:46 Speaker 5
+Crazy heavy. 
+01:37:50 Speaker 5
+But to be to be honest, um. Hold on I'm moving in.
+01:38:44 Speaker 1
+The Film was shot in the city of Krasnodar.
+01:39:06 Speaker 5
+Yeah, yeah, I'm doing that. I'm going.
+01:39:09 Speaker 2
+I'm right now going into the server and transferring to my local. Uh, which you think like if you go toum, I can send a link also.
+01:39:21 Speaker 5
+You see it should be accessible here as well. Let me seeum.
+01:39:32 Speaker 5
+And oh yeah, that will that should allow you. Oh, never mind. Yeah, I'll I'll upload it here too. It seems like. Oh, I actually. Yeah. I'm just i'm copying the HTML files to, To my local, and I'll put. 
+01:40:05 Speaker 2
+It in the drive as well, so we all have access to it. Because they're not as heavy as the ROMs. The ROMs are like I tried putting in the drive, in the shared drive, and like it wasn't even ten and it was already likeum red. Like the red,
+01:40:25 Speaker 5
+It has like a red warning. It had a red warning in there. Yeah so, It's transferring now, so. While it's transferring, let me look at the status of the image. Oh, I run it in my local, but I didn't run it in server. It's fast. It's very quick. Yeah, it's very quick. It does it. 
+01:41:01 Speaker 5
+No, no, they're not that heavy. They're not that heavy. I mean, they're not small, but they're not that heavy. Just like you know maybe. The H M L S are very light. There she melts. Yeah, um, but the the artifacts are like, um. Some gigs. I think let me check. To confirm. Okay, it's copying. Alright.
+01:42:01 Speaker 5
+No, no. It was transferring before.
+01:42:05 Speaker 2
+And it has some issues. So now I'm just using HTMLs directly. Um, the the artist files like. No, it downloaded already all of them. It's just uh yeah, It's just that I was doing them together. But like now he's doing the zip and the zip are like seven hundred. Ninety eighty kilobyte. 
+01:42:30 Speaker 5
+Kilo you know kilobytes so it's not. Uh, the artifacts. I don't know. I don't know if we need it. Stop it there, dude. Yeah, let me let me put it here. What do you want me to put it? Um, all of them the the ones uh that we have in the server. 
+01:42:57 Speaker 5
+The HTML's what do you what do you guys want me to put it. They're they're. They're in my local, yeah. Yeah, no worries. We have set uh several fish okay. And then we have metadata. We have notes. We can put it in there. Oh well.
+01:43:30 Speaker 5
+It's just info aboutzebra,
+01:43:32 Speaker 2
+Like the data. That's that's what we did it for right Nikki, justzebra stuff,
+01:43:39 Speaker 5
+Like metadata and the data yeah. Okay I uh oh what is the matter with this I. 
+01:43:56 Speaker 2
+No I was, Clicking on the on the directory. 
+01:44:00 Speaker 5
+And then it just keep moving. So, file upload. It should upload pretty quickly. Um, good projects data no.
+01:44:28 Speaker 5
+Okay. Okay. All right, I will upload first the HTMLs. They're going to go fast. Opened, there you go. Okay. Wow, that was fast.
+01:44:54 Speaker 2
+If you refresh, you should, See all of them. That was pretty quick.
+01:45:08 Speaker 5
+Do you want me to load the artifacts or leave just the HTMLs? We might not even have time to look at the artifacts, to be honest, right now. Yeah. We can look. The artifact is. 
+01:45:30 Speaker 2
+The audit. The artifact is just where the HTML comes from, so it had just extra data, but like we're not going to have time to explore that.
+01:45:38 Speaker 5
+So I can look at my notes and see. Hold on. Process I have. To look you mean to look at the HTMLs right. Oh. Yeah yeah. Yeah yeah you can.
+01:46:22 Speaker 2
+F older like this zip right, it will download fast anyway, because I have to have it's not that heavy. Um and then you like like when you click on all of them, it's just gonna be tabs in your browser,
+01:46:32 Speaker 5
+And they're all and they they're all gonna be visible. Yeah. And, okay.
+01:46:40 Speaker 2
+So I, yeah, so let me look at the process to look at the HTML. Uh I have everything in just one notebook for that same reason, cause I forget.
+01:46:52 Speaker 5
+Quickly Because I I do so many things. There you go. You have fifty? Oh,
+01:47:02 Speaker 2
+You're in competition with me. I have like three browsers, each one with ten ten to fifteen tabs. Three different profiles,: two schools and one and one uh for my business and no, and I use also, Alright, three for my work as well. Okay, so here I have it. Um, okay, so I have the process here: data QC. Um, identify issues. You you guys want me to share this uh notebook that has my notes?
+01:47:40 Speaker 5
+It just has the process on how Ium uh I don't know if it's relevant to be honest.
+01:47:55 Speaker 5
+This is how I'm reading them, but it's code. That's why I'm saying,
+01:47:58 Speaker 2
+I don't know if it's relevant to you guys because it's code. So yeah, so Manuvi. Uh this is how let me let me share with you. So you see one oh I'm sharing, okay, here here it is. So this is the notebook. All right. So uh, let me close this. How do I can i close this?
+01:48:16 Speaker 5
+There you go and let me close this as well. Shh,
+01:48:21 Speaker 2
+I think your image might be done already.
+01:48:25 Speaker 2
+So yeah, So so here like um basically um like the fask QC that is in here, right, I can read it right. And then um kind of like um try to find like based on the HTML, like the HTML has like a tag in there. Where it identifies failure and identifies warnings, right? So I. 
+01:49:02 Speaker 5
+Can actually run this. And yes. So This one? Yeah, notebook. Has to be this one. Yeah, you were saying?
+01:49:26 Speaker 5
+No interpreting, findingum issues in the data. No, it's not different.
+01:49:42 Speaker 2
+Um I'm, just like uh finding like issues that are flagged directly in the HTML, which is the same thing that you would do visually.
+01:49:50 Speaker 5
+So yeah there's no difference. Yeah. 
+01:49:57 Speaker 5
+Yeah. Well, yeah, yeah. I mean, for you guys it's easy. Yeah, of course. I'm looking. Yeah.
+01:50:41 Speaker 5
+I'm not sure what you mean.
+01:51:42 Speaker 5
+Yeah. Yeah. Um. Let's see.
+01:52:22 Speaker 5
+Mhm. Yeah.
+01:53:00 Speaker 5
+Yeah, yeah. Yeah. It has some cool yeah, features. Okay. So.
+01:53:28 Speaker 5
+Let's see. Did you get it right?
+01:54:38 Speaker 5
+Summarize. I agree. Yep. Yeah. Yeah.
+01:55:06 Speaker 5
+I'm looking at theum. 
+01:55:11 Speaker 2
+I I want to like it's something that I'm doing right now. Programmatically. I want to see the per sequence G C content, all of them uh together and I want to see the sequence length distribution. That will tell meum that would help me find patterns in there like in terms of findings. I cannot do it one by one, but uh I'm doing it programmatically. And then i'll tell you guys what i see. That's how I can, I, that's how I myself can find like patterns. And then kind of like statistically find something. And then to biology may have, perhaps you guys may help me translate that better once I find it right. But yeah, But like like there are three things in there that are very useful in terms of finding um patterns, right and behavior in the data.
+01:56:02 Speaker 2
+And it's the sequence duplication level that's very important, and the distribution length distribution that's also super important. And then the other one is the per sequence GC content. Those three are very critical.
+01:56:16 Speaker 5
+Hold on, somebody sent me something here. Stupid Google Calendar sending a notification.
+01:56:24 Speaker 2
+I'm thinking it's not important.
+01:56:28 Speaker 2
+Yes, so let me put this together and see what I see. But but yeah, but I think I agree with Nikki. I think it's like. We can look at them, either individually or together. And just say what we uh, what we see, right? Summarize it, uh, put it on the in slide. Like before we go to bed, we can read it right. If we want put to put some comments or anything that's fine. And then you know tomorrow, when we wake up, we'll know what to what to say basically. So.
+01:56:58 Speaker 2
+Like right now, that's what I'm gonna do. I'm gonna put those things and then put in there what I see. Um, And then you guys can feel free to like like translator or. 
+01:57:11 Speaker 5
+Make it sound better. Let me see uh which one is that?
+01:57:27 Speaker 5
+Your picture. Yeah. Yeah, he can. Yeah, yeah, you you yeahum okay.
+01:57:40 Speaker 2
+Yeah, I was gonna say like so yeahum and then I'll I'll put, you know I'll put some data.
+01:57:49 Speaker 5
+Uh, right before it. Yeah.
+01:57:57 Speaker 5
+Yeah, I'll take I'll take this hour to do that. Yeah, yeah, sounds good.
+01:58:10 Speaker 2
+I'll do the same thing. So I will work on this from ten to ten thirty or eleven right? Um, I put my findings in there. Um, Anything that I think might be uh useful. And then before bed, you know, sometimes we. Around twelve one a m because I had to do some work for my work, Um I'll check it as well to see if there is anything, you know that you guys commented or anything, And then you know, I'll go I'll go to bed, you know, with that in mind. So. Yeah, this this was good guys. So I think we did a good job. We we we got on the same page. We organized the presentation and we have what we need to be honest because, I'd I cannot imagine you know I cannot picture him you know.
+01:58:54 Speaker 2
+Expecting more from us when we haven't even really dive. 
+01:58:58 Speaker 5
+Into the data fully. Yeah. Exactly,
+01:59:08 Speaker 2
+Yeah. This I wanted to do this because this is a good practice. So like we're going to be doing right. So we kind of like have an idea now, how to like, you know, uh, like we function, and we're going to do it together. And if you guys have any feedback, right, in terms of structure, we can also structure a little bit better. Whether it is a scope or or assignment, those things later. Yeah. So at least we have something to work on with.
+01:59:38 Speaker 5
+Yeah I wasn't I was I thought I was closed, but I wasn't so I'm glad yeah.
+02:00:05 Speaker 5
+Okay. Yeah, uh,
+02:00:08 Speaker 2
+Yeah, yeah. Yeah Go ahead. Text me. I'll be awake. I should be awake until till like at least one a m Yeah. I'll re i'll i'll look i look at i'll be ah i'll be, pay attention to your. 
+02:00:20 Speaker 5
+Text if you yeah check in and out. 
+02:00:29 Speaker 5
+Hello. Good night, guys. See you. Bye.
