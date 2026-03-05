@@ -37,6 +37,7 @@ Course home (myCourses): https://mycourses.rit.edu/d2l/home/1199746
   - Trimmed: `Semester5/BIOL550/group_project/mouse/qc_bundle_trimmed/` (52 ZIP + 52 HTML for 26 paired-end SRRs)
 - Notebook (raw vs trimmed): `Semester5/BIOL550/group_project/mouse/notebooks/fastqc_qc_bundle_analysis_raw_vs_trimmed_mouse.ipynb`
 - Notebook outputs: `Semester5/BIOL550/group_project/mouse/qc_analysis_raw_vs_trimmed/`
+- QC remediation (adapter signal + duplication): `Semester5/BIOL550/group_project/mouse/TODO_qc_remediation.md`
 
 #### Status snapshot (terminal) — 2026-03-05 (complete)
 
@@ -92,6 +93,40 @@ Trim stage still running; partial completion at last check:
 trim_pairs=19/26  trim_fastqc=19/26
 [2026-03-03 15:36:15] TRIM SRR30333762
 ```
+
+## fastp vs FASTX Toolkit (FASTX) — targeted trimming notes
+
+**What they are**
+- **FASTX Toolkit** (often shortened to “FASTX”; e.g., `fastq_quality_trimmer`, `fastx_clipper`) is an older collection of small utilities. It’s fine for simple trimming/filtering, but it’s not very flexible for modern “sequence-aware” trimming on paired-end data, and it doesn’t produce an integrated QC report.
+- **fastp** is a newer, all-in-one FASTQ preprocessor for **paired-end aware** trimming/filtering with **HTML/JSON QC reports**. It’s usually the better default when you want adapter trimming + quality trimming in one step.
+
+**Which is best for “targeted trimming” that FASTX can’t handle well?**
+- If you mean **remove a specific known sequence at the read ends** (common: adapter remnants, poly-G tails, read-through), **prefer `fastp`**.
+- If you mean **primer/amplicon trimming** (anchored primers, controlled mismatch/error rates, read-through, multiple primers), **use `cutadapt`** (it’s purpose-built for that).
+
+**How to do targeted trimming (practical workflow)**
+1) Identify what to trim:
+   - From FastQC: check **Adapter Content** + **Overrepresented sequences** (and confirm the kit/adapter/primer sequences if known).
+2) Trim with `fastp` (typical paired-end adapter + quality trimming):
+   ```bash
+   fastp \
+     -i SRRXXXXXXX_1.fastq.gz -I SRRXXXXXXX_2.fastq.gz \
+     -o SRRXXXXXXX_1.trim.fastq.gz -O SRRXXXXXXX_2.trim.fastq.gz \
+     --detect_adapter_for_pe \
+     --cut_front --cut_tail --cut_mean_quality 20 \
+     --length_required 30 \
+     --html SRRXXXXXXX.fastp.html --json SRRXXXXXXX.fastp.json
+   ```
+   - If you know the exact adapter sequences, add `--adapter_sequence <SEQ>` and `--adapter_sequence_r2 <SEQ>` instead of relying on auto-detection.
+3) For primer/amplicon trimming (use `cutadapt`):
+   ```bash
+   cutadapt \
+     -g ^PRIMER_F -G ^PRIMER_R \
+     -o SRRXXXXXXX_1.trim.fastq.gz -p SRRXXXXXXX_2.trim.fastq.gz \
+     SRRXXXXXXX_1.fastq.gz SRRXXXXXXX_2.fastq.gz
+   ```
+4) Re-run FastQC on trimmed outputs and confirm:
+   - Adapter-related modules improve (and you did not over-trim read length / lose too many reads).
 
 ### Zebrafish dataset (archived)
 

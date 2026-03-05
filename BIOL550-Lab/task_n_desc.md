@@ -605,6 +605,8 @@ tail -f /home/pzg8794/sra_runs_pipeline_nikhi/fastqc.nohup.log
 
 After raw FastQC is complete (or while downloads continue), run a second pipeline to trim reads using FASTX and then re-run FastQC on the trimmed outputs.
 
+> Tooling note (2026-03-05): FASTX is the “class/legacy” cleanup step. For adapter-focused targeted trimming on paired-end reads, prefer `fastp` (and for primer/amplicon trimming, prefer `cutadapt`). See `Semester5/BIOL550/BIOL550-Notes.md` (“fastp vs FASTX Toolkit”) for examples/commands.
+
 Outputs:
 - Trimmed FASTQs: `/home/zebrafish/fastx_out/` (files like `SRR*_1.trim.fastq.gz`, `SRR*_2.trim.fastq.gz`)
 - Trimmed FastQC: `/home/zebrafish/fastqc_out_trimmed/` (recommended shared location; the script defaults to `$HOME/fastqc_out_trimmed` unless you set `FASTQC_OUT_DIR`)
@@ -683,6 +685,7 @@ Script used:
   - Raw: `Semester5/BIOL550/group_project/mouse/qc_bundle_raw/`
   - Trimmed: `Semester5/BIOL550/group_project/mouse/qc_bundle_trimmed/`
 - Mouse notebook (raw vs trimmed FastQC): `Semester5/BIOL550/group_project/mouse/notebooks/fastqc_qc_bundle_analysis_raw_vs_trimmed_mouse.ipynb`
+- QC remediation TODO (adapter signal + duplication): `Semester5/BIOL550/group_project/mouse/TODO_qc_remediation.md`
 
 **Update (2026-03-05): mouse end-to-end pipeline status (Sequoia) — complete.**
 - Active run root: `/home/zebrafish/mouse/PRJNA1017789_parallel/`
