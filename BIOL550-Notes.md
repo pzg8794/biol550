@@ -5,6 +5,7 @@ Course home (myCourses): https://mycourses.rit.edu/d2l/home/1199746
 ## Index (quick links)
 
 - [Current work (status)](#current-work-status)
+- [Documentation hierarchy](#documentation-hierarchy)
 - [Slides](#slides)
 - [Readings](#readings)
 - [Misc](#misc)
@@ -17,6 +18,23 @@ Course home (myCourses): https://mycourses.rit.edu/d2l/home/1199746
 - [BIOL550 Comprehensive Course Guide](#biol550-comprehensive-course-guide)
 - [Lab task hub](BIOL550-Lab/task_n_desc.md)
   - [Weekly report requirements](BIOL550-Lab/task_n_desc.md#weekly-report-requirements-make-visible)
+
+## Documentation hierarchy
+
+- Parent course hub: [README.md](README.md)
+- Lab task and requirement hub: [BIOL550-Lab/task_n_desc.md](BIOL550-Lab/task_n_desc.md)
+- Group project documentation map: [group_project/DOCUMENTATION_MAP.md](group_project/DOCUMENTATION_MAP.md)
+- Group project workspace hub: [group_project/README.md](group_project/README.md)
+- Active execution log: [group_project/WORKLOG.md](group_project/WORKLOG.md)
+- Active mouse workflow: [group_project/mouse/PROCESS_mouse_fastq_fastqc_fastx.md](group_project/mouse/PROCESS_mouse_fastq_fastqc_fastx.md)
+- Active mouse task tracker: [group_project/mouse/TODO_mouse.md](group_project/mouse/TODO_mouse.md)
+- Active mouse remediation tracker: [group_project/mouse/TODO_qc_remediation.md](group_project/mouse/TODO_qc_remediation.md)
+
+Rule for use:
+- start here for course context and tool notes
+- move to the task hub for requirements
+- move to the documentation map for project-level navigation
+- move to the mouse docs for operational work
 
 ## Current work (status)
 
@@ -38,6 +56,38 @@ Course home (myCourses): https://mycourses.rit.edu/d2l/home/1199746
 - Notebook (raw vs trimmed): `Semester5/BIOL550/group_project/mouse/notebooks/fastqc_qc_bundle_analysis_raw_vs_trimmed_mouse.ipynb`
 - Notebook outputs: `Semester5/BIOL550/group_project/mouse/qc_analysis_raw_vs_trimmed/`
 - QC remediation (adapter signal + duplication): `Semester5/BIOL550/group_project/mouse/TODO_qc_remediation.md`
+- QC remediation notebook (final comparison layer): `Semester5/BIOL550/group_project/mouse/notebooks/qc_remediation_experiments_mouse.ipynb`
+- QC remediation outputs: `Semester5/BIOL550/group_project/mouse/qc_analysis_remediation/`
+
+#### Remediation snapshot — 2026-03-11
+
+- Final local remediation notebook:
+  - `Semester5/BIOL550/group_project/mouse/notebooks/qc_remediation_experiments_mouse.ipynb`
+- Final local remediation figures:
+  - `Semester5/BIOL550/group_project/mouse/qc_analysis_remediation/final_problem_raw_vs_fastx.png`
+  - `Semester5/BIOL550/group_project/mouse/qc_analysis_remediation/final_baseline_raw_vs_fastx_gc_bellshape.png`
+  - `Semester5/BIOL550/group_project/mouse/qc_analysis_remediation/final_fastp_vs_baseline.png`
+  - `Semester5/BIOL550/group_project/mouse/qc_analysis_remediation/final_cutadapt_vs_baseline.png`
+  - `Semester5/BIOL550/group_project/mouse/qc_analysis_remediation/final_all_tools_comparison.png`
+  - `Semester5/BIOL550/group_project/mouse/qc_analysis_remediation/final_fastp_gc_bellshape_all_srrs.png`
+  - `Semester5/BIOL550/group_project/mouse/qc_analysis_remediation/final_cutadapt_gc_bellshape_all_srrs.png`
+  - `Semester5/BIOL550/group_project/mouse/qc_analysis_remediation/final_all_tools_gc_bellshape_all_srrs.png`
+  - `Semester5/BIOL550/group_project/mouse/qc_analysis_remediation/final_bell_gallery_2x2.png`
+- Final remediation decision:
+  - `fastp` is the default cleanup tool for this mouse dataset.
+  - `cutadapt` is the targeted fallback when explicit sequence trimming control is needed.
+- Interpretation rule:
+  - use the per-read comparison metrics and summary tables to choose the tool
+  - use the GC bell-shape plots as dataset-level sanity checks
+- QC validation wording for reporting:
+  - our custom comparison workflow is the primary validation layer
+  - it operationalizes the professor’s manual file-by-file review by parsing the underlying FastQC outputs directly for each report and comparing them systematically across stages
+  - MultiQC is the supplementary aggregation / confirmation layer, used after the file-level comparison work to corroborate and summarize the same findings
+- How to read the bell plots:
+  - shaded band = `25th` to `75th` percentile spread across reports
+  - bold line = median curve for that stage
+  - `Current FASTX` = trimmed baseline
+  - small bell-shape differences do not overrule the remediation metrics
 
 #### Status snapshot (terminal) — 2026-03-05 (complete)
 

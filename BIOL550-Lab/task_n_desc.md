@@ -1,5 +1,18 @@
 # BIOL550 — Tasks, Requirements, and Work Log
 
+## Documentation hierarchy
+
+- Parent course hub: [../README.md](../README.md)
+- Course notes hub: [../BIOL550-Notes.md](../BIOL550-Notes.md)
+- Group project documentation map: [../group_project/DOCUMENTATION_MAP.md](../group_project/DOCUMENTATION_MAP.md)
+- Group project workspace hub: [../group_project/README.md](../group_project/README.md)
+- Group project work log: [../group_project/WORKLOG.md](../group_project/WORKLOG.md)
+- Active mouse workflow: [../group_project/mouse/PROCESS_mouse_fastq_fastqc_fastx.md](../group_project/mouse/PROCESS_mouse_fastq_fastqc_fastx.md)
+- Active mouse TODO: [../group_project/mouse/TODO_mouse.md](../group_project/mouse/TODO_mouse.md)
+- Active mouse remediation plan: [../group_project/mouse/TODO_qc_remediation.md](../group_project/mouse/TODO_qc_remediation.md)
+
+Use this file for assignment requirements and submission expectations. Use the linked group-project docs for execution details, current status, and remediation decisions.
+
 ## Index
 <!-- TOC-START -->
 - [BIOL550 — Tasks, Requirements, and Work Log](#biol550-tasks-requirements-and-work-log)
@@ -719,6 +732,32 @@ awk 'NF && $1 !~ /^#/{print $1}' "$RUNS" | while read s; do [[ -s "$ROOT/fastqc_
 
 Log checkpoint (server):
 - `/home/zebrafish/mouse/PRJNA1017789_parallel/.pipeline/end_to_end.nohup.log` ends with: `end-to-end completed` (2026-03-03 21:39:04).
+
+**Update (2026-03-11): mouse remediation comparison package — final local references.**
+- Final local remediation notebook:
+  - `Semester5/BIOL550/group_project/mouse/notebooks/qc_remediation_experiments_mouse.ipynb`
+- Final local remediation artifact folder:
+  - `Semester5/BIOL550/group_project/mouse/qc_analysis_remediation/`
+- Main final figures:
+  - `final_problem_raw_vs_fastx.png`
+  - `final_baseline_raw_vs_fastx_gc_bellshape.png`
+  - `final_fastp_vs_baseline.png`
+  - `final_cutadapt_vs_baseline.png`
+  - `final_all_tools_comparison.png`
+  - `final_fastp_gc_bellshape_all_srrs.png`
+  - `final_cutadapt_gc_bellshape_all_srrs.png`
+  - `final_all_tools_gc_bellshape_all_srrs.png`
+  - `final_bell_gallery_2x2.png`
+- Final tool decision:
+  - `fastp` = default remediation tool for this dataset
+  - `cutadapt` = targeted fallback for explicit sequence trimming cases
+- Interpretation rule:
+  - use the summary tables and per-read comparison plots to decide the tool
+  - use the all-SRR GC bell-shape figures as dataset-level sanity checks
+- Operational references:
+  - detailed rationale: `Semester5/BIOL550/group_project/mouse/TODO_qc_remediation.md`
+  - step log: `Semester5/BIOL550/group_project/WORKLOG.md`
+  - repeatable workflow: `Semester5/BIOL550/group_project/mouse/PROCESS_mouse_fastq_fastqc_fastx.md`
 
 **Mouse weekly report (2026-03-04) — change-proposal checklist (cleaned).**
 

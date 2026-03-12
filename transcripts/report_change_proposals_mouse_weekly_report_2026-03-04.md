@@ -78,3 +78,4 @@ These proposals are derived from patterns/instructor expectations captured acros
   - **Before (Goals):** “Next week... add adapter clipping... re-run FastQC...”
   - **After:** “This aligns with the course timeline that intentionally allocates multiple weeks for QC iteration (download → QC → cleanup → re-QC) before alignment.”
 
+> Tooling note (2026-03-05): for targeted trimming of known end-sequences (adapter remnants) on paired-end reads, prefer `fastp` over FASTX; for primer/amplicon trimming, use `cutadapt`. See `Semester5/BIOL550/BIOL550-Notes.md` (“fastp vs FASTX Toolkit”).

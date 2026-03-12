@@ -84,6 +84,8 @@ By the end of Week 2, students will:
 | **What to Learn** | Per-base quality scores, quality by cycle, base composition, adapter contamination | Directly applies Week 2 concepts |
 | **Example Dataset** | Instructor may provide sample FASTQ file (from Week 1 real sequencing run) | Practice on actual data |
 
+> Tooling note (2026-03-05): FASTX is useful for basic trimming, but for “targeted trimming” (adapter remnants / known end sequences) on paired-end reads, prefer `fastp`. For primer/amplicon trimming, use `cutadapt`. See `Semester5/BIOL550/BIOL550-Notes.md` (“fastp vs FASTX Toolkit”) for examples.
+
 ---
 
 ## Week 2 Core Content: Detailed Breakdown

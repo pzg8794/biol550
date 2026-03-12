@@ -35,3 +35,5 @@
 - **Adapter signal:** Evidence read-through captured adapter/technical sequence; typically requires adapter clipping (not quality trimming).
 - **Duplication levels:** Fraction of reads that are duplicates; in RNA-seq this can reflect high expression, not just PCR artifacts.
 - **q-value / FDR:** Multiple-testing–adjusted significance metric; use with a cutoff (e.g., 0.05) for DE calls.
+
+> Tooling note (2026-03-05): FASTX is the legacy “class” trimmer. For targeted trimming of known end-sequences (adapter remnants) on paired-end reads, prefer `fastp`; for primer/amplicon trimming, use `cutadapt`. See `Semester5/BIOL550/BIOL550-Notes.md` (“fastp vs FASTX Toolkit”).

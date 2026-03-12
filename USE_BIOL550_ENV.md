@@ -5,6 +5,8 @@ Use this **single** environment for BIOL550 notebooks/scripts:
 - Env path: `Semester5/BIOL550/biol550_env/`
 - Jupyter kernel name: `BIOL550 (biol550_env)`
 
+Do not create new BIOL550-specific virtual environments unless there is a real blocker that cannot be solved inside `biol550_env`.
+
 ## Activate (terminal)
 
 ```bash
