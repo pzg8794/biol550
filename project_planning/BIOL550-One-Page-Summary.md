@@ -20,7 +20,7 @@
 ```
 PHASE 1 (Weeks 6-8): Primary Stage Analysis
 ├─ Lead: Member 1 (Computational)
-├─ Tasks: FastQC QC, **FASTX** quality trimming, contamination filtering
+├─ Tasks: FastQC QC, trimming (`fastp` preferred / **FASTX** legacy), contamination filtering
 └─ Output: Clean, high-quality reads
 
 PHASE 2 (Weeks 10-11): Secondary Stage Analysis
@@ -114,7 +114,7 @@ BONUS (Weeks 15-16): Extended Analyses
 
 ## Key Tools & Resources
 
-**Analysis Tools:** FastQC, **FASTX**, Bowtie2, TopHat, Cufflinks/RSEM, SAMtools, R/ggplot2
+**Analysis Tools:** FastQC, `fastp` (preferred trimmer), **FASTX** (legacy trimmer), `cutadapt` (primer/amplicon trimming), Bowtie2, TopHat, Cufflinks/RSEM, SAMtools, R/ggplot2
 
 **Fairness Tools:** fairlearn (Python), disparate impact calculations, equalized odds metrics
 

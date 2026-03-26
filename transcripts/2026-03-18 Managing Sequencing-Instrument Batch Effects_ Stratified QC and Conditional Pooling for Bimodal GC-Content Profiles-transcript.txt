@@ -1,0 +1,42 @@
+00:00:01 Speaker 1
+But it could be there's something wrong with it. I think it's gonna be a story that we try to do an RNA - seq experiment. We sent out our data to the sequencing lab, they sequenced it, We sent back and all of a sudden, we're looking at these really low alignment rates. We're trying to figure out what's going on. And then Alexa is one of our students actually in the program. She was working in that lab at the same time, and she said, well, let me blast a couple of these reads. G-blasted the reads, and it was totally different species of plant. Like we were trying to see if it was grapes, and it came up as tomatoes. There was a swamp in the lab. So pay attention to those details. I mean obviously you don't have that issue. You're aligning most of your aligning there, But you might have a sample issue across two if they had to do in a different plate or something like that, and they may have actually grabbed the wrong sample. Oops! So earlier cases are better. In our case, we caught it too late and they'd already thrown out our raw samples, so they couldn't resequence it, and we didn't have DNA.
+00:01:30 Speaker 1
+If no one else is using it, but don't set up multiple ones. Yeah, no, it was one at a time. One at a time, okay. Okay. All right. Cool, let's see what we have this time. All right, do you have to roll or is one group going to volunteer? You're going to volunteer? All right, what do you got? I can put my dice away.
+00:02:10 Speaker 2
+So, One of the issues we had when we first ran QIIME 2 on our dataset is there was a weird thing with our GC content where there was kind of two groups of curves in the per sequence GC content. And, we were kind of hoping that removing overrepresented, sequences and adapters would erase this issue. But, this is the multi QC report we got after doing trim using FastP and running FastQC again. There is still an issue. So, what we've been doing is trying to figure out why that's an issue. So, What we did was we looked at the individual like which reports are coming into which group, and we spent some time looking at the way that.
+00:03:01 Speaker 2
+The study was structured, And we didn't find any correlation with the specific like subsets of groups, like based on what the study was testing. But what we did end up finding was, so the spreadsheet I have pulled up right now. It's just the ones that showed up in the green group and ones that showed up in the yellow group because they were mostly separated. When, we went into the SRA run table to get more data on like individual samples. Ads for each report, we noticed that this first half runs all had Nova C ads, and then the second half had Nova C six.
+00:03:42 Speaker 1
+If you go back to that previous one that you're showing here, yeah, see that three seven five six plus the verse is spanning these two. Go back ahead and and that one was it probably both of them really belong to Nova C ads.
+00:03:57 Speaker 2
+Mhm. Yeah. So basically those two correlated, so it's a matter of instrument. Yeah. We're assuming is the issue with DC content. Um,
+00:04:10 Speaker 1
+That that's a good catch. Okay, so is there a difference in these other chemistries? Yeah. So the six thousand The six thousand was the older one, right?
+00:04:25 Speaker 2
+So yeah.
+00:04:28 Speaker 2
+So we're not entirely sure why they used two instruments.
+00:04:33 Speaker 1
+Now, what's the state? Let's see some types. Oh, some are still purified. Do we know which are case and which are control? I think,
+00:04:50 Speaker 2
+Can you pull up the flag and see because Sam ended up going through and kind of identifying which report was associated with condition. Yeah. Oh yeah.
+00:05:01 Speaker 1
+Okay. Yeah. So they kind of spread out. And so that does increase the number of. Let me listen. Yeah. Oh man, I'll tell you what, What you could do is just use one of them with maybe the Nova C X and do an analysis on that. And see what comes out of it because I'm worried that the machine is introducing bias.
+00:05:31 Speaker 2
+Okay. Our only concern was that because it doesn't seem like one part of the study, I guess, like the control and the test, it's not like they're all set in one type of machine. It's like spread out. Spread out. Yeah. So that's why I was unsure. Because like ultimately, can we really do an analysis if.
+00:05:51 Speaker 1
+So if I was working in a real lab, yeah, I'd be concerned because you want a larger number of samples. Yeah. Uh they give you a better measure of error, Obviously, a larger your sample size, the more accurate your error measure. Yeah. The more accurate your results. Yeah. What I'm worried about is classroom purposes can you you can't generate more data? Is it feasible to do it across machines? It might introduce bias. Now, one thing you could do, You could run the alignments on all. But then when you actually go to do differential expression.
+00:06:26 Speaker 1
+Try different subgroups to see what happens here and see if the machine is introducing bias. Maybe try one machine versus the other, just see if there's a difference in expression. If there's something consistent that's highly significant, I'd worry that there's something going on with the machine that's introducing bias somehow. But you can also try it again just based on genotype, ignoring the machine and see what happens. Yeah,
+00:06:51 Speaker 2
+That's why what we started doing is, People couldn't tell was doing alignments, um, just because I mean that's not something we can change. So we figured we just do alignments, see what it's looking like after and then yeah, we appreciate the two pathways you could take. That's kind of what we were hoping to get.
+00:07:08 Speaker 1
+So what is your team going to ask you to do? Is collect take a look at your alignment stats for the NovaSeq X versus the NovaSeq six thousand. Look at percent reads mapped total reads mapped. Let's see if there's any, I mean, major difference between them. I suspect that the X is generating more fragments. Usually newer techniques, newer methods, newer machines, they tend to be higher throughput. I would expect to see more reads off the new X. Let's see if that holds up and let's see if the percent of reads mapping is reasonably consistent across those two variables, across the two states, two machines. Then you might be able to pool them and might be okay.
+00:07:53 Speaker 1
+Okay. Uh, but let's see if there's any difference when we get all the stats. Mhm. Okay. That's probably gonna be good indicator.
+00:07:59 Speaker 2
+Yeah, sounds good.
+00:08:00 Speaker 1
+That's start with that one. Awesome. Okay, thank you guys for seeing the difference in these drives here? No problem. I know the room is. There's a room. Because it's not just this one, it's also uh those of you who are kind of at this, it's running. It was running two servers. Uh I'm worried that this is taking a beating on thisum, It could be. It happens. I had to have a new car battery recently. They replaced it, so I had a bad. the car battery go bad, so they replaced it with itself with that. They found because that entire batch of replacements was bad. Wasn't my fault. I got a free battery out of it.
+00:08:52 Speaker 1
+Actually, turns out I didn't because I just bought the car. It's in the warranty period. Yeah, I went all around. All right, last group. Oh yeah, we do show it.

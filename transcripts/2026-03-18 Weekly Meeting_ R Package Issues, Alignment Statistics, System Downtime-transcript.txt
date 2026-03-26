@@ -1,0 +1,110 @@
+00:00:01 Speaker 1
+When you see it up there, it's like, "Wow!" Everything was cracking. There's a tune for that. That shouldn't start till you're over forty. When I broke four, I would say. Oh wait. Really? I had no idea. Actually the funny thing is you don't do these screens. You do know what the networking part is? Use another, but it's better. So in our last time, we just finished with the alignments. We had that and we shared the stats for that last time.
+00:01:29 Speaker 1
+I think it's very important to have a good relationship with your parents. Great. Sorry.
+00:02:29 Speaker 1
+You got awesome results there. Except for the outliers, what's the deal with the outliers? We thought we were looking at something else in this. We looked at them and they didn't seem to show us a pattern.
+00:02:59 Speaker 1
+So it just has more reads in really case control. They were different somewhere in case, somewhere controlled. The yellow ones here, sepsis there. Healthy and healthy young. And they're often from different machines? Here.
+00:03:30 Speaker 1
+You may just want extra depth. I don't remember anything about that. I see the different backgrounds. Pretty confident about it. So you're mentioning it here in this video. Sometimes they'll do it in our safety also. Let's go back to thank you.
+00:04:04 Speaker 1
+So DC 2. It's a big difference in the performance. We're using DC 2, so it actually runs differently because the
+00:04:24 Speaker 2
+Inputs include a Hessian matrix.
+00:04:30 Speaker 1
+In a sample, metadata. So we think that level of metadata. We need a file like this that includes sample information that we're looking at. And we did that. And then in the future, we can add more conditions. So in our data
+00:04:54 Speaker 2
+It has more than two sets of probably control male female. Point, but there are other things you could explore that would be interesting. But right now we're just looking.
+00:05:03 Speaker 1
+At those three conditions. The issue we have with installing R in your own directory, I want to take some command line space and walk into it. Bioconductor is outdated. Let's see if I can do something with that. I was in user/bin/R? That's version 4.5.
+00:05:30 Speaker 1
+There was a command if you type it in.
+00:05:34 Speaker 2
+Install CC 2, then it will tell you the problem, which is that you need an updated biosc manager. Then if you copy that and update the biosc manager, it will update that. But for us, we couldn't update it.
+00:05:48 Speaker 1
+It wouldn't find our rescue. We created a new R thing.
+00:05:58 Speaker 1
+So that's the problem.
+00:06:30 Speaker 1
+Does DC2 require an earlier version of R? Does it require version three? Let me share what the problem was. You have
+00:07:06 Speaker 1
+So I'm.
+00:07:22 Speaker 2
+Using a different here.
+00:07:34 Speaker 1
+Try to reinstall. Upgrade. This might take a while. See how far we can get. It's trying. A callback. It doesn't take long to install. Ten minutes maybe. There's no one here from the system inbox. It's a great opportunity. I'm gonna let that keep running. I'm running it as root so it'll actually set this up for everybody. Great. So. And I don't know if when you do install for EUC2, would that also do the needed stuff?
+00:08:32 Speaker 1
+That needed to be done in the earlier case. I should let you do a local version of it. It should ask actually. Let's see what happens once this finishes. Hopefully it doesn't take forever. So cool. Otherwise you just get stuck with that. And then we had, we also have some
+00:09:02 Speaker 1
+Sorry, it's a lot. We also have this report from our. Basically, first sorry I just really love this chair. The first histogram kind of shows our assigned versus unassigned reads.
+00:09:31 Speaker 1
+You can see that the assigned ones are kind of all clustered in one area, and then the unassigned ones have a little bit more spread. Amazing, beautiful. We're not exactly sure why yet.
+00:09:46 Speaker 2
+We just looked at these summary files and wanted to organize them a little bit. Then the next.
+00:09:56 Speaker 1
+One it shows like per sample, How what reason for counting for the green on the sign?
+00:10:06 Speaker 2
+So each color corresponds to a reason
+00:10:12 Speaker 1
+And then you can see from their face. Some of those colors I can't tell apart. The green is that mapping quality or multimapping? I'm guessing it's multimapping. It's multimapping. And for the blue, is that no features? Blue is no features. There is this ambiguity. I guess it's not colorblind friendly also, but there's just a lot of color deficiency. Besides color blindness, there are sometimes deficiencies and I'll admit about high risk because I'm male. There is like a really fun test you can do on your computer that shows you how good you are at telling colors apart. Probably. But I am not colorblind, she just had a problem with the red-green thing. I got like zero points, zero point four six on that one.
+00:11:02 Speaker 1
+So I'm not sure what it means by ambiguity. Oh
+00:11:05 Speaker 2
+We're also not sure what it means by ambiguity.
+00:11:13 Speaker 1
+Multi-views that happen and they're kind of even across them. There's a little bit of variance in the no features that could be a clue. The ones that have higher there's just the one that stands out as number.
+00:11:30 Speaker 1
+This one here. Is it 73 or 83 or 84? It's 84. Because the numbers come after the T. That's 84. That looked closer with that sample. Do you know what its percent reads mapping is? It was ending in 74. That's going to still installing.
+00:12:30 Speaker 1
+74, there we go. 70% reads alignment. So yeah. It's an odd part of the other name. That's one of the ones that has more reads, isn't it? Interesting. So if you go back to the graph, usually I don't go with read counts. I know a lot of programs like to. I usually go with percent of reads, so you can get proportional comparison between the different tools. But yeah, I'm not too worried about that. I'm guessing the other two on the right are also the high-grade ones, the fragments of it. They are. That is correct. Yeah. I don't know where the other one is; it kind of blends in with the others. Eighty-one, which is right here. Which is actually there we go. So yeah. It's about on par with the others.
+00:13:28 Speaker 1
+Its ambiguity is higher, which is true for all four of those. All four of those have higher ambiguity, but they're otherwise about on par. Now eighty-four is weird still. The others are otherwise on par with everything else. If you look at the percent mapping, it's still relatively similar to where it was in the past. I'd say for now we'll go with it. You can think about leaving it out as an outlier, but I don't think that makes sense at this point. How do SQC results look?
+00:14:27 Speaker 1
+Eighty four. Sorry, I need to organize my screen and I don't want to. No worries. It's not
+00:14:45 Speaker 2
+I work; I literally organized it.
+00:14:47 Speaker 1
+Last Wednesday, and it's already chaos, but mine was organized and had all the icons in a circle around this corner of it. Oh that's incredible. It's also take a while. Give me a second, last time I'll figure out how to make this work. Cool. Alrighty.
+00:15:26 Speaker 1
+Uh.
+00:16:01 Speaker 1
+Produce sequence.
+00:16:31 Speaker 1
+Don't we have other basic stats? Very first. Is that you see something the same? Compare to the other samples. What are you looking at? About same. It is double. Maybe I just done deeper reads on these for some reason. So as you can tell, it's a use of promise. It shouldn't affect the results. Having more fragments should be normal on this basis. So you should be okay there. Cool. Thanks. We're all getting there.
+00:17:29 Speaker 1
+I'm trying to figure out how to install this. I don't know how to install it. There were a lot of packages that had to be updated, so this may run out of time.
+00:17:59 Speaker 1
+Proteomics. Oh boy. So the system is back up. You can go ahead and try to run it at a low level. I don't know if you saw the email I sent to the faculty? Do you want me to continue working on what I was working on before this? Can you wait till Thursday afternoon? Thursday afternoon, go ahead and try it Friday morning. You can start it up. The question is, do we know why? No clue. We're trying to figure that out. Hate these problems. I suspect there was something in our clear.
+00:18:58 Speaker 1
+I am wondering if the UPS is acting funny. I just am not there to see it. There is no way to tell.
+00:19:04 Speaker 2
+You can't get data from the hand, you can't get data from the screen, so we are running this. It looks good. The name of the town is derived from the river.
+00:19:18 Speaker 1
+Is derived from the river.
+00:19:27 Speaker 1
+I have to go to the break. We kind of just separate. The first one is just a dump on Thursday. There's a chance that we can get fifteen minutes if I can. So Wednesday? Maybe that'll work.
+00:19:59 Speaker 2
+In the morning
+00:20:03 Speaker 1
+I came in and drove home. I left, went back home, and then just went off. So it has been on for another hour to be forty-eight hours. Wow! I don't know what's going on. What was that? We're working on it.
+00:20:58 Speaker 1
+I would love to.
+00:21:36 Speaker 1
+So what's the plan for when their alignment starts?
+00:21:39 Speaker 3
+Getting the alignment stats on it. The main thing is comparing it between instruments to see if they result in huge differences after aligning. After that, we can determine if we want to do analysis. Comparing instruments, or we can actually just proceed with doing a subset of the data and looking at specific biological questions rather than just which instrument seems to be affecting what tissue. There's really not much we can do until all the lines are done. This again due to the fact that studies.
+00:22:18 Speaker 1
+Using two different kinds
+00:22:26 Speaker 2
+Maybe just make something that better collects all the statistics from the lists. M was like, I want to go to law school. I went to law school for three years. Got his law degree at Emory. Full ride. And now he works as a medical researcher.
+00:23:05 Speaker 1
+So he's supposed to be in med school too after finishing this one.
+00:23:22 Speaker 1
+So you go with my brother. She went to the Black Mountain. It's great because it's all black and white. You're supposed to roll some more video. I have another picture because my grandma sent me a picture of her in the shower.
+00:24:21 Speaker 1
+Coded.
+00:24:50 Speaker 2
+We're hearing English. It was confusing when we started talking.
+00:25:20 Speaker 1
+And that his wife wants to reach out. So we kind of talk about it. One more thing before we finish. When are peer evals done? Tomorrow, tomorrow for class nine thirty for class. Please make sure they're in. I see a lot of people haven't done it. Yet remember, if you don't submit it, you don't get points for peer evaluations.

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Peer review — BIOL550 — High Throughput Seq Analysis</title>
+<style>
+:root{
+  --primary:#8b1e2d;
+  --primary-dark:#661522;
+  --secondary:#dff1ff;
+  --secondary-dark:#b9def7;
+  --text:#1c1c1c;
+  --muted:#5b6670;
+  --border:#b8c1c9;
+  --bg:#f7f9fb;
+  --white:#ffffff;
+}
+*{box-sizing:border-box}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  color: var(--text);
+  line-height: 1.35;
+  background: var(--bg);
+}
+h1{
+  font-size: 22px;
+  margin: 0 0 8px 0;
+  color: var(--primary-dark);
+}
+h2{
+  font-size: 15px;
+  margin: 0 0 10px 0;
+  color: var(--primary-dark);
+}
+p.note{
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+.page{
+  page-break-after: always;
+  margin-bottom: 28px;
+}
+.page:last-child{
+  page-break-after: auto;
+}
+.hero{
+  background: linear-gradient(135deg, var(--white), #fef5f6 55%, #f3fbff);
+  border: 1px solid var(--border);
+  border-left: 8px solid var(--primary);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+.summary-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 14px 0 6px 0;
+}
+.summary-card{
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 5px solid var(--secondary-dark);
+  border-radius: 12px;
+  padding: 10px 12px;
+  min-height: 92px;
+}
+.summary-card h3{
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  color: var(--primary-dark);
+}
+.summary-card p{
+  margin: 0;
+  font-size: 12px;
+  color: var(--text);
+}
+.section-block{
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+.section-block.peer-page{
+  margin-top: 28px;
+}
+.section-head{
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+  color: var(--white);
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.section-subnote{
+  padding: 10px 14px 0 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+th, td{
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  vertical-align: top;
+  font-size: 12.5px;
+  line-height: 1.22;
+}
+th.colhead{
+  background: var(--secondary);
+  text-align: left;
+  font-weight: bold;
+  color: var(--primary-dark);
+}
+td.factor{
+  width: 20%;
+  font-weight: bold;
+  background: #fcfcfd;
+}
+td.score, th.score{
+  width: 60px;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: bold;
+}
+.score-pill{
+  display:inline-block;
+  min-width:38px;
+  padding:2px 6px;
+  border-radius:999px;
+  background: var(--secondary);
+  border:1px solid var(--secondary-dark);
+  color: var(--primary-dark);
+}
+.footer-note{
+  margin-top: 8px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+@media print{
+  body{ margin:0.45in; background:#fff; }
+  .hero, .section-block, .summary-card{ box-shadow:none; }
+}
+</style>
+</head>
+<body>
+
+
+<div class="page">
+  <div class="hero">
+    <h1>Peer Review — BIOL550 — High Throughput Seq Analysis</h1>
+    <p class="note">
+      Please evaluate yourself and your peers on a five point scale, where <strong>5</strong> is a strong contribution and
+      <strong>1</strong> is no contribution. Be sure to give justifications for each score.
+    </p>
+
+    <div class="summary-card" style="grid-column: 1 / -1; min-height: 120px;">
+      <h3>Summary</h3>
+      <p>
+        In my judgment, both peers were capable of earning 5s across the board. They showed real willingness to improve, commit to a better workflow, and move toward stronger collaborative habits — and they did so in an environment where problematic patterns went unaddressed long enough to affect the group's ability to function at its best. I made consistent efforts to model transparency, accountability, and professional adjustment, and I believe both peers responded meaningfully to that standard when the conditions allowed. Their final scores reflect not limited capacity, but genuine growth that occurred despite an atmosphere that did not consistently support it. That resilience is worth recognizing.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="section-block">
+    <div class="section-head">Self evaluation</div>
+    <div class="section-subnote">Assessment emphasizes sustained pipeline development, documentation, reproducibility, and adaptation across feedback cycles.</div>
+    <table>
+      <tr>
+        <th class="colhead">Factor</th>
+        <th class="colhead score">Score</th>
+        <th class="colhead">Justification</th>
+      </tr>
+
+      <tr>
+        <td class="factor">Contributes to analysis</td>
+        <td class="score"><span class="score-pill">5</span></td>
+        <td>Drawing on prior coursework, I recognized early that the Trapnell workflow would need to be repeatable, so I built a full end-to-end pipeline wrapping the entire process — download, raw FastQC, FASTX trim, post-trim FastQC, and fastp remediation across all 26 SRRs — as a personal investment in the group's long-term efficiency. I also created the run split lists so every member had a defined scope to work from, produced the raw-vs-trimmed comparison notebook and QC figures as shared analysis artifacts, ran the full FASTX-vs-fastp dataset comparison, documented the shared-versus-canonical FASTQ divergence with byte-level and read-count evidence, and reused the pipeline to complete the STAR alignment workflow for downstream analysis.</td>
+      </tr>
+
+      <tr>
+        <td class="factor">Communicates effectively</td>
+        <td class="score"><span class="score-pill">4</span></td>
+        <td>Transparency has been a consistent priority: all communications were made inclusive so every member could contribute, question, or dispute any decision. I maintained a running record of decisions and progress, uploaded QC bundles for shared access, and surfaced workflow inconsistencies with clear evidence. I am not scoring a 5 because early differences in communication preferences led to documentation going unread or misread — an outcome I should have addressed with more adaptive strategies sooner. That gap created an unintended impression of imposition rather than collaboration, and it persisted longer than it should have in part because the broader environment did not consistently model or reinforce shared communication standards. I take responsibility for my part in that gap and have adjusted accordingly.</td>
+      </tr>
+
+      <tr>
+        <td class="factor">Listens to advice</td>
+        <td class="score"><span class="score-pill">5</span></td>
+        <td>Throughout the project I adapted consistently to feedback from both the team and the professor, often under personal constraints that made that effort more deliberate than it may have appeared from the outside. I reran QC as properly separated pre-trim and post-trim reports after Nikhi correctly identified the mixed-folder issue; added a team-follow notebook copy so teammates could reproduce the remediation independently; pivoted the canonical alignment input after Samuel and I confirmed the shared output was non-equivalent; and updated all documentation after each round of feedback. I chose to set the example I would have wanted to see modeled at this stage of a research career, and I tried to do so consistently regardless of whether the same standard was being held across the group.</td>
+      </tr>
+
+      <tr>
+        <td class="factor">Contributes to group writing <em>(only second evaluation)</em></td>
+        <td class="score"><span class="score-pill">N/A</span></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section-block peer-page">
+    <div class="section-head">Peer 1 — Samuel Kopelev</div>
+    <div class="section-subnote">Assessment emphasizes strategic impact, improved cooperation, and visible growth in willingness to adjust.</div>
+    <table>
+      <tr>
+        <th class="colhead">Factor</th>
+        <th class="colhead score">Score</th>
+        <th class="colhead">Justification</th>
+      </tr>
+
+      <tr>
+        <td class="factor">Contributes to analysis</td>
+        <td class="score"><span class="score-pill">4</span></td>
+        <td>Samuel contributed less frequently than the rest of the group, in part due to health-related constraints I understand firsthand, but the contributions he made were often well-timed and impactful. His questions and observations surfaced real problems in the data at moments when the group needed exactly that kind of check — including helping confirm that the shared trimmed outputs were not equivalent to the canonical run. The work he engaged with had genuine analytical value, and the quality of his contributions in context outweighed their frequency.</td>
+      </tr>
+
+      <tr>
+        <td class="factor">Communicates effectively</td>
+        <td class="score"><span class="score-pill">4</span></td>
+        <td>Samuel's communication evolved noticeably over the project. Early misunderstandings — shaped in part by differences in background and by an environment where shared baselines were not clearly established or enforced — created friction that took longer to resolve than it should have. What stands out is that Samuel committed to a more structured approach over time, engaging constructively and working within the group's shared process. That shift happened despite conditions that did not make it easy, and that matters.</td>
+      </tr>
+
+      <tr>
+        <td class="factor">Listens to advice</td>
+        <td class="score"><span class="score-pill">4.5</span></td>
+        <td>Samuel showed a noticeable change in how he responded to feedback over time — moving from an initial resistance toward a genuine willingness to meet halfway, adjust to team direction, and keep the group on track rather than redirect it. That arc is worth recognizing. I am scoring this at 4.5 rather than 5 because there were still moments where previously agreed work needed to be revisited, suggesting the consistency is still developing. But the direction is right, and the effort is visible.</td>
+      </tr>
+
+      <tr>
+        <td class="factor">Contributes to group writing <em>(only second evaluation)</em></td>
+        <td class="score"><span class="score-pill">N/A</span></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+<div class="page">
+  <div class="section-block peer-page">
+    <div class="section-head">Peer 2 — Nikhi Boggavarapu</div>
+    <div class="section-subnote">Assessment emphasizes sustained analytical presence, real-time engagement, and defensible technical contribution.</div>
+    <table>
+      <tr>
+        <th class="colhead">Factor</th>
+        <th class="colhead score">Score</th>
+        <th class="colhead">Justification</th>
+      </tr>
+
+      <tr>
+        <td class="factor">Contributes to analysis</td>
+        <td class="score"><span class="score-pill">5</span></td>
+        <td>Nikhi was consistently active, present, and engaged across the analytical work of the project. She identified the mixed-input MultiQC problem and pushed for the correct separation of pre- and post-trim reports; she was instrumental in driving the instrument verification question — alongside Samuel — that confirmed the NovaSeq X Plus; she treated the GC WARN subset as a real signal worth tracing rather than dismissing it as noise; and she presented the machine-effect finding in class and held her ground under questioning. A score of 5 reflects not just the volume of her contributions, but the fact that she could defend them when it counted — which is the standard that matters in research.</td>
+      </tr>
+
+      <tr>
+        <td class="factor">Communicates effectively</td>
+        <td class="score"><span class="score-pill">4</span></td>
+        <td>Nikhi brought concerns forward clearly and in real time, helped move the group toward video calls as a more structured communication channel, and was present and engaged during class sessions in a way that kept discussions productive. I am not scoring a 5 because there were moments of misunderstanding within the group that were not fully resolved, and some of those gaps recurred as a result. That is not a judgment about intent; early in a research collaboration, especially in an environment where group norms are not clearly established or enforced, the responsibility for closing those loops belongs to everyone. Nikhi's presence and engagement were real strengths; full ownership of shared miscommunications would have made those strengths even more effective.</td>
+      </tr>
+
+      <tr>
+        <td class="factor">Listens to advice</td>
+        <td class="score"><span class="score-pill">4</span></td>
+        <td>Nikhi responded well to the professor's direction to investigate experimental design, metadata, and instrument effects, and she acted on the correct MultiQC approach once the folder-mixing issue was identified. The way she handled the shared-output equivalence question — recognizing the canonical fastp output as the right reference once the audit was in front of her — demonstrated that she adjusts thoughtfully when given clear information. I am not scoring a 5 because there were moments where feedback did not translate into changed practice until the issue had already surfaced in the data. In an environment with consistent accountability and earlier correction of workflow issues, that follow-through would likely have developed faster. The potential is clearly there.</td>
+      </tr>
+
+      <tr>
+        <td class="factor">Contributes to group writing <em>(only second evaluation)</em></td>
+        <td class="score"><span class="score-pill">N/A</span></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <div class="footer-note">
+      Note: If the evaluation form requires whole-number scores only, Samuel's 4.5 should be rounded before submission.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

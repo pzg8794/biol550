@@ -16,7 +16,7 @@
 
 **Suggested first steps (3–5 sample quick test):**
 1. Download 3 representative SRRs (use `prefetch`/`fasterq-dump` or `cloud` fastq links).
-2. Run **FastQC** for QC; if you need trimming, use **FASTX** (`fastq_quality_trimmer`, `fastx_clipper`) and re-run FastQC; confirm read length and quality.
+2. Run **FastQC** for QC; if you need trimming, use `fastp` (preferred) or **FASTX** (`fastq_quality_trimmer`, `fastx_clipper`) and re-run FastQC; confirm read length and quality.
 3. Align with STAR (or Salmon pseudoalign) on GRCh38; check mapping rates and duplication/mito content.
 
 ---
@@ -33,7 +33,7 @@
 
 **Suggested first steps (3–5 sample quick test):**
 1. Pick 3 SRRs spanning conditions/timepoints; download and run **FastQC**.
-2. If needed, trim with **FASTX** and re-run FastQC on trimmed reads (keep raw vs trimmed outputs separate).
+2. If needed, trim with `fastp` (preferred) or **FASTX** and re-run FastQC on trimmed reads (keep raw vs trimmed outputs separate).
 3. Perform rRNA/globin content check and mapping with STAR or Salmon.
 4. Consider normalization strategies for blood (e.g., remove globin, check for batch effects).
 
@@ -51,7 +51,7 @@
 
 **Suggested first steps (3–5 sample quick test):**
 1. Choose 3 publicly‑available SRRs (confirm per‑run access) and run **FastQC**.
-2. If needed, trim with **FASTX** and re-run FastQC on trimmed reads (document parameters).
+2. If needed, trim with `fastp` (preferred) or **FASTX** and re-run FastQC on trimmed reads (document parameters).
 3. Align with STAR and run QC metrics (gene body coverage, duplication, rRNA).
 4. If using clinical metadata, check dbGaP access requirements and plan approvals if needed.
 
@@ -59,7 +59,7 @@
 
 ## Quick recommendations ✅
 - All three candidates are **suitable for class projects**: public (or public runs available), deep sequencing, and 2×150 reads for robust downstream analysis.
-- If you want, I can prepare a small reproducible starter script to: download 3 SRRs, run **FastQC** → (optional) **FASTX** trim → **FastQC** → **MultiQC** and produce a short QC report.
+- If you want, I can prepare a small reproducible starter script to: download 3 SRRs, run **FastQC** → (optional) `fastp`/FASTX trim → **FastQC** → **MultiQC** and produce a short QC report.
 
 ---
 

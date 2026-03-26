@@ -1,0 +1,416 @@
+00:00:00 Speaker 1
+Helpful hints. I don't need them. Um, let me share screen here. All right, so yeah, I'm going to skip the squiggly and just go with lines. All right, Got a bunch of templates here and I'm. Just going to give you a representation of some templates from.
+00:00:29 Speaker 1
+One area that was amplified on the matrix. So you'd probably have thousands of these in a single spot on your matrix. Now, when they're sequencing, let's see how to do this. Let's do this. Let's say the first nucleotide is an A and yep, all of them wind up extending this.
+00:01:00 Speaker 1
+Move them over. Oops. Move these. Let me, I can grab them, there we go. All right, so they add the first nucleotide it's an A. Maybe the next one's a T. Now maybe there's a problem here though. Oh let's see, I'm just going to copy this.
+00:01:29 Speaker 1
+And here's where it starts. And it probably goes well for like the first hundred nucleotides or so. See if it'll let me grab those. There we go. Pull those over. Now, you'll note I'm skipping one of them. What if the polymerase just didn't even bind to this strand?
+00:02:00 Speaker 1
+And it didn't add a T. Next round comes through, you're supposed to be adding a G, right? Let's say the G is the next - -. Let's say it's just cycling through. And the next one is a G. So, what's going to happen is we're going to add a G to all of those where the template is long enough.
+00:02:27 Speaker 1
+Where the next one is a G, but it should be a T here, so this one doesn't amplify, right? It doesn't extend. Add this in. See how that one is getting out of sync? Now maybe the next one's a T. Okay, great. It does add a T. But actually let's do this. See if this will let me grab it correctly.
+00:02:56 Speaker 1
+All of these add a T over here. And this one adds a T down here. Maybe the next one's a C. Well, all these are going to add a C, but not this one because its next one's a G. Now maybe on this round, this one failed to amplify because polymerase didn't bind. Now you have two of them out of sync. As you get further and further along in the sequencing, it's more and more likely that polymerase just missed on some of these And, it becomes more likely that more and more of your fragments in that spot are out of sync. So as you get further along in the sequencing, It's more and more likely that you have them out of sync and you wind up getting mixes of colors. At that point, it becomes hard to call. If it's three quarters G, It might call it as a G because it might be enough of that color. But, it might be lower confidence on that G because it's getting a lot of other signal in there too.
+00:03:52 Speaker 1
+So as they get out of sync over time, this creates problems. Now the older sequencing kits, it would hit those issues earlier. As the chemistry got better and the polymerases got better, it was further along before they started accumulating these errors. And so you go longer before the drop-offs. So a lot of the ones you're looking at that are 150, you'll see that it didn't really drop off, right? It's because the machine truncated after a certain point. It actually, it didn't show you the data in some cases. In, some cases, it doesn't continue past that point because it's just going to go where the chemistry is good and then stop sequencing, because it knows it's just a waste of reagents to keep going. So, a lot of this comes down to simple errors that just happen, and they accumulate over time. Um, And that the machines have changed how they deal with that over time with different chemistries and different ways. The machines run. Does that help? Cool.
+00:04:55 Speaker 1
+Okay, so so far we've got adapters and poly G's. They're both they're not even going to align. They're going to become unmapped reads, right? Because there's going to be a significant difference from the genome sequence. Similar issues with low quality, there are probably enough mismatches. How about multi-reads? What happens with those? That's a tougher question.
+00:05:28 Speaker 1
+What are multi- reads?
+00:05:31 Speaker 2
+It's a sequence that can align to two different references, right? So.
+00:05:38 Speaker 1
+Different places in the reference. Yep. Yep. Excellent. So since they can't be uniquely mapped, what typically happens with those? We kind of talked about this earlier in the course.
+00:05:50 Speaker 3
+They get thrown away.
+00:05:52 Speaker 1
+They get thrown away too, yeah. All right, um.
+00:05:59 Speaker 1
+Duplicated sequences. What happens with those? So you get a sequence that only matches one place in the genome, but there are lots and lots of copies of that exact same sequence.
+00:06:18 Speaker 4
+Is there a data reduction like it all gets collapsed down? I know that would be nice, but like yeah.
+00:06:25 Speaker 1
+But how much do you collapse it down? You don't really know how much to change it by. So, yeah, they.
+00:06:37 Speaker 1
+Stay In there. They stay in the alignment and you'll have those. So most of these things like adapters, poly G low quality multi reads, they do get thrown out. The reason we want to identify those in the quality control step is to see how extensive they are. Now say the data sets we're looking at this year are probably the cleanest I've ever seen. And it's probably because you're picking newer technologies. You're doing with recent papers where they're using newer kits, newer sequencing kits, newer machines and they're higher quality results afterwards. So, you're going to get overall better quality, but you're still going to have some things that aren't going to align well. You know the adapters and the poly Gs show up.
+00:07:26 Speaker 1
+Now, in terms of poly G's, what fraction of a percent of your fragments were poly G's typically? Looking across all the different groups and what we were looking at. It varied. Some of them were just over a percent at the worst. Most of them were less than that. Yeah, most of what I saw was A half a percent or less. All right. Does that still leave you a lot of fragments to get data from? Probably. We also have to look at the accumulation of these different error sources. So you had a mix of adapters and poly Gs. We didn't have to worry about low quality this time, but we did have multi-reads too. So the question is when you go to do your alignment, what fraction of your reads will actually align uniquely and give us useful data?
+00:08:25 Speaker 1
+And it's looking like for most of your samples, it's going to be a pretty good percentage. Again, that's kind of unusual. We usually get a group or two where we have real issues with quality. But. It's important to take a look at this and see. Are we seeing any systematic issues? The other thing to look at is systematic bias. So I am curious. Group that's got the two different GC curves, I'm curious if there was any pattern of that. We'll talk about that later. When you break out into groups. But you want to look for anything that might be a systematic here that might throw you off downstream. A lot of these things, you're probably not going to trim. Most if it's not extensive, most labs just do the alignment and they waste the computational cycles. They don't worry about it. So if they've got 1% of their reads are accumulated across adapters, poly G multi-reads and all this, they just do the alignment.
+00:09:24 Speaker 1
+It'll take a little bit longer to run the alignment, but they let it go. They don't bother doing the cleanup in the first place. However, If you do see extensive issues, like half your fragments have long poly G stretches, Now we got to think is this data really going to be helpful or useful or not? We may not have enough reads afterwards for this to be a useful dataset. The duplicated sequences, that's a whole other issue. So we have a high level of duplication. There's a number of possible causes. It could be an artifact of high sequencing depth. If you're getting lots and lots of mRNAs from these cells sequenced, you're going to have duplicated sequences. It's going to happen. You know, once you start breaking-- I'd say closer to 100 million, I'd expect it-- you're going to start seeing a lot more of this.
+00:10:20 Speaker 1
+Just because there's only so much mRNA there. So with that random fragmentation, You're going to get a bunch of them where you get the exact same fragment. Especially for high copy number mRNAs, you'll start seeing them with exact sequences more often. We do have to keep an eye on the duplications, and that's something we're going to want to watch with your groups this year. I'm seeing a lot of that. So we want to make sure when we do the downstream analyses, and you'll probably see this more towards the differential expression side. We want to see what impact it has. Are, we seeing any genes that are highly expressed and showing up as differentially expressed? And then we want to consider if duplication is impacting that. So in reality, a lot of labs, again, they'll skip the trimming.
+00:11:17 Speaker 1
+Assuming the data quality is good enough. But I want you to go through and see these different tools we have there. There may be cases where, yeah, Half your fragments are poly G, but you had 100 million fragments to begin with. You still got 50 million good fragments. No sense throwing the data out. And no sense aligning the whole thing either. You might as well just trim off the poly G sequences. So, alright, who's got questions so far? No one wants to throw something at me for making you go through this?
+00:11:49 Speaker 1
+I think my.
+00:11:50 Speaker 4
+Question oh go ahead, Eliana. Sorry, sorry me. I think my question is, is simply how do we know when we're done Q C- ing? How do we know when it's ready?
+00:12:04 Speaker 1
+It's a good question. Um you want to minimize potentially Sam says, never no. It's not like a like an artist where their work is never doneum. There is a point where you just have to say, "Look, I am getting diminishing returns." Where if I keep doing cleanup. It's not going to benefit us in the long run. Again, that example of yeah, half your fragments are poly G, but you have one hundred million to begin with. Just trim them out and you can go ahead and align it. And then you're probably done. It's definitely good to do another round of analysis, just to make sure something else didn't appear. That's something I usually see in groups, in the teams is.
+00:12:47 Speaker 1
+Where they go through and eliminate adapters, and then they find, oh, now we have this new issue. Uh, and that can be a problem. So, you definitely want to make sure you have an end fastQC result where you're not seeing a lot of issues like maybe 1 % of your fragments are a problem. But if you still have 35 million to begin with, 1% is not taking a lot off of that. You're still going to have 34 million plus so you're going to be okay. Does that help?
+00:13:20 Speaker 1
+Yes, thanks. Okay, cool. I know there are other questions there. Who wants to go next?
+00:13:31 Speaker 4
+I was going to ask, Is there ever a situation where you run your alignment? And then you go back because things didn't perform the best and then run more quality control stuff?
+00:13:41 Speaker 1
+Sometimes we miss things in the quality control analysis, especially if you rush it. If we didn't look at the individual results sometimes, And then you may find at the end. Um, I'm going to be watching the duplication levels because that is higher than I'm used to seeing. Not a lot actually. Typically we see for a good quality sequencing maybe 40% left after deduplicating. I'm not going to ask any of you to deduplicate it at this point because you're not going to have enough data left to do good analysis.
+00:14:19 Speaker 1
+Um, but I have seen issues. Let's see. Where have I seen this? Uh, maybe during the alignment phase where not enough reads aligned. Like, if you got 50 % alignment and it really wasn't enough fragments to do a good analysis, that would be one area further downstream.
+00:14:53 Speaker 1
+Maybe issues with not enough samples at the end. We are the or the samples, One thing you might see, if you have, let's say, three case and three control. If there's too much variability inside one of those states, Your errors are your error rates are so high. You can't get a good differential analysis, and you won't know that until you finish everything. Then you got to think about Well, were these correctly assigned in the first place? Maybe one of these cases is actually control. So some of that you don't see until you get further downstream. That happens in anything in science though. I was just, the meeting I just came out of, which is working on grape genomics. They're doing a phylogenetic analysis of a bunch of different varieties. And at the end, we realized.
+00:15:50 Speaker 1
+Uh no I'm sorry, Sam I can't put you in a breakout room if you don't have questions. You gotta listen, sorry, otherwise I'm gonna. Let people go to breakout rooms and I'll give a super secret answer to everyone who stays I do that. Sometimes if you don't want to hear what I have to say, sorry, um can't help you there. Um they were doing a phylogenetic analysis. We found that we need to rethink that. The original data sets, there are actually some that were, it turns out they thought they were different varieties and they weren't. So they had to remove those and then rerun the whole analysis. This is something that took days to run. So it happens all over the place. It happens in wet labs all the time too. So yeah, There are times when you get further downstream, you go shoot. I didn't I need to look at this. And you have to start over again. That's part of the reason we do this course is because it does happen.
+00:16:49 Speaker 1
+We may see that in one or more teams. The nice thing is, you're learning how to do this and get quicker with it as you go, so it's less of a burden. Does that help? Cool. Do we have other questions? How specific should a reference genome be? Ooh, good question on reference genomes, and that is going to be an important consideration going forward. So what do you mean by how specific?
+00:17:18 Speaker 3
+I meant like if we have the same species, right? But I think ideally, the same tissue that you're trying to look at would be best. But if you can't find something like that.
+00:17:32 Speaker 1
+So it depends on what you're using. If using a reference transcriptome, I would absolutely agree. So, there are reference transcriptomes out there where they just have the transcript sequences. And if you're aligned to that. And you're using a different tissue, you're going to miss some genes that are not expressed in the reference tissue. Now, in terms of a genome sequence, should I have all of the genes present in it? Yeah. Yeah. So you're going to be okay. It's going to align. And what you'll find is a lot of the better aligners like STAR, If it finds you've got fragments from your RNA - seq experiment that align somewhere in the genome, that's not annotated.
+00:18:15 Speaker 1
+It will call them new genes. In fact, actually you saw that with your Traphill results. There are some of them that had gene names and some that didn't. If you look back at your differential expression results, look through the gene names. Imagine if we-- if you did your annotation correctly, some of them will have gene names. Irrespective of whether or not you did it correctly, they'll assign identifiers, Usually sequential identifiers to anything that wasn't represented in the transcriptome or in the annotation set. So, if you're using a reference genome, you'll be okay in terms of having the genes. Now, The other thing to think about is, you may have more than one reference genome available or multiple versions of these reference genomes. If you have a single reference genome available, usually I suggest taking the most recent one. Now, if you want to try to replicate some paper that has your data in it.
+00:19:09 Speaker 1
+If you're going to do their full data set and totally replicate it, Then you probably want to use the exact same reference genome, because then you want an apples- to- apples comparison. If you use a different reference genome, you're not really replicating their results.
+00:19:23 Speaker 3
+Yeah, that makes sense. Okay,
+00:19:25 Speaker 1
+Thank you. But, if yeah, no worries. And if you but if you are not replicating it, I say pick the most recent one. Now, here's a problem at least one group has had if you have more than one reference genome. How do you know which one to use?
+00:19:42 Speaker 2
+The latest one.
+00:19:44 Speaker 1
+Well, but there's more not but there are two different individuals, each of which has multiple versions. Which one do you pick? I know there's a group out there that did this.
+00:19:56 Speaker 4
+Ideally, ideally the one with the most comprehensive annotations.
+00:20:00 Speaker 1
+That would probably help, yeah. Um.
+00:20:04 Speaker 1
+So sometimes we get a case where there's multiple different groups out there, and we see this in grape genomics. Partly because there's different varieties out there, partly because there are lots of groups that are publishing their own reference genomes. But, we will see that they're going - - that these are running new versions in parallel to each other, and they're slightly different. Now, one of the things you can look for is which is the most comprehensive annotation? That's a good approach. Sometimes the reference genomes are more fragmented than others. One of the byproducts of assembly, genome assembly, if you remember from way back, is that except for some more recent approaches, especially with PacBio, you usually don't get whole chromosomes. Even if you do PacBio, You're not likely to get a perfect whole chromosome where it's completely telomere to telomere.
+00:20:59 Speaker 1
+Everything's in the right orientation and everything. You will see something called, let me put this in chat, a T to T, telomere to telomere assembly. There are some references like that. We have some in grape genomics. However, Some of the sections in the middle they might be inverted compared to the actual genomes. We may not know the orientation correctly. They may have secondary data and know the orientation for most of the fragments, but they might not. So one of the things you want to look for is detail of annotation, but also how complete are the chromosomes? That could be helpful. It gets tricky when you start seeing multiple competing reference genomes to figure out which one to use. So that our grape genomics group has actually.
+00:21:53 Speaker 1
+Agreed to work with a particular T2T reference genome for our future work. And I'm sure it'll change in about a year as these competing things, they all improve. So how many teams have found that issue? Well, there's more than one reference available. And there's at least one. Just one? I know for mouse, there's more than one. I don't think we got that far yet. Okay. Take a look and see. So where might you look to find reference genomes?
+00:22:37 Speaker 1
+NCBI. Absolutely. If you go to NCBI's homepage and don't pick a database, just enter your species name, you can probably find-- let me try this here. We'll do this live and see if it works.
+00:22:56 Speaker 1
+I'm not going to tell you which one to use. Oops, I stretched the wrong window. Close that out. Share. All right, let's do a search for Mus musculus. I spelled it right. Oh wait a minute, oh, I'm in the wrong spot, sorry. NCBI Let's try this again.
+00:23:26 Speaker 1
+If you go to NCBI's site, not to SRA but NCBI's, across all databases look for mouse. You get a cool picture. But also-- oh actually, let's try that. It actually worked. Ooh, look at this! How many genomes have you got out there? I'm sorry, Your group has 20 - - uh I'm sorry - - has almost four pages worth to choose from.
+00:23:55 Speaker 1
+All right, where do you start? The top. The top one, why?
+00:24:04 Speaker 2
+I don't know. I'm assuming it's the latest. Well, no. Well, yeah, it's easy though. Isn't it the latest? Wouldn't that make. No man, I'm gonna try to get you. It doesn't really make sense, but I would start at the top or with the green check mark because then.
+00:24:22 Speaker 1
+What does that mean though? It's got a fancy seal. It's super duper extra neat.
+00:24:26 Speaker 2
+Is it the most most used?
+00:24:30 Speaker 1
+It's this is Amazon. It's not like uh it's not highly recommended delivery theory. It doesn't prioritize and you can't sort by reviews or anything like that, um unfortunately. It turns out this one is one that is a common reference genome, But there's also a TIL mur to TIL mur one here. Now, you see, these are both using the same pretty much the same strain of mouse. You'll see some of these have different strains though. There are NOD mice there, yeah, if you're dealing with uh mice that have an immune system knockout, they're SCID mice, uh you may want to use that one. It depends on your experimental condition. It's going to be one of the things you have to look at. Don't just jump to the top one. So if I'm doing a Cre-LoxP mix one.
+00:25:21 Speaker 1
+If I have something that is vitis amurensis, I'm not going to go to vitis vinifera and use that reference genome because they're different species actually, even though they're in the same clade. So you really need to look carefully. In the case of mouse, you're going to have to look carefully to find what you want to use. Other species it's not as big an issue if you look -- oops! Got something in chat. Let me make sure I don't miss it.
+00:25:52 Speaker 1
+Is it annotated? Which one?
+00:25:55 Speaker 2
+I think she was talking about the check mark.
+00:25:58 Speaker 1
+Oh, is is something there? Some of these will be annotated and some won't. So you can actually let's pop this over. This one I know is annotated. This is a common one, But you can look at annotated genes and see if they have the stats down here. Annotation details with 50, 000, Genes, which means they're calling isoforms of separate genes. Because mice have about the same number of genes as we do. Yeah. There's BUSCO analysis. That might be one thing to look at when you look at these genomes. This is new, they didn't have this a couple years ago. Did we talk about BUSCO? We didn't, oh man! So when you do a genome assembly, One of the things you want to know is well how complete is this assembly?
+00:26:48 Speaker 1
+And one of the proxies we can use is look at, well, what fraction of the genes that should be there are there. So BUSCO takes common metabolic genes, things like genes involved in glycolysis or in amino acid synthesis. Genes we expect every organism, almost every organism should have. We have a different set of genes for different clades. So, obviously, plants are going to have a different set of core metabolic genes than humans do. What they do is they have these genes and you say, of those core metabolic genes that should be there, what fraction are represented? If we see 75% of the genes that should be there in our BUSCO, that means it's likely that 75% of all the genes are there. So it uses as a proxy. It's not perfect. Sometimes you have bigger differences in the non-metabolic genes, the non-core metabolism genes, but it's a pretty good proxy.
+00:27:45 Speaker 1
+Something like this where it's single copy 98.6%, that's pretty good. In fact, it's got 99.5% of all genes represented. Actually, 99.7%. It's missing about .3, .4%. So that might be another thing to look at. Go over here, let's try this teal or the teal one. See what they have on that?
+00:28:13 Speaker 1
+Oh, it doesn't have busco for it. Ooh. So you can't compare them. But let's see, do we have any annotation for this one? I do not see any annotation. Nope. This is a new one that was published in the past. Oh wait, it was collected in 23 but it's published in 25. It's not quite a year old.
+00:28:43 Speaker 1
+Am I missing the annotation? Yeah, I don't see any. So yeah, this one doesn't have annotation. Even though it's a telomere to telomere. It may have some advantages over the GRC one in terms of having chromosome length sequences for the most part, but it may have other issues. Um, I'm going to try to keep within the same strains. See what this ASMR is. We'll do a third one and we'll stop on that. That's a haploid assembly. This one's haploid.
+00:29:13 Speaker 1
+See if this one's also, I think it probably is. Yeah, it's also haploid. You will see some of them are phased, where they actually have common haplotypes across the two different homologous chromosomes. You see that more in grapes because there's low recombination there so you can get clean haplotypes. But that's a haploid reference doesn't have annotation does it? U h- oh, It might be worth digging a bit though, to make sure you get the best reference you can. Again, If you're trying to compare to the other paper from the data set that you picked, you might want to use the same reference they used. So lots of different considerations. Cool. Sorry, the mouse folks, you got some stuff to choose from. You got a look. Good. Other questions?
+00:30:18 Speaker 1
+All good. Okay. Cool. All right, let me make sure everybody's in breakout room. Let me see who's missing. Oh, let's see, I gotta see where you go. We had somebody come in late, so I gotta assign them into that group. Perfect. All right, so what we'll do is.
+00:30:50 Speaker 1
+Sorry. I'm going to open up the breakout rooms. Let your groups play around for a little bit. Oh, I'm going to turn on screen sharing. What are you saying? You're muted, Sam.
+00:31:03 Speaker 2
+I was cheering. Why? For this screen share.
+00:31:09 Speaker 1
+Oh, okay, cool. Not that you want to leave this room and go to your breakout room, okay?
+00:31:14 Speaker 2
+No, no, I just finished my breakfast so it was perfect timing. Oh my gosh! Okay, my ears are still on. I was listening.
+00:31:23 Speaker 1
+Okay, I'm going to open up the breakout rooms. Go ahead and work with your groups. I'll start cycling in a couple minutes. So, all right, here we go.
+00:31:43 Speaker 5
+Hello fellow patriots.
+00:31:47 Speaker 6
+How much caffeine did you have today Sam?
+00:31:53 Speaker 2
+Just a tea.
+00:31:56 Speaker 6
+It does not seem like it.
+00:31:58 Speaker 2
+I am bringing energy Nikki. I've also only had three hours of sleep.
+00:32:07 Speaker 6
+Okay maybe that's the issue.
+00:32:09 Speaker 2
+I think that's the issue.
+00:32:16 Speaker 2
+I just have so much work to do. I've been behind. And I feel awful. I feel like a fat ass because I haven't been hit the gym in at least four days. I have to go at ten fifty. I have an appointment at eleven, so that's kind of why I was like asking Ozer, why are we uh?
+00:32:56 Speaker 7
+It happened. Um, do we want to look at the QC files together?
+00:33:07 Speaker 2
+Or did we already do that last class?
+00:33:10 Speaker 6
+I'll look at it last class. I just started looking at it now because one of the things he pointed out was, Sam, remember that graph I showed you yesterday? The chart.
+00:33:21 Speaker 2
+During our break, the bell curves. Yeah.
+00:33:23 Speaker 6
+Yeah. Basically, for some reason, it's kind of weird that for the multi or the combined, The composite FSC graphs show two separate two different groups of the GC content curves. If you can figure out which is what that message I sent was, where um I invited Doctor Usher because I already explained. But, um basically, it seems like all of the I'm assuming dash one is forward, and dash two is reverse. All of the forward threes seem to have similar curves, whereas all the reverse threes have similar curves. So I believe those two curve distinguished like the distinguished curve groups in that.
+00:34:06 Speaker 6
+Composite um graph we saw is from one being reversed and one being forward. I don't actually know if this is a problem or not. I'm assuming it might be given the fact that other groups have not pointed this out or maybe OSHA just hasn't seen their charts, but I don't remember seeing that in our last data set. So I am a little confused, but that's the major issue I see with our Vascu C reports right now. We still have overrepresented sequences, but maybe that can change based on trimming. Oh, hi Dr. Arger. Hello. Um, I mainly called you over because I was looking at some more because we're the group with the double curves from PF. So I was taking a look at the files, and I pulled up their difference. All the forward reads had the same curve, while all the reverse reads have similar curves for the GC content.
+00:35:00 Speaker 1
+Okay. Now I'm going to lay in the plot. I think the reverse was the one with all the G's. This is a new block, so something else may be able to get there right now. Let me see if you can make this square with that.
+00:35:11 Speaker 2
+I'm wondering if that's causing the shift. But let's just watch it, so in order to make my square. It wasn't by more, right?
+00:35:16 Speaker 6
+Oh, you know what? I think you're right, because I currently have those three reads pulled up again and like I only see the overrepresented sequence problems in the reverse reads.
+00:35:26 Speaker 1
+Yeah, what percent of the reads were poly G? Or had poly G.
+00:35:33 Speaker 1
+It's In the overrepresented reads, if you look and there's a column of the percentage. Yeah,
+00:35:37 Speaker 6
+Uh one of the reads I have right now is point eight five percent.
+00:35:42 Speaker 1
+Another read,
+00:35:44 Speaker 6
+It actually has two overrepresented sequences. One where it's like poly G and that's point eight nine. But then there's another overrepresented sequence, which is a T, and then the rest are Gs.
+00:35:56 Speaker 6
+Here I can share my screen so we'll see here.
+00:35:57 Speaker 1
+Oh, it's a single yeah let me see that. That's kind of weird. I want to go here.
+00:36:06 Speaker 6
+Okay, can you see my screen?
+00:36:10 Speaker 1
+So let's say this is my. Oh yeah, we'll worry about that T followed by Gs. That just means uh the last base sequence there was a T, and it's just such a small percentage. That's just a fluke. Okay, so actually we're really looking at about 1%. Apologies for that. So if you look at your GC curve, what do you got in that one? Now see that tail at the right? And then it just tightened the distribution is all it did. It didn't really change. If you ignored what's on the right, your distribution is basically within the expected distribution. Okay. But now I said so yeah,
+00:36:48 Speaker 6
+I wouldn't ignore Yeah and then this is their forward so, No overrepresented sequence issue, and then this is the GC curve.
+00:36:58 Speaker 1
+Actually, in the four go to the very bottom, what was that? Did you have adapters? Yeah, you got a lot of adapters in that one. That one you may have to trim the adapters out. Okay. So animations like it's check mark data, check mark data. Yeah, doesn't have the poly G issue, but it does have adapter issues. So let's see try that one. Try to trim that one with either fastp or fastx, probably fastp, so you can keep your pairs. All right.
+00:37:28 Speaker 6
+I do see the adapter issue in another forward read.
+00:37:31 Speaker 1
+Yeah, maybe scroll up a little bit. You can see the adapter sequences right there. Yeah,
+00:37:35 Speaker 6
+This one does have overrepresented sequence issues, yeah.
+00:37:39 Speaker 1
+That May be a lot of noise. Interesting. Okay, Yeah So. Yeah, I would trim the adapters on that one sample file That one file. Rerun FastQC and let's see how it looks. Okay,
+00:37:53 Speaker 6
+Got it. Sounds good.
+00:37:54 Speaker 7
+Awesome. All right, thank you so much. Great, no worries. So a lot of times. What we have robots do is we have robots can.
+00:38:00 Speaker 6
+Pass this human to both quality or can't even get the file next,
+00:38:06 Speaker 7
+Right? So, if I want this robot to work with my test job and my question and say,
+00:38:10 Speaker 6
+How to make your agent building for you, So instead of building a pipeline at all, because I haven't run FastQC at all. Um, I don't quite understand the setting. So this is more me asking for clarification. He's saying toum.
+00:38:25 Speaker 6
+Specifically Cut the adapters. Does FastX already know to cut the adapters? Or is that something we need to specify?
+00:38:32 Speaker 8
+That's an extra. Um, Fastx does like the common like I don't know if you call it common, but the common trimming. Um, we're gonna have to do like an extract clipper. So we're gonna have to do that. We'll have target it as a mode target trimming.
+00:38:53 Speaker 6
+In that case, Let's just I guess here since weum fast QC out trimmed. So that's just the fastQC files you ran after clipping, right? Yeah Okay. In that case, I will download this folder and I'll start opening those files as well.
+00:39:13 Speaker 2
+Question: What's the difference between the parallel and the other folder? Because we have two folders.
+00:39:20 Speaker 8
+You can remove the other one. I forgot to remove it. I'll clean up after this.
+00:39:25 Speaker 6
+I can delete the non- parallel file? Yeah. Okay, cool. What are you doing? I'm deleting it now.
+00:39:32 Speaker 7
+So what do you guys think? Do you guys think so?
+00:39:36 Speaker 7
+But I just did my triangle. Do that to your so don't come up and step.
+00:39:40 Speaker 6
+Okay, you might need to delete it because it says I don't have permissions.
+00:39:42 Speaker 8
+Let me see your code. Oh, let me give you guys let me change the permission.
+00:39:49 Speaker 7
+Show me your code that you have an interesting looking square, okay? And, then once you get done with that, come back here and tell me.
+00:39:55 Speaker 2
+How many other squares, did you make an interesting? Is there a loop on it? And just to confirm we we have all the documentation of what exactly found, Access right like what exactly is cleaning up.
+00:40:12 Speaker 8
+Look at the notebook. Did you hear anything? This isn't the first part of the notebook.
+00:40:23 Speaker 6
+Yeah, the Jupyter Notebook Sam.
+00:40:25 Speaker 2
+Oh okay. Where where is the Jupyter Notebook? Oh, it's a collab.
+00:40:37 Speaker 6
+Okay. Yeah, we might have to run FastX again because it still didn't remove the adapter. Peter, from now on, can we hold off running the next step before confirming with Ozer?
+00:40:49 Speaker 8
+Um, we haven't talked about next step. I'm not sure.
+00:40:55 Speaker 6
+Well, no, But you you ran FastX already before we even went through the FastQC files with Ozer. That's what I mean.
+00:41:02 Speaker 8
+Oh yeah, that was just an extra step for us to go through it wasn't like.
+00:41:10 Speaker 8
+I don't know if you know what I mean.
+00:41:13 Speaker 6
+No, yeah, I do understand. It's just more, I want to we all are, I think in agreement that it's a little tricky to understand what exactly Doctor Oger wants us to do. So I just want to really take this step by step before proceeding to next steps so that we can try and limit the amount of excess work. Especially because already due to the confusion we had, like this is not me blaming you, this is me blaming how this class is organized. We've already ran into issues where we had to restart. So I just want to try and limit the extra amount of work we're doing. Um, so okay. Right now we need Yeah, like this is not a diss on you. This is just a I. Can't I don't have time to redo stuff again. Soum Just.
+00:41:57 Speaker 8
+Just so you know where my head was. Um. Um, it was my assumption that we were going to have to run it anyways. So I just ran it, but it wasn't like to do anything like extra. Like didn't think it would harm anything. Yeah yeah. It was just like if you guys.
+00:42:15 Speaker 6
+Have the time, So we're going to have to run FastQC again, mainly because we didn't remove the adapter sequence. Um, I already see it in the first read I opened.
+00:42:30 Speaker 8
+So hold on. I don't think you you mean a different, a more targeted version of of faxex. That's what you mean, right? Because faxex is not going to remove it.
+00:42:45 Speaker 6
+Well, okay, so then fast p whatever doctor O just said to like run. Okay, so then we should be running fast p.
+00:42:57 Speaker 8
+Yeah, yeah. I that's how I understand it or or I think I was also researching about it. So, uh there's also a way to remove adapters uh with fastx like a. Fastx clipper something, but we have to look into it together, right? So like yeah, take what the professor said, right and take note of that is important. But like don't just go blindly by it. Like you know, we need also to look how. Like research the tools that he gave us, like what they do and how they work, right? And see how we can use it.
+00:43:32 Speaker 6
+Yeah, absolutely. Um, so is your point that you don't want to use FastP?
+00:43:40 Speaker 8
+No no no I I honestly don't know I haven't used FastP. I'm just saying, like, you know, let's look into that as well because I did a little bit of digging like learning a little bit about the FastX and I found out that FastX. Ha sum a feature right? What it's allowed what it allows you to uh click like clipper or remove, you know, certain adapters, right directly targeted. Soum I don't know if that's actually fast B, you know what I mean? I'm just saying that you know, I was learning, right the tool a little bit. Yeah. Yeah.
+00:44:20 Speaker 6
+Okay. So all right, I think our next step should be. Let me get the name of the file.
+00:44:29 Speaker 2
+Uh, can I ask two things? Um, one, uh, Peter, When do you think you can uh either delete the file or or folder or give permissions? And uh two. Whatum so I'm on the Jupyter notebook on Colab. What step is this exactly because I'm, I'm a little confused. I guess where I'm stuck. Yeah, I'm actually confused where I'm supposed to look for the exact code that was used. I mean, this looks like a cool computer notebook school. Um, having trouble finding out where where exactly we are and also are we.
+00:45:21 Speaker 2
+Or are you adjusting the code? Um. With specific, like these are just examples, right? It doesn't have the actual code that you used or does it? I believe it does have the actual code. Okay. Maybe yeah, I guess I just have to get um familiar with it. But yeah, could um could one of y'all tell me what what, Like what thing I'm supposed to be looking at because I don't. I'm like so lost. If you share screen,
+00:45:56 Speaker 8
+We can help you. Yeah, while I'm while I'm doing the other thing in parallel. Uh uh, yeah my, I think Nikki also knows where where the commands are. It's just one section with all the commands.
+00:46:19 Speaker 6
+Okay, I just sent a couple messages on the Slack. Um, we're going to work primarily with the file name I listed there. So we're going to use work with forward and reverse. We're going to trim the adapter and poly G for the forward and reverse reads respectively. And, then we need to decide whether we're using fastx or fastp to doum trimming. So,
+00:46:41 Speaker 2
+Do we want to put that in the Jupyter notebook as like steps that we took?
+00:46:56 Speaker 5
+Why? Sorry, I was uh changing the permissions. What was the question?
+00:47:03 Speaker 2
+Like do we want to keep track of what what we're doing?
+00:47:13 Speaker 8
+Uh, What do you mean by keep.
+00:47:20 Speaker 8
+Uh sorry let me see what you said.
+00:47:47 Speaker 5
+Um Samuel you're not able to share.
+00:48:01 Speaker 5
+Yes, uh. Yes,
+00:48:07 Speaker 8
+Yes Nikki. Yeah, that's yeah the. That looksum correct.
+00:48:24 Speaker 5
+Oh, okay. Um.
+00:48:33 Speaker 8
+So Go to the tools use section, and that would be above. That would be the first before all steps.
+00:48:48 Speaker 8
+Yep, that's it. That's where everything is. Library and. Yep, library and execution.
+00:49:16 Speaker 5
+In the notebook?
+00:49:20 Speaker 8
+No, it's not in the notebook. No.
+00:49:35 Speaker 8
+Give Me a second. I'm cleaning the directory at the same time. Let me clean and then I'll give you access to that. I'll copy it in the. Actually, I'm just going to copy it to there.
+00:49:48 Speaker 8
+Slack is easier for you. Let me clean up the directory and then I'll give you access. I will send you. Should I just send you the command on the? Actually, I have a document here, hold on.
+00:50:17 Speaker 5
+The film was shot in the United States, Canada and Mexico.
+00:50:50 Speaker 8
+U H, yeah yeah, we we also have to figure out how to run it right. I haven't run that I don't think the professor also showed or started.
+00:51:16 Speaker 5
+The film was shot in the United States, Canada and Mexico.
+00:51:46 Speaker 5
+The city is located in the central part of the island, on the coast of the Gulf of Guinea.
+00:52:16 Speaker 5
+I'm not doing anything.
+00:52:48 Speaker 5
+The film was shot in the United States, Canada and Mexico.
+00:53:49 Speaker 5
+The city is located in the central part of the island, on the coast of the Gulf of Guinea.
+00:54:30 Speaker 7
+I Uh, feel terrible if I'm stopping somebody who's actually doing what I asked you to do, which a lot of you are. Okay. Now, there's a handful of you that are just driving the robot around. It's, okay, if you have a situation where the robot goes somewhere, you can't reach your arm. And you drive it out, but if I catch you just driving the robot around, you won't do this. Okay? So work on coding your robot to make the move. Not just driving. If you're done, come see me.
+00:55:02 Speaker 5
+Yeah, I just made a circle! Wait! What's that? I made a circle! I swear I just made a circle! Yeah, you did. Let's use. Oh okay if you use the draw code. And sweep but I want to do block code here. How is it supposed to go? Let me do that now.
+00:55:48 Speaker 5
+I'm so happy for us to have it. Did you find it in the server?
+00:57:01 Speaker 8
+Um, I'm trying to see how we can do the targeting. I'meducating myself how to use uh Fast P or or Fast X to either do with a clipper. Okay.
+00:58:14 Speaker 8
+Hold On, I'm cleaning. The first known mention of the town is in.
+00:58:20 Speaker 5
+A deed from 1248. I don't know.
+00:59:34 Speaker 8
+Okay, Well, you keep asking me one, then another one, then another one. So that's why I said like I'm doing three things at once. I don't mean to like no respond to you.
+01:00:05 Speaker 5
+I'm Reading about this cool thing. It's about the the clipper thing. I wanted to run it with you guys, and also I want to know how to use Pi P.
+01:00:14 Speaker 8
+So before I sign out, which is like in five minutes. But um let me right now. I'm just checking the server because I thought I deleted it. Hold on. Um no, I want to like, I'm gonna stay here, but I'm not gonna be as engaged, you know what I mean? Because of the class but i'm gonna be here.
+01:00:47 Speaker 8
+No, I'll still be here. I'm just gonna be monitoring the class at the same time. So, I'm not gonna be fully engaged, but I'm gonna be here.
+01:01:11 Speaker 5
+All right guys.
+01:01:14 Speaker 7
+So, I'd like to end this, Um, like you guys did a good job. I'm just trying to show you guys some other things here. So likeum, you guys uh today, you did some basic, some basic uh just positional coding with these robots. Now wait wait wait where's Ollie? He's going to need something.
+01:01:40 Speaker 5
+Where'd he go? Where'd he go?
+01:01:51 Speaker 7
+So, Um, What I want to show you guys is there's a multitude of other things you can do with this. Okay? So next year, you guys can start learning how this robot can react to environmental factors. Okay? So, like how you get the robot to react to the lights, or how you get the robot to react when it hits something, which is like similar technology that grown- ups use in vacuum cleaners. So look at this little. This is like almost like a game that I've created here, like a tag game. So if you see, I've coded Lily's computer to all it's supposed to do is follow channels one and two. These are channel blocks right here that like broadcast channels to one another. There's a communication block. So these broadcast things to each other. So look at this, it says.
+01:02:43 Speaker 7
+Follow channel one and two. I'm going to hit start on hers right. And now if you look at mine, mine says turn on the drive keys and broadcast what they want to. I give mine just a little bit of space here. And when I hit start, I should be able to hey.
+01:02:59 Speaker 5
+Guy But get what's happening? So she's not touching anything but her thing is following me. And when I move it moves too, Right?
+01:03:12 Speaker 7
+So, it's like a like a hide and seek uh game that I can play with this thing. See, Like I go all over the room and that squirrel will follow me wherever I go. Why? Because they're shooting an infrared signal back and forth to each other. So it's a communication project. What's pass the teacher? Wait,
+01:03:32 Speaker 5
+Did you have two chairs? Right, is this thing on? Well no, you need to have a partner right so like I did this with Lily.
+01:03:49 Speaker 7
+So There is stuff like this, you know. I told you guys we wouldn't be like driving anymore, but like you will drive to do certain things, right? So.
+01:04:05 Speaker 7
+This Stuff right here is coding your Sphero to allow you to drive it. So if your if your it's like, When we're doing the thing where you're reacting when you hit something, that's like video game stuff, right? If, you're playing a car game. And in the video game, you want the car to smash into a wall and make this sound as if it smashed into a wall and take damage, that's something you'd have to code just like we were coding in videos. Right? So that will allow you to use the 'drive' key in order to do stuff like that. Alright? You guys got any questions for me? Go ahead, line up.
+01:05:44 Speaker 5
+The film was released on 24 July 2015 in the United States.
+01:06:27 Speaker 8
+Uh. Not us. Yeah, there was a group who ran it right, but not like the entire class no.
+01:06:40 Speaker 5
+Uh we have to ask if we can come in here. Oh my gosh.
+01:06:44 Speaker 7
+Uh, so somebody ripped that. It wasn't you, Nemo, was it? They ripped off your thing because this is going to win me the door contest right here. So I got to think of this.
+01:06:53 Speaker 5
+Same clip but somebody took it down. About that. But why is it stuck? I know someone took it down but we both put it back up. You need something? Bring home and make some slime with the kids or something maybe. No, I'm gonna make the slime for the kids. Oh, that's nice. Okay. Listen now, we can't do that right now. Let's go get a snack. Uh, we have to ask. Not put them down first. Put them down You can look at Mr Romig and say, Can I have a three minute Lego break? Can I please have a three minute Lego break? Knock yourself out bro Go for it! I'm putting the timer on.
+01:07:47 Speaker 5
+I'm here. I had to take my go to the doctor's early. I just was about a half hour late, forty five minutes.
+01:08:24 Speaker 8
+I Think it does looks right? Yeah yeah, oh, yes. Uh. Some of the symbolic link was supposed to be on my directory, not the share, um I fixed it, and you, you should have permission.
+01:08:49 Speaker 5
+The film was released on 24 July 2015.
+01:09:16 Speaker 5
+I don't understand. What do you mean it's either or?
+01:10:04 Speaker 7
+Um, It yeah, it looked right for the most part to me. Uh, I just sent you, A snippet.
+01:10:16 Speaker 5
+Let's go ahead and line back up in the hallway, guys. Get out of here, we're going to get this shot. Popping back in. All right, Nico, one more minute.
+01:10:50 Speaker 1
+All right. Here we go. I think everybody's back. All right. A couple different things and then we'll wrap it up for the day. Um, one, The optional report during break week. So you don't have to submit anything there, obviously. And you've got a couple of gimmes anyways on the reports. But if you do submit a report during the break week. Only do so if you're working over the break. You don't have to, so don't feel pressured to. But if you want to work on your project over the break, feel free to and you can write a release. But only if you're actually working on something. So all right, any questions? Yeah, what was that? When would the report be due? Same time as always, Thursday at nine thirty eight.
+01:11:39 Speaker 2
+So next Thursday.
+01:11:41 Speaker 1
+This the Thursday during break week at nine thirty eight Otherwise. Save it and you can do it for the week after break. Awesome. Good, other questions on the optional report?
+01:11:54 Speaker 4
+Good. Just to confirm, the optional report will count towards attendance, right?
+01:12:00 Speaker 1
+Absolutely yes. So you can't do it if you want. So if you want to work over the break and push that in, feel free to. Okay cool Wait I have a question just to clarify, So, are you saying that the optional report would be due to Thursday in break, not the Thursday? Okay. And then there'd be another report that is due that following Thursday? After that, yep. But again, no you can skip that one if you haven't done them all already. So if you've already done all the reports, you basically can skip two. You can skip the optional one. You can skip any two of all of the opportunities here. Um so if you haven't skipped anything yet, you could skip the next two and.
+01:12:43 Speaker 1
+For 43 weeks now. Wait, so it doesn't count as extra credit? No, it's not extra credit. Sorry. There's no extra credit in this class. Not really. I mean, Maybe, but I don't think any of the groups are going to get to there. All right, I do want to show one other thing, because I know at least one group is looking at differential expression. They're moving along pretty fast with their alignments. So we use cufflinks for the trapnell dataset. However, cufflinks is kind of old. So if you do a search for RNA-seq differential expression tools, you're going to find there's a whole lot of stuff out there. There are newer tools that will work better. A lot of people use things like DESeq2, edgeR.
+01:13:40 Speaker 1
+Um. Yes, Mrs. Langdon. I'm going to change colors here. No, I'm not done yet. I have not seen anyone try.
+01:13:49 Speaker 5
+That out.
+01:13:50 Speaker 1
+Try ball ground yet? Oh,
+01:13:52 Speaker 5
+No! Well, boys and girls, when the timer goes off we go back to class. Oh no!
+01:13:57 Speaker 1
+I want more! No, I see. Come on! And it's time. There's a small number of people that did it, it was kind of mixed results. But there are a bunch of tools out there you can choose from. I definitely recommend not using Captivate, uh that you actually use something else from based on your line notes. So, you want to look into that and think about what you're going to use to assess. And I'll let you research those tools. All right, any questions on that?
+01:14:37 Speaker 4
+Which one has been the most common in the past? I assume DC two.
+01:14:41 Speaker 1
+I know, I know. The most common I've seen are DC two and. What are you doing? Oop, we lost somebody. But that's not that doesn't look like anything new.
+01:14:57 Speaker 1
+You Can go on votable dot org or okay, so yeah, I've only i see the first two most commonly.
+01:15:07 Speaker 1
+Good, other questions? Oh, I see there's a chat message. What are they missing? Uh oh, that's what that was. Okay. Oh, interesting. Okay. Are there any other questions on anything? No. If you do have any questions, feel free to email. I'll be checking email during the break. Just not quite as frequently as usual, but I'll be around. So, all right, if I don't see you have a good break. We'll see you back on the Monday after. Take care!

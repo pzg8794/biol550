@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Peer review — BIOL.550_650.01_L1 — High Throughput Seq Analysis</title>
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 28px;
+color: #111;
+line-height: 1.25;
+}
+h1 {
+font-size: 18px;
+margin: 0 0 12px 0;
+}
+p.note {
+margin: 0 0 18px 0;
+font-size: 13px;
+}
+.page {
+page-break-after: always;
+margin-bottom: 28px;
+}
+.page:last-child {
+page-break-after: auto;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 0 0 22px 0;
+table-layout: auto;
+}
+th, td {
+border: 1px solid #8c8c8c;
+padding: 8px 10px;
+vertical-align: top;
+font-size: 13px;
+}
+th.section {
+background: #111;
+color: #fff;
+text-align: left;
+font-size: 14px;
+font-weight: bold;
+}
+th.section-spacer {
+background: #fff;
+color: #111;
+}
+th.colhead {
+background: #d9d9d9;
+text-align: left;
+font-weight: bold;
+}
+td.factor {
+width: 34%;
+}
+td.score, th.score {
+width: 42px;
+white-space: nowrap;
+text-align: center;
+padding-left: 4px;
+padding-right: 4px;
+}
+td.justification {
+height: 58px;
+}
+@media print {
+body { margin: 0.45in; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+<h1>Peer review — BIOL.550_650.01_L1 — High Throughput Seq Analysis</h1>
+<p class="note">
+Please evaluate yourself and your peers on a five point scale, where <strong>5</strong> is a strong contribution and
+<strong>1</strong> is no contribution. Be sure to give justifications for each score.
+</p>
+
+<table>
+  <tr>
+    <th class="section">Self evaluation</th>
+    <th class="section-spacer" colspan="2"></th>
+  </tr>
+  <tr>
+    <th class="colhead">Factor</th>
+    <th class="colhead score">Score</th>
+    <th class="colhead">Justification</th>
+  </tr>
+  <tr><td class="factor">Contributes to analysis</td><td class="score">5</td><td class="justification">Because of my experience in my BIO630 course, I realized that the Tranmpnell process was going to be one to be re-used. So, against the wish of the team and as my personal project I built a full end-to-end pipeline by wrapping the entire process (download, raw FastQC, FASTX trim, post-trim FastQC, fastp remediation across all 26 SRRs); in conjuction with Samuel suggested and created the run split lists for every team member to collaborate; produced the raw-vs-trimmed comparison notebook and QC output figures to share analysis and work; ran the full FASTX-vs-fastp dataset comparison for further understanding and shared analysis; documented the shared-versus-canonical FASTQ divergence with byte-level and read-count evidence; and re-used the pipeline to quickly complete the STAR alignment workflow used for downstream analysis.</td></tr>
+
+  <tr><td class="factor">Communicates effectively</td><td class="score">4</td><td class="justification">During research work transparency has been a key. So, all my team communications, either via email or slack, has been purposeful and inclusive to allow all parties to dispute or contribute to the communication, especially in times of confusion. Furthermore, I consistently document interactions and decisions in share them vi Slack through GitHub or Drive (WORKLOG, MOUSE_GROUP_STATUS_FULL, ALIGNMENT_PREP_TEAM_DRAFT, and multiple process docs); uploaded QC bundles for team access; set up and structured the group Slack channel; and surfaced workflow inconsistencies with explicit evidence. I am not scoring a 5 because not all of that documentation landed as intended, especially in the beginning — different communication preferences within the group meant some of it went unread until meetings, or misunderstood in the beginning, which is something I, with my experinece, should have navigated better through better communication strategies. Something that appears to have let the team to think that I was imposing my way even before starting to work as a group, a behavior that has not been only supported but encauraged by leadership continues example.</td></tr>
+
+  <tr><td class="factor">Listens to advice</td><td class="score">5</td><td class="justification">From the beginning, even under the medical conditions I navigate constantly, with kindness, I put the effort to work at level/paste I am not used to, adjusting to a very different workflow based on team and professor feedback throughout; something that is simple for most people, or younger people, but not for people like me. Yet, I decided to set and be that example I would have liked to have had I been in their choose at that stage of my life. On the other hand, I reacted to feedback in real time; I re-ran QC as separate pre-trim and post-trim reports after Nikhi correctly identified the mixed-folder issue; added a team-follow notebook copy so teammates could follow the remediation and re-run it if interested; pivoted the canonical alignment input after the audit confirmed the shared output was non-equivalent by Samunel and me; and updated documentation after each feedback cycle.</td></tr>
+  <tr><td class="factor">Contributes to group writing <em>(only second evaluation)</em></td><td class="score">N/A</td><td class="justification"></td></tr>
+</table>
+
+<table>
+  <tr>
+    <th class="section">Peer 1 — Samuel Kopelev</th>
+    <th class="section-spacer" colspan="2"></th>
+  </tr>
+  <tr>
+    <th class="colhead">Factor</th>
+    <th class="colhead score">Score</th>
+    <th class="colhead">Justification</th>
+  </tr>
+  <tr><td class="factor">Contributes to analysis</td><td class="score">4</td><td class="justification">Samuel contributed less frequently than the rest of the group due health issues, something I am very familiar with, but his contributions were often well-placed. His questions and observations helped surface real problems in the data at moments when the group needed that kind of check. The work he did engage with had genuine analytical value.</td></tr>
+  
+  <tr><td class="factor">Communicates effectively</td><td class="score">4</td><td class="justification">In the beginning, there were many things that Samuel misunderstood, which is understandable given his work experience. Similarly, there have been communications, of which i have not been part, that has cultivated a weird, ill-informed, atmosphere, not between us but in class. However, he was able to commit to a structured approach that improve communication over time. When Samuel engaged, his input was usually focused and useful. He was willing to work within the group's shared process, which has supported rather than disrupted team communication.</td></tr>
+ 
+  <tr><td class="factor">Listens to advice</td><td class="score">4.5</td><td class="justification">Samuel approach has changed from requests to consistently willing to meet halfway, adjust to team direction, and avoid pushing the group off track — which I saw as real progress over the course of the project. Therefore, I am scoring this at 4.5 rather than 5 because there are still moments where he has needed reminders to stay on track, but the willingnessi is there and he is putting in the work.</td></tr>
+  <tr><td class="factor">Contributes to group writing <em>(only second evaluation)</em></td><td class="score">N/A</td><td class="justification"></td></tr>
+</table>
+</div>
+
+<div class="page">
+<table>
+  <tr>
+    <th class="section">Peer 2 — Nikhi Boggavarapu</th>
+    <th class="section-spacer" colspan="2"></th>
+  </tr>
+  <tr>
+    <th class="colhead">Factor</th>
+    <th class="colhead score">Score</th>
+    <th class="colhead">Justification</th>
+  </tr>
+  <tr><td class="factor">Contributes to analysis</td><td class="score">5</td><td class="justification">Nikhi was active, present, and consistently involved in the analytical work across the project. She caught the mixed-input MultiQC problem and correctly insisted on separate pre- and post-trim reports; she along with Samuel drove the instrument verification question that led to confirming the NovaSeq X Plus; she traced the GC WARN subset as a real pattern worth documenting; and she presented the machine-effect finding in class and was able to defend the work under questioning. I am scoring this at 5 because she engaged with the analysis seriously and her contributions were defensible in the moment they mattered.</td></tr>
+
+  <tr><td class="factor">Communicates effectively</td><td class="score">4</td><td class="justification">In the beginning, Nikhi---while not contributing to the communication chaos---understandbly so, because of the lack of work experience, aid/avaided some of misunderstanding. Nevertheless, Nikhi managed the communication in a very mature manner by encouraging a more proper way of communication such as video calls. On the other hand, Nikhi communicated frequently when it came to work, brought concerns forward in real time, and started helping to keep the group focused, especially during class sessions. I am not scoring a 5 because there were misunderstandings during the project that neither she nor Samuel fully owned, causing a recurrance of some of those issues as a result. Part of that pattern reflects a vacuum in the group process that the course structure left open in the beginning when we all geniunly committed to do better, where clearer ownership of mistakes on both sides, instead of taking one side's responsibility, would have helped them learn faster in a more positve and structured environment.</td></tr>
+
+  <tr><td class="factor">Listens to advice</td><td class="score">4</td><td class="justification">Nikhi responded well to the professor's direction to check experimental design, metadata, and instrument effects, and she pushed for the correct MultiQC approach once the folder-mixing error was identified. I am not scoring a 5 because she raised concerns individual analysis or validation; something that I had advised towards in the beginning, but fell through because of the vacuum created that led to this recurance. However, Nikhi showed maturity about shared-output (fastxp output) equivalence, and the follow-through on verified canonical (fastxp fixed output), which shows that in the right environment she adjusts her approach based on feedback.</td></tr>
+  <tr><td class="factor">Contributes to group writing <em>(only second evaluation)</em></td><td class="score">N/A</td><td class="justification"></td></tr>
+</table>
+</div>
+
+</body>
+</html>

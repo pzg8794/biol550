@@ -26,7 +26,7 @@
 
 ## Key Responsibilities
 
-**Samuel:** FastQC, **FASTX** quality trimming, Bowtie2/TopHat alignment, BAM files, GitHub management, Methods (computational)
+**Samuel:** FastQC, trimming (`fastp` preferred / **FASTX** legacy), Bowtie2/TopHat alignment, BAM files, GitHub management, Methods (computational)
 
 **Piter (YOU):** DE quantification, statistical tests, fairness metrics (disparate impact, equalized odds), visualizations, Methods (statistical)
 
@@ -85,7 +85,7 @@
 
 ## Tools & Resources
 
-**QC:** FastQC, CutAdapt, **FASTX** | **Alignment:** Bowtie2, TopHat | **DE:** Cufflinks/RSEM  
+**QC:** FastQC, `fastp` (preferred trimmer), CutAdapt, **FASTX** (legacy trimmer) | **Alignment:** Bowtie2, TopHat | **DE:** Cufflinks/RSEM  
 **Statistical:** R, ggplot2, FDR/Bonferroni | **Fairness:** fairlearn, disparate impact | **Version Control:** GitHub
 
 ---

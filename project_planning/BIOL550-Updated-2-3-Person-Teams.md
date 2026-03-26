@@ -217,7 +217,7 @@ Bonus Analyses (SNP calling, Transcriptome creation, etc.)
 **Focus:** Quality Control and preprocessing
 
 **2-Person Team Responsibilities (Member 1):**
-- Run FastQC for quality assessment of raw reads; trim with FASTX as needed, then re-run FastQC on trimmed reads
+- Run FastQC for quality assessment of raw reads; trim with `fastp` (preferred) or FASTX as needed, then re-run FastQC on trimmed reads
 - Execute quality trimming with appropriate tools (e.g., CutAdapt, FastX)
 - Filter for adapter sequences and contamination
 - Generate QC reports and visualizations
@@ -225,7 +225,7 @@ Bonus Analyses (SNP calling, Transcriptome creation, etc.)
 - Identify and troubleshoot any quality issues
 
 **3-Person Team Responsibilities (Member 1 - Computational Biology Lead):**
-- Run FastQC for quality assessment of raw reads; trim with FASTX as needed, then re-run FastQC on trimmed reads
+- Run FastQC for quality assessment of raw reads; trim with `fastp` (preferred) or FASTX as needed, then re-run FastQC on trimmed reads
 - Execute quality trimming with appropriate tools (e.g., CutAdapt, FastX)
 - Filter for adapter sequences and contamination
 - Generate QC reports and visualizations

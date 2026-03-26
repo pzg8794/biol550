@@ -1,0 +1,404 @@
+00:00:00 Speaker 1
+The city is located on the banks of the river Terek.
+00:00:40 Speaker 2
+I'm Not going to be able.
+00:00:44 Speaker 1
+To do it.
+00:01:14 Speaker 2
+Hello. Hey. How's it going? What's good? I'm tired. Yeah, this weather will definitely do it.
+00:02:04 Speaker 2
+Put The heater high so I'm burning up.
+00:02:09 Speaker 2
+What I put the heater high, so I'm.
+00:02:18 Speaker 3
+Uh I get hot really quick, so don't usually have anything.
+00:02:26 Speaker 4
+Well, my dad is here. So I had to keep it like at 80. Oh damn yeah super head hi Mickey.
+00:02:34 Speaker 5
+Tell you guys now that I am not going to be free for longer than thirty minutes. I can push it to forty five if we're like, you know, just finalizing some things. But yeah.
+00:02:45 Speaker 4
+I think thirty minutes is even more than enough. Yeah, nothing we can do.
+00:02:50 Speaker 5
+Yeah, that's what that's how I felt. So Sam, you brought up a good point. Um, I didn't think of actually looking at, Seeing if we need to remove any of the specific data sets. So, or not datasets, sorry. Any of the subset. Yeah. So, uh, I pulled up FastQC right now or Multi FastQC. I can share my screen.
+00:03:20 Speaker 3
+I alreadyum I already looked into them and Oh. Okay, yeah, um let me sendum.
+00:03:30 Speaker 3
+Let me see how I should send this, but basically there's twelve and fourteen. Two of the fourteen are like extra because the nature of the experiment, Um they just do extras. Just in case some of this, some of the twelve go to crap. Um but basically the twenty six are split into twelve and uh fourteen, and um I have I have it broken down. Um.
+00:03:58 Speaker 1
+In notes, um, I can send. Let me find it and I can send it in Slack. Hopefully it's not too much. Okay.
+00:04:34 Speaker 5
+Wait, for some reason the multi- fastQC has both fastQC out and fastQC FastP trim. Is that on purpose? Shouldn't it only have fastQC FastP trim?
+00:04:50 Speaker 4
+That uh that can you can you say that again, sorry.
+00:04:55 Speaker 5
+So I I'm looking at the multi QC report, right? And the report I. Um when you like hover over it, uh, you can like see which data file it's referring to. I'm seeing files from both the fastqc out folder and the fastqc fastp trim folder. So it's pulling from two different folders for this. Here let me send a screenshot of what I'm seeing.
+00:05:23 Speaker 4
+Yeah thank you yeah.
+00:05:45 Speaker 5
+I Just sent two screenshots in Slack. Um,
+00:05:49 Speaker 1
+This is what I mean. It has it from two different folders.
+00:06:01 Speaker 4
+Fast QC, fast p trim. Fast QC. Okay. Yeah, that makes sense. So hold on does Should.
+00:06:13 Speaker 5
+Yeah, should I only have I mean because we're not trying to compare.
+00:06:18 Speaker 4
+No because it trimmed it trimmed the fastQC out and then it generated the fast. P 3, but I'm checking in the server anyways to make sure the. Let's see. Let me let me go to the server here.
+00:06:34 Speaker 5
+Yeah, cause I think this is useful, but could we also get one that's justum from that first folder, the fastqc fastp trim one?
+00:06:46 Speaker 4
+Let me see and let me check the server to see if I understand you correctly because my understanding is uh. The multi is the the one that I that I ran was on the fast QCP. So let me let me check that out. Hold on. Fast P, I'm logging in right now.
+00:07:06 Speaker 5
+I'm also just going to say post pat English, post fast P and pre- fast P because I think that's easier to say. What's that? I'm just going to say post fast p and pre fast p because that's easier to say and understand what we're referring to. I'm referring to.
+00:07:25 Speaker 4
+Post fast p, pre fast p, okay. Yeah.
+00:07:28 Speaker 5
+If that makes sense.
+00:07:29 Speaker 4
+No, that makes sense. They they usually use the word trim but I I know what you mean.
+00:07:39 Speaker 5
+I can say trim, too. It's not that.
+00:07:41 Speaker 4
+Doesn't matter.
+00:07:43 Speaker 5
+Or then it's just a matter of distinction.
+00:08:16 Speaker 3
+Um, So when I was like trying to figure out. Um, the two subsets. One of them, the was just automatically called the golden twelve through the through um Gemini. But um I there's a good explanation of like why so um sorry the.
+00:08:48 Speaker 3
+Golden twelve is just, funny name. But yeah, I I sent the I sent the explanation of why we're throwing out the rest of the fourteen, and then there's a picture of the actual experimental design.
+00:09:14 Speaker 5
+Does Make sense to me, but like are we good Like well. Would you be alright if we're cutting down to twelve?
+00:09:20 Speaker 3
+Um, I remember him saying something among the lines that cutting down is okay, depending on theum nature of the study.
+00:09:33 Speaker 5
+Yeah, I remember too. It's just like is this like is this reason enough basically?
+00:09:39 Speaker 3
+I I think it is. I mean it's a reallyum.
+00:09:45 Speaker 3
+I like I I spent like two hours reading about like the experimental design yesterday, and like it really makes sense to just do these two or these four. Um. The thing isum. For for there to be exactly twenty, That means you would need an experiment that is five by four or four, by five or two, by ten. Well.
+00:10:12 Speaker 5
+So what he was, it's not that we need twenty. It's like a minimum of twenty. But um, He did say we can cut and I know other groups have started cutting out some of their um they've started subsetting their data. So, it's just a matter of like do we have good rationale, which I do think we do. I think we should just make sure we're all set with him. Yeah by him essentially. But I don't personally see a problem with it.
+00:10:40 Speaker 3
+I looked at when I was trying to find a different data stuff. I looked at a lot of the abstracts and whatever in Geo. A lot of them don't there's not a lot of experimental designs where you have that like twenty. It's usually like it's twenty is such. I don't know why he picked twenty because it doesn't even like why not twenty four because you get a lot of like twelve, you get a lot by fours. He picked twenty twenty. You don't usually have two by tens or five by fours, and especially with bulk DNA, um, sorry, bulk RNA. Sometimes it's harder to run. So you are not gonna do or not harder. It's more expensive sometimes. So I don't like you are not gonna have many samples like you are not gonna have like fifty and then it's gonna be like oh or sixty, and then twenty for three, like.
+00:11:37 Speaker 3
+It's usually not. Okay, then we can. Oh, yeah.
+00:11:43 Speaker 5
+This, yeah, this works for me. What were you going to say?
+00:11:48 Speaker 3
+I was going to say I was looking at the publication. The supplemental materials include videos of the mice. I uploaded them to our Google Drive. So if you want, you can take a look. They're kind of cute.
+00:12:04 Speaker 5
+Okay cool I can yeah that'd be funny, Um, Peter, where are you at?
+00:12:14 Speaker 4
+Sorry, I was justtyping, but I guess it's better uh to say in audio. Yeah. Um, you were right. So the path had a asterisk, so it took both paths, but I've run it right now. I've run it right now. So this is the new path. You should find it in there just fine.
+00:12:37 Speaker 5
+Yeah. Could you actually make it. So that way there is multi QC for both pre and post trim, like a separate one each?
+00:12:44 Speaker 4
+Oh, sure. Let me run this Just.
+00:12:46 Speaker 5
+For both because I think that would be good for comparison.
+00:12:49 Speaker 4
+In the report. Yeah. Post QC and pre QC, right?
+00:12:58 Speaker 5
+Um, trim but yes.
+00:13:12 Speaker 5
+Okay, Yeah, I see how it's organized.
+00:13:16 Speaker 3
+Once that's done, I just want to review what we've done since last two weeks ago. So we just have like some bullet points down of what has been done. So yeah, uh Peter, let me know when you're done.
+00:13:34 Speaker 1
+Just uh making sure that it doesn't take both paths again.
+00:14:05 Speaker 4
+Okay, so the job finished. Maybe.
+00:14:13 Speaker 1
+Copy down here.
+00:14:35 Speaker 5
+Okay, perfect. Thank you.
+00:14:37 Speaker 4
+No problem. Let me check one thing quickly.
+00:14:42 Speaker 2
+Just double checking.
+00:15:13 Speaker 4
+Yeah, Sorry. You were saying something. Me. I think you asked me a question. Yeah,
+00:15:21 Speaker 3
+You're just. Um, sorry, you guys are breaking up. I wasum if you're referring to what I was saying like while you were working, I was saying, I just wanted to go over theum like main, like progress that we've made since. Um, two weeks ago when before we went on break. So like we picked like we ran theum. Well, Actually, I don't know I don't know what we ran, but I know we picked the reference genome, and then we decided that we're going to subset. Wait, We picked the reference genome?
+00:15:52 Speaker 4
+No no, no. I think I think you got confused, you got confused. No, um you were going on the right path when you started.
+00:15:59 Speaker 5
+We just picked a reference genome yesterday.
+00:16:02 Speaker 4
+Sorry wait what?
+00:16:04 Speaker 5
+All the stuff about reference genome is what you saw in the chat.
+00:16:07 Speaker 3
+Yeah. Oh, okay. So no one, um, do we want to decide on one or? Yes, that was my goal for today.
+00:16:14 Speaker 4
+Yeah, that's what they're meeting for. Yeah.
+00:16:16 Speaker 3
+Oh, I'm sorry. Okay. Yeah My bad Okay I'm I'm.
+00:16:20 Speaker 4
+You're not behind One step ahead The last thing that we said we were going to run was a fastp, and that's what we did. So you're not behind So. You.
+00:16:30 Speaker 3
+Um, just to clarify, so we downloaded the SRA runs. Then we we we put them through FastQC and then after looking at them, we put them through FastP to trim them.
+00:16:49 Speaker 4
+Fastx and then it did not it did not clean enough. And then we did fastp. Yeah.
+00:16:55 Speaker 3
+Does it does wait? Wait, sorry. You did FastX first and then FastP?
+00:17:03 Speaker 4
+Yeah, Nikki might be able to explain it better than me.
+00:17:06 Speaker 5
+Um, I did not run FastX. I only ran FastP. But. No,
+00:17:11 Speaker 4
+No. Remember that when you explained the professor that the poly G was extra on the. You explained that part.
+00:17:19 Speaker 5
+Yeah, but that's existed in all our datasets. That's nothing new. So that's referring to like the repeated sequence?
+00:17:28 Speaker 3
+Mhm. Okay, So did we did. We have to run through uh both fast X and fast P, or they're the same thing, right? There's one's just faster. No,
+00:17:40 Speaker 4
+Uh no fast Pum I did I I did hold on I did write about on everything, hold on I have it here.
+00:17:51 Speaker 5
+Okay, um, I still so I still see an issue with our G C content guys.
+00:17:59 Speaker 4
+Should it.
+00:18:04 Speaker 3
+Do you want to pull it up?
+00:18:06 Speaker 5
+I just sent a picture in the Slack, but we still have two different curves. Um,
+00:18:18 Speaker 3
+Wait, what? Yeah, would it be too difficult for you to double check? But remember.
+00:18:27 Speaker 4
+Sorry, so I didn't mean to speak over you. Go ahead. I'll finish and then.
+00:18:33 Speaker 3
+Oh, I was saying, would youum Nikki, Would it be too hard to double check the green lines and the yellow lines and seeum if those correlate to the uh the numbers from the two different subsets that we talked about? Or is that strictly. Oh,
+00:18:51 Speaker 5
+That's a good point. Do you do you have the names of the files associated with each subset?
+00:18:57 Speaker 3
+Yeah. Um. So I sent a description in the Slack, um. If, you look at oh, shoot, okay. Um well, for now, the fourteen, the fourteen, there's the ID number, the forty, the two numbers at the end are the two numbers at the end of, The IDs I just I just shortened it because, um well it's just easier to shorten if like, There's no reason to say like SRN, like eight numbers, if they're all the same anyway. Yeah, yeah, yeah. Yeah, um. Interesting.
+00:19:33 Speaker 4
+So, What I was going to say Nikki is that I. So in fast X, it was actually the curve, it was worse than what it is now It's better with fast speed It's less pronounced. But one thing that the professor was saying, perhaps you can correct me if you do remember, is that this might be related to the um. The this uh design. Because it was showing like on two faces right uh the, I'm trying to I actually have the notes in here from him. Let me see if I can get it.
+00:20:16 Speaker 4
+But do you remember he talking about it? Yeah,
+00:20:20 Speaker 5
+He was just suggesting that it was theoretically due to how the people set up the experimental design. For whatever reasons, Ended up being that certain ones had like that extra poly G affecting the GC content and creating these two separate curves. So Sam, You're bringing up a good point in terms of actually trying to see if this correlates with kind of.
+00:20:43 Speaker 5
+The subsetting, which I can check right now, but I'm looking at the slack and I don't which which or what are the names of that golden 12 I?
+00:20:53 Speaker 3
+Guess oh, one, secondum I'll get those too.
+00:21:14 Speaker 1
+Okay, so the fourteen. Oh,
+00:21:16 Speaker 4
+Here. Sorry. Um, just got the note. Let me send it out. Uh, Let me send it to uh Slack Go ahead,
+00:21:24 Speaker 3
+Sam Uh. The fourteen that are this fourteen and twelve The, fourteenum are already listed It's under A, B and Cum It's. It says a number where it says ID. And then the twelve I just sent in an image. It says it's the one, it look, it's a table. It's just full SRR ID and then shortened ID. And thenum the genotype and stuff like that. But yeah. Do you see it, Maggie? Yes I do. Yeah okay. Um is this.
+00:21:59 Speaker 5
+Okay so I see a mix, it's within both of them, both groups.
+00:22:06 Speaker 3
+Oh damn Is this the same multi, Um, you're looking at multi QC report, right?
+00:22:13 Speaker 5
+I am looking multi QC.
+00:22:15 Speaker 3
+Is this the same one that's uh was on the server yesterday?
+00:22:20 Speaker 5
+The one that I just sent a screenshot of is not.
+00:22:24 Speaker 3
+Oh, where where did you get that from?
+00:22:26 Speaker 5
+Um, P That's what I was just uh I just had Peter do real quick. Um There's two more multi QC files now. One of those files is pre- trim and another one is post- trim. Whereas the one that was in the server yesterday combined both pre and post.
+00:22:43 Speaker 3
+Oh so there's there should be double the amount of, there's 102 or 104? In that,
+00:22:50 Speaker 5
+In the one that was there yesterday. Yes, but now there should be two more each with 52.
+00:22:57 Speaker 3
+Okay. Why did we combine trimmed and untrimmed?
+00:23:02 Speaker 5
+I it was just the way that Peter ran the code.
+00:23:05 Speaker 3
+Oh I see okay gotcha.
+00:23:08 Speaker 5
+Yeah, I I. Um. Yeah, his feedback doesn't seem right given that we do still have this issue. So, we need to figure out why this is happening and Sam for context. He said to look at just go back into the paper and see if there's anything in their methods suggesting why there's a difference in GC content. Okay Even looking at overrepresented sequences, Only one report has theum duplicated G. So that's it's not an overrepresented sequence that's causing the issue I think. Um all the adapters seem to be out. Yeah. So yeah,
+00:23:55 Speaker 4
+We there. There's something else going on. Um, He says something of the sort of like if the adapters are out and. The GC looks similar across directions. You can already proceed.
+00:24:12 Speaker 5
+But it's not consistent.
+00:24:19 Speaker 4
+The adapters are eliminated, yes, but GC is not similar across directions. That's the screenshot I sent earlier. Mhm.
+00:24:34 Speaker 3
+So, uh what exactly did we trim do? We know what we trimmed adapters, and we know the exact sequences that we of the adapters that we.
+00:24:42 Speaker 4
+Trimmedum hold on. Let me let me get that.
+00:24:49 Speaker 3
+Because we're gonna have to have that on record. But I'm just also asking just do we actually know what the what sequence we actually cut out.
+00:25:02 Speaker 5
+This is what theum they're all like recorded, like knownum adapter sequences based.
+00:25:10 Speaker 3
+On the version of the machine. Yeah, okay,
+00:25:15 Speaker 5
+But that's pretty easy to just pull from the HTML files.
+00:25:51 Speaker 1
+So, um,
+00:25:58 Speaker 5
+I guess, we kind of have two things we kind of need to do right now. We need to figure out why GC is an issue.
+00:26:06 Speaker 5
+Still, and we need toum choose the what our reference thing. But Sam I kind of I liked what you put with the mm. 39 I am. Okay, with going with that Peter I don't know if you have any comments on that.
+00:26:23 Speaker 4
+I haven't had a chance. So I'm fine with whatever you guys are choosing right now.
+00:26:34 Speaker 5
+In that case, let's just say we're going to stick with MM 39 unless something else comes up. So that covers that issue. Um, now in terms of GC content.
+00:26:47 Speaker 3
+Um, wait, uh question. Uh uh it is about GC content. Could we could we get a list of the yellow?
+00:26:58 Speaker 5
+That's what I'm trying to I'm trying to figure out how to use FastQC for that.
+00:27:04 Speaker 3
+Because I have a I, have a I. Have a hunch thatum it has to do with the nature it has to do with the two subsets, the 12 and the 14.
+00:27:15 Speaker 5
+Sam, I just checked that. It's not like there is a mix of both of those subsets in each grouping.
+00:27:22 Speaker 3
+Like a hundred percent?
+00:27:24 Speaker 5
+What do you mean by hundred percent?
+00:27:26 Speaker 3
+Like you're a hundred percent sure?
+00:27:29 Speaker 5
+Yeah, because I compared the numbers and I foundum, Numbers from each subset in both sections. I'm I can try and figure out how to get the names, but I'm like fairly confident on this.
+00:27:45 Speaker 3
+Okay, Cause i'm I'm looking at the the reason i i'm like emphasizing this is because. He'll send it in the Slack. Is this picture from yesterday with the four? With sorry with the both the trimmed and untrimmed. Um there's yellow that falls within the green.
+00:28:15 Speaker 5
+Oh, shit cool I can get all the names. Okay, one second.
+00:29:09 Speaker 5
+Interesting. It's pretty much the first half and the second half.
+00:29:18 Speaker 5
+Um, Green is like from names 43 to 56, and then yellow is name 56 to 68.
+00:29:28 Speaker 3
+Wait, sorry, say that last part again?
+00:29:31 Speaker 5
+The ones in yellows are from 56 to 68.
+00:29:36 Speaker 3
+Fifty six.
+00:29:37 Speaker 5
+Look at the slack. I just sent it.
+00:30:10 Speaker 3
+I'm Trying to see if this correlates to here. There'sum oh my gosh, sorry. Um I'm gonna send a CSV file.
+00:30:34 Speaker 3
+The CSV file that I'm going to send is the SRA run table. This has all the metadata, so, I guess like the goal now is to compare. The. The SRR IDs and see what metadata they have and see if there's a specific pattern in like treatment that could. Explain this. Does that make sense? Yeah. Yeah, okay.
+00:31:12 Speaker 5
+Is he either looking at the metadata or looking at the paper again?
+00:31:16 Speaker 3
+Yeah, well, The metadata are like the CSV file that I just sent it. It It's literally what the paper says. Like it's just like in table form. Okay. Yeah, I downloaded it straight from the SRA website. You know, Like that thing that we like went into and we looked at the average base length and all that. Um, That I just downloaded that whole table because we're going to have to have it for supplemental material when we submit the paper anyway. Also, it's really it's a really good resource. So as I found out at one am yesterday.
+00:31:55 Speaker 4
+So what are you guys thinking to do to handle that? The shift. They remove them, clip them further.
+00:32:06 Speaker 3
+The the two the two groups that aren't aligning, the curves? Yeah. Well, that's what we're doing now. We're, we're trying to. So like the list Nikki sent in the Slack and the CSV file that I just sentum what we're doing is we're cross referencing the IDs from the green and yellowum group of curves. With the metadata to see if the specific IDs within whatever color of curve falls in with us within a specific treatment group. So like let's say.
+00:32:42 Speaker 4
+Like there's green,
+00:32:43 Speaker 3
+Yeah, Green is likeum broken spine and yellow is unbroken spine or like wild type. Then if we see a trend in there.
+00:32:55 Speaker 4
+Yeah, I understand. Yeah, that makes sense.
+00:33:11 Speaker 1
+I'm risking everything, if I don't win this week I'll lose all my money.
+00:33:43 Speaker 1
+The film was released on 24 July 2015.
+00:35:11 Speaker 1
+The city is located in the central part of the island.
+00:36:13 Speaker 1
+I'm not sure if I can do it.
+00:36:47 Speaker 3
+Did we, um, did we do any trimming that would affect the GC content? Like I know we cut the adapters, but what other trimming did we do that would affect the GC content?
+00:37:15 Speaker 5
+So There is this one. I'm about to send a screenshot. These are the overrepresented sequences that popped up. Um, you're gonna have to open that image. So.
+00:37:46 Speaker 3
+The T or sorry, the G. This was after trimming?
+00:37:54 Speaker 5
+This was overrepresented sequences that appeared prior to trimming. And then this is what that same table reported after trimming.
+00:38:12 Speaker 3
+So it's just the G.
+00:38:15 Speaker 5
+Yeah, and that's only in one report. Let's see which one is it.
+00:38:31 Speaker 5
+There's No adapters though, so.
+00:38:34 Speaker 3
+But that yeah, that's a good sign. And these are fast P right? Yeah, okay.
+00:38:48 Speaker 3
+So these overrepresented sequences sequence is what is creating that difference in curves, right?
+00:38:57 Speaker 5
+Um maybe it's not it could potentially explain in the pre- trim, but not post- trim, because in post- trim, only one report has that overrepresented sequence. So in reality, the. Curves we were looking at before that showed the GC content. There should only be one anomaly to all, the rest of them should be the same. So I mean there's something else at play that's causing these differentum GC averages.
+00:39:26 Speaker 3
+Oh, okay. So only so there's two different curves like the yellow and the green, but only one only one run between the yellow and the green had an overrepresented sequence of Gs?
+00:39:40 Speaker 5
+Yes after trimming.
+00:39:43 Speaker 1
+Okay, so it's not G's then. Yeah, gotcha.
+00:40:13 Speaker 1
+I am not going to do that.
+00:40:44 Speaker 1
+The city is located on the banks of the river.
+00:41:29 Speaker 5
+Okay, So it is eight eleven and I will need to leave in, like four- ish minutes. Um, what's our plan? We need to main thing. We need to figure out is looking at that G thing. So Sam, if you want to spend some time looking at that table, you can do that. Um I can spend some time looking at the paper.
+00:41:51 Speaker 4
+Do you guys want a.
+00:41:54 Speaker 4
+Oh yeah,
+00:41:54 Speaker 3
+Yeah. Sorry, go ahead.
+00:41:57 Speaker 4
+Do, you guys wantum a backup approach just in case Like. Oh, what a backup approach like, should we like, we can do both in parallel Should. We remove thoseum that group in yellow for the time being, while we figure that out But, what's this costing them?
+00:42:23 Speaker 5
+The problem is we can't just remove it because we don't know, like, for example, like Sam had subsetted the sequences into like different things to analyze right um in those subsets data appears in both of those um curves, like a subset will have reports appearing in both curves. So if we just remove half removing half of the analysis for a certain group, so. We're not we can't make a true analysis of that data at the end. So I don't know if it is as simple as just removing it.
+00:42:58 Speaker 4
+Yeah, I was asking because if if we cause I'm doing the check right now, if we find that they are from different groups, right and they are and they are and they are no meaning. There are no.
+00:43:19 Speaker 4
+Like that we don't have like a majority of one group in there. But like they say like close to evenly from each group.
+00:43:27 Speaker 3
+What groups are you referring to? Huh? What groups are you referring to?
+00:43:34 Speaker 4
+The test group. Text the test groups.
+00:43:39 Speaker 3
+You mean like the twelve and fourteen that I mentioned?
+00:43:42 Speaker 4
+Uh, I have them here, like uh six.
+00:43:53 Speaker 4
+Yeah, the ones that you mentioned in the beginning. We.
+00:43:59 Speaker 3
+We already know that they don't they don't there there's overlap between yellow.
+00:44:06 Speaker 4
+Exactly, so that's what I was saying. So if the overlap is somewhat evenly, I am not saying like let's proceed with a removal. I am just saying, Uh, I'm checking to see how the the overlap is from groups. If it's somewhat even, then you know the data is still relevant. But if it's one group so much greater than the other, then yeah, what Nicky says is It'sum.
+00:44:42 Speaker 3
+It's not gonna be even because there'sum, Ah, the twelve it's four groups of three, and there's control injury control injury. So, ah if we remove half then automatically um it screws up. So we we can't it's not gonna end up evenly. Um just because like based off the numbers just looking. I think um what we should do is um I'm gonna look into more how to understand the G C content difference, and what we do is that we just um we present it tomorrow. I mean, we're not like.
+00:45:15 Speaker 3
+We're not supposed to like a hundred percent now. I mean, it is kind of his job also to help us. So I think we can, we can try. You know, look into it. You know, text on Slack and if we don't find anything that's totally fine. We'll just yeah bring it up tomorrow because we will have to bring it up tomorrow.
+00:45:33 Speaker 4
+He told us to figure it out though. Um Like he said, If you guys find that like, then just figure it out That's something he mentioned. Um. Yeah, but.
+00:45:46 Speaker 3
+You just said figure it out. He didn't say he's going to help.
+00:45:48 Speaker 4
+If we find something, you guys figure it out for the design, uh.
+00:45:55 Speaker 3
+The experimental design?
+00:45:56 Speaker 4
+Experimental design and so on. Yeah, so he was I don't know Nikki can chip in if I'm missing. Well.
+00:46:02 Speaker 5
+Essentially that he wants, that's what I was saying. Sam I can try. And if you also want to look at the paper, you can do that too. But, he wants us to really put effort into seeing if the paper indicates why that's an issue. Because if it's showing up like this consistently, it is very likely aum experimental design thing. And if that's the case, it should be mentioned in the paper. Mhm So.
+00:46:24 Speaker 3
+Gotcha Okay Um.
+00:46:26 Speaker 5
+But like also if we look and we can't find, That's another thing.
+00:46:30 Speaker 1
+So Mhm Yeah I.
+00:46:31 Speaker 5
+We need to be making our own efforts, but also we can check with him if. Whereas case scenarios, Sam, You looking at the SRA table and me looking through the paper doesn't yield anything.
+00:46:42 Speaker 3
+Yeah okay that's what I'm gonna do. I'm gonna spend time doing that. Um I really think, I mean, obviously, we're we're looking at the two trends, but I think it has to do with the experimental design. I think it has to do probably with the mechanism of injury. It's crush, It's crush or cut, And I thinkum once I look more into it that will give more information. Butum I think it's experimental design. I just don't know how to pinpoint it, so that's what I'm going to do. But yeah, Um did we did? We all want to agree on the reference genome beforeum we go?
+00:47:20 Speaker 5
+I think we are in agreement. Yeah Oh,
+00:47:22 Speaker 3
+Okay okay,
+00:47:23 Speaker 5
+Sounds good Um We're using MM 39.
+00:47:25 Speaker 3
+The uh 39 the 2024. Version. Yeah.
+00:47:31 Speaker 5
+Whatever is the latest, yes.
+00:47:33 Speaker 3
+Yeah, yeah. Okay, okay. Um, sounds good. I will text to Slackum or individually. I hope I figured this out So yeah, I'll see y'all tomorrow.
+00:47:47 Speaker 5
+Yep See ya Yay.
+00:47:49 Speaker 3
+Okay Bye Have a nice night See you guys.

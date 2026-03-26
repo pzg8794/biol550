@@ -1,0 +1,380 @@
+00:00:00 Speaker 1
+So I'd first check that to see if there's something funny there. You say it could be because of what? Experimental design. It could be the way they set up the experiment. Could be something molecular in library prep. It could be something on the sequencer. It's hard to tell why. So, I would look up the experiment and try to figure out if there's some reason maybe there's something on the machine they used, maybe there's something with library prep they did, somehow it is consistent though and it's always one direction or, Other, that's two different perceptions. So to me, that indicates it's almost certainly experimental design. It's something that they've done as an artifact.
+00:00:38 Speaker 2
+Yeah, it makes the other sound better too. So I guess just kind of see what the paper mentions about how they actually isolated these cells.
+00:00:44 Speaker 1
+Look through their methods and see if there's anything there. Try, you know, they won't say it in there, but you might have to do searches on some of the things they did if they see something that's not like if there's some funny name to an Illumina prep kit, look it up and see if it's prone to. Difference in GC context. Um, I think we eliminated adapters, right? Yeah. Yeah,
+00:01:04 Speaker 3
+We eliminated adapters.
+00:01:05 Speaker 1
+And then after that, did it still show the difference? It.
+00:01:09 Speaker 3
+Was slightly better.
+00:01:11 Speaker 1
+Slightly better?
+00:01:11 Speaker 3
+Yeah. It was well, actually it was a lot better. You can't see on the high level though. But when you go into details with the SSRS where the issues yeah, it's a lot better. Yeah.
+00:01:24 Speaker 1
+So when you run multi, it doesn't show this big difference between the two.
+00:01:28 Speaker 3
+Exactly, yeah. At least I didn't notice that.
+00:01:31 Speaker 1
+Yeah. Sorry, just my hearing aids because I haven't had them here yet. There we go. Um So yeah, If you run multi, and it doesn't show that big gap anymore. If they're pretty much on top of each other, then yeah, you don't have to do anything more You're probably okay, then It probably was just a test. That would definitely come down to their experimental methods. But. Clearing out the adapters, if it works, that's sufficient. Yeah,
+00:01:54 Speaker 2
+That's what I was trying to say. Okay, cool. So is there anything else? I guess we should be confirming looks good after trimming? I mean, I think that's the only thing we. That was the only major issue we saw.
+00:02:11 Speaker 1
+Yeah. So eliminate the adapters and the GC contents looking pretty similar across the two directions. Then you're probably get ready to go ahead and start your alignments.
+00:02:20 Speaker 2
+Okay, so now it's a matter of kind of like you said, I guess last time we met, it's finding that rightum reference sequence to proceed with. That's another thing.
+00:02:30 Speaker 1
+So you're doing mouse? Yes. And I remember,
+00:02:32 Speaker 2
+I think you searched up mouse, and there was a lot of options. Okay. Can I mean, I, guess we could probably check the paper and see this, but doum papers typically show what reference? Yes. So could we just go with that?
+00:02:47 Speaker 1
+Not necessarily they may have chosen it incorrectly, I've seen a lot of labs that choose to do, I'm going to do it this way and this way, because everybody else does it. It may introduce bias in the results. And so now they're getting garbage in, garbage out. You're familiar with that phrase, garbage in, garbage out?
+00:03:02 Speaker 3
+Garbage in, garbage out. Yeah.
+00:03:03 Speaker 1
+Yeah. You just like, Yeah, I know that everyone uses this program just going to run it. Well, That doesn't mean it's working right for your data Right Um. You really need to think through the data you have. And is that tool going to work well for many things? It will.
+00:03:20 Speaker 1
+Nope, that was not important. Seeing a lot of uh wires down in my hotel. Uh they've had like six or seven different utility parts down. Oh yikes. So I'm getting like every hour I'm getting a page. Uh okay. Um so you don't automatically assume what they did is correct, just because someone's more experienced doesn't mean they're always correct. Right? Yeah, especially when when you're dealing with someone whose specialty is wet lab. And they're doing bioprinting analysis. They probably have a lot of misconceptions.
+00:03:53 Speaker 2
+Right, yeah.
+00:03:55 Speaker 1
+And vice versa, I apologize. I have no idea why someone in Arizona is calling me, but it's the cordless message. That's your ringtone? Yes it is! Can you ever miss that ringtone? No! I will never miss a call! Yep, the world's ending. Yeah, the world's ending, it's okay.
+00:04:19 Speaker 1
+Um, but sometimes you know I've made mistakes. It happens. Uh, in fact, We tried different fonts with Erin's paper Erin Kessel uh with the um where she was sequencing. Uh one of the lost saras. Um we went through several iterations of trying some different things and, We basically did an experimental approach. We started out with, all right, let's try these different references to see what works best. You don't have the time for that at this point. See what are some possible references and then send me a message. Let me know what you have, the different ones. What do you see as strengths and weaknesses? Remember some of those mouse ones they're made for SCID mice. Have you seen SCID before? In immunology?
+00:05:08 Speaker 2
+I have but I'm not sure what term you're referring to What is that?
+00:05:12 Speaker 1
+SCID is severe combined immunodeficiency, It's a genetically inherited immunodeficiency. It's heritable. Most individuals that have it, it's spontaneous mutation. Don't say that. The boy in the bubble syndrome? Have you seen that one? Lysim and Eli Rock? Boy in the bubble syndrome, he has no. There are some people born with no immune system. Oh yeah, yeah, I've seen it on YouTube. It's the same gene. I'll try running the R code Do. You believe there are more than 100 genes involved in autoimmunity? Yeah, some of those mouse references were skid mice.
+00:05:43 Speaker 1
+So you probably don't want to use that. It's not, not the way to do it. Mhm. So just look through different references. Yeah. Look at a few that look promising. I'll take a look. Oh cool Yeah, sounds good Okay, I'm going to the next group All right So.
+00:05:59 Speaker 2
+We don't need to figure out what GC groups is an issue anymore because it got removed with the adapter Um. Yeah yeah,
+00:06:07 Speaker 3
+Cause we got rid of yeah with the fast speed. Yeah And.
+00:06:09 Speaker 2
+We're doing the this is the neuron. Whichum just again would have been the neuron. The neuron projects.
+00:06:18 Speaker 3
+I think so, I don't know. Ium, I copy your stuff and I put it on my notes.
+00:06:25 Speaker 1
+From our examples? Okay. Yeah, that's cool.
+00:06:29 Speaker 3
+Oh, that's these things is like all the links, if you yeah, if you want to make sure that if it's the accurate one, yeah So, we justum go through the paper. Um.
+00:06:42 Speaker 3
+Try to.
+00:06:43 Speaker 2
+We can maybe see what reference genome they use, and we can see if that still makes sense or yeah or I don't mind going with a completely different one and not bothering with that paper. Or what the paper used rather. But,
+00:06:56 Speaker 3
+It would be good to see what they use. So we can compare against in the event that we end up using another one.
+00:07:04 Speaker 2
+Sorry, this is it's making me log in again so I'll just do this.
+00:07:07 Speaker 3
+Do you want me to look? Uh let me see. You're looking for the the paper? Yeah. Here, I'd say.
+00:07:19 Speaker 2
+Well, I still would like to see the paper online.
+00:07:22 Speaker 3
+Let's see. I think it's this one.
+00:07:29 Speaker 1
+Yeah, first try. Oh, this one is nice now. Wait,
+00:07:35 Speaker 3
+Maybe I'm pulling. No, I think so. No, okay. No, never mind. This is not the right one. Uh, I had to remove thiszebra stuff. We're not using this anymore.
+00:07:56 Speaker 1
+Right? Like I'm so scared that like if I like do not do any more work at all, but then I'll do my homework now, because something else is good for the person. It's like five.
+00:09:00 Speaker 1
+Where is the paper?
+00:09:02 Speaker 3
+I thought I had it, but that was azebra paper, so ignore me. I am looking for it in that like someone.
+00:09:20 Speaker 3
+Message Here. Oh, it should be in theum, it should be linked to the to the.
+00:09:30 Speaker 1
+To their project, Right?
+00:09:36 Speaker 1
+Oh, oh, it's cool. Sorry, you're breaking the rules. Can we just go here? Okay. There is no file. So then there you go. You can do that right now? There you go. Project and paper Yes, I see one in there as well.
+00:10:07 Speaker 1
+So we get there. There's no. Yeah, I think we need to do that because our file. Yeah, okay. Resources would be the best way to approach this, Like maybe download data, like so why did I start to feel? Actually, it's one of the worst things you can do. Sorry, is that paper here?
+00:10:37 Speaker 3
+So we're here.
+00:10:39 Speaker 2
+Is that I don't think we're doing COVID.
+00:10:42 Speaker 3
+Is that COVID? Yeah. Oh shit, sorry.
+00:10:47 Speaker 2
+Is it this one? This is the name, right? Yes, the mouth. Then yeah, yeah, yeah. Mac, if I can find it, I thought you just want to ensure this was the name of it. So for you. So from the summary, we can make a point, which is like a privilege statement right on this side. Do, you have, did you run multi pass QC on theum yeah, so you ran it on this folder on this folder. The stuff in this one I.
+00:11:16 Speaker 3
+I I run it on my local, just as a test, but I can copy it there.
+00:11:23 Speaker 2
+Okay. Could you just run it on this one? Just that way? We're all working with the same. Yeah.
+00:11:29 Speaker 3
+Yeah, I'll go up in there. Yeah, I didn't want.
+00:11:31 Speaker 2
+To run it again on this one, on these folders. Because I want to make sure, because in case there's something like for some reason, we did something different that resulted in different files. That means if you're just running it locally, we're going to start getting completely different results.
+00:11:44 Speaker 3
+No local and the server. I run it local and the server.
+00:11:48 Speaker 2
+But so where is it then?
+00:11:49 Speaker 3
+In my local and the server You can't see it because it's private Okay,
+00:11:54 Speaker 2
+But you ran it on.
+00:11:55 Speaker 3
+Yeah, on the server.
+00:11:57 Speaker 2
+Because I didn't have that finished until the eleventh.
+00:11:59 Speaker 3
+Oh, I run it sometimes around Monday. Yeah, sometimes around Monday. Yeah. Monday or Tuesday? Okay, Max,
+00:12:14 Speaker 2
+Can you just confirm if that wasn't right? Those files running right? No,
+00:12:17 Speaker 3
+I didn't use your files.
+00:12:19 Speaker 2
+Okay, so I'm saying can you run it on my files then?
+00:12:23 Speaker 3
+Oh, you mean on the ones you modify. Oh, I got it. I got it. Yeah, yeah, I got it.
+00:12:28 Speaker 2
+Run it on the this specific folder.
+00:12:30 Speaker 3
+Yeah, I didn't understand you before. Yeah, yes. That's, the reason why I didn't use uh yours, because I wanted to do it from the beginning, and I had wanted to like analyze the tools in sequence, if you know what I mean. Okay So, i'll run it. I'll run it today. If,
+00:12:48 Speaker 2
+You're like willing to do all those extra steps that's fine, but like you don't. We can just use the same things here. You don't need to rerun everything a second time. Like the whole point of this being group work is that we were actually splitting up the timeline, not, Right, but you said you just re- ran everything. So I'm a little confused.
+00:13:03 Speaker 3
+On my end, things are the same things. I mean, what is wrong with that? I don't, I'm not sure I understand.
+00:13:08 Speaker 2
+I mean, I'm just worried because now you, I'm just worried that we're no longer going to be going through the same path, I guess if we're not using the same files.
+00:13:15 Speaker 3
+Why would you worry about that?
+00:13:17 Speaker 2
+Because if you are working with different output files than I am those output files could be different.
+00:13:22 Speaker 3
+No no no no no no! Why would they be different? I was trying to look at the data to understand the behavior with certain tools.
+00:13:33 Speaker 2
+I, guess my confusion is that you were talking about the fastq ou fastqc out? Or sorry, you were talking about the multi fastqc output from the files you ran, not the files from Iran. If the file, The ultimate thing that if we're working on different stuff, what? The conclusions you're making do not correlate with the data I got because.
+00:13:54 Speaker 3
+I'm not making that's where you're getting it wrong. I'm not making any conclusion.
+00:13:57 Speaker 2
+You told him that, Your what data, what final output that you got? You you said that to me. You said that the GC content was different or not different anymore, right?
+00:14:08 Speaker 3
+No, I said exactly what you said. That with fast p the difference is huge. It's exactly what you said. Only thing difference I say that you didn't say was, you can't see at the high level. But when you go granule into the SSRs, you can see it.
+00:14:21 Speaker 2
+I'm not talking about the past. I'm talking about like just now like our meeting just now, Because weren't you talking about that?
+00:14:26 Speaker 3
+Yeah, that's what I'm saying right now. That's what I said. Exactly what she said. With fast speed, right? You can't like you don't see that.
+00:14:33 Speaker 2
+But that's not what I'm saying. I'm talking about the multi fast QC output. He asked if you ran multi fast QC and what the multi.
+00:14:41 Speaker 3
+I say, I personally did. Yeah, but.
+00:14:46 Speaker 2
+That's what I'm saying, Your the conclusion you gave based on the multifast QC you ran is not off of the files.
+00:14:52 Speaker 3
+It wasn't a conclusion, it was an observation.
+00:14:54 Speaker 2
+But that's what he was asking. He asked for a conclusion and you told him it's not there. That's what he was asking.
+00:15:00 Speaker 3
+An observation, I told him what I saw.
+00:15:02 Speaker 2
+Yeah, I know, but that observation wasn't based off the output I had. I don't understand,
+00:15:09 Speaker 3
+I really am trying to understand you like. And i'm really generally trying to understand. I don't.
+00:15:14 Speaker 2
+You didn't run multi fast QC on this, on these files, right? That I put in here. Right. So that means you didn't give an observation based on this.
+00:15:23 Speaker 3
+But what is this? When you say this, I don't I don't understand what you mean by this.
+00:15:26 Speaker 2
+This is the fast QC after running FastP trimmer, right? This is the data I got after running FastP. You did not run multi fastQC on this, right?
+00:15:37 Speaker 3
+After what? That's the data that you get after running FastP You're saying, right? No, I run FastP on my set, not because I'm not gonna mess up with whatever analysis you were work, whatever approach you were working with in terms of FastP.
+00:15:56 Speaker 2
+I understand, but that means so we so you understand what I'm trying to say right?
+00:15:59 Speaker 3
+I understand what you're trying to say, but I think like right now you're digging a hole into something. Hold on, let me explain into something that is really unimportant. Because you, you apply fast B right? I apply fast B. It's the same thing. There's no reason why it would be any different.
+00:16:14 Speaker 2
+There shouldn't be I fully agree, but you never know what happens when.
+00:16:18 Speaker 3
+Exactly we find is actually a good team you understand, because now we're seeing two different behavior for some reason. This is you know like like group, like this is how I interpret a good work. Group group work is like we assign right the work and distribute it. Work together, right? But we analyze individually what we're doing to understand what we're doing. It's not like I'm going to sit here and just wait until work is given to me. If I don't understand how a tool is working, right? I'm going to do my best to analyze and see what it's doing.
+00:16:52 Speaker 2
+I'm not saying I'm not, I don't have an issue with you running it on your own. My issue, I guess is that we're trying to say that your your output like your observations are coming from this? Data like the data I have on here. That's what we told him, but that's not true. It is true. No, it isn't because you didn't run it on these files.
+00:17:12 Speaker 3
+I run FastSpeed the same way you run FastSpeed.
+00:17:16 Speaker 2
+You never know if random things have an issue. What if I'm not saying you.
+00:17:19 Speaker 3
+Are making a lot of scenarios? I understand what you're saying. Yes, I am making them, but let's work right now with what we have. And let's not make this an argument.
+00:17:28 Speaker 2
+Which is why I'm telling you, asking you to run FastQC, Multi FastQC on this because I don't want, I want to make sure we're using one dataset all the way down. Like I'm telling you to not just upload here.
+00:17:41 Speaker 3
+That's what we said we were going to do at the start.
+00:17:44 Speaker 2
+Uh so. I thought that's what you asked me for. That's what I'm trying to clarify. I'm trying to clarify why I'm asking this and you already did.
+00:17:50 Speaker 3
+And I told you that now understand what you said.
+00:17:54 Speaker 2
+Okay, so you will run multipass QCMS. Yes. And okay, That's all I wanted to be clear because you were asking me what what you asked me to explain. And that's what I was doing.
+00:18:03 Speaker 3
+No no no no You were explaining something else that I totally misunderstood.
+00:18:06 Speaker 2
+I was explaining why I wanted that It was not necessary. You asked me to explain No,
+00:18:10 Speaker 3
+You asked me for the fastQC right? I didn't know exactly if you were meaning the fastQC that is in my local. Or to run it with the HTML in there. It's the same thing. It's gonna yield the same thing that I have, so you when you run it in here, it's fine. It's not a big deal. I'll run it again. It's not a big deal.
+00:18:29 Speaker 2
+But that that's what I was trying to say earlier and then work with you is that why I gave you a longer explanation? You're the one getting caught up on those little things? You just asked me to explain it and I did No,
+00:18:39 Speaker 3
+I didn't ask to explain i i You had an issue with me running on my local Oh.
+00:18:43 Speaker 2
+Yeah. Yeah, yeah yeah. It just takes a while You're the one getting caught up on those little things. Okay. I don't have an issue with you running on your local. You should have. I don't. I'm not saying I did. Yeah, you're getting hung up on the wrong things. I'm never saying I had an issue with that.
+00:18:58 Speaker 3
+How am I hung up on the wrong thing? That's what I understood and asked you, why were you asking me that?
+00:19:04 Speaker 2
+Because I was just curious because that's not how i've done group work before, That's not how i've usually do it Which is why i was curious, That is not having a problem with it, i was simply curious Okay, i'm trying to understand the way youum work, It's very obvious the way we approach group projects differently. So I just wanted to. There is no difference. Yes, It is because that's not how Sam and I have done group projects, which is why I'm asking you. I am no Sam. What?
+00:19:28 Speaker 3
+I am no Sam.
+00:19:29 Speaker 2
+I know, which is why I want to understand why you're doing it the way you're doing it.
+00:19:32 Speaker 3
+You listen, I'm going to give you an advice: You don't expect people to be exactly how you want them to be, right? You need to meet people halfway and work with them.
+00:19:43 Speaker 2
+Which is why I'm asking why you're doing it the way you did. I'm not telling you to do it my way.
+00:19:47 Speaker 3
+I understand, and I answered you, that should have been sufficient for you, shouldn't have kept pushing on that.
+00:19:52 Speaker 2
+But I didn't understand what you mean.
+00:19:55 Speaker 3
+I get it, but there's a time and a place for that.
+00:19:58 Speaker 2
+Is there an issue with me asking for clarification on what you're doing?
+00:20:01 Speaker 3
+No, there's no issue. The thing is uh. It feels like.
+00:20:07 Speaker 3
+For some reason, the answer is not sufficient for you.
+00:20:10 Speaker 1
+Because they don't understand.
+00:20:13 Speaker 3
+But just because you don't understand, doesn't mean it's not sufficient for the other person. If somebody answers you and says, I needed to understand that, so that's why I went ahead and did that analysis. That should be sufficient for anybody because that is personal.
+00:20:26 Speaker 2
+That's not the issue I had with it. That's not where I had a problem.
+00:20:29 Speaker 3
+Where is where you had the problem?
+00:20:31 Speaker 2
+The problem was I just wanted to make sure we were con-- we would. I don't have an issue with what you do on your own time. In terms of this, I just want to make sure the final analysis that we present to him are coming from the same exact steps being run. Okay,
+00:20:45 Speaker 3
+I agree.
+00:20:46 Speaker 2
+Because. So this is everything that's going to be in our main folder is the the way I'm viewing it as official things that's being presented to us. So if we're using MultiPass QCum observations, that MultiPass QC should be based on this data. That's all I'm trying to say. Yeah, That is all I'm saying.
+00:21:03 Speaker 3
+I don't have an issue with it.
+00:21:05 Speaker 2
+When I asked you why were you running on your own time, It was just because I just wanted to understand why you were doing taking that step. Just because I personally was not familiar with them, it was not that I had an issue, I just didn't quite understand. Now that I understand, I don't have an issue, but i also now know we're on the same page where you're going to run multi- facilitys on this and all the final outputs. So like on the next step and we runum, Alignment. What I'm understanding is we're going to have alignment run on here, but you will also do alignment for yourself for your understanding.
+00:21:38 Speaker 3
+Yeah, I will do whatever I need to do to understand the data.
+00:21:43 Speaker 2
+So in that scenario,
+00:21:44 Speaker 3
+You're not right or you're not wrong, you know? So, if there is something I don't understand like I didn't understand how FAX and FASTP were working with the data, right? I'm going to dive deeper into that to see how it works. Yeah. But that doesn't.
+00:22:00 Speaker 2
+So bottom line is, whatever you do on your own time is regardless, Whatever the final data being here is the one that's used to further progress the project.
+00:22:08 Speaker 3
+Exactly. Whatever is in the sharedum folder is whatever we're going to go with, exactly.
+00:22:13 Speaker 2
+Okay. That's what I wanted confirmation on.
+00:22:15 Speaker 3
+Yeah, Yeah, The only thing I do with my analysis is just share with you guys, and that's it. Okay. You know, beyond that, otherwise it wouldn't be a group project, right? So. Well,
+00:22:25 Speaker 2
+Yeah. That's why that's why I was just confused though when he when he asked for the project.
+00:22:29 Speaker 3
+Because we have individual reports. So he read my individual report and that's why.
+00:22:33 Speaker 2
+You submit one last week? Yeah Okay That is something I missed I didn't know you did that.
+00:22:38 Speaker 3
+Yeah So.
+00:22:40 Speaker 2
+Does he think that But then in that case, he still thinks whatever you submitted was group work for all of us.
+00:22:46 Speaker 3
+No It's an individual report But.
+00:22:47 Speaker 2
+The individual reports are based on what we did as a group.
+00:22:54 Speaker 3
+An individual report, you show the work that you did, whether it was for analysis, whether it was so worse in the group advancements or no. That was just analysis. So here look, analysis of the tools.
+00:23:06 Speaker 2
+Does he understand that the multi- pass QC that you ran was not on this? Does he know that?
+00:23:11 Speaker 3
+Yes. That's why he's. That's why I said when I said to him, I haven't shared that information with him. That's why he's okay.
+00:23:17 Speaker 2
+He didn't seem like that's what he understood. Cause I I didn't even understand that. Could, we maybe start sharing our multi or or sorry, not our multi. Can we start sharing like our reports with each other? So you also know what.
+00:23:31 Speaker 3
+Is in the drive?
+00:23:32 Speaker 2
+Is it where in the drive?
+00:23:34 Speaker 3
+Let me see if we load it.
+00:23:44 Speaker 1
+Where can you check?
+00:23:50 Speaker 3
+I was gonna shareumum a GitHub page uh, to show you what I did for the analysis. But as you can see, I'm not feeling great. So let me uh.
+00:24:12 Speaker 3
+For Some reason, my loading and.
+00:24:49 Speaker 1
+But I had already three hours. Oh my god. I was on break for the first time in like two weeks. Wait, how was your break? I didn't ask you. Oh, my break was overall pretty good. Okay, are you sick again? Okay, okay. Questions? What's up? Yeah. Um, for running uh downloading the plan now I think that's okay. Sorry, It's mostly so that or uh, you can try to see the outline of the last part. Um, for DC2? Yes. You may have to tell it to install it. Okay, okay.
+00:25:47 Speaker 1
+Oh, and it's okay. Yeah, it'll do a local install on your account. So everybody who runs it that way will have to do that. Okay. Cool. Wait, which ones are shared? Oh yeah, okay. So I gotta place one more phone call. Gotta make sure the school nurse knows he's getting picked up. It's just an upgrade. Yeah.
+00:26:45 Speaker 1
+You know how it has like the R, like colon colon install interactive. I just ran that. Okay. So fastq files. It is fastq files. Yeah, that's the fastq file. Oh, okay. Oh, oh. Oh, I thought it was about like.
+00:27:44 Speaker 1
+Is it possible for 2026 to come back? I'd like to. It's been so bad, it can only get worse. Don't say that. Why? If it gets worse. But what if it gets better? Glass half full, glass half full. But probability would say this year has been so bad so far, it's not likely that. That's a good joke. That's a good joke. Oh, it's true. No, I know. That's why it's good. Oh my gosh. Yep, he just disappeared again. Yes, cryogenics team? Yeah, no one can see him anymore. Oh, you got everything resolved? Yeah, hello to Boston? Cool!
+00:28:42 Speaker 1
+It's been just a while. I'm running with three. It's probably like five times. I'm running on three right now. We're the only people on it, so we're good. There's only six right now, but.
+00:29:13 Speaker 1
+You might be surprised how you find three people. I love finding errors. I love finding errors. It's honestly, like it's part of the fun with this is playing nice with others. So there's another way we could have done this, we could have set up something like slurp or job submission. And, then it'll run one person's job and then the next. And then the next. The problem is you might have to wait 24 hours for your job to start. So, We're going to be looking at this skill more in the coming months because a lot of research projects are running into this bottleneck.
+00:30:10 Speaker 1
+I was gonna say girl, we're at eight right now. Okay, it's it's a little. Is there a lot of like cashews? I think they're so good. Ooh! That's beautiful. That's my line. That's my line right there too.
+00:31:08 Speaker 1
+Yeah, so like you know, this could be cool. He's got allergies are just going to whack because the um the allergies are just, you know. So both my dogs have it but I used to not have that one. It may be time to look at the documentation. I'm not likely to have it as possible. So if your parents have different kinds of allergies, the odds of you inheriting the correct pattern is like many of the, We were talking about pedigree studies.
+00:32:05 Speaker 1
+I don't know.
+00:33:03 Speaker 1
+When you're young, you should be eight or nine. Probably doesn't know what I'm on most of the time. God, I'm sorry. You're gonna be one of those old guys who eat McDonald's in the morning and drink coffee. You just assume now, you know? Someday that'll be me. We'll sit and drink coffee and play monopoly. Do you ever see that? Smell? Oh my god! You gotta go to McDonald's at six a.m. okay? And you watch. I feel like you have all the old folks sitting there drinking coffee and playing monopoly or something like that.
+00:33:42 Speaker 3
+We Have like five minutes, so I run the QC. Um, yeah, the multi QC. What uh the plans? What are you thinking about the next steps?
+00:33:53 Speaker 2
+Um, I think we should meet again tomorrow like our usual time in the evening, and we should.
+00:34:02 Speaker 2
+We should pick out ourum alignment reference, and then we should start running alignment. Okay. Honestly, if anything, we should pick out our alignments or our reference today.
+00:34:13 Speaker 1
+So I'm going to put that in the chat. Okay. Yeah,
+00:34:22 Speaker 3
+That sounds like a good idea. And thenum we're gonna, Coordinates more how we're going to go about the alignment. Okay. Are you okay? If I was a little bit, um, what's the word? Um, uncomfortable before I apologize.
+00:34:51 Speaker 1
+That's okay.
+00:34:51 Speaker 3
+Yeah, yeah. Um.
+00:34:58 Speaker 1
+So. So any groups here have any urgent questions? Are you doing okay?
+00:35:01 Speaker 3
+If you go to.
+00:35:03 Speaker 1
+You know what you're doing? No, I don't know. It's still printing. We're trying to figure out how to get it during the break time now.
+00:35:11 Speaker 3
+If you go to group project in there, project reports that's why I'm not in my uh individual report yeahum, We we have like five more minutes.
+00:35:41 Speaker 3
+Yeah, So I just want to let you know that there is a lot ofum, Um.
+00:35:49 Speaker 2
+Alright, how do you play with your five? Honestly, I think we should maybe pick out our alignment today. Just'cause I want to make sure we're on top of it. Because I, Ium. Yeah,'cause there's a lot of work we got to do. Yeah.
+00:36:08 Speaker 3
+Were You thinking about anything in specific? Should we look it up?
+00:36:13 Speaker 2
+We should just get our. Just let's try and just find. Um, what you think might be the best reference in the chat today? And I'll do it. I'll do it later. Uh, I'm a little busy in the afternoon, but I'll send an email. And then you know, I feel like trying to figure out the limons. Yeah. So we can just all share our limons and just, I don't know, I guess like rationalize it and then we can actually pick one tomorrow. Yeah.
+00:36:39 Speaker 3
+Go to the references and okay yeah, References. And uh.
+00:36:54 Speaker 3
+Any Objections? Um.
+00:36:59 Speaker 1
+Okay, um. Yeah,
+00:37:04 Speaker 3
+I alsoum maybe because I'm not fully there. But one of the reasons why also I'm trying to understand this further is because remember about that paper that I told you about? I need to understand how the whole alignment works. So, um, When I end up that I'm able to integrate the RNA sequence into my research. Um, I'll figure out how to do that. So, some of the like individual work that I do is mostly to understand that for that purpose. Yeah.
+00:37:46 Speaker 3
+No, for anything notorious or anything. The town is located on the banks of the river Siret.
+00:37:50 Speaker 1
+The name of the town is derived from the river. The name of the town is derived from the river. The name of the town is derived from the river. The town is located on the banks of the River Tamar.
+00:38:22 Speaker 1
+Awesome, thank you folks. See you Wednesday.
+00:38:30 Speaker 3
+I'll think it when it's done.

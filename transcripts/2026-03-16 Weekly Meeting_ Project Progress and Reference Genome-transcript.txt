@@ -1,0 +1,148 @@
+00:00:00 Speaker 1
+That I am going to leave that class and I haven't told them yet, nor will I tell them. But on the 3rd, I think it's April 3rd that I have to.
+00:01:30 Speaker 1
+You were here. Sorry, I didn't even notice. Is my. Let me see. Is my, I didn't even notice you were here, I'm sorry. No
+00:02:12 Speaker 2
+You're good. I just got it.
+00:02:14 Speaker 1
+Let me make sure my Bluetooth is on. Turning it off. How's it going? Turning off the Bluetooth.
+00:02:26 Speaker 2
+That's good, just catching up on work. How about you?
+00:02:33 Speaker 1
+Same here, catching up. Semesters and the change in weather, they change, they're changing the weather. It hit me a little bit, but at least it wasn't too bad.
+00:02:53 Speaker 2
+I am. The weather changes, especially when it gets really hot.
+00:02:58 Speaker 1
+I thought you were sick. So that's why I asked you if you were okay. Because I know some people, especially with the change, can get you pretty easily.
+00:03:14 Speaker 2
+It's when it gets warm really quickly. When it gets cold, I'm okay. When it gets like warm, it's awful.
+00:03:24 Speaker 1
+Yeah, yeah.
+00:03:25 Speaker 2
+Let me turn on the lights.
+00:03:28 Speaker 1
+I'll definitely do it.
+00:03:40 Speaker 3
+So Yotsukashi, we really haven't done much. The only thing we did was talk about the five speed.
+00:03:53 Speaker 1
+Nicky Ronnie and I run multi Q C today in the classroom on that side. On my end during the week, I would just basically store in fast P and multi Q C and trying to understand them. But that's something that I did on this side. But team wise, we just haven't really done much. It's just that fast B and now the multi Q C, which is in the server. And that's it. And you saw the path right that I sent in the Slack channel. So that's basically where we are. I think Nikki was mentioning about starting to work towards.
+00:04:53 Speaker 1
+Alignment. So I'm gonna send you the notes from the class, because I think they're gonna be helpful for you. What the teacher is saying.
+00:05:04 Speaker 2
+So referencing on.
+00:05:05 Speaker 1
+Suggesting. What kind of things actually I think I can get it right now and give it to you, cause that might be helpful. Let me see.
+00:05:18 Speaker 2
+Did Nikki get to also look at the reference genome? I feel like, well, that's just my question for now. Did she pick a reference genome?
+00:05:32 Speaker 1
+She's working on that and I think she sent a message on Slack. But, by the time we met by the time we met in the classroom. She hadn't looked at that. After our conversation with the TA. It was when. Sheum, She was like, Oh, let's you know let's meet tomorrow. So we can. Kind of like tomorrow isn't Tuesday? Tomorrow isn't Tuesday. yes So we can do that.
+00:06:09 Speaker 2
+Cause I was gonna look into how to look at a reference genome. So did you pick a reference genome and how did you pick it?
+00:06:25 Speaker 1
+And then I don't even know how to do this. I'm going to research how to do it.
+00:06:30 Speaker 2
+Gotcha. What time did you guys agree on for the meeting tomorrow?
+00:06:37 Speaker 1
+Or she? Didn't mention that she just said the same time, which I'm assuming same time as last time we met. That's what I understood.
+00:06:48 Speaker 2
+What time did you guys meet last time?
+00:06:50 Speaker 1
+All of us. Oh yeah, you couldn't make it. But the time that we agreed I think it was about seven something seven thirty, maybe Let me look it up here because it's in Slack Let's see
+00:07:15 Speaker 1
+So I think it was around.
+00:07:44 Speaker 1
+Seven thirty.
+00:07:45 Speaker 2
+Seven thirty p. M. Tomorrow. That works. I just actually oh sorry
+00:07:56 Speaker 1
+What No I wasum mumble. I was saying anything go ahead
+00:08:03 Speaker 2
+I was just gonna say that I just got to campus. I'm gonna like, 10 minutes ago, so I'm going to work on that and see how to do a reference. I actually want to also annotate the publication because the publication that we have on record for this dataset, there's two data. There's two geo accession numbers that are connected to this publication. So I'm trying to understand what experimental design correlates to what accession number. So we don't screw that up. That's a good point.
+00:08:41 Speaker 2
+They're actually pretty cool. There's videos on the mice and the experiments. So I'll download and upload those onto Google Drive.
+00:08:51 Speaker 1
+Nice. Yes, you have the links to that?
+00:08:57 Speaker 2
+Hereum I don't have the link right now. It's somewhere open on my computer, but I have fifty tabs open. I can show you. No worries. Can you turn on sharing?
+00:09:08 Speaker 1
+Oh.
+00:09:12 Speaker 1
+There you go.
+00:09:14 Speaker 2
+So I got it from where is this? I got it from. This is a publication. This is the publication and then where's the You see my screen right?
+00:09:32 Speaker 1
+Where's White? That's weird. I can't see it, but I did accept you. There you go.
+00:09:44 Speaker 2
+So this is the publication? And then you have data availability and then database under accession numbers. These two, which is this?
+00:10:11 Speaker 2
+Does our dataset have twenty or twenty-six?
+00:10:14 Speaker 1
+I think it's twenty-six.
+00:10:17 Speaker 2
+It's this one. I'll confirm that.
+00:10:19 Speaker 1
+It is twenty six because we did fifty two. And the pipeline.
+00:10:26 Speaker 2
+So this is the actual thing, but the video was where is it? Actually I downloaded it.
+00:10:40 Speaker 1
+I can find it. Here. There you go.
+00:10:48 Speaker 2
+I don't know why it looks deformed. I don't know if that's part of the experiment. That would be cool to include in the like. The weekly reports are on Wednesdays, right?
+00:11:03 Speaker 1
+Wednesdays You mean they will weekly updates.
+00:11:09 Speaker 2
+Weekly update. It'd be cool to show it just for fun.
+00:11:16 Speaker 1
+That would be nice. That's fun. It's funny how they have it in a subject. That's cool. It makes sense.
+00:11:26 Speaker 2
+I guess. It does, good record keeping.
+00:11:33 Speaker 1
+I, So I have the I'm gonna send you the summary. And so that way, you see exactly what the teacher said, 
+00:11:50 Speaker 3
+If I find it right?
+00:11:57 Speaker 1
+Yeahum I'll.
+00:12:01 Speaker 3
+Make sure I have a. Here it is. I got it. Let's see the summary.
+00:12:34 Speaker 2
+This is so nice. They made you know what Zotero is. What's that Zotero? It's a citation manager. So you can have publications and whatever, and then you can categorize them.
+00:13:04 Speaker 2
+So for all the weekly readings that we did for each class that you can download them and then you can.
+00:13:12 Speaker 1
+Oh.
+00:13:12 Speaker 2
+You can annotate them.
+00:13:14 Speaker 1
+That's cool.
+00:13:17 Speaker 2
+And then, pretty cool, so that's what I'm using for our paper. They just released a version on Android or on a tablet, so you can do it by hand. Which is really nice. It's like Kindle on steroids, and then you can connect it to Google or Word, and then it just does the citations for you, which will be nice because we're gonna probably have a lot of citations.
+00:13:53 Speaker 1
+Exactly. We're definitely using a lot of citation. My computer is so slow, but I found the notes and I'm waiting for it to load. It's probably because of Zoom. Let me close some tabs and see if that helps.
+00:14:25 Speaker 2
+This is a relatively new paper. It's twenty five.
+00:14:32 Speaker 1
+It's like yesterday. Wow. So the professor was mentioning something about that. Probably what we saw was a result of the technical design. Why is this recording?
+00:15:07 Speaker 2
+Why is this taking so long? The issue that we saw with theum with the G's. With a G's. with a G's with again, content, with a G content. And my goodness.
+00:15:31 Speaker 1
+It's loading forever. It's so stupid. So you'll see. I'm just going to send you the I'm closing tabs to see if Just.
+00:16:06 Speaker 1
+He says that I have experiments running, so I'm sure they are consuming a lot of the bandwidth.
+00:16:14 Speaker 2
+It's okay. You can send it whenever you have time.
+00:16:20 Speaker 1
+I'll get it to you right after the Zoom is taking the bandwidth.
+00:16:27 Speaker 2
+Sounds good. I just wanted to touch base and see what is there to do. It's just the reference genome. Annotate the file. I'll see you tomorrow.
+00:16:44 Speaker 1
+I'll see you tomorrow at seven thirty. If you have any question, just let me know. I'll right after this is going to work because Zoom slows things down. So I'm just going to do you want me to send it to you on Slack or text message or email? This is on.
+00:16:58 Speaker 2
+Myum Slack's good
+00:17:01 Speaker 1
+So I'll send it to you on Slack, then All right.
+00:17:04 Speaker 2
+Alright. Sounds good.
+00:17:05 Speaker 1
+See you. Have a good one. Bye.
+00:17:07 Speaker 2
+Thanks, bye.

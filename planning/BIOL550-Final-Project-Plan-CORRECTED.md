@@ -87,8 +87,8 @@ This document outlines the group project strategy for BIOL550: High Throughput S
 **Focus:** Quality Control and preprocessing
 
 **Responsibilities:**
-- Run FastQC for quality assessment of raw reads; trim with FASTX as needed, then re-run FastQC on trimmed reads
-- Execute quality trimming with appropriate tools (CutAdapt, FastX)
+- Run FastQC for quality assessment of raw reads; trim with `fastp` (preferred) or FASTX as needed, then re-run FastQC on trimmed reads
+- Execute quality trimming with appropriate tools (`fastp` preferred; CutAdapt, FastX legacy)
 - Filter for adapter sequences and contamination
 - Generate QC reports and visualizations
 - Document all quality metrics and filtering thresholds

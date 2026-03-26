@@ -1,5 +1,17 @@
 # BIOL550 — Week 7 (Other applications) — Paper notes
 
+## Thread Handoff
+
+- This file is the canonical continuation point for BIOL550 Week 7 paper work in new Codex threads under `/Users/pitergarcia/DataScience`.
+- Read `/Users/pitergarcia/DataScience/AGENTS.md` first, then resume here.
+- This file already contains:
+  - comprehensive notes for the Kumar et al. eDNA paper
+  - comprehensive notes for the Wang et al. scRNA-seq paper
+  - highlights for both papers
+  - discussion/questions and project or side-project ideas from the prior thread
+- If continuing this work in a new thread, append new paper summaries, follow-up questions, and project ideas here rather than creating a parallel Week 7 notes file.
+- New threads do not have literal access to the old hidden chat transcript; this file plus `AGENTS.md` are the persisted handoff.
+
 ## Kumar et al. (2021) — *One size does not fit all: Tuning eDNA protocols for high- and low-turbidity water sampling*
 
 - PDF: `BIOL550-Week7_Girish_2020_EnvironmentalGenetics.pdf` (filename says “2020”, but the article dates are 2021)
