@@ -1,0 +1,50 @@
+00:00:00 Speaker 1
+Crushed. One of the gene types should go in one cluster, and the other gene types go in another. Wait, can I finish? Sure. So the PCA, it's taking like factors that are preserving the pattern the most, right? The PCA is looking to see what explains the variation in gene expression. So there's one variable expressing it as PC 1 that explains 46%. Right?
+00:00:24 Speaker 2
+It's not one variable.
+00:00:26 Speaker 1
+So PC 1 is there's some variable, That explains 36.2% of the variation in gene expression across the entirety of the data set. PC2 is the next best explainer of gene expression differences. Yeah, but it's groups of variables that are correlated. But it doesn't know what the groups are when it runs PCA. Yeah, but I was saying that like for the triangle, you have two gene expressions if they're different.
+00:00:59 Speaker 1
+What is called because they're clustering on the first principal component? Okay. Okay. Yeah, it's a little bit complicated here with the PCA, because usually it's you don't have multiple variables like this. And you can here you're looking at two variables of which leg and and the genotype.
+00:01:30 Speaker 1
+In this case, the site class explains most of the variation we see. Our next step was going to do avolcano plot and try to start looking into the actual specific genes that. Yeah, and that's something we need to get to. Run Up the PCAs I need to look at this one.
+00:01:54 Speaker 2
+Yeah, yeah. So I'm looking at it doesn't make sense. Should we just ask him?
+00:01:58 Speaker 1
+So I think we need to know what the intrinsic clusters are, What did you get that cluster are before you decide? Is this really saying something about the system. Because if we do it in PCA like this, you're saying, Look, do we see clustering the way we expect it to? If hypothesis is correct. And then you can look at individual features.
+00:02:16 Speaker 2
+So so we haven't analyzed thevolcano images, We just started looking at that into that. So probably you can help us understand. Yeah, he was watching the issue here. So before tomorrow,
+00:02:30 Speaker 1
+Make sure you talk about those those cycles. Yeah, cool. Because I want to see what's going on and make sure it's yeah. If you bring in a fancy analysis like that, we'll look at it. Oh no,
+00:02:41 Speaker 2
+That's that's not good.
+00:02:43 Speaker 1
+Yeah, you're doing the same thing you saw before where it's a biasvolcano plot. Um I mean it could just be impairment mostly of regulation genes, That's possible.
+00:02:55 Speaker 2
+Upregulation genes?
+00:02:56 Speaker 1
+Yeah, because your fold change is positive. Yeah. You're looking up regulation in your case typically. It depends on which way you do your your ratio. But there's definitely bias in terms of either the case or the control, one of them is upregulated.
+00:03:13 Speaker 2
+All right, So we should look into values. Uh So, you have an idea on what to look for? Yeah,
+00:03:23 Speaker 1
+He wants us to interpret the PCA first, Specifically for tomorrow. For tomorrow. Okay. I mean, in terms of what's going on here, okay, you got a whole bunch of genes that are differentially expressed. Makes it awfully tough, like if you really want to look at a list of 7000 genes and say, all right, what do each and every one of these do? Yeah. Yeah, it gets tough. This is where usually we'll bring in something like a gene ontology analysis or pathway analysis or something in the KEGG or gene ontology.
+00:03:46 Speaker 2
+Yeah. Well, the plan was to look at, like, you know,
+00:03:48 Speaker 1
+The top 100 and then see if they're like related to like Why, not 200? Could be a thousand, I mean, it depends on how many genes in general. So where do you draw the line? On.
+00:04:02 Speaker 2
+Significance. Just significance.
+00:04:04 Speaker 1
+But there's 7, 000 that are significant. And that's okay. This is a common problem. This is something I'm sure other people have seen similar ones, is that fair? We have hundreds if not thousands of genes that are differentially expressed. Yeah, we didn't spend a lot of time on this earlier. This is really when you see the project starts to come out. So this is good to see those things, Alright, you have 7,000 genes. How do you know which are the most relevant? It could be by p-value. It could be by fold change. You don't know which one to use. Could be a combination of the two. You can say what are the major players in this? Which genes had the most effect on this or were most affected by it? So I mean there's different ways to do it. You could pick an arbitrary number of them and say, I'm going to pick the top 100 most significant. That's very arbitrary.
+00:04:54 Speaker 1
+And you don't know if well, maybe the 101st was actually the most relevant one. You might be excluding them using an arbitrary cutoff. What you can do, though is you can actually take those I'm surprised. It's a third of the genome is actually expressed. Wow. You could take that those 7,000 and run them through a gene ontology analysis like a number expression analysis. Probably because they're not. You could. Now you've got 7,000 genes though. That's an awful lot.
+00:05:23 Speaker 2
+Should we randomly pick 20% of those or 30%?
+00:05:27 Speaker 1
+So there are other ways to do this. You usually need to make a decision on where you put a cutoff. There's some different ways you can do it. You can look for cluster points. So one example would be, let's say you had a graph of, let's do this counts of genes and here is.
+00:05:52 Speaker 1
+P-values decreasing as we go to the right. So it's approaching zero. What you might get is a cumulative distribution. Actually, we'll do it this way. We'll do it the other way because you're a little lost. Um.
+00:06:22 Speaker 1
+You might get a curve like this. You have a small number that are significant. You know, point oh five is here. Yeah, you're getting a small numbers here, But let's say we're going from zero to zero point five here, and then there's a whole bunch of others across right at twenty four. What you can do is look at where does the bend develop? Has everyone seen this? Anyone seen this before? No, it's a good one to learn. So let's say again our p values They're increasing. Oh, let's make that point five. Sorry, And let's say, point five zero, five for p values here and zero is here. You actually see an exponential curve. What you might do is instead of just taking all of them that are less than point. Oh, five, which would be seven thousand genes, say look where is this bend in here? I'm going to pick that bend and draw a line down here and say, whatever this p value is, we're going to use this as our significance threshold because that gives you there's a.
+00:07:19 Speaker 1
+There's a break here. There's suddenly a big jump in the number at that point. So we'll take the ones that are below that sudden jump, uh, the number of genes that are shown below this cutoff as functional. It's still somewhat arbitrary but it's less arbitrary than just taking them all. Yeah? So guys, does that make sense? Yeah, it does. Sam, does that make sense? Sorry we're discussing something else. Yeah. No, no, no. Like tying that to the data. We're just trying to figure out what's going on. Yeah, and honestly it's a lot of genes. Yeah. Um I mean the PCA is good to do and I think we need to figure that out just to make sure things are working well and make sure we understand what the PCA is telling us in terms of the volcano plot and the number of significant genes I think it's not a bad idea to do a cumulative plot like this. So.

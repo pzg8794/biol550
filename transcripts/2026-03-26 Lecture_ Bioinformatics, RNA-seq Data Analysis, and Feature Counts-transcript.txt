@@ -1,0 +1,412 @@
+00:00:00 Speaker 1
+We'll just lose. But then it's like figuring out okay, so once we pull the females, get our money back out of that.
+00:00:11 Speaker 2
+Like I forgot. We'll see how he does on this one and then go from there.
+00:00:15 Speaker 3
+Deal with that area like I've been one years that that's like probably not a big difference,
+00:00:20 Speaker 2
+But yeah, But he's been doing it in there for like seven years,
+00:00:24 Speaker 3
+And we females. And then yeah, nineteen fifty nine.
+00:00:28 Speaker 2
+Yeah, By the footbridge for U of R. So most of their properties have been like right on here. Um, yeah, and we have two on Genesee Street, but that's different. And thenum, but most of them are pretty consistent. We've all like positive cash flow for sure every year.
+00:00:44 Speaker 4
+Is it? So you got more.
+00:00:46 Speaker 2
+Uninfected females and.
+00:00:48 Speaker 4
+More infected males?
+00:00:49 Speaker 2
+No, a lot of students.
+00:00:51 Speaker 4
+That's an interesting, You are in R and D. Is section eight, like do they say like I hear people people on Facebook deals or no?
+00:00:58 Speaker 2
+No, it's just being deal, but it's just we tend to say you get.
+00:01:01 Speaker 4
+The like.
+00:01:03 Speaker 2
+No holes, you know.
+00:01:04 Speaker 3
+Yeah, they're not carrying for the patch as well as others might. Yeah,
+00:01:07 Speaker 2
+And because it's like a different, so you still have to get your COBs, but then you also have to get inspection section eight info. So there's like more strict. Yeah. So but it's not bad as long as you fix the holes for real.
+00:01:24 Speaker 2
+So, the.
+00:01:44 Speaker 4
+Uninfected Males are all from here.
+00:01:47 Speaker 2
+Most of the affected ones,
+00:01:49 Speaker 4
+Infected ones are from her.
+00:01:50 Speaker 2
+It's just one of the females.
+00:01:53 Speaker 4
+So that they're regions early in the morning,
+00:01:54 Speaker 2
+Late at night. Like I don't even know what she's doing.
+00:01:56 Speaker 4
+They're kind of from all over except for one from Alaska.
+00:01:58 Speaker 2
+Why is she up.
+00:02:00 Speaker 4
+At five thirty calling about some weird.
+00:02:03 Speaker 2
+Non- uninfected email from Grok?
+00:02:06 Speaker 4
+And only two from Grok.
+00:02:08 Speaker 2
+This was worse. He was like lost it on her.
+00:02:11 Speaker 4
+She's like, do you smell me yet baby? My dog smells it because why? And then the females, mostly are from. It starts with D. I can't read that one.
+00:02:23 Speaker 4
+And Then I'm going to try to go back and see if that's not what we know either. From region D, uh, It's mostly the affected in uh uninfected and infected females are mostly from region D. And the males is mostly from region G. Yeah,
+00:02:37 Speaker 2
+Every day. Mhm.
+00:02:39 Speaker 4
+Um, I get like a lot of random stuff like, Between regions, we're looking at the data. So if you scroll back up to our males, just looking at sample numbers, It's not enough for for these rich people that didn't know how to light a gas grill. They told me they broke down and I drove out there, Bought a new propane tank and brought it in before I had any propane there. And I get there and they just Didn't turn it on. So you could basically do the, you know, I'm like, I just drove two hours round trip for a gene expression. He gets the same thing.
+00:03:12 Speaker 2
+It's like, Or I'll just don't worry about it. It's not plugged in. Your light is not on.
+00:03:17 Speaker 4
+So, they have at least three of each region there and get three from broad and then four from region D. And the rest of them are G.
+00:03:24 Speaker 2
+Nothing or like showering,
+00:03:25 Speaker 4
+They don't know how to use showers for a while or showers leaking?
+00:03:29 Speaker 2
+No, you don't have a shower curtain in, Um, Kamaia and Javen. I don't know if they were messing around, but Pickett dropped off Javen at the office after midnight again. That was like two days in a row. Kamaia's transitioning from special and him and Kamaia had like a back and forth thing. The past two days, so that's probably why she wrote it. Yeah, okay.
+00:03:50 Speaker 4
+Yeah, I would say the one male that was an outlier in terms of the evidence time is.
+00:03:54 Speaker 2
+Yeah They're messing around.
+00:03:56 Speaker 4
+Too much.
+00:03:56 Speaker 2
+Or something to explore that one out No.
+00:03:58 Speaker 3
+None of the grown ups saw what happened. But so we sent Kamaia back down to her room.
+00:04:06 Speaker 5
+I Didn't see anything. She sent me like, okay, cool. She sent me your on it too. Yeah,
+00:04:12 Speaker 4
+Definitely I'd start with the maps there and look at the if there's a regional comparison. Compare region B to D,
+00:04:18 Speaker 3
+B to G and D to G in.
+00:04:23 Speaker 4
+Pairwise comparisons and see if anything comes up. That could be a really awesome result right there. I guess that's what happened. Morning! Morning!
+00:04:32 Speaker 4
+Especially if there's something consistent. But then she laughed at it. But if they all wind up being there's no differences, great, I can do infected males, infected females, the regions don't really matter as much. Porsche in this story? Porsche would be a mom. Seem to go on that trip there. Yeah. That's.
+00:04:51 Speaker 2
+Actually pretty good idea and I'll take that as a separate here. Nothing? I don't know how are you doing? All right.
+00:04:58 Speaker 3
+Cool Do you have any questions? Use your office at ten. Yeah,
+00:05:04 Speaker 2
+I am in a meeting at ten down in the second area.
+00:05:06 Speaker 3
+What are you doing with that rolly thing right now? Actually, Going to go watch fifth grade, try to get from A to B without going to C.
+00:05:14 Speaker 6
+Ah, got it. Hi Doctor Um Hello.
+00:05:19 Speaker 4
+So what's your group got? What does your group have?
+00:05:24 Speaker 6
+Okay So what we got is one second beep beep beep beep beep, Um, so we did two different runs of feature counts. And I don't know, Dakota did the first run, so I don't know necessarily the commands and the parameters. But I know that basically what I did is is the difference between the two runs is the first one we just ran with our GTF file unedited. But because our GTF file was taken from RefSeq, some of some of the entries.
+00:05:59 Speaker 6
+Within the gtf file just had transcript IDs and didn't have gene IDs. And so we were getting a lot of ambiguities. As I'm sure you can see. So,
+00:06:10 Speaker 4
+Ambiguous in terms of where they were aligning? Yeah. Okay, But those areas with gene IDs instead of a name should still have definite locations?
+00:06:25 Speaker 3
+I believe there's some sort of path missing here.
+00:06:27 Speaker 6
+Didn't have gene IDs, they just had transcript IDs.
+00:06:30 Speaker 4
+That's okay.
+00:06:31 Speaker 6
+Transcript IDs are fine. Um, last Friday. So I mean, I don't I don't know how Dakota was specifying this. I know that I did a second run where I excluded all of those that didn't have gene ID that didn't have gene IDs. And we had a lot more ambiguity as a result, but i don't know i don't know what dakota was going for when she ran her original command or how she was specified.
+00:06:56 Speaker 4
+I think that's less ambiguity there. Yeah,
+00:07:00 Speaker 6
+A lot less. Well, let's see how. Like, we're going from the millions into the hundreds of thousands or even the tens of thousands. But also, obviously, you're cutting a lot of you're cutting a lot ofum stuff out period just because you're dealing with a smaller data set. Have you done a comparison of the command lines you were running? I I I don't know what Dakota's command was, Because we ran this last night and we ran this in the back. Okay,
+00:07:30 Speaker 4
+I would compare your commands. Okay,
+00:07:34 Speaker 7
+Uh, I can pull mine up.
+00:07:36 Speaker 4
+Cool. Yeah, if you can toss it in chat, if you both toss it in chat, we can I can do a side by side comparison here. Cool.
+00:07:47 Speaker 6
+Hang on, I'm going to stop the share first so I can my screen. Yeah.
+00:08:20 Speaker 4
+These Are big ones. Okay,
+00:08:21 Speaker 6
+Let's see if I can the reason for the differences. How the BAM files are named were just due to us moving directories and naming them different things.
+00:08:28 Speaker 4
+Okay, it's all the same BAM files though.
+00:08:30 Speaker 6
+It's all sorted by coordinates. It's just the naming conventions are different because we were moving things around and we were being lazy.
+00:08:38 Speaker 4
+Okay, in B, all the rest, your etcetera etcetera is just other BAM files, correct? Yes. Okay.
+00:08:44 Speaker 6
+Well I meant to cut out a lot of the BAM files and put, etcetera, etcetera. Instead. But I didn't and I just put it at the end. So just pretend that's not there.
+00:08:54 Speaker 4
+Okay, I just wanted to understand what the et cetera was. It's just other names. Okay. All right, so the out file doesn't matter though. Uh Are those different annotation files?
+00:09:07 Speaker 6
+Yes, I I can put in what I used to filter as well. I just excluded every missense mutation that had that didn't have an associated gene. Id. So I can toss that in chat as well. Yeah,
+00:09:21 Speaker 4
+I'm kind of curious it was.
+00:09:26 Speaker 4
+That's what I used to do. That.
+00:09:44 Speaker 4
+But Obviously I didn't want to get rid of it. Oh, wait a minute. Uh, B, share screen again and put your children before us. Okay.
+00:10:06 Speaker 3
+Yeah, One's gonna be transcript ID, the other'll be gene ID.
+00:10:22 Speaker 4
+Oh, let's see what other people have had for this. So, being verified that I'm a human. Okay. Here we go.
+00:10:40 Speaker 4
+Oh! Sometimes that difference can be when you have overlapping genes on different strands.
+00:10:54 Speaker 4
+If They don't have the correct orientation of those genes, It may think they're both going the same direction on the same strand and overlapping with a NOD. Okay. I agree. That's one way. Yeah,
+00:11:15 Speaker 3
+Yeah, yeah.
+00:11:21 Speaker 6
+My own personal clarification. What's the difference between no features? I understand what multi- and I understand what ambiguity mean. I don't understand what no features means. There's something that's not.
+00:11:36 Speaker 4
+Mapped to something that's in the GTF file. It's a locus that's not among those in the GTF file. Okay, So I am worried about this ambiguity one, though there are some differences in your. Yeah. Followed the rules and bylaws.
+00:11:53 Speaker 6
+I didn't look at Dakota's in detail. I don't know if Dakota's specifies this may date to this, this, this. No, Dakota's must have something there. The original timeline was kosher.
+00:12:02 Speaker 3
+Brian changed the timeline without telling me. I saw the new timeline and shame on me,
+00:12:10 Speaker 4
+I assumed I'm like he checked with me the first to make sure it was cool. Then he changed it. There's no way he would have changed it unless he knew for sure that the second one is still cool. Now, I do see one who's got the hyphen s. I believe that's a strandedness one, but I'm not seeing it in the documentation here.
+00:12:35 Speaker 3
+But exactly well, we're going to do a job so they're going to come back.
+00:12:39 Speaker 4
+That's one difference. And that could be It could be the particular strandedness of children. It's just because that's related to what the bylaws state. You have to have five days between the executive or uh assembly endorsing or not voting on endorsing the contract. And what could happen is, what could happen. Yeah, if you can pull up what that one is.
+00:13:16 Speaker 4
+Somebody who votes against it. Let's say it's the let's say we had a vote in the Senate, passed that's weird. Nine hundred to one hundred, right? Whatever passed overwhelming. One of those hundred people is going to look in the bylaws and get a lawyer or whatever, and figure out, you know, who has to go on time and say, this was an improper process because you didn't make five minutes.
+00:13:41 Speaker 6
+So we.
+00:13:43 Speaker 4
+Actually have to find.
+00:14:07 Speaker 4
+I think that might be the difference. It may not be the filter you're talking about. Anomaly. I'm going to show you.
+00:14:12 Speaker 6
+The first line of both annotation files.
+00:14:14 Speaker 4
+It's a cognate. Sure, yeah, look at the first 10 lines of each.
+00:14:17 Speaker 3
+Okay, that's why he thought I would pick it up, yeah?
+00:14:21 Speaker 4
+You can actually do the head command on each. No, I know, I just. Oh there's a trachy megas coming out. You do a head-10, On Both on each on both Yeah Yeah You know how I thought his name was trach because. Because they'll actually just yeah, I couldn't remember if I told that. Yeah, yeah, you still have the NC. So.
+00:14:52 Speaker 3
+It's definitely stranded. Uh, what's the default? Wait, I gotta pick up out there again, and then he's gonna take the balls off and get them all.
+00:15:10 Speaker 6
+So I could check in because she's because I,
+00:15:18 Speaker 3
+Yeah. So he wanted one hundred and twenty five. That's what he's charging me for both seats, which is perfectly reasonable except.
+00:15:29 Speaker 5
+That I could get new chairs.
+00:15:33 Speaker 6
+I mean, we could try running again with both but specifying.
+00:15:36 Speaker 4
+Stranded and see what happens. Yeah, if you really want to be safe, run it with both.
+00:15:46 Speaker 6
+Okay, I can do that.
+00:15:48 Speaker 4
+If you do, I'd say I don't like the idea of leaving out these transcripts that don't have accession numbers because there are transcripts where they're not defined;. They're not in the databases. Those are real genes. And we should probably be looking at those two if we can.
+00:16:03 Speaker 6
+Yeah. Okay. Cool. So do you want me to just abandon the filtered GTF file?
+00:16:18 Speaker 4
+Not yet, I'd say go ahead and try it and see if Try.
+00:16:21 Speaker 6
+It specifying zero, but in an ideal world we go ahead with the entire dataset that says.
+00:16:27 Speaker 4
+We Should be using all of them, but so I do worry about the high ambiguous.
+00:16:56 Speaker 4
+I'm looking through to see if anyone else has had something like this. Right now I'm in BioStars, on a particular thread. So I'm assuming other groups are going to be seeing this too, Which is part of the reason I'm spending this time on it, because other groups are probably going to have to worry about this, too.
+00:17:25 Speaker 3
+I do not see the problem. Oh man.
+00:17:34 Speaker 4
+Yeah, I'd say go ahead and try to run that with the stringency set to zero. Highly very rarely surprised on B set just.
+00:17:43 Speaker 6
+Because I also I don't know if this would make a difference. But I also specified that are we both supposed to find paired on, but I also specified.
+00:18:01 Speaker 4
+Count. So, tell you what, let's try a reciprocal experiment. You try out with the straight of the zero. Dakota, you try adding in the count rate and see what happens to those counts. And otherwise keep taking them out once you come up with one that works, and hopefully it'll help. Transcripts. Then yeah, Uh then the whole group can go ahead and start running whichever uh set of parameters. Okay. And then from there, and then from there everything's good, we should be good for UC 2. Yeah, if we get a good consistent result and we're not missing any genes, yeah I think that'd be perfect. Do you want me to do?
+00:18:44 Speaker 1
+You want me to add in the count report? Andum do you want me to add? Or do you want me to change theum scan of this to. From unstarted to started.
+00:18:53 Speaker 4
+So, no Dakota, You keep yours as is, but add in what I just put into chat that count refers. Just add that parameter and see if that makes a difference. And, then he's going to keep the same code except for adding new string, and we'll see what happens. We'll do a comparison. Same other question, this would affect all groups. Any group that's using DC 2 will want to know this so yeah.
+00:19:21 Speaker 3
+So be paying attention. When there are other groups that are getting ahead of you, you want to make sure you see what they're doing. All right, thank you folks. Cool.
+00:20:07 Speaker 7
+Alright, Can you see it? It's a little small on the left side. Yes, I have it open different tabs. So,
+00:20:17 Speaker 4
+We might have to ask you to move around a little bit, so we can see what's in there.
+00:20:19 Speaker 7
+I will. So the past week we mostly worked on doing the DC analysis. We made some progress with that. Specifically, we got to run. Last week, we got feature counts prepared and the back for everything. Metadata already. Today we're doing the part to actually analyze that. I might have dropped the link for this in your but I'm especially after this last one that I want you guys to suggest. Did you guys do the home sweep? Today, I want you guys to try out the next.
+00:21:12 Speaker 5
+Iteration of that lesson, which is called Good Game. And it has uh.
+00:21:17 Speaker 7
+Is that XXX? Yeah, but the plots are fun to look at. This is uh where's my personal favorite plot?
+00:21:24 Speaker 3
+Um so the next iteration no,
+00:21:28 Speaker 7
+It's not that one. It's still pretty. Yeah, it's pretty. It's you guys can pick which one is my favorite plot. Hi Zach!
+00:21:38 Speaker 3
+Hello! Minecraft editing here! Thank you! That's a you! That's me!
+00:21:44 Speaker 5
+I'm not going to start talking to you guys. I mean, what like what is this?
+00:21:48 Speaker 7
+You can see the difference between subjects for healthy. I get I do three lists, and then you're going to go play and chat whatever you want. Our samples had multiple conditions. So then it here you can see it also is looking at these cell conditions also allowum the source of interest.
+00:22:06 Speaker 4
+Was just the sample versus don't scroll good game right here. Yeah, okay. This is just like home sweet, but it's it's like the next level here, right? So I want you to click on this and do it when it gives you a certificate. Take a screenshot of it at the end of class, and then show you how to take that screenshot, that certificate and upload it to Moodle. I'm going to show me that assignment. Sometimes, what we do with these maps is we do a two - dimensional uh for analysis. See the.
+00:22:40 Speaker 4
+Genes on one side and based on their profiles on the other. I'm not asking you to do this, but it's a very common thing that happens in these subgroups for certain. Okay, we'll get to work. This a really good example. I like this example a lot. I agree, this a good figure that sometimes if you do that two - dimensional clustering analysis, You'll actually see these samples start to group together, and you'll find sub- samples within there where you can say well. Is there something different with this subgroup? Yes, there's something different. You're showing a different expression here. So very cool. Okay, you'll see some differences over this group here. Like to actually. This whole group here, but definitely that one down there. This because this trauma. It's not sepsis. Oh! Interesting! That's cool! Oh! I see it now! I see the colors in the brain now! Yeah.
+00:23:39 Speaker 4
+Very cool. I'm sure, some of the other groups will want to ask you questions about it later. Yeah,
+00:23:47 Speaker 7
+It was, it was, it was not tricky. Oh thank you. That's interesting is, this is, uh, another one. Oh, there we go that. Uh, this also has a social cues based off of their gene expression. So. You can see this one sample, SRR 4792, which if we want to look at exactly what it is, it's sepsis. It's day four, over 64 and female. But that one is really distant from all of the other samples. Interestingly, um we've got like some sort of outlier or something going on here.
+00:24:30 Speaker 4
+So there might be a hint in those two samples. Yeah.
+00:24:37 Speaker 4
+Cool. What did you use to generate those figures? I like this one too. Um,
+00:24:40 Speaker 7
+This was Oh, this was all in R. Butum the tools I think you.
+00:24:49 Speaker 4
+Just can't play my You. Did you generate these? Or did someone else get these from someone else's article? Um,
+00:24:56 Speaker 7
+I mean it was a hodgepodge. Go ask your teacher. Yeah, I mean Okay Sorry, A lot of. That's so crazy.
+00:25:13 Speaker 4
+Wait wait wait wait wait. I'm here.
+00:25:22 Speaker 3
+For tea.
+00:25:29 Speaker 7
+Oh, that was sorry, that was uh, that was with yeah. And then we have a couple. Those are the most interesting plots, but we also have. I'm sorry. That's okay.
+00:25:47 Speaker 4
+If, you go back to the to this, the one where you have the two, so I was assuming that's not built into R by default. I was assuming it's a social package that you'd have to install and keep up to date, which is not a standard packaging library.
+00:26:02 Speaker 7
+No. But the infrastructure, it's not you have to like load it.
+00:26:06 Speaker 4
+You have to load it. Yeah. Yeah. Yes, I asked because a couple of folks were saying it's pretty hard. It's actually not as simple as to know which tools to pull down. So very nice tool,
+00:26:17 Speaker 7
+But with CPAC, It's in there almost automatically like actually do the uh heuristic on the uh sample side, I think that would be super easy too, Of course, now that I said it's easy, it's probably going to be super hard. So I'll tell you what. If you can do it quick, don't take too much time.
+00:26:34 Speaker 4
+If you do it quick time, That'd be awesome, because then we can definitely look at this subset of the data and see what's going on with these individuals here and what is up with this subset because they're a lot larger than uh just very different from the other six students. So very cool.
+00:26:57 Speaker 7
+And then other plots arevolcano. So, you know,
+00:27:05 Speaker 4
+Okay. So I always have to ask this question. What else do thevolcano plots show? And why did we choose them?
+00:27:12 Speaker 7
+It is one for log of change and for adjusted p value, it is I'm pretty sure it's 0. 05 butum, I can't remember for it justice, But the reason why we did for one or one and negative one on each side is because if it's in that gray area, it's not that if it's not enough to be considered. And then for that I think you can make a.
+00:27:43 Speaker 4
+That does say definitely include. That looks pretty interesting to me. That's got a really light yellow. Very clear.
+00:27:52 Speaker 7
+Why shouldn't that be included?
+00:27:56 Speaker 7
+I mean, I don't know. It's just how it is. Yeah,
+00:27:59 Speaker 4
+I like to clean this out actually. I like to clean those out between calls. Yeah, you can't just adjust. I understand here. Uh, You can't adjust it, but a lot of people would just disregard that point and say, well, if it's below this cutoff, then it must not be useful to me. And all these cutoffs are arbitrary and actually p values in general are arbitrary, just so everyone's clear on that. We say that we'll use a p- value of 0. 05 as significance, but it's an arbitrary choice. There's no reason why you couldn't say a p- value of 0. 1. Why not? In general, things work better with a cutoff p- value of 0. 5 unless you have to adjust for multiple testing. Now are these p- values orq- values or something else?
+00:28:47 Speaker 7
+They're adjusted p- values, so. Adjusted. There we go, there we go. There's different ways to adjust them.
+00:28:56 Speaker 4
+Um. Yeah, usually a point of five is okay to put in the system. What'sum, in this case because it's about ten to the minus three, you know where that is on the graph. This is a log scale. I would say that point was probably very interesting for me. I wanted to see. Uh in fact, it's not really an issue as we move on. I'm not a big fan of the log fold change in this situation because you actually have a small change in fold expression, which could have a big impact on downstream effects. Let's say you're dealing with a transcription factor that's setting off a cascade of gene expression. Gene products and things where all it takes is a small change in the expression of one protein to get big.
+00:29:46 Speaker 4
+A factory trigger a cascade of gene expression. Do they talk about that molecular stuff? I think so, it's been so long. Yeah, okay. Uh signaling cascades are very important. They often get they do. Nope, do awesome often signaling cascades get. Um yeah, you'll sometimes use transcription factors, and we'll learn more about that uh because you'll use a small change in gene expression to then actually. Wait, he doesn't have a. You're some guaranteed. Some of these are going to be false positives if you absolutely. I think it's the kitchen. It's just that I'm not a big fan of a lot of gene changes that just That's just my opinion. I don't have different numbers tell you different things. One way you can get around. This is you can look at shared function among these genes. This kind of gets into some downstream stuff, some of the groups are going to have time to work on.
+00:30:44 Speaker 4
+You can look at the shared function which all the genes do. Look down here, which are pathways. So if you look across, say metabolic pathways, you might look at the KEGG pathway. You can make a KEGG pathway chart showing what everybody else has that is worth looking up. Kegg pathways in the net It's a little different than gene ontology ;. It's looking at which gene, which proteins are involved in metabolic pathways like purine synthesis. What you could do is you would actually look at A heat map version of that pathway showing which proteins were up or down regulated. And, you can actually find compounds that change gene expression that can control these pathways. Uh, is a way of avoiding even needing knockouts. So, there's some really cool stuff we can do downstream to look at the myriad of ways different genes fit in relation to each other. And not picking on your group, I just whenever I see these log fold changes, I always like to point out that don't ignore the.
+00:31:44 Speaker 4
+Yeah. It's in here.
+00:32:42 Speaker 4
+They're mirror images. It's a little different. And that could just be related to the gene expression in here. It could be your particular environmental conditions. Sorry, you opened up the door, I had to talk about that. You guys have some excellent figures there. One thing I would recommend that you do because we're going along so far. Start looking into the possibility that we need to have some sort of gene expression analysis. A little different. Um, yeah, And I actually did a little work with gene ontology analysis back when I was getting. Uh getting started. Um, I think in this.
+00:33:32 Speaker 3
+Case let's see what.
+00:33:39 Speaker 4
+You're talking about here. I mean, you don't have to do it. This is an actually cool thing, but it could be really useful to your group to see this. If you do an analysis of the data. And don't pay for anything. You might wind up finding some ways to analyze your data for it. Please don't pay for anything in this class, But there's some ways you can do pathway analysis free to see if there are any particular pathways that light up or that are associated with gene expression differences.
+00:34:10 Speaker 4
+It doesn't mean every gene is a major jump. Some of the genes are going to only need a little increase in that protein to make a big difference in that metabolic pathway. Usually the genes that are the greater bottlenecks, the ones where you need more of that protein to carry the metabolic pathway, you'll see bigger differences in gene expression. Things that are not the bottleneck, you may still see a slight increase. It's kind of cool to see how these things work together.
+00:34:39 Speaker 3
+Cool. All right,
+00:34:43 Speaker 4
+Does your group have any questions? Yeah, give me out. Give me out. Do you need too much to think about?
+00:34:58 Speaker 4
+Okay, Excellent. All right, next up we gotzebrafish.
+00:35:07 Speaker 1
+I can't come to the hearing. Okay, cool. Um, just waiting for Peter to start sharing his screen. But um, We did a couple of things that also kind of resulted in opening a bunch of options for analysis. So um, there we go. Okay. So so what we first did was um just to remind everyone, Issue where our data sets used two instruments to um do all the RNA sequencing. So, what we ended up noticing was that the PC counts differed between the two instruments. And that was like the first kind of like issue we saw, and we were concerned it would create more issues further down the line. So, we decided to run a alignment tool and just kind of see how the data differed between the two um instruments. Um, and we did end up finding that.
+00:36:06 Speaker 1
+So, it's in this first graph here. We're looking at a good self-mapping for certain digits. And the difference between the two instruments is slight, but it's not nothing. So that has us believing that there is a significant difference between both. So we're A little hesitant to proceed with um, differential expression analysis while mixing up instruments. So um, we were looking at the individual like which um reads were associated with instruments. And technically we could do a within instrument analysis.
+00:36:56 Speaker 1
+However, for one of them, it's a comparison between no surgery and then surgery. Where in the post-surgery, no um nothing was actually cut. So in theory, there shouldn't actually really be a difference in like there shouldn't have been a reaction that should have occurred. And I believe that was associated in NovaSeq X. So then the data associated with NovaSeq 6000 There is more of a difference where it's just like the regular condition and then one that did actually have a difference. So we were considering proceeding with that. However, that does kind of limit the analysis we're doing. There's just less to work with because we're essentially cutting out half our dataset. So he ended up looking into that project a little more, and we found it actually has two datasets associated with it. And that second dataset could be something we proceed with because.
+00:37:55 Speaker 1
+There's twenty samples and all twenty samples were drawn upon one instrument. And I can let Sam talk about that.
+00:38:06 Speaker 5
+So yeah, so the second data set, the one with like transfer, um actually now I don't even know if we should like share it, butum we're gonna look at right now. Butum the experimental design we looked at it and it basically looks at, It's four groups of five, and it looks at. They crushed a nerve. They crushed a nerve in all like ten mice, but um ten of them have the conditional knocked out, and then some of them are just wild type, And then uh oh, they're specifically looking at the left and right leg within the mouse. So it's actually looking at all movements.
+00:38:55 Speaker 5
+One more detail that um he was talking about is that um we did end up subsetting or we might subset with the six thousand um colov six, six thousand. The only thing is that it's um the comparison would be between wild type and knockout. However, It would be um it would be crushed nerve against uh no surgery at all. So, the caveat with that is that the difference in gene expression wouldn't be due to uh be due to stress of the surgery or the actual crushed nerve. Like we wouldn't be able to definitely say that because um the wild type like doesn't even have surgery on it. But yeah. So like the biggest debate right now is like should we go with this? Uh novoseq six.
+00:39:53 Speaker 5
+Six thousand with that, what I just mentioned, um which we won't really get any like clear results. Um or we go with the new data set, but that'll push us back a little more. Um, but it might give us more distinct results that might be easier to implement. Um yeah, that's pretty much the gist.
+00:40:23 Speaker 4
+Well, say is uh this group's actually. Background noise, sorry. Um, this group is doing a really good job of looking at the diversity of approaches. Uh as we're looking through the devil's conditions and the responses. Uh.
+00:40:43 Speaker 8
+So you are. Yeah, well I was going to ask you a question but you finished. That's weird okay uh.
+00:40:49 Speaker 4
+So uh sorry I guess my drink what? You're doing a really good job in dealing with some issues about how we can do an apples to apples comparison. I think that is a real concern from what you're showing us with machines and samples and everything. So interesting.
+00:41:06 Speaker 8
+On thisvocational,
+00:41:08 Speaker 4
+It's very strategic. Yeah,
+00:41:10 Speaker 8
+That's what I was going to ask you because we were contemplating going with the, I forgot how to pronounce it. Yeah, Nova six thousand. And when we're looking at this, like you said, the volcano shape is weird. Even if we change the uh the pH judgment value to like something higher.
+00:41:50 Speaker 8
+Still, I mean, we could balance a little bit, But still, it doesn't look like the other ones that we have got in terms of significance. So this might be a change.
+00:42:05 Speaker 4
+But the other times I've seenvolcano plots that are biased this way were with cases of severe infection. So the COVID-19 samples had some severe disease. Have the same duration. These can be applied to various issues in a lot of different conditions in cells. Um, so you're seeing about a shift here on thevolcano plot. You know, probably from the surgery repair. Uh, Previous group was looking at uh seven,
+00:42:38 Speaker 8
+Oh and seeing it more of a clearance on the body. Yeah, yeah sorry I was just, This the one for the yeah. This the one for this. Uh no, no, since that's six thousand. Um okay. So this what I meant. Uh I was confused because I was looking for um the the you like the V shape and I couldn't see it. So so this the one uh that, that correspond to the other one.
+00:43:12 Speaker 4
+So, I can tell you so those grooves were formed by the very large normal faults. So as you're looking at your volcano plots, what do you think is going on with the planes going on here? Why are they significant? There's a big fault chain through here. And we can say the same thing about over on this side. What do you think's different on those compared to these?
+00:43:43 Speaker 3
+Oh yeah, hold it. This is open to anybody who wants to answer.
+00:43:53 Speaker 4
+Anybody in the room? Oh no, scroll. There we go, thank you. Anyone have any ideas? So yeah, these ones that are circled. They have a very high pool change. You're talking, oh, what is that? Probably six or seven already. And they're about four and higher on the left. Okay, they have a large pool change. Aren't they significant? We see a big difference in the total number of cards on the two sides on the case versus control. Are they not statistically significant?
+00:44:40 Speaker 3
+Yeah, I.
+00:44:52 Speaker 8
+Was no, I would just I would just gonna say that based on the pattern it looks like. Uh we still have a red one over there, right on top. I was gonna say it looks like based on the placement uh on the and the x- axis.
+00:45:09 Speaker 4
+So, but they include words that are not significant. Why aren't they significant? It's a simple process. Just.
+00:45:23 Speaker 4
+Because You guys show up and whiz the peanut to the right, whoops, Lily says" not" in sandals. You're right about" not" being used to indicate a low quantity of something, but Charlotte told you the same thing.
+00:45:37 Speaker 4
+Yeah. Although actually if you increase your sampling size it would probably work, but usually it's something other than the sample size. It's something that's being sampled. It's close. Not the actual gene, Sam is really close. Low quantity of fragments, Sam has two fragments. What my teammate is hitting my balloon? Typically, if you're seeing things at the extremes there where it's like, "don't change" but it's not significant, usually it's because you have very few transcripts. You might be dealing with a dozen. I'm not going to ask anybody to go and look at those ones here today. Absolutely no time. I'd recommend taking a look trying to figure out which genes those are and just take a peek and see why they're there. Just for your education because you'd never do that for publication.
+00:46:30 Speaker 4
+It's good to see that. I will say, if you had more samples, You might be able to see that the speakers are most likely not the same. However, It would take an awful lot of samples and sample size to do a lot of damn money to get those samples in order to get that where the p- value becomes significant. Sometimes you can improve this by increasing sequence depth. That can be a limitation. Although again, that comes with the cost of losing money. We're using our money to die. We make some trade-offs, and that's one thing we're seeing consistently. We make some trade-offs when we do our RISC experiments. Some genes will not show significance even though they probably should have. I just want to point that out again, : Just because something else is not significant, doesn't mean.
+00:47:31 Speaker 4
+Then it isn't significant. It just means with this statistical test, it wasn't significant. You may not have sufficient power to resolve this. If you haven't seen power, it's a very important one in biology. Okay, so Sam's got a question: which data set to proceed with? Uh did you get anywhere with the uh the multiQC stuff we talked about?
+00:47:57 Speaker 8
+Uh for the new data.
+00:48:01 Speaker 8
+Yeah, We got to right now the alignment is running. We got the we haven't even looked at it. Uh, it's just the QC is yeah, we have uh, We got the multi QCum prior to trimming and post trimming uh after applying the fastp. Okay.
+00:48:40 Speaker 4
+So, If I remember correctly, we were looking at a single machine.
+00:48:51 Speaker 1
+I mean, we were looking at it. Like I said, we're still doing alignments, But I cannot see a GC content issue when I was just running like this initial run of FastQC. Then after trimming, there's no GC content issue. I'm fairly confident that you're right that it's a sort of data quality issue. So because there's no GC content issue, Because I looked at it before, and he was like, um there was a lot of overrepresented sequences, but i'm fairly confident those are just adapters, which need to get removed with fastp.
+00:49:22 Speaker 1
+So, there's none of those initial issues we saw when we were dealing with the with the data set that we've been talking first with the 26 samples. So there is no GC content issue. I think it was just to see if there was any initial quality control issues that would immediately be allow us to say, no, we're not going to deal with the new data set. We're just going to stick with the original one and just throw.
+00:50:05 Speaker 4
+I'm Not sure. What just happened?
+00:50:18 Speaker 4
+Yeah.
+00:50:49 Speaker 4
+So, what did you say happened to yours when you added the straitedness? Nothing happened. No difference. Okay.
+00:51:01 Speaker 6
+I can show you because I have the original on my phone.
+00:51:06 Speaker 4
+Yeah, I want to see what the total ambiguous counts are and see if there are any problems or another problem, probably in the other two cases. So this one was probably. Originally, which had about twenty six point six million in the first. So, we're all about that. It's okay. And, then the second one.
+00:51:29 Speaker 3
+Is don't use your password or don't click on links. What was this one?
+00:51:43 Speaker 4
+Oh, but also you're just going to be having the assigned text. Between the code is first, so in this exercise, second. Is the only difference your annotation files? Yes. Well, and what you told us to add. Right, but when you added those in, You're basically bringing them both into alignment because you're adding what the other was missing. Correct? Are you're adding it was missing from total? So Dakota had.
+00:52:41 Speaker 4
+So the only difference then is the annotation. So then the question is, why is the full view different from filtered? Well, I can go back to what filtered is. Some of these hypothetical transcripts are overlapping with existing transcripts that could do that. With known genes. So if you have, let's say there's a GP6 gene, I don't remember if there is or not. If GP6 is a real gene in one of the six species. We're sequencing organisms, but if some of these hypothetical transcripts overlap with that, it might create them as being ambiguous without another gene to map it to. Um.
+00:53:34 Speaker 4
+The reason you could get something like that is they might be putting transcript on a different transcript. It might be the same gene with a different start site. So, we do sometimes see this where the annotation files are missing upstream or downstream exons. Partly that can be an artifact of the RNA, of whatever sequencing method you're using to sequence transcripts. If you did a poly-A tail based, it's very common to miss.
+00:54:05 Speaker 4
+Upstream exons. Five prime exons. If you're doing something that starts in the middle, it's not uncommon to miss the 5 prime ends. Um, sometimes you're also dealing with isoforms in those transcript files. If the isoforms are listed as separate genes, all of a sudden they're overlapping each other, right? And that creates some of that ambiguity about what's going on. So.
+00:54:33 Speaker 3
+I'm just going to. I'm trying for now. Yeah, that's the computer's. You're turning it into? Turn it into or just? The name of the town comes from the river.

@@ -1,0 +1,296 @@
+00:00:55 Speaker 1
+How's everybody doing there?
+00:01:01 Speaker 2
+Got one thumbs up. A few more, there we go.
+00:01:15 Speaker 2
+All Right, we're still missing three people I believe.
+00:01:36 Speaker 2
+But We will pull up the first paper. Let's see, here we go. Get ready to to run with things. Okay. All right, good morning, thank you for your understanding. Um, For having to switch the papers back and forth. That was not my intention. Um, But today, I just want to go through the two papers uh as best we can. Then we'll come back to class on Wednesday. I should be good by then. So, uh let's start with that first paper, The Variant Callers: What is variant detection software doing?
+00:02:28 Speaker 2
+Anybody can answer. I see smiles there. If you know the answer, go for it.
+00:02:36 Speaker 4
+Um, basically you're trying to not specifically find the genome associated with a particular variant, But you're basically trying to find the collection of variants in general across a pool of genomes all sequenced at once.
+00:02:52 Speaker 2
+Yep. Yep, excellent. So, We want to figure out what is the nature of polymorphisms in the population. So this variants where there are multiple people have each allele. One way to do this to pool DNA. So you take a whole bunch of individuals, you pool equal concentrations of their DNA, and you can go ahead and sequence it and see what comes up. So if you have rare variants, meaning maybe one person has that allele.
+00:03:23 Speaker 2
+It'll probably get drowned out by the signal from everybody else. If you've got, you know, maybe a 5 or 10% frequency of one allele and the other ones, all the rest of the alleles, that it should actually start to show up that way. Variant callers look at the totality of the fragments that match a given location in the genome and try to make a statistical prediction of. Is this a sequencing error or is this a polymorphism? So, there's different ways to do it. Lots of different tools out there. There's been a common theme with a lot of the tools is that for a given analysis type, There are many tools out there and you got to pick which ones work best. And this paper is absolutely looking to see which ones work best under which conditions. All right.
+00:04:23 Speaker 2
+Let's see. Let's jump down to some of the figures and tables. Let's start with that first table. So what kind of things are we looking at here? How do you break this table down? Some of this is pretty easy. What's the easiest way to break this down?
+00:04:42 Speaker 4
+Variant color.
+00:04:44 Speaker 2
+Here is our variant colors running, yep. If you were to look at this table, okay, we got these five different variant colors we're testing, How are they breaking down this table? Is it subsetted?
+00:04:56 Speaker 4
+Yeah, by the number of samples in the pool.
+00:04:59 Speaker 2
+Yeah. So are we sampling four individuals, eight, 16 and so on all the way to 32? So they're doing a doubling each way, power of two. So one reason you might want to do that is again, as you deal with larger and larger number of individuals in the pool. Those rare variants may be harder and harder to see, which is okay in some ways. We'd like to know all the variation, But you can actually get some- -. Some of the signal can be swamped out for the rare alleles. You might lose them as you get larger and larger pool sizes. Also, as you get common ones, You may become more confident in them because now you have more fragments that you can look at. That may show the two alleles.
+00:05:49 Speaker 2
+If you think way back to the beginning of class, not today but in the beginning of the semester, that if you have a small number of fragments with a sequence, you might call it an error instead of a variant. You might be a little more confident if you got a larger pool size. All right, what are these different measures we're looking at along the top?
+00:06:23 Speaker 3
+So what do we have in there?
+00:06:27 Speaker 5
+I was going to say that the Sen is for sensitivity. The FP is for false positive rate. Uh, the BA is for balanced accuracy and the SD is for, I can't remember this one. Uh, it is, I can't remember.
+00:06:44 Speaker 2
+Oh it's okay. So we got all these different ways of measuring these tools.
+00:06:50 Speaker 4
+It's singleton detection.
+00:06:52 Speaker 2
+No single detection. Thank you. What is sensitivity? Any of you ever covered this in a stat class? Yeah. Yeah, what is it?
+00:07:08 Speaker 5
+Um, it's how much does it actually detect it, I guess. So, is it how react-- I'm trying to think of the best way to phrase it out of all the things that can be detected. Out of all the like true positives, how often does it actually detect those true positives?
+00:07:28 Speaker 2
+Pretty pretty good. I just put up in chat. So you're absolutely looking for the true positives. How often of all the things thatum that could be real, that would say be variation in this case, how often do we detect them as true positives?
+00:07:47 Speaker 2
+So, we're going to look at the rate of our true positives plus our false negatives. It was a polymorphism, but we incorrectly labeled it as no, it's not a polymorphism. So it's the true positive rate over the sum of those two. Good. All right, what are false positives? That's an easy one.
+00:08:12 Speaker 6
+I'll take the easy one. All right, there you go. False positives is basically just answering the question of like, what percentage of the program's predicted variants are actually wrong. So which one did we predict but get wrong? That's the false positive rate over the false negative rate.
+00:08:37 Speaker 2
+This percent, what is the percent of things that were uh, the ones that were detected as positive that were false? Yeah. Cool. Okay. Now, okay, we've seen sensitivity. There's one that's missing here. It's a common statistical concept. There's one that's missing.
+00:09:01 Speaker 2
+Specificity. What was that again? I mean specificity.
+00:09:05 Speaker 2
+Specificity. Specificity, good. What is that one?
+00:09:09 Speaker 4
+It's like the anti- sensitivity. Yeah.
+00:09:14 Speaker 2
+That's a fair way to put it. We're dealing with all these other things here. I'm going to put that one in chat. Excuse me. Um, What we're looking at is how often we called things a negative when it really was not variation divided by those true negatives plus the number of false positives, things that were called positive and really they were not variation. So out of all the things that are not variation, what fraction of them were true negatives? So they're both important measures, specificity and sensitivity. We do typically use both together as a way of measuring. It's one way of measuring how well the tool is performing or how well this analysis type is performing. So these are common kinds of measures. We'll often.
+00:10:12 Speaker 2
+Let me see if I can go back here. We'll look at these sorts of things, instead of going through the whole table and all the, how well they each perform individually, which is important. We might want to come back to that, but let's see. I want to go down to this sort of thing. Have any of you ever seen a ROC curve?
+00:10:42 Speaker 2
+What's what's uh this measuring?
+00:11:00 Speaker 2
+So We're looking at how well we're calling things compared to the sensitivity. Yeah, ideally. Where do you want to see your program's line if it's running? Perfectly fine. What would be the ideal line to have for this?
+00:11:27 Speaker 2
+Let Me see, I got to get a color that's not in there. We'll do orange. Ideally, you want your line, To be right up in that upper left-hand corner. So the line goes from, and I'm very poor at drawing this by hand, But from the origin, it goes straight up to 100 % sensitivity with no false positives. No matter what false positive rate you set, it's 100% sensitivity. Ideally you want to be way up in the upper left-hand corner. Those are better programs. The closer it is to that, the better it's performing.
+00:12:10 Speaker 2
+Basically, we're looking at a lot of times. There's a trade-off between how well our our program is performing in terms of sensitivity and how many false positives we're calling. There's usually a trade-off somewhere you want to minimize those trade-offs and some tools work better at that than others. So for this particular analysis, again, for this for an ROC, uh, we're going to look for ideally you want to be in that upper left - hand corner now. Let me get rid of my drawings there. Did any of them come out perfect? Real world says you'll never have anything that's perfect for a program. If you did, you've got way too simple a problem. Is there anything here that worked better than the others? Let me rephrase it the other way. Which ones worked the worst?
+00:13:10 Speaker 2
+Which tool had the had the worst performance? I.
+00:13:21 Speaker 5
+Mean from the graph it looks like purple did pretty poorly.
+00:13:24 Speaker 2
+Purple why purple? Purple is way over here. So if anyone's colorblind, I do apologize. So let's see if I can get a purple in here. The purple line, there's one there. There's one there, depending if we're looking at singletons or not. Singletons or SNPs. Which one did the did the worst?
+00:13:57 Speaker 4
+Lily said crisp in chat.
+00:13:59 Speaker 2
+Oh, I didn't see that. Thank you. I totally missed that. Thank you, yep. That is the green one. So the crisp ones are towards the lower right.
+00:14:08 Speaker 2
+Like here and here. Again, if you're in the upper left, that's your best. Lower right is your worst. So in this case, yeah Chris did the worst of the bunch. And yeah I'd say that's pretty conclusive on that. Now of the remaining ones, what do you think of those other three? The blue, the purple and the red?
+00:14:37 Speaker 2
+Ignoring the singletons, just looking at the SNPs.
+00:14:44 Speaker 4
+Probably low freak.
+00:14:46 Speaker 2
+Low freak, what about it?
+00:14:49 Speaker 4
+Well, A gap k has kind of you see other places in the paper because it's so memory intensive. It just can't run when you're pulling more than like ten or so samples. But also, just in terms of what we've been talking about, It's the closest to the top block when you're considering all the S and P's.
+00:15:09 Speaker 2
+You pulled out some information that we didn't have in the figure. Good. That GATK does run into some limitations as you get into larger, Larger these larger pool size was that it or was it yeah,
+00:15:21 Speaker 4
+It was larger pool size. It, just it took it took so long to run on the 16 and the 32 pooled samples that they just didn't record results. Yeah.
+00:15:31 Speaker 2
+Um, so it did effectively time out for that. So, and it had a lower curve of the two. Now, of the remaining two, low freak and sniffer. Is there a meaningful difference between the two? You got one squint. You kind of have to squint at it don't you? It is a little better for low freak, but is that necessarily the best program to use?
+00:16:01 Speaker 2
+Let's see, where did we have the timings? Uh. The.
+00:16:12 Speaker 4
+Timings are in table three on page nine.
+00:16:15 Speaker 2
+Thank you, there we go. So Sniffer and LoFreak, was there a big difference? In terms of how long it took per BAM file? Not really. However, what was different between them? Memory usage. Memory usage, yeah. Which one was better? Probably LoFreak.
+00:16:53 Speaker 2
+Yeah, LoFreak actually did better. Yeah, it's in the mega. What was that? Sorry.
+00:16:59 Speaker 6
+It just used a lot less, yeah.
+00:17:01 Speaker 2
+Yeah, I use a lot less. So now can we be sure? Looking at the way it's phrased for sniffer, it doesn't say how much was used. What does it say? I did. Yeah, so some programs you can specify how much RAM they're allowed to use. In this case, I'm interpreting that the sniffer they had to say, look, you can have four to eight gigabytes gigabits of RAM. Um, it may not have used all that. It may have used far less than it may have used less than low freak, but I don't think we really have that data from this paper, do we? Yeah. On the whole though, we know low freak was in that better portion, the upper left part of that curve. And they're at least comparable in terms of time. And maybe low freak is better, although we can't be sure in terms of memory. On the whole, yeah, it's looking like low freak is probably performing better when you put everything together.
+00:17:59 Speaker 2
+But you definitely want to go through and look at all the different components. It's actually not uncommon that you see things that are better performing, and they tend to take more time, memory or both. Now there's usually a tradeoff of the two. In this case it was pretty straightforward, which is good. Cool. All right, we do use varying colors quite a bit for different purposes. We've used this for human genetic diversity studies. You can use it for human origin studies to identify polymorphisms. We're looking at the relationships between different populations, which can actually have an impact on clinical decision-making. Depending on how common different variants are, Can affect decision - making for, say, epidemiology. If you're trying to figure out what is the best intervention for a population at risk of something.
+00:18:56 Speaker 2
+We'll often apply these datasets where we look at the nature of the variation, the relationship between populations. A classic example was, have you ever heard of the Pima? Anyone ever hear of the Pima?
+00:19:13 Speaker 4
+Can you spell that?
+00:19:15 Speaker 2
+P- I- M- A. Let's see. Nobody?
+00:19:24 Speaker 2
+So, there are actually two Pima populations. Both Native American populations, one in Mexico, one is I forget if it's Arizona or New Mexico. It's one of the two. I think it's Arizona but I'm not positive. I'm sorry no Oh man, I don't remember. But they're geographically actually separate They share language and they share cultural traditions.
+00:19:55 Speaker 2
+So what happened was that with the population in one of them, I think it was the one in, I want to say it was the one in the U S. They both had been living on reservations for many decades. One of the populations, A major road passed through and in a very short period of time, there's a very large increase in the incidence of diabetes. Because it was attributed to all these processed foods becoming readily available. So even though they share language, they share culture, they share diet, all of a sudden there's a perturbation, there's a change. All right. So one of these populations had a very negative adverse effect when this major road came through. The other population was about to have a road come through, and they actually went to a lab and said, look, we're little concerned here. We've seen this with our relatives.
+00:20:54 Speaker 2
+Elsewhere that they've had a very negative effect. How at risk are we? Are we truly related to them? How much are we related? And. So the lab actually went and took a look at genetic diversity in the two populations. And in this case, they're actually able to identify even though they shared language and culture, genetically they were fairly divergent. They're, obviously both still Native American populations based on the alleles that were found and their frequencies, but, The likelihood of them being at the same, Sharing a huge amount of alleles, including ones that increase risk for diabetes was very low. So wasn't as big a concern. Sometimes you can use that information, You can do sequencing like this as a way of identifying genetic diversity in population and looking at two populations and seeing how similar or different they are to assess the chance of risk. It's not a guarantee.
+00:21:51 Speaker 2
+And that was made very clear to the people that asked for this analysis, that we can't guarantee it, but here's what we're seeing. So that's a historical study that was done. Questions so far? Doing good? All right. Very powerful that we can do this on genome scales. In the past, we had to do this on smaller scales, maybe using 50 STRPs. Very small number of uh variants uh across the genome. Now we can look at whole genome, scale, relationships or differences between populations. It's very powerful. All right, let's jump to the next one. What was our next paper. The bees, the bees, all right, let's pull that up. Oops there we go.
+00:22:51 Speaker 2
+All right, so what are we looking at in the honeybees? What changed?
+00:23:08 Speaker 4
+They Were trying to figure out because the first time that they sequenced the honeybee genome, it was the genome size was significantly smaller than closely related insects, and so they wanted to kind of see. If we apply more modern tools, are our findings going to change at all? And, are we going to see more genes resembling the size that we would expect? Awesome.
+00:23:34 Speaker 2
+What was the punchline? Anybody can answer. Oh, I think Lily did. Genome upgrades are important. Absolutely. It made a difference, didn't it? Made a sizable difference. Let's jump through some of the stats they got from this. So even earlier sequencing of the genome, um let's see, The earlier ones were primarily Sanger with using BACs, kind of like we talked about early in the semester. Later on we're able to use more recent sequencing methods. Let's look at table table two.
+00:24:17 Speaker 2
+We'll ignore table one for now, although I can point out Solid. Have you ever seen that? I used to lecture about Solid in this class, but I don't anymore.
+00:24:26 Speaker 4
+I was about to ask. I thought it was interesting that they used 454, which like, I know that the paper is like 12 years old, but i'm just i was shocked. I was surprised that they didn't use Illumina So.
+00:24:37 Speaker 2
+This was at the tail end of four five four's major work Um, i think They've been sold to i believe it's Roche, Who was making the kits, and so you could still buy kits then. Um, and it may have been cheaper than aluminum at the moment, Or maybe they just had the machine because maybe they've had the machine for ten or fifteen years. Well, ten you wouldn't be fifteen; it wasn't that long. So presumably they had access to it and made it more affordable for them to just do four five four. Um, have you ever seen solid?
+00:25:14 Speaker 2
+It's worth looking up. It's an interesting approach, but one that didn't work as well. It's based on ligation instead of polymerization. It's kind of a neat one. Uh, it it's worth looking at. Uh, ABI, The company that did a lot of the Sanger sequencing machines came up with SOLiD as an alternative to these others. And it worked pretty well, but nowhere near as efficiently as 45 4 and Illumina So. Okay Table two though, if we look at these genomes. So correct me if I'm wrong, but 4.0 is the original and 4.5 is the updated? All right, what do you see for differences here? Let's just take the contigs parts. How much of an impact did it have in going with the newer technology?
+00:26:11 Speaker 4
+We have a lower number of contigs, but we also have a larger N 50. So it means that our contigs are longer overall.
+00:26:17 Speaker 2
+Also, we've a higher contiguity. Yeah, we're dealing with longer contigs. We need less contigs to get the same amount of sequencing done. So it's perfect. Uh there's less gaps in here basically I shouldn't say it's perfect. It's good A great result. You want to see that you want to see the number of contexts decrease The N 50 increase In the total bases It's. Pretty comparable. Good. So we're seeing higher contiguity. Awesome. Uh, let's see what else we got. Okay, so the getting away from the genome assembly in table two, what are we looking at table three? Let's see if somebody hasn't talked yet today. I can get out my dice if we need to roll for somebody.
+00:27:15 Speaker 3
+Let's see where's my dice. I got'em here. I know I do. Again. Ah, I got it.
+00:27:30 Speaker 2
+Did anybody volunteer yet? Oh no! Four, one, two, three. No you've already. Cody's already spoken. Six.
+00:27:51 Speaker 7
+Eliana. Listen, I I usually have a lot of things to say in this class. Just haven't yet.
+00:27:58 Speaker 2
+Okay. Okay. Do you see the difference in tables two and three though?
+00:28:06 Speaker 7
+Yeah, sure. I mean they have for one thing they're organized differently.
+00:28:16 Speaker 2
+They're organized differently. What is the overall nature of the data they're looking at? Remember, table two is genome sequence. Give me a big hint.
+00:28:25 Speaker 7
+Yeah, and table three is transcriptome.
+00:28:31 Speaker 2
+Perfect! There you go! That's all I'm looking for! Yeah, we're going from genome to transcriptome to see if there's a difference. All right! Oh, we got Sam in there just now. You're a little late Sam but you're absolutely correct! Looking at the transcript, uh transcription, uh uh, the transcripts between the two two different versions. So actually, Sam said you volunteered type slow, okay, fair enough, said you volunteered there. How did it? Look comparing 4. 0 to 4. 5 how's the new road looking?
+00:29:04 Speaker 8
+Um isn't it like a 50% increase 50%.
+00:29:09 Speaker 2
+Increase? Where are you seeing that? Um.
+00:29:16 Speaker 8
+Oh shoot. No, sorry. That's okay. I was looking atum, it's all 14, 000, 17, 000. I think I was thinking of the overall uh that's okay coverage. Wait sorry what was the question?
+00:29:33 Speaker 2
+So how is it looking between the two in terms of transcripts? Um.
+00:29:47 Speaker 8
+They look pretty pretty similar. Numbers are almost identical. I mean, there's like hundreds, maybe a couple hundred difference.
+00:30:06 Speaker 2
+So let's get somebody else in here. What are the different what are the different points we have in this table?
+00:30:25 Speaker 2
+Are You getting anxious to answer? I'm good. You're good. Oh, okay, okay. All right, what do we see along the left hand side?
+00:30:37 Speaker 4
+Share the wealth, you know.
+00:30:39 Speaker 2
+Ooh. What do we have on the left hand side?
+00:30:45 Speaker 6
+On the left hand side you see a bunch of different tissue types.
+00:30:47 Speaker 2
+Yeah, we're looking at different tissue types. Um,
+00:30:51 Speaker 6
+You can see. The amount of total acceptable transcripts. And then you see how much both of the genomes are catching and you're seeing like a point five percent increase, which while it's small on paper, that's a pretty big marginum when you're looking at how many of the genes are actually getting captured.
+00:31:14 Speaker 2
+Now interesting. So someone correct me on this is this. The total number of.
+00:31:22 Speaker 2
+Genes identified in each tissue.
+00:31:47 Speaker 6
+Would It be better to say alignments?
+00:31:51 Speaker 6
+Or transcripts.
+00:31:54 Speaker 2
+What's the difference between a transcript and a gene?
+00:32:02 Speaker 6
+Well, the gene is like a specific sequence, but a transcript is like uh RNA of the gene. Like okay.
+00:32:11 Speaker 2
+So there's a relationship between the two, right? Yeah.
+00:32:15 Speaker 4
+I mean the RNA should be a subset of the overallgenic sequence.
+00:32:21 Speaker 2
+The genetic sequence, yeah. Yeah. Oh, how do I get you there? Um. Think back to I think this was in the first couple of weeks. There was a concept. We talked about that you can pull out with RNA seq.
+00:32:53 Speaker 2
+I'm trying to think how to get you there without actually using the term, that'll give it away. It's tied to splicing, absolutely. The money's on the right track. What am I looking for? What's the term I'm looking for? It's related to splicing. Isoforms? Isoforms, yeah. We have different isoforms here. Now are they truly different genes or not? As I said before, It depends on who you ask. Some people consider them different genes, some of us say no, not really. Some of us say it kind of doesn't matter anyways. But basically you get different forms from some gene region, You get a differential splicing, creating different isoforms of the genes that may serve different purposes. Okay. Um.
+00:33:51 Speaker 2
+How many genes would you expect to see typically in a eukaryote? Just how many orders of magnitude.
+00:34:11 Speaker 2
+Okay, About how many genes are in the human genome?
+00:34:18 Speaker 4
+A nebulous question, but about 20, 000 or so.
+00:34:21 Speaker 2
+That's a good answer. It's in the tens of thousands, right? How many genes would you expect to find in honeybees? Would you expect tens of thousands, hundreds of thousands, thousands?
+00:34:32 Speaker 4
+Also tens of thousands.
+00:34:34 Speaker 2
+Probably also tens of thousands. That's a fairly typical eukaryotic rate. Um I don't know if they have it here. No this paper didn't have it. The earlier paper actually looked at it, There was an earlier paper. There we go. Actually, it is here. It's a little different, though. There was an earlier paper that actually had a better estimate of the number of genes in each species. Yeah, and it's not in this one at all. Nope. So.
+00:35:16 Speaker 2
+We're talking about a total of 130, 000. What is that talking about?
+00:35:27 Speaker 5
+Is that accounting for all of the different isoforms and that jazz because it couldn't be genes because that's way more genes than there would be genes.
+00:35:38 Speaker 2
+It's definitely it makes me nervous. It looks like there shouldn't be that many genes, absolutely. Now they may not all be isoforms. If you look here, you've got 19, 000. Here you got 18, 000. Are they necessarily all different isoforms?
+00:35:55 Speaker 4
+No, They could just be because I don't know if when they're summing it up if they're accounting for specifically uniquely expressed or just total expressed transcripts. So I would assume there's double counting at play like Hamani just suggested.
+00:36:11 Speaker 2
+Oh, I didn't see that. Nice. Yes, there is some double counting. Sorry, I can't watch both of them at the same time. I wish I had a good way to do that. I need to turn my head sideways or something. But yeah, there's going to be some double counting there. That total makes me nervous. There's no way we have 130,000 isoforms. You could have 40 or 50, 000 ; I'd be more likely to believe that once you take in- -, if you count isoforms of different genes, that's a possibility. But all right.
+00:36:44 Speaker 2
+Be careful with those transcript counts when you see things like this. If you start seeing, you know, five orders of magnitude, hundreds of thousands, makes you a little more suspicious. All right. Let's see where do we go? All right. In fact, there we go. We go to table four. So how many genes are predicted in the new one versus the old one? This gets back to Sam's answer.
+00:37:17 Speaker 2
+Sam, what did you say it was? The difference in the number of genes?
+00:37:20 Speaker 8
+I said 50% increase.
+00:37:22 Speaker 2
+Yeah, that's about what we have here, right? That's a big difference and it brings the honeybees closer to what we'd expect. Tens of thousands of genes. Not just 10, 000 but tens of thousands roughly are approaching that. Those-- let's see-- the average length has become a little closer to normal. We'd expect. It was fairly large to begin with, we may have missed some of the smaller genes before. Average number of exons decreased, again reading some of these smaller genes. The fraction of genes that. let's see. Are you starting to get some of these single-exon genes? There are some.
+00:38:14 Speaker 2
+You see that in any species, we're seeing more of that appearing. We're basically just getting a better representation of what we'd expect to see. In fact, if we go way down, go back to this figure here. All right, which ones are the honeybees?
+00:38:46 Speaker 4
+The Apis mellifera ones.
+00:38:49 Speaker 2
+Awesome, Apis. So we've got an older version and a newer version. Wait, no, something's wrong. What's with these versions?
+00:39:12 Speaker 2
+Why Does the newer version have less orthologous groups?
+00:39:44 Speaker 2
+The newer one is actually this label is B 2. Is it? Yep. So because.
+00:39:50 Speaker 4
+Of the 5, 000 new genes, it says, It makes a point that a lot of them are single exon or just things that were difficult to capture using the earlier methods using Sanger. And so I would think that that likely those genes are likely honeybee specific. And so as a result, there would be less homology, Present when considering, and then especially because that's a good third of the overall genome set. I don't know.
+00:40:25 Speaker 2
+Then I hate how they do these versionings. If, it's why is it V two and OGS V three point two Let's see where this is.
+00:40:47 Speaker 6
+Did, it have something to do with the fact that the graph is about the number of ortholog groups that are missing?
+00:40:58 Speaker 2
+That are missing from when and where?
+00:41:01 Speaker 6
+I'm just reading the caption. The, uh, oh, it's like it's like the ortholog groups that are absent from the genome annotation. Oh, interesting.
+00:41:20 Speaker 2
+And so the groups that are missing an ortholog in that species, yeah. So you got less missing than in 3.2. It's a weird way to do that graph, isn't it? Yeah. I also again though, I hate how they do this. They should be consistent in their naming of the different versions. This should really be OGS v2, 2 point something.
+00:41:50 Speaker 2
+But yeah, did we talk about orthologous groups before? Going to term up, term up. Let's see if it rings a bell. Got one nod. Did I talk about that in this class yet? I can't quite tell from your reactions.
+00:42:14 Speaker 5
+I think you've said it like you've said the word before, but I don't think, It's been described in very much detail.
+00:42:22 Speaker 2
+So imagine, okay, fair enough. So BUSCO is an amazing tool that we use when we're looking at genome completeness. Um actually I think we did have a paper with this. Hold on. Oh let's see do I have it here? I need to go into my courses. This would have been in the chicken one.
+00:42:50 Speaker 2
+There's the chicken paper. All right. Let me pull that up. Why isn't it coming up? There we go. Cool. I'm going to share screen on it. Boom, there we go, all right, where is our bus going here? I know we had it.
+00:43:21 Speaker 2
+Wait a minute, they didn't do it there? I could've sworn they did in that paper.
+00:43:25 Speaker 4
+I was about to say, I did a control F on it and put Bosco in and nothing came up.
+00:43:30 Speaker 2
+No! Oh my gosh, I'm sorry. Yeah, it's not there. Oh my gosh, I thought it was in there. I apologize, I thought one of the papers did. Okay so. You know what you're talking about? Okay fair enough. So, BUSCO is looking at, under some assumptions of evolution, which genes would you expect to be cross-species. So glycolysis, that should exist in pretty much all eukaryotes, correct? Not necessarily prokaryotes but we'll go with eukaryotes. So if you're dealing with a eukaryote you expect glycolysis. You expect synthesis of certain amino acids that are in common.
+00:44:17 Speaker 2
+Within some clades, certain amino acids are always expected to be. They're supposed to be. We expect to see genes that will synthesize them or break them down for energy. So there's certain housekeeping genes is one of the terms that gets used. They're often core metabolism. So, there's certain genes that are a core part of metabolism that we expect that will be across any species because evolving away from it is just too difficult. We have these we call orthologous groups, We have common sequences we expect to see in these BUSCO sets. For mammals, there is a BUSCO set. For flowering plants, there is a BUSCO set. And we expect to see all these genes there. And. One thing we can do is do a homology search against the genome with this set of BUSCOs, for this set of genes we expect to see there, how many of them do you actually see in the genome? It's basically just a glorified BLAST is what it is.
+00:45:17 Speaker 2
+And, we look to see what fraction of the genes we expect to be. There are actually there. And this is very similar to what they're doing in this case. Let me come back and share screen again. We're looking at these orthologous groups, things we would expect to be there. In this case, things were missing there, which is again a weird way to do it. It's usually the other way around. And we're missing less in the newer version.
+00:45:48 Speaker 2
+Interesting the ones that were missing in the older version. Um, more often than not single copy in all but one of these, I believe all but one of the species or present in all but one. Things that were present in all but two, it was a little tighter on that. But basically it's getting at the same sort of thing without actually using BUSCO. Normally most groups use BUSCOs. And they normally talk about what percent of the BUSCOs are identified. You want to have at least 90% identified for most purposes. The reason we use those BUSCOs is we expect these genes to be there. There's also some other genes that are not part of the BUSCOs. With honeybees, this could be some of the genes actually. No, I guess we didn't have another paper. It could be some of the genes involved in venom production. There's going to be many of those genes.
+00:46:47 Speaker 2
+You're looking at plants, their secondary metabolites. There are certain things that we expect to see that are not core metabolism, but they're common in a lot of plants. But they may not be in that BUSCO list. So the idea is if you've got 95% of your BUSCOs there, you probably have 95% of the genes identified. It's a proxy measure. And, this is doing a very similar thing. ;. It's doing a proxy measure of what's missing.
+00:47:17 Speaker 2
+Cool. So newer technologies, did it work? Was it an improvement? You got one nod. The rest of you don't think so? Oh, there we go. Now I'm getting these nods. Okay. Yeah, It does make a big difference, and the newer technologies are capable of finding new genes. In finding new sequences that were missing. We saw this with the chicken one also, right? I put that away already. Let's see. Can you see the chicken one now? I got a nod, okay. Remember this figure? Figure two? That, we're actually seeing some regions of the genome that had not been previously sequenced by Sanger. And both 454 and Illumina are able to pick out some different things.
+00:48:14 Speaker 2
+Generally things that were higher GC content. So, I did typically these the newer sequencing technologies are able to pull things out. They miss some things that Sanger can get, but not as much as the new stuff they pull out. So okay.
+00:48:36 Speaker 3
+Questions on the papers? Thoughts on them?
+00:48:44 Speaker 4
+Doing okay. Are you gonna are you gonna chew us out on Wednesday? What are you talking about? The pyramid house.
+00:48:52 Speaker 2
+No, I just want toum I want to have a open discussion. I'm not going to yell at you. I don't do that so Oh,
+00:49:00 Speaker 4
+I didn't expect that more like a stern talking to.
+00:49:05 Speaker 2
+I would no, I'm not going to be stern either but Okay. I definitely want someone got a bees are cool Thank you Um.
+00:49:13 Speaker 2
+I definitely want to talk about the uh the beer bells. So, I want to is open discussion. Okay. No, I don't yell. I am getting a lot of bees are cool or awesome nice. There is an RIT bee keeping club?
+00:49:37 Speaker 4
+They are and, I assume you won't be on campus, But they will be at atum Spring Fest put on by Cosab in the Atrium tomorrow four to six. Have to get the plug in. Have to get the plug in.
+00:49:53 Speaker 2
+I did not even know that you that you've been posting it. Sorry, thank you Maya, thank you Maya. Sorry about that. Yeah bees are cool There's actually a honeybee game. If you're looking for it, You get to. To act as a worker bee. It has a lot of good facts in it too. It's actually pretty well done. So, okay, thank you much. Thank you for bearing with me here. I am planning to be back on Wednesday. Someone's already a worker bee? No, you're learning to be one. Sorry.
+00:50:28 Speaker 3
+Once you're actually on a job or in an academic position, yep, then you're a worker bee. Oh man, okay. I'm going to leave all these alone.
+00:50:38 Speaker 2
+Okay, thank you folks. I'm planning to be back Wednesday, so I'll see you in class then.

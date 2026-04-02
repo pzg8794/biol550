@@ -1,0 +1,364 @@
+00:00:07 Speaker 1
+It's not Bluetooth working here.
+00:00:36 Speaker 2
+Sorry what? Okay, it's working. My Bluetooth. At least it works with my laptop. It does not work with my phone. Always something, I'm just taking my clothes is all wet because it's like.
+00:00:55 Speaker 3
+It's raining. It's pouring, it's really bad. I'll take it over snow though.
+00:01:03 Speaker 2
+And they took yeah me too, They took my parking spot, of course. Perfect timing. So I had to get wet even if I didn't want to. All right, Let me see because I was honestly resting and I haven't checked the result of the stuff yet.
+00:01:30 Speaker 4
+Now you're good.
+00:01:32 Speaker 2
+So let me see.
+00:01:37 Speaker 2
+We go for.
+00:01:37 Speaker 1
+The eventually questions. Okay.
+00:01:59 Speaker 4
+So we start, so that means we still need to do thatum. So, we have alignment stats now forum the new dataset, and we should also have D seq 2 analysis for the new dataset. Mhm. Where is that?
+00:02:16 Speaker 2
+Um no I'm gonna check first cause I run I usually run stuff on my local. First to see if there's anything wrong. Oh okay yeah so I'm checking now. Ah, I'm connecting to the server.
+00:02:34 Speaker 1
+Okay.
+00:03:05 Speaker 1
+So I found it here. Let me open the notebook.
+00:03:52 Speaker 4
+I'm Also like fairly confident he's gonna have us like present again tomorrow, like just go over what we've done.
+00:03:59 Speaker 2
+So oh wait, he said Thursday's his present. Did he change it?
+00:04:04 Speaker 4
+Uh oh maybe I didn't pay attention.
+00:04:07 Speaker 2
+Yeah, he sent an email. Yeah, he sent an email picking Thursday for swapping. Thursday, remember last Thursday we presented. So I don't know.
+00:04:18 Speaker 4
+Yeah, that was just last week though.
+00:04:19 Speaker 2
+Oh, just.
+00:04:21 Speaker 3
+Last week because okay it was because ofum. Because, he he wanted to talk about. Uh, what did he want to talk about? Oh, the peer peer evaluations.
+00:04:37 Speaker 2
+Hmm. Okay. Yeah, they're amazing peer evaluations here created. Yeah,
+00:04:51 Speaker 1
+There you go. Found the uh.
+00:05:10 Speaker 4
+Oh, Peter, I asked this earlier, but do you know if you're dropping the course? Is that like finalized?
+00:05:15 Speaker 2
+Oh yeah. I wasum let me show you this and I'll talk to you guys about it. Uh okay, yeah absolutely quickly. Yeah, so I don't cause trust me, I will cause that's like a long topic. I will go on and then i'll forget. Show you guys. Yeah, that's fair. Yeah, We can look at this together now because I'm also just looking at this now. It's basically, you know how our pipeline is, right? It's a replica of everything basically. I'm clicking on sharing. It's not sharing anything. Okay. Yeah. Um so let me uh see Can you see my screen? Yeah? Yeah There you go So.
+00:06:00 Speaker 2
+Uh, let me make this.
+00:06:05 Speaker 1
+Bigger. All.
+00:06:13 Speaker 2
+Right, soum, so we can look at things quickly. Let's see if anything. I'm just gonna go and look at the plots if you guysum I'm, I'm I'm gonna share the this in the server. Um, but I wanted to look at this with you guys first. So, uh, this is And sorry,
+00:06:39 Speaker 4
+Just to confirm, this is the new data set.
+00:06:42 Speaker 2
+I'm actually gonna put a side by side with the other. I think that might be a good practice, a good way of seeing to check.
+00:06:55 Speaker 3
+It it's it won't because it'sum it's two different machines compared to one. So no
+00:07:06 Speaker 2
+Is to validate that we're using different data.
+00:07:10 Speaker 3
+I thought you meant the quality overall. We can. That could be right.
+00:07:17 Speaker 2
+That will definitely be a quick way to just say, we're not using the same data there you go. Because that's something that is very likely to happen when you use something as a template. Sometimes you put the wrong data. So let me see. So let me move this one here. Just two columns. There you go. This one that I didn't need. Sorry, this is the one I needed. Okay? This is.
+00:07:52 Speaker 2
+The mouse, this is the old one. There you go. The difference just in groups alone, they look different. The data in here, like you say, different machines, right? A six thousand Nova, six thousand Nova seconds.
+00:08:14 Speaker 4
+The notebook on the left is looking at all 26 or only looking at the 14 on the NovaSeq 6000? Or whatever the number is.
+00:08:28 Speaker 2
+Only the NovaSeq 6000. And because we only have one dataset, but with the other, the old one, we were working with two different subsets. This looks actually better.
+00:08:52 Speaker 2
+This is way more distributed than the other one.
+00:08:59 Speaker 3
+It should have clearer differences because it does. There's two.
+00:09:13 Speaker 2
+There are two different datasets. Yeah. All right? So we are we we so we we are good with this We know that they are different.
+00:09:22 Speaker 2
+So this is what we have. And I'm gonna look at it and make some sense of it. But I don't know if anything stands out to you guys. This is basically the same thing, because over there, I did two subgroups. So here he just repeated the same for the two groups for the same groups. And if we look here, a quick grouping. Can you guys see this table? It's a quick grouping here by the genotype effects, interaction terms. Ipsilateral. I don't know how you guys pronounce this.
+00:10:12 Speaker 4
+Ipsilateral?
+00:10:14 Speaker 3
+Ipsilateral and contralateral.
+00:10:16 Speaker 2
+Ipsilateral and contralateral.
+00:10:19 Speaker 3
+You can just say contra or intra, cause. Contra and and what. Or sorry, not intra. Wait, what is it? Epsa. Epsa okay epsa yeah that makes sense.
+00:10:35 Speaker 2
+I'll let me share this with you guys because I don't.
+00:10:48 Speaker 2
+Have anything from looking at it quickly other than it's different, looks much better that's the other one. At least in terms of the clusters that we saw, and how it is and the distribution here looks so much better in terms of what is here compared to the other one.
+00:11:18 Speaker 2
+Alright. Did anything stand out to you guys? Let me run it on the server. It runs quickly. I'll give you that path right away.
+00:11:33 Speaker 3
+I have to step away. I have to go to my friend's to pick something up. I'll be back in five minutes.
+00:11:42 Speaker 2
+Sounds good Yeah, I'll just run it right now and yeah, Cause that way it'll be it'll be done. It'll be done and.
+00:11:54 Speaker 1
+Okay yeah. Okay.
+00:12:42 Speaker 2
+So I have some good news. I have a faculty meeting about going to these apps that we hash out, the things that need to be done. That way we are on the same page tomorrow, and in the event that we want to present something, we can agree or disagree on whatever we want to go with.
+00:13:14 Speaker 4
+Faculty meeting with Oger?
+00:13:16 Speaker 2
+No no I I know I have a faculty meeting withum. Another faculty meeting, But this time, it's going to be only with my advisor because I already met with DSO. I met with another faculty advisor and a bio faculty advisor as well, Who is now offering to become my um my to go to for our project and for this side paper that I told you about also. So.
+00:13:52 Speaker 4
+That's good.
+00:13:53 Speaker 2
+So that that was good news. Um. But yeah, But we're still going to hash things out because there was no point of me staying in this class. If I wasn't going to have any sort of like uh guidance, if you know what I mean, right, which is what we're paying for. Yeah, yeah, we're paying for that guidance, right? Uh in terms of this, especially the theum. Rna sequencing because yes, I've done it and the stuff that we've done here I've already done it in Bio 630. It's just of course, different right. But like we've done a small case, a small, small um uh size or a small version of what we're doing here, Um and and that's one of the reasons why I was like, uh, this is something.
+00:14:50 Speaker 2
+That I would like to have a person to go to, and it was already clear.
+00:14:54 Speaker 5
+Absolutely.
+00:14:55 Speaker 2
+It was already clear in his in the beginning. At least. Maybe he didn't mean to maybe he didn't mean to say that way or come across that way, right? But it's too many things at once, right? And yeah, and the way he explained to me that he can never uh have a conversation with me when he had never had. A one on one with me other than once, right? It's a little bit. The word is I don't want to say prejudice. I don't want to say the word, but it's Yeah,
+00:15:34 Speaker 4
+No, I get what you're saying now. Yeah, yeah.
+00:15:37 Speaker 2
+It's kind of that because you just saw a picture of me and met with me two or three times remotely and you're already making a whole I don't know.
+00:15:51 Speaker 4
+Profile About me. Because with everything that happened, I didn't blame any of us because everything that happened from the get go was because of his setup. Everything. The misunderstanding of some of the critical things that we were talking about was caused due to his vague.
+00:16:18 Speaker 2
+Instructions and requirements, and his approach, right? Which it affected me as well because I don't feel comfortable going up to him to ask him questions. I just don't. Yeah. It's not that I feel that he's a bad professor or anything. It's just uh he the way he communicated with me it and then And then continue communicating. It's also also bad because he was indirectly making you guys see me in a different way as well, right? The way he was setting things up and handling things in general, right? Yeah. It gave room to a lot to not just misunderstanding but also.
+00:17:16 Speaker 2
+To allow our feelings, right, to get in between our work or everything, right? Yeah. It took a lot of. It took a support system for me to be able to digest properly because I'm not only coming here as a student, I'm also coming as a teacher, right? As a professor. So I had to learn how to navigate these things for the best of the students, not for the best of the. Not only for the best of the professor, but also for the best of the students, right? So while I don't. What I what I don't I don't say that things are like he's doing things maliciously like maliciously or on purpose, right? I don't say those things. But we cannot disregard the fact that you know this structure well.
+00:18:11 Speaker 2
+The structure he's not putting in place and the vacuum that he's creating is allowing for a lot of things to happen that are not beneficial to the student, but are surgically affecting a specific population of students. And he might not know that, but that is borderline illegal. So, sorry, we were just talking about Samuel while you were gone. Let me put in Slack.
+00:19:06 Speaker 1
+Me copy the path.
+00:19:13 Speaker 1
+Mhm.
+00:19:58 Speaker 3
+Wow, That was quick.
+00:19:59 Speaker 2
+Yeah, that's a good thing. The differential equation does run quickly. That's the only good thing. That's why I said, let me run it right now because I remember that when we did it for the other data set, it ran there fast,
+00:20:21 Speaker 1
+Very quick.
+00:20:27 Speaker 1
+Yes. Question:
+00:20:35 Speaker 3
+What is Family DRG?
+00:20:45 Speaker 2
+Um, Family. You're talking about the the summary?
+00:20:51 Speaker 3
+Uh, under differential expression all twenty, there's a folder called" family". Family DRG, why is it called family DRG? I know DRG pertains to the mouse, the experiment of the nerve. Why why a family?
+00:21:06 Speaker 2
+Oh you mean the directory.
+00:21:09 Speaker 5
+Yes yeah.
+00:21:17 Speaker 1
+I'm Looking at uh.
+00:21:27 Speaker 1
+And figures. And figures. There's nothing. Hold on. Okay. Table.
+00:21:59 Speaker 1
+Alright. Okay,
+00:22:08 Speaker 3
+I posted the figures in the slide.
+00:22:10 Speaker 2
+Yeah. Hold on, I'm just checking that everythingum transfer without any problem. Alright.
+00:22:31 Speaker 1
+Three tables.
+00:22:34 Speaker 2
+Okay, all the family are there. Family manifest, contours manifest, mousey center table.
+00:22:49 Speaker 1
+Okay. All.
+00:22:59 Speaker 2
+Right so, Everything that I have, you guys have. So everything is in there. The same approach that we use similarly. So here for the DRG, who's messaging me? The DRG is for the tissue and the source class. So that's a family, the DRG Novasec. And Novasec is.
+00:23:32 Speaker 2
+Obviously the platform.
+00:23:35 Speaker 1
+Let me see. All.
+00:23:45 Speaker 2
+Right, let me see if I can copy the doc that I created for this. Where do I have this?
+00:23:56 Speaker 1
+I was working on this last week.
+00:24:07 Speaker 1
+Okay. Um, did I check questions? Oh. Where is. Where are my notes?
+00:24:51 Speaker 1
+Alright, let me see what I shared with you. Okay,
+00:25:01 Speaker 2
+So I share the alignment, right? That was the last thing I shared with you guys, right? Yeah. Okay. Uh, wanna make sure.
+00:25:13 Speaker 1
+That the alignment that I have here is the correct one.
+00:25:21 Speaker 1
+This is the correct data. Oh. Okay. Oh,
+00:25:37 Speaker 2
+I think I know, I remember why. Okay, I wasn't sure if we were going to go with the dataset. So that's why I never shared the the docs. So all right. So let meum.
+00:25:50 Speaker 2
+Yeah, that makes sense.
+00:25:51 Speaker 1
+I was wondering why I didn't. Let me show you. So the alignment part, but the I wanna focus on this. Let me remove stuff that you guys want me.
+00:27:04 Speaker 1
+God, this thing is. My.
+00:27:09 Speaker 2
+Jacket is like soaking my my back. It's like so wet that it's soaking my back. It's uncomfortable. Let me put.
+00:27:26 Speaker 1
+It on that chair.
+00:27:35 Speaker 1
+Hey. Alright. Okay, so. Make sure. Alright, this is Perfectum.
+00:28:04 Speaker 2
+Timing because that way uh from the doc, we can we can all be on the same page I mean, it's the same thing that we did with the old data. So it's not, but but just in case anyways, it never hurts. Let me push this and send you guys a link to that I.
+00:28:34 Speaker 1
+And okay, this is just.
+00:29:26 Speaker 1
+I mean,
+00:29:26 Speaker 2
+When I saw theum. And that was as far well, right on Thursday, on Wednesday when I saw the the curve. I was like uh okay. Uh, I already know what the answer is going to be. Use this data. I was like, okay, well better better late than ever. At least. The good thing is that um that's why one of the things that I was doing um in the beginning.
+00:30:08 Speaker 2
+Um, As part of my work alone was having the treadmill analysis that he said into a framework that is reproducible, meaning like you can reuse it. Um, uh, You can think of it as a wrapper because I've done this not not just in my previous class, but also at work. But you have to like redo it for so many different type of data sets. And I've been on that painful end. So I, I'm, I'm glad and I'm not glad at the same time, because I was hoping that I didn't need it, That I didn't need to use it like some of the other team that just like went right in. But hey, you cannot choose it.
+00:31:07 Speaker 2
+What is.
+00:31:07 Speaker 1
+That you cannot choose your own family, right? That's what they say. It's uh probably okay. So all right. So the.
+00:31:41 Speaker 1
+So the push went through. Let me get the link.
+00:31:45 Speaker 2
+And share with you guys. And that should be a good source of the work.
+00:31:57 Speaker 2
+So I guess where we are going to via is that basically tomorrow will like need and see like. What we understood from the information, questions or. Oh oh oh, I don't know tonight, you guys. I'm not sure how are you guys wanna go about it? I'm, I'm okay either way.
+00:32:21 Speaker 1
+Uhhuh. Yeah.
+00:32:43 Speaker 1
+Mhm. Yeah. I see, oh yeah, uh that's a that's a good one.
+00:33:58 Speaker 5
+Yeah, but. No, no. Go ahead. Sorry, I thought we were done. Uhhuh.
+00:34:36 Speaker 1
+Well, can uploadum my plot and target validation.
+00:34:42 Speaker 2
+The, yeah yeah. Uh you just need libraries. That's what I use in my own notebookum. And uh, Yeah and I just honestly, I just do everything on a notebook. It's just much easier even to sharing everything. So. Yeah, So I could just basically take the old notebook and use the same template to run it on this dataset with volcano and everything, and add you guys to it. And that's it. Yeah, so it's not really much work because the hard work already was done, which is basically literally getting data, managing it and using the right libraries. It's a built-in even.
+00:35:27 Speaker 2
+The professor will now say it's a built- in. I don't know why, but it's built in in a library. Um, I can tell you the name here actually is. But I'll share the notebook with you guys anyway so you guys know. Yeah.
+00:35:58 Speaker 1
+Yeah. Yeah. Sure. Yeah, yeah.
+00:36:47 Speaker 1
+Yeah.
+00:37:16 Speaker 2
+I I.
+00:37:16 Speaker 5
+Would point out something.
+00:37:18 Speaker 2
+Sorry, I I heard you saying Dan,
+00:37:21 Speaker 5
+But. No,
+00:37:27 Speaker 2
+I was just going to say that from a data perspective, Um the the fact thatum the variables are not like scattering randomly is a good sign, right? So they're not random. Yeah exactly. So, I mean that has some meaning in biologyum. But I usually have to read about it.
+00:37:51 Speaker 1
+Yeah. Oh, okay, okay. So so that means. Got it.
+00:38:26 Speaker 1
+But going.
+00:38:27 Speaker 2
+With what you said, I think that's like key to what this figure, this plot is showing, right? With the injury, with tissue injury. Because, this shows just going by what you're saying that the subset actually has like a coherent structure. Meaning like it doesn't sit like the samples are not sitting like far away from the others as possible as outliers. Alright, so, um, I think that's like a really good way of like pointing out how important, how how this dataset is fair from the other.
+00:39:08 Speaker 5
+I guess.
+00:39:15 Speaker 1
+Yes. Yes.
+00:39:26 Speaker 1
+Yeah. Yeah. Mhm.
+00:40:46 Speaker 2
+The. Yeah, the the way I usually like I, I like this kind of like metrics because, I'm so color. I'm a color person. But I can see clearly if there are samples that. The belong together but are not together if you know what I mean. In here, so like you can see how like the groups are comparable, right? How they're more similar to each other. You can see them in there and with the with the gray. So there is no.
+00:41:25 Speaker 2
+Like single sample with like an obviously strange decent pattern. Like the pattern you can see it there. Like I don't see a strange pattern of like, oh, you know, this dark that is all the way over there. It's not as yeah. Yeah.
+00:41:59 Speaker 1
+You can see some differences there, though. From the genotype.
+00:42:33 Speaker 1
+Mhm. No, I was just saying in the in the in the matrixum though.
+00:42:56 Speaker 2
+We're looking at I was just saying, To wrap it up that you can also see like if you focus on the genotype. You can see some differences.
+00:43:05 Speaker 1
+Fromum like if you go to the top and the left side for each one. So but they're small, right, it's just based on.
+00:43:25 Speaker 2
+Like the interior versus naive, naive split. So if you go to.
+00:43:32 Speaker 1
+Do they have the one number? Let's just choose one number.
+00:44:12 Speaker 1
+Um. Never mind, I'll look into it further.
+00:44:20 Speaker 2
+But, you can there are some differences in there from in terms of the genotypes, the injured versus the naive split. I want to I want to look at it further and see. I mean, there's more about this,
+00:44:36 Speaker 1
+And it doesn't seem like a big deal. Oh,
+00:44:46 Speaker 2
+Look look.
+00:44:47 Speaker 5
+At that drop down the second row in the right. You see the three on top?
+00:44:57 Speaker 1
+Oh okay. Alright. Yeah. I was talking about. You see that road over here, right?
+00:45:17 Speaker 2
+Yeah, that's what I was saying. Like if you look at that and then on this side, right? You'll see there are some differences. And and I was reading, but I have to look into the further the, That is actually due to theum, injury versus uh naive split. But it's very small. It's not really that. It's not like that alarming right so.
+00:45:58 Speaker 1
+Uhhuh, yes.
+00:46:01 Speaker 2
+No, no, I know it's a mirror. But if I'm talking about the what's that? The you see the blue shade right beside the concept piece. So um.
+00:46:30 Speaker 5
+I myself had to.
+00:46:31 Speaker 2
+Look into this further because I am not sure if it has to do with the way that.
+00:46:42 Speaker 1
+It's been. Yeah, let me guys,
+00:46:54 Speaker 5
+Let me not hold you up there. That's something I need to look into.
+00:47:08 Speaker 5
+Uh, The combination of this side and what else? Yes, yes, yes, yes. Yep.
+00:47:27 Speaker 5
+No, I was asking if.
+00:47:29 Speaker 2
+You are able to see the differences in genotype because there are some differences in there and I'm trying to capture it right. Butum, I'm looking at it right from in terms like this side. But do you get what I'm saying? Like, there are some differences in there in the data that can be captured to that was captured through the table. I was trying to, Um, look at it and I'm still trying to make interpretation of it, but um, I'll figure it out later. Anyways, and when I figure it out, I'll let you guys know what it is that should be obvious in here.
+00:48:27 Speaker 1
+The film was shot in the city of Krasnodar.
+00:48:57 Speaker 1
+The city is located on the banks of the river Sava.
+00:49:47 Speaker 1
+Mhm. Very consistent,
+00:49:55 Speaker 3
+Like very consistent, so that's nice. Um and I'm glad that we have our sample size is five, that's good, um for each type, um. Yeah. So. I think we'll just I can put that all on a graph. Or sorry, all on a Google Doc and just we'll present that tomorrow.
+00:50:21 Speaker 4
+Yeah, cool sounds good to me.
+00:50:24 Speaker 3
+Okay, good so yeahum tomorrow we we can touch baseum. Quick question, just cause I'm I, not very sure, But so is your plan to drop the class or not drop the class.
+00:50:39 Speaker 2
+So here. Um. Yeah.
+00:50:42 Speaker 3
+Cause is this Friday?
+00:50:44 Speaker 2
+So yeah. Alright so Let me, uh let's do that quick So. While I was telling Nikki before, sorry, I was so deep into thatum. FYI, We need a volcano to be able to find those differences that is showing there. So, um, so tomorrow I have a meeting. Yeah, I know it's fine. It just there was a delay. I'm going to run it tonight and then share the notebook with you guys. Tomorrow I have a meeting with faculty. That's what I was telling my faculty advisor.
+00:51:27 Speaker 2
+When with my advisor from the faculty, that's what I was telling Nikki. We are going to discuss multiple things. I think you were you came in right in place about it. So, there is a professor that is willing to work on the project and research with me, given the communication issues that has um. Uh, occurred due to that professor, um, way of teaching. Um so I will discuss with her the communication that I have with the other faculties, including my faculty advisor. And this so and my bio faculty advisor now.
+00:52:23 Speaker 2
+He became an advisor. Um, I'm going to discuss with her basically what I talked to them, uh, what they said and how they advised. And then based on her um advice, I'm gonna make the decision. In the event which is possible because um multiple things happened during last week, especially this new professor stepping up. And even that I do stay right um. Basically, everything's gonna stay the same way right. The only thing that I would like us to be a little bit. Uh more. Closer if that makes sense in terms of like what we feel because, I feel the um the professor has. Created a vacuum where, um.
+00:53:22 Speaker 2
+He's making basically our feelings sometimes uh take over uh our reasoning and think things, you know that are not there. Sometimes um I I myself fell in that place, right? And there were times when I was thinking things about you guys that was not fair right because. I never gave you the opportunity to have a conversation with me or discuss or even work, right? And, um, I started, uh reaching out to my support system and digesting the information as you know, as proper as I think it can be right because you're still a student so you can still make mistakes and everything. Um so.
+00:54:18 Speaker 2
+Focusing on the student perspective, as opposed to my own perspective or the teacher perspective was my way to like, go about things and navigating from that to now, I don't know. Was that reflected in my evaluation that I did for you guys? Was it student focus? And did you guys notice the environment? How I focus on that?
+00:55:01 Speaker 1
+Yeah. Yeah,
+00:55:20 Speaker 2
+So that was purposeful because. I could have easily grade you guys based on my experience, right? And that wouldn't have been fair for a couple of reasons. Let me.
+00:55:37 Speaker 1
+Tell you here. So open with, that always happens. Anyways, um.
+00:55:53 Speaker 1
+Open with, there you go.
+00:55:55 Speaker 2
+So, why does this always do this kind of crap? Sorry. I'm just so sick and tired of this. When when I open with the default application. Thank you. Um, sometimes when I want something doesn't appear here. So let me share uh something quicklyum so.
+00:56:23 Speaker 1
+Um, this is what.
+00:56:28 Speaker 2
+I show you guys before, right? Um, this is basically what I said to him. And that's this is what I'm going to show the fact. I already showed this to the faculty by the way, right? Um, this is something that in every point of for example, right? I made it clear about so first of all. I'm directly about the fact that the things that were affected, right, Was due to most mostly due to the case of his teaching style or whatever you can call it. Right. So like in here it says what stands out, right? So and then that shapes happened despite conditions that did not make it easy and that matters. So.
+00:57:23 Speaker 2
+And I'm just following up what I started in the beginning, right? Which was basically the fact that he did not provide a healthy environment where we can have meaningful discussion, right? And be able to understand each other. He didn't do that from the beginning. He didn't do that. And then the same thing here, right? Which is basically in communication, that's where like I put all the follow ups, right? Where here like the responsibility for closing those loops belongs to everyone, right? And that is very key to how our communication it should happen, right? Like he should have enforced norms that allow us to.
+00:58:21 Speaker 2
+Have a conversation together, right? And clear the air. Not like I hear from one group and then I hear from the other group. And then he comes and tells me what you guys said. Like we're kids. We're not kids, so like let them tell me what they think, right? So we can hash things out. It's not like here's a it just so it's just so I feel honestly guys that he took away from you. The ability of take ownership for what you could have done better than. That's how I feel it. I don't know, you guys can correct me here, interrupt me, you know, feel free. This is like a collective collaborative conversation and I would like as much feedback from you guys as possible. Because.
+00:59:18 Speaker 2
+This is going into my teaching as well, so it's very important for me as well. Right? And.
+00:59:25 Speaker 1
+Go ahead. Go ahead. No,
+00:59:34 Speaker 2
+No question. What what I'm saying is my quite no question. What I'm saying is I'm telling you guys how I think things happen, how I saw things happen, And how I proceeded about it, right? And I wanna hear and I want you guys to be able to interject and say, no, I don't think so. No, I disagree. No, I agree. You know what I mean? Oh Because if we move forward, right? We had to be on the same page with that. In the event that everything tomorrow Let's say, for some reason, Um It is best for me to continue in the class right?
+01:00:16 Speaker 2
+And I'll have the support from my bio professor and everything, right? In that event, we need to be able to tell to our face like, hey, you suck. You understand what I mean? Without feeling like, hey, you're trying to hurt me. Right? But I'm not saying like go ahead and say you suck. I'm just saying like would you feel comfortable to like share things among us? Like I feel comfortable sharing things with you guys. But I feel like there is a feeling that was cultivated sometime in the beginning that perhaps it might still has not been resolved because of how long it went unresolved, if you guys know what I mean. And I was there and I felt it. Go ahead.
+01:01:16 Speaker 2
+He Is going to be with the project, um, meaning he's gonna be doing his class as he does, right? Butum, The limitations were put by him, not by me, if you know what I mean, right? When, you say to a student that you know that has accommodation that you can never talk to that student. You're making it difficult for that student to approach you right? I'm gonna have a conversation with him. You understand, but regardless of whatever we agree, I don't feel comfortable with him anymore. Do you do you know what I mean. And it's not. It's nothing. Yeah,
+01:01:56 Speaker 5
+Go ahead. Yeah,
+01:02:00 Speaker 1
+Ah yeah. That is a that is a fair concern. Um, yeah,
+01:02:16 Speaker 2
+Yes, and that's a very good question. Those are things I'm going to be hashing out with my advisor. The way I understand it to be is this way.
