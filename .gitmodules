@@ -1,3 +1,6 @@
 [submodule "group_project"]
 	path = group_project
 	url = git@github.com:pzg8794/BIOL550-group_project.git
+[submodule "mouse_group_project_work"]
+	path = mouse_group_project_work
+	url = https://github.com/pzg8794/mouse_group_project_work.git
