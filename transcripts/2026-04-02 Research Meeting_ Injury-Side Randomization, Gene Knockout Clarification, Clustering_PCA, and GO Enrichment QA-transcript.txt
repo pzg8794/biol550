@@ -1,0 +1,342 @@
+00:00:00 Speaker 1
+Injured. Injured, not injured.
+00:00:02 Speaker 2
+Wait, wait, wait. Why why wouldn't you say left or right legs? It is left or right legs.
+00:00:06 Speaker 1
+Is it always left or right? That, they always injured one side and never the other because that would introduce its own bias, because you should they should be picking randomly, which leg is injured.
+00:00:19 Speaker 2
+Oh, okay, um yeah, they did that. Okay, yeahum they did do random left or right. Butum yeahum sorry I was. Okay. Yeah. So injured and uninjured, um.
+00:00:32 Speaker 3
+So the way we look at this.
+00:01:00 Speaker 3
+I'm sorry.
+00:01:38 Speaker 3
+Yeah.
+00:03:06 Speaker 3
+Reading a difference in gene expression because they're clustering differently and.
+00:03:11 Speaker 1
+When they're injured, Doesn't matter if the gene is knocked out or not, they're showing the same gene expression. So then the question is, what is this gene supposed to be doing? Is it acting the way you'd expect it to?
+00:03:44 Speaker 2
+Express ed between the two environments are the ones that push it to the specific points on the graph where they are, right?
+00:03:52 Speaker 1
+But that's not answering my question.
+00:03:54 Speaker 2
+Well, I'm going to answer it.
+00:03:56 Speaker 1
+But in order to understand what you're saying, I need to understand what is the experimental condition again. You need to refresh me on that. What is this gene they're knocking out supposed to be doing? Which gene is it?
+00:04:06 Speaker 2
+It's uh the regeneration genes when uh D, G R G I think.
+00:04:16 Speaker 1
+G R G?
+00:04:17 Speaker 2
+Uh sorry D R G. D R G. Yeah.
+00:04:22 Speaker 1
+It's in neurons, yep. D R G uh it's developmental, It's the G T P binding protein one. Okay, is it g t, g r, d, r, g one? Or is it a different one?
+00:04:43 Speaker 1
+There's multiple DRGs.
+00:04:45 Speaker 2
+Um, I'd have to look. I don't know on top of my head.
+00:04:50 Speaker 1
+So here's the thing, if we don't know what the gene is doing, we really can't interpret this pathway. We can talk about, yes, they're clustering or not clustering, but we don't know if it's what it's supposed to be doing, if it's what we expect it to be doing. Because unless we know what the gene does, we can't tell if it's doing what it should be doing or not. Does that make sense?
+00:05:10 Speaker 2
+Yeah that makes sense.
+00:05:16 Speaker 2
+My, my thought was that we see the injured clustered because there's a specific like response. It's like a heavy response of regeneration,
+00:05:31 Speaker 1
+But I mean what should be doing? What should be happening when it's knocked out or not?
+00:05:37 Speaker 2
+Yeah, um I'd have to look.
+00:05:43 Speaker 3
+Deeper into that I was just it was just a.
+00:06:16 Speaker 3
+I'm not sure what you mean.
+00:07:31 Speaker 4
+No, The uh the right yeah, the right one was the attempt for that. Yeah.
+00:07:36 Speaker 1
+P value Q value is interesting. Mhm. Okay now okay then that's good. Here's what I would do, I would zoom in on that part of the graph, Ignore any p- value greater than put not like not not zooming in no no, Yeah.
+00:07:59 Speaker 3
+Okay. He he, yeah.
+00:08:51 Speaker 3
+Sorry, I was um. What was the question?
+00:09:30 Speaker 3
+The bend point. No, it's from. It's yeah,
+00:09:43 Speaker 4
+It's from the data itself. So, what I was doing while you were talking is changing the the range. So it focuses on that area, and you can see the graph better because it's like. It's like compressing it so you cannot see the.
+00:10:00 Speaker 3
+The yeah. Yeah, it was marked.
+00:10:10 Speaker 4
+So where did you get that number from? The uh you the the the red, the number in there?
+00:10:19 Speaker 1
+The p equals one point three seven e to the minus seventeen. Where did that come from?
+00:10:24 Speaker 4
+From the table.
+00:10:32 Speaker 3
+No. Oh,
+00:10:36 Speaker 4
+I see, what you're saying is that you don't see the dataset where it's being pulled from? Is that no, no, is from the table. Let me look at it for you.
+00:10:54 Speaker 3
+So. No. Hold on, let me. Let me. Hmm.
+00:12:00 Speaker 3
+Hmm.
+00:12:52 Speaker 3
+Um, no, I didn't eyeball it.
+00:12:57 Speaker 4
+It was using a function. Yeah, it was using a function. And the table, um, the okay. The table actually the table is there already. Can you go down and see in the notebook? I was I was just copying it there and I think I saw it.
+00:13:13 Speaker 1
+This? Yeah That's, a very small table Yeah That doesn't show me a p value of 10 to the minus 17 th That's only 14 items. This might be just the most uh Wait,
+00:13:24 Speaker 4
+Why can I see you guys? Oh, there you go. Sorry. Um Yeah, it's right there at the table. No no Go go up It's right there at uh 1. 13 to the minus 17 Yeah Right there.
+00:13:35 Speaker 3
+This one Scroll up Yeah Scroll up Yeah Right there yeah Yep Yep Yeah But. That is, uh That is just the aggregate that in there yeah.
+00:14:03 Speaker 3
+Oh, where the value is from? It's from my function. Yeah, that gets it.
+00:14:41 Speaker 3
+Yes, so it's called in the code. Sorry, did I interrupt somebody? I would do it,
+00:14:58 Speaker 4
+But I cannot share without getting out because I use the browser. So I had to get out. Yeah, that's why it's in the beginning. It's so that, The function is called I know it was a big mistake. It's going the function is called band underscore threshold, so you feed the data in there and just gives you the. Yeah.
+00:15:22 Speaker 3
+Yeah, I mean right.
+00:15:45 Speaker 3
+They did it. No, is there a frame? Better frame. If you yeah, if you want I can I can just if you. If if you. If you, if you wanna I can just copy it if you want at a code.
+00:16:21 Speaker 3
+Yeah, R and Python use the same terminology for data frame. Yeah.
+00:16:54 Speaker 3
+Yeah, so isum this is where the this is where the magic happens. I'll show you. Oh, I was going to show you. I was going to show you the how.
+00:17:12 Speaker 4
+The threshold is uh obtained using the library, the math library with a hypot x and y axis.
+00:17:33 Speaker 3
+I'm going to cycle over to another group. Why don't you figure out the gene and yeah, You said we have to separate.
+00:17:44 Speaker 4
+Right and find those genes and see what they are doing.
+00:17:50 Speaker 3
+For the PCA. Mhm.
+00:18:02 Speaker 3
+Yeah, yeah, that's what I meant. Sam, um, thanks. Thanks for. How do we. Um, how do we find those genes from oh from the paper?
+00:18:50 Speaker 3
+I need to sleep.
+00:19:30 Speaker 3
+Do we also want to explain those that collide? Do we also want to explain the collision? Collision.
+00:19:58 Speaker 3
+Those that collide. So in the PCA. We have some of the data that collide.
+00:20:10 Speaker 4
+On the left and right. Oh no, on the left actually. Yeah,
+00:20:14 Speaker 3
+I don't see it on the right.
+00:20:40 Speaker 3
+This is not letting me paste. This is stupid. What can, why am I using this no browser? Uh, I don't think I pushed it to the GitHub yet. I only Hold on. Uh, I think I push only the notebook.
+00:21:05 Speaker 4
+Let me check because i don't like i don't like like committing everything, because sometimes.
+00:21:12 Speaker 4
+En tire laptop goes into here, takes forever I'm copy and pasting the code to be honest right now. But it's not so let me do on slack. Is that okay? Because it's not.
+00:21:30 Speaker 3
+This this stupid browser. It's ridiculous, just stupid.
+00:21:42 Speaker 3
+It's a very simple code. It's not, it's not really. There is nothing whoa about it. Let me check if I push. The code or only the notebook? Share notebooks, assets, data. Okay. Yeah, no. Yeah, I know I did it.
+00:22:46 Speaker 3
+Your tablet.
+00:23:47 Speaker 3
+I'm looking into the gem stuff because that thing is bothering me.
+00:24:29 Speaker 3
+Mm. Okay, now I think I understand better.
+00:24:37 Speaker 4
+So, which we want to know which genes are contributing to that split. Mm- hmm. And.
+00:24:46 Speaker 3
+What does these genes do?
+00:25:01 Speaker 3
+Identify the genes associated with this operation. Interpret their biology. I'm reading on how to find these. Injury response signaling, need also stress and inflammation if you could tell me.
+00:26:19 Speaker 3
+So. What do you mean? What do you mean bad news?
+00:26:54 Speaker 3
+Yeah. That's exactly what this call the change is called an elbow. Yeah. Ah. Um. Yeah, he saw the the method. Yeah. The method, yeah. The method that I,
+00:27:34 Speaker 4
+The method that I, that's a known method. This is a built- in No, yeah. Are they functions? Yeah this is this is a built- in function That's why I'm confused. I'm not sure what you're referring to Sam because, The professor himself, I think he he did call it an elbow because that's where it shifts. So, what do you mean.
+00:28:01 Speaker 3
+That there are multiple elbows? Mhm.
+00:28:26 Speaker 4
+Oh, You're saying like the the building code that I use is looking at a different direction that it should be looking.
+00:28:39 Speaker 4
+Because If you look at the uh at the building code, It has actually a condition, and it changes based on the distance and the absolute values of the. Of the point, data points in the in.
+00:28:57 Speaker 3
+The graph. So.
+00:29:33 Speaker 3
+That's Python. Let me look at it.
+00:30:02 Speaker 3
+I'm looking, uh, what you said to see if this this version of the of the R, no, you can, you can translate a code in R to Python and vice versa.
+00:30:39 Speaker 3
+I just give you the Python code then. Because I was. Yes, oh, is that what you're asking? I'm sorry, Sam. I didn't understand you. Is that what you asked?
+00:31:10 Speaker 3
+Okay, so let's be specific.
+00:31:13 Speaker 4
+You are asking me for this method. Am I using R or Python? I told you I am using Python. You see the Python code in there. I saidum that uh it was uh translated then, I said and that's where the confusion came for you, that it was translated fromum an R method.
+00:31:38 Speaker 3
+Does uh, Does that. Yeah. Yes, correct. Yeah, but in general, yeah. Okay, um, what I was going to say is that in general. We're using both. We're using R and Python.
+00:32:36 Speaker 3
+Can, you uh be more specific about uh the what you noticed uh wrong in the code because um well, you said it was wrong in the beginning. No, okay, let me check.
+00:33:06 Speaker 3
+Mhm. I'm just asking you to to do a. Mhm, yeah, well. Okay, so it's it's very straightforward.
+00:33:31 Speaker 4
+So, basically. If the denominator that you have is zero, it's just going to apply the distance to zero and the index to zero. That's the start of the iteration when it starts going through the data. And uh, the data points in the graph.
+00:33:47 Speaker 3
+That's where it hits first.
+00:34:14 Speaker 3
+The condition of the if statement. All.
+00:34:20 Speaker 4
+Right, so you see how it takes the data points with the library, the math hyper library, right? And it has the x and y axis, right? So if that value in there is zero, right? It's just going to apply zero to the distance and the index, right? And, the index equal to zero is an indication that that's the start of the iteration. Like when you're feeding a graph, right? To the method which is the data frame, data frame. The first iteration that it does like the first uh I guess you can think of it as like the first um.
+00:35:03 Speaker 4
+Data points that you pass right from the X and Y axis is gonna hit that right where it's like zero. Well, it can also change. It depends on the angle as well. But basically the point is, yeah go ahead.
+00:35:28 Speaker 3
+Thank you. Yeah, you're right, You're right.
+00:35:37 Speaker 4
+I guess I track you. Got you're right. I was actually looking into that. Yeah, um, Do you have any idea on how.
+00:35:44 Speaker 3
+Because I'm reading on how to do the yeah, I'm reading because I want to understand the uh that's actually one of the things that I want to understand.
+00:36:39 Speaker 3
+The city is located on the banks of the river Sava.
+00:37:08 Speaker 3
+I am not a good person.
+00:37:45 Speaker 3
+The city is located on the banks of the river Sava.
+00:38:15 Speaker 3
+The film was shot in the city of Tbilisi. You said something happened to your puppy. Oh, you have a puppy.
+00:39:17 Speaker 3
+Is that an expression? Sorry, I haven't slept. That's why I take everything literal.
+00:39:52 Speaker 3
+Okay, I think I found how to do it. So, The question I had before, when I was reading was which genes are contributing to that split? And what do these genes do?
+00:40:21 Speaker 3
+And for that, we need to interpret the.
+00:40:36 Speaker 4
+Okay, we need to interpret biologically. We need to examine the genes most associated with.
+00:40:46 Speaker 3
+This site,- specific contrast and then ask. What the genes do. So how this can be done? We can use the site- specific contrasts, type C versus control in.
+00:41:10 Speaker 4
+FF and same in CR. Pull the strongest gene from those contrasts, Okay.
+00:41:21 Speaker 3
+We can do diagonally, and we can use the bend point selected genes. Perfect. Alright, so we're halfway there. Split them by direction. Mhm.
+00:41:53 Speaker 3
+Hm. Uh huh. That's interesting. So should we try with both,
+00:42:25 Speaker 4
+Since the professorum advised to use.
+00:42:30 Speaker 3
+Uh, most represented. Uhhuh. Oh okay okay so we can do it that way too got it yeah.
+00:42:52 Speaker 3
+Sorry, I think I interrupted you. Alright, that's that's good. That's that's a good approach, then because we can kill two birds with one stone. The actual yeah. Then.
+00:43:16 Speaker 4
+Interpret them in two ways gene by gene. Look up what the stronger genes are known to do. Pathway level.
+00:43:27 Speaker 3
+That's what I started doing, the rectum arrangement. Okay. All right, So let me see, and.
+00:43:37 Speaker 4
+We should be able to figure that out with the design from the paper design, But.
+00:43:50 Speaker 3
+Let me check. Yeah.
+00:44:19 Speaker 3
+Yeah.
+00:44:51 Speaker 3
+Yeah, the H I F one A. Wait, is that a yeah A yeah.
+00:45:45 Speaker 3
+Between the two or or the three. Oh oh oh I understand now okay, two groups yeah.
+00:46:17 Speaker 3
+嗯。
+00:48:29 Speaker 3
+Okay.
+00:49:56 Speaker 3
+I'm sorry.
+00:51:06 Speaker 3
+I'm not sure what you mean.
+00:51:36 Speaker 3
+I'm not sure if I can do that.
+00:52:19 Speaker 3
+嗯.
+00:53:35 Speaker 3
+嗯。
+00:54:16 Speaker 3
+The film was shot in the city of Krasnodar.
+00:54:48 Speaker 3
+Hmm.
+00:55:19 Speaker 3
+The song was written by the band's frontman, Robert Plant.
+00:55:56 Speaker 3
+Making a H R. Key interacting genes, pathway anchors, H I F one A A R N T. And biology served. Injury response versus regeneration response. Degenerating neurons.
+00:57:01 Speaker 3
+Uh huh. Uh huh. Hmm.
+00:57:36 Speaker 3
+Oh. Wait.
+00:58:10 Speaker 3
+Yeah, I'm reading what he says. Um.
+00:58:58 Speaker 3
+So yeah, So it's likely reflecting a shift between injury-.
+00:59:05 Speaker 4
+Associated DRT transcriptional.
+00:59:08 Speaker 3
+Response and the contralateral comparison state.
+00:59:36 Speaker 3
+I'm not sure what you mean.
+01:00:49 Speaker 3
+Okay, I think I'm done for the day. I already know how to. And I took the notes. Um. To answer those questions, uh, the professor was referring to. Through analysis. After I sleep out. I'll work on that. Thank you guys.
+01:02:00 Speaker 3
+Okay. Yeah. Hmm.
+01:03:41 Speaker 3
+The name of the town is derived from the river.
+01:04:29 Speaker 3
+Yeah.
+01:05:18 Speaker 3
+嗯。嗯。
+01:05:53 Speaker 3
+Hm. Okay.
+01:06:52 Speaker 3
+The first is the most important.
+01:07:31 Speaker 3
+I am not a good swimmer.
+01:08:16 Speaker 3
+I'm not sure what you mean.
+01:09:52 Speaker 3
+The growth phase of the, the neuron. Okay. Yeah. Um.
+01:10:30 Speaker 3
+I'm not sure what you mean.
+01:11:28 Speaker 3
+Directly, but they could be indirectly.
+01:11:57 Speaker 3
+The city is located on the banks of the river.
+01:12:37 Speaker 3
+You say hyper system. Oh. Oh okay. Thanks.
+01:13:42 Speaker 3
+Thank you. Oh no, you you have contributed okay.
+01:14:40 Speaker 3
+Let me let me tell, let me tell you.
+01:14:42 Speaker 4
+Something that I don't know, but that I find it funny. Is that you're so smart that I fell asleep while you two were speaking, because no no no. That's not what I mean. It's like you know you do know what you're talking about, like you know your stuff. And sometimes when you're getting into so much detail for him, uh, you need to also know like his age. So it's hard hard for him to follow up so quickly.
+01:15:18 Speaker 3
+Oh yes, I've I've seen that.
+01:15:22 Speaker 4
+Yeah, I've seen that.
+01:15:26 Speaker 4
+But that was a pretty nice sleep. Nikki, I was saying that you did contribute, so don't worry about it. You contributed.
+01:15:44 Speaker 3
+I took notes.
+01:15:46 Speaker 4
+And I have the, I have some of the things, some of the notes. Uh, I'll share the summary. I have an idea of how to implement some of the things.
+01:15:55 Speaker 3
+Mhm. Yeah, that was the only thing I took. Um, yeah,
+01:16:21 Speaker 4
+I see.
+01:16:23 Speaker 4
+As a resource. No, no, no. I think I interrupted you. I didn't mean to interrupt you. I was just thinking out loud. That was the only thing it took from him as a resource.
+01:17:00 Speaker 3
+Hmm. I agree. Hmm. Hmm. Hmm. I see. Okay, that makes sense. Yeah.
+01:17:59 Speaker 3
+We're good.
+01:18:00 Speaker 4
+We have a lot of figures and we have a lot more to generate.
+01:18:13 Speaker 3
+Go on, Alex. I uh I started. Working on that. It's in the notebook I share. I don't know if that's.
+01:18:38 Speaker 4
+What you mean by GO analysis. Is that the enrichment summary? Is that what you mean by GO analysis? Sorry, you were saying,
+01:18:49 Speaker 3
+You were explaining it to me. Oh.
+01:19:08 Speaker 3
+Okay. Okay. That is the reason why. I am so if you look at the notebook, the.
+01:19:35 Speaker 4
+So there is a, A Go analysis that I attempted to implement with stuff that I was learning. So, see if that was done properly, if anything is missing, blah. But, but I did it because I wanted to get the enrichment summary to to like have those um.
+01:20:07 Speaker 4
+Like the strongest enrichment terms. Oh, no, we were talking about the GO analysis that we want to And oh, I think I was I was talking to myself and I didn't even notice it. Oh my goodness. Sorry.
+01:22:32 Speaker 3
+The film was shot in black and white.

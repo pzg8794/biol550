@@ -1,0 +1,1478 @@
+00:01:15 Speaker 1
+Operativo de la D. N. S. En San Francisco de Macorís, ni cuánto precio.
+00:02:14 Speaker 3
+I Guess. I'm doing some last minutes.
+00:02:22 Speaker 3
+Updates for us to go over the. The outline and the. I'm almost done. There you go, Okay.
+00:02:42 Speaker 4
+Hey Peter, just out of curiosity, is there a reason why you made a copy of the requirements tab?
+00:02:48 Speaker 3
+For us to discuss it because I didn't wanna. Um, mess up anything that you were working on.
+00:02:55 Speaker 4
+Well, that was just copy and pasted from Osher so.
+00:03:02 Speaker 3
+Yeah, I'mum. Sorry, did I answer your question? I guess I was just hoping.
+00:03:11 Speaker 4
+He would discuss everything before we started writing stuff out because I.
+00:03:18 Speaker 4
+I guess I was just confused when I entered the paper and I saw like. Full out, or I guess copies for everything and just detail stuff because I. Um.
+00:03:29 Speaker 3
+Can you justum you can share and show me, okay.
+00:03:33 Speaker 4
+I'm talking about the HDSA paper document that we're all on right now.
+00:03:39 Speaker 3
+Yeah, so you want me to share?
+00:03:42 Speaker 4
+No, I'm just askingum.
+00:03:45 Speaker 3
+Hold on because it's good to look at. Since while we're talking. Alright. Okay, so. Yeah, so basically what I did was if you go to the outline, I just um added some stuff in there and formatted a little bit, uh easier to read no much of a difference.
+00:04:15 Speaker 3
+This is what is in the syllabus fun. So, um, you're talking about requirements or outline, which one?
+00:04:27 Speaker 4
+I guess I'm just kind of confused because I didn't expect to see so much information already in the document.
+00:04:34 Speaker 3
+In this document? Is this something that you had not just that.
+00:04:38 Speaker 4
+I'm also talking about the copies you made for outline and paper.
+00:04:43 Speaker 3
+Yeah, this is from the draft that I gave you before that you didn't have. I didn'tum, you were not able to look to check.
+00:04:52 Speaker 4
+I have looked at it since, but I thought we would discuss it. Yeah,
+00:04:56 Speaker 3
+That's that's why I have another tab to discuss it. That's why we didn't overdrive this because we can put it in here. Does that make more sense now?
+00:05:05 Speaker 4
+Yeah, that makes more sense.
+00:05:07 Speaker 3
+Because I know that you guys don'tum, The GitHub is not too friendly for you guys, So I took the task to put it here, so it can be referenced here as opposed to going back to GitHub, right? Um and that way we can choosing here was was in there. Does that make sense now?
+00:05:30 Speaker 4
+Yeah, sure.
+00:05:31 Speaker 3
+Same thing with the paper draft. So I kept that over there because that is the one that we are all agreeing on, right? So the stuff that are here, Stuff that we're going to agree on. So that was the uh, that is the mindset after that. Now, ifum those things, If you had access to this drive, perhaps you know we could have done that earlier, right?
+00:06:02 Speaker 4
+I'm sorry, did I miss a meeting for when we plan to go over it?
+00:06:06 Speaker 3
+No no it's just, To be honest, I don't even think it's your fault. It's just oh, I shared that link, but then it got so cluttered. Ah, with um. Ah Samuel Samuel and I communication that I'm sure you lost track of the link. So, it's ah completely fine, Which is actually it brings us to the perfect segue into what I was telling Samwel that we we agree on.
+00:06:37 Speaker 3
+In Slack to just keep it about updates and coordination. So for that same reason, Because that was basically one of the things that complicated things and took it took take things out of context way longer than what it needs to be. So let's just keep I mean Samuel if you have any question now as far as a web. We agreed. Think this is a time to ask a question.
+00:07:16 Speaker 5
+I don't have any questions right now. I was just yeah, The questions usually come on the spot when.
+00:07:23 Speaker 3
+So that so okay. So that's basically it. So, weum after the whole issue that we have where things were taken out of context.
+00:07:36 Speaker 3
+We decided to keep Slack minimum and very simple. Just updates and coordination. If you feel some way about something or whatever, right? Schedule a call, you know, reach out because you were doing that before. You were saying, for example, this is too long. This is not helpful. You know, straight to the point. And I.
+00:08:03 Speaker 5
+Don't think everything requires a call though. Some things like I pointed out, you did something. I pointed it out right away. Didn't require a call because calls require time. It's no, I pointed something out right away. I don't, I don't think it's helpful talking about this. I think we should just No,
+00:08:22 Speaker 3
+No, It's helpful because It's helpful. Well, because The thing is that like this is this is uh like This is the problem. This is what caused the issue in the beginning well, I shouldn't say that. Caused this is what made things, you know, worse in the beginning because your comment that you gave right now. Um, not right now. Uh, That I just gave one response to it. And then I said we can follow up. It's it's on it's uninformed and spec speculative so it's speculation so it's wrong. So, if you do it in a video call, we can have that conversation a lot easier, right and is similar to in the beginning.
+00:09:04 Speaker 3
+Right, the comments were at times uninformed and also at times speculative. And, that's how things got out of context because we were talking about different things. And, some of the things you were saying were not true because we're talking about a different aspect of it. So,
+00:09:25 Speaker 4
+If I think he's trying to say that not all things are, what Sam is going to say is that not all things can. Be waiting till a call, cause I I mean at least I can speak for my schedule. I am kind of booked and busy to the minute, And this is kind of really my only safe time for meeting, like not all things can wait till Tuesday at eight.
+00:09:48 Speaker 4
+Which Is why sometimes we're gonna have to communicate over Slack.
+00:09:51 Speaker 3
+I get it, and that makes a lot of sense, but I'm only talking about personal stand. Nothing about the group work. You know what I mean. So if you feel.
+00:10:02 Speaker 5
+Nothing that I said was personal, everything that I said, um, if you're regarding last week.
+00:10:09 Speaker 3
+You want me to pull the message. You want me to pull the message so we talk about concrete stuff.
+00:10:17 Speaker 5
+It, I don't I don't have a lot of time for this meeting as it is. I just wanna do the final draft. I don't, We can agree to disagree. I don't think it's helpful talking about it when we both disagree.
+00:10:31 Speaker 3
+I do think so, just because I don't want it to repeat itself, you know. Ium. I didn't bring it up before because I thought we agreed to keep things simple, right? But it's you know, it's a repetition.
+00:10:48 Speaker 5
+In my books, I was keeping things simple. I pointed out something that was not being helpful and. That that's that if if you think that's not simple, then I just won't point it out and then that'll be that.
+00:11:01 Speaker 3
+That's why I'm pointing it out right now. I don't think it's simple cause you're saying that this comes back to okay,
+00:11:05 Speaker 5
+Well, I won't point it out then. I mean, that's that. I won't next time you paste like two pages of AI notes or whatever, I just won't point out that it's redundant. And then we'll just move on.
+00:11:16 Speaker 3
+And then see That's. Why is un uninformative? What you're saying? Because.
+00:11:22 Speaker 5
+Before, before. No. Let.
+00:11:27 Speaker 3
+Me let me explain it. Let me explain it. It's uninformative because what you're saying is actually wrong in terms of the context. The first thing is, uhum before I don't know why you didn't do it now before you just said, you know, this is too long. This is too much information. It's not helpful. Right? I just removed it just fine, rightum It's completely fine. Here you're saying that is AI generated stuff. Those are literally summaries. It's nothing, it's not AI generated stuff. They're literally bullet points from uh transcripts that I have.
+00:12:03 Speaker 4
+But did you handwrite those summaries, Peter?
+00:12:05 Speaker 3
+No, those are with a tool, but it's not AI. That's what I'm saying. You know, it's uninformed What what is the tool? It's uninformed Uh it's called Applaud and they do have an AI, A version of it that you can use, but I didn't use that. I used a template. It's okay.
+00:12:22 Speaker 5
+My problem isn't the AI. My problem is the tools you're using are.
+00:12:26 Speaker 3
+Not helpful. This is my point.
+00:12:28 Speaker 5
+Your tool was wrong.
+00:12:30 Speaker 3
+I don't this is my point What tool was wrong? What do you mean?
+00:12:33 Speaker 5
+Your tool when you pasted that stuff, It was wrong, It said D R G gene something I pointed this out in our conversation, i said D R G That's fine.
+00:12:43 Speaker 3
+You know it was wrong. It was straight up wrong, And that's where done That's fine. You know, there was an naming issue or whatever. That's fine. That's completely fine to point it out.
+00:12:52 Speaker 5
+I pointed out all the problems with it or like five problems with it.
+00:12:57 Speaker 3
+Correct, yeah, but that was a context that I provided as the assets wrapped. This is the message that I gave first and you completely ignore it. You just went there to criticize the context. So you see,
+00:13:09 Speaker 5
+My context matters.
+00:13:10 Speaker 3
+This is, but this is this is this is the answer to coordination like what we agreed, right? Slack to coordinate, right? Andum and provide updates. Exactly what we agreed. And I just want.
+00:13:24 Speaker 5
+To My.
+00:13:26 Speaker 3
+Point is, My Point is Samuel Context matters Yes And if you find it to be uh unhelpful too long. It is completely valid. Just say so.
+00:13:40 Speaker 5
+It's not that it's unhelpful,
+00:13:41 Speaker 3
+It's just wrong. Don't go, look, this is speculative because you're talking about earlier issues in the semester. You're implying that I was the one that took things out of context and caused the issue. You did, your tools did. Your tools did? What tools Samuel? What are you talking about? We're talking about messaging. We're talking about messaging. What tools are.
+00:14:05 Speaker 4
+I don't think that's what Sam's talking about.
+00:14:07 Speaker 5
+I'm talking about your tools that you used to summarize stuff. It has been a problem from the beginning, and it was a problem last week.
+00:14:15 Speaker 3
+I never use I didn't have a transcriber in the beginning. Uh, somewhere.
+00:14:21 Speaker 5
+Oh oh, okay, it wasn't transcriber. It was AI use. So whatever the first I never.
+00:14:27 Speaker 3
+Use AI in the beginning to copy and paste anything in there,
+00:14:32 Speaker 5
+Never uh you did. Because when we were looking at data sets at first, you. Printed like twenty pages.
+00:14:38 Speaker 3
+AI search, so well, that's a whole different topic.
+00:14:41 Speaker 5
+Well, there is AI. It doesn't matter if it's a different topic;
+00:14:45 Speaker 3
+It's useful. We're talking about things that you took out of context. I can give you two things in here right on top of my head. You took the driver, the Google Drive out of context, right? Because you made uninformative comments about it because you didn't understand it. I get it, right? You haven't built a pipeline with Google D rive;. I don't expect you to understand that. But you know, do not say things are wrong just because you don't understand it. The second thing was also the wrapper that I was building, right? You were saying that I was doing too much extra because you were not understanding, right? Instead of, you know, Being speculative and saying what's happening without you knowing and what is without you knowing what is, right?
+00:15:30 Speaker 3
+You can just ask question or set up a meeting because that has nothing to do with the project, and it's not gonna affect our goal, which is what I'm talking, you know, going back to Nikki's point, right? If, it's about the top, the the project about our work, and you can't wait. It doesn't matter you know how commentary how long the commentary the comment is. Put it in there right and we we decide how to manage it. But if it's something that you feel personal about like you know like. You feel that it links back to the issues earlier. So you feel that I have something to do with it. I get it, that's something that you and I can resolve separately. We don't need to drag the entire team on this and waste people's time. Like right now, Like right now, I have to do it because I don't want this to repeat. Like, I don't want to go on Slack and see your personal stand on things that have nothing to do with the group like none of it,
+00:16:21 Speaker 5
+Had none of it was personal All I said, was. Your incorrect usage of the tools that you have with AI, without AI, whatever tools that you use were redundant to the project. But it's wrong.
+00:16:36 Speaker 3
+You're saying things that I didn't do. That's what I'm saying. It's uninformative and it's not useful.
+00:16:42 Speaker 4
+We're not He's not saying that you did. He's talking about that tool. The tool was wrong.
+00:16:47 Speaker 3
+No, no Nikki, Are You can read it yourself right here. It says, look at this One of the main issues was. The overuse of AI. While I understand AI helped with the meetings, this is just way too much information and redundant. I think a better approach is that you go through the AI notes yourself. He's implying that I use AI in the beginning, which I did not. We use AI together for AI search for the project.
+00:17:17 Speaker 5
+But okay, so but you're missing the point of the message. The point of the message is that that tool you're using, if it's A I or not A I, it doesn't matter what it is. The point is that you use something that was not helpful and it's not helpful for the project. But but I I have a B and C. It doesn't matter.
+00:17:33 Speaker 3
+I get it. I get it, But did you get my point? I get your point, But did you get my point? That we agree as a group.
+00:17:45 Speaker 3
+I don't care if it is about something that is wrong or right or whatever, right? If, this is not the right place to put it in because it gets out of context. I could misunderstand that, right? I can think you're meaning something else when you mean something else. You understand? It just, It gets out of context, and then the whole pipeline comes back again, like in the beginning. And that's not going to happen again because I know better now. Like I'll stop it when I see it, but there is no need for me to having to tell you, hey, stop this. Like if you want to share something, right Whether you are right or wrong, it doesn't matter. Don't don't share in here because you can get out of context. You just, you know when we have a one on one. I don't care if you tell me, you know fuck off. Like when are saying in my face is fine, because I can see where it comes from. You can point out to me where I am wrong where I am right. You know where we can move on because.
+00:18:44 Speaker 3
+It is easy for me, like I don't have any issue changing ways. I'm constantly changing my ways with you guys to meet you more than halfway to make sure that we work as a team. I'm constantly making sure that I don't delete anything from you guys that I um that i've i let you guys decide first because i really don't mind which one like who leads how it goes the structure. This is something that i'm not gonna use, you know, But I wanna make sure that we work as a team and we work efficiently. So I don't like things like that. I don't wanna read it out of context, so don't put it in there. Just if you wanna share something, just do it in person like the way we've been doing to avoid that. Okay.
+00:19:28 Speaker 4
+Situation where it kind of needed to be addressed right away. Sam had asked a question and instead of getting a direct answer, he got that whole summary. So that what he was trying to say was in that moment, that wasn't very helpful for what he needed.
+00:19:42 Speaker 5
+Things like, what do you want me to do? You want me to go to class, and then tell you in person. Oh, what you did two days ago is not helpful. You weren't none of us are gonna remember what happened two days ago. That's not what I'm saying. Um, I'm going. I'm not gonna schedule a call. I'm not gonna do it in person. Uh, like, What is the I texted you the problem right away as it happened? What other solution, do you suppose Cause I'm I'm not gonna hop on a Zoom call in the middle of the day? Or like in the middle of the night, that like I have we both we all have schedules, busy schedules. So I'm not gonna call. I'm not gonna Zoom and I'm not gonna do it on pers ah person on a random Wednesday at ten am trying to remember what you did two days ago. So, what do you want me to do? Besides mention the problem, right? As it happens? Um,
+00:20:31 Speaker 3
+If first of all right, I'm gonna clarify to what Nicky said. You see the message that is in there, Nikki? That was the message I sent. That was the first. I sent two messages.
+00:20:43 Speaker 4
+What am I where where did you Right here,
+00:20:45 Speaker 3
+This message. That was the message I responded.
+00:20:48 Speaker 4
+Your screen if you're trying to show something on your screen, It's still on the paper Oh.
+00:20:53 Speaker 3
+No wonder Uh This is the message that I shared this one.
+00:21:00 Speaker 4
+Didn't you.
+00:21:04 Speaker 5
+You Had a longer message.
+00:21:06 Speaker 4
+Peter, I did see that longer message.
+00:21:07 Speaker 3
+It was much longer. It was like. If I may, if I may, I shared two messages, right? One which was this. This was this response. That's it. And the second one which I deleted was the context out of it. And you said it right there. You said transcript summary. You said it right there. It was a summary, right? Samuel, you know exactly what I'm saying like we are adults, I'm not telling you not to say something about anything. You can say whatever you want. What I'm just saying is that try not to add stuff in there that can get, that can, that can be taken out of context. That's all. Before you've done it multiple times, you said this is too long, this is not helpful. I don't know why this time you felt like you had to add your personal stand and say, oh,
+00:21:54 Speaker 5
+You know these things.
+00:21:57 Speaker 3
+This is right here. You know, this links back to the issues that we had earlier in the semester. Again, like what is the need to you know bring that baggage?
+00:22:07 Speaker 5
+It it it's it's it's not that baggage. You we had a meeting before this. When was this? This Thursday, we had a meeting on when on Tuesday of last week, right? Yeah. And you when you said that if we have any problems with what you're doing, just tell you right away. Yeah, in my face. Yeah. In my fa I don't see you. I see what three hours a week or two hours a week. No, That's what I mean directly directly That's what I mean But I did tell you directly This is directly I addressed you. I said Peter, I appreciate this. This links back to the issue This is Um Again.
+00:22:48 Speaker 3
+I'm not saying that what the action was wrong. What I'm saying is do no, I don't know how to word it. Am I wording this differently or whatever? Like, I feel like I am talking a different language. All I am saying is don't put stuff in there that can be taken out of context. You are bringing back the earlier semester issues, right? And a lot of this stuff, I purposely did not go one on one to tell to Make you guys basically say, "Hey, you know this wrong. This wrong. This wrong. " Because my assumption is that you both are adults, and you know what you did right and what you did wrong. So I don't need to go and point out to you what is wrong and what is right, right? You've been fine like lately. You've been saying this too long. This not helpful. You know we don't need these remove these. I don't understand why you feel like the need to um, s-You know bring.
+00:23:42 Speaker 3
+Li nk this to like issues from earlier in the semester and.
+00:23:48 Speaker 3
+Talk About AI usage and stuff like that. That has nothing to do with you know what I am doing. So like just speculate about the stuff that I am doing, which you know I noticed that. You did before the same thing. You speculated about things that I was doing, so it's just it's not helpful.
+00:24:04 Speaker 5
+It doesn't matter if it's AI or some tool. The point is,
+00:24:09 Speaker 3
+Are you getting my point? But are you getting my point? Like am I. What is it? What is it that I'm saying that is so irrational? I'm asking the two of you.
+00:24:16 Speaker 5
+This was on Thursday. Our meeting was on Tuesday night when we had our meeting, you said if you have any issues, point them out. I pointed this out. The point of saying this is the issue we had earlier in the semester was to connect. You knew what problems we had at the beginning of the semester, right After the peer evaluations and all that, we went over the problems.
+00:24:42 Speaker 3
+Semester you mean before the peer evaluation.
+00:24:47 Speaker 5
+I am saying the evaluation included the problems, thatum I. Specifically had, with, the group. From the beginning of the semester, everything before the peer evaluation up to that point. Right. I was just connecting the dots. I was connecting this problem that you generated however you did with the tool. I was saying that this point what you did here is connecting to the same exact issue. And that's that's the thing you should pay attention to how first of what do you mean,
+00:25:22 Speaker 3
+How first of all. This is not the this is not the place to to talk about those things, right?
+00:25:28 Speaker 5
+Where where is the place? I? Don't see you face to face I. Don't call you what am I supposed to do.
+00:25:32 Speaker 3
+You're open a a Pandora boxing here, and that is exactly what I'm trying to make.
+00:25:38 Speaker 5
+I have a question for you. What, do you suppose they do if you don't want me to address issues?
+00:25:42 Speaker 3
+What was the issue that you have with with what i what i pasted.
+00:25:47 Speaker 5
+It's, that it was too much and it was inaccurate. It was wrong.
+00:25:50 Speaker 3
+But why couldn't he just say that like he did it before.
+00:25:53 Speaker 5
+Because I was trying for you to connect A and B. You like, I was, I don't get it.
+00:26:01 Speaker 3
+Connect A and B. What do you mean? What, what do you? What is it for me to connect that you think is going to help me or help the team? When,
+00:26:09 Speaker 4
+We had a lot of context with the issues at the start of the semester, So basically, we don't have to bring up all the conversations we had at the start of the semester again, which is why he means connecting A to B. The goal is by only stating B, And mentioning that it relates to a, we don't need to pull all the context from a again.
+00:26:27 Speaker 3
+So yeah, we don't have to have a repeat conversation. This is helpful. This this type of messaging.
+00:26:34 Speaker 4
+I didn't see a problem with it because I alsoum found that a little frustrating because again, I mean, I also saw that it was inaccurate, and it was just lengthy, and it didn't really answer the questions that Sam asked. So to me. I literally said I can't deal with this right now because I'm a little busy because it was just a long message, and it wasn't an easy conversation. Which is why when I saw the message Sam sent, I actually supported it because again, it didn't solve the problem at hand.
+00:27:02 Speaker 3
+So you. So you think this is the right way toum uh approach it?
+00:27:07 Speaker 4
+He's sent a message explaining his issue.
+00:27:10 Speaker 3
+I'm just trying to get an honest feedback from you guys. Do you think this is the right way to approach?
+00:27:18 Speaker 5
+I'm connecting two problems.
+00:27:20 Speaker 3
+I'm not asking you whether you're connecting two problem or not. I'm just asking you guys genuinely, do you think this is the right way to approach it?
+00:27:29 Speaker 4
+Messaging problems? Is that what you're asking? I think yes, because.
+00:27:36 Speaker 4
+When I have issues with other group members, I call them out on it in messages. When I have issues with Sam for other things, I message him about it.
+00:27:44 Speaker 3
+So so do you think. So, do you guys could have done the same thing with you guys when you guys were talking about Google Drive and you were completely wrong when you were talking about the wrapper and you were completely wrong when you were talking about the steps that I was doing also that were no AI. If.
+00:28:00 Speaker 5
+We're saying something wrong, should I type it in the chat?
+00:28:04 Speaker 4
+You did tell us we were wrong with Google Drive.
+00:28:06 Speaker 3
+I did I did not tell you guys you were wrong. I said to you guys, You, I was actually because, I don't jump to conclusion like that. I I don't like doing that. I said to you guys, if I may, I said to you guys, we are both talking about two different things. And I said it very clear. And that is the reason why.
+00:28:27 Speaker 4
+And then you never elaborated so. No no,
+00:28:30 Speaker 3
+Because because we agreed that we were going to meet in person to avoid the ping.
+00:28:34 Speaker 4
+Are we not talking about the Google Drive? Because that was a lot That was like the first time we got together. That's exactly my point. And at that point, we had no agreement to meet.
+00:28:42 Speaker 3
+That's exactly my point, Nicky. You're making my point in here. Bringing linking this to earlier issues in the semester is opening a Pandora box. You.
+00:28:54 Speaker 4
+Are talking about a Google Drive, we're talking about a different issue. This is no longer about the Google Drive, I don't know why the Google Drive came up in the first place.
+00:29:01 Speaker 3
+I'm saying, because I didn't go problem by problem and say, hey, you guys were wrong, like you guys are adults, I don't need to tell you what you were wrong or you're not wrong about right? So we had an agreement. This is what I don't understand why. So all of a sudden, it feels like I'm the only one that made that agreement. I thought that we made a very clear agreement where we said we were going to keep things minimum, right, for updates and feedback. It's not the first time but it's.
+00:29:36 Speaker 4
+Not This message was minimum to me.
+00:29:39 Speaker 3
+But, it's not the first time that I copy something that is long, and you guys tell me doesn't work. I don't know what changed or not. I don't, could you repeat that? It's not the first time that I copy something that is long. And you guys tell me, it's not helpful or it's too long and I deleted it. It's not the first time, you guys have done it before. So my, The reason why I'm confused is like how come you guys work before just fine when something was too long on helpful or wrong, just told me directly. I removed it or or changed it or whatever, and then I run it by you guys again.
+00:30:13 Speaker 4
+Because it's been repetitive.
+00:30:16 Speaker 5
+It's been yeah, it's been repetitive. You've you've been doing the same issue every single time. So the re the way to officially not officially but a way, a, a more like not radical, but a more to put more emphasis on the issue that you keep repeating was to link it back to the issues you already. Had your attention on which you know our issues in the beginning that it was over AI usage over tool.
+00:30:45 Speaker 3
+I'm gonna take your there. I'm gonna take your word. Right. I didn't interrupt you. Sorry, I was thinking. Go ahead.
+00:30:54 Speaker 5
+Oh, okay. My, my point is you you can't use the biggest. The biggest problem was that you use a tool, whatever it might be AI not AI. Generative whatever transcribing notes, point is. The issue was, you did two, you you would copy paste. And you would do you would put too much information when we only needed a little bits of information. It's easier for us. It's easier for you. It's easier in the long run, um more information is not always good and, You've been doing the same issue over and over and over, And I think putting emphasis You already knew we had a problem The initial problem at the start of the semester Stop,
+00:31:33 Speaker 3
+Saying You already know. Because you're implying that I know something that I'm not.
+00:31:37 Speaker 5
+We talked, we had a whole conversation, you acknowledged that you knew about these problems.
+00:31:41 Speaker 4
+Discuss this. This was part of the part that in that conversation we had, this was a big part of it.
+00:31:47 Speaker 5
+When we talked about that Google Drive, I mean multiple conversations, but especially that one night where we talked about the Google Drive, we didn't only bring up the Google Drive, We brought up the fact that you overuseum uh tools and A I and whatever not. We we brought that uh issue up. I brought it. I don't know. Okay, So I was tracing it back to that.
+00:32:08 Speaker 3
+Because you knew about that here with you guys, but this is the problem. And I'm gonna and I hope it doesn't repeat again, right? I can see, I can now understand where you guys are coming from. And this is the reason why you don't put it in here. Just don't do this again for me.
+00:32:24 Speaker 5
+Where, do you want us to address an issue? Well, Samuel, Samuel, well Samuel,
+00:32:28 Speaker 3
+Well Samuel Well Samuel Well Samuel.
+00:32:32 Speaker 5
+Right. Me too. Okay,
+00:32:34 Speaker 3
+So let me finish so you can understand what I'm saying because I okay. I try my, i try my best my best toum even I'm trying my best too. No, No, I'm saying I try my best to, you know, give you the time to speak, so I understand and see where you guys come from. Okay? So, what i was trying to say before is that i think i understand what what you guys are coming from. And i think there's a common ground here, but. Before I even get there, right? This this an example of why uh, we need to avoid this type of message, which we agree in the beginning. I'm not sure why it changed, but for like keep a minimum. It just said this not helpful. Remove it or whatever like you guys did before. It's fine. Everything else we can discuss later. Now, In terms of where I think you guys come from that I think I understand, I think that you guys are saying and this why these things.
+00:33:30 Speaker 3
+It's a little bit, it throws me off a little bit that stuff that I have put together, Whether it was with tools or information I put together AI or no AI has been too much information, not helpful, right and has been something that has occurred multiple times. That's what I'm getting from you guys right now. I wasn't under the assumption that that was the case. Because, let me let me now explain you why. Most of the time, just like in this message, you're always talking about AI. So it confuses me because in the beginning, I didn't have that and I didn't share anything with that. And now I didn't have it either and I didn't share with that. That's, why I said to you before that your messages are uninformed because they're using the wrong?
+00:34:26 Speaker 3
+Wording for things and it confuses me. Now I think I understand you guys in general. You're talking about the information that I put together, whether it is AI or no with a tool or no or stuff like. I get it right. I think I get it, and your criticism about being too much data is also valid guys. Like you can just say listen this is too much information. It's not helpful delete it period like I'm not, I'm not taking that away from you guys. Like sometimes, I'm on a journey and I'm thinking, you know, I'm being helpful. I'm like okay, you know what? Uh, I'm gonna put this graph in here. And it was my bad because I should have checked it double, check it even before. First of all, i should have double checked it before i share it right to make sure that it was correct. And second of the four, right, i should have actually shared as a document. So you guys have the ability to to.
+00:35:22 Speaker 3
+It's not cluttered, the message here. And you guys have the ability to say, hey, there's so much information. Just, you know, we don't need it. Right? Like, like with the clean version of the GitHub that I'm trying to keep clean as well. The common ground that I see is that to avoid this to take out of context because I completely took your message out of context again.
+00:35:43 Speaker 5
+How did you take it out of context?
+00:35:45 Speaker 3
+Because none of the stuff that you said in here are true.
+00:35:49 Speaker 5
+Just the A I part you were focusing on A I instead of the general message. Because I didn't understand we,
+00:35:53 Speaker 3
+I'd, how do you expect me to understand you? Samuel if you are saying I'm doing something that I'm not. I don't understand so, I'm not sure exactly, You know what the confusion is or what the connection is in here.
+00:36:07 Speaker 5
+Forgive me if i am wrong but, i feel like it is a skill that you learn, You know, throughout college, throughout life in general, that when something piece of piece of information is given to you, you do not just look at the small details and focus on them. You look at the general picture because you not all the information you always get in life is going to be all accurate. All detailed. All just like it's gonna tell you everything you need to know. You get a piece of information and you look at the general picture and then you either do bottoms up or.
+00:36:40 Speaker 5
+Um, the opposite. So just because I said AI, it doesn't. It doesn't matter if you scroll down, you say no Sam, these are transcribed notes and I say okay. These transcribed notes aren't useful. I corrected my AI part. So I honestly I don't think, I don't think me saying AI is a problem on my part. Yeah, it's not AI. It's a tool but, Honestly, I think it is a skill everyone, I mean everyone has that you can look past that A I, And you can say, oh, he's saying, whatever I did no matter if it's A I, it wasn't helpful. I don't. I think paying attention to the little A I is that that's detrimental really um and that's in the case that I didn't clarify what I was talking about, which I did, because you said this is transcribed notes.
+00:37:39 Speaker 5
+And then if you want to scroll down, you'll see me say, Oh, these transcribed notes aren't helping. So I don't understand why you're paying attention to AI when it's really just a minuscule detail that I think does I I you're giving it way too much credit and maybe. You are focusing on the wrong thing. Son. I'm focusing on the wrong thing.
+00:38:00 Speaker 3
+Yes, because, We already agree on the stuff that we're said, right? There's no reason to go back.
+00:38:06 Speaker 5
+What did we agree on because I'm I asked you a question, how would you like me to communicate my problems? I told you I can't meet face to face because I don't even we don't meet.
+00:38:16 Speaker 4
+This meeting has already been thirty seven minutes. We can't do this on the go when we have issue Peter.
+00:38:23 Speaker 3
+I know but Nikki like, I'm trying my best. And for some reason is it's like a loop if you could help in here and just because. I'm not saying it like we already agree on the things that we had to agree. And I was just discussing a common ground. You're bringing us back some well to the the thing. Like, can we just agree on a common ground and move on because.
+00:38:43 Speaker 5
+I'm asking you the common ground. I'm asking you, How would you like me to address the issue Because th? The way we address the issue is not going to be face- to- face, because that's just not possible. It's not gonna be calling cause that's also not possible. So please tell me, that I'm asking you what is the common ground? How would you like me to address issues?
+00:39:02 Speaker 5
+Not by message. I think I've like,
+00:39:05 Speaker 3
+I've said it like more than three times.
+00:39:07 Speaker 5
+Say it a fourth time because I don't understand this common ground that you're talking about. May I?
+00:39:17 Speaker 3
+Yeah. Okay, we agreed to keep it simple, right? Updates and collaborate, right? And I already gave you an example. You already did it before. Like, I don't need to tell you how to do it. You guys did it before. Something didn't work, something didn't work and why it didn't work. The extra context, keep it to yourself. If you cannot keep it to yourself and is about the group, that's fine, throw in there if is about our work. This not about the work, this not. It is! Do not tell me that this about the work! This about me!
+00:39:50 Speaker 3
+This is not about.
+00:39:52 Speaker 5
+This is about work that you have done which affects the group. Yes,
+00:39:57 Speaker 3
+Okay, then I agree. Then who do you who do you need to talk to?
+00:40:01 Speaker 5
+I address you in this. I say Peter,
+00:40:04 Speaker 3
+We agree this is not the way to do it. We agree in the beginning. We agree when this happened. If you have an issue about the other persons. This is not the way to do it. Why why are we going back in circle? You want.
+00:40:18 Speaker 5
+Me to say this exact message privately? Is that it?
+00:40:23 Speaker 3
+What what was that, Nikki?
+00:40:25 Speaker 4
+We explained why we wanted to why Sam wanted to address this right away because we couldn't just get into a call at five thirty p m on a Friday to discuss this issue when Sam's message needed not necessarily an urgent response but a response.
+00:40:42 Speaker 4
+This is late. We couldn't wait till Tuesday to discuss that. That's why we're saying, I understand. Yeah, we should be discussing, maybe we should be saving bulk of the conversations for Zoom calls, But not everything can only go on that when we only meet once a week to discuss everything project related and this late at night.
+00:41:00 Speaker 3
+Nobody is saying to discuss everything in a meeting, Nikki. That is unreasonable.
+00:41:07 Speaker 4
+I agree, but we can't also do meetings on the go.
+00:41:11 Speaker 3
+I agree. We cannot meeting do meetings on the go. I don't understand. So do we just ignore things then? Again, I know I don't know why you guys are ignoring what I'm saying. You have said this before. This doesn't work, this does not work, we don't need this. You could have said that and wait for us to meet and discuss about the long messages. I don't want to say what is the urgency here. There is no explanation whatsoever here, To say, there is an emergency here that needed to be addressed at that point at that time.
+00:41:47 Speaker 4
+I'm gonna repeat what Sam said. You said we're trying to find a middle ground. What is the solution here? Let let me finish. What is the solution when no one can meet on the go, and we only meet one time over a call? What is the solution for how we fix problems, if it can't be the once a week meeting or on the go? Like what is the solution there?
+00:42:08 Speaker 3
+First of all, we're addressing this here. This issue. You you you are creating a scenario that I don't even know what.
+00:42:16 Speaker 4
+This is the scenario that happened. We had an issue in the moment, which is why we texted you.
+00:42:22 Speaker 3
+The scenario that I'm giving you here, right? We are talk You guys were talking about their long their long thing, right?
+00:42:29 Speaker 4
+Yes, that was the issue we had. Okay.
+00:42:31 Speaker 3
+If you say like you said before, delete it. Right? I'm asking this question. Right? Delete it. This is not useful. And I delete it. Right? What, what will have what is so wrong about it to address second part of it in a meeting? What is so important? Tell me please. What is so important?
+00:42:52 Speaker 5
+What second part?
+00:42:55 Speaker 3
+The second part, what you're addressing in here, stuff that you're saying that links back to the issue of the alias semester, the AI stuff, blah blah blah blah. Like why is it so hard? Like, what is it so important about this part, right, that needed to be addressed here? This scenario right here. And not just say hey this is unhelpful. We don't need this.
+00:43:15 Speaker 5
+Because I'm trying I'm trying for you to connect the problems so you can have a better idea of how to fix them. My other question is, why are we?
+00:43:25 Speaker 3
+Why is this one sentence?
+00:43:27 Speaker 5
+Why is this one sentence creating such an issue? I I told you I appreciate the overview. I told you a better approach, what to do. And I told, uh and I uh I told you how how to fix the problem and what the problem is. Why are we focusing on small details?
+00:43:42 Speaker 3
+Okay, okay, okay. Whatever it is, I don't care if you want to connect it to A, B, C, D or F or Z. I don't I don't care. You I'm I'm gonna I'm gonna shout it right here because we're not going anywhere. That's why I'm gonna shout right here. I'm gonna shout it this way. From now on something that i put in the in here, that is affecting the group, right? You said it, you do not It's not helpful. It's not helpful, blah blah. Anything else that can take be can be taken out of context. I don't need it in there. Okay, like.
+00:44:18 Speaker 3
+We we don't need it in there. You can address it with me. If you cannot address it with me, then you know, then don't don't put in there. Forget about it. It's not important, okay? No,
+00:44:26 Speaker 4
+It is important if it's affecting how the group's functioning.
+00:44:29 Speaker 3
+If it's affecting how the group is functioning, Nikki, we need a meeting. We need a meeting.
+00:44:34 Speaker 4
+We don't have time for a meeting. The only time we can meet is once a week on a Tuesday night.
+00:44:39 Speaker 3
+It does not matter In a real In, a real world scenario Right if you're in a teamwork. And something that one of the team member is doing is affecting the the the performance of the team. There is a meeting. There is no such a thing as like, how do we follow up via email? How would we follow up via Slack? You guys need to treat this, just like, like if you were in the real world and you had a real team, this is the way that way we work. A meeting. So it's it's something very important.
+00:45:10 Speaker 3
+I'm Gonna this I'm gonna I'm I'm just wrapping it up tomorrow after that, you guys can wrap it up. If something is very important, right, like you said, and it's affecting the performing of the team, we go in a meeting. That's it. Like, that's how it happens in real world, and that's how it needs to happen here because that's how It's not the same.
+00:45:30 Speaker 4
+Respectfully, it's not the same.
+00:45:32 Speaker 3
+I understand it's not the same, but that's the whole concept of working in a group.
+00:45:37 Speaker 4
+You can't compare working in a group for a job at like working in a group for a class. In a job, You have a set time that you are meant to do stuff related to work. Mhm. From eight to five, five days a week. That is forty hours of time to create a thirty minute meeting and discuss problems. We do not have forty hours a week to discuss our problems with this project.
+00:46:05 Speaker 3
+All right, so I told you guys what I feel uncomfortable, right? Now what is what is what is your suggestion?
+00:46:17 Speaker 3
+This is the group, so you guys. I'm gonna have to do it again because I thought I understood what we agreed before. So, as a group, You guys have to decide what are the structure. So we can follow itum to the team. And this doesn't happen again. So, what do you guys suggest? I already said what I suggested, but I'm not the group right. So it's not like when I say go.
+00:46:41 Speaker 5
+You have all the information yes.
+00:46:43 Speaker 3
+So we can move on.
+00:46:45 Speaker 5
+It's it's all there. It's literally just read where your mouse is right now. Read exactly what that is and that there's there's a suggestion that's yeah, nothing.
+00:46:54 Speaker 3
+Let me repeat again the question. I already told you guys what I'm uncomfortable with, right? And what I find unproductive. Now that I suggest one way, now you guys, If you guys have a better way to suggest so this doesn't happen, I don't take things out of context, right? Oh, You guys don't take things out of context because you guys have taken stuff that I've written out of context as well. So what is the best approach you guys think we can proceed since, you know, I already I already gave I already gave my opinion. Like I'm not going to go back to that. So you guys know what i what i think.
+00:47:36 Speaker 5
+You're asking what? What.
+00:47:39 Speaker 3
+How do we move as a group?
+00:47:41 Speaker 5
+Okay, I can't speak for Nikki. I can speak for myself. You're asking what do I think you can fix about.
+00:47:48 Speaker 3
+Your part of the project? We, Samwell, we.
+00:47:53 Speaker 5
+We, I know things I can fix. I know things Nikki can fix. I know things you can fix. Exactly. They don't always overlap.
+00:48:01 Speaker 4
+Need to be urgently addressed or things are getting to a bit of an excessive point. It can be addressed over text, that's what I think. We can have the bulk of the conversation over Zoom. You didn't even have you didn't have this the conversation we're having right now. We didn't put any of that in the Slack because of our agreement to take things to a call if we have a huge issue. That conversation did end at a point, even though the conflict wasn't resolved. However, I, you cannot just avoid text message conversations all the time for anything group related or any issues we have.
+00:48:36 Speaker 4
+And so I'm suggesting we are able to attempt to discuss things out in a conversation. And if it doesn't work out, then we go to call. Cause that was what I thought we agreed with.
+00:48:47 Speaker 3
+Okay, that's not what we agree by the way. But.
+00:48:51 Speaker 4
+I disagree because that means we were never in agreement in the first place. So we did not agree on anything.
+00:48:56 Speaker 3
+Again, Nikki, I'm gonna rephrase what I said. That wasn't explicitly what we agreed. Does that make more sense?
+00:49:09 Speaker 4
+Isn't this the same issue you were saying you're assuming for us, you're making statements for us?
+00:49:14 Speaker 3
+No, no. What I'm saying is that explicitly we didn't add details like you added right now as a first attempt. We never.
+00:49:22 Speaker 4
+I am fairly confident I said this.
+00:49:26 Speaker 3
+But I don't remember that, Mickey. So, I. What I the only thing I remember that we that we discussed was okay, but I'm just being honest with you. Like, this is not like this is not a game, guys. Like, I'm not trying to be difficult or anything. I just wanna I'm trying to figure out a way that we can work together. So that what happened in the beginning does not repeat. That's that's all. Like, I don't want what happened in the beginning to repeat again. That's that's that's all. So, if you said that in the in the beginning, um That is what I said,
+00:49:57 Speaker 4
+Yeah And. We agreed on that.
+00:49:59 Speaker 3
+I don't have a way to dispute that because I don't remember. Okay, so if Samuel remembers it, then he is the one that can dispute it.
+00:50:07 Speaker 5
+I don't think there's any point of talking about what ifs, buts.
+00:50:11 Speaker 4
+Now we're just talking about what we're going on from this point forward.
+00:50:14 Speaker 5
+Yeah, yeah. Okay.
+00:50:15 Speaker 3
+Yeah So I was just saying Samuel to Nikki that I don't remember if she didn't mention the first attempt, I don't remember like if you do remember, you will be the one that would break it between the two of us. Which it doesn't matter, right?
+00:50:29 Speaker 4
+Like we we're That doesn't matter at this point. But I think we should proceed with Well,
+00:50:33 Speaker 3
+The only reason Nikki to stop you right there uh quickly and then you can proceed. The only reason why I'm saying is because I don't want you to think that I'm that I'm speaking for you for you for you guys or or what I'm saying, or that I'm putting words in your mouth, which is something of the sort that I understood that you said in later? That wasn't my intention. I was just saying exactly explicitly what I remember, because I didn't remember the second, the first attempt. Go ahead. Sorry.
+00:51:07 Speaker 4
+From this point forward, we I personally think because you asked my opinion on what we should do. Yeah, We should attempt to discuss things over messages because we are all in agreement that are too busy to do impromptu calls. So, we attempt to discuss in messages and if it's clear. That it's not gonna get resolved within like ten messages or something, Then we take it to Zoom because at that point, that means it's important enough important enough to spend during to discuss during our weekly meeting. Okay. But if something that can actually be resolved in ten messages, We save time weekly because we already took care of it on whatever day the issue occurred. So instead. So if an issue occurs on Friday and it can be resolved in ten messages.
+00:51:50 Speaker 4
+Cool, it's done on Friday and then Tuesday we're not all building up resentment.
+00:51:55 Speaker 3
+Alright, so I can work with that. Um, Can we make it five messages So in the event that stuff like the draft that I sent right doesn't get cluttered, and you can Samuel, what do you think?
+00:52:13 Speaker 5
+I think saying five or ten messages is silly. Five what five, Paragraphs verse ten.
+00:52:20 Speaker 4
+Yeah, ten is just an arbitrary number. The idea is that it's not getting resolved right away.
+00:52:24 Speaker 3
+The reason why I mentioned this and well, just I know you find it silly, But the reason why I was saying that is because like we get to miss important messages. Like, for example, Nikki didn't get to see the draft when she was drafting the outline, which we know would have kept thingsum I would like like we wouldn't have to redo things, for example, like what I did, right like the double taps or to go over that. And choose what we want, so that's the reason why I mentioned this.
+00:52:52 Speaker 5
+There is also the solution to say okay, let's go back on track, go back up in the chat and look at what I said. There is nothing wrong with saying, go back up in the chat with so and so date. Also you can forward messages, But even less work, you can say go up in the chat I posted X Y Z. Are you, In line.
+00:53:18 Speaker 3
+With what Nikki suggests, or no, you wanna make a an a uh changes.
+00:53:26 Speaker 5
+With what Nikki said.
+00:53:28 Speaker 3
+Just suggest it. Yeah.
+00:53:31 Speaker 5
+Her point was that if there's a small issue that can be solved over text, then let it be solved over text.
+00:53:38 Speaker 3
+With with a specific number of attempts, yeah.
+00:53:42 Speaker 5
+Alright, So you want me to say specifically ten. What are we just No,
+00:53:46 Speaker 3
+I just want your feedback as well. It's just I was trying to get you back to Nikki. I agree with Nikki. Yeah,
+00:53:50 Speaker 5
+Fully agree with Nikki. Okay, I think yeah, I don't think ten ten is an arbitrary number. Mhm hmm It can be what if it's eleven What if it's nine? I don't understand what.
+00:54:02 Speaker 3
+She said attempt, Somewhere like.
+00:54:05 Speaker 4
+Ten was an arbitrary number. Sam understood that correctly. Ten is an arbitrary number. If it happens to take twelve messages, it doesn't need to go till our Tuesday meetings, but around ten, how about that?
+00:54:17 Speaker 5
+My point was that you can if we do text the ten messages, You can say, look, okay, this is solved. Now please go back in the chat, and you know, look at what I sent before this started. And there's your problem solved. You said it's too crowded. That's my solution to too crowded. Also,
+00:54:38 Speaker 3
+You can forward also also there is some context in there. The reason why, I should have said that in the beginning, guys. So we'll go with that. That's fine, Um we're gonna try an attempt to resolve message, two messages like I did. And then the reason why I put it to a video call, it's because. Um, I know Samuel, You feel very strongly about what happened in the beginning because you like, like out of Nikki's rating and my rating, the only rating outlier was yours. Like you gave me one in everything. Right. So and that is completely an outlier. Like Nikki's rating and mine are almost similar, like one to two points apart. Right with constructive with constructive criticism. That is the reason why I wanted to address here because I feel that there's something that you're holding on to right?
+00:55:28 Speaker 3
+Right, and it shows. I may be reading out of context, right? I may be reading out of context, but it shows somewhat in some of the messages that you sent. Like this one. So I don't know if there's something that unresolved from the beginning that you haven't been able to share with me about something that you feel uncomfortable or whatever that hasn't been addressed. This is not a time, of course we're not gonna like we're gonna wrap it up right in here. But, if it needs to be addressed somewhere like, let's do that call, and let's talk about it. So. You can, you know, say what needs to be said, right?
+00:56:01 Speaker 5
+A you you can't just, you know. Say something and then let's and say, let's stop it right after I make my point. No no I I.
+00:56:11 Speaker 3
+I just meant to use that as a context as in why I felt so strong about that message.
+00:56:17 Speaker 5
+No i i i know what you said, yeah, i'm just saying that like you like you can't just say, oh, i'm. If you have anything, say it later. You can't just say that and then not let me. Oh no,
+00:56:29 Speaker 3
+No. If you, that's fine.
+00:56:30 Speaker 5
+I don't have any I don't have any unresolved issues with you. If there is a pattern in what I say, if I say I have an issue and there is a pattern in that, that pattern stems from the issue you keep repeating. If that's the thing you like, If in your head, you are like saying, oh, he has a consistent problem with me, that consistent problem is due to your consistent actions, Which are the issue, which I have said multiple times. Yes, my issues is that you overuse tools and then you crowd. You crowd the um the amount of information that we're given. This is a consistent issue that's been from the beginning of the semester. And it's now. So yes, if you feel like I have a problem, it's because I do have a problem which I have voiced. There is no underlining problems, I have no underlining problems with you besides the fact that you just crowd and put too much data.
+00:57:23 Speaker 5
+That sometimes is inaccurate and is detrimental. So, if that's what you're talking about, that pattern, that's your pattern. I just emphasized it. Does that help?
+00:57:36 Speaker 3
+Um, I think so.
+00:57:40 Speaker 5
+I mean Did I answer your question? You asked me Is there a specific problem?
+00:57:46 Speaker 3
+Like I said, it's a communication for another because your rating and your comments, And and what you're saying right now, they don't add up. That's, you know, they they just don't add up. They're inaccurate. You know what I mean? But, that's something that we can go over together and you know, and spell it out and say, you know, why did you feel about this when X Y and Z actually happened Right? Because one I think that's something about us somewhere like I don't think we should bring Nikki into this. And affect the team.
+00:58:20 Speaker 3
+We can address that at a later point. I think now we have, we we decided to basically the the approach. The way I see it is now we're gonna attempt like the way the way I did it here, right to solve it in there if it's if it keeps if we feel like it's gonna go long, we just you know move into, we discuss in a meeting something like that. So w'e gonna go with that approach and that's it. The last thing that I wanna see The last thing that I want to mention is that I noticed that it happened three times. It's on Thursday's meeting when we are um with, in the class in the class, let's let's try again. In the breakout rooms? Yes, in the breakout room. This is the only thing that I'm going to ask you and beg you tomorrow. Let's try our best to focus on the task and no deviate us from from work, right? Because, like when.
+00:59:17 Speaker 3
+You do stuff like checking my code for example, things like that, which I understand is not your your domain. Like Checking like checking my code, which I understand is is not your your domain. And, you can you know see things that may look wrong, and they are not right, which is fine right? But if we're in the classroom on Thursday, you know let's put that aside. If you have like when I see something that I think doesn't add up that you guys are saying, I don't go and interrupt or question or anything. I try to do my due diligence and then hear from you guys and the professor. And then I try to send a message and see if I got it right or not, right? I don't go and say, hey, this is wrong or whatever. Are we.
+00:59:57 Speaker 4
+Talking about what happened last week? Cause I thought Ojja told us to look at the code, I thought.
+01:00:01 Speaker 3
+No no no. I'm just talking about because multiple times we were in this in the break run in the breaker room, and we were talking about something and just deviated because. I was trying to answer some questions for Samwell, Whether it is about the code that Ozzy already checked or delete some files from the server, stuff like that. You know, I am just saying like if we could like I touched base with you this one on one. Samwell remember. So if we could just like try to like not to do that, that would be great.
+01:00:41 Speaker 5
+I what is called, I asked the question about code because I was generally curious about the code and coding is my domain. Um, bioinformatics is computation and biology and statistics. It is my domain. I code most.
+01:00:55 Speaker 3
+Coding is not your domain.
+01:00:57 Speaker 5
+You're telling me what my domain is?
+01:00:59 Speaker 3
+No, I'm saying like as the main main main aspect of your field.
+01:01:06 Speaker 5
+What can you do? You want to tell me what my main aspect of my field is? Is it not bioinformatics? What is bioinformatics?
+01:01:14 Speaker 3
+Is computational bioinformatics what do you mean?
+01:01:17 Speaker 5
+Yeah, computational. What about it is computational? I work with code. My that's that's I work with code for two and a half years at RIT. That's literally I've been paid for years to do code. I get it,
+01:01:33 Speaker 3
+But it's not your domain, that's what I'm saying. Like you don't like your your main thing is not coding, your main thing is value through coding.
+01:01:41 Speaker 4
+Or Peter, That's not how this. Are you is this how you're viewing the project split up?
+01:01:45 Speaker 3
+No no no no. You guys have misunderstood me. What I'm saying is, if we are, for example in the breakout room right, and something pop up about the code, the professor checked everything and we're moving on. There's no reason why we continue tracking that.
+01:02:03 Speaker 5
+I I well I had a question on clarification because the code you're using, I've written code similar to that, maybe not in the same context,
+01:02:12 Speaker 3
+But I've so I'm I'm I can ask a it's code that's going to be, you know, in our paper that we all have a name on. So we should all know how it works too. Um this is coding is my domain. It it's literally it it is my domain. Okay, so if you feel that it's your domain, that's fine. I'm not going to argue about it. What I'm saying is uh, and this is the last time I'm going to repeat myself. If we are on a Thursday, Uh and we're in the breakout room, and we're doing an assignment and stuff have been checked already. If you have a question separate about that, Let's first do what was tasked to us right? While we were working there as a team. And, then you know go back to your inquiry, right or next time that happens,
+01:02:59 Speaker 5
+Say it right on the spot because I am I cannot tell myself right now, not to do X Y Z in future. Just if you think, Next time, I ask a question and you think it's not necessary, say Sam. I don't think this is necessary right now or I'll do it later. Okay, and then if I have a problem with that, we can debate it there. But, i I have no problem. Yeah, with me asking about code you wrote, because it is my domain. I know, i obviously haven't worked as long as you did, but i It is my domain. So I think am more than entitled to ask.
+01:03:37 Speaker 5
+How a code works because, yeah, I don't even know why that needs justification. This is not a competition. I've been i i i've been.
+01:03:45 Speaker 3
+I know it's not a competition.
+01:03:46 Speaker 5
+Yeah, I've just saying that I don't think I need to justify myself to ask a.
+01:03:50 Speaker 3
+Question about code since two thousand eight. So like, am old man? This is not a competition in two thousand eight It's not a competition. Yeah, It's not a competition at all So. All right. So i'll keep it in mind. Um i'll. Nikki has been doing a pretty good job about that, anyways. But, you know, if I do remember, Which I usually don't 'cause I usually try to be- - to generally try to help you guys understand whatever may be wrong. And sometimes even I even double check to see if I'm wrong too 'cause, you know, Sometimes it doesn't matter how good of an expert you think you are in your domain. You know, you make mistakes. You're human. So that is completely doable.
+01:04:29 Speaker 3
+Alright, I am done with that. So I just wanted to make sure that we have a way to know how to communicate better moving forward. Now, Nick, you can take over. Yeah, you can take over now.
+01:04:42 Speaker 4
+Looking at the HTSA paper document that I shared, I'll share my screen. Yes. Um Can you give me share request? I just okay cool Yeah,
+01:04:53 Speaker 3
+I don't know why it keeps asking me that like, I need to cause. Samuel doesn't need to ask me for any of those things. I don't know. Let me see.
+01:05:02 Speaker 4
+Okay, So I just want to explain the tabs requirement is whatever this is exactly from Doctor Oser's website. What the requirements for this paper are that outline. This is because I want to keep our outline even when we start drafting the paper. So the paper tab is what we submit for the drafts each week. Mhm. So we will write out the outline here because this is what we're sitting. But then I'm just going to copy and paste it over here, Just so that we have the outline even as we start writing out the paper. Yeah. So, after we finish this first draft, we won't touch outline. I mean, We'll touch outline. If you decide you want to approach the paper differently, of course, But paper should always be seen as what we're submitting for drafts. And then eventually, the final paper. Does that make sense?
+01:05:53 Speaker 3
+Yeah, that makes sense. You, don't you don't want to be changing the outline mid paper unless it's like you said, like something that we must. Yeah.
+01:06:02 Speaker 4
+So requirements tab shouldn't change. Um Peter, I was taking a look uh this is the only thing you added right? That wasn't in my thing?
+01:06:12 Speaker 3
+Yeahum and I'm gonna add that reworded yeah, yeah and I just reworded some things differently, but yeah, that's pretty much it I think.
+01:06:20 Speaker 4
+And then can I delete this then just that way limiting.
+01:06:25 Speaker 3
+Yeah, right. Did you do everything? Did you make sure that nothing is missing?
+01:06:30 Speaker 4
+Yeah, Ium.
+01:06:32 Speaker 3
+I mean nothing important that you think is important is missing.
+01:06:36 Speaker 4
+Yeah, I didn't think so.
+01:06:38 Speaker 3
+Okay, that's fine.
+01:06:39 Speaker 4
+Okay, so I'll delete this.
+01:06:41 Speaker 3
+Yeah, that's fine.
+01:06:43 Speaker 4
+Okay So now what we should mainly do figure out a an outline, Or at least what parts of that one we're doing. Also, can you guys all, can you both choose a color? Mine's purple. Cause we need to highlight what parts of the draft we do.
+01:06:59 Speaker 3
+I chose red. Oh, so that's not what I wanted to do. No, that's so. And.
+01:07:14 Speaker 4
+Then this tab is also already double spaced by the way, so. Yeah. And just to make sure, I am the one who's gonna or this is not me making a statement. This is a question. I'm the one that's gonna be, um, downloading it, converting it to Word, checking formatting and submitting it. Are we good with that?
+01:07:38 Speaker 3
+Yeah. Um, I mean.
+01:07:40 Speaker 4
+You can submit it.
+01:07:42 Speaker 3
+You can so Can you repeat that again because I don't think I fully agree with that? Repeat again?
+01:07:49 Speaker 4
+I can be the one to download it, to convert it to Word and confirm formatting, and I can send it to you both after confirming all of these, and then we can all submit it.
+01:07:59 Speaker 3
+Oh, when you mean when you say downloading, what do you mean downloading?
+01:08:02 Speaker 4
+Just converting it to Word. Downloading doesn't matter. I will be the one converting it.
+01:08:06 Speaker 3
+You mean this thing? This thing here?
+01:08:08 Speaker 4
+Yes, the actual paper for our submissions weekly. That's what I'm downloading.
+01:08:12 Speaker 3
+Alright so if you don't mind me use technology here, There is a way to, um, which listen you can do it that way. And uh there is a way to do I've used LaTeX a lot. To use uh Microsoft um formatting exactly how the professor wants it. To the teeth uh with LaTeX. And that document that doc version, the doc version I can also share with you, and you can compare both and see which one is more like to the teeth.
+01:08:47 Speaker 3
+So his requirement is that okay.
+01:08:50 Speaker 4
+I, guess I am just confused because Word do it too.
+01:08:56 Speaker 3
+Not exactly. That's why I am saying because I trust me. I've used Word a lot. And and there is some complexity in there in terms of, I mean here, it might be very simple because we're not doing i tripple e stuff. But with yeah, but when if.
+01:09:13 Speaker 4
+You are talking about i tripple e,
+01:09:14 Speaker 3
+I might give you just an example that okay. That can be complex, but sometimes when we're dealing with images and tables and things like that, it can become a little bit actually a pain, you know, in Word. But, if we use something that uh that basically uses what Word uses underneath because Word like what you're seeing it actually has a language in like, is that is Markdown. It's a Markdown. Um and sometimes when you just use the the Zagg uh.
+01:09:46 Speaker 3
+Language that Word uses, which is the markdown, is so much easier with images and stuff like that. So, what I guess, what I'm trying to say here is whatever we have in here, I'm going to check it against a language that is going to have embedded the requirements of the professor. And I can share that with you, so we can check them together just to see what the differences are when you convert it to Word, if you know what I mean.
+01:10:16 Speaker 4
+Yeah, that's fair. If you want, you can do that if you feel more comfortable with your submissions. But honestly, I just don't think it's worth adding an extra step of us comparing our docs because I either honestly, I also don't mind you taking over that and you instead being the one to format on LaTeX. I just don't see the point in both of us doing it and also then comparing it. That just adds an extra step. No, when I suggested that, I was not trying to take that responsibility. That's just what I sent in the Slack and no one had disputed it there. So I just wanted to confirm over here. If you want to take over that because you trust LaTeX, then I'm okay with that. But I just don't think both of us should do it.
+01:10:57 Speaker 3
+So let let me rephrase it because i i don't want it to be taken uh, out of context or be taken wrong. What, i meant to say is, uh, i don't mind if you take it. Honestly, i i don't really care. What I'm mean to say, this is something so simple to do, right? The I'm not saying like we both do it. I'm just saying like I can do that. I can do that so easily. Um, I can come. I can use uh um use the the markdown language, because I can literally download download the markdown and just, you know, fixing everything quickly. And i can give it to us, not only to you to all of us. So compare, you know what i mean to compare the both versions to see which one actually.
+01:11:37 Speaker 3
+Because sometimes, like I said, with images, it might not be the case with the draft one. With draft one might not even be the case. But sometimes when we have images and tables and stuff like that, it goes out of place and just looks off and weird. You know, many times that has happened. Which is the reason why my faculty they say they hate Word because they use LaTeX because they don't have to deal with any of those you know, table stuff or whatever. It's just so choose one place and that's it.
+01:12:06 Speaker 4
+Yeah, I I understand this and I didn't take any of that as like you being against my way. So just making sure we're both clear on that. Yeah. It's just like I don't, I just want for the rest of this to go smoothly. So I am content with just letting you do everything in LaTeX and then sharing it for confirmation before we all submit.
+01:12:25 Speaker 3
+All right, so if that's easier, that's fine. Yeah. Okay,
+01:12:27 Speaker 4
+So that means you're going to be the one in charge of converting it to Word or.
+01:12:31 Speaker 3
+Sharing with you guys Sharing it with us.
+01:12:32 Speaker 4
+So we can all submit it weekly Yeah. Okay, cool. So now that we just have basic bare bones set, what we need by Thursday is justum the outline. I don't truly know how detailed he wants us to be. So let's just see what we come up with right now.
+01:12:52 Speaker 3
+Yes, and can we use these also for presentation for tomorrow? Wait, what? Should we use these for presentation tomorrow?
+01:13:05 Speaker 4
+No, I don't think he's gonna like that. Okay.
+01:13:09 Speaker 4
+That, that's why I wanted cause. That's what I was actually kind of annoyed about when he said he would do presentations again on Monday. Like at this point we're starting to work on the paper.
+01:13:17 Speaker 3
+Yeah. Does he want us to like focus on like analysis, like like graphs?
+01:13:24 Speaker 4
+He definitely wants us to do both, but yeah.
+01:13:27 Speaker 5
+What's that small? I mean we should have doneum, that was kind of like the task right go analysis.
+01:13:35 Speaker 3
+Yeah, the going analysis is there. There's no interpretation. Well,
+01:13:42 Speaker 4
+It's fine if we don't have an interpretation. We can just show him that.
+01:13:45 Speaker 3
+Okay, perfect. Yeah, yeah. Because,
+01:13:47 Speaker 4
+He doesn't go in with us, like expecting us to know the answers because I've gone into those presentations and said, hey, We haven't analyzed it, but you can take a look, and he was just like, okay, we'll analyze it together. So could you share that data with us though whatever you've done?
+01:14:04 Speaker 3
+Yeah, I think it should be in the group share.
+01:14:06 Speaker 4
+I could have missed it by the way. I'm not saying you didn't send it.
+01:14:09 Speaker 3
+No, no, it's just like we've we've been doing some because we we're catching up. We've been doing so many things at once that is like spec that.
+01:14:19 Speaker 4
+I stopped sharing. So if you want to share your screen, showing what you found from the Go analysis,
+01:14:24 Speaker 3
+Yeah Let me see if I can find the notebook uh.
+01:14:34 Speaker 3
+Twenty uh differential expression right twenty. Yeah, so I think it's in here. Let's see, let me share. Soum. How, do you are you guys thinking like we shouldum uh likeum assign each one of us a sections for the draft and work on that How. Are you guys thinking about it Okay, I've.
+01:15:00 Speaker 4
+Personally agree with that mainly because again, if we're so busy, we can barely meet. If, we all assign each other sections. And then kind of just look at each other's sections to like, I guess for quality check. Yeah. I'm I'm okay with that. That's so what I've done in the past and it's worked well so.
+01:15:16 Speaker 3
+Yeah, I agree like assign each other section. And then we just, uh uh, we just validate each other's work and leave it at that. Let's see, let's let'sum yeah, this one here doesn't have any.
+01:15:32 Speaker 4
+Is That go analysis okay?
+01:15:33 Speaker 3
+Doesn't have any findings. So.
+01:15:37 Speaker 5
+Wait wait wait wait sorry what?
+01:15:40 Speaker 3
+This is this this was my attempt at doing the go analysisum. And we I I haven't really interpreted it so just so.
+01:15:58 Speaker 4
+I am content with showing, I mean, I personally am okay with just being like," Hey, this was our attempt. We don't know if this was right, but maybe you can guide us if we're incorrect." Yeah. But I will say because I think you can speak more on this than I can and Yeah.
+01:16:19 Speaker 4
+So if you want to take over presenting tomorrow, I am okay.
+01:16:22 Speaker 3
+Yeah i I can explain. You know, I can speak of what we did. You know, like we. And how the code we use and how we did it, and also what you know statistically what this means, but like biologically like. It would take me more time to try to find.
+01:16:41 Speaker 4
+I'm not saying biologically, just explaining methods. Actually speaking about methods, um Would you mind? I mean, Sam, if you disagree with me here, go feel free. In my head, My initial thought was that you could do materials and methods, mainly because you've kind of taken on the bulk of the coding and the materials used. Um. There's definitely portions that I think Sam and I can like add to, butum Sam, I don't know if you're in disagreement with that,
+01:17:09 Speaker 5
+But No, I totally agree. So I thinkum we should here. Let's oh. So I'm looking at the Google. At the paper, there's introduction, the materials and methods, results, discussion, references. Um. We can I think we can all work on the introduction or like. Actually, maybe me and Nikki because it's biology more related. Me and Nikki can focus on the introduction. Then, you can you can look at it, and you can see if it makes sense to you.
+01:17:45 Speaker 5
+Yeah. Um, just because you're not coming from a biolo biological background, so if get it then, it's clear enough. Ah, materials and methods. I think that's something you Peter can probably do, just because you literally did the materials and methods. Um, the results. Ah, that could be a mix of all three of us. Yeah.
+01:18:09 Speaker 4
+Also, I mean I don't know how long the materials and methods are. But if it ends up being really long, I don't mind. And I guess I am speaking for Sam here, But I don't mind us being taking over majority of results and discussion to make it even. You know because like let's just say materials and methods are like five pages, then yeah we can take over results and discussion. You know what I mean?
+01:18:32 Speaker 3
+Yeah, I know what you mean.
+01:18:33 Speaker 5
+Yeah exactly. Materials and methods are probably going to be the longest just because the way, It um well, not the longest. Um the discussion is probably the longest because that will have all the figures from the methods. Yeah, um materials and methods, I think a really, Good approach we can do with that is that we should sit down, and we should literally just go through the whole entire project where we say, okay, we started with this file type. We did. You know this conversion.
+01:19:07 Speaker 5
+And we just literally just list all the steps we did, and that and that's how the materials and methods would be. It would be, ah like it would be the materials section, and there would be subsections. It would be subsection number one. Ah data curation or not data curation Data aggregation. Second um what is it called Ah data conversion? Then it literally just it's probably gonna be like twenty five small paragraphs. Um, but before we do that, I mean, we can start on it right now or like whenever. But we need to see where we're going after go analysis because yeah.
+01:19:47 Speaker 4
+Yeah, that's a good question. Where we go after go analysisum. That's a good question to ask him tomorrow.
+01:19:53 Speaker 3
+Yeah, true.
+01:19:55 Speaker 4
+Yeah I don't think it's worth us discussing right now because we can see what ideas he has. And then on Thursday, we can discuss what ideas we want to approach or we can spend some time Thursday actually. Seeing what we want to do. Okay, um, I just left a bunch of comments. I'm on my screen again. Um, did I correctly assign sections as we discussed?
+01:20:17 Speaker 6
+I i i don't well, I can't tell what you'reum yeah, I see, okay. Yeah yeah.
+01:20:24 Speaker 5
+So results is all three of us chose the methods That's.
+01:20:35 Speaker 4
+Materials and methods are.
+01:20:37 Speaker 3
+But you and me are confirmed for results, Sam.
+01:20:40 Speaker 5
+Yeah, okay. Um, and justum, just a general goal for all of us: Have you guys read the paper? Kind of fully? I kind of so not indefinitely.
+01:20:55 Speaker 4
+Okay, I think we should make that a goal by like the end of maybe next week. Okay, yeah that we actually read the full paper because.
+01:21:04 Speaker 5
+Um. We definitely want that background for when we write.
+01:21:11 Speaker 4
+Yeah Yeah, yeah. So now okay. Now after talking about what we're actually discussing in each sections and the introduction, introduce paper. Mhm. So this could mean discussing.
+01:21:36 Speaker 4
+Methods goals. Of. The paper. Or wait, we can maybe start off with what we aim, what our goal is.
+01:21:51 Speaker 3
+Yes, yes,
+01:21:52 Speaker 5
+Well, introduceum which we should say about what no introduce introduce the point of next gen sequencing.
+01:22:04 Speaker 4
+Oh yeah. Like just what is next gen sequencing.
+01:22:07 Speaker 5
+Yeah, what is,
+01:22:09 Speaker 3
+What do you say introduce a.
+01:22:10 Speaker 4
+Next gen sequencing like just briefly talk about.
+01:22:13 Speaker 2
+Oh yes yes yes.
+01:22:14 Speaker 4
+Because that is like the homework.
+01:22:16 Speaker 2
+Yes yes,
+01:22:24 Speaker 4
+I don't actually know if he's gonna judge us for using for not being.
+01:22:39 Speaker 2
+Um. What.
+01:22:42 Speaker 4
+Our goal was, slash utilizing,
+01:22:46 Speaker 5
+Utilizing next gen.
+01:22:51 Speaker 4
+NGS introducing the paper slash the data set we were using.
+01:22:56 Speaker 3
+Yeah, introduce the paper's dataset. Yeah, discuss methods goals of the paper. Yeah.
+01:23:01 Speaker 4
+What we wanted to do with the paper?
+01:23:06 Speaker 3
+Should it be goals or claim? I'm I wonder what's the difference in this case.
+01:23:12 Speaker 4
+So I guess goals is our idea. Goals is to explain how I'm interpreting it. Goals is our our initial idea. Oh, this might be cool to check out claim, is what I interpret to be, What your conclusion is, After You've done everything.
+01:23:28 Speaker 5
+Goals get to the claim.
+01:23:30 Speaker 4
+So I was thinking, claim could go after Oh.
+01:23:33 Speaker 3
+Yes, that's true. Somewhere else goals go to the claim. Yeah Yeah that makes sense.
+01:23:43 Speaker 4
+I think once we do this, we should definitely confirm with him that this is what he's looking for.
+01:23:47 Speaker 3
+Yeah, That's why it's good to do it now. So we can show it to him tomorrow and see. Sam.
+01:24:00 Speaker 4
+Put that as like a I was gonna tab that. Oh Sorry, Yeah, no, you're good. I justum she was said I remember him, specifically saying he wants. To see the subsections in that one, so whatever you're adding, try and make it a subsection essentially.
+01:24:33 Speaker 4
+Also, Um, in terms of citations, I don't know if you guys do. You guys have you guys heard of Zotero?
+01:24:39 Speaker 6
+Uh, I preach it. I live it, breathe it, love it.
+01:24:44 Speaker 4
+So okay, causeum I don't know how you guys write papers, but if I write a sentence that requires a citation, what I do is I just put this and I attach the link. And then once the paper is fully written out, I go through and get the citations for it. Mhm. And Zotero makes that very easy. So I don't mind doing the citations if, We can just like immediately put the link next to where there should be a citation.
+01:25:14 Speaker 5
+Yeah, Zotero is a citation manager. It works on the cloud, it works on desktop, it works everywhere.
+01:25:22 Speaker 4
+It's very nice for writing papers because if you just go to, It has like an extension for like a browser. And if you're on the paper itself and you click on the extension, it pulls all the information from the site. So. It makes citations so much easier.
+01:25:41 Speaker 3
+I haven't done that type of citation so long, but.
+01:25:46 Speaker 4
+So I don't mind taking over citations. Yeah. Um, if as long as we follow this format for where there should be citations, does that make sense?
+01:25:57 Speaker 3
+That makes sense. Yeah, put the link right on parentheses. Yeah.
+01:26:00 Speaker 4
+Yeah and then I'll go through myself and replace it with the correct format Do. We actually know what the format is for citations?
+01:26:08 Speaker 3
+Um. Usually okay.
+01:26:12 Speaker 6
+Oh, sorry. I I was just saying yes. It's it says.
+01:26:16 Speaker 4
+Is it APA,
+01:26:18 Speaker 3
+That's what I was gonna say usually that's what they,
+01:26:20 Speaker 4
+That's what I'm used to, but I wasn't sure if he was gonna be extra.
+01:26:25 Speaker 3
+Did he mention any specific? I didn't see it, but some genes selected genes okay so.
+01:26:47 Speaker 2
+Hmm. Um. Let's see.
+01:26:54 Speaker 3
+Four oh oh whoa. No, I don't. Yeah, so, okay, He just said journal format journals, they have a specific citation. If you look it up, um so let me.
+01:27:13 Speaker 5
+Sorry what does.
+01:27:14 Speaker 3
+Journals they have a specific citation.
+01:27:18 Speaker 5
+Um, yeah, that depends on who you are submitting to.
+01:27:22 Speaker 4
+Yeah. So like. Oh really. Honestly, we can worry about that. Yeah, cause in my experience it does differ between paper and journal rather.
+01:27:33 Speaker 5
+Yeah, So when you like submit a paper of any kind depends on who your who the publishing company is or journal, they have different citation types. They want you to use.
+01:27:49 Speaker 4
+So. Hmm. We can ask tomorrow.
+01:27:51 Speaker 3
+Yeah, yeah, let's confirm that with him tomorrow. Um, Because I thought it was like similar to how uh in our field is like for some of the venues that we have. There's specificum if you use a journal or a paper, right? There's specific format for all of them when yeah,
+01:28:10 Speaker 4
+It's the same. It's same citation for all of them regardless of the venue, um Oh interesting.
+01:28:17 Speaker 3
+Maybe it's different in bio.
+01:28:19 Speaker 4
+In bio, it actually or just in science, it differs between bio, between chemistry, between physics. It's frustrating. Yeah. Between biocomp.
+01:28:32 Speaker 3
+Yeah, that's what I was afraid of. And you know it's actually a thing. Yeah. So let's confirm with him tomorrow, just to make sure that we're not guessing in this case, yeah. And.
+01:28:48 Speaker 3
+Alright, so we got so we're going to confirm the formatting and. We got the sectionsum split for the time being. And, see, ohum code availability that's a good one. Do, we need to make it available to well. We can do it through GitHub right.
+01:29:15 Speaker 5
+Um, we would have to submit it as a zip.
+01:29:19 Speaker 4
+Which should be fine, I think. Okay.
+01:29:21 Speaker 5
+Yes. Yeah. So we we, we can link the, get but also, we, The thing with Git is that you only link the gate, if you know, it's always going to be public, um and yes,
+01:29:39 Speaker 6
+Should submit as well code as it yeah,
+01:29:43 Speaker 3
+The. Good thing about Git is that is. Like when you download it, it's literally that lot zip file for you. So, so yes, let's try.
+01:29:52 Speaker 4
+Okay, So I just realized I'm kind of mainlytyping while we all discuss, if we want once we have it all typed out, we can just split it in thirds and highlight things.
+01:30:03 Speaker 3
+Okay Yeah.
+01:30:04 Speaker 4
+I honestly found that so ridiculous like bro We're not going to be individuallytyping. We're working together on this like be so for real True.
+01:30:14 Speaker 4
+Okay, so in that case, I don't mind writing and then afterwards we're good to split. Um.
+01:30:19 Speaker 3
+Yeah, I'm also taking notes, but again, I took I took i i learned the lesson not gonna share it. But I also took notes and if anything is missing, I'll, just point it out to you guysum in here as a comment orum in Slack, a very small message, if I see that something is missing that we talk about it.
+01:30:44 Speaker 4
+Okay. Uh, what were our methods again?
+01:30:46 Speaker 3
+Yeah, so we are methods. So, Um for methods. We so the way I look at it is like the kind of like the pipeline, how we did it right? Yes. Um. So we haveum QC alignment uh filtering, which is a trimming PCA. And then DE And between those, we have the reading, the files and the list of genes. At the end. Um.
+01:31:18 Speaker 6
+Wait, wait, what? Um.
+01:31:20 Speaker 4
+I removed that because we can list the tool as anotherum.
+01:31:24 Speaker 5
+Yeah. Oh, it would be within the paragraph. Yeah,
+01:31:27 Speaker 4
+Cause I I thought about it. There's no point in just listing all the tools out and then again, listing what you did with each tool. So and that's usually the format in journals anyway. So oh,
+01:31:37 Speaker 3
+Wait, wait. Um you know that he likes. Um I'm just I. Something that you guys said just trigger um something about what he said about the. Um, so colorful about that. What is this Is let me see if I can find it here. Um, cause I know this is for the weekly report that he does it, but I wonder, if um he wants us to Are you serious Can't find it.
+01:32:14 Speaker 2
+Okay. Wow. My goodness. Anyway,
+01:32:18 Speaker 4
+Okay, wait. I'll stop doing things, Sam.
+01:32:20 Speaker 5
+Oh, I'm sorry. It's lagging. I thought you were off of it. Oh, Okay. Now that you're on it. Wait one second Yeah There's, some in the top right See, the decrease, uh increase uh indent Yeah Yeah Just press that So like when you highlight just highlight all those and then press the left one, yeah. And then press bullet. Yeah, yeah, exactly. Um, so that way you don't have to like go back every time. Yeah. Okay. So now just highlight all those and then or not? Yeah.
+01:32:52 Speaker 3
+Okay so I okay. So what I was thinking about is you see how he has the methods. Um, where he says like the commands that you guys run. Yeah. What do you think he might want that in there also?
+01:33:17 Speaker 4
+I don't know because technically from my experience in papers, you don't list the exact commands you write by no cause for example, the trapnell paper did list the command. So I don't know what kind of paper he wants. If we're doing a standard article where we're just explaining the data we got, commands aren't really important. Yeah, commands are all right.
+01:33:41 Speaker 5
+Oh, um, I was gonna say, commands are only important when the paper you're writing is about the commands. The whole point of the paper was to show a specific pipeline. We're talking about next gen sequencing, which isn't about pipelines. It's just aboutum observing the quality of the data. At least that's what my understanding is so. We should um eventually, I think what we should do all the steps we have for materials and methods. So download S S, download S R R, convert G Z files, convert B A M S A M. All of those will have like I don't know, probably like around forty steps all the way to like go analysis. Um we should do, Um we should identify what snippet of code goes for every single thing. And then um make a.
+01:34:34 Speaker 5
+File for every single thing and make a pipeline out of that, and then that will be submitted under code availability. Okay, so that way you can also so let's say we do download SRR, it'll say file type um gz. Let's say all those three steps are like. We can all summarize them under one like file under one python script. We mentioned that Python script. We say," Python script found in source code or for us.
+01:35:10 Speaker 6
+Available." Yeah,
+01:35:12 Speaker 3
+That makes sense. I like that because I was thinking before I see just something you guys said triggered about the weekly report. Because I was thinking just like have the architecture of the pipeline and and talk about it right? Like have a graph as opposed to like code so in each layer.
+01:35:30 Speaker 4
+That's a good figure.
+01:35:31 Speaker 3
+Exactly. Yeah. Um, and each layer does something, right? That's what I was thinking because usually that's how we do it in paper. Like, we we don't wanna like you said somewhere like dig into code because that's not what the paper is about. So we just lick dig into the layers and what each one of them, what each one of them, each one of those do. The.
+01:35:53 Speaker 5
+Three The three main Yeah, I agree. The three main So we're gonna probably have four steps, Mhm. Sorry, we're gonna about we're gonna probably have like thirty to forty steps under that. All those three, uh all those forty steps can be probably categorized into three things. They can be categorized into you know data aggregation, data cleanup or data um cleanup is good. Um well not cleanup because we're also doing the genome.
+01:36:25 Speaker 5
+Uh, sequencing and then analysis. So, no,
+01:36:29 Speaker 3
+Yeah, but the trimming is cleaning up.
+01:36:32 Speaker 5
+Um, collection processing and interpretation. Yeah.
+01:36:40 Speaker 4
+Also Sam, we did not convert from BAM to SAM for this I think that was only Traval right?
+01:36:47 Speaker 3
+Yeah that was wait. I don't think I did that for this. Yeah, yeah,
+01:36:51 Speaker 4
+Oh, okay, cause that was with. Cuff diff. That was important for cuff diff.
+01:36:55 Speaker 6
+Yeah, that was yeah. I was just yeah okay. Yeah,
+01:37:00 Speaker 3
+I purposely didn't skip cuff diff. Yeahum yeah, that makes sense. I think there's yeah, we should do it that way. We compartmentalize all the steps into like. Higher, like about three to four steps. Um, I'll run it through you guys. Um, We have a figure that represents uh, you know shows clearly how the pipeline ran. We talk about it and then we dig into the important stuff.
+01:37:41 Speaker 4
+Okayum what are the other steps?
+01:37:50 Speaker 6
+Um, I mean, if we just want to start listing them, we should just go to GitHub. Peter hasum because that's all in order. Peter right or no Yeah,
+01:37:59 Speaker 2
+Yeah. Okay.
+01:38:00 Speaker 6
+Yeah, you can just start from there.
+01:38:01 Speaker 4
+Okay. Do one of you want to do that while I have this up?
+01:38:04 Speaker 3
+Yeah, I I can do it. Uh okay, cool. Yeah. I was just going over the paper becauseum which I can't even find it. Oh, here it is because I wanted to see if there was anything that okay. So. So there's a specific checklist that I put in there. All right, so wanted to see. Okay, so QC plus alignment, PCA separation, DE effect size. All right, so I just wanted to see if I meet then it. All right, that's fine. Let me go to GitHub now. Github and share here you go. So uh docs, let me go here uh shared.
+01:38:48 Speaker 3
+GitHub. This is GitHub. Yeah, this is GitHub. All right, so this is where can you guys see my screen? Oh,
+01:38:59 Speaker 4
+Hold on. I think I'm still sharing my screen. One sec.
+01:39:06 Speaker 4
+Soum Oh, wait, oh, interesting.
+01:39:08 Speaker 3
+So we have the alignment, the differential equation. Uh Extract.
+01:39:25 Speaker 3
+Validation. Yeah, but so this is oh did you mean the notebooksum someone.
+01:39:31 Speaker 5
+I was thinkingum further. Yeah, So let's let's the first step we should do is what's the download where's the download step.
+01:39:43 Speaker 3
+Oh, the download step okay yeah that's for theum. Yeah, that I didn't share here, but because it was the same one that we used for mouse, right? Yeah. So and it's similar to the trap nail download. It's just do you have the code?
+01:40:02 Speaker 5
+Like do you have yeah. Can you show or not the code itself, But can you show like have aum like a GitHub to your Oh?
+01:40:12 Speaker 3
+Yeah, I have something that I shared with you guys. Uh beforeum let me see if it's here. Here. I think it's in a in a different one. Um, okay, so this is the star that we did. Blah blah blah. Mm hmm. Yeah, this basically shows you what you're talking about uh from the beginning till alignment. So the start index.
+01:40:42 Speaker 5
+So is that the original download?
+01:40:48 Speaker 3
+Uh, you mean the original code to download? Yes.
+01:40:52 Speaker 5
+Yeah, okay. So is that the code.
+01:40:57 Speaker 3
+To download? This is for diamond. So let me get a let me see if I can get it for I, don't think it's here, but it isn't another stuff that I share.
+01:41:15 Speaker 5
+It Doesn't matter if you you have it shared with us. I just wanted to like, if you have your own internal system, this would be the time to look at it and then we can.
+01:41:24 Speaker 3
+Let me do because we have like we we changed from datasets like three times. So I had like two different.
+01:41:35 Speaker 5
+Yeah yeah You if you want, you canum whenever you get time delete all.
+01:41:40 Speaker 3
+Yes, I started.
+01:41:41 Speaker 5
+All the other stuff. Yeah,
+01:41:42 Speaker 3
+I started doing that because my my computer was like full, like full. I and just like by removing just like one of them, I already have like two hundred gigabytes free. That's how bad it was. So, okay. So I can find it quickly because I have it in the and the other one. That's why I didn't delete this one, cause this one has, theum, The quotation here, so let's see.
+01:42:26 Speaker 2
+Okay. Mhm.
+01:42:33 Speaker 3
+Yeah, so this is one that I share with you guys. You don't have access to it anymore because we delete. We we're not using that data set. But it's the same process that we use for this one. Okay. And I can I can move it again and share it because even though it's not the same data set, is what we did, right? So this basically um uh the environment, right? This isn't the server. This um the.
+01:43:06 Speaker 3
+For the datasets, this is personal for us. So I'm going to go high level for that because that's not important. What's important is this. This is what you were talking about, right? A download, right? So this is the.
+01:43:20 Speaker 5
+There you go. Yeah. Okay. So that would be the first.
+01:43:24 Speaker 3
+Yeah, So that is the original command that we wrapped around sudo, all of them. And so that's the first part that you were talking about, right? This thing here right here.
+01:43:36 Speaker 5
+Yeah, okay. Yeah.
+01:43:38 Speaker 3
+And then let me see if this goes a little bit further. Yes, this goes a little bit further. So this is FastX, right? So, this isum let me see if we have the exact command of how we run FastX there.
+01:43:55 Speaker 5
+Also quick thingum I know that you ran some things on your own personal computer.
+01:44:02 Speaker 3
+Oh right here. This is what X like go ahead. Yeah.
+01:44:05 Speaker 5
+I was just gonna say one thing we will have to differentiate is between what we did on our what a person would do, like the whole point of the code availability is reproducibility, right? So like we would have to mention what tools on the server we used versus what tools were used on the local machine that we produced the data.
+01:44:28 Speaker 3
+I did I use I did everything in the server. I just I just moved it from my computer.
+01:44:37 Speaker 4
+Gotcha. I'm just asking, where does it say code availability? Like, where does it say we need that? Like, I'm okay with it.
+01:44:43 Speaker 5
+I'm I just It doesn't say we need it. I just added it because we will naturally need that.
+01:44:49 Speaker 4
+Okay, sure. Okay, fine. That works.
+01:44:51 Speaker 3
+Yeah, let's let's confirm again. I don't. I don't remember reading it, but i think that's a good thing to have in a paper. Yeah, yeah, but uh, let's hey,
+01:45:00 Speaker 4
+If the ad's linked, i'm not gonna say no.
+01:45:02 Speaker 3
+Exactly my point. So, let's confirm with him to see how, hopefully he doesn't have anything against that, but I I'm I'm on board with that.
+01:45:10 Speaker 5
+We'll add like a paragraph because I mean it will have to get a separate folder. It'll be supplemental material. Um so what so we talked about download SRR, what comes after?
+01:45:22 Speaker 3
+So yeah, so you have it right here. So then is QC right? So we did QC. This is the command. This is the original command took QC that we then we then wrap it around in this. This is how.
+01:45:32 Speaker 4
+Would you say that goes in alignment, processing and alignment rather than aggregation and clustering?
+01:45:39 Speaker 3
+This is before alignment. So then we do fastx, right? This is your original command as well, right?
+01:45:46 Speaker 5
+I would say this is processing. Okay,
+01:45:49 Speaker 4
+Should we separate processing and alignment then because I feel like okay.
+01:45:52 Speaker 5
+Well, how many steps is alignment?
+01:45:56 Speaker 4
+It's one step but.
+01:45:57 Speaker 3
+I know alignment actuallyum yeah, that's a good question. Yeah, we should separate it because alignment, actually, it takes two steps, but you can go to three.
+01:46:08 Speaker 5
+We also have to mention what genome we aligned it with.
+01:46:12 Speaker 3
+Mhm, yeah, also, the selection of the genome, which you guysum actually I wasn't I didn't even have time to partake in that. So you guys you guys are fully informed on that, um and, Yeah, the selection of the genome and then the steps in the alignment, which I think do I have it here? It's in the other stuff. But anyways, but this one goes until fastx, right? And then we run QC again. Right? And, it shows your original command for each one. And then the summary QC, which is a multiQC. And that's it. And a notebook. So this one gives the first steps before alignment.
+01:46:56 Speaker 3
+Um, you can think of it as processing and quality or cleaning, which you got to it before, right? But this is processing the data and cleaning this one here. And then you say you wanted to see the process of alignment. That one I did share with you guys so I can share again here.
+01:47:27 Speaker 3
+Uh, is can you guys hear me? Yes. Yeah. Oh, sorry. Sometimes my headphones it goes off and that's yeah, Cause sometimes I'm talking and whether it's my sister or my aunt and I'm talking to myself alignment share guy here. So I think this one shows the steps. This a guide so this not a code, Oh, yeah. This one here. So there are two steps, yeah. So here and that in theum geneum expression that that we had to choose which I would think is a step zero. And then one and two here.
+01:48:13 Speaker 4
+Yeah Wait, sorry. What's the gene expression thing?
+01:48:17 Speaker 3
+The one that we had that we chose before We had to choose a.
+01:48:21 Speaker 4
+Choosing the genome? Genome, yeah, Okay, okay, okay.
+01:48:25 Speaker 3
+Yeah, that's sorry. Genome extraction is what we did. The French extraction is what we did. Yeah, so the genome that we had to choose, right? So the selection that would be step zero. And then we have step one and step two. The reason why sometimes it turns into step three is because sometimes the alignment fails because of some heading issues or whatever, which happened to me with TruPNA and I just had to go and fix the. Head ing either to another type of three mean orum something yeah, but this is this will cover alignment alone, right? The steps. And then the next one that we have would be differential equations. Correct me if I'm wrong differential equations and lastly go am I missing.
+01:49:15 Speaker 4
+Somethingum that and these are steps for alignment I think that's right.
+01:49:21 Speaker 3
+Yeah, it's like those are those are for alignment. This is for differential equation. Okay. Mhm.
+01:49:29 Speaker 4
+Wait, let me share my screen again so you can see what I've been writing. Um, okay, so this is what I have so far for pipeline steps.
+01:49:40 Speaker 3
+Yeah Aggregation that's good yeah processing yes uh, Should, we name it processing and cleaning because we also do fast X right there after fast QC? Yeah. And fast X. Wait, did you do Fast P or Fast X? Oh, we did both. We did both. Yeah, put both here.
+01:50:04 Speaker 5
+Wait, we did both but we only went with one result.
+01:50:07 Speaker 3
+Should we note that in there?
+01:50:16 Speaker 3
+And the multi QC?
+01:50:21 Speaker 5
+MultiQC would go into analysis and interpretation.
+01:50:27 Speaker 4
+Because we caught the multi QC alongside. MultiQC was part of the cleaning steps, how we evaluated that as good. So I do think multi QC will go here.
+01:50:35 Speaker 5
+And then trimming would go. Trimming is FastP.
+01:50:41 Speaker 3
+Trimming is FastP.
+01:50:45 Speaker 3
+I can see how you can also use MultiQC for analysis.
+01:50:59 Speaker 4
+We could talk about it.
+01:51:00 Speaker 3
+Mhm,
+01:51:04 Speaker 6
+Also Deseq 2 is the tool right? mhm so.
+01:51:19 Speaker 4
+Okay. I just didn't feel liketyping that out, but I keep forgetting that we're actually submitting this to Osher.
+01:51:24 Speaker 6
+Also, there's a bunch of tests. So we also did all let me paste them. We did all these.
+01:51:47 Speaker 3
+Let me push the, the one thing. Cause you know.
+01:51:56 Speaker 4
+The volcano, plot and heat maps would all go under D C two right.
+01:52:02 Speaker 3
+Thevolcano definitely yes, volcano and the heat map definitely yes, they're all under D C two.
+01:52:16 Speaker 3
+Me
+01:52:17 Speaker 6
+What was the M A plot? What was that?
+01:52:20 Speaker 3
+A plot.
+01:52:39 Speaker 3
+I'm pushing that document.
+01:52:49 Speaker 2
+Commit.
+01:53:23 Speaker 2
+Commit conflicts and this.
+01:53:40 Speaker 3
+Sorry guys, I went. I wanted to make sure you guys had that document. It's loading.
+01:53:57 Speaker 4
+And also, what we can do tomorrow is as we think about it more, we can add more detail, and we could submit it at the end of the night.
+01:54:04 Speaker 3
+That would be great. If we can submit it by the end of the night, I'll go over that today as much as I can.
+01:54:29 Speaker 3
+To make it easier for us to review all of that in time.
+01:54:35 Speaker 2
+Yeah, um, yeah.
+01:54:43 Speaker 3
+How many pages are we thinking about so I can limit myself?
+01:54:48 Speaker 5
+What do you mean per section or how many is required?
+01:54:52 Speaker 3
+For methodology, methods and go crazy honestly.
+01:54:59 Speaker 4
+Longer the better as long as it's not an excessive amount of fluff.
+01:55:04 Speaker 3
+As long as it's not B S.
+01:55:07 Speaker 4
+Because he says no more than half of the pages should be half or figures and tables. So that means there should be fifteen pages of just pure prose.
+01:55:21 Speaker 2
+Alright.
+01:55:25 Speaker 3
+That's good because we have a lot of notes in there. There are a couple of figures that I'm going to work on and share with you guys.
+01:55:40 Speaker 4
+Wait, does the MA plot go under Deseq 2 as well?
+01:55:44 Speaker 6
+I think so. I forgot what an MA plot is.
+01:55:49 Speaker 4
+Either, but it sounded like we did that with Deseq 2.
+01:55:53 Speaker 5
+I think a lot of tools were under Deseq 2.
+01:56:00 Speaker 3
+Yeah, no. Most of the tools were actually on the yeah, this is true. Uh, sorry. Most of the helpful and uh plots were on the this is true. Okay,
+01:56:15 Speaker 4
+Is there anything we're missing right that we can think of right now in the pipeline steps? We can this can also be something that we think about tomorrow. So I I'm content on leaving this here for now.
+01:56:29 Speaker 4
+Cool. So moving on to, oh sorry, were you saying something?
+01:56:34 Speaker 3
+I was just okay. I actually forgot what was go ahead.
+01:56:40 Speaker 4
+Sorry. Moving on to results. I wish you had given more detail than what he expected at each step.
+01:56:50 Speaker 3
+Oh yeah, I was gonna ask, did he give us an example we should ask for that because
+01:56:55 Speaker 4
+He will not give an example what?
+01:57:00 Speaker 4
+Why? Because he'll probably. I say this fully seriously by the way.
+01:57:08 Speaker 3
+I will make believe that I don't know anything and I'm just gonna ask him. Do we have a sample because every professor here at the grad level provides a sample of what
+01:57:24 Speaker 4
+Just an example of the final assignment.
+01:57:27 Speaker 5
+He definitely will not. But I think we should look at this a next gen, or this a next gen sequencing paper. So I would say if you want any examples, just look at quality
+01:57:55 Speaker 5
+Quality control papers.
+01:57:57 Speaker 3
+Like the papers that he has gone through? No.
+01:58:01 Speaker 5
+Not his papers. I am saying if you go on like online or RIT libraries, just search up next gen seek and search up quality control. Just stuff that analyzes next gen. Like because one of next gen is. What I have in the discussion, the two point is reproducibility and global discovery. Most experiments when people do experiments, test hypothesis, look at specific variables. The point of next gen sequencing is that you reproduce the analysis, but on a global level.
+01:58:45 Speaker 5
+That way you don't only look at what the authors intended to look at, but you look at everything across the board and you do an analysis on what you think is most important after looking at the full picture.
+01:59:01 Speaker 3
+Global level. Think I know what you mean. I was asking because, for example, some even though they're minor changes, some professors. Here at the grad level, there are certain things that they are looking for specifically depending on the subject. So I wasn't sure if he has something in mind in terms of formatting that he exactly wants, like some professors here. I'll ask the question like a naive person. I don't know who you are. I don't happen to know you're a difficult professor.
+01:59:45 Speaker 3
+Just gonna add I don't know any better. So have it on.
+01:59:50 Speaker 3
+I still didn't drop, even though I didn't drop because he stopped the literally, it was borderline harassment. I might be exaggerating, but it was just too much and repeating the same thing over and over.
+02:00:07 Speaker 3
+Since he dropped that, I think and now I. We have we have the support of my uh, the bio faculty for this and whatever and and the extracurriculum, um work that I'm that I'm trying to work on. I, yeah, I decided to with my with my advisor, my faculty advisor. I decided to just like finish and write and then um. Finish the evaluation that I started with him, which I can then share with you, Nikki. Um, at the end because it's it's gonna. The idea is to make it like a formal complaint to see um what changes we can get. Yeah. Hopefully at the grad level, sorry at the undergrad level as well, but he's gonna have to make some changes at the grad level. My advice already made that clear.
+02:01:04 Speaker 3
+So we'll see. That's one of the reasons why I want us to work as well as we can as a team. So we don't give him any excuse. When that report comes, he just goes based on him because I know that no matter the differences we have, we can come to an agreement together and move on. I think I have what I need for my part. Do you guys have anything I can help with for the other stuff?
+02:01:51 Speaker 4
+Let's all work together to quickly make.
+02:01:55 Speaker 3
+The results in discussion. And then we can just call it here. Yeah, I agree.
+02:01:59 Speaker 5
+I have one thing. I think for, The code availability, I think, once you um once you delete all the stuff that you didn't use, Peter. Yeah. Um, I think it's very important that you at least organize it somehow and then share it. So then we can start. We can start um, you know organizing it because, um this paper is useless without the code because the whole point like.
+02:02:31 Speaker 5
+I can promise you that if we cannot provide code that is easily reproducible, there's no point of this. It's good as nothing.
+02:02:42 Speaker 3
+All right I I I can I can do that. Yes, um we can also put a a timeline to you know for that as well, I think the best way for reproducibility and uh, you guys. You guys are gonna be like, I knew it. It's a notebook, cause they can just literally just run it.
+02:03:04 Speaker 4
+Yeah, that makes sense.
+02:03:06 Speaker 5
+It makes sense. It's just itum notebooks. So for Jupyter, you need to download Jupyter right, like you have to do pip install jupyter Oh,
+02:03:17 Speaker 3
+No, no, no, no, no, I meant Well,
+02:03:19 Speaker 4
+On Colab you don't need to do anything though.
+02:03:21 Speaker 3
+Yeah yeah I mean.
+02:03:22 Speaker 4
+You can just open online Cause. Jupyter is annoying for that I hate it.
+02:03:26 Speaker 3
+Yeah, That's one of the reasons why it took me longer to get into notebooks Jupyter, because I had to build ones for a company. It was such a pain. I was like," I don't want to work with this." We can,
+02:03:40 Speaker 5
+I mean, if you want, you can do that. I am just thinking that one thing that never fails is a Python script or R script or JavaScript.
+02:03:49 Speaker 3
+It is it is in Python script;. It's just it's going to be run by the notebook.
+02:03:53 Speaker 5
+Okay, yeah, I mean. As long as it's, as long as it's there.
+02:03:58 Speaker 3
+Yes, so this is the idea, just so you know. Um and I I guess we're gonna have in writing as well. So we're gonna have the GitHub with the code right? The notebook is gonna pull that GitHub and do everything that we did, which I already have it in the notebook. But in a more clean version, it's gonna be polished by us, right? What we want to show. And, basically a picture of the paper is gonna be in that notebook, right? So. Meaning, not a picture compliment. Just like compliment of the tape that should be in there. So, um, yeah, but it's going to be fully polished by you guys. Like I'm gonna put the code and everything GitHub right? Clean and everything. And then I'll let you guys decide the sections and how you want it. And then, you know, we just populate it.
+02:04:47 Speaker 4
+Yeah, sounds good. Um Alright Back to this.
+02:04:52 Speaker 3
+Yes Results You say in discussion right?
+02:04:55 Speaker 4
+Yeah, so for results so far, quality control stuff, alignment stats, differential expression plots and I listed the different. Yes. It's kind of annoying because so much of our work is stuff that doesn't go into a final paper. So it feels like doing less finally but whatever.
+02:05:16 Speaker 3
+I know exactly what you mean. And that's one of the reasons why when he was explaining some things, I would ask him like. Can we use this in our paper? Yeah, because I'm like, if we can't, can we skip it? I know it's not the right approach. I just you know, things to be contingent. Like there's a contingency plan that we know like if this doesn't work, we can use this. If not, we can use that. It's just I don't like it to be like where like, well, you have to figure it out. Like he says.
+02:05:49 Speaker 4
+Yeah no.
+02:05:50 Speaker 3
+Alright, so we got resolve quality control, alignment stats, differential equation plots. That's fine. Yeah. Um. And those are going to be pretty good analysis from there and the geo analysis as well. And yeah, the um yeah that's a good uh placeholder in the extra analysis once determined. Yeah because I remember he said something which I have here um, Maybe I should have pulled this before, where I don't know if it was here with us, But something about the proposed analysis workflow, where the group outlined plans like we need to interpret biologically. We need to examine the genes most associated with a specific contrast. We can use a site-specific contrast and pull the strongest gene from those contrasts. So I'm just reading here on my notes, interpret them into two ways, gene by gene and pathway level.
+02:06:49 Speaker 3
+Um, so that might fit into that placeholder you have in there. Yeah,
+02:06:59 Speaker 4
+I think discuss biological interpretation will work for anything and anything here.
+02:07:05 Speaker 6
+So yeah, quick question:
+02:07:09 Speaker 5
+After we did thevolcano plot, what did we do? Was see something was comparison something?
+02:07:15 Speaker 3
+Weum remember the elbow.
+02:07:18 Speaker 5
+The second derivative, yes. What was that comparison? So,
+02:07:24 Speaker 3
+Um, I remember. So we did theum first we did the the the differential equation. So we had the the I remember we had the PCA, We had the uh heat map, right? And from there, we were like, okay, we have the uhvolcano here, but we haven't look into it yet. So when we look into it next time. It was about before that, and then I'll say before that he was talking about the elbow, right So, do the aggregate cumulative. To find the. A better threshold. Um and then after the, um I have it here so. One question or did any have a question? The purpose of.
+02:08:17 Speaker 3
+This function is to programmatically identify the elbow, identify the elbow point, the maximum in the plot, which is. Trying to see if I'm missing something. Okay, so no, I don't miss anything here.
+02:08:46 Speaker 3
+The elbow, And then after that, he says something about which is what I said before about the over to interpret the biological meaning of the gene expression data. Gene by gene and pathway level, I think that's what he mentioned afterwards. Is that?
+02:09:05 Speaker 5
+I'm looking for a specific plot name.
+02:09:09 Speaker 6
+Oh, but he wants no. What Nikki?
+02:09:12 Speaker 4
+Pathway level will go under analysis right?
+02:09:15 Speaker 6
+Yeah, yeah.
+02:09:24 Speaker 2
+Oh, what about this Uh, but but this is not a plot related uh somehow it's something aboutum. Investigation include injury response regeneration response stress and inflammation, and the key pathways. You want to do something with that in the analysis part?
+02:09:42 Speaker 4
+Wait, sorry. Could you repeat that?
+02:09:44 Speaker 3
+So, um, there was something about key pathways mentioned for investigation include injury response, regeneration response, stress and inflammation. Is that something that we want to.
+02:09:59 Speaker 4
+Potentially That's based on what pathways we get after doing GO analysis. I think so that can be the follow up for GO analysis.
+02:10:09 Speaker 2
+Yes. Got it.
+02:10:18 Speaker 3
+Hmm. Right. Yeah, so that's what I.
+02:10:21 Speaker 4
+I still feel like results is kind of short, but I'm not sure what else to add.
+02:10:27 Speaker 5
+So we haveum two tier, We couldum we should do a let's see here where it's called a uh, two hybrid screening.
+02:10:44 Speaker 4
+It has its own thing. What? Like as its own thing.
+02:10:49 Speaker 5
+Like we should do that type of analysis for results.
+02:10:52 Speaker 4
+Yeah, but is that its own thing? Like it's not related to like go or DC.
+02:10:57 Speaker 3
+No, I think it's on its own thing.
+02:10:59 Speaker 4
+Okay, that's what I'm asking.
+02:11:00 Speaker 3
+Let me see, so we have this right? Let me put it here.
+02:11:03 Speaker 4
+Yeah, that's all we have for results.
+02:11:05 Speaker 3
+Let me put in our next to what I have see if I was missing something.
+02:11:20 Speaker 2
+Okay.
+02:11:51 Speaker 4
+We should just have something more for the discussion.
+02:12:01 Speaker 3
+Yes, I agree.
+02:12:04 Speaker 4
+I am kind of pushing for it working on this still, so let's just up discussion and we can head out. I know it's been a long meeting.
+02:12:13 Speaker 3
+But we, I feel like we are finishing strong. We have a pretty good blueprint so far.
+02:12:20 Speaker 4
+Yeah, and we can also maybe briefly show this to him tomorrow, not during the presentation, like on the side, and see what he says.
+02:12:26 Speaker 3
+Exactly. Yeah.
+02:12:28 Speaker 4
+So reproducibility global disc What's what are you defining as?
+02:13:07 Speaker 6
+They Looked at the gene expression of the specific thing, of the specific gene they knocked out.
+02:13:12 Speaker 5
+Global discovery is looking at all the genes that were expressed differently and then, based off that whole picture of all the genes being expressed, Where should we look So? It's basically like instead of instead of like using binoculars to look. Uh, you know a place to go. You look at the map first, and then you go to the spot.
+02:13:42 Speaker 4
+Okay, I see what you're saying. Yeah.
+02:13:58 Speaker 6
+Was It a component A component Component plot.
+02:14:10 Speaker 4
+Oh shit, What was that plot that was like you zoom in on whatever is significant within point five?
+02:14:17 Speaker 5
+The elbow, the thing. Yeah, that's what I'm talking about. Oh, that's the elbow.
+02:14:20 Speaker 6
+That's the elbow. Yeah. Yeah,
+02:14:22 Speaker 5
+That's the thing I'm talking about. I I'm forgetting what it's Is it called a component plot?
+02:14:28 Speaker 3
+Oh no no It's cumulativeum yeahum.
+02:14:32 Speaker 5
+Yes cumulative cumulative.
+02:14:35 Speaker 3
+I have it. I have it right here where this, I can't believe I just lost it. I had it like right cumulative. I just said it before, um, it's right here. Anyways, cumulative.
+02:14:47 Speaker 5
+Distribution plot.
+02:14:49 Speaker 3
+Yeah, cumulative distribution plot. That's what it is.
+02:14:59 Speaker 4
+Also, what did you mean by reproducibility? Sam? Um.
+02:15:08 Speaker 6
+Like the point of next gen like next gen sequencing. Isum. That's a good question.
+02:15:19 Speaker 3
+I understood it as like reproducing the same plots that we,
+02:15:23 Speaker 4
+Have yeah that's what I understood.
+02:15:25 Speaker 3
+That's what I understood it. Wait sorry what? I understoodum, um reproducibility as like generating the same. P lots that we have in the paper with the data. As I'm like, hey, this is where we got it from. This wasn't made up.
+02:15:58 Speaker 4
+Um. No, like as in like how reproducible is the work that we do. I thought that's what it was referring to.
+02:16:04 Speaker 5
+Oh no, I'm saying. About it in my head is that the point. Sequencing high through high throughput sequencing is that, a you take data.
+02:16:42 Speaker 2
+Oh, okay.
+02:16:45 Speaker 4
+You could actually go under discussion about NGS in the context of this paper.
+02:16:50 Speaker 5
+Yeah, exactly.
+02:16:51 Speaker 4
+And then actually external applications might also be able to go under that.
+02:16:55 Speaker 5
+Um, of our work or their work?
+02:16:58 Speaker 4
+Maybe hold on.
+02:17:01 Speaker 3
+What is external application? Yeah, I think it's external application might have might be on its own. Yeah.
+02:17:07 Speaker 4
+External applications is, how does the work? That either we did or the paper did apply beyond us biological relevance.
+02:17:15 Speaker 5
+So it would be a combination of our global discovery with, with helping them understand injury.
+02:17:28 Speaker 4
+Cause remember he was talking about you weren't in class on Monday. Okay on Monday. He was talking about that. Like what when he reviews papers, one of the main things he looks for is biological relevance.
+02:17:41 Speaker 3
+Mhm. Yeah. Yeah. Then I agree with you, Discussion seems like the right place for that because I understood it to be I was interpreting differently before.
+02:18:05 Speaker 4
+Yeah, that's why I redefined it as biological relevance. Yeah,
+02:18:10 Speaker 3
+Yeah. Yeah, it makes sense to have it on the discussion. But if it's long, you know, If it's gonna be long like you also make sense to have its own section as well.
+02:18:19 Speaker 4
+Yeah, yeah, we can. We can see how long the discussion ends up being and then separate by section. Yeah.
+02:18:26 Speaker 6
+Um yeah cumulative distribution plot is a, Okay, is that's not undervolcano plot though, is it?
+02:18:40 Speaker 3
+The distribution plotum after thevolcanoum.
+02:18:45 Speaker 5
+Oh and then do secondary. Do secondaryvolcano plot right.
+02:18:51 Speaker 3
+Exactly yeah because it would look different yeah. The uhvolcano plot and even.
+02:19:06 Speaker 4
+Sam, I'm gonna remove this comment about how the pipeline can be categorized.
+02:19:10 Speaker 6
+Yeah, yeah, that's okay.
+02:19:13 Speaker 2
+Um, let's see. Okay.
+02:19:28 Speaker 4
+Um, I think some of these points should probably have more detail in it, but I am happy with where we're at. Yeah.
+02:19:36 Speaker 3
+Um, I would just um, I don't know. Is we can. I was just thinking out like out loud. I think in results um, maybe adding like the bend point figure, plus source table in there. Yeah. I think that will be definitely.
+02:20:05 Speaker 4
+Basically, all the things I listed under results is all the figures we should add. In my opinion, yeah. Figures plus whatever like description of figures that we do.
+02:20:16 Speaker 3
+Yeah, Cause I the only reason why I am saying, because he made such a uh fault like big deal with. Thank you. He makes such a big deal about it like, the pen point, the genes arriving the i p s. The i am gonna just spell i p s i but.
+02:20:36 Speaker 4
+Yeah, No, we know what you mean.
+02:20:37 Speaker 3
+And displayed by direction, Like those things heum he was like showing us as to like find biologicalum interpretation through those or yeah. Yeah. I'm just thinking at the same time, yeah.
+02:21:00 Speaker 4
+So okay, yeah. No definitely I did think that will be a good figure to include.
+02:21:07 Speaker 3
+I was the only thing I was thinking. Okay, I think we're in a good place. Yeah,
+02:21:13 Speaker 4
+Yeah, we definitely need subcategories here, but we can figure that out tomorrow.
+02:21:20 Speaker 3
+Hmm. For uh, yeah yeah. Okay. He wants subcategories in the paper. Okay, yeah. Um so when he means subcategories, does he mean. The he doesn't want everything be covered, But like you have like you have a subtitle and then everything under that, he doesn't want things like that.
+02:21:40 Speaker 4
+No, I think it's just his way of being like what detail we plan on adding to that section.
+02:21:45 Speaker 3
+Okay, makes sense.
+02:21:47 Speaker 4
+That's how I understood it.
+02:21:48 Speaker 3
+All right. Yeah, yeah.
+02:21:51 Speaker 4
+Basically, we are trying to show that we're thinking of how to include the parts because, like yeah, okay, for example, just taking results. Yeah, we say we need a results, but for example, we could potentially be completely ignoring this. Mhm. So I think it's just his way of confirming that we're thinking about the right things to add to the paper. Okay. So each extra like tab bullet point is just details that we plan on talking about.
+02:22:19 Speaker 2
+Yeah yeah yeah yeah.
+02:22:21 Speaker 4
+Because for a paper this long, It should be very in depth. And that's just I think his way of verifying that we're thinking about. This very in depthly.
+02:22:31 Speaker 3
+That makes sense. Yeah.
+02:22:34 Speaker 4
+Okay, I am feeling good about this for now if and we can all think about this more tomorrow.
+02:22:39 Speaker 6
+Uh, let's briefly mention references, um, are there any?
+02:22:46 Speaker 5
+Oh, like what references we want? Yeah, are one let's do ideas and two are there anyum.
+02:22:58 Speaker 5
+We should definitely mention that one paper. I was gonna say we should mention any papers that we have reviewed during class that are applicable to this. The one that comes to mind is that one paper at the beginning of the class, that talked about next gen sequencing tools and they mentioned, ah how Nova uh Nova X works right.
+02:23:23 Speaker 4
+I remember what you're talking about. I can't. I can't re. Remember which one it is though.
+02:23:28 Speaker 6
+It'sum. Was it this?
+02:24:17 Speaker 3
+I'm taking a note for myself also about references. So I can suggest some because that's very important because. We borrowing some stuff from those papers. Ideally. Where I'm looking for the papers that I'd linked.
+02:24:48 Speaker 3
+From his own papers, there you go.
+02:25:02 Speaker 3
+I Never pushed him seriously,
+02:25:04 Speaker 2
+Come on.
+02:25:19 Speaker 2
+Ah. Week. Week weekly report. Copy paste off. I can see the papers.
+02:25:52 Speaker 3
+Okay, So. Um. Do we have anything in mind, or do do we justum. Add in there for later. Like.
+02:26:08 Speaker 4
+I said, I think we need to have more detail on each plot on each thing, but we can think about that tomorrow.
+02:26:15 Speaker 2
+Yeah okay. For.
+02:26:17 Speaker 4
+The main thing, I think we need to definitely have, Things under is this one.
+02:26:24 Speaker 3
+Oh, what does the data show? Yeah, we had yeah that's. That goes tied to the biological interpretation so yeah.
+02:27:11 Speaker 2
+Okay. So. So, speed.
+02:27:44 Speaker 6
+Okay, how's that? Yeah.
+02:28:32 Speaker 2
+Yeah, it looks. So what the data have. Let me.
+02:28:44 Speaker 1
+Just look at one.
+02:28:45 Speaker 4
+And like I'll definitely be taking another look at this tomorrow to determine where else.
+02:28:51 Speaker 5
+But I'll I'll just take a look again. I mean, I'm content with this. I don't know how much more it has to be than this.
+02:28:59 Speaker 4
+I want to ask other people in the class what they plan on submitting. Yeah,
+02:29:03 Speaker 6
+I I will tomorrow too. Tomorrow's just a busy day. Um Well,
+02:29:09 Speaker 4
+We could if'Cause.
+02:29:12 Speaker 5
+I still have to do my paper.
+02:29:14 Speaker 4
+If we if we are concerned about quality of this, I can just put together a really shitty introduction to show that we did some work. But I think we should be good. Yeah.
+02:29:29 Speaker 3
+Um. Key genes driving this play pathway teams supported by GEO. Okay. What it may mean biologically? And.
+02:29:50 Speaker 2
+Share with us.
+02:30:01 Speaker 6
+Okay. Um. Well, I'm good.
+02:30:06 Speaker 5
+Me too. So for tomorrow, what are we presenting? Um,
+02:30:12 Speaker 3
+The I think we agree on the goal. Yeah, the goal analysis. Yeah. Okay. I can introduce it, and you can you guys can go into the bias stuff. Yeah, unless you guys have. I know that they had to.
+02:30:31 Speaker 6
+Is in the server, just go analysis on the server.
+02:30:35 Speaker 3
+Um yes, and it's in the notebook. I that the actually, That I put it in this notebook where this initial question is because it doesn't have much of like T, here's no write up in there just pictures and. At the end, some interpretation brought the points. See if we go all the way to the end. So here. Basically, so side by side and point very significant. Yeah, so just statistically what it is. So no interpretation, no biological interpretation.
+02:31:24 Speaker 3
+I can read into um I'm I I'm gonna try to get like a draft for the um for the draft for the paper drop first, and then I'll dig into this and see if I can have something that makes more sense that we can say, hey, we saw this here as well and confirms X Y and Z. Um. But I'm what I'm thinking is to, uh, just like. Like. What I was thinking in my head is so it's just like recapture as like hey, this is what happened we and volcano. And, we had this elbow and we had this and then we went into this and it's not with the yeah and you guys. Can go in interpreter. I don't know you guys tell me. What you guys think?
+02:32:21 Speaker 5
+Um. Regarding the paper.
+02:32:25 Speaker 3
+No, the presentation.
+02:32:27 Speaker 5
+The goal, The goal analysis. Yeah,
+02:32:29 Speaker 3
+To yeah to present tomorrow. Yeah.
+02:32:31 Speaker 5
+Yeah, Well, I'll I'll have to look at it. I'm gonna honest I don't know alright,
+02:32:37 Speaker 3
+So and like we can just say, we didn't get a chance to look at it. Cause I. Yeah, I have a s I have another assignment due tonight, and then I have a paper. So I don't think I'm gonna be looking at it till tomorrow. I'm with you. So, worst case scenario, um, we just go show what we did. We didn't get we have like Nikki said, We have enough time to dig into the biological interpretation and discuss it with him what it means and move on. Yeah. I think that we'll play by ear. Yeah. Just leave it like that. We get it if we get a chance to look into it great. I posted on Slack hey I found X Y and Z.
+02:33:19 Speaker 3
+If no, we just play by ear. Like Nick said, we just go there. This is what we did and yeah, separate together.
+02:33:26 Speaker 4
+Okay, cool. All set?
+02:33:29 Speaker 3
+Yeah, yeah. Thank you guys so much this This was very productive. I know, I started a little bit. Um what's the word confrontational? But it's just uh I just wanted to get out of the way in case I I. Was it was something taken out of context or whatever. But I feel like we align now. So. And we are in a good place. If you know, by any point, the chance there is something else that needs to be communicated, just feel free to ping. Um, I am gonna be working just on the on this tonight, even though I have another submission. Yeah. I am like you guys and like I don't know how this is gonna happen, but we're gonna have to make it happen.
+02:34:08 Speaker 4
+Okay yeah sounds good.
+02:34:10 Speaker 3
+Alright see.
+02:34:11 Speaker 4
+You guys tomorrow see ya.

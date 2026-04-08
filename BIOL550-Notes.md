@@ -8,6 +8,7 @@ Course home (myCourses): https://mycourses.rit.edu/d2l/home/1199746
 - [Documentation hierarchy](#documentation-hierarchy)
 - [Slides](#slides)
 - [Readings](#readings)
+  - [Week 13 paper discussion notes](output/doc/BIOL550_Week13_Paper_Discussion_Notes_2026-04-06.docx)
 - [Misc](#misc)
 - [Tooling reference — OpenAI API key & transcription](#tooling-reference--openai-api-key--transcription)
 - [Data download reference — SRA (NCBI)](#data-download-reference--sra-ncbi)
@@ -209,6 +210,7 @@ Week 1/2
 - Week 7 - Other applications
 - Week 11 - Variant callers and missing genes
 - Week 13 - Long read applications
+  - Discussion notes: [BIOL550_Week13_Paper_Discussion_Notes_2026-04-06.docx](BIOL550_Week13_Paper_Discussion_Notes_2026-04-06.docx)
 - Week 14 - Microbiome and epigenetics
 
 ### Paper notes
@@ -411,6 +413,16 @@ Topics: This week transitions into considering sequences from unexpected sources
 
 **Week 13: Advanced Genome Assembly – Haplotype-Resolved Polyploid Genome**  
 Topics: A return to genome assembly, tackling one of the hardest scenarios: a highly heterozygous polyploid genome. The class investigates the case of the tetraploid potato genome assembly (Sun et al., Nature Genetics 2022). This state-of-the-art project assembled the 3.1 Gb genome of a potato cultivar ‘Otava’ into chromosome-scale haplotype-resolved sequences. Students learn what makes the potato challenging: it has four homologous sets of chromosomes and abundant heterozygosity (unexpectedly, \~50% of the genome was identical-by-descent due to recent inbreeding, but the rest had many structural variants). The initial assembly, even with long reads and Hi-C, showed evidence of haplotype collapse: coverage patterns revealed contigs that had merged two, three, or four haplotypes into one (termed “diplotigs,” “triplotigs,” “tetraplotigs”). About \~21% of the assembly represented two collapsed haplotypes and smaller portions for three or four. Such ambiguous assembly structures are problematic because one contig might actually represent divergent sequences merged incorrectly. Resolution approach: The scientists employed an innovative solution called “gamete binning.” They sequenced 717 individual pollen genomes (which are diploid in potato, since potato produces diploid gametes) with short reads. By aligning each pollen’s reads to the draft assembly, they could assign reads to specific haplotypes based on presence/absence patterns. This allowed the separation of the sequencing data into four buckets, one per haplotype, enabling a fresh assembly of each haplotype separately. The result was a near-complete, phased assembly where only 54% of genes were present on all four haplotypes – meaning many gene copies had diverged enough to be missing from at least one haplotype. They also found \~11% of genes showed allele-specific expression among haplotypes (illustrated by differences in leaf transcriptome expression), often correlated with allele-specific DNA methylation – linking this to epigenomic regulation in polyploids. Class discussion: This case encapsulates many modern genomics techniques: long-read sequencing (PacBio/ONT for contigs), Hi-C for scaffolding, short-read sequencing of single cells (pollen) for phasing, and integration of epigenomic and transcriptomic data. Students discuss how haplotype phasing is increasingly important for understanding functional variation – e.g., if one haplotype carries a deleterious allele that’s compensated by another. The potato example shows that collapsing haplotypes in assembly can mask important variation (nearly half of the genes weren’t uniformly present in all four sets). Skills/techniques: While performing a full polyploid assembly is beyond a classroom, students learn to use genome browsers or dotplots to visualize assembly versus reference or self-alignments to detect collapses. They may use a small Arabidopsis allotetraploid dataset to see how duplicated regions can collapse. The concept of using Hi-C contact maps to separate haplotypes (as an alternative to gamete sequencing) might be touched upon. Skills gained: This week gives students a taste of cutting-edge research. They learn how to critically read a high-impact genome paper, understanding its methods and interpreting summary statistics. It reinforces problem-solving: when standard assembly fails (ambiguities, collapsed repeats), creative strategies (sequencing gametes or trio binning with parental genomes) can rescue the situation. Students also appreciate the biological insights gained: e.g., discovery of extensive structural rearrangements in potato and allele-specific gene regulation – connecting genomics with plant breeding and evolution.
+
+Week 13 discussion companion document:
+- `output/doc/BIOL550_Week13_Paper_Discussion_Notes_2026-04-06.docx`
+- Covers:
+  - `BIOL550-Week13_Sun2022_Potato Genome.pdf`
+  - `BIOL550-Week13_Wang 2021 - Green lacewing Chrysopa pallens genome.pdf`
+- Includes:
+  - short summaries
+  - relevance to the mouse differential expression project
+  - discussion questions connecting both papers to the `ipsi` versus `contra` mouse analysis
 
 **Week 14: Epigenomics and Microbiome Function – Integrative Analyses**
 
