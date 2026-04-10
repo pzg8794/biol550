@@ -1,0 +1,390 @@
+00:00:00 Speaker 1
+So, it's one very common way to represent this using a network graph like this. Do you have a gene? Yes, I actually get out the. I just want to get. Cool, cool. Yay! Busy but. Yep. So do you want me to put them side by side? That's good. So we can actually see the different genes involved, some of the core. Wait, then why are there different sizes referred to in gray? On the left, I get it. That's the number of genes involved. Right here, what's what size means?
+00:00:37 Speaker 2
+I thought it was the number of genes involved. Oh wait, no, I guess that's well because all of the genes, those dots are the same size. So it's these yellow ones and that represents how many genes are involved still. So are the center ones like a.
+00:00:52 Speaker 1
+Pathway or a gene? Yeah they're pathways. Oh yeah okay so it's a mix of genes and pathways?
+00:00:57 Speaker 2
+Yeah it's a gene pathway.
+00:00:59 Speaker 1
+Okay, just a mic. Okay, that's a little different than we used to see, but you can see some shared areas here. Like genes, I am assuming these genes here are tied in with multiple pathways. These genes like here. Yeah, yeah, yeah. So, you can see those links between the pathways there. And these oftentimes, it's a subset of the genes in between them that are really driving a lot of this. So you have cytoplasmic translation okay so, Transcription machinery makes sense with your ribosomal RNA processing and development processes. Uh, small nucleolar biogenesis. Do you know what those other terms are in the middle? They're it's all dense.
+00:01:38 Speaker 2
+No, I need to look into that.
+00:01:40 Speaker 1
+Then that's tough to do. That's, one of the challenges working with these is sometimes you get so dense. It's hard to see what's going on in the middle. Yeah, yeah What's.
+00:01:47 Speaker 3
+The disjoint group on the right?
+00:01:48 Speaker 1
+Just because I've just seen Oh yeah, we'll have some of those Yeah,
+00:01:51 Speaker 2
+I don't know, I need to look into that. These are just names, but haven't fully interpreted them yet. Cool.
+00:02:00 Speaker 1
+Yeah, It's a very small set of genes that are detecting with a small fold change. I'm guessing those genes at that junction between the two clusters there, they could very well be transcription factors. Yeah, I'm curious what they are.
+00:02:16 Speaker 2
+We're here's a way to like a way to do this but with hovering. That would be nice. Yeah,
+00:02:20 Speaker 1
+Some programs do allow it. What did you use? This was in R. In R okay There's some standalone ones that work. Uh I want to say Cytoscape maybe.
+00:02:31 Speaker 1
+That's worth looking to see if that's there. Um, man, what we used to use. But, one of the things you can get instead of fold change is the p- values. It gets more interesting to see. Yeah, I'm not a big fan of fold change, just because small fold changes can make a big difference sometimes. Is there any difference? Just.
+00:02:56 Speaker 4
+I might have created my own question here. Come back to you soon. Um, what did you say that uh EN I Z numbers represent? Yeah, yeah. Oh, I'm not sure. Geez. Whatum Why are specific ones showing up and the other some not? Or is it just random?
+00:03:14 Speaker 2
+I think it's just like by density. I use the package to do it, and it just labeled them. So I don't really know why it yeah.
+00:03:22 Speaker 1
+Okay. Sometimes that'sum. Because it's denser in some regions,
+00:03:28 Speaker 2
+It can be hard to put labels.
+00:03:30 Speaker 1
+It's not a simple computational problem if you're adding up the labels because you imagine putting a label on every single point. You wouldn't be able to read anything because they'll all be overwriting each other.
+00:03:38 Speaker 4
+Yeah, I was wondering if it's maybe like all those IDs are part of like one family or something. Well,
+00:03:44 Speaker 1
+They're definitely tied to some pathway. Other than that, we don't know. One of the things that is known is that a number of genes are tied to multiple pathways. Either the junction between them or they serve multiple roles, like p fifty three is a common one. Although that's carries out a very specific. And so it may be involved in many pathways in some cases. Um, Some of your other related drug just sort of involved in different pathways depending on what's being engaged. These are more roles in general sense through signaling molecules. Sometimes hormones are.
+00:04:25 Speaker 1
+So, this is. Um, in terms of the ENSGs, what annotation system does it have? Humans.
+00:04:40 Speaker 2
+Is it humans?
+00:04:40 Speaker 1
+Yeah, so those are human ensembles. Interesting. Okay. So all these genes are of known function then or they just don't have, Common names for this. Could be they're using the ensemble accession numbers or something, but they actually have common names.
+00:04:59 Speaker 2
+Yeah, it's just using those in Ensembl. We could connect it to show the common names, but yes. All I know is Kipoi and Gene gives a good name, but yeah. That's my, that's my thing here for publication. You have to make sure you give common names,
+00:05:11 Speaker 3
+So people know what this is. Yeah. My question which I rememberedum if it was just uh when you got the initial output, was it static? Just an arbitrary one?
+00:05:50 Speaker 2
+Yeah. Okay. Cool. Oh, I see. Yep.
+00:05:53 Speaker 1
+Cool. Interesting that cytoplasmic translation is separate from the ribosomal RNAs. It's surprising they're not connected. They should be connected because a lot of those ribosomal RNAs Oh, metabolic processes versus oh no. Those are all specifically in the process to not study location or. Biological ones three different uh gene ontology sub ontologies. This specific to the metabolic process ones. No, I'm sorry, this the biological process ones. The metabolic ones are.
+00:06:52 Speaker 1
+I thought those names up. Okay, but um, yeah, I'm surprised that cell plasmid translation is not tagged with others. Should be because I think cell plasmid translation might be the parent to the rRNA metabolic processes and all those others at the top cluster.
+00:07:28 Speaker 1
+Ooh. Okay, so you get different things in this. So what's the difference of these?
+00:07:32 Speaker 2
+This is uh day 14 versus day four,
+00:07:35 Speaker 1
+But we're looking at six hours post- cool. So I'm trying to show you that this is healthy, which I think is. Switches over from an increase in translation to changes in the spindle. We still have some somewhat.
+00:07:57 Speaker 1
+Take a look at the different stages you're looking at. They said this first healthy and the different days, and see what's in common, what's different. See if it says anything about biology. It matches anything on your understanding of biology that you've seen elsewhere. Try to get that biological relevance there. Cool? Awesome! Yay! Okay! Who's next? Compare the four sets of days.
+00:08:28 Speaker 5
+One two three.
+00:09:15 Speaker 2
+It's Been a pretty slow week. I'll start with that. Um, We spent most of the week trying to just get an outline together for the paper and start delineating things out, writing things down.
+00:09:26 Speaker 3
+Also, just a lot of things going on in other courses, and so we haven't been out of as much as we probably should. I know. I just wanted the preface. Okay.
+00:09:34 Speaker 6
+Um. So, what we started with first was taking all our two outputs and just finding ways to visualize it. So here we have avolcano plot where it's the output file from when we ran with conditions only.
+00:09:57 Speaker 6
+For that. We're still messing around with like the p values and other parameters.
+00:10:02 Speaker 4
+So, let's go ahead. What's your cutoff for log fold change?
+00:10:06 Speaker 6
+Right now, I think I had it at one, but we're still like working on like the inflection points and things you mentioned. Excellent. And we're going to be adjusting it based on that. This is just as a preliminary step that we did on Thursday.
+00:10:19 Speaker 1
+I'm glad to hear you say you're using inflection point because a lot of labs would say, yeah, two fold. And it's a common thing, but it leaves things out. So cool.
+00:10:30 Speaker 6
+We did the same process for development as well, and we also have one for combined. I haven't put it up here yet since I haven't okay see that's perfect. What's the label on the top one? The first one was condition condition,
+00:10:44 Speaker 1
+Okay, so treatment versus no treatment.
+00:10:45 Speaker 6
+Yep, and then development is for the four different stages of embryonic development. See how many stages do you Haveum.
+00:10:55 Speaker 1
+Okay, so which developmental stage should be compared to that one? Because if you think about it, you have four time points. You could at a minimum compare the first one to the second, the first to third, and the first to fourth. So you have at least three there.
+00:11:12 Speaker 3
+But then you also want to be able to compare. I think for this one.
+00:11:17 Speaker 6
+Two of them happen in the first two and second two. But I didn't like that. So I'm looking at other ways to visualize it because there's four different. Most likely is going to be a one verse two, one verse three, one verse four, so on. But it might become a little bit too redundant is my only concern. Which is why I'm looking into other ways to visualize it.
+00:11:42 Speaker 1
+But, you could mean for thevolcano plot between what you can see, what is your distribution? Yeah. Sometimes see, there might be a big shift to one side or another, which is sometimes okay, depends on the context. Um, what you do is if you do all your pure rice combinations, They should look more like this where there's no major bias in upper down breathing. Unless there's something special about those developmental stages.
+00:12:04 Speaker 6
+We might try like an overlay of some sort to see if there's that.
+00:12:08 Speaker 1
+Doesn't even really mess it up though. Yeah, so you got six different combinations. Yeah, so an overlay would be tricky and yeah, that would be a lot of fun. Yeah, not nice though. I don't think you can do it, But one thing I've seen done is doing like stacks of planes where they're just offset a little. And you can see if there's a major difference in the shape across the stack. So you can do all six that way, but don't worry about getting tricky with it.
+00:12:38 Speaker 6
+Yeah, we might just have all six of them just because this is what I.
+00:12:52 Speaker 6
+Also, what we can do with this data. So, GSA has one, But the problem is that since we're working with Cinafist data, and GSA is built for human and. We would have to probably use orthogonal for it. And, we're also looking into more um Cinafist specific tools to see if there's anything out there.
+00:13:19 Speaker 1
+If you can find them, that'd be awesome. Yeah, I could not right away. I tried a quick search.
+00:13:23 Speaker 6
+And could not find anything. Yep, there was something called the send line, But it's oh I don't think it's like suitable for what we're trying to do. I know. I think like if basically the way like I was looking through it, It seemed very similar to like everything that is at space hopper does in like finding reference genomes. And just information, it just felt like something to add on to that rather than. And analysis.
+00:13:57 Speaker 3
+It's been hard to find things for us to keep track of things beyond what D C does. It's a small,
+00:14:04 Speaker 1
+Relatively low usage. It's used for very specific purposes.
+00:14:09 Speaker 6
+So most likely we're gonna probably follow through with the work order. Yes, I think it could be. Ah, what's the census?
+00:14:18 Speaker 1
+These websites, three was called. I think it's. Is it front page? Yeah, yeah. Uh, if you need volunteer, you might be able to find something in there. I'm sure somebody's done this sort of thing. Ooh! You got to play too much Minecraft. Uh,
+00:14:41 Speaker 7
+I just think they're neat.
+00:14:42 Speaker 1
+They are neat. They're cooler in real life than in Minecraft. Um, Do they have blogs here or community discussions? Yeah,
+00:14:53 Speaker 6
+What we've been trying to do for also in my team, other things is that we've been looking at any other census- related studies and trying to see what their methods were.
+00:15:02 Speaker 1
+That might be a little tricky because I don't know where it is. What's under these resources? Yeah, the seminars keep going down but the opportunity.
+00:15:22 Speaker 1
+Couple grants, this is more grant resources. Yeah, and I would keep looking through. Maybe just go to the woods school, that'd be awesome, cool place to go. Um so I would keep looking through that website through his database a little bit. That's probably your best chance of finding something. Uh especially if you're like going to seek answers for obviously stuff. Yeah yeah. Find something you're looking for. if it's not here, they may not have it. You can also just approach me and I'll just look at the door.
+00:16:06 Speaker 6
+Other than that, We've also started working on the final paper with all of our references we've found so far. And we started with like drafting all of our different portions.
+00:16:24 Speaker 6
+Yeah, there's already outlines of the characters. I'll just about to do them. Do an actual write up so it's cool. Cool. Okay.
+00:16:36 Speaker 1
+Excellent thinking. What's going next? Roll around the dice. Ah man, really nobody wants to volunteer? Awesome, thank you!
+00:17:23 Speaker 8
+Um, just combining with the paper, and we have done some analysis. And then in the past week, we also kind of figured out some of the weirdum appearances. Let's see. Yeah, pull up just a little and see the title on that one. There we go.
+00:17:39 Speaker 9
+Yes, so that was what we quickly did after we presented here yesterday. Sorry, last week you suggested the accumulated to see it.
+00:17:48 Speaker 1
+Yeah, even changing that x- axis is still tough.
+00:17:50 Speaker 9
+Yeah yeah, This is something that we discussed on Thursday, changing the x- axis to be able to look at it better. So I did that for us to basically consult with you as we also go over the Go analysis because we didn't have time to interpret. You know,
+00:18:10 Speaker 1
+If you get down to that endpoint, I think I mean 17 teams you can work with. It's not ideal. It's a little on the high side, but I've worked with groups on something like that.
+00:18:21 Speaker 1
+And yours is mouse, I think. Yeah. Yes. So there's plenty of gene ontology resources that'll get them easier. If you got seven hundred and nine different expressed genes, you can run that through Panther, which is on the Gene Ontology website. It's like right on the homepage; you can't miss it. Oh And, if you put in mouse accession numbers for the different genes and tell it to use mouse, yeah pop out results.
+00:18:42 Speaker 9
+For you Is it Panther? Right?
+00:18:43 Speaker 1
+Panther Yeah It's right off the Gene Ontology website It's really easy to use Yeah So.
+00:18:47 Speaker 9
+This is just like a quickum. Look or before and after the we change the uh the threshold.
+00:18:55 Speaker 1
+Yeah, you still have the bias, so it's okay in your case. That probably makes sense. Yeah.
+00:19:00 Speaker 9
+And. After that, we move on to the go analysis. And that's basically where weum.
+00:19:08 Speaker 1
+Was that Gene Profiler or Gene? A different.
+00:19:12 Speaker 9
+G profiler? G profile G profiler Yeah, yeah,
+00:19:15 Speaker 1
+Yeah. That's a common one.
+00:19:16 Speaker 9
+Yeah G profile Soum, We we use that weum. Um, just quickly went over that. We really didn't have enough time to like, try to make some biological uh representation of it.
+00:19:35 Speaker 1
+So but one thing I would suggest let's see.
+00:19:38 Speaker 9
+Yeah, let me.
+00:19:39 Speaker 1
+I would take a look at those gene ontology terms and see what level of depth they are in the gene ontology.
+00:19:46 Speaker 1
+So, I mean, those are all looking so. Yeah, the way the genealogy is organized. Yeah. I'll draw this out on the board because everybody's going to want to see this. So, the genealogy is entire. I don't think we talked about it in this class; I do in others. We talked about it in seminar or something? Okay.
+00:20:08 Speaker 8
+I know we talked about algorithms.
+00:20:11 Speaker 1
+Okay, good. So, your biological process, molecular function, and cellular location are three sub-ontologies. Each of those you have a series of high-level terms. Like for biological process you'd have cytoplasmic translation. And you have a few others that are just very general biological concepts. Underneath there, let's say this is cytoplasmic translation, There are a bunch of other terms below there that are a little more specific. Each of those will have terms under them that are a little more specific, and it goes down some level of depth. So I call this depth one, two, and three. But, there are different levels of depth in the hierarchy. ;. How far are they from the root is what you're looking at. And I would take a look at these terms and see how far they are from the root. In fact, That's something good for any group to look at when you're starting to see really general terms. So-called g: profiler uses. um. what used to be called.
+00:21:11 Speaker 1
+Um, go slims. It was a subset of the gene ontology. The whole gene ontology has, if I remember correctly right now, has thirty four thousand terms that all represent different biological concepts, different ways of understanding what goes on inside cells. There's, there's limiting it down even further to get rid of some that are there's no biological evidence of, but generally, something like go slims. They take me to the top five. Levels. So you're dealing with more general terms. Although when you get down to the fifth level, it's getting a little more specific. But if you want to dig deeper, there's more down below it. I think Gprofiler is focused on the high-level ones. Yeah, yeah. Because I'm not seeing anything there that looks really specific, whereas a small number of genes, these all have a large number of genes with them. Yeah Uh which means they are high-level terms So you use GoSlims? Uh we should be using GoSlims automatically in Gprofiler though.
+00:22:09 Speaker 1
+But you can always change that too. You can tell it to use something else. You'll get a lot more terms as a result, but you can then do the same sort of networking that you're looking at, where you're looking at the interaction between how the different terms are related, pathways or terms either way. And you can actually see is there, where is the significant point? At what level of depth is this significant? There's all kinds of cool things you do with that. But I would just start playing around with that a little bit. You get some really cool stuff. That's like a good idea. Excellent. Alright, there's two groups left. We're gonna rock paper scissors it. Get tied up. Oh boy, okay. Each of you pick someone to go at it. Rock paper scissors, go! Or just one group can stand up and go There we go! Rock paper scissors.
+00:23:08 Speaker 1
+There's something else. I forget what it is. I know what you're talking about. Yeah. You want to be really geeky and do that? I don't know that, but it's Oh man. You'll be here, watch the beginning of Harry? Yeah, I didn't miss all the references. Rock paper scissors Spock Lizard Lizard Spock Lizard Spock It's just five okay.
+00:23:43 Speaker 1
+Alright. Ooh. I like the other blue ones in there.
+00:23:49 Speaker 11
+Yes. This is just because we want to talk about it this week. Um, I don't know which order they go in,
+00:23:56 Speaker 11
+But. This is the locations. Yeah, So we made a bunch of or I guess I made a bunch of differentvolcano plots because I just like exploring the data this week. Okay? Um, so we checked. This is checking. Just the differentially expressed genes between location. A little bit further down, we check infection status.
+00:24:17 Speaker 10
+So it's possible that. So wait a minute,
+00:24:22 Speaker 1
+Your x- axis is very different in this one.
+00:24:24 Speaker 10
+Yeah, That was like a random one, because we realized that we needed to check all location comparisons. But the other ones.
+00:24:31 Speaker 1
+So hold on, go back. So for this one, just looking you can't tell how many genes are differentially expressed.
+00:24:36 Speaker 10
+Yeah, exactly. Okay.
+00:24:38 Speaker 1
+So we need a previous one
+00:24:40 Speaker 10
+Right? Yeah,
+00:24:41 Speaker 1
+I think that's mostly because people made yeah definitely coordinate them. Um, If we want to look at how many genes are differentially expressed under each of these comparisons. Um,
+00:24:53 Speaker 11
+Okay go on sorry. Uh. But the reason we or I guess, this is the most important one so far, which is infected versus uninfected. And you can see it shifts off to the rightum and we do see a few. You know, it's pretty significantly uh differentially expressed genes. So,
+00:25:15 Speaker 1
+This is where it's infected overall, right? The numerous is infected. So that's the overexpression. Yeah. So a bunch of there's some gene cascades going on when something's infected. Uh it's a very complicated network you see in plants too.
+00:25:27 Speaker 11
+Yeah. And so the challenge from here are at least the challenge I think we're gonna run into is isolating. Lyme disease from just amino responses. And that's what we're going to figure out tomorrow.
+00:25:46 Speaker 1
+Not independent, I mean there are things, Some that are going to be specific to Lyme disease and some that are specific or just general immune response. Yeah, You'll probably have inflammation related ones in there as tied to pretty much any infection. So that doesn't surprise me and I wouldn't worry too much about the differentiation.
+00:26:03 Speaker 11
+Well, the reason we want to focus on the differentiation is because, And specifically, they have a high tolerance to Lyme disease. Specifically, okay. So focusing on their unique response to Lyme disease will help us get to what we think would be significant. Moles are moles. Moles are moles. Moles are moles. One goes on the ground.
+00:26:28 Speaker 1
+Anyone know rhythm? Moles and bulls! Bulls and bulls! You know what I mean? There's some sort of differentiation. I don't know what it is. I probably have both in New York, but you see the trails lined one. Moles are meat eaters and moles arevegetarians. Interesting. What is it? Cool. Moles are meat eaters and moles arevegetarians, so moles eat insects and stuff like that? Oh yeah, that'svegetarian insects and worms, cool.
+00:26:57 Speaker 7
+I wait, so is that accidental or did somebody like. Is that a coincidence or.
+00:27:03 Speaker 1
+That could be a phylogenetic difference between them. Oh, interesting. I have no idea. That's a good question. That's very good.
+00:27:29 Speaker 11
+But Yeah, that's that's what we that's one of them I think okay.
+00:27:34 Speaker 1
+So, The first thing to say is definitely coordinate and make sure your X and Y axes are coordinated. Okay, so now I am going to ask for bubble raise one, any lots of good fingers, but two. So those who have not taken seminar who's taking it in the fall? One is taking it next spring. No one else taking bioinformatics seminar?
+00:27:57 Speaker 1
+Taking Bioinformatics seminar in the fall? No, it's a three credit course. Oh, it's a graduate course.
+00:28:05 Speaker 9
+For Graduation, yeah.
+00:28:09 Speaker 1
+I might have to bring in my book. Do you have the book? Yes. All these different ways to represent things graphically and what are good principles? My number one pet peeves is different dimensions to the axes because it's deceptive. If you ever read USA Today, Their origin is never zero zero ever because they're trying to have like there's this huge difference when it's really like one percent. So it's sensational in some ways. I know you're not doing intentionally, just be careful. What was that? Sometimes one percent is big. Statistically, damn little impressed.
+00:29:01 Speaker 1
+Changes in these dimensions as you can see. There was another there's a new just be careful annotation that came out. So make sure your coordinates you're all doing the same axis. So it's it's easy to see what's going on.
+00:29:13 Speaker 10
+Yeah, I think I just automatically assessed based on features. You can change, yeah,
+00:29:18 Speaker 1
+Yep. But, this is just if you go back to the narrow one, it did not have the outliers that I saw.
+00:29:24 Speaker 10
+Yeah, yeah, no, no I understand that one was mostly just visualizing.
+00:29:27 Speaker 1
+Yeah that one.
+00:29:30 Speaker 10
+Like for the most part, there wasn't too much in comparison to the other.
+00:29:34 Speaker 1
+I can't conclude anything from any of these because it's so worked;. It's hard to do a graphical comparison or to image it in my head.
+00:29:43 Speaker 11
+I think I have other graphs on my computer.
+00:29:47 Speaker 1
+Or you can show me tomorrow.
+00:29:48 Speaker 11
+I think I have the other graphs on my computer. This is basically killing the idea that males and females had any individual response. Which is one of our overall questions.
+00:30:00 Speaker 1
+And that's okay. That's fine.
+00:30:02 Speaker 11
+But this is basically saying there's no difference.
+00:30:06 Speaker 1
+There are differences, just a very small number of genes. What I would do is look at those individual genes and see what's going on.
+00:30:12 Speaker 11
+The function there. Is that one value way out to the right tenfold in the highest condition?
+00:30:20 Speaker 1
+There's another one. That's low fold change. It's 10 on the y-axis, just left of center and small.
+00:30:36 Speaker 11
+Number, small number doesn't mean we can look at.
+00:30:40 Speaker 1
+All of them. There is lots of different websites to get. So this is good again for everybody. There is lots of different websites to get information on what's known about different genes if they.
+00:30:52 Speaker 1
+Have related genes in other species. You might be able to do that. If they already have it for these and they know what the genes are doing, awesome. If you have to go to other species databases and say, look what's the corresponding gene in mice? Just be careful because it may be a different function at least.
+00:31:10 Speaker 11
+Most of the genes will be the same somewhat on that I think we're going to well one idea. I was going to propose speaker tomorrow is going two different directions because there are mice. Have super well annotated genome and prairie voles have an annotated genome period. So, Going in both directions and cross referencing those two since could be a really different functional between them.
+00:31:38 Speaker 1
+But the nice thing is if you can get the cross reference to mouse, you can then do a Panther analysis. I'll admit, that's not trivial for groups that are doing that where you're looking at related species. To figure out, try to map what the genes functions are. You don't have to do it, but you can. You just get a little information out of it. It's generally used.
+00:32:09 Speaker 11
+That is a heat map based on infected and uninfected. The labels are small, but it has location, and then it's forced grouping between infected and uninfected. I don't know which side is which.
+00:32:25 Speaker 10
+This would be uninfected.
+00:32:27 Speaker 11
+And this is infected. So just visually you can see, some outliers, there is pretty solid grouping between what's significant and what's not significant.
+00:32:39 Speaker 1
+There's some differences there too. So this is one of those. And, again, you don't have to do this for here. But if I was publishing, this I'd want to look at the two dimensional uh cluster statistics. To see where the different individuals come out in relation to each other. Um, which ones look to be more similar in their expression pattern than others? Because you may find that some of them are outliers. Uh, I.
+00:33:09 Speaker 11
+Looks like three of them, two of them. I want to say we've i made those graphs and then just didn't put them in the dock because I wanted oh, okay? But I think those exist. If you have it,
+00:33:21 Speaker 1
+That's cool. In this case, I think it'd be useful because if we look at like these two individuals, that's a very different pattern here. And I wonder are they really is he's not infected? Yeah, I wonder if they're really infected or.
+00:33:37 Speaker 11
+Is it early infection and they're not responding yet? There were okay. I made a heat map; it's not on the document. I grouped by location and we can totally explore this tomorrow. But there were like, Four or five individuals that had extremely strong expression that was completely opposite to the pattern you're seeing here. You got like three here and two here.
+00:33:56 Speaker 1
+That stand out to me, just eyeballing it. But if you actually run the cluster analysis on them, you can actually see which ones really cluster together still. There is like,
+00:34:08 Speaker 11
+Well we can get into it tomorrow. Yeah there's this one really cool graph. Okay I'll pull it up. Nice Cool.
+00:34:19 Speaker 10
+More. Oh my god.
+00:34:20 Speaker 1
+Okay. Busy week. Yep So you're determining where your inflection point was?
+00:34:25 Speaker 10
+Yeah For this one.
+00:34:28 Speaker 1
+That's a reasonable curve,
+00:34:29 Speaker 10
+And then we were using a profiler as well to figure out a general idea of what the functionality could be with the genes that were pooling.
+00:34:41 Speaker 1
+So response to stimulus comes up a lot with infections Yes Um Tetrahydrofolate interconversion I don't know that one. I know, right?
+00:34:53 Speaker 2
+We'll be texting.
+00:34:54 Speaker 6
+I was looking at that last night, and like the way that the Lyme disease works, it causes issues with converting folic acid into five MTHF, and that's what is regulated by the MTHFR gene. Yeah. And then that works with the one carbon metabolic process.
+00:35:16 Speaker 1
+Okay, it's related. And I can tell if you scroll down. This is a high level term because it has five thousand plus genes associated with it. These are very low level; they're probably a level ten or so, is my guess. They're really deep in the hierarchy. Um, they're both useful in my mind. A lot of people like to go go sometimes like, what's the overall really big picture of what's going on here? I like to see the whole thing, and you can actually look for, you might find that. This significant, but this highly significant. And this is, and you might have something in the middle here that's a little significant. Really, this the point that's primary where it's most interesting. But I'll look at the overall structure across the tree to see where things are most interesting to pick out inflection points effectively. Here's where it's really high and it gets lower around it. These are supporting this, but really this where it's at. Make sense?
+00:36:15 Speaker 11
+Yeah, there's this one site we talked about in algorithms. And it's this one dude made like ten different sites. And plug in a bunch of genes and it'll pump out all kinds of stuff. All kinds of stuff. How much is useful? All of it, for the most part pumps out the network, It pumps out, significant fold, not fold changes. Um you can change the gene annotation database. So okay, like uh. Go for biologic process. You can go through all the databases. You can go through the Kegg database. Yep, it'll pop out the relative K like map. Yep, those are good sources too. And you can change the annotation database. There's like four hundred different like oh for different species. Yeah for different species.
+00:37:02 Speaker 1
+Yeah yep, there's a bunch of sets. In fact, Panther does a lot of thatum for gene ontology, not for K, but you can specify all right. What your annotation you're going to use. Um. I don't know if Panther allows you to select level of depth. I don't think the one on the homepage does, but there's some variations on it that might. I know this one does.
+00:37:19 Speaker 11
+Okay. Yeah. And I know you can sort it by like five to ten different things. Um, the only issue here I was running into was getting the difference, The actual genes for that were differentially expressed, and that's just something that we could explore tomorrow. Keep playing with them. Yeah Have fun, There's a lot you can learn from playing these.
+00:37:42 Speaker 1
+We have to get the other group in though. Yeah, cool. Come on over. I'm not gonna roll for you, but thanks for coming. Something I've been doing with one- sided dice is really helpful. Nobody freaked out when I said I have a one- sided dice. Is it just a ball? No, it's not a ball. I don't have one of these. Is it a Mobius strip? Bingo! It's a one- sided scrunchie!
+00:38:09 Speaker 1
+It's literally a Mobius strip. You flip it; it's always one, no matter what. You can't lose. I found that in a three D printing model with all I got to do with those.
+00:38:22 Speaker 7
+The one that I love is the mathematically fair set of dice, one d one through, I think like one d ten. Do you have one d ten? Uh, carefully.
+00:38:38 Speaker 1
+I have no idea how you get nine evenly.
+00:38:42 Speaker 7
+Well, I don't think they're even. I think it's mathematically, you know,
+00:38:47 Speaker 1
+It's not an equal chance of landing on each side. Yeah,
+00:38:51 Speaker 1
+It doesn't necessarily look. I'd like to see them tested. Maybe theoretically even whether or not it is in practice that matters more. All right, what do you got?
+00:39:04 Speaker 12
+Okay, so I'm just going to project some of our code before we get into.
+00:39:09 Speaker 12
+We ended up rerunning feature counts to exclude another one of our patients. So since we have both tumor samples and healthy liver samples, this corresponds to two of our samples. So again, we had 38 originally, so we've got plenty. So, went and reran feature counts, and then were able to get R working and DES eq 2 installed and everything. And we made like a little test volcano plot here. That's a lot of significant genes. Yeah. Yep, With the code that we saw above, But we don't have to go through and like fine tune, how we want the plots to look and everything. I definitely wanna look into making like some of the nice confusion matrices we've seen,
+00:39:50 Speaker 1
+But you see a little more bias to the right. There's more genes that are upregulated than down. Yeah, that makes sense.
+00:40:17 Speaker 1
+So Upregulation To the right, But that's up and down is relative, depending on which one is the numerator or denominator. If tumor is above control, then upregulation means there's more of the tumor. If you flip the. The tumor is in the numerator instead of the other way around. I'll.
+00:40:33 Speaker 7
+Get it eventually.
+00:40:41 Speaker 7
+Hopefully it's short. Yeah. Oh, at the ball.
+00:40:57 Speaker 11
+We're Just pulling up our results from C P U two. Right so. Okay.
+00:41:11 Speaker 1
+So you got a whole bunch of genes with their. I just pull up like.
+00:41:15 Speaker 12
+The first few blocks. Sorry, I still have not figured out how to make it bigger, but that's okay.
+00:41:25 Speaker 1
+Is it putty? Yes. Yeah, you need to do it before you maximize. That's okay though. We've all got screens here so we're good. Okay, so what happens when you start looking? So you're just a peanuts. So you kind of got that with your volcano plot, right? Okay, so what are we looking at here? What do you see on this file? See how many lines there are.
+00:42:11 Speaker 1
+Just WC's gonna see what we file on here. You got forty three thousand plus lines, different genes. There is testing here, so you're not going to be able to eyeball things. We just covered the volcano plot. You can see the p values versus fold change. If you start, have you figured out where you're going to put your cutoffs for what's differentially expressed and what's not?
+00:42:37 Speaker 1
+Have you looked at a cumulative distribution of their p values? Look for that inflection point. We're still working on graphing within the PC2 compasses. With this you can even do it. You can do this in Excel. You can actually load this into Excel, sort them by adjusted PW, and then you can do a cumulative distribution of origins of different PW values. So you could do that.
+00:43:09 Speaker 1
+We can learn that tomorrow. Can you do that graph in Excel? If you just pull up the graph, I can go through and talk about where the inflection point is. We'll see if it helps. Now, you may still wind up with a thousand differential expression genes. Then we'll have to figure out where to go next. Okay, cool. Ben! How many patients we got left? Three. not not three. two and a half two and a half ish. yeah. the paper is due Tuesday. the paper is about two weeks out, yeah.
+00:43:49 Speaker 3
+Two or three final finals, I was going to say on the last day of class, do you want to do it on the last day of class?
+00:43:57 Speaker 7
+Final week we're going to have. There's a half draft and full draft today. I would like the half draft and full draft early before Thursday. The final is due Monday.
+00:44:09 Speaker 1
+So we're getting there. We've got a little bit of time.
+00:44:12 Speaker 7
+But I think you have kids. We're getting there. Uh- oh,
+00:44:19 Speaker 4
+What did they do? Question:
+00:44:22 Speaker 10
+What was the term that you mentioned for the key map that we should use to identify those ones that might be better fit for step method?
+00:44:32 Speaker 1
+Like in terms of deciding your cutoff?
+00:44:35 Speaker 10
+It was like a term you use. It was like it started with a C. Started with a C.
+00:44:40 Speaker 1
+I'm trying to picture the context here. Cladistic analysis. Cladistic C L A D I S T I C and I think it's your group. They had the two dimensional cladistic.
+00:45:02 Speaker 2
+Just kind of a parameter.
+00:45:07 Speaker 1
+Okay, That might help because those are probably the most useful progressive or figures I've seen in RNA seq analysis. You can see how they group by sample, group by gene, and you can see the co- annotations there. And you can also identify if you have outlier samples pretty quickly. We actually had a case recently where we were looking at grape genome sequences for different species. Grapes, not just wine grapes, but also wild grapes. And you're going through one of them that's like, "All right, here's a whole bunch of North American grapes. Here's a bunch of European grapes." What's this North American one doing over here in Europe? Turns out it was mislabeled; it was not North American grape. Oops! The vineyard wants to say one thing; the reality is different. Just because something says it's Cabernet. Sauvignon does not mean it is so That species involved with that just being.
+00:46:04 Speaker 1
+Any other questions?
+00:46:09 Speaker 8
+What format of citations are we using?
+00:46:12 Speaker 1
+Uh, I would recommend APA. Okay. Um, but primarily let's see consistent and in a file. Okay, yeah. Cool.
+00:46:20 Speaker 9
+Do you have a like a sample paper that no references? No samples for references? For references?
+00:46:30 Speaker 1
+Go to the library's website for APA they've all instructions. We're not quite done. We got questions. You want to see us stand up? I'll wait. Go.
+00:46:45 Speaker 2
+Oh, that's fine.
+00:46:53 Speaker 1
+That's actually more than effective, so that's good. As long as it's showing you're developing organization in your paper and you're thinking about how you're going to put everything together, that's what I'm looking for today. I need to start counting up the text. Cool. See you tomorrow.
+00:47:14 Speaker 9
+I put it in GitHub and I sent you that link.
+00:47:18 Speaker 8
+Great, awesome. I'll do some of that analysis today because I don't have a problem with that.

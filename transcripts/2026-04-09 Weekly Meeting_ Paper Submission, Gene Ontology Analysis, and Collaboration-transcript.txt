@@ -1,0 +1,706 @@
+00:00:03 Speaker 1
+Peter, I'm gonna add you in. Go ahead and jump into your room.
+00:00:09 Speaker 2
+Thank you for catching.
+00:00:11 Speaker 1
+No worries. I'm waiting around because I know a few people are late.
+00:00:22 Speaker 2
+Hey Peter. I'm half here but I'm here.
+00:00:27 Speaker 3
+Are you feeling all right?
+00:00:31 Speaker 2
+Yeah, yeah, I'm fine. It's just um. I'm, I'm not taking some of my meds the entire week. It's uh. It's not on purpose. It's actually I lost it . Oh, I see. And I have to wait for like like almost two weeks. But the good thing is that um. Things have like settled so. Is um is busy, but it's it's like something you know like you know when you're busy, but you know what you're doing right? So yeah. Yeah. Yeah, so that way. So. I live I have a paper I have to submit today so, I basically didn't sleep. I slept like one hour. Sorry my dog is like talking on top of me, I'm like go to the bathroom.
+00:01:31 Speaker 2
+So how did you do with your papers? I know you were submitting papers as well all that time.
+00:01:40 Speaker 3
+It was only this I submitted last night. Working on the write-up.
+00:01:43 Speaker 2
+Oh a write-up. That's why you guys were just talking about.
+00:01:47 Speaker 3
+That's why I was asking about cause I wanted to mention we did that and what tool we used.
+00:01:53 Speaker 2
+So I see. That's why I asked. No worries.
+00:02:03 Speaker 3
+Yeah, Originally I wasn't going to do a write up because I felt like I didn't have enough to talk about, but then I re- I actually had too many figures, so I was like, well that works out.
+00:02:11 Speaker 2
+I know. So that was so cool what you generated. Uh yeah. I i i was already working, I'll share with you on something because you sent that side that is so cool as well. So.
+00:02:24 Speaker 3
+Working on running like two or three of thoseum.
+00:02:29 Speaker 3
+Uh, I didn't catch the last part. You sound far away.
+00:02:32 Speaker 2
+Sorry, because I am like preparing my watering everything at the same time. Oh, okay, yeah. I was saying that I was working on like two or three from that side that you sent, which is very helpful. And, that's what that's basically what I made my write up because that's what we are going next with this stuff here. Yeah, yeah. So it was uh, It was actually nice that you sent me that cause it save it saved research on my end.
+00:03:02 Speaker 3
+Yeah, That's the main reason whyum I asked you to get me the seven hundred like genes. So that way I could send this, and we'd all have like actual things to put in our reports. But I know Sam wanted to submit a report yesterday too, so.
+00:03:17 Speaker 2
+Well. At least we got it. We got it done and I think we did a good job.
+00:03:26 Speaker 3
+I thankfully do not owe any more reports, so I'm happy about that.
+00:03:30 Speaker 2
+Oh my god, you're clean. Lucky. I have to talk to about it. Let me see if I can. What did you How did you generate those net the theum. The network that was so cool. It's getting so close to the stuff that I do in networking. That is just. Let me show you mine. It's very simple and I just started like you like working on them.
+00:04:17 Speaker 3
+We also might want to play around with the settings. My idea was that we show him the settings we set to get the plots that we did, and we can see if maybe he says something else. Cause I currently have the false discovery rate at zero point zero five, but it might be worth making it even smaller, um based on the graph we got. And on top of that, So one of the options I don't know if you looked at the input page, But there is background genes and background genes are the list of all the genes that. Are also in that data set, but isn't classified under statistically significant.
+00:04:50 Speaker 4
+Oh. So
+00:04:52 Speaker 3
+It kind of runs a background to like, make sure I guess thatum it has the whole picture and is actually working with the whole genome, because you can put a reference genome in the site, but. Um yeah, so that's why I asked for that list. It's not super needed, but if we can get slightly it was good enough, For the reports, but we should probably come up with different ones for the paper. If that makes sense,
+00:05:19 Speaker 2
+No, that makes sense. Also, I'm guilty of having fully scanned it, but I haven't fully read the paper. It sounds to me like we're digging into an area where we might be distinguishing ourselves from the paper, which is cool.
+00:05:42 Speaker 3
+'cause I don't really.
+00:05:45 Speaker 3
+I don't remember. They did a lot of R and D, but I don't see much pathway analysis from when I last checked the paper, but yeah. I also only learned about like Go ontology like maybe a couple of weeks ago because we're also doing that in bioinformatics algorithms. So, it's not like I know much either.
+00:06:03 Speaker 2
+Hmm. You know, I was just supposed to take bioinformatics algorithms. I wish it i i i wish i had the time to take it. I really, That one's a good course.
+00:06:14 Speaker 3
+It's actually very informed. You actually learn things like cause I learned so much in that class. Yeah,
+00:06:20 Speaker 2
+Yeah, I bet because, I've taken algorithm just algorithm by itself, right? And there is a lot to it. I mean, it's not even the course is not enough to teach you, but they teach you the main algorithms, which makes sense. Um and I was looking forward to learn that in the bio concept, right? But yeah, there's so much. There's so many courses you can take. And yeah, and I'm I'm also saying it because you have like, like yeah, I have financial aid and have scholarship, but anything else that I want to take extra comes out of my pocket and it's not cheap.
+00:06:58 Speaker 3
+Right. I bet. Yeah, I know. I'm kind of bummed because I'm graduating before i get to take a couple of electives that i really wanted to take But the way it works in the college of science is a lot of electives, are only offered every other year. So if you're not in the right year, you might not be able to take it.
+00:07:14 Speaker 2
+You got it. That's exactly what happened to me. That's exactly what happened to me, and even by me extending it by one more semester, I still wasn't able to make it because like you said, It ruins your entire setup because yeah, now you made it for that one, right? But now you're missing another one Exactly That is only uh It's just. Yeah, so. Yeah, so I was looking atum. So I'm gonna I'm gonna show you this quickly, But then and then you can show me yours, because we're gonna go with yours, because. This is this is exploratory what I'm doing here. Then, we can look at this and see what is useful of this.
+00:07:58 Speaker 3
+Um yeah.
+00:07:58 Speaker 2
+I really wanted to try the thing that you share.
+00:08:03 Speaker 3
+Yeah, absolutely here, Um, Like the tool that I sent. I'm using to do plots that I did. I got that from algorithms. Yeah.
+00:08:12 Speaker 2
+Ah, nice. Yeah, you know, That's exactly what I mean when I said it's getting closer to the stuff I do, right? Because in algorithm they would teach you the algorithm about graphs, right? Which is networks. So I am so glad that you guys is someone also taking it?
+00:08:34 Speaker 3
+No, but he's gonna be taking next year. It's required for the bioinformatics.
+00:08:38 Speaker 2
+I am so glad that you are taking it because now you know the similarity or the familiarity that I feel now that I am looking at this. Yeah, Yeah, Yeah. So, this is some of the stuff that Ium that I so that I found so cool. I really love, how like even thisum is different, because look at how they. Are using the tree here for classification. Yeah. And the the uh the heat map. And. But this this was the cool one, because I didn't know that we were gonna, that ours was going to look like this. Yeah Right? I thought our data was going to look all over the place. Yeah No,
+00:09:25 Speaker 3
+I was a little surprised too It's interesting Another reason why I'm thinking of changing the false discovery rate on the tool. I s because I noticed the one with the highest false discovery rate doesn't actually connect with any of the other pathways that it found. So I'm wondering how significant that really is, cause it doesn't seem to connect to other ones. So I wanted to ask Ozer about that. Yes,
+00:09:47 Speaker 2
+That's very, that's a good point. Let'sumum yeah, wait, I'm gonna pay attention when you're sharing becauseum that's something that, Uh, we definitely want to talk about. Mhm. Yeah, in the in the paper. So that's a pretty good thing to look into. Yeah, but you know, but yeah, But going back to what we're saying like, uh, thanks to to you sharing that link, I was able to put something together. I started doing it since you sent me the link, but I was able to wrap it up. Um yeah, right after the information. So.
+00:10:29 Speaker 2
+You technically saved my back. Because usually, like I do my research, but I didn't to be honest. I was as good as differential equations with everything that we learned through the trap analysis. Uh,
+00:10:49 Speaker 3
+I also don't know where Sam is because it's been twelve minutes. Yeah.
+00:10:56 Speaker 2
+Maybe he was doing, oh, because if he's like me that has multiple assignments, maybe he had other stuff to submit. I have one that I need to submit today and I still haven't started.
+00:11:10 Speaker 3
+Oh yeah, on the matter, I know you also reacted to the message, but basically when I say night before, assignment is due. So for the next draft let's try and submit it Tuesday night.
+00:11:20 Speaker 2
+I agree. I agree. That's why I did a check because look, I have to submit. Yeah. So two two two things, two more things, and usually it's gonna be like this until the end of the semester. Two things. Yeah. So I agree with you. I think submitting one night before, and I know what you meant, not that night.
+00:11:41 Speaker 3
+Yeah yeah Well because the way I view it, I don't see his assignment as a Thursday morning deadline It's, a Wednesday night deadline to me.
+00:11:51 Speaker 2
+I started seeing it that way after I myself started forgetting things, because I forgot it like one. Not that I forgot it because when you get so used to certain deadlines with other courses.
+00:12:08 Speaker 3
+exactly.
+00:12:09 Speaker 2
+Exactly, that's what happened to me. Start thinking that for example, Thursday nine thirty is like Thursday twelve p.m. cause that's how usually it is for U of R.
+00:12:20 Speaker 3
+Most professors do eleven fifty nine. He's just kind of weird with that.
+00:12:24 Speaker 2
+Mhm, yeah. And the funny thing is that you know, okay, this is hilarious. There are two things that you're going to laugh about it. So the first thing is this, Um you know, like the same thing that Professor Ozier uh was trying to do with us here, which is like give us more time. Another professor of yours was doing that thing also, and he and he was putting twelve. P M instead of twelve A M and it was confusing me. I was submitting it late all the time, and I said to him, you know, just if you want to do me a favor, just do twelve P M. I know we have less time, but how my brain works. And I said to him regardless, am I am assuming it's twelve.
+00:13:10 Speaker 2
+P M of last anything that you put in there, I am gonna subtract one day and then say it's twelve P M that day because it was just not working. Many of my brain was thinking like it was just not really getting it. Some things I don't understand why it's like that, But now you are gonna laugh about this. And the reason why you are gonna laugh is because Professor also recorded on time. So. I submitted it twice because in one, there was like a very neat. It was pretty much almost the same thing, but it was just like a comma or something. You know, I tried to be very nitpicking about those things and then I And the comments, right? He said to add a comment that basically attach the color to the member. So I submitted it in peer evaluation.
+00:14:10 Speaker 2
+And professor also, the second one, professor also uh commented and said, oops, wrong submission box. And that was that was like two minutes before nine thirty. I was like oh my god what did I do? I submitted it right on time. Yeah wait.
+00:14:32 Speaker 3
+Why did you only end up submitting it this morning? I think I missed that.
+00:14:35 Speaker 2
+No I submitted in the wrong thing.
+00:14:37 Speaker 3
+Oh you did that okay okay I see. It just he didn't respond till this morning.
+00:14:41 Speaker 2
+Yeah, no, thank God he responded. He responded. Yeah, butum yeah I submitted it in the evaluation. This is something that is so common with me. Um things like that when I'm not taking the medication mistakes like that are so stupid are so common. That I sometimes like, how is this possible?
+00:15:11 Speaker 3
+Apparently Oshir is because Oshir has been around to different groups. Sam is currently just in the lobby waiting room.
+00:15:18 Speaker 2
+Oh oh my goodness.
+00:15:22 Speaker 3
+Okay, I'm gonna invite him to the breakout room so that way he can get Sam.
+00:15:26 Speaker 2
+Oh yeah, we're able to do that?
+00:15:29 Speaker 3
+You can request Oshir to come here but.
+00:15:36 Speaker 3
+It's That he's helping other people. My group cannot work if. Oh my god. Maybe I can. No, I cannot message him. Okay, what if we just left the breakout room so we could talk to Sam? Yeah.
+00:15:53 Speaker 2
+Yeah,'cause we have one less, so. Yeah.
+00:15:58 Speaker 3
+And, that way, we end the breakout room and then he can get us back in.
+00:16:04 Speaker 3
+Okay, cool. I'm leaving room then.
+00:16:16 Speaker 2
+We came to join you.
+00:16:20 Speaker 3
+I requested him to come to our room and I got a message that he's too busy. So I think that means he denied my request so. Hello?
+00:16:33 Speaker 5
+Wait, he's too. He's too like he said he's too busy or the system said.
+00:16:38 Speaker 3
+The system said that, but I've never gotten that before, so I don't know if that was his way of saying just wait. But you weren't in the room, so we just decided to leave the breakout room so we can discuss here.
+00:16:49 Speaker 5
+Yeah, my bad. I I don't know it. I updated it last night but.
+00:16:56 Speaker 3
+Did Hamani join late too?
+00:16:57 Speaker 5
+Hi Hamani Oh my god Ozar just, Emailed me, he was like, hey, checking if you're coming to class today.
+00:17:08 Speaker 3
+Having problems with the province Wi Fi. What? I was having problems with the province Wi Fi.
+00:17:15 Speaker 5
+Oh maybe that's why my update didn't work. Probably.
+00:17:22 Speaker 5
+Oh my god, I do not have the energy to do a bake sale. Oh my gosh.
+00:17:34 Speaker 3
+Okay, well Sam, Our plan was once Oger came in, we'd show him the geneontology results I got yesterday, and we can go from there.
+00:17:43 Speaker 5
+Okay. Slight.
+00:17:49 Speaker 3
+We didn't really do much and he didn't really mention anything to us in terms of like due dates. And stuff. So. Alright. You'll notice something's wrong when he goes to that breakout room and sees no one's in there. So.
+00:18:03 Speaker 4
+Um. Your entire group, please.
+00:18:07 Speaker 3
+No, only Sam was, but when I tried asking Ozer, there's no way for me to like tell Ozer what's going on. So I couldn't get him to add Sam. So, we just decided to go to the main room and talk to Sam there. So that's why we're all in the main room.
+00:18:24 Speaker 5
+Oh okay. That's kind of dumb on Zoom's part that you can't text, All the participants in the whole entire Zoom. It's only people in the breakout room. That's kind of crazy. Yeah,
+00:18:36 Speaker 3
+I feel like I should at least be able to message the host.
+00:18:39 Speaker 5
+Yeah, exactly. Because I got here like. I got here ten minutes ago. I was late, like. I was late, like ten minutes, but.
+00:18:54 Speaker 3
+You were late by five if you joined Oh wait never mind never mind.
+00:19:00 Speaker 5
+Oh no, no, you're right. Or wait. No, you're not.
+00:19:06 Speaker 3
+No, I'm not. I don't know what I was thinking.
+00:19:15 Speaker 5
+Um so Sam.
+00:19:17 Speaker 3
+Did you end up submitting a report? No Was it supposed to be one per group? I don't know. I submitted mine by myself Wait that's what, What. That's what my group's asking you right now. Cause I submitted for people, but I don't know everyone was supposed to do it. I submitted my own to play it safe.
+00:19:40 Speaker 5
+The lab report or the outline?
+00:19:43 Speaker 3
+Outline. Oh,
+00:19:45 Speaker 5
+I didn't do the lab report. I did the, I mean, I submitted the outline like right after we were done.
+00:20:07 Speaker 5
+Watch him come in here. He's gonna be like, oh. Hey guys. Uh- oh. Oh no. Uh- oh. He's literally gonna be uh- oh, oh no, this is no good.
+00:20:25 Speaker 3
+Sam careful My group already knew.
+00:20:34 Speaker 3
+Well, we knew he was gonna be late too, cause he did text us. But like.
+00:20:41 Speaker 1
+Well, I can't control the wifi.
+00:20:50 Speaker 5
+I'm just gonna email him. Is she gonna check his email?
+00:20:57 Speaker 3
+I don't know at that pointum. He'll come to the main room, I think, if you email him. And then he'll see we're all here. Okay, I got a room invite. You did?
+00:21:10 Speaker 5
+Oh, I did too.
+00:21:15 Speaker 3
+Um, I did not.
+00:21:18 Speaker 5
+No weirdo. Okay. Oh, should I join the thing?
+00:21:27 Speaker 3
+I don't know.
+00:21:30 Speaker 5
+I'll join it and then. Okay.
+00:21:39 Speaker 3
+Oh wait, if you click more, you can click join breakout room.
+00:21:46 Speaker 2
+Oh, that's so true. Yeah, thank you. Yeah, you're right. Let's do that.
+00:21:56 Speaker 3
+Cool. Yeah, we figured you since Peter and I were assigned breakout rooms, we can technically leave and enter the breakout room that however we wish. So that's probably why he didn't like invite us.
+00:22:07 Speaker 4
+Oh yeah. Cool.
+00:22:12 Speaker 3
+Okay, cool. So now we can actually get work done. Yay.
+00:22:38 Speaker 3
+Oh yeah, my plan is, um, I'll probably try and do like half of the paper this week or this weekend. Honestly, if I end up doing more, I'll probably get more done. But.
+00:22:57 Speaker 4
+Yeah me too.
+00:22:57 Speaker 3
+I should be set by the end of the weekend though.
+00:23:01 Speaker 2
+Yeah, I already started as well unless I have most of the images.
+00:23:06 Speaker 2
+Some introductory text.
+00:23:09 Speaker 3
+Also, Peter, I think some of your figures might better fit in results.
+00:23:14 Speaker 2
+Oh, some of the uh. You sure?
+00:23:18 Speaker 3
+I think I am gonna wait. I am not like deleting anything yet. I am gonna wait till I betterum figure out how I want to have the results arranged.
+00:23:27 Speaker 4
+But yeah, okay yeah.
+00:23:28 Speaker 3
+I thinkum that's just my thought on a quick glance, because I did like skim through your portion. Yeah. It looks fine, but like I would just.
+00:23:37 Speaker 2
+Yeah. Yeah, I mean, if if it's better in results, by all means, you know. Yeah,
+00:23:41 Speaker 3
+We just move it to another department.
+00:23:42 Speaker 2
+Exactly. Yeah. As like yeah.
+00:23:45 Speaker 3
+Out of curiosity, how did you generate the images that quickly?
+00:23:49 Speaker 2
+Those are HTML That's so easy with HTML.
+00:23:52 Speaker 3
+Oh Did you just screenshot the HTML?
+00:23:55 Speaker 2
+No no no Actually I don't wait. I don't know which ones you're talking about, because it depends rightum. Yeah. You're talking about the tables, those are HTMLs, right? Because the data is Yeah.
+00:24:05 Speaker 3
+No, not the tables. The like actual figures.
+00:24:08 Speaker 2
+And, then the figures are basically the uh you take the data. Um let me see also which ones also that hold on. Let me see here.
+00:24:16 Speaker 3
+Let me. Let me just share my screen because I'm going to anyway share my screen when I.
+00:24:19 Speaker 2
+Was just saying That way I can tell you which one All right, that's it. Those appear HTML go ahead.
+00:24:35 Speaker 2
+Those are already images that were generated.
+00:24:39 Speaker 3
+I do recognize those.
+00:24:41 Speaker 2
+The ones that you see there were already generated.
+00:24:44 Speaker 3
+Basically what I was thinking. It might be I don't actually know if you talk about the data. For example, this specific chart might work better in results.
+00:25:01 Speaker 2
+I see.
+00:25:05 Speaker 3
+But I don't know, maybe it's worth asking him because the way you have it formatted kind of just looks like you're showing what the output is rather than talking about what it is. The results section is for talking about the data you got exactly.
+00:25:17 Speaker 2
+You got it right. So cool. You got it right. It's more showing this is the alignment and these are the stats of the entire. This is what the results are and what they mean. It's just like this.
+00:25:35 Speaker 3
+Also, if you don't mind, go ahead. I might be going around and adding a border to figures.
+00:25:42 Speaker 2
+Feel free to like, write, comment, modify, delete everything. That's not set and that's not big.
+00:25:52 Speaker 3
+So if there's anything I want to change, I'm going to put it in as a suggesting thing, because then you can make the edit without actually finally modifying it.
+00:26:02 Speaker 2
+It'll make it cleaner. That way I can see it better.
+00:26:13 Speaker 5
+Um, Peter, two questions. So did you How did you write this the paper portion Wait, uh, Nikki, can you stay on that page Actually, because I have a question on that. This one Yeah, I have a question for Peter. Well, My first question is, how did you write this? Because I saw you were doing it last night? And. Second, How um That's like the sentence prior to modeling.
+00:26:45 Speaker 5
+Second sentence of the paragraph. This is reducing the test set from seventy eight thousand genes to twenty one thousand genes. What do these talking about Are these talking about like the genome? Or are these, talking about the I'll be honest with you.
+00:27:03 Speaker 2
+These are things from my weekly reports. I haven't like I said this is not baked, so I haven't gone there and like make sure that something is, Incorrect or correct, but this these are all from my weekly reports.
+00:27:20 Speaker 5
+Oh yes, you don't know if this is correct.
+00:27:24 Speaker 2
+I said that I don't know if there is something incorrect in there that I may have put. If you find it, highlight it, But I haven't gone through all of that thoroughly because I like to go through my. Even stuff that I like, like the paper for example, like the outline, right? I like to go multiple times just to catch um stuff, like grammar or of wording or weird order and stuff like that. Okay. Could, you could you answer the anything that you highlight anything that you uh have a question in there? And write a comment, just any suggestion do the same as as Nikki. And that is the best way to communicate.
+00:28:11 Speaker 5
+So How did you, how did you extract the data from the lab reports, the weekly reports? Did you literally copy paste? How did you do it?
+00:28:22 Speaker 2
+What do you mean?
+00:28:26 Speaker 5
+You said you got, You said you got information from the weekly reports.
+00:28:32 Speaker 2
+No no but when you say data what do you mean by data? Do you mean that then so then so the top paragraph that isn't there.
+00:28:39 Speaker 5
+I I can't hear you. Weekly reports. I can't hear you, Peter. Can you hear me now? You're, far away from your computer. Can.
+00:29:00 Speaker 2
+You hear me better?
+00:29:01 Speaker 5
+Yeah, that's better, um so my my question is you have.
+00:29:08 Speaker 5
+Nine pages, right? How did you get nine pages? Did you just. Wait,
+00:29:15 Speaker 2
+Wait, wait. What is it? Why I'm just trying to understand. What are you trying to get at? Is there anything.
+00:29:23 Speaker 5
+I'm trying to ask you, how did you? How did you write nine pages of materials and methods.
+00:29:30 Speaker 3
+Sam, those all came from the weekly reports. He already wrote this each week.
+00:29:36 Speaker 5
+Okay. Yeah. So that's what I was at. You literally just copy pasted the weekly reports. I shared.
+00:29:41 Speaker 2
+With you guys so you can literally go and look at them.
+00:29:45 Speaker 5
+I was just asking a question.
+00:29:47 Speaker 2
+That's why I was asking before, Why are you trying to get out because I feel like we are moving away from.
+00:29:53 Speaker 5
+We're, not, I'm asked a basic question, I was asking where did you get them? You got them from the weekly reports?
+00:29:59 Speaker 2
+You're supposed toum.
+00:30:02 Speaker 5
+The materials and methods? No, you're not. No, yes. There's no rule where to get them. Um? There's no rule where to get the materials and methods.
+00:30:10 Speaker 3
+Sam, So the idea behind the weekly reports was that we would start working on our paper as we go weekly, And then we can go back to our weekly reports and pick out what makes sense and what doesn't. Exactly. So depending on how detailed you are.
+00:30:32 Speaker 2
+It just happened that I actually got what you guys said makes sense, right? The methodology is the perfect one for me because I can easily draft anything on the pipeline, the stages. If you see the stages in there actually, they are a little bit data science influenced. That was on purpose because That's basically how I designed it from the get go. So I reordered a little bit what we had in there, but it's still the same thing. Like they're collecting the samples, right? I put a data collection, you know, just to basically match the process that is called crisp. The crisp process.
+00:31:30 Speaker 2
+C R I S P. So it's a methodology in data science for for data analysis. Anyways, sorry, I was deviating. Yeah, so the weekly reports also I share with you guys, so it should be in GitHub. Like if there is anything that you guys think that may be useful for your section? Feel free to like, you know, take from there.
+00:32:16 Speaker 2
+I'm Like you, um Nikki, like eating breakfast and getting ready at the same time.
+00:33:19 Speaker 3
+Yeah, and for the past couple reports, I've beenum using I've been like having detailed paragraphs for each figure. I choose. So honestly, I don't mind likeum. I'm I'm probably also just gonna copy and paste that because like I've been really detailed and careful with those. I wish you would give us like feedback on the quality of reports.
+00:33:44 Speaker 2
+Hmm, I asked for that. Yeah, I did multiple times. Yeah Did he give? Uh, no. Okay. What idea? Um, I don't know.
+00:33:58 Speaker 3
+I'm surprised.
+00:34:00 Speaker 2
+You reminded me of something. Um, and I mayum, I actually not uh, some of them are too long, but uh I have like a like per per stage, I have a notebook that is fully fully commented, Um, because I search on how to interpret, right? For my Bible. And I put it there and outlining everything just so I don't forget, because I know I'll forget. So I can also share that with you guys in a more clean manner. Um, uh like the notebooks that are in there for example, I can just put the comments, The markdown it like right after each image in there, and you guys will have the reference that I also have.
+00:34:48 Speaker 2
+Because I I did it like you like, I did it for everyum. Uh, like a weekly report or lab that we were working on. I would have my my my notebook, my Google Collab notebook. And my entire research would be portrayed in there. Um, and then my write up is different.
+00:35:13 Speaker 3
+Yeah, that might be worth it. Um, I also had a quick question. Was this just likeum leftover from the HTML.
+00:35:21 Speaker 2
+Oh yeah, a template. Actually that's a bug. That's supposed to tell you the number of columns. Yeah, thank you for your caution, yeah. That's what happened when you copy and paste stuff.
+00:35:39 Speaker 3
+Yeah, I mean, before we submit I'm probably going to do at least one read through of the paper. So I'm not concerned about like, Yeah.
+00:35:47 Speaker 2
+I you'll see me doing it like multiple times. And I've gotten so used to it because of my condition that I just like, I look at it multiple times and then I sleep on it. And then the next day I look at it and then I feel better.
+00:36:42 Speaker 2
+Wait, um. To build that nice network that you did, which is so cool. Can you remind me what software you use again? Was it Shiny? Or Yeah,
+00:36:52 Speaker 3
+It's called ShinyGo.
+00:36:54 Speaker 2
+Yeah, yeah, yeah. Okay, Shiny. Yeah I remember I love and I love the fact that they have now shiny studio is so cool.
+00:37:01 Speaker 3
+I do love shiny Yeah It's so nice for sharing data with people Yeah yeah.
+00:37:09 Speaker 2
+I haven't been using the studio version, But I'm sure they have, you know, add a lot more features to that part. Yeah. I stopped using it a long time ago because I was using too many IDE and they're so heavy.
+00:37:30 Speaker 3
+Right, yeah.
+00:37:31 Speaker 2
+So, I was like, okay, terminal is and just use the library from the terminal. But. When it comes to like you said, like sharing data and visualization, like Shiny is like really good at that.
+00:37:45 Speaker 3
+Cause I cause my research project is a collaboration project with two professors. So what I did was I used a Shiny app that allowed for like it better visualize the data. But, basically, my, the professor had sent my data to. So you could do like, whatever like additions, she wanted to visualize, and she would only have to look at that rather than looking at the entire spreadsheet. So.
+00:38:07 Speaker 2
+Really got a lot cooler than before. Wow.
+00:38:10 Speaker 3
+Yeah, I love shiny.
+00:38:13 Speaker 2
+That's awesome. I'm actually not gonna look into another because the good thing about Visual Studio is like it has become the Visual Studio Code is like it has a plugin for almost everything, Which is so cool because now I'm using all the tools that I stopped using because they were so heavy. Now I'm using it with, One one single IDE and that's awesome. I'm gonna, I'm actually gonna look into it right now. Because I need Oh,
+00:38:45 Speaker 3
+Also Peter head, sorry, sorry to interrupt, but heads up onum the method section. When you first mention a tool, you need to add the citation.
+00:38:55 Speaker 2
+Or where.
+00:38:56 Speaker 3
+The tool is from. I don't know if you planned on doing that,
+00:38:58 Speaker 2
+But Of course yeah, yeah Okay cool. Yeah. Yeah yeah. Yeah, I haven't even gotten there to citation, Yeah, okay,
+00:39:05 Speaker 3
+Cool. Yeah, I mean that's usually what I do anyway.
+00:39:07 Speaker 2
+But yeah, no, that's that's a goodum. I also have a tool that automates the citation in LaTeX like it really does it for you. Uh, neatly. But since you already have a process, I'll do it the way you said, because that way, we you know, you can verify all of our citation, which is multiple eyes. Yeah.
+00:39:35 Speaker 2
+But that's why when you know, when you mention the stuff about APA and everything like yeah, I've heard of it, But I haven't touched it in so long because I'm so used to letting LaTeX handle it. All right. Mhm.
+00:39:47 Speaker 2
+Yeah,'cause in LaTeX like you have like a section for each citation. You just put the information that is in there. It's like a template that I use for the It's called the Bib file, Put the information in there, like you don't need to worry about anything else. Not clicking on anything. It's just like LaTeX just consumes it. It's for you. And it depends on the library that you choose. You can choose APA or anything else. Um, and then it just, it turns into that specific citation, Which is really cool for when you're building papers that you don't need to worry about that. You're like, okay, citation is one check.
+00:40:24 Speaker 3
+Right Yeah.
+00:40:40 Speaker 5
+Um, Peter, I I have a quick question. I'm going over your materials and methods. Um, I have a question here. I'll just share screen.
+00:40:52 Speaker 2
+Let Me Let me go to the computer so I can see. Is anybody talk about teaching?
+00:41:11 Speaker 5
+Where is this okay So. You share. Oh, there you go. Yeah. Whatum. So, I I I'm going through what you wrote and I'm just leaving comments.
+00:41:28 Speaker 2
+Mhm. Perfect.
+00:41:29 Speaker 5
+Uh. What do you want me to like ask you directly what this means.
+00:41:39 Speaker 2
+If You ask me now, to be honest, I only slept one hour. I'm I. I'll just guess whatever I guess, but it's not gonna reliable. What is okay Um, what is it that you.
+00:41:53 Speaker 5
+I have. I have it highlighted on the screen, butum, i i can just leave comments and then you can comment back. Yeah, i i was just a little confused. What like you say? Mm hmm You. You're working with a subset of twenty, right? And, then you said organize as a balanced side by side genotype design for quality control. Um, sorry, I'm just drawing a blank. I forget.
+00:42:22 Speaker 2
+Yeah, yeah. You can highlight it. Don't worry. Some of those things I reworded it. Okay, um I I searched how to word it more. Um.
+00:42:31 Speaker 5
+If you if you do, what is it called? Um. Maybe instead of searching, just like ask us because. Um, like I don't I don't know where this is.
+00:42:42 Speaker 2
+This is the whole point of the drive, uh somewhere else so you can see this and like, you can ask us question and we can change it together.
+00:42:51 Speaker 5
+Okay Yeah I'm just I'm just saying that maybe it's easier if like if you don't know something just ask right away or maybe not put it at all.
+00:42:59 Speaker 2
+It's not not to know somethingum. What happen is like is similar to the outline. So there are certain things that we are saying that are too long, right? Um, and for a formal let's say submission for example, right? You don't wanna have that. That is so long and. Um, and is somewhat informal if that makes sense right? So, uh in this case I don't see organizers have a balance.
+00:43:30 Speaker 2
+Side by genotype design before quality control. I'm not sure what is confusing there, but I can like I told you, I only have one hour, so I can. I can think about it better to understand your question later.
+00:43:46 Speaker 5
+It's confusing because we we didn't organize it as a balanced side by genotype design. Like, I mean we. II don't, I don't really know what balanced side by genotype design means. Um, In this like oh,
+00:44:06 Speaker 2
+I see, I see, okay, so you're highlighting, can you highlight that that. So I, no yeah highlight that by the genotype design. Yeah.
+00:44:19 Speaker 5
+My my point was that if like if you are finding yourself writing things and then searching them and then pasting them, I'm. Maybe better to like just ask in the Slack or not write them at all, Or maybe just say tentative or something? Because what ends up happening is that it it's more time to review, and if you're talking about something you don't really know about it, it just costs us more time. Um. So like.
+00:44:50 Speaker 2
+I'm not I'm not sure I understand you. I think this is the process that the professor Wanning set up. And I think this the process that works with a team. You you write drafts, you review it, you make comments and you ask the team make changes. I don't I don't see what's I don't think so. You write about what you know about what you're suggesting, But I don't see it feasible that for every rewording that I think makes sense to me, I'm gonna be asking your guys questions on Slack all the time, because this not something that i thought i didn't make sense to me.
+00:45:26 Speaker 2
+To me, I thought that was like that was a genotype design because that's how we're making the analysis, you know, genotype based. So to me this made complete sense when I rewarded it like this way. So, but you know, but to you, it doesn't, which is, you know, that's what it is the draft for right? The draft is exactly for that. To have the conversation say, oh, perhaps we change the wording to this because it makes more sense.
+00:45:56 Speaker 2
+But I I agree with you,
+00:45:58 Speaker 5
+If it makes if it makes sense to you and you understand what it is that it is that you're putting, then yes, but like I That's,
+00:46:07 Speaker 2
+What I meant exactly.
+00:46:08 Speaker 5
+I don't know what a know what a side by genotype design is at least this initial data collection set like cause you're talking about That's.
+00:46:16 Speaker 2
+Why? I told, I just told, oh, you sold me how I understood it. That's that's why for me to me that made sense. But, You know as a team if it doesn't make sense, As a team, right, We had to find a better way of wording it, because perhaps the way I was understanding it was wrong. Like you said, right It's not my domain, so I was perhaps understanding it differently. But yeah. About something that I don't know. Yeah, I would definitely go to uh Slack and and.
+00:46:55 Speaker 2
+And and message you guys, but I didn't feel like I didn't know that.
+00:47:01 Speaker 5
+I just wanted you to explain to me what side by genotype design is because I don't know what it is.
+00:47:06 Speaker 2
+I just told you, to me it was, I understood that as the focus was uh of the research was the genotype.
+00:47:14 Speaker 5
+Yeah, i i understand this is uh i i hear are saying. Im just saying that if you can't explain what it is, cause side by genotype is a specific type of. Design right, it's I mean it's some kind of of phrasing right.
+00:47:32 Speaker 5
+How Is it different from how is it different from balanced genotype?
+00:47:37 Speaker 2
+That's a good question. Oh, that's your domain, right So yeah,
+00:47:41 Speaker 5
+So that's my point. That, that's my point if it's not if you don't know what you're writing, then just clarify or ask for something.
+00:47:48 Speaker 2
+Well I just I just told you how do I know I don't know what I'm writing when I'm, then don't write it.
+00:47:55 Speaker 5
+Peter, don't write it. It's better that you don't write it, and then we can put it in later. You write it and then then we have to spend this fucking time.
+00:48:01 Speaker 2
+If it makes sense to me, I But it doesn't.
+00:48:05 Speaker 5
+You can't explain it.
+00:48:06 Speaker 2
+I just told you, I just told you what what what what it means to me.
+00:48:12 Speaker 5
+It doesn't matter what if you can't explain it, then that means you don't know it. What is Peter?
+00:48:18 Speaker 3
+Peter, The question is, why did you say balanced side by instead of just saying genotype?
+00:48:25 Speaker 3
+I think that's what Sam. That's what you are asking.
+00:48:28 Speaker 5
+I am am I am not. I don't it It's not about this specific thing. It is, I mean, I am asking about side by genotype design versus just regular genotype design.
+00:48:40 Speaker 2
+Let me go ahead and read and see what else is there. There is nine pages of this right and then like.
+00:48:47 Speaker 5
+We're gonna have look at every single like detail to make sure that it's correct. And if you're putting extra stuff, like I understand you, you this is how you interpret it. But if you interpret it by balanced side by genotype design, and you say that, but then you don't know what that is and you can't explain it,
+00:49:08 Speaker 2
+Then just because just because that's a hole in our paper.
+00:49:10 Speaker 5
+Just because then I I don't know what it is. And I mean, this is more of my field than yours, right? So like. I'm saying that if you don't know something, then just don't put it. Cause we could always put it later, but like, now we have nine pages and I'm not even on the first. I'm not even past the first paragraph and, I'm like, I'm I already have like four edits right and they're not anything crazy. Like, they're just basic edits so. Um this is a question about like time and resources and.
+00:49:46 Speaker 5
+Knowing exactly what to put and sometimes less is more.
+00:49:52 Speaker 2
+Okay, soum, what do you want me to do Because you're talking too much, so I just so I grasp exactly what you meant. What what are you suggesting Well,
+00:50:04 Speaker 5
+I'll just leave that comment. Um. Yeah,
+00:50:11 Speaker 2
+But also what's your suggestion?
+00:50:18 Speaker 5
+If we wanted to redo these figures, how would we redo them?'Cause edit that like for instance like data cleaning task QC, multi QC baseline, fastp. I don't think there's any need to put the version number of fastp. That's extra information.
+00:50:39 Speaker 3
+No, we should put version number. That is important.
+00:50:41 Speaker 5
+In the figure? Yeah. Are you sure that shouldn't go on like supplemental material?
+00:50:49 Speaker 3
+Yeah, like version is important. I cause I remember Charlotte's telling me to do that.
+00:50:55 Speaker 5
+Okay, that okay, but like data collection wise, like this this P or J number, this is incorrect. The G S E is incorrect.
+00:51:06 Speaker 2
+Can you highlight it in there?
+00:51:07 Speaker 5
+So I just wanted to ask like how highlight it for Doctor Osher? Oh oh helloum, Yeah, sorry. Okay,
+00:51:15 Speaker 2
+So where were we? I think Nikki, you were gonna go over the uh.
+00:51:20 Speaker 3
+Yeah, I had some results I wanted to share.
+00:51:25 Speaker 4
+Okay. Hold on.
+00:51:26 Speaker 3
+Let me share my screen Geo So. We started doing some Go analysis and hold on, okay there. Um so first.
+00:51:46 Speaker 3
+Is it showing the figure? There we go.
+00:51:49 Speaker 1
+It's just here again.
+00:51:52 Speaker 3
+Okay, in that case, I'll just show the chat. That's fine. Oh, nope, it's not that clear. One second. Sorry, I thought it would let me show the image. Oh, there we go. Cool So, this was one of theum graphs I got from the tool I used, and basically, it shows all the pathways that came up. As significant in the list of genes we put in.
+00:52:20 Speaker 1
+Which database is this? It's not Gene Ontology. I'm not sure what this is using.
+00:52:29 Speaker 3
+It's it's the tool thatum I forget who, but someone showed a tool called uh ShinyGo yesterday.
+00:52:38 Speaker 1
+Interesting because I know for a fact that gene addiction is not in the Gene Ontology.
+00:52:45 Speaker 1
+It wouldn't be because that's a broader organism level concept. It is not a cellular concept. Cells cannot be addicted to cocaine, right? So, I am not sure what this is using here.
+00:53:02 Speaker 3
+Let me show you the site I used:"
+00:53:09 Speaker 1
+Shiny goes for plants." Yeah, oh animals and plants. Okay, never mind.
+00:53:18 Speaker 1
+Yeah, you can show me what you used. Yeah.
+00:53:20 Speaker 3
+Um, this is not adjusted to the settings that I used yesterday, but.
+00:53:26 Speaker 1
+Okay. That's supposed to be ensemble functions, not gene ontology.
+00:53:35 Speaker 2
+I have the same plot. Uh uh You want me to show it? Um Nikki?
+00:53:41 Speaker 3
+Um sure. I guess I just want to confirm what I can use this for, I guess Yeahum.
+00:53:50 Speaker 1
+I'm gonna look and see if there's another.
+00:53:55 Speaker 5
+Wait, maybe you can change. Oh,
+00:53:58 Speaker 1
+Interesting. You can change species, okay.
+00:54:06 Speaker 3
+Maybe I used the when I entered this, I entered the gene symbol maybe that was incorrect.
+00:54:12 Speaker 1
+No, that's but that shouldn't give you things like cocaine addiction. I don't know. Weird.
+00:54:21 Speaker 3
+I wonder if it's because I didn't enter background genes.
+00:54:26 Speaker 1
+No, it's something. Okay. Let me look something up here. Oh, shiny go uses multiple things. It's not just the gene ontology, they also use KEGG and some other databases, okay? Yeah.
+00:54:47 Speaker 2
+I share with you next.
+00:54:49 Speaker 1
+Okay, which, Man, now we're mixing different tools. So it's not. I wish there was a way to restrict it to just Gene Ontology.
+00:55:02 Speaker 3
+So, oh, I. Hold on. Let me quickly put in the exact inputs I put in yesterday, because then we can like more specifically go over because maybe I'm just using the tool wrong.
+00:55:22 Speaker 1
+Not necessarily.
+00:55:25 Speaker 3
+Cause I guess, um, the tool itself also has different tabs and one is like called chart, Which is what I was showing you earlier, and then includes tree network and keg. Um, so I.
+00:55:38 Speaker 1
+Think it might be it then. Yep.
+00:55:40 Speaker 3
+I think it does separate it. That that's kind of why I'm asking becauseum this is not some tool. I just found, I guessum, I was showed it like in class.
+00:55:51 Speaker 1
+Shiny go is something that it's well, it's known. It's not one I've personally used. I've seen people use it. Yeah, I just it was kind of jolting when I saw cocaine addiction. I'm like, I've never seen that with gene ontology. Uh and I can't imagine they would allow it. They're very strict about what goes in there. So if you can change it to just gene ontology terms, there we go. Yeah so that looks like gene ontology terms.
+00:56:23 Speaker 1
+That is closer to what I expect. Now, hold on a second. Let me just look at this. So fold enrichment increasing at the bottom, you have a lot of cell migration with but it's not as significant. Wait a minute, negative ten yeah higher.
+00:56:53 Speaker 1
+Larger score, so yellow is going to be more significant. Yeah.
+00:57:00 Speaker 5
+More significant or more just frequent?
+00:57:02 Speaker 1
+Well, it depends on how they're defining the use of FDR. Yeah. Um. So migration. yeah, it was. Oh no, it wasn't more significant. Inter cellular signal transduction was.
+00:57:18 Speaker 5
+So is it by.
+00:57:20 Speaker 1
+Scroll up again, I want to see the picture.
+00:57:23 Speaker 1
+Intracellular is that is intracellular. Synthetuction was purple. Okay, so scroll down a little more again. I want to go to that table again. Mhm. Oh, those are unadjusted p- values there, okay? Oh So they're not comparable. You can't compare the p- values. There's no FDR in this table.
+00:57:46 Speaker 5
+We have to adjust them first.
+00:57:50 Speaker 1
+So they're not directly comparable. The FDR is the better one to use. You don't want to use raw p- values.
+00:57:56 Speaker 2
+Oh yeah, that's a good thing to know, okay.
+00:58:00 Speaker 1
+So scroll up. So FDR is appropriate here. Now the thing I would ask is, all right, It says, for positive regulation of biological process, it has two hundred and seventy eight genes. Two hundred and seventy of yours or there's two hundred and seventy eight genes associated with that term? It's not clear, So you might have to look up and see what that means. Because if it's two hundred and seventy eight of your genes, which it very well could be, that would be. Would say that that's probably an important term. It's also a very broad term. Regulation of signaling would be a more specific one to that, which was more significant. Yeah.
+00:58:47 Speaker 1
+Which makes sense.
+00:58:58 Speaker 1
+But Yeah, I think this is better with the gene ontology terms like this. Now, is this across all of the gene ontology, the subontologies, or was it just one of them?
+00:59:11 Speaker 1
+Was it looking at molecular function or biological process, or was looking across all three sub ontologies at the same time?
+00:59:18 Speaker 2
+Oh, you're asking Nicky or me.
+00:59:20 Speaker 1
+Whoever can answer. Oh.
+00:59:26 Speaker 3
+Well, I don't well the tool that I used and what the data Peter showed you are different tools. So Peter, I think you can better answer that question.
+00:59:35 Speaker 2
+Yeah yeahum.
+00:59:38 Speaker 2
+Yeah, that's what I was saying. In my case, it was all of them. But you use three value right to make sure that they're comparable, right? Make sure they all have the same p- value adjusted p- value.
+00:59:54 Speaker 1
+I'm not sure you mean by" make sure they all have the same adjusted p- value." That no,
+00:59:58 Speaker 2
+You said with the FDR that is not in.
+01:00:01 Speaker 1
+Should be using an FDR.
+01:00:02 Speaker 2
+Yeah, that's what I meant.
+01:00:04 Speaker 1
+Okay, so using the same statistic. Yes. Yeah, they should all be using FDR there. Yeah. Yep.
+01:00:11 Speaker 3
+Could I potentially also show you this tool again? Cause I do, I do want to see if it's at all useful. Like it's fine if it's not, I guess. Um So, this is all the data I could get with the exactum inputs I had yesterday. So then this was the chart I was referring to Um.
+01:00:32 Speaker 4
+It's Oh wait, this is.
+01:00:36 Speaker 3
+Different from what I showed you there. Maybe it wasn't the exact same.
+01:00:43 Speaker 1
+See, those are. You keep moving around. Let's see if we can focus.
+01:00:47 Speaker 3
+Sorry, I was just zooming in here.
+01:00:48 Speaker 1
+Focus, yep. Uh, I don't know if. I don't think those are Gene Ontology pathways or terms. Um, they might be something else, but I could be wrong. Okay. Um. Yeah, I'm not sure what that is.
+01:01:07 Speaker 3
+It also comes up with this network. Oh, sorry. This is real. And it connects all those pathways. I don't know. I guess this might be different than from Bell Hold on,
+01:01:20 Speaker 1
+Hold on. I think it is mouse over the map case. Nope, don't move around mouse over the map case signaling pathway on the upper right It's, a dark green one Does. It pull up any information No, it doesn't So hold on a second Nope, Go back. I want. I want to look up that number, uh. But I can't remember it. M M U zero four zero one zero. It's a KEGG pathway. That's fine as long as they're all KEGG pathways, It just makes a little harder for you to interpret because now you get to figure out, all right, what is in common with these pathways? The nice thing about the Gene Ontology is it tells you what's in common across the various genes. It gives you more of a human readable. Uh, kind of result. You can use either. It's absolutely, okay, but.
+01:02:05 Speaker 1
+It puts more of the onus on you to figure out what it means if you use use KEGG.
+01:02:10 Speaker 3
+Okay, yeah, that makes more sense. Okay, I understand now. Thank you.
+01:02:14 Speaker 1
+No worries. You have to there's a lot of different tools out there and you have to play around with them to really see what's going on. They all have strengths and weaknesses. Kegg has its uses. Uh if you want to do a KEGG analysis, I would use Cytoscapeum put that in chat.
+01:02:36 Speaker 1
+That's a really good tool for visualizing because you can actually do it's kind of like a network with the heat map at the same time. So, you can see which genes are differentially expressed and how much or how much fold change do you have for each and see where there's these clusters of spots where there is a change in activity.
+01:02:57 Speaker 2
+Is KEGG, you said?
+01:02:59 Speaker 1
+That was Cytoscape. You can use Cytoscape with KEGG as its annotation data set.
+01:03:13 Speaker 1
+If you have time, yeah. If you don't have time, that's okay. Something you want to be aware of though in your careers, is that Cytoscape is a pretty good tool? Uh for getting a different view of these. Uh, the pathways.
+01:03:29 Speaker 2
+Yeah, That's the step where we are. And so we might as well take a chance with it.
+01:03:34 Speaker 1
+Yeah if if you get time, if you want to play with it go for it. All right just back up everything? Any other questions? Nope. No, not for me. Okay, I'm gonna let you folks play a little bit more. I'm gonna jump to the next group. And then some point probably not too much longer. We'llum we'll jump back to the main rain room. All right,
+01:04:02 Speaker 3
+That's good. Thank you. Cool.
+01:04:07 Speaker 2
+That was helpful. Yeah.
+01:04:15 Speaker 3
+Oh my god, I realized what I did wrong with the tool. What happened? Okay. I didn't set the database to go.
+01:04:25 Speaker 2
+Oh my goodness, yes, that will definitely.
+01:04:30 Speaker 3
+The database was to keg. Okay, because I knew I used this whole tool for go, so confused when he was telling me that. Okay, the. So Peter, you said that you used the go database that included all of them? The tool I'm using allows me to separate it by biological process, cellular component, and molecular function. So maybe we can generate three sets ofum data.
+01:04:53 Speaker 2
+That's a perfect idea. Yeah, especially after what he said, I think that would be perfect because that would Okay,
+01:04:58 Speaker 3
+I was so confused because I was like, I don't think my professor told me the wrong thing. But then what Doctor Osher is saying is contradicting what my other professor told me. So I'm like something going on here. But now that I take a second look okay.
+01:05:10 Speaker 2
+He was trying to figure out what happened, so he was guessing. Yeah.
+01:05:13 Speaker 3
+Yeah. Oh, This is perfect, because then that means I can also compare what I got with you with yours. And we can see some matches.
+01:05:23 Speaker 2
+Yep, yep.
+01:05:24 Speaker 3
+Uh okay, awesome. This makes me feel better.
+01:05:26 Speaker 2
+I'm I'm so glad that you shared that with us because we ended up doing the same class That's perfect.
+01:05:31 Speaker 3
+Yeah Okay cool. And then we can see maybe if. Because OSHA did say it's fine to just look at all of the go options, But maybe be separated byum like the three groupings and might give us like a different visualization.
+01:05:50 Speaker 2
+Yeah, it's going to allow us to interpret differently per per per plot, per graph. So your idea is, uh is is great because I mean, the whole point of this right is for us to uh extract biological. Um, Meaning right out of it. And having all of them in just one right is not gonna be the same as having like like you said, one per each. Okay. Yeah.
+01:06:21 Speaker 3
+Awesome. This is all now go analysis. I'm I'm gonna send you the one I got from.
+01:06:29 Speaker 2
+Yes, so I can compare it with mine yeah.
+01:06:33 Speaker 3
+Yeah, The only thing to know is yours again is looking at all three at once. So what appears at the very top is definitely going to differ, but. So that's biological process. And I'll send like the actual datasets from this. I'm just sharing the temporary one, just so we can do quick analysis right now.
+01:07:05 Speaker 2
+Yes, let me uh sit down and check it out.
+01:07:11 Speaker 3
+Okay. Also, I don't I think he's done just reading the reports'cause I got a hundred on my report. And the thing I talked about is what he just told me. I was wrong about.
+01:07:20 Speaker 2
+Are you serious? Already that fast? Yeah.
+01:07:26 Speaker 5
+I don't think he's gonna like read every single submission though so.
+01:07:31 Speaker 3
+Did I not tell you how, He used to pick out pinpoint certain things earlier on, so.
+01:07:38 Speaker 5
+Yeah. I think he realized how that that's not gonna work with thirty pages per group. You.
+01:07:48 Speaker 2
+Mean you mean he gave up? Maybe.
+01:08:02 Speaker 3
+Oh, my Wi- Fi is really laggy right now.
+01:08:16 Speaker 3
+This Is interesting. So if we also really want to, we can basically still do pathway analysis, but maybe not use ShinyGo for pathway analysis.
+01:08:29 Speaker 2
+Oh, um, that's can you repeat that again?
+01:08:32 Speaker 3
+We could still do pathway analysis if we want. We basically just don't use Shiny go for it. We use the other tool here with us.
+01:08:39 Speaker 2
+Yeah, also yeah, and also like, if if. We there is nothing stopping us from like comparing both, you know what? I mean? Yeah, yeah, better for us because we have more data now and more more to talk about from a bio perspective. But yeah, I. Let's look into the tool that he that he mentioned because. If it's as good as he as he said, we might as well try. This is what happened when things get interesting towards the end, because I was already like one foot in the door of my car, and then this popped up and I got so hooked and I'm like, okay, let me sit down.
+01:09:33 Speaker 2
+To look at what he was looking at.

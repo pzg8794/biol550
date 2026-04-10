@@ -1,0 +1,342 @@
+00:00:10 Speaker 1
+I'm trying to get the tool I'm using to work with all three databases, but it's not really liking that. So I think I'm only stuck doing it in separate go subsections.
+00:00:25 Speaker 2
+So send me the setting, I'll try on my end.
+00:00:31 Speaker 2
+Let me get the settings like theum. The
+00:00:37 Speaker 1
+Like a picture?
+00:00:38 Speaker 2
+Yeah, yeah, exactly of theum. The dataset that you're using.
+00:00:42 Speaker 1
+Sorry, you're cutting out.
+00:00:45 Speaker 2
+My signal is horrible. I was saying, send me the setting yeah or a picture right of the dataset that you're using and I'll try it on my end because mine isum it's the same that you're using, but I'm using the backend. So, I can just put directly the data set in there. Cool. Yeah.
+00:01:05 Speaker 1
+I was basically Okay, I was basically just trying to do all available gene sets because I because it would get all the path it would get all the databases But. Then after I got all the databases, I could my thought was, I could filter it by just go so Oh,
+00:01:23 Speaker 2
+I see. I see. I see i And that makes sense. Yeah, yeah, yeah. You didn't let you right.
+00:01:30 Speaker 1
+Yeah, well, I think it's just a lot of data to parse through. So it's taking a hot sec. Oh, okay. He's proposing for a count. Oh.
+00:02:14 Speaker 4
+Alright, breakout rooms should close in a little bit. Just waiting for the last folks to come back in.
+00:02:44 Speaker 4
+Alright, breakout rooms are closed. Let's make sure everybody's in here. Think. Yep, we got everybody. Excellent. Alrighty, looks like groups are doing pretty good. You're getting down to the final kind of analyses and doing your writing. So let's talk about some things going forward. So weekly reports: make sure that you're not just writing "Yeah, we're writing our paper." Do some extra analyses if you have any, Clear reports that you're.
+00:03:22 Speaker 5
+Okay, So it's just him that froze, right?
+00:03:23 Speaker 6
+Did he crash? Did he crash? Yeah,
+00:03:25 Speaker 5
+For me too. He disappeared for me too.
+00:03:30 Speaker 6
+He's there. He's just frozen. I just see black screen on my end.
+00:03:35 Speaker 5
+I also see black screen. Yeah, same.
+00:03:38 Speaker 6
+I'm tempted to take a screenshot right now. I think he's gone.
+00:03:42 Speaker 5
+He disappeared.
+00:03:44 Speaker 6
+It says his name is still here. He was like," Screw this class, I'm done with you kids." Maybe this is a psych study.
+00:03:51 Speaker 5
+I think we all. I think we'd all used our mind powers as a collective. He evaporated. Maybe this is a psych study.
+00:04:02 Speaker 1
+Oh yeah, now he's there! Oh my gosh! I'm the host! Sam,
+00:04:05 Speaker 6
+You're the host! That's how you feel! Hey, who am I kicking out? Who am I kicking out?
+00:04:11 Speaker 5
+You have power. It was great responsibility.
+00:04:14 Speaker 6
+Hey, I'm kicking you out. You're done. Of course you are. You're done. Of course you are.
+00:04:21 Speaker 5
+Damn, teach us about H T S Okay guys,
+00:04:24 Speaker 6
+So H T S Um hella sequences guys hella.
+00:04:31 Speaker 5
+Sequences He's gonna come back,
+00:04:34 Speaker 4
+He's gonna come back.
+00:04:34 Speaker 6
+And he's gonna be like what.
+00:04:37 Speaker 5
+Three guys I sent you your.
+00:04:39 Speaker 6
+Okay popcorn reading. Next paper, guys.
+00:04:44 Speaker 5
+Professor Koplik? Yes. Professor Koplik? Introduce yourself.
+00:04:49 Speaker 1
+Uh, where. Lily, he's gonna fail you. Oh,
+00:04:58 Speaker 6
+Can I speak to after class uh Mrs Rowland?
+00:05:02 Speaker 4
+Uh- oh. Wait hang on hang on, Can Can we get a poll in the chat? Can we get a poll going, Sam? Can we get a poll going? Yes.
+00:05:12 Speaker 5
+No, Sam. Only Professor Triplets.
+00:05:14 Speaker 6
+How does one do a poll? I believe in you. You can figure it out.
+00:05:20 Speaker 5
+You can do a poll. There should be a button for it. Interesting. I don't see the option. It.
+00:05:27 Speaker 3
+Should be more Yeah,
+00:05:32 Speaker 6
+It should be there Oh guys, I'm putting you in breakout.
+00:05:35 Speaker 3
+Rooms Oh my god What, Dakota, not the frog.
+00:05:41 Speaker 4
+Yes it is. We all got a hit on that one. We'll have to search it up. Three, two, one.
+00:05:57 Speaker 5
+Oh! There's a whiteboard! Wait, what is this? Oh you started the whiteboard! Guys we're no better than high schoolers. Don't mess with my.
+00:06:07 Speaker 6
+Frog B. Wait, guys, answer the poll: yes or no?
+00:06:12 Speaker 5
+What's the poll? What poll? What poll?
+00:06:14 Speaker 6
+It's in the middle of the thing. That's your poll? You obviously have not been paying attention in class. Where is the poll? I told you, it stays right here.
+00:06:31 Speaker 5
+Remind me what time this class ends.
+00:06:34 Speaker 6
+It's whatever your heart desires.
+00:06:38 Speaker 5
+Do you think we're going to get an email? I got an email.
+00:06:44 Speaker 6
+We're all going to be fired. I got the same email.
+00:06:49 Speaker 5
+I was like it's not my fault province Wi-Fi is bad. What do you think of my frog? You're on that province Wi-Fi.
+00:06:57 Speaker 4
+Promoting it.
+00:06:58 Speaker 5
+Wait, wait, wait, wait. Very important. What do you think of my frog?
+00:07:03 Speaker 6
+I love this. That was really good. The fire is really good.
+00:07:05 Speaker 5
+Can I color it?
+00:07:06 Speaker 6
+C minus?
+00:07:08 Speaker 5
+What? The dog is so cute. Wait, how do you Oh, there's a whole flowchart happening here. Thank you, Lily. Very cool.
+00:07:22 Speaker 6
+At what point do I cancel class?
+00:07:26 Speaker 5
+No! I think we just keep it going for now.
+00:07:29 Speaker 6
+I lowkey wanna eat breakfast.
+00:07:32 Speaker 1
+I guess someone monitored it. Sam, you have a responsibility to teach this class.
+00:07:41 Speaker 4
+I don't know what I'm doing. We are seeing that there's a rebellion of PCA on the other side.
+00:07:48 Speaker 1
+Has he not requested to join the Zoom?
+00:07:51 Speaker 5
+No. It's an open meeting; I don't think he even has to request.
+00:07:55 Speaker 1
+That's true. So I don't know.
+00:07:58 Speaker 5
+Wait, he doesn't have to request? All right, wait, Right. Maybe his computer died, maybe his internet died. Yeah, now he can he can feel how I feel when I'm on Provence. Oh.
+00:08:14 Speaker 3
+Lord. Like nothing out of slate here. No,
+00:08:25 Speaker 4
+Because I like how he was, He was literally like hyping us up. He could have hyped us up, his Michael Oher powers all died because he was hyping us up.
+00:08:36 Speaker 6
+The universe stops once he says, once he hype someone else. He.
+00:08:41 Speaker 4
+Said something nice one time and the universe just came down on him. I want to see what's what's the word? Okay, who wants to be spammed with frog cats? Yes frog cats please.
+00:08:57 Speaker 3
+Yes. Yes.
+00:08:59 Speaker 4
+I'm gonna add yes. I'm gonna add no one playstic tac toe with me.
+00:09:03 Speaker 3
+Where are you? Where are you at? Where where where where where?
+00:09:06 Speaker 1
+Is it by the hatch? Oh.
+00:09:10 Speaker 3
+My gosh. Whoa whoa whoa whoa whoa, get in line, get in line.
+00:09:13 Speaker 4
+I got it. Okay, I'm in line. Where's the line? Ham ham's Yeah Ham ham, do you want? Do you want to playtic tac toe with me? Sure Okay.
+00:09:22 Speaker 1
+Sorry Ethan It's okay Editing You.
+00:09:26 Speaker 4
+I'll come back Trumps.
+00:09:27 Speaker 6
+Him him him him you go first.
+00:09:32 Speaker 1
+I'm a star. Okay. So Entertaining. That's been there for a hot minute.
+00:09:39 Speaker 6
+Um, guys, there's too many of you. I need to give individual attention to every single person. Should we break out rooms?
+00:09:50 Speaker 6
+Yeah, I'm assigning breakout rooms how how do you even make okayum guys I'm, I'm retiring as professor. This was Wait,
+00:10:00 Speaker 5
+Wait, wait. What about my flowchart? Look at my flowchart.
+00:10:04 Speaker 4
+Wait, Lily's. I think this flowchart is really good.
+00:10:07 Speaker 5
+No. You got to start with Who Wants to Be a Spaceman? Because Lily, you, I'm passing on is the new professor. Wow! This is a big honor for me!
+00:10:17 Speaker 4
+I have to pass on everything.
+00:10:20 Speaker 5
+What do I do with this power?
+00:10:22 Speaker 6
+Kick me out. Please kick me out. Purple. Wait. Purple. Yes.
+00:10:25 Speaker 5
+I'm just kidding. You can't just leave us.
+00:10:28 Speaker 6
+I want to be kicked out. I want to be kicked out.
+00:10:31 Speaker 3
+Kick him out.
+00:10:34 Speaker 6
+Did you start my residency?
+00:10:36 Speaker 5
+I'm looking for the activity report thing too. Oh! He's out!
+00:10:44 Speaker 4
+Damn, you can't send a message to kick yourself out. I can. I thought you were. I thought Eridu was magically. You were like. God!
+00:10:58 Speaker 1
+You begin email? We did. I got an email and I was wondering if that was from him. You did from him?
+00:11:07 Speaker 5
+Guys, you should add video effects to your face. I'm going to give myself a beard. Oh everyone, okay, I just allowed everyone facial effects. Wait, we can do that? Wait, we can do this? Look at me! Look at me! Wait where's the. Hey wait wait wait wait wait I gotta try it! Do I have a beard? No, I don't have a beard. Oh my god, we can all turn into Max today. How do I do this? You go to uh more and then oh yes. Look at it. Don't I look so good? You look incredible. I know, I look so good. Wait wait, how do I do this? How do I do this? I go to more You go to you. Click uh, oh, start you click settings.
+00:11:54 Speaker 5
+You click settings and then video and effects. And then studio effects. Ooh! Oh no, you have to sign in to get an avatar. Ooh, I can add some portrait lighting? Auto framing? I see it.
+00:12:17 Speaker 1
+I didn't think he'd be gone for this long. I'm shocked!
+00:12:25 Speaker 6
+Wait, there's Alex. Oh, yeah. Oh, guys. Wait, you guys see me as a cat right?
+00:12:37 Speaker 5
+Yes. Yeah. Oh my god I'm so jealous.
+00:12:43 Speaker 6
+Okay wait uh uh uh.
+00:12:54 Speaker 3
+Okay, guys. Oh my god, Tanya, you look so good. I'm looking so fly right now.
+00:12:58 Speaker 6
+I'm looking so fly right now. Wait.
+00:13:07 Speaker 3
+It won't let me change the things because I've not signed in. I'm so sad. Yeah,
+00:13:12 Speaker 6
+Just sign in Skill issue.
+00:13:15 Speaker 5
+So sad Tanya, you look like kind of like a goth hipster.
+00:13:20 Speaker 4
+Yeah Goths are crazy. Let's give me sweater in Portland. Oh.
+00:13:31 Speaker 5
+My god. No. No. Oh, I'm adding another I'm adding some virtual backgrounds now. Ooh, I'm adding. Guys, you should sign up for Relay for Life! Oh my god! Oh, now my face is gone. Not a summer anymore Face privileges revoked.
+00:13:52 Speaker 4
+Face card is revoked.
+00:14:00 Speaker 4
+Wow. Ouch. Oh my god, Sam. It's like you're literally outside. It's like you're literally touching grass. I didn't know you were allowed to do that.
+00:14:12 Speaker 1
+Sam does not do that.
+00:14:13 Speaker 4
+I didn't know they let you outside.
+00:14:15 Speaker 5
+Why is it? No, I accidentally clicked on one of my assignments now you can see quest Ah, fudge.
+00:14:25 Speaker 5
+I added. I'm,
+00:14:26 Speaker 4
+So glad I'm in one of the beautiful Wallace study room chairs right now because I keep thinking kicking myself back whenever I start dying.
+00:14:34 Speaker 5
+Wait, okay, I lied. I'm going to do this heat map because we're proud of our heat map for our class. This is my background now. Wow! We want to preview our easy heat map for next week. Look, look, look at my beautiful mind map. It's on there. Wait, how do I? Oh yeah, that was going to be a good one too Oh my god! This is incredible!
+00:14:56 Speaker 6
+That's So hot.
+00:14:58 Speaker 5
+Good grades.
+00:14:59 Speaker 3
+And bad grades both lead to unemployment. That's great. Don't know Michael Archer email.
+00:15:12 Speaker 5
+I know, I'm shocked.
+00:15:15 Speaker 6
+At what? Wait, guys, what images are you sending me? Oh my gosh!
+00:15:19 Speaker 5
+What? Oh yeah, let me look at the, Discord. Oh yeah,
+00:15:27 Speaker 6
+It's probably right. Hey guys, we all need to take a selfie for the bioinformatics Discord.
+00:15:32 Speaker 5
+Yeah, let's how do I even put it on the Wait wait wait B B. I'm putting stuff in photo dump. What?
+00:15:41 Speaker 6
+Guys everyone turn their camera on.
+00:15:42 Speaker 5
+Look I want to playtic tac toe B.
+00:15:43 Speaker 6
+Okay Wait Tucano. Where are you?
+00:15:46 Speaker 5
+I'm on the thing, near the plantain frogs.
+00:15:49 Speaker 4
+You're near the plantain park or plantain. I don't see a is it under the thing. I see it. I see it now. I'm playing.
+00:15:58 Speaker 3
+It's dialogue.
+00:16:01 Speaker 4
+Imagine if I said turn on avatar when I join a meeting.
+00:16:07 Speaker 5
+You're gonna join HCS. And do that now actually what if everybody comes in next week? We're all just avatars. That's it. Yeah. That'd be really funny. That'd be really funny.
+00:16:20 Speaker 4
+And Y'all ever seen the video of the guy who left his voice changer on? Oh. I know.
+00:16:26 Speaker 5
+Be your turn.
+00:16:30 Speaker 6
+Wait, do I have paws? Can I raise my hand?
+00:16:33 Speaker 5
+Wait, lift it up. No. Can you not? Oh, that's sad.
+00:16:36 Speaker 6
+I don't, I don't have arms.
+00:16:40 Speaker 3
+Still no arms.
+00:16:42 Speaker 6
+Okay, I'm gonna go make breakfast, cause I have to go to campus uh by Doctor. Uh.
+00:16:50 Speaker 3
+Roland. Wow. Doctor. So you're doing,
+00:16:53 Speaker 5
+You're doing really good. I'm doing so good, let's go. That that's why we got these this background and this beard. See, I only doctors can have this beard. Keep the bake sale Wait,
+00:17:03 Speaker 4
+It is low- key giving Michael Lozier beard a little bit No,
+00:17:07 Speaker 5
+I hate that you said that Wait,
+00:17:09 Speaker 1
+Love me Lily Lily doesn't know what she's talking about But honors. Lily kicked me out. No Lily don't.
+00:17:16 Speaker 6
+No, do it. Do it. Really don't know what I would actually.
+00:17:19 Speaker 1
+Is it special?
+00:17:21 Speaker 4
+Please get me in.
+00:17:23 Speaker 5
+B, do you see the win?
+00:17:27 Speaker 4
+I do see the win for them and a double win too. That's that's really impressive. You Dakota you're like really good at this Thank. Youum.
+00:17:40 Speaker 3
+That's so mean!
+00:17:42 Speaker 6
+Am I speaking right?
+00:17:51 Speaker 4
+The message.
+00:17:51 Speaker 5
+Oh, that's so mean. Who's writing that? Roger really hasn't sent a message at all. I hope he's okay. Wait, did he just like poop out of existence? What if that is what he did? You guys we all get A's in this class?
+00:18:08 Speaker 6
+Oh no!
+00:18:12 Speaker 4
+Oh. I could see that. Cause I was like, he just pooped out of existence.
+00:18:20 Speaker 5
+Wait, wait, I can make it thick. I can make it thick.[ laughter].
+00:18:33 Speaker 4
+I really, I like that it's pink. Me too. I like that it's pink a lot and I like the angry one.
+00:18:46 Speaker 6
+Good grades, frogs, bad grades, unemployment. It's crazy. Good grades, unemployment, broke.
+00:18:53 Speaker 5
+They both go to broke.
+00:18:55 Speaker 4
+The people in the funny ones that I responded to be happy. Who said that?
+00:19:01 Speaker 5
+Wait, where is that? I can't. No don't do that! Wait wait wait Professor Lily! Look at the mind map! My roommate just passed and asked why is Sam a dog? Wait, wait. Come on in. I'm coming over. Okay, you have to follow the vision with me, okay? You start with frogs. Then you go to who wants to be spammed with frog facts, and you say, yes. Yes. You go to frog fact or frog subscribe email, and you say, get scammed, then give me money. I win nice U h- huh.
+00:19:45 Speaker 5
+And I don't get no unemployment. That doesn't work. Hey, no! Uh- huh, uh- huh. Oh, I just did that!
+00:19:52 Speaker 1
+Does unemployment mean sad frog? Oh my god.
+00:19:55 Speaker 5
+Wait wait, wait, wait, You're unemployed because you're super duper rich, and you don't need to be employed ever again.
+00:20:02 Speaker 6
+Is that when you get to look like Lily?
+00:20:07 Speaker 5
+What does that mean? You got the sexy pink beard and the and the sexy green eyebrows.
+00:20:15 Speaker 6
+Wait, Lily. You know who really wants to be here but would die if he.
+00:20:20 Speaker 5
+Oh my god, I just saw the Rick roll. Got'em!
+00:20:27 Speaker 1
+Lily, you're so funny.
+00:20:29 Speaker 6
+Professor Lily, can you kick me out?
