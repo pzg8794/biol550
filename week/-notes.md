@@ -267,3 +267,43 @@ FOXF1 (with ETS factor **FLI1**) transcriptionally activates **ACVRL1 (ALK1)**, 
   - Does BMP9 rescue act specifically through EPCs, or via broader endothelial/mesenchymal effects (systemic ligand)?
   - What’s the best way to separate “composition shift” effects from true within-cell-state DE in mutant vs WT?
   - If EPCs are the key lever, what would a cleaner causal test look like (cell-type-specific perturbation of FOXF1/FLI1/ACVRL1)?
+
+---
+
+## Miryeganeh et al. (2022; accepted 2021) — *De novo genome assembly and in natura epigenomics reveal salinity-induced DNA methylation in the mangrove tree Bruguiera gymnorhiza*
+
+- PDF: `BIOL550-Week14_Miryeganeh 2021 epigenomics mangrove.pdf`
+- Journal: *New Phytologist* 233: 2094–2110
+- DOI: `10.1111/nph.17738`
+- Data availability: NCBI BioProject `PRJNA703772` (genome DNA-Seq, RNA-Seq, and BS-Seq/WGBS)
+
+### What are they sequencing?
+
+- **Genome (reference assembly):** genomic DNA sequenced with **PacBio RS II long reads (SMRT)** plus **Illumina short reads** (paired-end + mate-pair) for de novo assembly/scaffolding.
+- **Epigenome (DNA methylation):** **whole-genome bisulfite sequencing (WGBS / BS-seq)** using the **PBAT** method on **Illumina HiSeq 2500**, from **leaf DNA**.
+  - Design: **8 WGBS samples** total = 2 biological replicates × 4 conditions.
+    - Natural environment: **oceanside (higher salinity)** vs **riverside (estuary/brackish)** trees.
+    - Controlled experiment: seedlings grown in **saline (4% salinity)** vs **brackish (1.5% salinity)** water.
+- **Transcriptome:** **RNA-seq** mapped to the genome (used for genome-guided transcriptome assembly and differential expression; 25 libraries across natural + controlled samples).
+
+### What problem are they solving?
+
+Mangroves tolerate extreme and fluctuating coastal stresses (especially salinity), but the **genome + transcriptome + epigenome** basis of that resilience is poorly characterized due to limited reference resources. They build a reference genome for *Bruguiera gymnorhiza* and ask how **natural salinity differences** (and controlled salinity treatments) relate to **gene expression** and **DNA methylation** in the wild.
+
+### Study design (high level)
+
+- Natural site: Okukubi River mangrove forest (Okinawa, Japan), comparing **riverside** vs **oceanside** plants.
+- Controlled experiment: growth-chamber seedlings derived from the same source tree, comparing **brackish** vs **saline** water.
+- Tissue highlighted for epigenomics: **leaves**.
+
+### Key findings
+
+- Produced a de novo genome assembly of ~**309 Mb**, predicting **34,403 genes**, with ~**48%** repeat/TE content.
+- Natural populations show **strong phenotypic differences** across environments and **expression changes in thousands of genes**.
+- **High salinity is associated with genome-wide DNA hypermethylation of transposable elements (TEs)** (and related chromatin/DNA methylation machinery expression changes), consistent with **stress-linked reinforcement of TE silencing**.
+
+### BIOL550 “what to remember” (quick prompts)
+
+- Why **standard DNA-Seq** (genome assembly) can’t tell you methylation state, and why **WGBS** is needed.
+- Why **TE regulation** (repeat content + methylation) can dominate genome-wide stress responses in plants.
+- The “stack” used here: **reference genome → RNA-seq expression → WGBS methylation → TE-focused interpretation** in a non-model organism.
