@@ -1,0 +1,472 @@
+00:00:04 Speaker 1
+Those look to be process. Oh, maybe not. No, those might be molecular functions because I see binding and yeah,
+00:00:13 Speaker 2
+Yeah. Molecular functions.
+00:00:16 Speaker 3
+So this is molecular functions. Um, I thought it was really interesting. Excuse me, officer? Guys?
+00:00:24 Speaker 4
+Billy's going home representing.
+00:00:29 Speaker 3
+We started yet.
+00:00:30 Speaker 4
+Oh, no, sorry.
+00:00:31 Speaker 1
+Yep, they jumped right in. Sorry.
+00:00:33 Speaker 3
+I wasn't paying attention at the time. Sorry. Um, yeah, So this wasum molecular functions and I thought it was interesting how we had that one. Um the ribonuclease inhibitor activityum like the most fold enrichmentum But I mean I've been. For these, I notice you kind of need to look at this. This is called a lollipop lollipop chart. So you need to look at the lollipop charts and the network, which shows you how every all the pathways are potentially connected with each other. This is the ribonuclease inhibitor activity one, so it's kind of disconnected from everything else. And that lighter green meansum then just less of a presence of it actually? So,
+00:01:16 Speaker 1
+How do you get twenty four difference if it's.
+00:01:18 Speaker 3
+A That's just a little. Um, I think this one was based on the color was based on FDR. Both okay. So,
+00:01:29 Speaker 1
+Yeah, and then yeah,
+00:01:31 Speaker 3
+But you can also look at FDR. That's what the colorsum mean in the lollipop charts. But okay,
+00:01:39 Speaker 1
+So the FDR is low for the fold enrichment is high. Yeah, And there's very few genes in it. If you look at the size of the lollipop. Yes. So that kind of makes.
+00:01:51 Speaker 3
+So, I'm not few genes of low activity would be. Yeah. So, um, Molecular function was interesting, and it had that one that really stood out from the rest. But honestly for me, I think this is yeah, This was biological process and I found it interesting because a lotum while it had lower fold enrichment, all of them had high or yeah higher FDRs, more number of genes actually considered. Within each little group, and then when you look at the network, all of them are like connected the top twenty s. So this really stood out to me in terms of it was like overall significant. And that makes me think biological process had moreum.
+00:02:35 Speaker 1
+Thing I'll point out. This is something you wouldn't have seen before. I kind of mentioned it in class, But it doesn't surprise me that they're linked, because let me give you an example, like three levels internal.
+00:02:51 Speaker 1
+All right, so you got these three terms in this hierarchy here. This term maybe five out of ten were significant. Maybe this one is six out of twelve. Up here, this is going to have at least twenty-two. Let's say it's out of there's a few genes that are associated with this that weren't associated with these because you get implicit association ;. All of these genes belong to this term, therefore they're part of this. So maybe out of the twenty-five we've got thirteen out of twenty-five here um, And then this one up here, there might be even more. It might be a hundred because you got other terms down here. And this might just be fourteen. So what you often see is this one's lighter, this one's strong, these ones, this very strong maybe and this one's kind of strong. There's a larger sample size even though it's about the same ratio, it can be more significant. So, we often see that terms are in the middle, tend to be stronger. And you're getting some of that. You're getting this strong here, but weaker here and weaker out in the periphery.
+00:03:45 Speaker 1
+So these are not independent of each other. Yeah. So that doesn't completely surprise me. However, it's enough of them that there is probably multiple things going on here. Mhm. Yep,
+00:03:54 Speaker 3
+Cool. And, then that was biological process. And then the one I had scrolled. Yeah, the one I scrolled past was cellular components, and it was kind of the graph was kind of in the middle of biological process or cellular location components components. Okay.
+00:04:12 Speaker 3
+And I don't quite understand why melanosome were the eyes. What was your study?
+00:04:27 Speaker 1
+The trait. Yeah, you're studying what was the condition you're studying?
+00:04:32 Speaker 3
+Oh, okay. You guys are focusing on like axon regeneration. The focus was on axon regeneration, like that's what the study was looking at so, That's, that's the main reason why it didn't make sense to me because we weren't because it wasn't really looking at like, it didn't really have it wasn't correlated with like pigment at all so.
+00:04:50 Speaker 5
+It's aerial hydrocarbon. Yeah, soum. It's a conditional. Sorry I explained this in the paper so many different ways like trying to, So the A H R is a specific pathway that is connected to, Proteostasis and stress response, and the way they're looking at it is they're doing a conditional knockout, specifically in the leg, rather than the whole body. Just because they saw like immune response and myelin sheath degeneration. But anyway, they did a conditional knockout of that pathway, and that revealed once that was off.
+00:05:40 Speaker 5
+Injury occurred, the crush injury occurred that they saw a regeneration spike. So we should see an increase of uh translation, yeah. Translation general enzymatic activityum and lower. So.
+00:06:01 Speaker 1
+This this helps. So it actually makes sense that you're getting more translation like the second one there, then. Yeah. Are you getting more transcription there? Yeah, we're getting more. Um, But and it does inspire me the cell leading edge, you're dealing with uh cell directionality or something very common here. Glutamatergic synapse are these nerves specifically ones that respond to glutamine? That'd be good to point out in your discussion. That's a good thing you can actually put a few sentences in about that. It's good content there. You might want to do a Google search or Google Scholar search to see what's known about nerve cells and melanosomes.
+00:06:37 Speaker 1
+I have no idea. Nervous. I would take a look and see if there are any papers about it. Like maybe they do have a higher rate. It would.
+00:06:43 Speaker 5
+Be reference twenty if you want to write that down. What? Reference twenty, I am taking notes. No, like in the publication, So oh, um the actual study based off like different study, which that's why I said reference twenty in the uh publication,
+00:06:56 Speaker 2
+But he was saying be reference twenty.
+00:06:59 Speaker 5
+Yeah. Um it's based. It's basically looking at different studies from like early two thousands and then it redid it. And then. I'll look at the transcription factors and then okay.
+00:07:10 Speaker 1
+I would definitely do a Google search to see if anything in general is known about melanosomes and nerve cells, To see if there's some biological explanation for why that was so high on there. I don't get that.
+00:07:19 Speaker 3
+Yeah, overall I thought we got really interesting results from GO analysis.
+00:07:23 Speaker 1
+A lot of it makes sense: you got axon, you got presynapse. An additional question:
+00:07:29 Speaker 6
+The endosome doesn't surprise me; you're dealing with.
+00:07:35 Speaker 1
+Neurotransmitters and they're conveyed. Oh, I.
+00:07:42 Speaker 5
+Mean cry. No, oh. Catch. Okay, just like a quick question. Um, so we found seven hundred and nine right? And then they found five hundred and thirty three keys? Yep.
+00:08:03 Speaker 3
+Well, Okay, so to be more specific, That five hundred and thirty three that they found isn't this referring to RSS Sam? Yeah. Yeah.
+00:08:10 Speaker 5
+Specific filter correlated to the A H R pathway. We found we did like whole genome differential expression.
+00:08:19 Speaker 1
+That doesn't surprise me.
+00:08:20 Speaker 5
+So what do you mean overlap in the middle?
+00:08:23 Speaker 1
+What how much overlap is in the middle?
+00:08:25 Speaker 5
+What's your number? I was looking at our paper and I realized that we, I'm pretty sure we never actually look at like cross validation. Would, it be worth going back and just doing a cross validation between it's just like two tables and looking at the overlap,
+00:08:41 Speaker 1
+Because this I would just look at the overlap and do the Venn diagram. Okay, yeah, let's first start with that. See how many genes are overlapped There's a lot. There should be a lot if there's not, then we got to look at it and say why. That would be very interesting.
+00:08:53 Speaker 5
+I I don't think it's I don't think it's they're unique just because Yeah,
+00:08:59 Speaker 1
+Don't leave it up there; he'll disappear. Oh, no, no. Other than the marker, don't leave it on the tray there. Someone will take it. Yes, I wanted to do the cross validation to see what the overlap is worth doing. Not even a cross validation, just a cross mapping. Isn't it called You're not validating;. You're not actually testing it;. You're mapping it to see what the overlap is.
+00:09:19 Speaker 3
+That's what was confused when you said validation yesterday.
+00:09:21 Speaker 1
+Validation is a very specific thing; that means you're doing another separate experiment to make sure these genes are right. Yeah,
+00:09:26 Speaker 2
+Yeah, mapping validation.
+00:09:28 Speaker 1
+Oh okay I see Okay so it's just, Reference. It's a cross reference to see what the overlap is. Yeah, I think so. So basically just get the gene symbols or accession numbers, and you'll be able to see how many overlap. Yeah, yeah. Yeah, I already made the tables because perfect. Yeah, let's see what the number is. Bring them uh, tomorrow or something. If you can look at it Is there,
+00:09:47 Speaker 2
+Any specific knowledge that you wanted to like uh use for of focus into the findings? No,
+00:09:53 Speaker 1
+This is good. Mean at this point, you start talking about what is the biological relevance of this? How does this mean butum cause you got enough, Subgene ontology analysis. Cool.
+00:10:03 Speaker 3
+Um, I know last week we ended up talking about like doing Panther analysis. Do you think it'd be So that's the same thing.
+00:10:08 Speaker 1
+If you're doing this sort of differences, that's okay. Oh, okay. Yeah, Panther is just a suggestion. There's a lot of different tools out there. At one point, there were probably fifty different tools out there for gene ontology analysis I've written one of them, which we didn't keep developing because.
+00:10:26 Speaker 1
+It was good for a specific purpose. It didn't. Oh, there is an eraser right over there on the right. Don't ruin your arm. You don't want to grow out a blue arm ;. It's going to be you that it worked for. I actually was looking at false positives about this. ;, you do get some false positive terms, so be careful—some of the terms won't make any sense, right? Given how strong melanosome was, I suspect it makes sense, okay—there is probably something there, and I can't remember what the link is between melanosomes and nerve cells. It could raise a relationship.
+00:10:56 Speaker 3
+Oh, okay, cool.
+00:10:57 Speaker 1
+Um, let's see what that is. Mhm. And, some of those may, if they look odd and they have a small number of genes. It's probably a false positive. Okay. It's probably just by chance that gene is involved in multiple different aspects of the cell. And so it just lit up this term over here, even though it's not relevant.
+00:11:14 Speaker 3
+Okay, so stuff like theum ribonuclease inhibitor would you say that falls under that?
+00:11:20 Speaker 1
+How many genes were involved in there?
+00:11:22 Speaker 3
+It was like less than 25.
+00:11:23 Speaker 1
+Twenty five or less. Okay. Yeah. Uh actually that would be relevant given the context because you're looking at a high level of dialogue translation, also transcription.
+00:11:30 Speaker 7
+There's a lot going on in the cell. uh so i wouldn't throw that one out. okay, got it. Uh there are ways to actually do an an fdr or some false positive rate with gene ontology analysis, too. So not only are you looking at your genes and which ones are are false positives, all right in the gene ontology analysis, which terms are false positives, you can can layer all this. Okay. Yeah, i mean, you don't have to for this, but.
+00:11:52 Speaker 1
+Be aware that you'll have some that don't make any sense.
+00:11:54 Speaker 3
+Okay, yeah, good to know.
+00:11:55 Speaker 1
+But just make sure you show how there's nothing wrong with your back.
+00:11:58 Speaker 3
+Okay, yeah.
+00:12:00 Speaker 5
+Soum obviously, we're looking at the gene ontology, and there's like the three subsets, like biological process, cellular components and molecular function Yeah molecular function. Could you like explain exactly how to differentiate those more clearly, because I mean like we've been looking at them.
+00:12:18 Speaker 1
+Foggy, it's very philosophical.
+00:12:20 Speaker 5
+I'm very confused.
+00:12:23 Speaker 1
+Because biological process is more of an abstract concept. Molecular function is a specific chemical reaction, basically. It could be binding, which is a kind of reaction. It could be an enzyme conversion. It could be anything like that where it's a very specific function, like chemical function. So, think of the molecular functions as the biochemistry, biological processes. What is the goal of the cell if it was human? If it was thinking, what would be the goal of this thing? So, transcription is a goal.
+00:13:02 Speaker 8
+RNA polymerase activity is a molecular function in biochemical. Does that make sense? They're they're the same thing but different ways of looking at it.
+00:13:13 Speaker 2
+Abstract label and.
+00:13:15 Speaker 1
+One is like you can think of it as a goal, as if you are anthropomorphizing the cell. The other that's your process. The other is the biochemical reaction.
+00:13:25 Speaker 2
+Can I ask a question relevant to the paper? Do we have time? Try because.
+00:13:31 Speaker 1
+I think this helps for everybody.
+00:13:32 Speaker 5
+Yes, so the original, I need to write this down. So, the original paper it's what cookie milk? Oh okay. Original paper is looking at the the goal of it was to look at like transcription factors. And then by looking at these like transcription factors, um, it found. It found like some pathway that was like utilizing these. Yep. Um transcription factors, Like it was using the resources, but it wasn't these are all related to like growth. Yep makes sense then this.
+00:14:14 Speaker 5
+A pathway is not related to growth. That's the AHR. So, so would it be? So, my question is: these transcription factors that were identified in that publication, How do I know where they would fall like biological cellular component and so on?
+00:14:33 Speaker 1
+Because they'll be in all of them. So, a single gene isn't just in one of the ontologies;. It's in all of them. A single gene can map to multiple different Gene Ontology concepts. That's kind of okay. So, so is the goal to look at.
+00:14:51 Speaker 5
+What categories is he?
+00:14:52 Speaker 1
+Is the category to get a summary of the genes to what their functions are and what's in common with the function of those genes? It's sort of a big picture. It's instead of looking at every single tree in the forest, you're saying, well, what's the nature of the forest as a whole? That's what it's trying to do. So each of those areas here there's five outta ten and six outta twelve. You may have the same gene in both of those. Okay. At the bottom. One of those genes may be in common between the two gene ontology terms as well as the two parent terms and everything else above it. Because if a gene is associated with, say, the five out of ten, it's associated with all the parent terms also implicitly. It's a little bit outside of the scope for this class. That should be something you should talk about in algorithms. You does? Awesome.
+00:15:32 Speaker 5
+I'm next stay tuned, Okay, I'm I'm just having a hard time understanding. Like, once we identify that, Like we say it, like we confirm AHR is in fact, utilizing these transcription factors. Okay. What do we go from there?
+00:15:52 Speaker 1
+I mean, you have the different gene ontology terms. That'll give you a big picture view of what is in common with the genes are differentially expressed. That's the reason we do the gene ontology analysis.
+00:16:02 Speaker 2
+Yeah yeah patterns yeah.
+00:16:04 Speaker 1
+Now that might, For future work, Lead people to look at other genes that are on the pathway. And then why or where are they not involved in this process. Kind of like you can generate more hypotheses basically later on. But basically, the gene ontology terms will tell you if you're on the right track also. They'll tell you looking for seeing gene ontology terms that make sense, Then presumably, we did the experiment in a good way that we're able to pull out genes that we'd expect to see in certain groups of genes. We'd expect to see.
+00:16:36 Speaker 1
+Yeah. It'll also give you a relative importance of them too, if you look at their FDRs on those statistical analyses. Cool.
+00:16:46 Speaker 8
+Alright, thank you. Thank you. No worries. You ready? Yeah! Oh! Like a little jump test to see who wants to go first? The.
+00:16:56 Speaker 9
+Declaration, there was another question. That's what I'm like, we're down here now. We're all getting up and standing.
+00:17:04 Speaker 1
+All right, here in the middle.
+00:17:07 Speaker 1
+So we want to start a little literally because they went. I had them set out, which was good. You didn't miss much though. Is there like a midpoint? I am going to go across the bottom right now. Ooh, it's animated!
+00:17:28 Speaker 9
+All credits to the graphic designer who drew these.
+00:17:33 Speaker 8
+There's actually gonna be figure one on our favorites. There's actually gonna be figure one on our favorites. Okay, watch the floor. I just think I want more sight that comes in less water. Whoa!
+00:17:46 Speaker 2
+Love this.
+00:17:50 Speaker 8
+We have to all the answers. What's.
+00:18:01 Speaker 1
+A determinant? Green. That's one of them green, If green is defined, then Yoda's a frog. That's true. Not the best taxonomic classification system. I am green, therefore I belong together. Plants and frogs are all the same thing.
+00:18:22 Speaker 8
+All right, what do we have for content? To be said for real, There is not too much on this slide, just because a lot is very much in progress, and we didn't want to present something where it was like not close to a final product. So. It can present each topic. It can present each topic. This was this is what ultimately came out.
+00:18:43 Speaker 9
+When I did the p value stuff finally. So you have p value on the x axis, distribution of counts on the y. Very very different distributions when you're talking about comparing just pure developmental stages versus comparing treatment versus control. Actually that makes sense though, which obviously makes sense. You have a lot of obviously very significantly differentially expressed genes when you compare the developmental stages and the treatment versus control. You have about a bimodal distribution for the most part in terms of genes that are expressed versus not expressed. It seems that in the younger stages, there's a bimodal distribution between expressed versus not differentially expressed. I would never say "expressed" versus "not expressed."
+00:19:33 Speaker 9
+Oh yeah, relatively. There we go. Yep. Um, it seems that the younger pup, That the um younger stages tend to have more of the bimodal distribution overall, when we're looking at our p values. The order they're listed in the order neurolo then tail bud then tadpole. So tadpole's a little bit so tadpole's a little bit less Yeah. Um I'm surprised there's not more differences on the left, I'm honestly a little bit surprised too, but it could also be, it could also just be some bias by the visualization as well.
+00:20:11 Speaker 1
+Oh, it is because your axes aren't the same. Yeah. The center one is way bigger. Yeah.
+00:20:17 Speaker 10
+It's also eighteen twenty eight thirty eight in terms of days, so there could be like earlier like towards eighty two that is higher.
+00:20:26 Speaker 1
+Yeah, I would expect the middle would have the most, which it looks like. It doesn't though.
+00:20:34 Speaker 1
+Because the the zero, oh, wait. P, value is zero height. Most significant that might I was looking at it backwards. So okay, that makes a lot of sense. It does have the most differentially expressed genes, comparing the temporal those middle stages, middle stages. There's a lot of stuff going on developmentally and lots going on very fast. Yes,
+00:20:51 Speaker 8
+Yeah, You got.
+00:20:52 Speaker 9
+This is bigger in the middle. Yeah, that makes sense. Yeah, um in terms of things in progress that we don't have too much to report on I since. I emailed you. I've been working on refining Go. I meant to, I meant to get that all working last night and then and then I blocked in on other things. And it didn't happen. I've set it, I've explicitly set it aside that I'm gonna do it tonight. Um, but thus far, I took your suggestions fixed. The we were having some issues with overlapping in representing um up in terms of graphically with uh we're also having and also.
+00:21:31 Speaker 9
+I had to make a switch and use uh Go IDs in place of just like raw pathway classification. Um, I also so I got it in the time since I sent you that email, I got all the ones for biological processes all going and working well. I still have to make the networks for those. And i also i might run on the upper components within Go. But I don't necessarily feel that they're the most relevant in general. I have, if we have time, sure. But I just think that there's other things that are more relevant in terms of what we're up to. Um, Max has been working on getting CAD working. Um, if you want to talk about that. It's running okay. Yeah, It's running We'll. See you come to it What. Are you using to do the CAD analysis? I'm using the API on GitHub because I couldn't get the Org Oh.
+00:22:31 Speaker 1
+Interesting. She was really their website, and they're allowing you to do with it. Yeah. I think there's a page access to that.
+00:22:38 Speaker 9
+I found the documentation online, but it hasn't been updated since twenty twenty four December But I mean, it's it's running so.
+00:22:47 Speaker 1
+About ten years ago they put cake behind a paywall. That's interesting. Now, maybe for parts of it in the Wolfsprout, I can't remember which parts they were, That's right. If you wanted to download the entire KEGG, you had to pay. It was like a thousand bucks a year. Oh, wow. Um, which is probably more now. But that gives you the entire structure, all their data files so you can do your own analyses. Um, and that was so they could stay alive. So what? And this is actually a very common problem with a lot of biological bioinformatics tools. : is okay. Initially, they got grant funding to develop KEGG because it was something that was new, and we needed it to show which genes are in which pathways and how they're in the pathway.
+00:23:25 Speaker 1
+What are the links between them. Nobody had actually done that and set up a data set like that, uh based on the literature and what was actually seen for these interactions. Uh great they got their funding for four years. So their four years is up, they go to renew it, they're told no we don't renew database projects. Do you see the problem? The National Science Foundation will fund development of databases, and they'll give you four years to develop it. And then you got to figure out how to fund it. And nobody has.
+00:23:55 Speaker 4
+That ahead of time and weren't working on getting your funding going forward. What kind of funding? Good luck.
+00:24:01 Speaker 1
+Yeah, exactly. There's no funding out there to continue a database. You want to develop it, there's money out there for grants if it's something new and novel. If you want to keep it going, you better find a charity to sponsor you. That's literally what they how they do it. Uh, it's a major issue in my practice when developing databases is that similar issues, Um. Some of them rely on volunteers to get things to go, and some of them they use paywalls. That's how they do it. So basically, All the labs that are paying to you to get the entire kit are paying for probably a couple of staff members to work there and keep it maintained. It's probably not even being for the PI ;, they're probably getting solid their publications periodically, but I'm not getting much out of project.
+00:24:53 Speaker 1
+And that's our project study. Can't get struggled if they say they didn't see the flow so far. Yeah, it does, but it's a reality in mathematics. You develop a tool, Great. You develop it and you got funding to develop it and test it out. That's it no more maintenance. You wonder why a lot of projects disappear? It's part of it there is funding to develop things not to maintain them.
+00:25:18 Speaker 9
+Um other things to report?
+00:25:23 Speaker 9
+We the paper is in a really good place. I think you'll be really happy with where things are at. Dakota did a really outstanding job on getting our introduction mostly finalized, so things are chugging along. Um, we also have more context.
+00:25:39 Speaker 5
+Okay, go for it. All right, get a couple of minutes. Let's go.
+00:25:47 Speaker 4
+Apple skin water.
+00:25:54 Speaker 4
+Toads are also frogs. The word toad is usually used for frogs that have dry or warty skin. The Australian water- holding frog is a desert dweller and can wait up to seven years for rain.
+00:26:09 Speaker 1
+Does it burrow for those seven years? Yeah, it's very common, even going back.
+00:26:14 Speaker 9
+To frog facts four.
+00:26:20 Speaker 11
+Toads, frogs, but frogs aren't toads. It's like what we're is that the kind of classification that we're talking about, like squares or rectangles or rectangles are squares. This is irrelevant. Does that make does that make any sense? Yes. Okay.
+00:26:38 Speaker 1
+According to Google, that's exactly right.
+00:26:42 Speaker 5
+Do, they burrow in the soil or the ground to absorb the water from it? Or to keep cool?
+00:26:49 Speaker 6
+What's.
+00:27:27 Speaker 4
+They escape into water from their burrows after flooding. They spend most of their lives on the ground.
+00:27:38 Speaker 7
+So they go during the flood, they kind of open their burrow, fill it up and then they stay in the ground. That was a little bit only Kermit does that.
+00:27:50 Speaker 1
+Only carpet those ones. So in terms of burrowing, The reason I ask this is because I know that frogs in the northeast where we have to overwinter, they will burrow for the winter. Yeah. Down into deep enough they don't freeze or they freeze and it's not damaged. So. I think this is the last one.
+00:28:07 Speaker 4
+The marsupial frog keeps her eggs in a pouch like a kangaroo. When the eggs hatch into tadpoles, she opens the pouch with her toes and spills them into the water.
+00:28:17 Speaker 10
+Actually relevant to our project because we're working on embryonic development and development to becoming a tadpole.
+00:28:25 Speaker 1
+There are some species of frogs that will partially protect their offspring. Most of these leave them, but there are some that do this.
+00:28:39 Speaker 4
+The Costa Rican flying tree frogs, who jump from branch to branch with the help of their feet, moving between, The frog's fingers and toes extend out, helping the frog glide. This was the last one. Thank you.
+00:28:56 Speaker 8
+And then this is the very frog. The hairy frog. The hairy frog. What are the hamsters? We'll open up Mecca phylogenetic tree with frogs.
+00:29:12 Speaker 1
+And can you show me where the toads are in the.
+00:29:48 Speaker 2
+We.
+00:30:03 Speaker 12
+Plotted these on a log scale the other day by adjusted p value.
+00:30:08 Speaker 13
+Is the version that only shows from E negative ten to smaller. The original version was much harder to read.
+00:30:21 Speaker 1
+The more you zoom in, the easier it is to see where that bend point is. That's a pretty clear bend point there.
+00:30:26 Speaker 11
+That is also extraneous.
+00:30:29 Speaker 1
+So how many genes does that leave you? Fourteen? Did you find anything about them?
+00:30:35 Speaker 12
+Yes, So we started to make separate plots and just use the one that goes over. The log two will change values, So we count the ones that are upregulated in the tumor samples or in the samples in general, and then the ones that are downregulated. And then after that,
+00:30:52 Speaker 1
+One second is an ion transporter. Looking at the upregulators, SLCs are cation transporters. I believe they're definitely ion transporters. All the SLCs are well We can go into their gene ontology analysis. Should we? Okay, so I know what some of these genes do. Oh.
+00:31:11 Speaker 12
+That's a great. That's terrifying. Yeah, For the rest of us who can't sort out that team ontology analysis plots as well as we saw from some of the other groups, but we have um the two more upregulated genes here, Actually, those are the four we saw before and some of the main uh things we're seeing are related to reactive oxygen species, which makes sense for um.
+00:31:42 Speaker 12
+Some information for the discussion. We also have.
+00:31:47 Speaker 1
+Yes, actually, let me go to you first. So, that's a very common thing in cancer cell lines that you wind up with a lot of reactive oxygen species that will further increase your mutation rate, which allows us to evolve better. Yeah, so it's an adaptive strategy. Well, Vulnerable worse, depending on the tumor is concerned.; it's evolving in a positive way;. It's evolving due to its environment.
+00:32:10 Speaker 1
+So, it's a very common thing for it to want to increase its mutation rate. You'll see in a lot of tumor lines that there are things that will either induce chromosomal stability or disrupt this natural pair, for example. They're very common. The MSH gene, MLH 1,
+00:32:27 Speaker 13
+They're talking about. We should probably try and get these on the same scale if we could. Couldn't hear it. Could one of them go like up like based off of the size of the title? Like uh. Text on the side. So, no, I meant at the bottom. At the bottom. Cause one of them is zero to a hundred, and then it's zero to sixty something. Yeah.
+00:32:48 Speaker 1
+So the cholesterol metabolism doesn't surprise me. What do cancer cells do a lot? Grow. Grow, what's involved? Using resources. Dividing, you have cells dividing, what do you use cholesterol for? Uh membrane cell membranes yeah dealing with the plasticity that's uh flexibility, So yeah, it wouldn't need a lot of cholesterol to be rapid. That's a very common thing for. Three secretions in a row. What's GNRH again?
+00:33:19 Speaker 12
+Gonadotropin something hormone protein. Okay, answers this? Uh,
+00:33:24 Speaker 4
+You have the cellular carcinoma. This.
+00:33:31 Speaker 12
+Is in terms of interesting. This is without tumor dog regulatory genes though for this cancer. Okay, So this is the downregulated.
+00:33:41 Speaker 13
+Wait, why would cholesterol be downregulated? No, these are the upregulated. Why would cholesterol be downregulated?
+00:33:47 Speaker 1
+So no, there's upregulated genes here. This is for shiny go here. This is for your K upregulates. So this makes sense. Is it? Your downregulates are all below this row.
+00:33:56 Speaker 13
+No, uh,
+00:33:56 Speaker 12
+This is so. Oh,
+00:33:59 Speaker 1
+That doesn't make any sense.
+00:34:01 Speaker 12
+It's like titled like.
+00:34:05 Speaker 1
+That doesn't make any sense. Why would that be downregulated? Yeah, that doesn't make any sense. It should be increased. I.
+00:34:13 Speaker 12
+Think because this is like normal like liver cell function, I thought it made sense that it was.
+00:34:19 Speaker 1
+Oh, you're right. Yep, because it's starting with liver cells to begin with. Yes. So it might be downregulated then.
+00:34:25 Speaker 13
+Yep If, those are things that liver cells are already doing to a high degree They do for other purposes,
+00:34:30 Speaker 1
+Too, yeah Liver cells use for other things besides cell membranes Yep.
+00:34:34 Speaker 13
+They could be doing a lot of cholesterol metabolism. It's still less than a healthy liver cell.
+00:34:41 Speaker 12
+Okay, let me do the same thing for molecular function. Um, I can try to see about making the plots like more visible with the scales and everything. I'm not sure how to do that in shinygo, butum, I can look into that for the next draft. But then we went through and made.
+00:35:05 Speaker 12
+So the non- tumor.
+00:35:11 Speaker 11
+So Yeah, as we say, the normals on the left. That's the light blue at the top. Uh, tumors on the right, they're red on the top. Um.
+00:35:20 Speaker 1
+And then a very good thing that they are differentiated in plates that you don't have any overlap in them, which you sometimes get. So that's good.
+00:35:26 Speaker 11
+And on the right hand side, you can see all the genes themselves, but I mean, essentially what we just showed you, yeah.
+00:35:37 Speaker 11
+But you can very clearly see the splits.
+00:35:41 Speaker 1
+So what I will point out is when you had with the overall, are they up or down regulated, that's an average, right? This is showing the individuals and how they change. You can see some individuals are a little bit different which genes are affected. But there's a lot of commonalities there. So Numb 4 in tumor cell lines, some of them are blue, so meaning they're neutral, which is okay on the average, Downregulated, which makes or is that upregulated? Which makes sense. Yeah. Um.
+00:36:12 Speaker 12
+Yeah, So we can see that split between the downregulatory versus for the most part,
+00:36:18 Speaker 1
+Like I want to check. I want to see NOS 4 is involved in vasodilation. The NOS genes are tied to your blood vessels and that they're dilated, or you know what are they doing? Are they open or closed? It wouldn't surprise me to see a tumor cell increasing blood flow in its vicinity because that's where it gets all its nutrients from. That'd be a really cool one.
+00:36:43 Speaker 12
+So, yeah, we're just working on the draft. Other than that, we'll work on interpreting the figures and having discussion. Yeah,
+00:36:52 Speaker 1
+And if you look up those individual genes, I know we talked about it last week to see what their individual functions are. Yeah.
+00:37:00 Speaker 12
+Like random screenshots of like when you go into shiny, go in it like the first table will give you like what's the. So,
+00:37:09 Speaker 1
+If you put in their gene symbol, followed by gene and a Google search, it'll pull stuff up very quickly. Yeah. Uh, I'm gonna try to find some papers that are tied to their function too. Uh, you can use that your discussion. But I know the NOS genes are typically tied with blood vessel control. Um S L Ps are ion transport regulators A and G.
+00:37:30 Speaker 1
+PTL, I am guessing that's angio something. It would not surprise me at all in a tumor cell line to see things tied to try to recruit more blood vessels and more blood flow. That's a very common strategy in tumors. Can you grow something? That's probably just one of the drugs they use for chemotherapy. It blocks new blood vessel growth, so it starts really effective strategy. They developed that probably twenty years ago in early trials. The tumor they could actually see under it, and much sure, it was shrinking. It was amazing. That's one of the most effective types of the drug out there. The problem is.
+00:38:10 Speaker 13
+I can imagine side effects.
+00:38:12 Speaker 1
+Yeah, it affects the rest of the person too. So, there are other things to increase blood oxygen, which then in turn, lessens the impact on the tumor to increase the number of red blood cells because you also lose red blood cells when you're undergoing these with some immunotherapy. And so that's where some of the side effects of chemo therapy comes from, is low oxygen.
+00:38:33 Speaker 7
+And I can also imagine that it might be bad if you're injured. I don't know how that would affect, you know, healing from a like a paper cut or something.
+00:38:43 Speaker 1
+Uh, I don't remember everyone say it's it's tough with uh cancer patients.
+00:38:48 Speaker 13
+Cancer patients. If you're if you're inhibiting new blood vessel growths, I don't know if that's giving to blood vessel repair. What?
+00:39:01 Speaker 1
+So those are the ones that are clustered, and not all sporadic tumors all over the place. They fall into this strand. Very cool. Yeah, every tumor has its own evolutionary pathway, although they're often common elements. Sometimes they converge back on it, you know? They didn't start out this way and then later on came that mutation. So that doesn't spread until later. That's very good.
+00:39:31 Speaker 13
+It's also interesting the Australia paper that the dataset is from. A lot of their analysis that they showed was just looking at, you know, all of these relative to another dataset and looking at, you know, specifically pre- identified oncogenes.
+00:39:55 Speaker 1
+It's very common. Most people want to start saying," Hey, we know these genes are often involved in cancer." Do we see them? Some groups will say," I only want to look at those genes and see how they're changing," which I think is cutting themselves short. We probably should get two more groups. We got about ten minutes. And it's mostly my fault. As we get towards the end, and you start getting these exciting stuff, I just want to talk about this for hours. You're getting good stuff.
+00:40:22 Speaker 6
+Not a lot.
+00:40:23 Speaker 8
+We don't have too much, but you can.
+00:40:25 Speaker 4
+Yeah, go ahead, go ahead.
+00:40:27 Speaker 8
+No use. Okay. Oh yeah!
+00:40:35 Speaker 14
+It's gonna be fun watching you guys. The genes that we're looking at. I realize now that I actually did not change theum the threshold for significance because I just used the standard three zero point oh, five, which was wrong. Especially since I knew what should have been used. So, that's why we see like such large numbers of like genes that were eliminated as well as like the annotated needs that they found. Hold on,
+00:41:30 Speaker 1
+Let's see what you're getting here. Yeah, Rebecca, So this early value good. Oh, was it bad? Uh, five hundred twenty- seven is not bad. Yeah, you expect a little bit more than that. Less than you expect on that one. So theq- value median signaling. Could you remind me again what your project was?
+00:41:53 Speaker 14
+So, we're looking at bank pools, and we're trying to identifyum the expression of genes for those who are. Infected and not infected by Lyme disease.
+00:42:07 Speaker 1
+So, that makes sense. So, I'm a little surprised there's less genes there. I expect more in the first one.
+00:42:16 Speaker 14
+In the first one? Yeah. Yeah.
+00:42:18 Speaker 1
+Pretty also doesn't surprise me, You got Oh yeah That's unexpected. That does surprise me Oh no The point twenty eight isn't twenty eight percent It's point you'd expect less than one Okay that makes sense then. Okay, expected. I misinterpreted. Now, they see the second row that it's more than one. ;. It's not a percentage. That's how many genes you expect to be differentially expressed in this term. The way they do this, if they don't do this algorithm, just let me know for those who have taken it. Um, the way the enrichment analysis works is you say, "Look in the overall data set," we had.
+00:42:58 Speaker 1
+Five percent of genes were differentially expressed. You look at every single term and say, "Well, if we had five percent of those differentially expressed, We'd expect this many genes to be differentially expressed in this term associated with this term. " And. So in this case, you have a point two, eight ;. You expect zero, maybe one, maybe one gene associated with the term to be differentially expressed. You have five, so twenty more than expected. So that's why that's very highly significant. So that makes sense; you have a lot more. Okay, that's a good thing. Same periolesis. Okay, this is a normal inflammatory response. Okay, Fatty acid transport is often tied to white blood cells. Because, again, those are the rapidly dividing tissues. So they're the.
+00:43:58 Speaker 1
+Well, actually, they're rapidly regenerating their cell membrane. So, there is a lot of fatty acid transport as well as there should be cholesterol transport in the cell membrane. But yeah, so it kind of makes sense. The intracellular signaling response, inflammatory response. Hypertrophy inflammatory response. It's just probably a term under inflammatory response. If you look at those two. Genetics six nine five four and seven zero two six nine. I am willing to bet that the smaller term with less genes associated with it is a child term of the general inflammatory response. Uh, if you look them up, they probably relate that way. Again, none of these are independent of each other. Cool. This all kind of makes sense.
+00:44:47 Speaker 14
+Yeah, so I am guessing it might look a little different, especially with the numbers that we found once I actually change it to.
+00:44:57 Speaker 1
+Butum, I think point five is okay for this analysis.
+00:45:00 Speaker 14
+Okay. Yeah, and then.
+00:45:04 Speaker 1
+And that's how they're related to each other? Yeah. Right, those are the genes involved, okay?
+00:45:08 Speaker 14
+Yeah. These are your genes,
+00:45:10 Speaker 1
+Are there lines between terms or lines between the red terms and the blue genes? Oh you mean between terms?
+00:45:18 Speaker 14
+Yeah no,
+00:45:19 Speaker 1
+There's no lines But. There's a common gene between them actually I'd like to see where these all fit in the hierarchy. You can use something like Cytoscape, But instead of having pathways with all the enzymes and such or so, you have the gene ontology set up in a diagram. You can see which you can color code which terms are significant. You'll see there are clusters. There's often a parent-child relationship of some sort, usually parent for most of these. It's very common. Cool.
+00:45:56 Speaker 1
+Thank you, Congress. Awesome. Last group. You have five minutes. Thank you. Sure. Okay, thank.
+00:46:10 Speaker 8
+You. Sorry, I can answer roll call vote questions.
+00:46:31 Speaker 10
+I Just cut my phone in my pocket. This week we mostly just worked on work. We mostly worked on the paper and didn't do too much analysis itself, so we won't have any new figures. I think we might have made some changes just to make them prettier, but I can't even remember what we did for that. But mostly what we worked on is uh under interpretation of it so.
+00:46:59 Speaker 10
+I'm forgetting what we said. We can scroll through some of them and see what we figured out. But. One thing we noticed a lot of is ribosomal related proteins, and proteins involved in translation are really underexpressed in the sepsis cases, which makes sense because it's focusing more on survival, so those aren't needed. Whereas like negative regulation of mitotic sister chromatids, so basically negative regulation of pathways involved in mitosis.
+00:47:29 Speaker 10
+Are upregulated so factors that decrease mitosis are upregulated thus to decrease mitosis, which also makes sense because it doesn't want to replicate when it's under attack. Yeah. So go ahead question,
+00:47:47 Speaker 1
+Do you have any terms that came up with significant that were tied to things like amino acid synthesis or nucleic acid synthesis? No.
+00:48:03 Speaker 10
+I Have to like go through but of these top ones now. When, we're comparing the time points versus time points against each other versus sepsis versus healthy versus month six versus day four, month six was a lot more similar to healthy because they're farther into recovery, which is interesting. Um, but the way that the sepsis versus healthy um, The way to this, that the month, day, four versus month, six and sepsis versus healthy distinguished from each other is that they are pretty similar in what's um depleted, But sepsis tends to have like more extreme log fold changes than the temporal differences.
+00:48:58 Speaker 1
+Any depletion of anything that might be tied to biosynthesis things. The reason I was asking, it's extremely common in plants, But you sometimes see in mammals that an immune response can involve starving the pathogen. If you reduce the production of nutrients, the pathogen can't grow rapidly or at least slow down its growth. It doesn't surprise me, you wouldn't get it in the blood though, because if you reduce nutrients in the blood, what's happening to the rest of the body? Yeah, you are killing pathogens. You are killing the pathogen too, so that kind of makes sense with the plants and the animals that respond. It's usually localized. So with animals, if there is a wound and there is necrosis, sometimes it'll reduce production of nutrients of organic nutrients in the area. Plants absolutely do if you nick a plant in an immediate area, sometimes you start reducing nutrients to actually start necrosis and killing cells too. But also reducing.
+00:49:59 Speaker 1
+Or no, in apples. Um, It's going to reduce how much you're building up those nutrients that can be used by the gut. So, fill what's out there, which is okay. Interesting. There'll also be response stuff in there too.
+00:50:15 Speaker 10
+Yeah, A lot of yeah, a lot of what I was just asking about is kind of the inflammatory reactions. And kind of stuff like that, but you go ahead.
+00:50:29 Speaker 10
+Yeah, I mean, yeah. Some things that have been really too. In sepsis, Each patient typically has a different pathogen that they're reacting to.
+00:50:43 Speaker 4
+And different immune systems. That does create a challenge when you're trying to measure consistencies.
+00:50:53 Speaker 1
+Because each patient is so unique. Yeah, there's different immune responses. Your pathogens to some degree. The.
+00:51:03 Speaker 10
+Distance matrix have a couple ones that are so. Expression. That's good.
+00:51:13 Speaker 1
+I think we are at time. Uh, group work on Thursday. Whoever put up the BioFachs Club thing, please erase the whole board over there. I am looking at the two of you because I suspect that's who it is.
+00:51:28 Speaker 1
+It's okay. I'm glad you have it up there. We can't leave it for the next class. So please raise mine too. Thank you.[ laughter] It wasn't you,
+00:51:37 Speaker 8
+Was it? Oh. You let Sam take the blame? Oh.[.
+00:51:45 Speaker 6
+Laughter] I know what's going on here.[ Laughter].
+00:51:58 Speaker 2
+I'll review your input like comments on your stuff.
+00:52:02 Speaker 3
+Yeah, besides that, not right now. I think I'm so sorry, I can't hear you because honestly, I don't know what we're gonna do tomorrow. But we just have more time working on the paper tomorrow. Yeah, yeah. It's good enough for the second draft, you know. I mean yeah,
+00:52:14 Speaker 2
+I think we're in pretty good position for a second draft.
+00:52:17 Speaker 3
+So if there's no specific action items yet, we can reevaluate tomorrow.
+00:52:21 Speaker 2
+Alright, so i'll justum i'll just go over briefly. I i scanned. It looks pretty good with your part. I'll just. If I have any feedback, I'll put it. Yeah, just put as a comment. As a comment, exactly. And then uh what do we do with the uh version of uh Sam? Do we convert it into whole category? Oh you said you'll have it by eight or ten, right?
+00:52:42 Speaker 3
+He said he'd start working on it at eight o'clock. I think so. It'll be done by then. I'm not worried about that.
+00:52:47 Speaker 2
+No, I'm just saying for us to provide feedback before the ten yeah Yeah,
+00:52:52 Speaker 3
+I guess before eight,
+00:52:53 Speaker 2
+Yeah. Yeah hopefully if it's by nine that's fine, because we can do it quickly. Yeah.
+00:52:57 Speaker 3
+Okay, I'll I'll ask.
+00:52:59 Speaker 2
+Yeah. And if you think of anything else that I should focus on,
+00:53:05 Speaker 3
+For theum for the multi- figure, um let me just focus on this. Yeah. For this figure, do you have a version where the specific terms have the exact go number? Because see I would just Oh,
+00:53:17 Speaker 2
+I see. I know what you're saying. Yeah Uh put it in the message in there. I can change the code.
+00:53:21 Speaker 3
+It's in the message so.
+00:53:23 Speaker 2
+No no sorry and, I mean, put it as a in the Google Docs as a yeah. Cause I'm gonna go over all the feedback that they you gave me, right?
+00:53:31 Speaker 3
+Okay cool. Oh okay yeah.
+00:53:32 Speaker 2
+While I'm while I'm writing yours. So I'm gonna take care of those other things.
+00:53:35 Speaker 3
+Yeah cause I can do the write up for that figure without it, but I just think the figure will look better with this one.
+00:53:40 Speaker 2
+That's the first thing I'm gonna do. So do it as soon as you can. That's the first thing I'm gonna resolve. So that way it doesn't block here. Awesome thanks man. No problem. I don't have class today.
