@@ -1,0 +1,326 @@
+00:00:05 Speaker 1
+Very Nice. Okay. Alright, yay! Who's going next? Here you go, thank you.
+00:00:38 Speaker 1
+Oh, Can we get everyone group to come by one side of dice? That's a one- sided.
+00:00:44 Speaker 3
+Dice. It's.
+00:00:58 Speaker 1
+A Mobius strip. Oh wait, those are so cool. It's a Mobius strip dice. Wait, can I see it?
+00:01:06 Speaker 3
+If you have a Mobius strip and you uh cut down the middle, I can't. I'm pretty sure they end up entangled. Is it tangled? Yeah. Yep, cool. Yep.
+00:01:19 Speaker 1
+So read that one quickly instead of this one. The dice are telling me it's true that we have to go. Anyone want to place a bet? It's a one, I win?
+00:01:30 Speaker 4
+Okay, all you go for it. So, Um, last week when we pulled up our go ontology analysis, we were only doing it. We were only doing comparisons within the wild type because the way this study is organized is there is a leg. A surgery is done on both legs of the mouse, But one has a crushed nerve, and the other leg doesn't have the crush nerve. And then we have two different mice with different genomes. One is just the regular genome, and the other one has the H R gene knocked out. So last week, it was comparing the two legs in the wild type. This go. Ontology analysis is comparing the two legs.
+00:02:03 Speaker 4
+In the AHR gene knockout genome. So, Typically, what we're expecting is the paper suggested that when the AHR gene is knocked out, It produces or less stress signals are being produced in the mouth, allowing for axon regeneration to occur. So ideally when we're looking at the gonadology analysis, we should be looking for comparatively to the last one in the CKO um In a gene analysis, We should be looking for more pathways correlated with axon regeneration, and we should see less pathways correlated with stress response to stress. And overall, what we noticed is that fold enrichment went significantly down. In our last go ontology analysis, fold enrichment got as high as like about 30, but the highest over here was just.
+00:03:02 Speaker 1
+Two. Oh, there we go. Yep.
+00:03:03 Speaker 4
+Okay. And so the first one is biological process, and again, It was very similar. Except with this one, we saw more mentions of pathways correlated with like apoptosis or cell death. Um interestingly enough, We also saw stuff like phosphate containing compound metabolic process, which is kind of just referring to like I believeum just like phosphate groups being added? Um. But, um, Go uh, biological process still had the most significance compared to other two groups, and I can scroll down and show those as well. But um, interestingly enough, Um stress response still showed up as like very significant, but again, it was less enriched. So instead of being like enriched to almost like third um thirty, it was enriched to like two. So um.
+00:03:58 Speaker 4
+We're kind of seeing what was suggested by the paper.
+00:04:02 Speaker 1
+So, E 1, those are all pathways involving upregulated genes, correct? Or is that because I'm seeing fold enrichment there? Yeah. Okay, so. So that could be different things: apoptosis and all those. And I'm not surprised to see it. You've got damaged nerves. Yep. What do damaged nerves do?
+00:04:26 Speaker 1
+Once a nerve is severely damaged, what does it do to itself?
+00:04:30 Speaker 5
+Once it's severely damaged.
+00:04:32 Speaker 1
+It goes through apoptosis. Yeah, usually. Uh, it's when you get blockages that you get issues. Uh, Where it doesn't go through cell death or programmed cell death that you get white matter problems. Because now it's not functioning properly right? Um In the mice, they will not regenerate the nerve cells because mammals don't As far as I know. Is there any mammals that regenerate? Any mammals? Yeah, I know. There's some of your reptiles, But.
+00:05:00 Speaker 1
+Many of them can't. Like like like regenerating nerves or whatever you know. There's, oh, there's mammals that can regenerate like peripheral nerves, just not central nerves, which ones. Which which mammals. I'm just curious. If I understand it correctly, I think like you know when you like get a, Caper cut where you cut like the peripheral nerve like regenerates and then. Oh, oh You mean like spawn from the skull Yeah, I'm not sure. I didn't I didn't look into that, But I just know there's a difference between like peripheral nerve regeneration and um more central nervous system. Yeah, this C N S yeah. There's, this very unique rodent in Africa called the naked mole rat that can regenerate skin.
+00:05:52 Speaker 1
+Skin tissue, but can regenerate nerves.
+00:05:55 Speaker 2
+It says skin tissue, sweat glands, nerve, cartilage, kidneys and heart.
+00:06:01 Speaker 1
+Okay. So this is what's there's no. So the reason I'm asking is sometimes if you do regeneration, the way regeneration plays out is a bunch of cells you get rapid cell division. And as the cells are dividing in this area, the ones that are where it wants, uh certain differentiated cells to be, they'll keep going. The other ones around it will go through apoptosis. It's especially common in development of the nervous system. When human brains are forming, There is a you think about babies are born with a whole lot of cells in the brain, right? A lot of nerve cells in the brain. There is a lot of apoptosis as one form of pruning, of cells that are not necessary in certain areas. Programmed cell death is an important part of nervous development.
+00:06:48 Speaker 1
+However, these mice are not going through regeneration, so that's not it. So, it's got to be just the cells were so severely damaged that they're apoptosing. One way you can look at is say, are these genes. I get this fold enrichment here, okay for the different genes involved where they up or down regulated for apoptosis. I'm willing to bet most of them were upregulated if not all. So.
+00:07:16 Speaker 5
+So we've got.
+00:07:20 Speaker 4
+Theum, I just wanted to also briefly go before that. Um, I saw more mentions ofum neuron- relatedum cellular components. So I thought that was interesting, considering we were specifically looking atum axonal regeneration. Um,
+00:07:35 Speaker 1
+It looks like repurposing of other nerve cells in the area. Yep. And yeah,
+00:07:42 Speaker 4
+Winner for GO analysis and then Sam do you want to? Oh, can you zoom out? Yeah, yeah. All right. This was exciting.
+00:07:49 Speaker 1
+So here we go. This was really exciting. So the fourteen. So this isum fourteen hundred thirty one. This is uh the papersum genes, differentially expressed genes that are both upregulated and down regulated. Um they put it through a filter called a response shift score. So that that's just how they got their not their numbers. So what do you mean by they're both up and down regulated? How can a gene be both? This is. Do,
+00:08:23 Speaker 4
+You mean like it's including genes that are specifically upregulated and genes that are downregulated?
+00:08:28 Speaker 1
+Maybe one is one color. No, it can't be though because you would have an intersection. No, The so the fourteen thirty one includes theum up and down regulatedum genes. Where do you see fourteen thirty one there? The thirty four. This this the overlap with thirty four. Oh, oh, there's fourteen thirty one are that are red. Okay, yes, thirty four overlaps with sixty one with the six twenty. So we had six twenty. The six twenty. So um we had two groups, we did ips um ipsilateral versus contralateral in wild type that got us that got us a specific number. Actually it got us um I forget it was like seven, oh, seven, oh, nine and eight thirty one, I think okay.
+00:09:08 Speaker 1
+Um, but anyway, It was the ipsilateral versus contralateral in wild type and then ipsilateral versus contralateral in um knockout. So that's this group and this group. Um, they together if you you know look at their intersection, They had six hundred and twenty genes that were uh, both in both wild type and a knockout. So, we looked at those yeah. And then we did a cross reference between the fourteen thirty one. They found, and the six twenty we found, which is a thirty four. And then I made, um, okay. So the top again is so this is the paper's findings. This is our findings of differentially expressed genes under each condition under both conditions.
+00:09:57 Speaker 4
+It's kind of a more overall analysis to compare what genes we found as significant and what genes they found as significant. Right,
+00:10:03 Speaker 1
+Trying to figure out why you don't have much overlap. It's not overlapping. Um, so I think so. There's there's a third Venn diagram. Um, actually it's not really important, but my guess is because our we use bend point. Um, Our significant genes came from like the bend point, like, what is it the cumulative? They had more so they their filter was the um oh my gosh response or response ship score.
+00:10:36 Speaker 1
+Or so is this comparing damaged knockout versus wild type or undamaged knockout wild type? What does the comparison give you the divergence across genes? I just the problem was I don't have labels on there. I don't know what it is. Yeah, I just made this figure. Is.
+00:10:57 Speaker 5
+Epsi versus contra?
+00:11:00 Speaker 1
+Contra, so they're all Epsi versus injured versus uninjured. Yeah. Under wild type and knockout, so you have four conditions. Then how do you do that? Do you differences for genes? You only do differences for genes with compared to different one thing is different. That's what these are. I just want to know the first one just so I understand. I am just trying to figure out what this means. So the goal behind that was to find the overlap between.
+00:11:33 Speaker 1
+So they found differences for genes differentially expressed how? Is it comparing among the knockouts, injured versus uninjured? Or is it the controls?
+00:11:47 Speaker 5
+Could you ask the question again?
+00:11:48 Speaker 1
+So for the pink one, they operate the thirteen uh the fourteen thirty one. Yeah. What is a differential testing differentially expressed? What's in numerator what's in denominator. Um.
+00:12:01 Speaker 5
+That they do,
+00:12:02 Speaker 1
+Yeah. Because without the context, it's just numbers, right? Yeah. So.
+00:12:07 Speaker 4
+What basically there was like five different comparisons possible. The specific comparisons we were focusing on were justum comparing nerve crushed and not crushed within.
+00:12:18 Speaker 1
+Yeah Is that what's in the the top one? Okay, so that's crushed versus not crushed. Not crushed Now is that in.
+00:12:29 Speaker 1
+The knockouts or the wild type. This is showing both. The fourteen. How do you do both?
+00:12:35 Speaker 4
+It's just the numbers.
+00:12:36 Speaker 1
+It's just the totality. Yeah, yeah, okay. So you've got two variables then. Then we so this is okay. So I'm not worried about the low overlap in the first one because there's really. It's not a controlled experiment. You have two variables. When you do a controlled experiment, you only change have one thing change.
+00:12:57 Speaker 4
+We should have. Two Venn diagrams, if we are really interested in comparing the totality and one for each genome.
+00:13:04 Speaker 1
+Thisum can can you zoom out? There's a Google comment I just placed about this. Okay, so can you scroll around this at all? Can you do the show more please? Soum the bottom right? That's the unique wild type DEGs compared to their down regulated genes. Can we process this? From the bottom right, unique. Unique to wild type. So the ones we found, genes are differentially expressed in the wild type. Yeah. And not differentially expressed, okay. And in they're down regulated. So out of the fourteen thirty one that they they had, like, you know, a spreadsheet, eight, eight hundred ninety eight I, think uh were um down. So, it is.
+00:13:56 Speaker 1
+So the blue is it's differentially expressed. So they're DE in the wild type and only in the wild type, not DE in the knockout. Yeah,
+00:14:20 Speaker 2
+Okay, potato and.
+00:14:24 Speaker 1
+No red though. The red is the downregulated genes. They all downregulated. Yeah, why not compare it to theirs? That is differentially expressed in wild type and not in the knockout. Why not make an apples to apples comparison? Does that make sense? This, um, You're saying compare our wild type, our unique to wild types that they're you're looking at things that are only differentially expressed versus the wild type.
+00:14:55 Speaker 1
+Yeah. For blue. Yeah. Why not look at theirs when we're looking at the first of the wild type? Oh,
+00:15:00 Speaker 5
+You mean theirs? Okay.
+00:15:02 Speaker 1
+So that's why it's an apple. These are real apples, or just a comparison? Yeah, oh, So I think what I did is that I assumed that the down regulator automatically under this wild type. Um, so I need to not assume words. Yeah, I know. So what I need to do is I need to look at these eight, ninety eight that are down regulated. Okay. And then I need to see which which disease belong to the wild, the wild type. Yep, absolutely. Yeah So but it didn't get a really good picture. Yeah Um okay So these intersections are much smaller in reality than they might be Well.
+00:15:52 Speaker 1
+Maybe maybe not. I'm trying to think how they did the the fourteen thirty one. I was not focusing on that. I was going to double check the paper and see where those came from. What was the exact conditions? Make sure you're doing a comparison, here's what they got under these exact conditions, here's what we got for those exact conditions. If you do that, that's awesome, that'd be good question so, When I made this Venn diagram, my first thought was, Oh, they they're doing um response uh response shift score. And we're doing a uh we're doing just the bend point. Right, that's how we were filtering. Oh in terms of it was so as long as it's under the same conditions. Were you doing the differential expression? That's fine. So from that can can we conclude that their their filtering process is too like lenient and.
+00:16:50 Speaker 1
+I wouldn't conclude anything until I know for sure where those genes came from. Like knockout or wild type, exactly. Yeah, because there are different ways to do the comparison. You could do wild type versus the knockout, what's differentially expressed. You could do crushed versus uncrushed. Yeah, you could do wild type crushed versus. Wild type uncrushed, you could do the knockout version of that. And then you can do upregulated versus downregulated. You could also, yeah, the other dimension of up and down. Yeah, absolutely. And you could do wild type. Oops, I did that backwards. Wild type crush versus knockout crush, which is actually probably your primary one looking to see what is the response. Uh and then.
+00:17:50 Speaker 1
+So, wild type uncrushed. This would be a control versus knockout uncrushed. Those should be the same if that makes sense. Sorry, what? So, the wild type uncrushed versus knockout uncrushed should be. Yeah, because they only had surgery on them. Yeah, okay. So, you know, there's lots and you can also then add another dimension of up versus down regulation. If you want to put it all in there. It is. Yep, you don't need to put them all in. Pick the ones that are important. What's going to give you an answer to a question? What's your hypothesis, by the way? Here we go. That's okay.
+00:18:30 Speaker 4
+What, we want to do is we want to see if ourum analysis is showing the same things that the study claimed to pick up on coming from AHR gene being knocked out. So our entire goal, Which is kind of what I've been what I emphasized with the GO ontology analysis, are we finding the same pathways increasing as they suggest? And then, what Sam's goal at least with the Mendel groups?
+00:18:51 Speaker 1
+One of the time, so with your goal, you need and it's absolutely that's good. Do it in a way thatum should. It's comparative. Correct, it is truly comparative where you're doing it under the same conditions, the same kind of conditions we're doing. Yeah. If you do that, that's awesome. Yeah.
+00:19:07 Speaker 4
+So. Then the next step with this is just to see how many of our genes are overlapping to see if we're actually looking at the same exact stuff that they're things doing.
+00:19:16 Speaker 1
+Yeah, in the same sort of way.
+00:19:17 Speaker 4
+Yep, exactly, And that's supposed to help us determine how significant we can conclude our analysis and actually compare with theirs.
+00:19:23 Speaker 1
+So just be clear in your figures.
+00:19:25 Speaker 4
+Yeah, absolutely. Awesome. Okay, awesome. Thank you.
+00:19:29 Speaker 1
+In fact, I usually put A B C D I like yeah, I made that at like one a m. I cause below it there's the individual ones with captions. Well, no, because I made four and then I just like Nikki said, I just make one big one. So okay. It's good to have some stuff absolutely. It's very careful about which ones you know she chooses. Yeah, I forgot about Don Peggy up here. Alright, we got three groups left. Anyone want to volunteer?
+00:20:01 Speaker 2
+You had a question?
+00:20:05 Speaker 2
+Ah. That's.
+00:20:09 Speaker 1
+Important. You got approval. One, two, three. Two.
+00:20:21 Speaker 2
+Then we're going to go fifty- fifty.
+00:20:38 Speaker 2
+Get rid of this. We're gonna do a trial. I don't know. Um,
+00:20:56 Speaker 6
+I will preface that we didn't make too much progress other than like finding the data from a different source to compare theum. Up and down regulation of genes in humans so that we can try to compare between like what we found for wolves and what we saw in humans. Um, The reason why this is kind of a struggle is because we have to figure out like how to like cross correlate between the two genomes since they're not the same. Between which two genomes? Like between all the genes.
+00:21:28 Speaker 1
+Between different species? Yes. Okay, yeah, and mapping is a tough problem. Yes. Um, now did you try to map them? To I think it was males was what we were looking at. No. No.
+00:21:41 Speaker 2
+I thought that's what everybody was mad. We had talked about it, but then I think we found a different species that are cool, right?
+00:21:48 Speaker 6
+Well, We ended up doing TopGo in order to like map functionality for just bulls because the data that we were looking at already had like a genome annotation file, so it was easy to like find.
+00:22:01 Speaker 1
+Like they actually had gene ontology stuff in there?
+00:22:03 Speaker 6
+Yeah, it did. Oh!
+00:22:05 Speaker 2
+I don't remember that okay.
+00:22:07 Speaker 6
+So we ended up just using that. So, we didn't even like try to find them for the.
+00:22:17 Speaker 1
+Mapping to the mice. Okay, I thought we saw papers that were out there;. They were mapping it to mice and then doing genotypic analysis.
+00:22:25 Speaker 6
+Well, for our paper, they even they did it on big bowls. For the paper that we were basing our stuff on, they did use big bowls instead of trying to map this from mice.
+00:22:37 Speaker 6
+So we ended up going that route, but I yeah.
+00:22:40 Speaker 2
+But I don't get the human connection.
+00:22:42 Speaker 6
+Well, Cause like a like the original idea was trying to figure outum since voles were highly resistant to Lyme disease and trying to figure out their gene responses to those who are affected by Lyme disease. And if we can figure out a way, to. I guess apply it to humans in order to help us gain resistance. So Lyme disease.
+00:23:06 Speaker 1
+So you're then mapping to the human genome.
+00:23:08 Speaker 6
+Yeah, we're trying to compare compare to the human genome. So what is that going to tell you? See, It was mostly just like trying to figure out if there's like similarities or differences between those up and down regulated genes.
+00:23:23 Speaker 1
+Okay. And differences between the species? Yes. Okay. There will be Yeah Um So that's way to do something like that.
+00:23:42 Speaker 1
+It's tough. It takes a lot of work, more than we have in the scope of this class. But basically, it would involve looking at. Honestly, that'd be a literature analysis kind of project. So using something like. really intense AI work to say, Look for all these genes that we see in mammals, predict those expressed, maybe some upregulated ones. Is there anything in the literature? Differences between wolves and humans. Um, beyond the scope of this class. Uh, machine learning course they talk about LLMs at all?
+00:24:26 Speaker 5
+It's a course certificate. LLMs?
+00:24:30 Speaker 1
+Yes. Okay, you have a budget. If they've done some AI work that's something that's a literature analysis.
+00:24:42 Speaker 2
+Uh oh. Uh oh. Yeah, he's.
+00:24:56 Speaker 1
+Falling. Okay, cool. Okay, you taking that one? Okay, so.
+00:25:13 Speaker 1
+It's definitely beyond what I'm expecting, but if you wanted to do a search with Gemini or something saying, "Hey, for all these genes, Is there anything in the scientific literature on differences between um the function of these genes in bulls versus humans?" Okay. That might be one way to do it. I'm not going to do that because even last year, we weren't talking about AI. Um It's worth a shot. But if you get there's a need for like more getting comfortable with technology. Don't pay for a thing for this classes.
+00:25:45 Speaker 6
+I know we just discussed. Put in a lot of discussion. So this was a good point.
+00:25:51 Speaker 1
+That's the nice thing is yeah, when they come with the AI, it does make differences. That's a lot of stuff you start writing about discussion. Yeah, uh you can re summarize it from what the AI told them. Yeah, Cool, awesome, that's nice. Yeah, all right. And then there were two no volunteers should I take your chances.
+00:26:16 Speaker 1
+Do they say you're hurt? I got, I rolled an eighteen. You're in the upper half of the hit points. Huh? Yep.
+00:26:22 Speaker 3
+Dog, here I was hoping to get a D one.
+00:26:26 Speaker 1
+No, pe let's see if you go up next. Oh my gosh, you do! Okay.
+00:26:51 Speaker 1
+I'll just put my summary up now so I don't forget it.
+00:26:56 Speaker 2
+This week we were just working on our paper. So we made a new figure that's supposed to show what the results are. We're showcasing our methods.
+00:27:08 Speaker 3
+One of those. It's a lot more linear than those often are. We have one. It's so branching!
+00:27:27 Speaker 1
+But It's okay to show the steps together. Yeah, this is something I was. Was there anything that decision point where you did say quality control? Did trimming then found you want to verify with quality control? Because, you could also put a circle in there from trimming back to quality control, show that it's an iterative process.
+00:27:48 Speaker 3
+Also, I'm just going, Apology. There's.
+00:27:54 Speaker 7
+Not really much to present.
+00:27:56 Speaker 3
+Well, I have some things I can talk about. I have things I can talk about with the stuff out since this morning. Um, sorry, I'm trying to go find where it is. Uh, page twenty five, bottom, twenty five, top of twenty six.
+00:28:19 Speaker 3
+Yeah, right. Uh, okay. Yeah, there it is. So, you know, our four upregulated genes that we've already looked at all four, but then our two down regulated genes, there's ten of those. So I'll have to expand on the interesting ones. But there are some that are interesting. Uh we have.
+00:28:49 Speaker 3
+Two locuses, one which I think is a novel locus in epithelial ovarian cancer, one which has like no link to anything. A long non coding RNA mostly associated with cancer and a comorbidity of Alzheimer's. You.
+00:29:12 Speaker 1
+Did not do an experiment of the SLC, not a knockout, which makes sense because, You know, functional. Okay. Do you know the difference between knockdown and knockouts? Knockdown and knockouts.
+00:29:33 Speaker 2
+I mean, you just take it out. Does that reduce.
+00:29:36 Speaker 7
+The efficiency of? So the I guess well, I mean for us for us. We don't really have a specified. We're not really we're actually looking at this specified pathways and whatnot now. Okay. But this is from the loop. You're pulling this.
+00:29:50 Speaker 1
+There's a knockdown of this that seems to reduce tumor cell proliferation.
+00:29:54 Speaker 3
+I think I can. I believe the difference is doing knockdown is you're putting in stuff to stop, you're putting in stuff that stops it right now, whereas knockout is you're like permanently changing the genes to stop it. Um. Except what does it permanently changing the genes? I don't think they're taking out the gene. I mean they're putting in a silencing.
+00:30:15 Speaker 1
+Right, usually a knockout you're actually inside the gene. You could do something like a CRISPR up. Uh put it right up in the uh, the promoter region or something to disrupt it. So it's knocked out. Or you do a deletion of, They'd like to do deletions of the promoter and the first part of the first exon. So you can't get transcription.
+00:30:35 Speaker 3
+Knockout I think is like you're just putting an antibody into there.
+00:30:37 Speaker 7
+Um could be, I'm not sure because to my knowledge, To my knowledge, a knockdown reduces like results in a reduced efficacy of that set of genes. So how that works, I don't know. So it's not.
+00:30:58 Speaker 3
+Giving you the gene. What are those? I just noticed that I put in one of these wrongs. I need to fix that. So what is an engine one eighty eight and an engine one thirty eight? And right now they both out the ones for eight. So the knockdowns might have done was it's not actually affecting the.
+00:31:11 Speaker 1
+Efficiency transcription of that gene. Right, so how much output? Knockout is zero transcription. Knockdown is a reduction of the transcription.
+00:31:21 Speaker 7
+I think the reason for that was because, I mean, Obviously, if you knock out, if you knock out a very important gene in your liver, you don't have a liver. So it won't work right. It won't work right. So in order to actually test something, they needed to see how it affected that. But a majority of what we've been working on is all paperwork. Figures, various figures. Supporting stuff in the introduction, some of the results we're having. I'm still working ontying all the results together, and then we'll finalize everything with a nice lengthy discussion. So outside of that.
+00:32:01 Speaker 3
+Um, I had some more genes that I wanted to call them down- regulated. Okay. Uh, one thing that I thought was very weird. ANGPTL 6. It's a growth factor in angiogenesis, blood vessel creation, a couple other things. We're seeing it down regulated in the tissue. And that is not normal. Yeah, that's weird. And it looks consistent.
+00:32:29 Speaker 1
+So I don't know what's up with that. One thing that could be going on is are there other growth factor genes for blood vessels that are upregulated? Because there are multiple, Factors that affect the development of blood vessels. You might want to see if there are any other angiogenesis genes.
+00:32:52 Speaker 3
+Let me check what our fourteen, what our four upregulated were. Solute carriers.
+00:32:58 Speaker 1
+They may not be in the top fourteen. Quote.
+00:33:02 Speaker 3
+Several known oncogene pathways. Yeah, I'm not seeing one. I'm not seeing it either. Um.
+00:33:07 Speaker 1
+The other thing is they may not be differentially expressed. You may actually be able to go through and say, look, are there any other genes that start with the letter G? So now they're up or down regulated. They should be solvable.
+00:33:16 Speaker 3
+It's specifically. Yeah. Well, MCE says it should be upregulated in HCC. Absolutely. Um, There's also FAB 2, which I swear to God. There's one paper that says downregulation improves your outcomes and the other that says downregulation makes them worse.
+00:33:36 Speaker 3
+The only, I, it's possible that it's because one of them says downregulation in like the surrounding tissues to improve your outcomes. But oh, interesting. I am not okay.
+00:33:50 Speaker 1
+So, it's not developing into the nearby tissue.;. It's actually just forcing itself to or something.
+00:33:56 Speaker 3
+I don't, It's weird because what it does is a complicated system because this is responsible for grabbing high hyaluronic acid out of the local environment. In to the cell and hyaluronic acid promotes tumor development and I'm. Not entirely sure how, okay. It's a complicated thing that I a lot of I'm trying to figure out and somewhat failing a lot of stuff.
+00:34:20 Speaker 1
+Tumors is not intuitive until you figure. It's so someone really looks at it closely. Yeah. Um there are a lot of I mean everyone wondered for a long time. Well, okay, why are they affecting blood vessels? It makes sense if you realize, yeah, that's just sucking nutrients.
+00:34:37 Speaker 3
+And then the last the last one uh of the six that were interesting out of our ten, because the other four were just, yep, yeah. Uh they're down regulated by cancer and they worse in your survival outcomes. That all checks out everything as we expected. The last one is this one has not been linked to HCC previously from everything I can find. It's been linked to other cancers but not this one.
+00:35:00 Speaker 1
+Okay do you know what it does?
+00:35:02 Speaker 3
+It codes for a membrane scaffolding protein. Others in the protein family are more concretely linked to cancer related than this one. This one is still under investigation, but you know it's a novel cancer to gene linkage, which I think is neat. Nice.
+00:35:39 Speaker 1
+Yes, Right. I do not have disease there yet for citation. Cool. All right, excellent. All good? Cool. All right, roll three You gotta go.
+00:35:52 Speaker 3
+Oh, Goddamn, it One more person to keep on here. So. We probably have to cite a paper for every single one of these genes So tired.
+00:36:21 Speaker 2
+Um. That's been there for well over a month at least. It's just.
+00:36:27 Speaker 1
+That was really because somebody was interested in moving all the chairs that way and not in the room. Every time I get in here, We have to shift all the chairs over so you can actually walk between the rows. I think all they do for cleaning, is they vacuum and clean boards on these. And I don't think they do anything else in this building. But that's what I see. Although, the vacuuming. Oh! Sorry! My gosh! I didn't even look at that. I don't want to look at it now. Okay, here we go. Basically,
+00:36:59 Speaker 8
+The general gist is we just did a lot of writing over the week. So, oh yeah, there isn't much new analysis to provide. I mean, We had the same thoughts and things that we worked for in our discussion and pushing things up. But I'm not yeah I don't know what.
+00:37:18 Speaker 1
+To talk about I guess, that's okay. Yeah you just said that although watch your spell checks point though yeah and, In the style and all those. Although I will say I disagree with on that overall display, I think that the common wants it. Cause that doesn'tum was the terms I kind of phrase.
+00:37:39 Speaker 8
+The These are also these are grammatically plus. Um things so I don't actually I can actually use them Mike, I have. So if i misspell like, uh uh sognal instead of signal, is thisum.
+00:37:55 Speaker 8
+It'll. It hypothetically should give me a spelling error. You might also need to like refresh it. Oh yeah, there it is. So that's red, that is Grammarly for the proletariat. However, The expensive Grammarly just gives me a gold underline for things that, oh, we think you might want to know about this. But I usually just look at it and read and see like, okay, that probably I don't know what your suggestion is going to be.
+00:38:25 Speaker 8
+But if there's someone gets a change, It might be like the AI spell check or something, because some programs are starting to incorporate AI stuff into their spell check. So instead of actually checking grammar, it's like most people wrote something different after the letter A.
+00:38:44 Speaker 1
+So I would this is done in Word. I would trust Words.
+00:38:49 Speaker 8
+What words started incorporating AI into their spell check? Really? Yeah.
+00:38:56 Speaker 1
+I Use the standalone version of Word still. I just don't think it's all that bad. Yeah,
+00:39:06 Speaker 2
+Because everything's AI now. Okay, there's no way to get AI on it though. So what was.
+00:39:13 Speaker 8
+Your question? We don't have this because we don't have our release still out yet. Yes, they do show up with the AI. That's everything is in there? Yeah, it shows up as a separate thing. Yeah, it's spelled fine. That's not an issue.
+00:39:26 Speaker 1
+Awesome. Cool. Just look up, there are no problem. Yeah, just look okay. Uh definitely do check spelling Graver style because that's a small part of what we're looking at here.
+00:39:35 Speaker 3
+I didn't know it was fully AI until I turned off smart suggestions for Gmail, and then I turned off spell check for everything Great.
+00:39:45 Speaker 1
+They're so helpful Okay Um Yeah make sure you do some sort of spell check. Uh.
+00:39:53 Speaker 1
+Bottom line from stuff we're seeing today, a lot of this stuff is dealing with downstream interpretation. There's a lot of digging you have to do too. So definitely do at least do a peripheral search of literature to see what's known about something. Especially if there's something that looks really interesting and cool, like hey, there's a major difference here. Why? What does this mean? Take a look at it. It makes great summer research sessions. You can easily write a paragraph for the team and even submit your results on that. Trust me, you can.
+00:40:23 Speaker 1
+Okay. Cool. That's all I got. You got a couple more through?
+00:40:32 Speaker 2
+I'm so sorry.
+00:40:33 Speaker 1
+All right, we'll see you tomorrow again, we'll just do group breakout rooms and that's that. Cool. Would you say this is what it feels like? You're digging for diamonds? And you never quite get to them, yeah, No, you get the diamonds. If you do it right.
+00:40:55 Speaker 5
+I have a question, professor. So I know the computational papers, sometimes with the version like this software version tracking. Is that something?
+00:41:09 Speaker 1
+You also have a citation for each one too, not just.
+00:41:11 Speaker 5
+Yeah, no. Yeah, there are citations. So is that something that you were looking expecting or something?
+00:41:17 Speaker 1
+I wasn't expecting it. You can do it but usually people don't.
+00:41:21 Speaker 5
+Oh, Because you don't want the version number. In biology,
+00:41:23 Speaker 1
+They usually don't just have one table. Usually in biology. It's as you talk about aid for the alignment, we did this and you'd cite it right there in the prose. You wouldn't put it in a table necessarily.
+00:41:34 Speaker 5
+Also, you want the citation only? You don't need the version number?
+00:41:38 Speaker 1
+Um, should I both?
+00:41:39 Speaker 5
+Both? Okay. Alright.
+00:41:41 Speaker 4
+But if you look at the paper that we're actually doing our analysis on, it shows how they did it.
+00:41:47 Speaker 5
+Yeah, I think that matches what you said. Yeah. Cool. So, so you said that's okay, but that's not required? I mean, it's.
+00:41:57 Speaker 1
+Not a great way to do it because someone might be in alignment. They're, looking at the alignment section of your methods to see what parameters they use, and they may not find it. They won't think to look at a table because that's not a common convention in biology. Yeah.
+00:42:11 Speaker 5
+So it's buried in the number and citation right next to it.
+00:42:14 Speaker 1
+They should be right where you're talking about what you did, yeah, in the section of your methods, They're also.
